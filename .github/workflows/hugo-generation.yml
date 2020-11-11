@@ -26,8 +26,10 @@ jobs:
 
       - name: Build
         run: |
+              rm -rf docs
               cd Settings
               hugo -D
+              mv public ../docs
 
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
