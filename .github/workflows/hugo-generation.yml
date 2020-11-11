@@ -30,6 +30,8 @@ jobs:
               cd Settings
               hugo -D
               mv public ../docs
+              cd docs
+              sed -i -e "s/\/scss/scss/" index.html
 
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
