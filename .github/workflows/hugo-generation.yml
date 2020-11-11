@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: |
               cd Template
-              hugo -D -w=false
+              hugo -D
 
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
