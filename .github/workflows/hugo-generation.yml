@@ -3,10 +3,10 @@ name: github pages
 on:
   push:
     branches:
-      - master  
+      - master
     tags-ignore:
-      - '*.*' 
-    paths-ignore: 
+      - '*.*'
+    paths-ignore:
       - .\docs
 
 jobs:
@@ -15,8 +15,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true  
-          fetch-depth: 0    
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -27,8 +27,8 @@ jobs:
       - name: Build
         run: |
               cd Settings
-              hugo -D
-              
+              hugo -D -w=false
+
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
