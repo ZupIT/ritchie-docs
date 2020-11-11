@@ -1,5 +1,8 @@
-baseURL = "/"
-title = "Goldydocs"
+baseURL = "https://zupit.github.io/docs-ritchie/"
+
+title = "Ritchie"
+
+publishDir = "../docs"
 
 enableRobotsTXT = true
 
