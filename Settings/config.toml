@@ -82,8 +82,8 @@ time_format_blog = "02.01.2006"
 # Everything below this are Site Params
 
 [params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
+copyright = "Zup"
+privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -107,9 +107,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/ZupIT"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/ZupIT"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -158,34 +158,45 @@ enable = false
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
-	name = "User mailing list"
-	url = "https://example.org/mail"
-	icon = "fa fa-envelope"
-        desc = "Discussion and help from your fellow users"
+	name ="Instagram"
+	url = "https://www.instagram.com/zupinnovation"
+	icon = "fab fa-instagram"
+        desc = "Follow us on Instagram to get the latest news!"
+[[params.links.user]]
+	name ="Linkedin"
+	url = "https://www.linkedin.com/company/zup-it-solutions/"
+	icon = "fab fa-linkedin"
+        desc = "Follow us on Linkedin to get the latest news!"
+[[params.links.user]]
+	name ="Youtube"
+	url = "https://www.youtube.com/channel/UCJWZyJ-36yNscqnnHiwjkhQ"
+	icon = "fab fa-youtube"
+        desc = "Follow us on Youtube to get the latest news!"
 [[params.links.user]]
 	name ="Twitter"
-	url = "https://example.org/twitter"
+	url = "https://twitter.com/ZupInnovation"
 	icon = "fab fa-twitter"
         desc = "Follow us on Twitter to get the latest news!"
 [[params.links.user]]
-	name = "Stack Overflow"
-	url = "https://example.org/stack"
-	icon = "fab fa-stack-overflow"
-        desc = "Practical questions and curated answers"
+	name ="Medium"
+	url = "https://medium.com/zup-it"
+	icon = "fab fa-medium"
+        desc = "Follow us on Medium to get the latest news!"
+
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/google/docsy"
+	url = ""
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
 	name = "Slack"
-	url = "https://example.org/slack"
+	url = ""
 	icon = "fab fa-slack"
         desc = "Chat with other project developers"
 [[params.links.developer]]
 	name = "Developer mailing list"
-	url = "https://example.org/mail"
+	url = ""
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
