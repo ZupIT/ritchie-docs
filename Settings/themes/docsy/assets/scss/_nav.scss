@@ -11,7 +11,6 @@
         .nav-link {
             text-shadow: 1px 1px 2px $dark;
         }
-
     }
 
     &.navbar-bg-onscroll .nav-link {
@@ -35,7 +34,6 @@
         top: 0;
         width: 100%;
     }
-
 
     .navbar-brand {
         text-transform: none;
@@ -71,18 +69,18 @@
     }
 
     @include media-breakpoint-down(md) {
-        padding-right: .5rem;
-        padding-left: .75rem;
+        padding-right: 0.5rem;
+        padding-left: 0.75rem;
 
         .td-navbar-nav-scroll {
             max-width: 100%;
             height: 2.5rem;
-            margin-top: .25rem;
+            margin-top: 0.25rem;
             overflow: hidden;
-            font-size: .875rem;
+            font-size: 0.875rem;
 
             .nav-link {
-                padding-right: .25rem;
+                padding-right: 0.25rem;
                 padding-left: 0;
             }
 
@@ -91,7 +89,6 @@
                 overflow-x: auto;
                 white-space: nowrap;
                 -webkit-overflow-scrolling: touch;
-
             }
         }
     }
