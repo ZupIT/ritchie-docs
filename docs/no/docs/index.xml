@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zup&#39;s Open Source – TechOS-Dokumentasjon</title>
+    <title>Ritchie – TechOS-Dokumentasjon</title>
     <link>https://zupit.github.io/docs-ritchie/no/docs/</link>
-    <description>Recent content in TechOS-Dokumentasjon on Zup&#39;s Open Source</description>
+    <description>Recent content in TechOS-Dokumentasjon on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-ritchie/no/docs/index.xml" rel="self" type="application/rss+xml" />
