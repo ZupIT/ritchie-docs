@@ -85,6 +85,8 @@ time_format_blog = "02.01.2006"
 copyright = "Zup"
 privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 
+logoName = "icons/ritchie.svg"
+
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
 
