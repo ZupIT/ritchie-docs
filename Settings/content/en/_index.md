@@ -1,7 +1,6 @@
 +++
 title = "Documentation"
 linkTitle = "Documentation"
-type = "docs"
 +++
 
 {{% pageinfo %}}
