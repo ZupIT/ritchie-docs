@@ -63,8 +63,11 @@ description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+version_menu = "Versions"
+
 [languages.pt-br]
 title = "Ritchie"
+version_menu = "Versões"
 description = "Documentação Ritchie"
 languageName ="Português"
 contentDir = "content/pt-br"
@@ -92,7 +95,6 @@ logoName = "icons/ritchie.svg"
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
 
 # Flag used in the "version-banner" partial to decide whether to display a 
 # banner on every page indicating that this is an archived version of the docs.
@@ -157,6 +159,12 @@ no = 'Sorry to hear that. Please <a href="https://github.com/USERNAME/REPOSITORY
 [params.ui.readingtime]
 enable = false
 
+[params.en]
+version_menu = "Versions"
+
+[params.pt-BR]
+version_menu = "Versões"
+
 [params.links]
 # End user relevant links. These will show up on left side of footer and in the community page if you have one.
 [[params.links.user]]
@@ -201,4 +209,13 @@ enable = false
 	url = ""
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
+
+# Add your release versions here
+[[params.versions]]
+  version = "v1.0.0"
+  url = "https://docs.ritchiecli.io/v/master/"
+
+[[params.versions]]
+  version = "v1.0.0 (pt-BR)"
+  url = "https://docs.ritchiecli.io/v/doc-portuguese/"
 
