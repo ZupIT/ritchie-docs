@@ -63,6 +63,11 @@ description = "A Docsy example site"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
+[languages.pt-br]
+title = "Ritchie"
+description = "Documentação Ritchie"
+languageName ="Português"
+contentDir = "content/pt-br"
 
 [markup]
   [markup.goldmark]
