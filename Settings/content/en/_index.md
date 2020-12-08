@@ -1,5 +1,5 @@
 ---
-title: Docs
+title: Overview
 weight: 5
 description: "In this section, you will find all initial information about Ritchie."
 ---

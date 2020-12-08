@@ -1,5 +1,5 @@
 ---
-title: Docs
+title: Visão Geral
 weight: 5
 description: "Nesta seção, você encontrará todas as informações iniciais sobre o Ritchie."
 ---
