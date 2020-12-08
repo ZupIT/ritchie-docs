@@ -1,0 +1,140 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Use Cases</title>
+    <link>https://zupit.github.io/docs-ritchie/docs/use-cases/</link>
+    <description>Recent content in Use Cases on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/docs/use-cases/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: First commands</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/use-cases/first-commands/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/use-cases/first-commands/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;After you finish Ritchie&amp;rsquo;s installing process, you are able to run the first commands on our CLI.&lt;/p&gt;
+&lt;p&gt;We put it together the &lt;strong&gt;first core commands&lt;/strong&gt; that will help you use the tool to its fullest.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: First formulas</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/use-cases/first-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/use-cases/first-formulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Now that you know how to run core commands on our CLI.&lt;/p&gt;
+&lt;p&gt;We put it together &lt;strong&gt;the first formulas&lt;/strong&gt; created on Ritchie to make you discovering the potential of our CLI.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Creating formulas</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/use-cases/creating-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/use-cases/creating-formulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The process to create a formula it is done through the &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; command. It creates the necessary structure for the user to start developing a new formula on his local machine.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Before following the steps to create a formula, it is recommended to have &lt;strong&gt;Ritchie&lt;/strong&gt; &lt;strong&gt;properly installed&lt;/strong&gt; and &lt;strong&gt;tested&lt;/strong&gt; to make sure all the commands are working.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;step-1-formula-creation&#34;&gt;Step 1: Formula creation&lt;/h2&gt;
+&lt;p&gt;When the &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; command is executed on the terminal, a few information are requested from the user :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the &lt;strong&gt;&lt;code&gt;new formula command&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The ideal is to follow the pattern rit + group + verb + noun.&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;the &lt;strong&gt;&lt;code&gt;new formula programming language&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A &lt;em&gt;&lt;strong&gt;Hello World template&lt;/strong&gt;&lt;/em&gt; will be created in this language.&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;the &lt;strong&gt;&lt;code&gt;workspace&lt;/code&gt;&lt;/strong&gt; where the new formula will be added&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It can be an existing formula workspace. If there isn&amp;rsquo;t any available, a default formula workspace will be created automatically, named &lt;strong&gt;&lt;code&gt;ritchie-formulas-local&lt;/code&gt;&lt;/strong&gt; in the &lt;strong&gt;HOME&lt;/strong&gt; of the user&amp;rsquo;s machine.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh5.googleusercontent.com/ZAkUuAxUQVqtusM_n3IThSnfvAy46zcmm9CwIBOvNiByqq3pN_MJZWoXQnTHzpffVtld1gjMc2pPuBaPNdgwWr1omPpAEKRLwN8rzSWUYWjXGesVZIjm5W0ZQgq0u_vUYCRpdZRc&#34; alt=&#34;Creation of a new formula&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; command also build the formula automatically (it generates the formula executables files and add them to the &lt;a href=&#34;https://docs.ritchiecli.io/developer/cli#composition-of-the-rit-folder&#34;&gt;.rit folder&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;That means it is possible to execute the new command directly after its creation. In that case, the formula &lt;em&gt;&lt;strong&gt;Hello World template&lt;/strong&gt;&lt;/em&gt; will be executed as shown below :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/iju8Rbeh1vm7adM9d-9Y-jxDaqE93VonK3Gr2fDKZBgV0uNkJ8pn-q97zM_WFQLiQOr3cDXknfaEa6Qyb6G9Cgzfr_gFJH-LvvQa-QRAHT8Pm1TJQ_QD7JcTE6bk0964Dyn0H_NU&#34; alt=&#34;Execution of the Hello World template&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This &lt;em&gt;&lt;strong&gt;Hello World template&lt;/strong&gt;&lt;/em&gt; is currently composed of 3 inputs parameters :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;a sample text variable&lt;/li&gt;
+&lt;li&gt;a sample list of variables&lt;/li&gt;
+&lt;li&gt;a sample boolean variable&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Those represents the 3 kinds of inputs currently available when using Ritchie.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-formula-structure&#34;&gt;&lt;strong&gt;Step 2: Formula structure&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;All Ritchie formulas workspaces follow the same architecture, you can find more information &lt;a href=&#34;https://docs.ritchiecli.io/developer/formulas&#34;&gt;in the formulas section&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When executing the &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; command, the new formula is added to the informed workspace, updating automatically the workspace structure with the &lt;em&gt;Hello World template&lt;/em&gt; files.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/rit-demo-create-formula.png&#34; alt=&#34;ritchie-formula-local repository structure with rit demo create formula Hello World template &#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step-3-formula-implementation&#34;&gt;Step 3: &lt;strong&gt;Formula implementation&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;With the new formula structure generated successfully inside the chosen workspace, it is possible to start implementing the new automation, updating the Hello World template.&lt;/p&gt;
+&lt;p&gt;To implement the desired operation, it is necessary to update 3 files located inside the /src package of the new formula’s root folder :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The formula &lt;strong&gt;&lt;code&gt;config.json&lt;/code&gt;&lt;/strong&gt;, to configure the inputs.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;&lt;code&gt;main file&lt;/code&gt;&lt;/strong&gt; (generally used to extract those inputs)&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;&lt;code&gt;files in the /pkg folder&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Observation : Depending on the chosen language, it may be necessary to update more files, for example to manipulate dependencies.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;&lt;strong&gt;Some other instructions:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;❗Do not change the name of the formula&amp;rsquo;s root folders (group / verb / noun) without updating the tree.json and Makefile (of the workspace) with the appropriated paths.&lt;/p&gt;
+&lt;p&gt;❗The tree.json and Makefile (of the workspace) are already created / updated by executing the rit create formula command. Consequently, you will not need to change them to be able to test the new formula, even after changing the files commented above.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;step-4-test-the-formula-new-implementation&#34;&gt;Step 4: &lt;strong&gt;Test the formula new implementation&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Once the new automation has been implemented, it necessary to execute the &lt;strong&gt;&lt;code&gt;rit build formula&lt;/code&gt;&lt;/strong&gt; command to update the formula executable files which has been generated at its creation.&lt;/p&gt;
+&lt;p&gt;When the rit build formula command is executed on the terminal, a few information are requested from the user :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;the &lt;strong&gt;&lt;code&gt;workspace&lt;/code&gt;&lt;/strong&gt; where the formula has been implemented&lt;/li&gt;
+&lt;li&gt;the &lt;strong&gt;&lt;code&gt;path&lt;/code&gt;&lt;/strong&gt; to the formula /src package (group / verb / noun, if this pattern has been followed)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://lh3.googleusercontent.com/Anz1rV6HJ3e9mwSIW3IPTK77DVuYruASkphPW-Ro8Zo9_QhMkM7alNfRtJ8o741l-I7BYrI7sBnsHNMndH1Q7lUWNDvwksLA7UEQXGZMP6XAe6lbbwhdgG12XBpocpWprVHelLH6&#34; alt=&#34;Build of a formula&#34;&gt;&lt;/p&gt;
+&lt;p&gt;That’s it ! After building successfully the formula, it is possible to execute the formula command again to see the updated implementation.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; : the &lt;strong&gt;&lt;code&gt;rit build formula&lt;/code&gt;&lt;/strong&gt; command can also be used with a flag &lt;strong&gt;&lt;code&gt;--watch&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Using this flag, the command will automatically “watch” the specified formula &lt;strong&gt;&lt;code&gt;/src package&lt;/code&gt;&lt;/strong&gt; and update the formula executable files if any change is saved by the user.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
