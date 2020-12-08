@@ -14,162 +14,63 @@
     
     
     <item>
-      <title>Docs: Choosing a version</title>
-      <link>https://zupit.github.io/docs-ritchie/docs/getting-started/choosing-a-version/</link>
+      <title>Docs: Install Cli</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/getting-started/install-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/docs-ritchie/docs/getting-started/choosing-a-version/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/docs/getting-started/install-cli/</guid>
       <description>
         
         
         &lt;hr&gt;
-&lt;h2 id=&#34;intro&#34;&gt;Intro&lt;/h2&gt;
-&lt;p&gt;Before you begin to use Ritchie, it is necessary to choose one of available versions :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Single version&lt;/strong&gt;: suitable for freelance professionals;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Team version&lt;/strong&gt;: suitable for teams or professionals of a corporation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Both versions were created to meet the different needs of infrastructure analysts, SREs, architects or software engineers.&lt;/p&gt;
-&lt;p&gt;In practice, the main difference between the versions is in the use (or not) of a server for storing the &lt;strong&gt;formulas&lt;/strong&gt;, mandatory for those who use the Team Version, since, in the case of those who use Ritchie for corporate projects, it is necessary to ensure security information to protect sensitive data.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/team-and-single.png&#34; alt=&#34;Versions single and team architecture &#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;comparing-versions&#34;&gt;&lt;strong&gt;Comparing versions&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/captura_de_tela_2020-06-09_as_09.55.22.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;single-version&#34;&gt;&lt;strong&gt;Single version&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;The main characteristics of this version are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Access to community formulas.&lt;/li&gt;
-&lt;li&gt;The possibility to test new formulas on a local repository.&lt;/li&gt;
-&lt;li&gt;Encrypted information on the local machine.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;repositories&#34;&gt;Repositories&lt;/h3&gt;
-&lt;p&gt;If you choose the &lt;strong&gt;Single Version,&lt;/strong&gt; you are able to access two repositories:&lt;/p&gt;
+&lt;p&gt;To &lt;strong&gt;start Ritchie&amp;rsquo;s installation&lt;/strong&gt; on your machine, follow the steps for your operating system. If you want, you can use the manual installation.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+It&amp;rsquo;s optional to have Docker installed, just in case you want to &lt;a href=&#34;../../tutorials/formulas/build-a-formula.md&#34;&gt;&lt;strong&gt;build your formulas&lt;/strong&gt;&lt;/a&gt; there.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Initialize Cli</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/getting-started/initialize-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/getting-started/initialize-cli/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;step-1-initialization&#34;&gt;Step 1: Initialization&lt;/h2&gt;
+&lt;p&gt;Run the following command to initialize Ritchie:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit init
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will ask the user three questions:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZupIT/ritchie-cli&#34;&gt;&lt;strong&gt;ritchie-cli&lt;/strong&gt;&lt;/a&gt;: this repository contains the core of the tool.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas&#34;&gt;&lt;strong&gt;ritchie-formulas&lt;/strong&gt;&lt;/a&gt;: this repository contains the formulas shared with the community that every Ritchie user can access, update and execute through the terminal.&lt;/li&gt;
+&lt;li&gt;If he &lt;strong&gt;wants to contribute anonymously&lt;/strong&gt; to Ritchie metrics.&lt;/li&gt;
+&lt;li&gt;If he &lt;strong&gt;wants to add the community&lt;/strong&gt; formulas locally.&lt;/li&gt;
+&lt;li&gt;If he &lt;strong&gt;wants the default&lt;/strong&gt; &lt;a href=&#34;../tutorials/formulas/how-to-run-formulas/&#34;&gt;&lt;strong&gt;formula execution method&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;to be local or through docker.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/single-ritchie.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;team-version&#34;&gt;Team version&lt;/h2&gt;
-&lt;p&gt;The main characteristics of this version are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Access to community formulas as well as team formulas;&lt;/li&gt;
-&lt;li&gt;The possibility to test new formulas on a local repository;&lt;/li&gt;
-&lt;li&gt;Encrypted information on the server session.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;repositories-1&#34;&gt;Repositories&lt;/h3&gt;
-&lt;p&gt;With the &lt;strong&gt;Team Version&lt;/strong&gt; is possible to access more repositories:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZupIT/ritchie-cli&#34;&gt;&lt;strong&gt;ritchie-cli&lt;/strong&gt;&lt;/a&gt;: this repository contains the core of the tool.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas&#34;&gt;&lt;strong&gt;ritchie-formulas&lt;/strong&gt;&lt;/a&gt;: this repository contains the formulas shared with the community that every Ritchie user can access, update and execute through the terminal.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ZupIT/ritchie-server&#34;&gt;&lt;strong&gt;ritchie-server&lt;/strong&gt;&lt;/a&gt;: This repository contains the integrations with the platforms &lt;a href=&#34;https://www.keycloak.org/&#34;&gt;Keycloak&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;Vault&lt;/a&gt;, used to create the session and store datas securely.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/rit-init%20%283%29.gif&#34; alt=&#34;rit init command&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Then, the command execution will create all the necessary configuration&amp;rsquo;s files.&lt;/p&gt;
+&lt;h2 id=&#34;step-2-verify-initialization&#34;&gt;Step 2: Verify Initialization&lt;/h2&gt;
+&lt;h3 id=&#34;1-commons-repository&#34;&gt;1. Commons repository&lt;/h3&gt;
+&lt;p&gt;If you added the community formulas repository, you can check it by using the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit list repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will return all formulas repositories the user has access locally.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-1448x466-.gif&#34; alt=&#34;rit list repo command&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2-ritchie-folder&#34;&gt;2. Ritchie folder&lt;/h3&gt;
+&lt;p&gt;You can then check the &lt;strong&gt;&lt;code&gt;.rit&lt;/code&gt;&lt;/strong&gt; folder has been created on your &lt;strong&gt;&lt;code&gt;$HOME&lt;/code&gt;&lt;/strong&gt; directory.&lt;/p&gt;
 
 
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-It is also possible to store your team specific formulas in &lt;strong&gt;other repositories&lt;/strong&gt;, and access them through &lt;a href=&#34;https://docs.ritchiecli.io/software-architecture-1/security#login-command&#34;&gt;the login command&lt;/a&gt;.
+All operations done using Ritchie will be saved in this &lt;strong&gt;.rit&lt;/strong&gt; &lt;strong&gt;folder&lt;/strong&gt; (credentials, repos, metrics&amp;hellip;)
 &lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/team-ritchie-white.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Installing Ritchie</title>
-      <link>https://zupit.github.io/docs-ritchie/docs/getting-started/installing-ritchie/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/docs/getting-started/installing-ritchie/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;p&gt;To &lt;strong&gt;start Ritchie&amp;rsquo;s installation&lt;/strong&gt; on your machine, follow the steps to each operating system or if you want, you can use the manual installation.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Initialization</title>
-      <link>https://zupit.github.io/docs-ritchie/docs/getting-started/initialization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/docs/getting-started/initialization/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;&lt;strong&gt;Introduction&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;When you finish your&lt;a href=&#34;https://docs.ritchiecli.io/getting-started/installation&#34;&gt; &lt;strong&gt;installing process&lt;/strong&gt;&lt;/a&gt;, it&amp;rsquo;s necessary make the Ritchie&amp;rsquo;s initialization and this procedure varies according to the &lt;a href=&#34;https://docs.ritchiecli.io/getting-started/choosing-a-version&#34;&gt;&lt;strong&gt;version&lt;/strong&gt; &lt;/a&gt;you&amp;rsquo;re using.&lt;/p&gt;
-&lt;p&gt;The command to execute the initialization is:&lt;strong&gt;&lt;code&gt;$ rit init&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;single-version&#34;&gt;Single Version&lt;/h2&gt;
-&lt;p&gt;On this version, it will be necessary to inform :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a &lt;strong&gt;passphrase&lt;/strong&gt; that will be used to encrypt datas locally with Ritchie.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;➜ rit init
-Define a passphrase for your machine: **
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;team-version&#34;&gt;Team Version&lt;/h2&gt;
-&lt;p&gt;On this version, it will be necessary to inform  :&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;the &lt;strong&gt;organization&lt;/strong&gt; which the user plan to access.&lt;/li&gt;
-&lt;li&gt;the &lt;strong&gt;server URL&lt;/strong&gt; used by this organization.&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-You can&amp;rsquo;t use the &lt;strong&gt;Team&lt;/strong&gt; version &lt;strong&gt;without having a configured server&lt;/strong&gt;.
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;if the user want to perform login&lt;/strong&gt; to the organization now, or later using the**&lt;code&gt;rit login&lt;/code&gt;** command.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;➜ rit init
-Enter your organization:  zup
-URL of the server [http(s)://host]:  https://ritchie-server.zup.io
-Use the arrow keys to navigate: ↓ ↑ → ←
-You can perform login to your organization now, or later using [rit login] command. Perform now?
-  ▸ no
-    yes
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;login-command&#34;&gt;Login Command&lt;/h3&gt;
-&lt;p&gt;On the &lt;strong&gt;Team version&lt;/strong&gt;, the &lt;strong&gt;&lt;code&gt;rit login&lt;/code&gt;&lt;/strong&gt; command allows to create a session to store datas that can be reused in different formulas.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;➜ rit login
-Enter your username:  dennis.ritchie
-Enter your password:  **
-Organization: org
-Login successfully!
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command creates a session using &lt;em&gt;Keycloak&lt;/em&gt; after the user has informed his organization with his datas (email &amp;amp; password). In this session, the user can, for example, define his credentials for various tools (github, aws, etc &amp;hellip;).&lt;/p&gt;
-&lt;p&gt;In this case, the credentials are stored in the &lt;em&gt;Vault&lt;/em&gt;. This allows that if the user logs in to Ritchie with his data, on someone else&amp;rsquo;s machine, he will be able to fetch these credentials from the &lt;em&gt;Vault&lt;/em&gt;, despite having configured them on his local machine.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-The command &lt;strong&gt;&lt;code&gt;rit logout&lt;/code&gt;&lt;/strong&gt; allows the user to end the current session.
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Docs: Executing commands</title>
-      <link>https://zupit.github.io/docs-ritchie/docs/getting-started/executing-commands/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/docs/getting-started/executing-commands/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;p&gt;If you are more confident to use Ritchie, now it the time to try and use more commands.&lt;/p&gt;
-&lt;p&gt;There are two ways of executing commands on Ritchie.&lt;/p&gt;
-&lt;h3 id=&#34;prompt&#34;&gt;Prompt&lt;/h3&gt;
-&lt;p&gt;This is the first way of executing commands on Ritchie, we use prompt to interact with the CLI to inform input parameters.&lt;/p&gt;
-&lt;p&gt;For more information about core commands via &lt;strong&gt;prompt&lt;/strong&gt;:&lt;/p&gt;
-&lt;h3 id=&#34;stdin&#34;&gt;Stdin&lt;/h3&gt;
-&lt;p&gt;The second way to use Ritchie is through stdin(standard input), which means to inform the input parameter in a more traditional way, typing the values directly on the command line that will be executed.&lt;/p&gt;
-&lt;p&gt;For more information about core commands via &lt;strong&gt;stdin&lt;/strong&gt;:&lt;/p&gt;
 
       </description>
     </item>

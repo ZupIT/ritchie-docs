@@ -1,0 +1,68 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Tutoriais</title>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/</link>
+    <description>Recent content in Tutoriais on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Você encontra tudo sobre como usar fórmulas nas páginas a seguir:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Credenciais</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/credenciais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/credenciais/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Standard Inputs</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/standard-inputs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/docs/tutoriais/standard-inputs/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Informar parâmetros de entrada através de &lt;strong&gt;argumentos&lt;/strong&gt; ou &lt;strong&gt;flags&lt;/strong&gt; permite que você automatize workflows. É particularmente útil quando você estiver manipulando outras ferramentas dentro do script, assim você automatiza operações sem precisar interagir com o terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/screen-shot-2020-08-27-at-15.22.10.png&#34; alt=&#34;Executing a formula on Ritchie with Standard Inputs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Basicamente, há duas formas de informar os parâmetros de entrada diretamente na linha de comando:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Por meio da flag STDIN;&lt;/li&gt;
+&lt;li&gt;Por meio de Input flags.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Você pode ver mais sobre cada uma delas nas páginas a seguir:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
