@@ -1,0 +1,1349 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Tutoriais</title>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/</link>
+    <description>Recent content in Tutoriais on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutoriais: Fórmula &#34;hello World&#34;</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;strong&gt;Premissa&lt;/strong&gt;: Depois de finalizar os passos anteriores - &lt;a href=&#34;../../../getting-started/installation/&#34;&gt;&lt;strong&gt;instalação&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;../../../getting-started/initialization.md&#34;&gt;&lt;strong&gt;inicialização&lt;/strong&gt;&lt;/a&gt; -, para acessar a &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world&#34;&gt;&lt;strong&gt;fórmula hello world&lt;/strong&gt;&lt;/a&gt; para testar o Ritchie, será necessário adicionar o repositório &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas-demo&#34;&gt;&lt;strong&gt;ritchie-formulas-demo&lt;/strong&gt;&lt;/a&gt; localmente.
+&lt;/div&gt;
+
+&lt;p&gt;Para fazer isso, você pode usar o comando &lt;strong&gt;&lt;code&gt;rit add repo&lt;/code&gt;&lt;/strong&gt;, ou executar a linha de comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;demo&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas-demo&amp;#34;, &amp;#34;token&amp;#34;: null, &amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+É possível ainda verificar os repositórios estão sendo usados executando o comando &lt;strong&gt;&lt;code&gt;rit list repo&lt;/code&gt;&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Agora que você adicionou o repositório de demo, você pode executar os comandos desse tutorial.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;premissa-confere-os-detalhes-da-fórmula&#34;&gt;&lt;strong&gt;Premissa: Confere os detalhes da fórmula&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Para obter os detalhes de uso de uma fórmula, é possível executar o comando usando a flag &lt;strong&gt;&lt;code&gt;--help&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O retorno informará todas as flags disponíveis para a execução do comando.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No Ritchie, é possível, você tem 6 possibilidades de rodar uma fórmula através dessas flags:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Via Prompt&lt;/li&gt;
+&lt;li&gt;Via Prompt e Docker&lt;/li&gt;
+&lt;li&gt;Via Input Flags&lt;/li&gt;
+&lt;li&gt;Via Input Flags e Docker&lt;/li&gt;
+&lt;li&gt;Via Stdin&lt;/li&gt;
+&lt;li&gt;Via Stdin e Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Para isso, escreva um dos comandos abaixo:&lt;/p&gt;
+&lt;h3 id=&#34;caso-1-usando-prompt&#34;&gt;Caso 1: Usando Prompt&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Como &lt;strong&gt;essa fórmula foi desenvolvida usando Golang&lt;/strong&gt;, é preciso ter &lt;strong&gt;Golang&lt;/strong&gt; instalado para conseguir executá-la &lt;strong&gt;localmente&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-1054x366-%20%281%29.gif&#34; alt=&#34;rit demo hello-world&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de &lt;strong&gt;prompt&lt;/strong&gt; (interagindo com o CLI no terminal) para informar os parâmetros de entrada.&lt;/p&gt;
+&lt;h3 id=&#34;caso-2-usando-prompt--docker&#34;&gt;Caso 2: Usando Prompt &amp;amp; Docker&lt;/h3&gt;
+&lt;p&gt;Você pode rodar o mesmo comando usando a flag &lt;strong&gt;&amp;ndash;docker&lt;/strong&gt; para executar a fórmula remotamente (em um container), mas ainda informando os parâmetros de entrada via &lt;strong&gt;prompt&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world --docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+O &lt;strong&gt;Docker&lt;/strong&gt; precisa estar instalado e iniciado para conseguir executar comandos usando essa flag.&lt;br&gt;
+Nesse caso, não é necessário ter &lt;strong&gt;Golang&lt;/strong&gt; instalado.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;caso-3-usando-input-flags&#34;&gt;Caso 3: Usando Input Flags&lt;/h3&gt;
+&lt;p&gt;Você também pode executar o comando informando as entradas por meio de flags (você pode saber quais flags estão disponíveis usando a flag &lt;strong&gt;&lt;code&gt;--help&lt;/code&gt;&lt;/strong&gt; ao executar um comando). Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;caso-4-usando-input-flags--docker&#34;&gt;Caso 4: Usando Input Flags &amp;amp; Docker&lt;/h3&gt;
+&lt;p&gt;Ao combinar os &lt;strong&gt;&lt;code&gt;input flags&lt;/code&gt;&lt;/strong&gt; com a flag do &lt;strong&gt;&lt;code&gt;--docker&lt;/code&gt;&lt;/strong&gt;, é possível executar um comando remotamente (em um contêiner) com os parâmetros de entrada informados diretamente na linha de comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie --docker
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;caso-5-usando-stdin&#34;&gt;Caso 5: Usando Stdin&lt;/h3&gt;
+&lt;p&gt;É também possível executar comando usando a flag &lt;strong&gt;&amp;ndash;stdin&lt;/strong&gt; (Standard Input). Dessa maneira, os parâmetros de entrada podem ser informados diretamente na linha de comando inicial:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &#39;{&amp;quot;rit_input_text&amp;quot;:&amp;quot;Dennis&amp;quot;, &amp;quot;rit_input_boolean&amp;quot;:&amp;quot;true&amp;quot;, &amp;quot;rit_input_list&amp;quot;:&amp;quot;everything&amp;quot;, &amp;quot;rit_input_password&amp;quot;:&amp;quot;Ritchie&amp;quot;}&#39; | rit demo hello-world --stdin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Ritchie usa o formato &lt;strong&gt;JSON&lt;/strong&gt; para executar comandos STDIN.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;caso-6-usando-stdin--docker&#34;&gt;Caso 6: Usando Stdin &amp;amp; Docker&lt;/h3&gt;
+&lt;p&gt;Quando são usadas as 2 flags &lt;strong&gt;&amp;ndash;stdin&lt;/strong&gt; e &lt;strong&gt;&amp;ndash;docker&lt;/strong&gt;, é possível executar o comando remotamente informando os parâmetros de entrada na linha de comando inicial, sem necessidade de ação humana:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin --docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Dê uma olhada nas fórmulas da comunidade (ex: &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas&#34;&gt;&lt;strong&gt;ritchie-formulas&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A maioria das fórmulas tem um arquivo &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world&#34;&gt;&lt;strong&gt;README&lt;/strong&gt;&lt;/a&gt; explicando como executar a fórmula e para que ela serve.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar aprendendo:&lt;/p&gt;
+&lt;p&gt;👉Confira agora as fórmulas que você tem acesso usando o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;👉Veja como &lt;a href=&#34;../como-criar-formulas.md&#34;&gt;&lt;strong&gt;criar suas fórmulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como criar fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-criar&#34;&gt;Como criar?&lt;/h2&gt;
+&lt;h3 id=&#34;passo-1-execute-o-comando-de-criação-de-formula&#34;&gt;Passo 1: Execute o comando de criação de formula&lt;/h3&gt;
+&lt;p&gt;Execute esse comando para criar uma fórmula:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit create formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar alguns parâmetros de entrada antes da sua execução:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;O &lt;strong&gt;comando&lt;/strong&gt; (de preferência, com o &lt;strong&gt;padrão &lt;code&gt;rit + grupo + verbo + substantivo&lt;/code&gt;&lt;/strong&gt; para respeitar a &lt;a href=&#34;https://docs.ritchiecli.io/v/v2.0-pt/key-concepts#arvore-de-comando&#34;&gt;&lt;strong&gt;árvore de comando&lt;/strong&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;linguagem de programação&lt;/strong&gt; da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O caminho&lt;/strong&gt; para salvar os arquivos da fórmula.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; &lt;code&gt;rit demo create formula&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/rit-create-formula-3.gif&#34; alt=&#34;Exemplo de execução do comando rit create formula&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;passo-2-teste-sua-fórmula&#34;&gt;&lt;strong&gt;Passo 2: Teste sua fórmula&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Você pode testar diretamente a fórmula depois de sua criação. Isso é possível porque o comando &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; também constrói a fórmula automaticamente (ela gera os arquivos executáveis da fórmula e adiciona-os no &lt;strong&gt;.rit folder&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Nesse caso, o template da formula &lt;strong&gt;&amp;ldquo;Hello World&amp;rdquo;&lt;/strong&gt; será executado como mostrado abaixo:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-1054x366-.gif&#34; alt=&#34;Exemplo demo de fórmula &amp;ldquo;Hello-World&amp;rdquo;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Este template é composto por &lt;strong&gt;3 parâmetros de entrada&lt;/strong&gt;, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Uma amostra da &lt;strong&gt;&lt;code&gt;variável de texto&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Uma amostra da &lt;strong&gt;&lt;code&gt;lista de variáveis&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Uma amostra das &lt;strong&gt;&lt;code&gt;variáveis booleanas&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como criar e testar uma fórmula no Ritchie. Para continuar configurando a fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para a seção de como&lt;a href=&#34;como-implementar-uma-formula/&#34;&gt; &lt;strong&gt;implementar uma fórmula&lt;/strong&gt;&lt;/a&gt; para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.&lt;/p&gt;
+&lt;p&gt;👉 Vá para &lt;a href=&#34;build-a-formula.md&#34;&gt;&lt;strong&gt;como fazer o build da fórmula&lt;/strong&gt;&lt;/a&gt; para ver como continuar os testes nas fórmulas que você criou.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Pasta de fórmula</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-é-uma-pasta-de-fórmula-formula-folder&#34;&gt;O que é uma pasta de fórmula (formula folder)?&lt;/h2&gt;
+&lt;p&gt;This folder contains the files with the formula&amp;rsquo;s behavior.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s not indicated to update&lt;/strong&gt; folders names or include more files/folders, &lt;strong&gt;if not&lt;/strong&gt; in the &lt;strong&gt;src/*&lt;/strong&gt; folder.
+&lt;/div&gt;
+
+&lt;p&gt;Cada linguagem de programação possui suas próprias especificidades, mas a estrutura da fórmula é quase a mesma. Não importa em qual linguagem seja usada, ela irá conter:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Arquivo&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Descrição&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;config.json&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para configurar os parâmetros de entrada da fórmula.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;main file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para extrair variáveis locais.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;pkg/formula file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para implementar a operação da fórmula.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Dockerfile&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para &amp;ldquo;buildar&amp;rdquo; imagens no Docker.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;README file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para explicar o que faz uma fórmula.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Makefile file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para compilar o código da fórmula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;metadata.json file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo para &amp;ldquo;taguear&amp;rdquo; informações de uma fórmula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;set_unmask.sh file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivo usado pelo &lt;code&gt;Makefile file&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;help.json files&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;arquivos usados para configurar mensagens de ajuda da fórmula no CLI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Você pode encontrar todos os &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages&#34;&gt;&lt;strong&gt;templates de linguagens&lt;/strong&gt;&lt;/a&gt; no repositório ritchie-formulas.&lt;/p&gt;
+&lt;h3 id=&#34;exemplos-de-pastas-de-fórmulas&#34;&gt;Exemplos de pastas de fórmulas&lt;/h3&gt;
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/go%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.go:&lt;/strong&gt; extrair os inputs, e chamar os métodos da fórmula (na pasta &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; implementar a lógica da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;help.json:&lt;/strong&gt; alterar a mensagem de descrição do comando ou sub-comando.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/java%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.java:&lt;/strong&gt; extrair os inputs, e chamar os métodos da fórmula (na pasta &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; implementar a lógica da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;help.json:&lt;/strong&gt; alterar a mensagem de descrição do comando ou sub-comando.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/node%20%283%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;index.js:&lt;/strong&gt; extrair os inputs, e chamar os métodos da fórmula (na pasta &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; implementar a lógica da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;help.json:&lt;/strong&gt; alterar a mensagem de descrição do comando ou sub-comando.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/python%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.py:&lt;/strong&gt; extrair os inputs, e chamar os métodos da fórmula (na pasta &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; implementar a lógica da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;help.json:&lt;/strong&gt; alterar a mensagem de descrição do comando ou sub-comando.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/shell%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.sh:&lt;/strong&gt; extrair os inputs, e chamar os métodos da fórmula (na pasta &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; implementar a lógica da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;help.json:&lt;/strong&gt; alterar a mensagem de descrição do comando ou sub-comando.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+As pastas e suas respectivas estruturas são o que definem o comando, então não é indicado alterar os nomes ou incluir mais pastas/arquivos &lt;strong&gt;que não estejam dentro da pasta src/*&lt;/strong&gt;.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Arquivo Config</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-é-um-arquivo-config-configjson-file&#34;&gt;O que é um arquivo config (config.json file)?&lt;/h2&gt;
+&lt;p&gt;O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite que o CLI saiba quais dados devem ser pedidos ao usuário quando ele executa o comando no terminal, a fim de que processe a fórmula corretamente.&lt;/p&gt;
+&lt;p&gt;Essas entradas são feitas para os seguintes campos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Uma &lt;strong&gt;imagem para buildar o docker&lt;/strong&gt; (de acordo com a linguagem de programação escolhida para criar a fórmula)&lt;/li&gt;
+&lt;li&gt;A lista com os parâmetros de entrada de uma fórmula.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;dockerImageBuilder&amp;#34;: &amp;#34;dockerImage&amp;#34;,
+  &amp;#34;inputs&amp;#34;: []
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configuração-dos-parâmetros-de-entrada&#34;&gt;Configuração dos parâmetros de entrada&lt;/h2&gt;
+&lt;p&gt;Cada parâmetro de entrada é composto pelos seguintes campos:&lt;/p&gt;
+&lt;h3 id=&#34;campos-obrigatórios&#34;&gt;Campos obrigatórios&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;name&lt;/code&gt;: nome da variável para extração.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma &lt;strong&gt;variável local&lt;/strong&gt; durante a execução da fórmula.&lt;/p&gt;
+&lt;p&gt;O nome da variável será convertida em maiúscula como o nome da variável local.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Uma boa prática é adicionar o sufixo &lt;em&gt;&lt;strong&gt;&lt;code&gt;RIT_&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; para cada &lt;strong&gt;&lt;code&gt;input name&lt;/code&gt;&lt;/strong&gt; para evitar conflitos com variáveis locais.&lt;/p&gt;
+&lt;p&gt;Exemplo_: &lt;code&gt;rit_file_name&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;RIT_FILE_NAME&lt;/code&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;text&lt;/strong&gt; (string),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bool&lt;/strong&gt; (boolean),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;password&lt;/strong&gt; (string escondida no CLI),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;credentials&lt;/strong&gt; __(tipo específico, veja mais sobre &lt;a href=&#34;https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs&#34;&gt;&lt;strong&gt;aqui&lt;/strong&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;dynamic&lt;/strong&gt; (associado  ao campo opcional&lt;code&gt;request_info&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;label&lt;/code&gt;: texto que aparecerá no CLI para pedir o input ao usuário.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;exemplo-de-parâmetro-de-entrada-com-campos-obrigatórios&#34;&gt;Exemplo de parâmetro de entrada com campos obrigatórios:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;campos-opcionais&#34;&gt;Campos opcionais&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: valor padrão do parâmetro (se nulo).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;default&amp;#34;: &amp;#34;Dennis&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Você pode ainda fazer essa configuração default com a flag default, que te permite atribuir valores default configurados na fórmula.&lt;/p&gt;
+&lt;p&gt;Caso não haja campos com valor default, a flag continuará perguntando por parâmetros de entrada que devem ser configurados no seu arquivo config.json.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;required&lt;/code&gt;: boolean que indica se um campo é obrigatório ou opcional.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;required&amp;#34;: true
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tutorial&lt;/code&gt;: campo de ajuda para o parâmetro de entrada &lt;em&gt;[? for help]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;tutorial&amp;#34;: &amp;#34;We are expecting you to write your name (ex: John)&amp;#34;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;items&lt;/code&gt;: lista de opções para o parâmetro.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;items&amp;#34;: [
+            &amp;#34;Dennis&amp;#34;,
+            &amp;#34;John&amp;#34;,
+            &amp;#34;Bill&amp;#34;
+      ]
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cache&lt;/code&gt;:  salva valores de parâmetros de entrada anteriores.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;active&lt;/code&gt;: se o cache é habilitado ou não.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qty&lt;/code&gt;: quantidade de valor armazenadas no cache.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;newLabel&lt;/code&gt;: texto que aparecerá no CLI para pedir um novo input ao usuário.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;cache&amp;#34;: {
+            &amp;#34;active&amp;#34;: true,
+            &amp;#34;qty&amp;#34;: 5,
+            &amp;#34;newLabel&amp;#34;: &amp;#34;Type another name:&amp;#34;
+      }
+}
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;condition&lt;/code&gt;: esse parâmetro só aparece se condicional funcionar
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;variable&lt;/code&gt;: o nome da variável usada em um parâmetro anterior para comparação.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;operator&lt;/code&gt;: o operador lógico usado para comparar. Suporta &lt;code&gt;==&lt;/code&gt;, &lt;code&gt;!=&lt;/code&gt;, &lt;code&gt;&amp;lt;&lt;/code&gt;, &lt;code&gt;&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;=&lt;/code&gt;, and &lt;code&gt;&amp;gt;=&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;value&lt;/code&gt;: o valor que se deseja usar para comparação.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;default&amp;#34;: &amp;#34;Dennis&amp;#34;
+},
+{
+      &amp;#34;condition&amp;#34;: {
+            variable: &amp;#34;rit_name&amp;#34;,
+            &amp;#34;operator&amp;#34;: &amp;#34;!=&amp;#34;,
+            &amp;#34;value&amp;#34;: &amp;#34;Dennis&amp;#34;
+      }
+      &amp;#34;label&amp;#34;: &amp;#34;What is your date of birth?&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_date_of_birth&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pattern&lt;/code&gt;: configura a validação de um parâmetro de entrada.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;regex&lt;/code&gt;: o  modelo regex para validar o parâmetro.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mismatchText&lt;/code&gt;: a mensagem de erro caso o parâmetro de entrada seja invalidado pelo regex.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;What is your age&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_age&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;pattern&amp;#34;: {
+            &amp;#34;regex&amp;#34;: [0-9],
+            &amp;#34;mismatchText&amp;#34;: &amp;#34;Only a integer value is allowed here (ex: 20)&amp;#34;
+      }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;requestInfo&lt;/code&gt;: configuração para ter o parâmetro de entrada de tipo dinâmico.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt;: URL que consome o serviço GET, responsável por retornar a lista de objetos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jsonPath&lt;/code&gt;: caminho da variável para extrair da lista retornada uma variável de cada objeto. (Veja mais sobre &lt;a href=&#34;https://goessner.net/articles/JsonPath/&#34;&gt;&lt;strong&gt;como funciona esse path json&lt;/strong&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;requestInfo&amp;#34;: {
+            &amp;#34;url&amp;#34;: &amp;#34;https://my-url.com&amp;#34;,
+            &amp;#34;jsonPath&amp;#34;: $[&amp;#39;user&amp;#39;][&amp;#39;name&amp;#39;]
+      }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Cada fórmula contém quantos parâmetros de entrada forem necessários, assim como qualquer associação nos campos acima.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Exemplo de parâmetros de entrada com campo condicional e padrão Regex:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;#34;inputs&amp;#34;: [
+    {
+      &amp;#34;label&amp;#34;: &amp;#34;Select a system:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_system&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;items&amp;#34;: [
+        &amp;#34;LINUX&amp;#34;,
+        &amp;#34;MACOS&amp;#34;,
+        &amp;#34;WINDOWS&amp;#34;
+      ],
+      &amp;#34;required&amp;#34;: true,
+      &amp;#34;tutorial&amp;#34;: &amp;#34;Select a System from the list.&amp;#34;   
+    },
+    {
+      &amp;#34;condition&amp;#34;: {
+        &amp;#34;variable&amp;#34;:&amp;#34;rit_system&amp;#34;,
+        &amp;#34;operator&amp;#34;:&amp;#34;==&amp;#34;,
+        &amp;#34;value&amp;#34;:&amp;#34;LINUX&amp;#34;
+      },
+      &amp;#34;label&amp;#34;: &amp;#34;Select a LINUX OS:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_linux_os&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;items&amp;#34;: [
+        &amp;#34;UBUNTU&amp;#34;,
+        &amp;#34;FEDORA&amp;#34;,
+        &amp;#34;CENTOS&amp;#34;
+      ],
+      &amp;#34;pattern&amp;#34;: {
+        &amp;#34;regex&amp;#34;: &amp;#34;UBUNTU|FEDORA|CENTOS&amp;#34;,
+        &amp;#34;mismatchText&amp;#34;: &amp;#34;Invalid option&amp;#34;
+      },
+      &amp;#34;required&amp;#34;: false,
+      &amp;#34;tutorial&amp;#34;: &amp;#34;Select an Linux Operating System from the list.&amp;#34;   
+    }
+  ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma &lt;strong&gt;variável local&lt;/strong&gt; durante a execução da fórmula.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Arquivo Main</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-é-um-arquivo-main-main-file-a-idwhat-is-the-main-filea&#34;&gt;O que é um arquivo main (main file)? &lt;a id=&#34;what-is-the-main-file&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;O arquivo Main é usado para extrair os parâmetros de entrada informados no arquivo config.json, salvos como variáveis locais.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Os parâmetros de entrada são extraídos pelo nome do campo informado no arquivo config.json em letras maiúsculas.&lt;/em&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Esse arquivo é também onde estão as funções da fórmula, manipulando parâmetros de entrada, que são chamados para realizar uma operação e/ou automação da fórmula.&lt;/p&gt;
+&lt;h3 id=&#34;exemplos-de-arquivo-main-a-idmain-file-examplesa&#34;&gt;Exemplos de arquivo Main &lt;a id=&#34;main-file-examples&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Nos exemplos abaixo, sempre há a classe de uma fórmula com uma função &lt;code&gt;Run()&lt;/code&gt; .&lt;/p&gt;
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;	input2 := os.Getenv(&amp;#34;INPUT_LIST&amp;#34;)
+	input3, _ := strconv.ParseBool(os.Getenv(&amp;#34;INPUT_BOOLEAN&amp;#34;))
+	input4 := os.Getenv(&amp;#34;INPUT_PASSWORD&amp;#34;)
+
+	formula.Formula{
+		Text:     input1,
+		List:     input2,
+		Boolean:  input3,
+		Password: input4,
+	}.Run(os.Stdout)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;public class Main {
+
+  public static void main(String[] args) {
+
+    String inputText = System.getenv(&amp;quot;INPUT_TEXT&amp;quot;);
+    boolean inputBoolean = Boolean.parseBoolean(System.getenv(&amp;quot;INPUT_BOOLEAN&amp;quot;));
+    String inputList = System.getenv(&amp;quot;INPUT_LIST&amp;quot;);
+    String inputPassword = System.getenv(&amp;quot;INPUT_PASSWORD&amp;quot;);
+
+    Formula formula = new Formula(
+      inputText, 
+      inputBoolean, 
+      inputList, 
+      inputPassword
+    );
+    
+    formula.Run();
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;const INPUT1 = process.env.INPUT_TEXT
+const INPUT2 = process.env.INPUT_BOOLEAN
+const INPUT3 = process.env.INPUT_LIST
+const INPUT4 = process.env.INPUT_PASSWORD
+
+run(INPUT1, INPUT2, INPUT3, INPUT4)
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;input1 = os.environ.get(&amp;quot;INPUT_TEXT&amp;quot;)
+input2 = os.environ.get(&amp;quot;INPUT_BOOLEAN&amp;quot;)
+input3 = os.environ.get(&amp;quot;INPUT_LIST&amp;quot;)
+input4 = os.environ.get(&amp;quot;INPUT_PASSWORD&amp;quot;)
+
+formula.Run(input1, input2, input3, input4)
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;//Inputs are not even necessary here, as Shellscript get values from local variables directly.
+
+runFormula &#39;$SAMPLE_TEXT&#39; $SAMPLE_LIST &#39;$SAMPLE_BOOL&#39;&#39;$SAMPLE_PASSWORD&#39;
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Dependências</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-são-as-dependências&#34;&gt;O que são as dependências?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Cada linguagem de programação possui suas próprias especificidades para &lt;strong&gt;importar bibliotecas ou pacotes&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente. Portanto, é possível importar todas as dependências necessárias para performar as operações que você deseja implementar. .&lt;/p&gt;
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;module formula
+
+go 1.14
+
+require (
+    github.com/gookit/color v1.2.5
+)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;
+&amp;lt;project xmlns=&amp;quot;http://maven.apache.org/POM/4.0.0&amp;quot; xmlns:xsi=&amp;quot;http://www.w3.org/2001/XMLSchema-instance&amp;quot;
+         xsi:schemaLocation=&amp;quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;quot;&amp;gt;
+    &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
+
+    &amp;lt;groupId&amp;gt;com.ritchie&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;formula&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+
+    &amp;lt;properties&amp;gt;
+        &amp;lt;java.version&amp;gt;1.8&amp;lt;/java.version&amp;gt;
+        &amp;lt;maven.compiler.source&amp;gt;${java.version}&amp;lt;/maven.compiler.source&amp;gt;
+        &amp;lt;maven.compiler.target&amp;gt;${java.version}&amp;lt;/maven.compiler.target&amp;gt;
+        &amp;lt;project.build.sourceEncoding&amp;gt;UTF-8&amp;lt;/project.build.sourceEncoding&amp;gt;
+        &amp;lt;maven-jar-plugin.version&amp;gt;3.2.0&amp;lt;/maven-jar-plugin.version&amp;gt;
+    &amp;lt;/properties&amp;gt;
+
+    &amp;lt;build&amp;gt;
+        &amp;lt;finalName&amp;gt;Main&amp;lt;/finalName&amp;gt;
+        &amp;lt;plugins&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-compiler-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;version&amp;gt;3.8.1&amp;lt;/version&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                    &amp;lt;source&amp;gt;1.8&amp;lt;/source&amp;gt;
+                    &amp;lt;target&amp;gt;1.8&amp;lt;/target&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;!-- Build an executable JAR --&amp;gt;
+                &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;version&amp;gt;${maven-jar-plugin.version}&amp;lt;/version&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                    &amp;lt;archive&amp;gt;
+                        &amp;lt;manifest&amp;gt;
+                            &amp;lt;!-- &amp;lt;addClasspath&amp;gt;true&amp;lt;/addClasspath&amp;gt; --&amp;gt;
+                            &amp;lt;mainClass&amp;gt;com.ritchie.Main&amp;lt;/mainClass&amp;gt;
+                        &amp;lt;/manifest&amp;gt;
+                    &amp;lt;/archive&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-assembly-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                    &amp;lt;appendAssemblyId&amp;gt;false&amp;lt;/appendAssemblyId&amp;gt;
+                    &amp;lt;archive&amp;gt;
+                        &amp;lt;manifest&amp;gt;
+                            &amp;lt;mainClass&amp;gt;com.ritchie.Main&amp;lt;/mainClass&amp;gt;
+                        &amp;lt;/manifest&amp;gt;
+                    &amp;lt;/archive&amp;gt;
+                    &amp;lt;descriptorRefs&amp;gt;
+                        &amp;lt;descriptorRef&amp;gt;jar-with-dependencies&amp;lt;/descriptorRef&amp;gt;
+                    &amp;lt;/descriptorRefs&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+                &amp;lt;executions&amp;gt;
+                    &amp;lt;execution&amp;gt;
+                        &amp;lt;id&amp;gt;make-assembly&amp;lt;/id&amp;gt;
+                        &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+                        &amp;lt;goals&amp;gt;
+                            &amp;lt;goal&amp;gt;single&amp;lt;/goal&amp;gt;
+                        &amp;lt;/goals&amp;gt;
+                    &amp;lt;/execution&amp;gt;
+                &amp;lt;/executions&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+    &amp;lt;/build&amp;gt;
+
+    &amp;lt;dependencies&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;4.13.1&amp;lt;/version&amp;gt;
+            &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;com.github.tomas-langer&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;chalk&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;1.0.2&amp;lt;/version&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+    &amp;lt;/dependencies&amp;gt;
+&amp;lt;/project&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;{
+  &amp;quot;dependencies&amp;quot;: {
+    &amp;quot;cli-color&amp;quot;: &amp;quot;^2.0.0&amp;quot;
+  },
+  &amp;quot;main&amp;quot;: &amp;quot;index.js&amp;quot;,
+  &amp;quot;scripts&amp;quot;: {
+    &amp;quot;test&amp;quot;: &amp;quot;echo \&amp;quot;Error: no test specified\&amp;quot; &amp;amp;&amp;amp; exit 1&amp;quot;
+  },
+  &amp;quot;version&amp;quot;: &amp;quot;1.0.0&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;colored==1.4.2
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;pre&gt;&lt;code&gt;{
+  &amp;quot;require&amp;quot;: {
+    &amp;quot;codedungeon/php-cli-colors&amp;quot;: &amp;quot;~1.0&amp;quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como &#34;buildar&#34; fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Essa funcionalidade não está mais disponível a partir da versão 2.5.0 do Ritchie. Isso porque o build da fórmula é feito de maneira automática.&lt;/p&gt;
+&lt;p&gt;Caso esteja usando uma versão anterior, basta seguir as orientações desta seção.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;como-buildar&#34;&gt;Como &amp;ldquo;buildar&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;Depois de &lt;a href=&#34;como-criar-formulas.md&#34;&gt;&lt;strong&gt;criar uma fórmula&lt;/strong&gt;&lt;/a&gt;,  se você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação.&lt;/p&gt;
+&lt;p&gt;Para isso, basta executar o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit build formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O &lt;strong&gt;caminho  do diretório&lt;/strong&gt; onde a fórmula está localizada.&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;caminho da fórmula&lt;/strong&gt; a ser buildada (ele segue o comando da fórmula).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Caso queira atualizar o código da fórmula em tempo de execução, é possível utilizar a &lt;strong&gt;flag “&amp;ndash;watch”&lt;/strong&gt; junto da fórmula. Veja no exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit build formula --watch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como fazer o build de uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para página de como &lt;a href=&#34;como-publicar-formula.md&#34;&gt;&lt;strong&gt;publicar uma fórmula&lt;/strong&gt;&lt;/a&gt; para ver como transferir seu trabalho para um repositório público.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como publicar fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-publicar&#34;&gt;Como publicar?&lt;/h2&gt;
+&lt;p&gt;Existe uma fórmula no Ritchie que permite você criar/atualizar o repositório de fórmulas no Github e/ou Gitblab.&lt;/p&gt;
+&lt;h3 id=&#34;premissas&#34;&gt;Premissas&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Para publicar um repositório, é necessário configurar as credenciais do Github e/ou Gitlab usando o comando &lt;strong&gt;&lt;code&gt;rit set credential.&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;publicando-seu-repositório&#34;&gt;Publicando seu repositório&lt;/h2&gt;
+&lt;p&gt;Você pode usar uma a fórmula que foi criada no repositório da comunidade para fazer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A inicialização em um repositório local do Git (se necessário).&lt;/li&gt;
+&lt;li&gt;A criação do repositório no Github e/ou Gitlab,&lt;/li&gt;
+&lt;li&gt;A geração da release de uma nova versão do repositório.&lt;/li&gt;
+&lt;li&gt;A adição de um repositório nos repositórios locais do Ritchie (usando o comando**&lt;code&gt;rit add repo&lt;/code&gt;**).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Além disso, se o repositório já existir, a fórmula irá fazer o commit de um novo código e gerar uma nova release informada antes de atualizar os repositórios do Ritchie (usando o comando &lt;strong&gt;&lt;code&gt;rit update repo&lt;/code&gt;&lt;/strong&gt;)
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit publish repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar 5 tipos diferentes de parâmetros de entrada:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;O &lt;strong&gt;&lt;code&gt;provedor&lt;/code&gt;&lt;/strong&gt; (Github ou Gitlab)&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;&lt;code&gt;privacidade do repositório&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;&lt;code&gt;nome do repositório&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;&lt;code&gt;caminho local do repositório&lt;/code&gt;&lt;/strong&gt; you wish to publish&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;&lt;code&gt;versão da release&lt;/code&gt;&lt;/strong&gt; para ser gerada&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/rit-publish-repo.gif&#34; alt=&#34;rit publish repo command&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Como demonstrado acima, você pode checar se a publicação deu certo usando o comando**&lt;code&gt;rit list repo&lt;/code&gt;** e observando se o repositório publicado aparece.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;publicando-manualmente&#34;&gt;Publicando manualmente&lt;/h2&gt;
+&lt;p&gt;Para publicar uma fórmula manualmente, você precisa submetê-la no repositório do &lt;strong&gt;Github e/ou Gitlab&lt;/strong&gt; seguindo esses passos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Tenha um repositório de fórmulas exclusivo no Github e/ou Gitlab.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ele pode ser criado a partir de um repositório local ou de um repositório clonado.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adicione sua fórmula ao repositório _Para isso, use o comando &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; ou copie /cole as pastas. _&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Faça o commit e submeta o novo código ao repositório do Github e/ou Gitlab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gere uma nova release do repositório de fórmulas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Check out &lt;a href=&#34;como-compartilhar-formulas.md&#34;&gt;&lt;strong&gt;como compartilhar fórmulas&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como compartilhar fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-compartilhar&#34;&gt;Como compartilhar?&lt;/h2&gt;
+&lt;p&gt;Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo**: &lt;/strong&gt;&lt;code&gt;https://github.com/ZupIT/ritchie-formulas&lt;/code&gt;**&lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para adicionar um novo repositório no Ritchie, é necessário rodar o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit add repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Uma vez que o repositório for adicionado, o Ritchie irá usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/rit-add-repo-3.gif&#34; alt=&#34;rit add repo command demonstration&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Note que se o repositório de fórmulas for &lt;strong&gt;privado&lt;/strong&gt;, será necessário informar o token do seu Github/Gitlab.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;como-checar-a-última-versão-do-repositório&#34;&gt;Como checar a última versão do repositório?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Essa feature está disponível a partir da versão 2.2 do Ritchie.
+&lt;/div&gt;
+
+&lt;p&gt;No Ritchie, é possível checar novos comandos de fórmulas adicionados e checar se há uma nova versão de algum repositório que você tenha importado localmente.&lt;/p&gt;
+&lt;p&gt;Para isso, basta você seguir os seguintes passos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Executar o comando de ajuda &lt;strong&gt;&lt;code&gt;rit --help&lt;/code&gt;&lt;/strong&gt;. O sistema deve retornar a lista com grupo de repositórios disponíveis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(new version 2.12.1) commons repo commands:
+  beagle      Beagle commands
+  bitbucket   Manage bitbucket objects
+  clean-swift Manage clean-swift objects
+  docker      Manipulate Docker objects
+  git         Manipulate Git objects
+  github      Manipulate GitHub objects
+  gitlab      Manipulate GitLab objects
+  istio       Istio Service Mesh commands
+  jupyter     Manage jupyter objects
+  kafka       Kafka commands
+  kubernetes  Manipulate kubernetes objects
+  publish     Publish command
+  scaffold    Manipulate scaffold objects
+  xcode       Manage xcode objects
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Se preferir, execute o comando &lt;strong&gt;&lt;code&gt;rit list repo&lt;/code&gt;&lt;/strong&gt;, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;como-atualizo&#34;&gt;Como atualizo?&lt;/h3&gt;
+&lt;p&gt;Para atualizar a versão de algum repositório local, você só precisa rodar o comando abaixo informando o nome do repositório e a versão desejada.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit update repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para página &lt;a href=&#34;../credencials/&#34;&gt;&lt;strong&gt;manipular credenciais&lt;/strong&gt;&lt;/a&gt; e veja como rodar esse comando com suas fórmulas.&lt;/p&gt;
+&lt;p&gt;👉 Vá para página de &lt;a href=&#34;../../reference/list-of-commands.md&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repositório da nossa comunidade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como apagar fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-apagar&#34;&gt;Como apagar?&lt;/h2&gt;
+&lt;p&gt;Para deletar uma fórmula, você só precisa rodar o seguinte comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit delete formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Feito isso, siga os passos:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 1:&lt;/strong&gt; Selecione o workspace em que está a fórmula que deseja apagar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 2:&lt;/strong&gt; Selecione a fórmula que será apagada.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 3:&lt;/strong&gt; O Ritchie fará uma pergunta para você confirmar se deseja seguir com a operação de apagar a fórmula. Basta selecionar &amp;ldquo;sim&amp;rdquo; (yes).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/delete-formula.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como apagar uma fórmula no Ritchie. Para continuar lendo mais:&lt;/p&gt;
+&lt;p&gt;👉 Vá para seção &lt;a href=&#34;como-encapsular-formulas.md&#34;&gt;&lt;strong&gt;como encapsular fórmulas&lt;/strong&gt;&lt;/a&gt; para descobrir como se executa uma fórmula dentro de outra fórmula.&lt;/p&gt;
+&lt;p&gt;👉 Conheça a &lt;a href=&#34;../../reference/list-of-commands.md&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; de fórmulas disponíveis no Ritchie.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como encapsular fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-é-encapsulamento&#34;&gt;O que é encapsulamento?&lt;/h2&gt;
+&lt;p&gt;No Ritchie, é possível &lt;strong&gt;executar fórmulas dentro de fórmulas&lt;/strong&gt;. Esse processo é o que chamamos de &lt;strong&gt;Encapsulamento de Fórmula&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Essa função permite que você, por exemplo, realize operações em que é necessário rodar fórmulas consecutivas.&lt;/p&gt;
+&lt;p&gt;A seguir, veja como você pode fazer esse processo de encapsulamento:&lt;/p&gt;
+&lt;h2 id=&#34;como-encapsular&#34;&gt;Como encapsular?&lt;/h2&gt;
+&lt;h3 id=&#34;1-premissa&#34;&gt;1. Premissa&lt;/h3&gt;
+&lt;p&gt;Para realizar um encapsulamento de fórmula, é necessário usar a flag STDIN. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:&lt;/p&gt;
+&lt;h3 id=&#34;2-execução&#34;&gt;2. Execução&lt;/h3&gt;
+&lt;p&gt;Ao &lt;a href=&#34;como-implementar-uma-formula/&#34;&gt;&lt;strong&gt;implementar uma fórmula&lt;/strong&gt;&lt;/a&gt;, você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.&lt;/p&gt;
+&lt;p&gt;A linha de comando da fórmula encapsulada deve ser executada utilizando o flag STDIN e informando os seus parâmetros de entradas diretamente no código.&lt;/p&gt;
+&lt;h3 id=&#34;3-exemplo&#34;&gt;3. Exemplo&lt;/h3&gt;
+&lt;p&gt;A fórmula &lt;strong&gt;&lt;code&gt;rit publish repo&lt;/code&gt;&lt;/strong&gt; foi implementada usando o encapsulamento de fórmula. Inclusive, você pode encontrar no Github a &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/publish/repo&#34;&gt;&lt;strong&gt;implementação dessa fórmula&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo, você verá como esse encapsulamento funciona na parte do código.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Vale reforçar que essa fórmula foi implementada usando &lt;strong&gt;Shell&lt;/strong&gt;, mas o raciocínio seria o mesmo para qualquer outra linguagem de programação.
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;runFormula() {
+  if [ &amp;#34;Github&amp;#34; == $PROVIDER ]
+  then
+    echo &amp;#34;🐙 Github provider selected&amp;#34;
+    echo &amp;#39;{&amp;#34;privacy&amp;#34;:&amp;#34;&amp;#39;$PRIVACY&amp;#39;&amp;#34;, &amp;#34;project_name&amp;#34;:&amp;#34;&amp;#39;$PROJECT_NAME&amp;#39;&amp;#34;, &amp;#34;workspace_path&amp;#34;:&amp;#34;&amp;#39;$WORKSPACE_PATH&amp;#39;&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;&amp;#39;$VERSION&amp;#39;&amp;#34;}&amp;#39; | rit github publish repo --stdin
+  elif [ &amp;#34;Gitlab&amp;#34; == $PROVIDER ]
+  then
+    echo &amp;#34;🦊 Gitlab provider selected&amp;#34;
+    echo &amp;#39;{&amp;#34;privacy&amp;#34;:&amp;#34;&amp;#39;$PRIVACY&amp;#39;&amp;#34;, &amp;#34;project_name&amp;#34;:&amp;#34;&amp;#39;$PROJECT_NAME&amp;#39;&amp;#34;, &amp;#34;workspace_path&amp;#34;:&amp;#34;&amp;#39;$WORKSPACE_PATH&amp;#39;&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;&amp;#39;$VERSION&amp;#39;&amp;#34;}&amp;#39; | rit gitlab publish repo --stdin
+  else
+    echo &amp;#34;🤖 Unexpected Provider informed. Check it please and try again.&amp;#34;
+  fi
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Aqui, de acordo com a entrada informada pelo usuário, duas fórmulas diferentes podem ser executadas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit github publish repo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit gitlab publish repo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Para tanto, os parâmetros de entrada das fórmulas encapsuladas são informados dinamicamente de acordo com os parâmetros de entrada da fórmula principal (&lt;strong&gt;&lt;code&gt;rit publish repo&lt;/code&gt;&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Dependendo da operação, o &lt;strong&gt;JSON&lt;/strong&gt; usado com o comando STDIN pode ser gerado de acordo com outras operações realizadas durante a execução da fórmula principal, antes de executar a linha de comando da fórmula encapsulada.&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como funciona o encapsulamento de fórmulas no Ritchie.  Para continuar lendo sobre os comandos do Ritchie:&lt;/p&gt;
+&lt;p&gt;👉 Cheque os&lt;a href=&#34;../../challenges/explanation.md&#34;&gt; &lt;strong&gt;desafios&lt;/strong&gt;&lt;/a&gt; que criamos para você praticar as diversas funcionalidades do Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Cheque a &lt;a href=&#34;../../reference/list-of-commands.md&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repo da nossa comunidade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como definir credenciais</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-definir-credenciais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-definir-credenciais/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Você pode definir as credenciais do Ritchie para não precisar ficar informando os mesmos dados diversas vezes no terminal.&lt;/p&gt;
+&lt;p&gt;Para fazer isso, basta rodar o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit set credential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O terminal irá retornar essa mensagem:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;? Select your provider  [Use arrows to move, type to filter]
+&amp;gt; kubeconfig
+  ansible
+  aws
+  github
+  gitlab
+  jenkins
+  Add a new
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois que escolher um dos provedores disponíveis, o Ritchie irá solicitar que você preencha os seguintes campos:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;? Select your provider github
+? username: DennisRitchie
+? email: dennis.ritchie@zup.com.br
+? token: 
+✔ Github credential saved!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Você pode conferir os &lt;a href=&#34;../formulas/como-implementar-uma-formula/#arquivos-editaveis&#34;&gt;&lt;strong&gt;arquivos editáveis das fórmulas&lt;/strong&gt;&lt;/a&gt; para ver como &lt;strong&gt;manipular as credenciais definidas na sessão como parâmetros de input&lt;/strong&gt; das fórmulas (no caso, inputs no config.json).
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como apagar credenciais</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-apagar-credenciais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-apagar-credenciais/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-apagar&#34;&gt;Como apagar?&lt;/h2&gt;
+&lt;p&gt;Para deletar uma credencial, você só precisa rodar o seguinte comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit delete credential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Veja como o processo funciona:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-814x408-.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:&lt;/p&gt;
+&lt;p&gt;👉 Vá para seção &lt;a href=&#34;how-to-add-providers.md&#34;&gt;&lt;strong&gt;como adicionar provedores&lt;/strong&gt; &lt;/a&gt;e, assim, continuar configurando suas credenciais.&lt;/p&gt;
+&lt;p&gt;👉 Conheça a &lt;a href=&#34;../../reference/list-of-commands.md&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; de fórmulas disponíveis no Ritchie.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como adicionar provedores</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;É possível também configurar o Ritchie para adicionar novos provedores no seu espaço de trabalho. Para fazer isso, basta selecionar a opção &amp;ldquo;&lt;strong&gt;Add a new&lt;/strong&gt;&amp;rdquo; rodando o comando &lt;strong&gt;&lt;code&gt;rit set credential&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;? Select your provider Add a new
+? Define your provider name: Provider_Name
+? Define your field name: (ex.:token, secretAccessKey) token
+? Select your field type: secret
+? Add more credentials to this provider? no
+? token: *
+✔ Provider_Name credential saved!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As informações que o Ritchie irá solicitar são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Provider name:&lt;/strong&gt; Nome do novo provedor. Você pode nomear de acordo com sua preferência**.**&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Field name:&lt;/strong&gt; Nome da credencial que está nesse provedor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Field type:&lt;/strong&gt; Tipo de valor dessa credencial. Ele pode ser: &lt;strong&gt;plain text&lt;/strong&gt; ou &lt;strong&gt;secret&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ao terminar essa configuração, você poderá configurar as credenciais seguindo as instruções acima.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Esse provedor, assim como suas informações, serão salvas de forma permanente no Ritchie. No entanto, você ainda poderá adicionar quantos provedores quiser.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como usar credenciais como parâmetros de entrada</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-usar-credenciais-como-par%C3%A2metros-de-entrada/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-usar-credenciais-como-par%C3%A2metros-de-entrada/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Assim que você configurar as credenciais do provedor, poderá usá-la como parâmetro de entrada para o arquivo &lt;strong&gt;&lt;code&gt;config.json&lt;/code&gt;&lt;/strong&gt; das suas fórmulas.&lt;/p&gt;
+&lt;p&gt;Para fazer isso, basta usar a palavra-chave reservada:&lt;strong&gt;&lt;code&gt;CREDENTIAL&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quando usada como parâmetro de entrada, a credencial terá 2 campos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; Variável usada para extrair o parâmetro e manipulá-lo dentro do código da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; Nomenclatura específica para o CLI saber qual credencial usar.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+O &lt;strong&gt;tipo&lt;/strong&gt; precisa respeitar o seguinte padrão:&lt;strong&gt;&lt;code&gt;CREDENTIAL_PROVIDER_VARIABLE&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Por exemplo, para usar as credenciais do &lt;strong&gt;&lt;code&gt;GITHUB&lt;/code&gt;&lt;/strong&gt; como parâmetros, você precisa informá-las no arquivo **&lt;code&gt;config.json&lt;/code&gt;**da fórmula:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;#34;inputs&amp;#34;: [ 
+    { 
+        &amp;#34;name&amp;#34;: &amp;#34;git_user&amp;#34;, 
+        &amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_USERNAME&amp;#34; 
+    },
+    { 
+        &amp;#34;name&amp;#34;: &amp;#34;git_email&amp;#34;, 
+        &amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_EMAIL&amp;#34; 
+    },
+    { 
+        &amp;#34;name&amp;#34;: &amp;#34;git_token&amp;#34;, 
+        &amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_TOKEN&amp;#34;
+    } 
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Se tiver alguma dúvida com os nomes dos provedores, você pode checar uma lista de credenciais que você já configurou usando o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit list credential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Com &lt;strong&gt;&lt;code&gt;GITHUB&lt;/code&gt;&lt;/strong&gt;, o terminal irá retornar uma resposta como essa:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;PROVIDER	 CONTEXT	  CREDENTIAL
+github  	 default	  {&amp;#34;token&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;email&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;username&amp;#34;:&amp;#34;***&amp;#34;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como manipular credenciais no Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Cheque a &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/ritchie/~/drafts/-MDPWwvUtJ2ZZfV8Mw44/v/v2.0-pt/developer/lista-de-comandos&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repo da nossa comunidade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Comandos Core</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-core/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;comandos-core-com-stdin&#34;&gt;Comandos Core com STDIN&lt;/h2&gt;
+&lt;p&gt;Aqui está o JSON usado para executar os comandos core do Ritchie através do &lt;strong&gt;stdin&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Será necessário adaptar o valor das variáveis para cada JSON retornar os resultados esperados nas operações.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;comandos-gerais&#34;&gt;Comandos gerais&lt;/h3&gt;
+&lt;p&gt;rit init&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;addCommons&amp;#34;:true, &amp;#34;sendMetrics&amp;#34;:true, &amp;#34;runType&amp;#34;:&amp;#34;local&amp;#34;}&amp;#39; | rit init --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit tutorial&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;tutorial&amp;#34;:&amp;#34;enabled&amp;#34;}&amp;#39; | rit tutorial --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;comandos-do-repo&#34;&gt;Comandos do Repo&lt;/h3&gt;
+&lt;p&gt;rit add repo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas&amp;#34;, &amp;#34;token&amp;#34;: null, &amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit update repo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;}&amp;#39; | rit update repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit delete repo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;}&amp;#39; | rit delete repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;comandos-de-fórmula&#34;&gt;Comandos de fórmula&lt;/h3&gt;
+&lt;p&gt;rit create formula&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;formulaCmd&amp;#34;:&amp;#34;rit demo create formula&amp;#34;, &amp;#34;lang&amp;#34;:&amp;#34;shell&amp;#34;, &amp;#34;workspacePath&amp;#34;:&amp;#34;/users/dennis/home/ritchie-formulas&amp;#34;, &amp;#34;formulaPath&amp;#34;:&amp;#34;/demo/create/formula&amp;#34;}&amp;#39; | rit create formula --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit build formula&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+Sem suporte ainda
+&lt;/div&gt;
+
+&lt;h3 id=&#34;comandos-de-contexto&#34;&gt;Comandos de Contexto&lt;/h3&gt;
+&lt;p&gt;rit set context&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;context&amp;#34;:&amp;#34;contextName&amp;#34;}&amp;#39; | rit set context --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit delete context&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;context&amp;#34;:&amp;#34;contextName&amp;#34;}&amp;#39; | rit delete context --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit set credential&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;service&amp;#34;:&amp;#34;provider&amp;#34;, &amp;#34;type&amp;#34;:&amp;#34;type&amp;#34;, &amp;#34;credential&amp;#34;: {&amp;#34;username&amp;#34;:&amp;#34;credentialUsername&amp;#34;,&amp;#34;token&amp;#34;: &amp;#34;credentialToken&amp;#34;}}&amp;#39; | rit set credential --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;comandos-core-sem-stdin&#34;&gt;Comandos Core sem STDIN&lt;/h2&gt;
+&lt;p&gt;Alguns comandos core não precisam da flag stdin para serem executados. Isso acontece porque, nesse caso, eles não precisam informar nenhum parâmetro de entrada:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit upgrade&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit --version&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit completion&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit list repo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit list credential&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Comandos de fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-de-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-de-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Com fórmulas, o id do &lt;strong&gt;JSON&lt;/strong&gt; com a flag  STDIN tem como base os &lt;strong&gt;nomes dos parâmetros de entrada&lt;/strong&gt; que são informados no arquivo &lt;strong&gt;config.json&lt;/strong&gt; no momento de implementar uma fórmula.&lt;/p&gt;
+&lt;h3 id=&#34;exemplo&#34;&gt;&lt;strong&gt;Exemplo&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Comando de fórmula: &lt;strong&gt;&lt;code&gt;rit demo formula&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nomes dos parâmetros de entrada que são perguntados pelo arquivo config.json:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;name&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;surname&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;dateOfBirth&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execução da fórmula com STDIN:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;surname&amp;#34;:&amp;#34;Ritchie&amp;#34;, &amp;#34;dateOfBirth&amp;#34;:&amp;#34;09/09/1941&amp;#34;}&amp;#39; | rit demo formula --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;O comando de fórmula, através do stdin, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.&lt;/p&gt;
+&lt;p&gt;Se, durante a implementação da fórmula, for demandada uma informação via &lt;strong&gt;prompt&lt;/strong&gt;, não será possível usar exclusivamente o stdin para fórmula ser executada com sucesso.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Comandos de fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Com fórmulas, as Input flags tem como base os &lt;strong&gt;nomes dos parâmetros de entrada&lt;/strong&gt; que são informados no arquivo &lt;strong&gt;config.json&lt;/strong&gt; no momento de implementar uma fórmula.&lt;/p&gt;
+&lt;h3 id=&#34;exemplo&#34;&gt;&lt;strong&gt;Exemplo&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Comando de fórmula: &lt;strong&gt;&lt;code&gt;rit demo formula&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nomes dos parâmetros de entrada que são perguntados pelo arquivo config.json:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;name&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;surname&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;dateOfBirth&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execução da fórmula com Input flags:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo formula --name=&amp;#39;dennis&amp;#39; --surname=&amp;#39;ritchie&amp;#39; --dateOfBirth=&amp;#39;09/09/1941&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+O comando de fórmula, através do input flags, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

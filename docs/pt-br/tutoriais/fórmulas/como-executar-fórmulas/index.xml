@@ -1,0 +1,119 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Como executar fórmulas</title>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</link>
+    <description>Recent content in Como executar fórmulas on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutoriais: Fórmula &#34;hello World&#34;</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;hello-world&#34;&gt;Hello World&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;strong&gt;Premissa&lt;/strong&gt;: Depois de finalizar os passos anteriores - &lt;a href=&#34;../../../getting-started/installation/&#34;&gt;&lt;strong&gt;instalação&lt;/strong&gt;&lt;/a&gt; e &lt;a href=&#34;../../../getting-started/initialization.md&#34;&gt;&lt;strong&gt;inicialização&lt;/strong&gt;&lt;/a&gt; -, para acessar a &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world&#34;&gt;&lt;strong&gt;fórmula hello world&lt;/strong&gt;&lt;/a&gt; para testar o Ritchie, será necessário adicionar o repositório &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas-demo&#34;&gt;&lt;strong&gt;ritchie-formulas-demo&lt;/strong&gt;&lt;/a&gt; localmente.
+&lt;/div&gt;
+
+&lt;p&gt;Para fazer isso, você pode usar o comando &lt;strong&gt;&lt;code&gt;rit add repo&lt;/code&gt;&lt;/strong&gt;, ou executar a linha de comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;demo&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas-demo&amp;#34;, &amp;#34;token&amp;#34;: null, &amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+É possível ainda verificar os repositórios estão sendo usados executando o comando &lt;strong&gt;&lt;code&gt;rit list repo&lt;/code&gt;&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Agora que você adicionou o repositório de demo, você pode executar os comandos desse tutorial.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;premissa-confere-os-detalhes-da-fórmula&#34;&gt;&lt;strong&gt;Premissa: Confere os detalhes da fórmula&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Para obter os detalhes de uso de uma fórmula, é possível executar o comando usando a flag &lt;strong&gt;&lt;code&gt;--help&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O retorno informará todas as flags disponíveis para a execução do comando.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No Ritchie, é possível, você tem 6 possibilidades de rodar uma fórmula através dessas flags:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Via Prompt&lt;/li&gt;
+&lt;li&gt;Via Prompt e Docker&lt;/li&gt;
+&lt;li&gt;Via Input Flags&lt;/li&gt;
+&lt;li&gt;Via Input Flags e Docker&lt;/li&gt;
+&lt;li&gt;Via Stdin&lt;/li&gt;
+&lt;li&gt;Via Stdin e Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Para isso, escreva um dos comandos abaixo:&lt;/p&gt;
+&lt;h3 id=&#34;caso-1-usando-prompt&#34;&gt;Caso 1: Usando Prompt&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Como &lt;strong&gt;essa fórmula foi desenvolvida usando Golang&lt;/strong&gt;, é preciso ter &lt;strong&gt;Golang&lt;/strong&gt; instalado para conseguir executá-la &lt;strong&gt;localmente&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-1054x366-%20%281%29.gif&#34; alt=&#34;rit demo hello-world&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de &lt;strong&gt;prompt&lt;/strong&gt; (interagindo com o CLI no terminal) para informar os parâmetros de entrada.&lt;/p&gt;
+&lt;h3 id=&#34;caso-2-usando-prompt--docker&#34;&gt;Caso 2: Usando Prompt &amp;amp; Docker&lt;/h3&gt;
+&lt;p&gt;Você pode rodar o mesmo comando usando a flag &lt;strong&gt;&amp;ndash;docker&lt;/strong&gt; para executar a fórmula remotamente (em um container), mas ainda informando os parâmetros de entrada via &lt;strong&gt;prompt&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world --docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+O &lt;strong&gt;Docker&lt;/strong&gt; precisa estar instalado e iniciado para conseguir executar comandos usando essa flag.&lt;br&gt;
+Nesse caso, não é necessário ter &lt;strong&gt;Golang&lt;/strong&gt; instalado.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;caso-3-usando-input-flags&#34;&gt;Caso 3: Usando Input Flags&lt;/h3&gt;
+&lt;p&gt;Você também pode executar o comando informando as entradas por meio de flags (você pode saber quais flags estão disponíveis usando a flag &lt;strong&gt;&lt;code&gt;--help&lt;/code&gt;&lt;/strong&gt; ao executar um comando). Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;caso-4-usando-input-flags--docker&#34;&gt;Caso 4: Usando Input Flags &amp;amp; Docker&lt;/h3&gt;
+&lt;p&gt;Ao combinar os &lt;strong&gt;&lt;code&gt;input flags&lt;/code&gt;&lt;/strong&gt; com a flag do &lt;strong&gt;&lt;code&gt;--docker&lt;/code&gt;&lt;/strong&gt;, é possível executar um comando remotamente (em um contêiner) com os parâmetros de entrada informados diretamente na linha de comando:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie --docker
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;caso-5-usando-stdin&#34;&gt;Caso 5: Usando Stdin&lt;/h3&gt;
+&lt;p&gt;É também possível executar comando usando a flag &lt;strong&gt;&amp;ndash;stdin&lt;/strong&gt; (Standard Input). Dessa maneira, os parâmetros de entrada podem ser informados diretamente na linha de comando inicial:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &#39;{&amp;quot;rit_input_text&amp;quot;:&amp;quot;Dennis&amp;quot;, &amp;quot;rit_input_boolean&amp;quot;:&amp;quot;true&amp;quot;, &amp;quot;rit_input_list&amp;quot;:&amp;quot;everything&amp;quot;, &amp;quot;rit_input_password&amp;quot;:&amp;quot;Ritchie&amp;quot;}&#39; | rit demo hello-world --stdin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Ritchie usa o formato &lt;strong&gt;JSON&lt;/strong&gt; para executar comandos STDIN.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;caso-6-usando-stdin--docker&#34;&gt;Caso 6: Usando Stdin &amp;amp; Docker&lt;/h3&gt;
+&lt;p&gt;Quando são usadas as 2 flags &lt;strong&gt;&amp;ndash;stdin&lt;/strong&gt; e &lt;strong&gt;&amp;ndash;docker&lt;/strong&gt;, é possível executar o comando remotamente informando os parâmetros de entrada na linha de comando inicial, sem necessidade de ação humana:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;rit_input_text&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;rit_input_boolean&amp;#34;:&amp;#34;true&amp;#34;, &amp;#34;rit_input_list&amp;#34;:&amp;#34;everything&amp;#34;, &amp;#34;rit_input_password&amp;#34;:&amp;#34;Ritchie&amp;#34;}&amp;#39; | rit demo hello-world --stdin --docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Dê uma olhada nas fórmulas da comunidade (ex: &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas&#34;&gt;&lt;strong&gt;ritchie-formulas&lt;/strong&gt;&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;A maioria das fórmulas tem um arquivo &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world&#34;&gt;&lt;strong&gt;README&lt;/strong&gt;&lt;/a&gt; explicando como executar a fórmula e para que ela serve.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar aprendendo:&lt;/p&gt;
+&lt;p&gt;👉Confira agora as fórmulas que você tem acesso usando o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit --help
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;👉Veja como &lt;a href=&#34;../como-criar-formulas.md&#34;&gt;&lt;strong&gt;criar suas fórmulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

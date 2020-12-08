@@ -1,0 +1,262 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Challenges</title>
+    <link>https://zupit.github.io/docs-ritchie/challenges/</link>
+    <description>Recent content in Challenges on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/challenges/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Challenges: What are these challenges?</title>
+      <link>https://zupit.github.io/docs-ritchie/challenges/what-are-these-challenges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/challenges/what-are-these-challenges/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&amp;mdash;?&lt;/p&gt;
+&lt;h2 id=&#34;context&#34;&gt;Context&lt;/h2&gt;
+&lt;p&gt;The objective of this section is to help users to understand step by step several activities  you are able to do with Richie.&lt;/p&gt;
+&lt;h3 id=&#34;premises&#34;&gt;Premises&lt;/h3&gt;
+&lt;p&gt;To perform the tasks in this section, it will be necessary to understand the following concepts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/formulas/how-to-run-formulas/&#34;&gt;&lt;strong&gt;How to run formulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/formulas/how-to-create-formulas.md&#34;&gt;&lt;strong&gt;How to create formulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/formulas/implement-a-formula/&#34;&gt;&lt;strong&gt;How to implement formulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/formulas/build-a-formula.md&#34;&gt;&lt;strong&gt;How to build formulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../tutorials/formulas/encapsulate-formulas.md&#34;&gt;&lt;strong&gt;How to encapsulate formulas&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;first challenge&lt;/code&gt;&lt;/strong&gt; is to understand how to manipulate basic inputs.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;second challenge&lt;/code&gt;&lt;/strong&gt; is to understand how to manipulate credentials inputs.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;third challenge&lt;/code&gt;&lt;/strong&gt; is to understand how to manipulate conditional inputs.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;fourth challenge&lt;/code&gt;&lt;/strong&gt; is to apply the formula encapsulation concept.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+We will add more challenging tasks in the future.&lt;br&gt;
+Check it out from time to time!
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Challenges: Level 1 Inputs</title>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-1-inputs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-1-inputs/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;level-1-inputs&#34;&gt;Level 1: Inputs&lt;/h1&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;On this tutorial, the idea is to teach you how to create a formula on Ritchie that will &lt;strong&gt;sum two positive numbers&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Command suggestion: &lt;strong&gt;&lt;code&gt;rit math sum numbers&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;inputs&#34;&gt;Inputs&lt;/h2&gt;
+&lt;p&gt;This formula needs to contain (at least) those two inputs parameters, see below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Number one (&lt;code&gt;RIT_NUMBER_ONE&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Number two (&lt;code&gt;RIT_NUMBER_TWO&lt;/code&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-by-step&#34;&gt;Step by step&lt;/h2&gt;
+&lt;p&gt;The formula needs to follow the next steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extract all inputs parameters.&lt;/li&gt;
+&lt;li&gt;Convert inputs to integers (there is currently no &lt;em&gt;&lt;strong&gt;integer&lt;/strong&gt;&lt;/em&gt; &lt;code&gt;type&lt;/code&gt; in inputs config.json file).&lt;/li&gt;
+&lt;li&gt;Sum both numbers.&lt;/li&gt;
+&lt;li&gt;Return the result on the terminal.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+
+Well done! You&amp;rsquo;ve completed the first task!
+&lt;/div&gt;
+
+&lt;h2 id=&#34;improvement-suggestions&#34;&gt;Improvement suggestions&lt;/h2&gt;
+&lt;p&gt;If you want to play a little more, here are some suggestions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add a validation of the input parameters to return an error to the user if the parameter is not an integer.&lt;/li&gt;
+&lt;li&gt;Allow the user to sum negative numbers with positive ones.&lt;/li&gt;
+&lt;li&gt;Allow the user to digit decimals in addition to integers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;👉 If you&amp;rsquo;ve completed the first challenge, let&amp;rsquo;s go to the &lt;a href=&#34;level-2.md&#34;&gt;&lt;strong&gt;level 2 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Challenges: Level 2 Credentials</title>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-2-credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-2-credentials/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;level-2-credentials&#34;&gt;Level 2: Credentials&lt;/h1&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Create a formula on Ritchie that will &lt;strong&gt;return a JSON with Github credentials&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The challenge consists in configure those inputs inside the &lt;strong&gt;config.json&lt;/strong&gt; file, but run the formula without informing them as &lt;code&gt;prompt&lt;/code&gt; or &lt;code&gt;stdin&lt;/code&gt; (they will be extracted automatically). You&amp;rsquo;ll find all the informations you need in the &lt;a href=&#34;https://docs.ritchiecli.io/how-to/manipulate-credentials&#34;&gt;&lt;strong&gt;how to manipulate credentials&lt;/strong&gt;&lt;/a&gt; tutorial section.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Command suggestion: &lt;strong&gt;&lt;code&gt;rit github get user&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;inputs&#34;&gt;Inputs&lt;/h2&gt;
+&lt;p&gt;This formula needs to contain (at least) those two inputs parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Username (&lt;code&gt;RIT_GIT_USER&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Token ( &lt;code&gt;RIT_GIT_TOKEN&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;step-by-step&#34;&gt;Step by step&lt;/h2&gt;
+&lt;p&gt;The formula needs to follow the next steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extract all inputs parameters.&lt;/li&gt;
+&lt;li&gt;Consume the &lt;a href=&#34;https://docs.github.com/en/free-pro-team@latest/rest/reference/users#get-a-user&#34;&gt;&lt;strong&gt;GitHub api&lt;/strong&gt;&lt;/a&gt; to get the user data.&lt;/li&gt;
+&lt;li&gt;Return the result on the terminal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;improvement-suggestions&#34;&gt;Improvement suggestions&lt;/h2&gt;
+&lt;p&gt;If you want to play a little more, here are some suggestions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Develop some Github operation by manipulating these credentials.&lt;/li&gt;
+&lt;li&gt;Code a formula which will allow the user to create a repository on Github.&lt;/li&gt;
+&lt;li&gt;Code a formula which will allow the user to &lt;strong&gt;add&lt;/strong&gt;, &lt;strong&gt;commit&lt;/strong&gt; and &lt;strong&gt;push&lt;/strong&gt; using only one command.&lt;/li&gt;
+&lt;li&gt;Code a formula which will allow the user to generate a release of the informed Github repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;👉 If you&amp;rsquo;ve completed the second challenge, let&amp;rsquo;s go to &lt;a href=&#34;level-3.md&#34;&gt;&lt;strong&gt;level 3 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Challenges: Level 3 Conditional Inputs</title>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-3-conditional-inputs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-3-conditional-inputs/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;level-3-conditional-inputs&#34;&gt;Level 3: Conditional Inputs&lt;/h1&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Create a formula on Ritchie that will &lt;strong&gt;return the tool selected by the user according to its profile&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You&amp;rsquo;ll find all the information you need about the &lt;strong&gt;conditional field&lt;/strong&gt; on the &lt;a href=&#34;https://docs.ritchiecli.io/how-to/implement-a-formula#1-config-json&#34;&gt;&lt;strong&gt;config.json file section&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Command suggestion: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;inputs&#34;&gt;Inputs&lt;/h2&gt;
+&lt;p&gt;This formula needs to contain (at least) those two inputs parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Profile (&lt;code&gt;RIT_PROFILE&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Profile tool (&lt;code&gt;RIT_TOOL&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The formula inputs will have to respect the diagram below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/ritchie-conditional-inputs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;step-by-step&#34;&gt;Step by step&lt;/h2&gt;
+&lt;p&gt;The formula needs to follow the next steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extract all inputs parameters.&lt;/li&gt;
+&lt;li&gt;Return the selected profile on the terminal.&lt;/li&gt;
+&lt;li&gt;Return the selected tool on the terminal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;improvement-suggestions&#34;&gt;Improvement suggestions&lt;/h2&gt;
+&lt;p&gt;If you want to play a little more, here are some suggestions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install the selected tool according to the computer OS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;👉 If you&amp;rsquo;ve completed the third challenge, let&amp;rsquo;s go to the &lt;a href=&#34;level-4.md&#34;&gt;&lt;strong&gt;level 4 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Challenges: Level 4 Encapsulation</title>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-4-encapsulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-4-encapsulation/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;level-4-encapsulation&#34;&gt;Level 4: Encapsulation&lt;/h1&gt;
+&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
+&lt;p&gt;Create a formula on Ritchie that will &lt;strong&gt;encapsulate another formula inside it.&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You&amp;rsquo;ll find all the informations you need in the &lt;a href=&#34;../tutorials/formulas/encapsulate-formulas.md&#34;&gt;&lt;strong&gt;how to encapsulate formulas&lt;/strong&gt;&lt;/a&gt; tutorial section.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The idea is to encapsulate at least 2 formulas inside another one:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit math sum numbers&lt;/code&gt;&lt;/strong&gt; (Level 1)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit math multiply numbers&lt;/code&gt;&lt;/strong&gt; (TODO)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Command suggestion: &lt;strong&gt;&lt;code&gt;rit math calculate&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;inputs&#34;&gt;Inputs&lt;/h2&gt;
+&lt;p&gt;This formula needs to contain (at least) those three inputs parameters:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Number one (&lt;code&gt;RIT_UMBER_ONE&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Number two (&lt;code&gt;RIT_NUMBER_TWO&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;Operation (&lt;code&gt;RIT_OPERATION&lt;/code&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;step-by-step&#34;&gt;Step by step&lt;/h2&gt;
+&lt;p&gt;To implement this formula, it will be necessary to follow the steps below:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Premisse:&lt;/strong&gt; Creation of the &lt;strong&gt;&lt;code&gt;rit math multiply numbers&lt;/code&gt;&lt;/strong&gt; formula (same as level 1).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Extract all inputs parameters.&lt;/li&gt;
+&lt;li&gt;Execute the rit formula according to the selected operation:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;multiply&lt;/strong&gt; should call &lt;strong&gt;&lt;code&gt;rit math multiply numbers&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sum&lt;/strong&gt; should call &lt;strong&gt;&lt;code&gt;rit math sum numbers&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Return the result on the terminal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;improvement-suggestions&#34;&gt;Improvement suggestions&lt;/h2&gt;
+&lt;p&gt;If you want to play a little more, here are some suggestions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add more operations.&lt;/li&gt;
+&lt;li&gt;Add the option to inform any quantity of numbers as inputs.&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
