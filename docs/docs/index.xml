@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ritchie – Overview</title>
+    <title>Ritchie – Documentation</title>
     <link>https://zupit.github.io/docs-ritchie/docs/</link>
-    <description>Recent content in Overview on Ritchie</description>
+    <description>Recent content in Documentation on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-ritchie/docs/index.xml" rel="self" type="application/rss+xml" />

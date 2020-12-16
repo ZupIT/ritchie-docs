@@ -30,36 +30,6 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/</loc>
-    <lastmod>2020-12-08T17:03:11-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zupit.github.io/docs-ritchie/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://zupit.github.io/docs-ritchie/pt-br/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/docs/</loc>
-    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://zupit.github.io/docs-ritchie/docs/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt-br"
-                href="https://zupit.github.io/docs-ritchie/pt-br/docs/"
-                />
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/docs/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/</loc>
   </url>
   
@@ -267,6 +237,36 @@
                 rel="alternate"
                 hreflang="pt-br"
                 href="https://zupit.github.io/docs-ritchie/pt-br/docs/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/docs/</loc>
+    <lastmod>2020-12-16T13:15:07-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-ritchie/docs/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://zupit.github.io/docs-ritchie/pt-br/docs/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/</loc>
+    <lastmod>2020-12-16T13:15:07-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-ritchie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://zupit.github.io/docs-ritchie/pt-br/"
                 />
   </url>
   
