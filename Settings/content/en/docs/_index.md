@@ -1,27 +1,5 @@
 ---
-title: Overview
-weight: 5
-description: "In this section, you will find all initial information about Ritchie."
+title: Documentation
+cascade:
+  - type: "docs"
 ---
-
----
-
-## What is Ritchie?
-
-Ritchie is an **open source framework** that allows you to create, store and share any kind of automations, executing them through command lines, to run operations or start workflows.
-
-{{< youtube PtKFco2pIqs >}}
-
-## **Versioning**
-
-Currently, Ritchie has **two available versions**. On this documentation, we'll focus on **Ritchie** **version 2.0.**
-
-### **What's new?**
-
-## **How does Ritchie work? → Through Formulas!**
-
-In Ritchie's context, **a formula is a script** that can be executed automatically or interactively through a command line.
-
-Adapting an existing script to Ritchie structure allows you to run it **locally** or through **Docker**, and to share it on a **Github** or **Gitlab** repository.
-
-![](/docs-ritchie/formula-ritchie-en.jpg)
