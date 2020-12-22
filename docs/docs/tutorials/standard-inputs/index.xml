@@ -1,0 +1,67 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Standard Inputs</title>
+    <link>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/</link>
+    <description>Recent content in Standard Inputs on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: How to use the stdin flag</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/how-to-use-the-stdin-flag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/how-to-use-the-stdin-flag/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt; flag on Ritchie has been developed to support this scenario as well.&lt;/p&gt;
+&lt;p&gt;In that case, the input parameters need to be informed in a &lt;strong&gt;JSON format&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;&#39;{&amp;quot;key&amp;quot;:&amp;quot;value&amp;quot;}&#39;&lt;/code&gt;&lt;strong&gt;&lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;RIT (GROUP) VERB NOUN&lt;/code&gt; &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can use this stdin flag rules on**:**&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: How to use input flags</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/how-to-use-input-flags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/how-to-use-input-flags/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;The &lt;strong&gt;Input flags&lt;/strong&gt; on Ritchie has been developed to give one more option to use input parameters through command lines.&lt;/p&gt;
+&lt;p&gt;In that case, the input parameters need to be informed following this pattern:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;RIT (GROUP) VERB NOUN&lt;/code&gt; &lt;strong&gt;&lt;code&gt;--input_name=&#39;input_value&#39;&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can use this stdin flag rules on**:**&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

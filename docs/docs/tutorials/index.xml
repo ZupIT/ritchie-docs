@@ -1,0 +1,67 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Tutorials</title>
+    <link>https://zupit.github.io/docs-ritchie/docs/tutorials/</link>
+    <description>Recent content in Tutorials on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Formulas</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/tutorials/formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/tutorials/formulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Credentials</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/tutorials/credentials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/tutorials/credentials/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Standard Inputs</title>
+      <link>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/docs/tutorials/standard-inputs/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Informing inputs through &lt;strong&gt;arguments&lt;/strong&gt; or &lt;strong&gt;flags&lt;/strong&gt; allows the user to automate workflows. It is particularly useful when you&amp;rsquo;re manipulating other tools within a script, as you can automate operations without having to interact with the terminal.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/screen-shot-2020-08-27-at-15.22.10.png&#34; alt=&#34;Executing a formula on Ritchie with Standard Inputs&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Basically, there are two ways to inform input parameters directly on the command lines:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Through the STDIN flag;&lt;/li&gt;
+&lt;li&gt;Through Input flags.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can check out more about each one on the following pages:&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
