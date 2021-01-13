@@ -1,0 +1,10 @@
+node_modules/
+package-lock.json
+yarn.lock
+yarn-error.log
+/static/playground/
+/resources/_gen/
+/public/
+.vscode/
+.idea/
+.DS_Store
