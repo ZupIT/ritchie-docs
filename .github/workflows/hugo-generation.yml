@@ -26,7 +26,6 @@ jobs:
 
       - name: Build
         run: |
-              cd Settings
               hugo -D
 
       - name: Deploy
