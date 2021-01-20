@@ -2,9 +2,6 @@
 title: "Ritchie"
 cascade:
   - type: "docs"
-    toc_root: true
     _target:
       path: "/**"
 ---
-
-<meta http-equiv="refresh" content="0; URL='docs'"/>
