@@ -13,5 +13,275 @@
       
     
     
+    <item>
+      <title>Referência: Lista de comandos e flags</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;comandos&#34;&gt;Comandos&lt;/h2&gt;
+&lt;h3 id=&#34;comandos-de-configuração&#34;&gt;Comandos de Configuração&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit init&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;inicia o Ritchie antes de usar&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit upgrade&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;upgrade da última versão estável do Ritchie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit tutorial&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;habilita ou desabilita o tutorial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit &amp;ndash;version&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;retorna qual a versão atual instalada do Ritchie&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;comandos-de-repositórios&#34;&gt;Comandos de Repositórios&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit add repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;adiciona um novo repositório (para ter acesso as fórmulas desse repositório com Ritchie)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit list repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;lista todos os repositórios disponíveis&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit update repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;atualiza todos os repositórios (para acessar novas fórmulas desses repositórios com o Ritchie)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;set repo-priority&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;configura a prioridade do repositório&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;apaga um repositório  (remove o acesso ao repositório de fórmulas com o Ritchie)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;comandos-de-fórmulas&#34;&gt;Comandos de Fórmulas&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Opera&amp;#xE7;&amp;#xE3;o&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;rit create formula&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;cria uma nova f&amp;#xF3;rmula do zero&lt;/p&gt;
+        &lt;p&gt;(como tamb&amp;#xE9;m um novo reposit&amp;#xF3;rio local, se necess&amp;#xE1;rio)&lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;rit build formula&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;compila uma f&amp;#xF3;rmula localmente para teste&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;rit build formula --watch&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;Compila uma f&amp;#xF3;rmula para teste, monitorando atualiza&amp;#xE7;&amp;#xF5;es
+        do c&amp;#xF3;digo no tempo real&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;comandos-de-autocomplete&#34;&gt;Comandos de Autocomplete&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion zsh&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;adiciona o autocomplete via zsh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion bash&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;adiciona o autocomplete via bash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion fish&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;adiciona o autocomplete via fish&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion powershell&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;adiciona o autocomplete via powershell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;comandos-de-contexto&#34;&gt;Comandos de Contexto&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit set context&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;configura um novo contexto na sessão&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit show context&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;mostra o contexto usado na sessão atual&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete context&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;remove um contexto da sessão&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;comandos-de-credenciais&#34;&gt;Comandos de Credenciais&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operação&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit set credential&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;configura credenciais na sessão&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit list credential&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;lista todas os nomes de credenciais e os campos&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete credential&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;permite apagar suas credenciais&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;comandos-de-workspaces-a-idworkspace-commandsa&#34;&gt;Comandos de Workspaces &lt;a id=&#34;workspace-commands&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Comandos&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operações&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit list workspace&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;lista todas as fórmulas do workspace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete workspace&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;remove uma fórmula específica do workspace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;h3 id=&#34;principais-flags&#34;&gt;Principais flags&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Flags&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operações&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;default&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;atribui os valores &lt;strong&gt;default&lt;/strong&gt; configurados na fórmula&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;docker&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;executa a fórmula usando &lt;strong&gt;Docker&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;retorna a lista dos comandos executáveis pelo usuário&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;local&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;executa a fórmula &lt;strong&gt;localmente&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;verbose&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;executa a fórmula sem detalhes dos logs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Referência: Release Notes</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/release-notes/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Referência: Roadmap</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Referência: Youtube</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>

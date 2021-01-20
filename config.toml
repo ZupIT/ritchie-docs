@@ -1,6 +1,6 @@
 baseURL = "https://zupit.github.io/docs-ritchie/"
 
-publishDir = "../docs"
+publishDir = "./docs"
 
 title = "Ritchie"
 
