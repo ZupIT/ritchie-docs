@@ -1,7 +1,6 @@
 ---
-title: "Ritchie"
-cascade:
-  - type: "docs"
-    _target:
-      path: "/**"
+title: "Documentation"
+linkTitle: "Documentation"
+weight: 20
+type: list
 ---
