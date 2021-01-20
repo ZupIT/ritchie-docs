@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/vis%C3%A3o-geral/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/principais-conceitos/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/ritchie-v1.0-v2.0/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-ritchie/ritchie-v1.0-v2.0/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://zupit.github.io/docs-ritchie/pt-br/ritchie-v1.0-v2.0/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/guia-de-come%C3%A7o-r%C3%A1pido/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/linux/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/macos/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/windows/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/inicializa%C3%A7%C3%A3o-do-cli/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-definir-credenciais/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-apagar-credenciais/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-usar-credenciais-como-par%C3%A2metros-de-entrada/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-core/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-de-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-1-inputs/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/release-notes/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/roadmap/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/refer%C3%AAncia/youtube/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/sobre-ritchie/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/gloss%C3%A1rio/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/faq/</loc>
+    <lastmod>2020-12-08T18:08:25-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-ritchie/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://zupit.github.io/docs-ritchie/pt-br/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/</loc>
+    <lastmod>2021-01-19T17:57:22-03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://zupit.github.io/docs-ritchie/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="https://zupit.github.io/docs-ritchie/pt-br/"
+                />
+  </url>
+  
+</urlset>
