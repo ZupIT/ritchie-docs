@@ -3,55 +3,34 @@ title: Key Concepts
 weight: 2
 description: >-
   In this section, you will find definitions for the main terms and expressions
-  used in the documentation and in Ritchie, or in discussions within the
-  developer community.
+  used in the doc and/or in Ritchie.
 ---
 
 ---
-
-{{% alert color="danger" %}}
-Let's assume you're familiar with **Standard Streams,** **CLI**, **JSON** format and **automations** concepts. If you want to know more about it, check out our [**glossary**](glossary). 
-{{% /alert %}}
 
 ## Formulas
 
+**Formulas** are nothing more than **automations**. That is, they are codes called through command lines to perform some operation. 
+
+## **Formulas execution**
+
 {{% alert color="info" %}}
-**Formulas** are nothing more than **automations**. That is, they are codes called through the command lines to perform some operation. 
+Formulas are executed after running command lines on the terminal.
 {{% /alert %}}
 
-## **Formulas o**n demand
+Depending on the formula, the user might need to inform input parameters.  
+  
+Those input parameters can be informed in different ways:
 
-The first time the user executes the command associated with a formula on the terminal, the executable file for that formula is downloaded according to the operating system installed on his computer. 
+* After running the command on the terminal \(via **prompt**\) 
+* When typing the command on the terminal \(via **stdin** or **input flags**\) 
+* During the execution of the formula \(if coded using **prompt**\)
 
-The config.json file is downloaded at the same time, with the **formula input parameters**, necessary for the code implemented in the executable file to be executed. 
-
-These input parameters will be informed by the user: 
-
-* after he types the command in the terminal \(if via [prompt](getting-started/commands/prompt)\) 
-* before typing the command in the terminal \(if via [stdin](getting-started/commands/stdin)\) 
-
-... before actually executing the formula.  
+![](/start-end-ritchie%20%281%29.jpg)
 
 
-![](/fluxo-formulas%20%283%29.png)
 
-## Execution of a formula \(with prompt\)
 
-![](/rit-scaffold-generate-coffee-go.gif)
-
-**`rit scaffold generate coffee-go`** is an executable command associated with a formula in the CLI's tree.
-
-As it was the first time that the command was executed, it is possible to observe that Ritchie downloaded a config file and the formula's binary in sequence.
-
-After downloading the files, Ritchie asked the user for some datas: 
-
-* name
-* type of coffee 
-* delivery
-
-Those datas are the **input** **parameters** of the formula.
-
-Once these parameters were informed, the formula was successfully executed \(according to what the logs presented\).
 
 ## Command Tree
 
@@ -63,23 +42,32 @@ It is important to know this concept in order to actually understand the structu
 
 In the case of Ritchie, the **Cobra** \(a Golang library\) pattern was followed using the following logic of building core commands:
 
-                                                 **RIT + VERB + NOUN**
+**`RIT + VERB + NOUN`**
 
 To allow more options and freedom for users, it is also allowed to follow the pattern below in the construction of formula commands:
 
-                                        **RIT + GROUP + VERB + NOUN**
+**`RIT + GROUP + VERB + NOUN`**
 
-The app name is Ritchie, so we use the name **rit** to start our command tree.
+The app name is Ritchie, so we use the name **`rit`** to start our command tree.
 
-![](/arvore-rit%20%281%29.png)
+![](/arvore-rit%20%281%29%20%281%29.png)
 
-The **rit** command is therefore our parent command, or **root**. It is not executable \(it means that it will not start any operations if you use it alone in the terminal\). It is necessary to use executable sub-commands \(which are child commands, or branches, of the rit command\) in order to start any process.
+{{% alert color="warning" %}}
+The **rit** command is therefore our parent command, or **root**. It is not executable \(it means that it will not start any operations if you use it alone in the terminal\), but has been configured to return the **helper command**.
+
+It is necessary to use executable sub-commands \(which are child commands, or branches, of the rit command\) in order to start any process.
+{{% /alert %}}
 
 The executable commands in Ritchie are the commands located at the last level of the tree.  
   
 For example, in the image above: 
 
-* The **rit set context** command is executable, as it is at the last level of the tree. 
-* The **rit kafka create** command is not executable as there is an executable **topic** subcommand, at the last level of the tree.
+* The **`rit set context`** command is executable, as it is at the last level of the tree. 
+* The **`rit kafka create`** command is not executable as there is an executable **topic** subcommand, at the last level of the tree.
 
-This command tree concept is the **core** of Ritchie's structure. All commands and sub-commands are mapped into a json that is updated or created when you download or update the CLI on your computer.
+This command tree concept is the **core** of Ritchie's structure.   
+
+
+{{% alert color="info" %}}
+All commands and sub-commands are mapped in a tree dynamically created according to the repositories the user added locally on his computer by using the **`rit add repo`** command.
+{{% /alert %}}

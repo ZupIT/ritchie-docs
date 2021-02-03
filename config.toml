@@ -216,8 +216,8 @@ url = ""
 # Add your release versions here
 [[params.versions]]
 url = "https://docs.ritchiecli.io/v/master/"
-version = "v1.0.0"
+version = "v2.8.0"
 
 [[params.versions]]
 url = "https://docs.ritchiecli.io/v/doc-portuguese/"
-version = "v1.0.0 (pt-BR)"
+version = "v2.8.0 (pt-BR)"
