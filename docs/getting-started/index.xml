@@ -1,230 +1,489 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Ritchie – Getting Started</title>
-    <link>https://zupit.github.io/docs-ritchie/getting-started/</link>
-    <description>Recent content in Getting Started on Ritchie</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://zupit.github.io/docs-ritchie/getting-started/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-    <item>
-      <title>Getting Started: Linux</title>
-      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;h2 id=&#34;step-1-requirements&#34;&gt;Step 1: Requirements&lt;/h2&gt;
-&lt;p&gt;If you want to efficiently use Ritchie on Linux with version &lt;strong&gt;&lt;code&gt;2.0.5 and earlier&lt;/code&gt;&lt;/strong&gt;, we recommend to install the following element configured:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;strong&gt;make&lt;/strong&gt; command&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Once you have it, just run the command below at your terminal.&lt;/p&gt;
-&lt;h2 id=&#34;step-2-installing-command&#34;&gt;Step 2: Installing command&lt;/h2&gt;
-&lt;p&gt;Copy and paste the command below to run on your terminal:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-If you prefer, you also can follow with the&lt;a href=&#34;manual-installation.md&#34;&gt; &lt;strong&gt;manual installation&lt;/strong&gt;.&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;step-3-verify-installation&#34;&gt;Step 3: Verify installation&lt;/h2&gt;
-&lt;p&gt;You can confirm if your installation went well by running this command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If everything&amp;rsquo;s configured, the terminal will return Ritchie&amp;rsquo;s current version.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Getting Started: Macos</title>
-      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;p&gt;To install the &lt;strong&gt;latest version of Ritchie&lt;/strong&gt; for MacOS, you just have to run the command below on your terminal. However, it is important to keep in mind &lt;strong&gt;there are some requirements&lt;/strong&gt; before starting the installation on MacOS.&lt;/p&gt;
-&lt;h2 id=&#34;step-1-requirements&#34;&gt;Step 1: Requirements&lt;/h2&gt;
-&lt;p&gt;To use Ritchie on MacOs with version &lt;strong&gt;&lt;code&gt;2.0.5 and earlier&lt;/code&gt;&lt;/strong&gt;, we recommend to install the following elements:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;The &lt;strong&gt;make&lt;/strong&gt; command (&lt;a href=&#34;https://stackoverflow.com/questions/1469994/using-make-on-os-x&#34;&gt;&lt;strong&gt;Using &amp;ldquo;make&amp;rdquo; on macOS&lt;/strong&gt;&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;md5sum&lt;/strong&gt; tools&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
-
-&lt;p&gt;To install &lt;strong&gt;md5sum&lt;/strong&gt; with &lt;em&gt;&lt;strong&gt;Homebrew&lt;/strong&gt;&lt;/em&gt; , use: &lt;code&gt;brew install md5sha1sum&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;To install &lt;strong&gt;md5sum&lt;/strong&gt; with &lt;em&gt;&lt;strong&gt;MacPorts&lt;/strong&gt;&lt;/em&gt; , use: &lt;code&gt;sudo port install md5sha1sum&lt;/code&gt;&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;step-2-installing-command&#34;&gt;Step 2: Installing command&lt;/h2&gt;
-&lt;h3 id=&#34;first-option&#34;&gt;First option&lt;/h3&gt;
-&lt;p&gt;The command used to install Ritchie at your terminal is:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-If you prefer, you also can follow with the&lt;a href=&#34;manual-installation.md&#34;&gt; &lt;strong&gt;manual installation&lt;/strong&gt;.&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;h3 id=&#34;second-option&#34;&gt;Second option&lt;/h3&gt;
-&lt;p&gt;You can also &lt;strong&gt;download the Ritchie CLI package&lt;/strong&gt; through the command line below, to &lt;strong&gt;install it manually.&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;step-3-verify-installation&#34;&gt;Step 3: Verify installation&lt;/h2&gt;
-&lt;p&gt;You can confirm if your installation went well by running this command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If everything&amp;rsquo;s configured, the terminal will return Ritchie&amp;rsquo;s current version.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Getting Started: Windows</title>
-      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/windows/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/windows/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;p&gt;To install &lt;strong&gt;the latest version of Ritchie&lt;/strong&gt; on Windows, you have to download Ritchie&amp;rsquo;s installer and run it on your terminal.&lt;/p&gt;
-&lt;h2 id=&#34;step-1-installation&#34;&gt;Step 1: Installation&lt;/h2&gt;
-&lt;p&gt;You must &lt;a href=&#34;https://commons-repo.ritchiecli.io/latest/ritchiecli.msi&#34;&gt;&lt;strong&gt;download Ritchie&amp;rsquo;s installer&lt;/strong&gt;&lt;/a&gt; to make this configuration. Once you made it, follow the instructions on your terminal.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-If you prefer, you also can proceed with the&lt;a href=&#34;manual-installation.md&#34;&gt; &lt;strong&gt;manual installation&lt;/strong&gt;.&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;step-2-verify-installation&#34;&gt;Step 2: Verify installation&lt;/h2&gt;
-&lt;p&gt;You can confirm if your installation went well by running this command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit --version
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If everything&amp;rsquo;s configured, the terminal will return Ritchie&amp;rsquo;s current version.&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Getting Started: Manual Installation</title>
-      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;p&gt;If you choose to make the manual process of Ritchie&amp;rsquo;s installation, you have to follow the guideline: &lt;strong&gt;get the latest Ritchie&amp;rsquo;s version and inform the URL below on your navigator.&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;The link:&lt;/strong&gt; &lt;a href=&#34;https://commons-repo.ritchiecli.io/stable.txt&#34;&gt;&lt;strong&gt;https://commons-repo.ritchiecli.io/stable.txt&lt;/strong&gt;&lt;/a&gt;&lt;strong&gt;​&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Basically, when you indicate the URL above on your navigator, the system returns the latest version of Ritchie. For example, it can return &lt;strong&gt;1.0.1 or 2.0.1&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;how-to-install&#34;&gt;How to install?&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Download the Ritchie binary version;&lt;/li&gt;
-&lt;li&gt;Enter the URL below in your browser by informing &lt;strong&gt;the version&lt;/strong&gt; &lt;strong&gt;{VERSION}&lt;/strong&gt; as obtained in step 1.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3 id=&#34;installation-for-macos-a-idinstallation-for-maca&#34;&gt;&lt;strong&gt;Installation for MacOS&lt;/strong&gt; &lt;a id=&#34;installation-for-mac&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installation-for-linux-a-idinstallation-for-linuxa&#34;&gt;&lt;strong&gt;Installation for Linux&lt;/strong&gt; &lt;a id=&#34;installation-for-linux&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/linux/rit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installation-for-windows--a-idinstallation-for-windowsa&#34;&gt;&lt;strong&gt;Installation for Windows&lt;/strong&gt;  &lt;a id=&#34;installation-for-windows&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/windows/rit.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;manual-settings--a-idmanual-settingsa&#34;&gt;&lt;strong&gt;Manual settings&lt;/strong&gt;  &lt;a id=&#34;manual-settings&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;how-to-create-a-folder-a-idfolder-creationa&#34;&gt;&lt;strong&gt;How to create a folder?&lt;/strong&gt; &lt;a id=&#34;folder-creation&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;First, run the command below to create a folder &lt;code&gt;$HOME/.rit/bin&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;mkdir -p $HOME/.rit/bin
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;2. Then, copy and paste the binary to the folder above.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;​cd $HOME/.rit/bin 
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Getting Started</title><link>https://zupit.github.io/getting-started/</link><description>Recent content in Getting Started on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/getting-started/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started: Choosing a version</title><link>https://zupit.github.io/getting-started/choosing-a-version/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/choosing-a-version/</guid><description>
+&lt;hr>
+&lt;h2 id="intro">Intro&lt;/h2>
+&lt;p>Before you begin to use Ritchie, it is necessary to choose one of available versions :&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Single version&lt;/strong>: suitable for freelance professionals;&lt;/li>
+&lt;li>&lt;strong>Team version&lt;/strong>: suitable for teams or professionals of a corporation.&lt;/li>
+&lt;/ul>
+&lt;p>Both versions were created to meet the different needs of infrastructure analysts, SREs, architects or software engineers.&lt;/p>
+&lt;p>In practice, the main difference between the versions is in the use (or not) of a server for storing the &lt;strong>formulas&lt;/strong>, mandatory for those who use the Team Version, since, in the case of those who use Ritchie for corporate projects, it is necessary to ensure security information to protect sensitive data.&lt;/p>
+&lt;p>&lt;img src="https://zupit.github.io/team-and-single.png" alt="Versions single and team architecture ">&lt;/p>
+&lt;h2 id="comparing-versions">&lt;strong>Comparing versions&lt;/strong>&lt;/h2>
+&lt;p>&lt;img src="https://zupit.github.io/captura_de_tela_2020-06-09_as_09.55.22.png" alt="">&lt;/p>
+&lt;h2 id="single-version">&lt;strong>Single version&lt;/strong>&lt;/h2>
+&lt;p>The main characteristics of this version are:&lt;/p>
+&lt;ul>
+&lt;li>Access to community formulas.&lt;/li>
+&lt;li>The possibility to test new formulas on a local repository.&lt;/li>
+&lt;li>Encrypted information on the local machine.&lt;/li>
+&lt;/ul>
+&lt;h3 id="repositories">Repositories&lt;/h3>
+&lt;p>If you choose the &lt;strong>Single Version,&lt;/strong> you are able to access two repositories:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-cli">&lt;strong>ritchie-cli&lt;/strong>&lt;/a>: this repository contains the core of the tool.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formulas&lt;/strong>&lt;/a>: this repository contains the formulas shared with the community that every Ritchie user can access, update and execute through the terminal.&lt;/li>
+&lt;/ol>
+&lt;p>&lt;img src="https://zupit.github.io/single-ritchie.png" alt="">&lt;/p>
+&lt;h2 id="team-version">Team version&lt;/h2>
+&lt;p>The main characteristics of this version are:&lt;/p>
+&lt;ul>
+&lt;li>Access to community formulas as well as team formulas;&lt;/li>
+&lt;li>The possibility to test new formulas on a local repository;&lt;/li>
+&lt;li>Encrypted information on the server session.&lt;/li>
+&lt;/ul>
+&lt;h3 id="repositories-1">Repositories&lt;/h3>
+&lt;p>With the &lt;strong>Team Version&lt;/strong> is possible to access more repositories:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-cli">&lt;strong>ritchie-cli&lt;/strong>&lt;/a>: this repository contains the core of the tool.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formulas&lt;/strong>&lt;/a>: this repository contains the formulas shared with the community that every Ritchie user can access, update and execute through the terminal.&lt;/li>
+&lt;li>&lt;a href="https://github.com/ZupIT/ritchie-server">&lt;strong>ritchie-server&lt;/strong>&lt;/a>: This repository contains the integrations with the platforms &lt;a href="https://www.keycloak.org/">Keycloak&lt;/a> &amp;amp; &lt;a href="https://www.vaultproject.io/">Vault&lt;/a>, used to create the session and store datas securely.&lt;/li>
+&lt;/ol>
+&lt;div class="alert alert-warning" role="alert">
+It is also possible to store your team specific formulas in &lt;strong>other repositories&lt;/strong>, and access them through &lt;a href="https://docs.ritchiecli.io/software-architecture-1/security#login-command">the login command&lt;/a>.
+&lt;/div>
+&lt;p>&lt;img src="https://zupit.github.io/team-ritchie-white.png" alt="">&lt;/p></description></item><item><title>Getting Started: Linux</title><link>https://zupit.github.io/getting-started/installing-ritchie/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/installing-ritchie/linux/</guid><description>
+&lt;hr>
+&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
+&lt;p>To install the &lt;strong>latest version of Ritchie&lt;/strong>, you just have to execute the command below at your terminal according to the version you want to use.&lt;/p>
+&lt;h3 id="installing-team-version">Installing Team Version&lt;/h3>
+&lt;p>The command used to install Ritchie Team at your terminal is:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading">&lt;/h3>
+&lt;h3 id="installing-single-version">Installing Single Version&lt;/h3>
+&lt;p>The command used to install Ritchie Single at your terminal is:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">curl -fsSL https://commons-repo.ritchiecli.io/install_single.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you prefer, you also can follow with&lt;a href="manual-installation"> &lt;strong>manual installation&lt;/strong>.&lt;/a>&lt;/p></description></item><item><title>Getting Started: Windows</title><link>https://zupit.github.io/getting-started/installing-ritchie/windows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/installing-ritchie/windows/</guid><description>
+&lt;hr>
+&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
+&lt;p>To install &lt;strong>the latest version of Ritchie (1.0.0-beta.17)&lt;/strong> on Windows, you just have to click on the links available for each version.&lt;/p>
+&lt;p>However, it is important to keep in mind &lt;strong>there are some requirements&lt;/strong> before starting the installation on Windows.&lt;/p>
+&lt;h3 id="requirements">Requirements&lt;/h3>
+&lt;p>If you wanna use efficiently Ritchie on Windows, our recommendation is to install the following programs:&lt;/p>
+&lt;ul>
+&lt;li>Powershell&lt;/li>
+&lt;li>Cygwin&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>&lt;strong>Cygwin Configurations :&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>You need to install the &lt;strong>make&lt;/strong> package inside Cygwin, &lt;a href="https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment?rq=1#:~:text=Run%20the%20Cygwin%20installation%2Fconfiguration,Development%22%20or%20something%20similar%29.">as suggested here&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>You&amp;rsquo;ll also have to configure the file &lt;strong>/etc/nsswitch.conf&lt;/strong> inside the folder (/ProgramFiles) and add this non commented line:&lt;strong>&lt;code>db_home: /%H&lt;/code>&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h3 id="instalando-versão-team">Instalando Versão Team&lt;/h3>
+&lt;p>Click on the following link to&lt;a href="https://commons-repo.ritchiecli.io/1.0.0-beta.17/windows/team/rit.exe"> install Ritchie Team&lt;/a>.&lt;/p>
+&lt;h3 id="instalando-versão-single">Instalando Versão Single&lt;/h3>
+&lt;p>Click on the following link to &lt;a href="https://commons-repo.ritchiecli.io/1.0.0-beta.17/windows/single/rit.exe">install Ritchie Single.&lt;/a>&lt;/p>
+&lt;p>If you prefer, you also can follow with&lt;a href="manual-installation"> &lt;strong>manual installation&lt;/strong>.&lt;/a>&lt;/p>
+&lt;h2 id="use-ritchie-on-windows">Use Ritchie on Windows&lt;/h2>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>The PATH to use Ritchie on Windows &lt;strong>IS NOT&lt;/strong> configured when you download it.&lt;/p>
+&lt;p>As long as it hasn&amp;rsquo;t been configured, the user will have to go inside the folder where the &lt;strong>rit.exe file&lt;/strong> has been downloaded to execute Ritchie through this file. Example : &lt;strong>&lt;code>rit.exe init&lt;/code>&lt;/strong>&lt;/p>
+&lt;/div>
+&lt;p>You&amp;rsquo;ll find a guide about how to set a path here : &lt;a href="https://www.java.com/en/download/help/path.xml">&lt;strong>How do I set or change the PATH system variable?&lt;/strong>&lt;/a>&lt;/p></description></item><item><title>Getting Started: Macos</title><link>https://zupit.github.io/getting-started/installing-ritchie/macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/installing-ritchie/macos/</guid><description>
+&lt;hr>
+&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
+&lt;p>To install the &lt;strong>latest version of Ritchie&lt;/strong> for MacOS, you just have to execute the command below on your terminal according to the version you want to work with.&lt;/p>
+&lt;p>However, it is important to keep in mind &lt;strong>there are some requirements&lt;/strong> before starting the installation on Windows.&lt;/p>
+&lt;h3 id="requirements">Requirements&lt;/h3>
+&lt;p>If you wanna use efficiently Ritchie on MacOs, our recommendation is to have the following elements configured:&lt;/p>
+&lt;ul>
+&lt;li>the &lt;strong>make&lt;/strong> command (&lt;a href="https://stackoverflow.com/questions/1469994/using-make-on-os-x">Using &amp;ldquo;make&amp;rdquo; on macOS&lt;/a>)&lt;/li>
+&lt;li>&lt;em>5sum&lt;/em>* tools&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>Install &lt;em>5sum&lt;/em>* with _**Homebrew**_ : &lt;code>brew install5sha1sum&lt;/code>&lt;/p>
+&lt;p>Install &lt;em>5sum&lt;/em>* with _**MacPorts**_ : &lt;code>sudo port install5sha1sum&lt;/code>&lt;/p>
+&lt;/div>
+&lt;h3 id="heading">&lt;/h3>
+&lt;h3 id="installing-team-version">Installing Team Version&lt;/h3>
+&lt;p>The command used to install Ritchie Team at your terminal is:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading-1">&lt;/h3>
+&lt;h3 id="installing-single-version">Installing Single Version&lt;/h3>
+&lt;p>The command used to install Ritchie Single at your terminal is:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">curl -fsSL https://commons-repo.ritchiecli.io/install_single.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>If you prefer, you also can follow with&lt;a href="manual-installation"> &lt;strong>manual installation&lt;/strong>.&lt;/a>&lt;/p></description></item><item><title>Getting Started: Manual Installation</title><link>https://zupit.github.io/getting-started/installing-ritchie/manual-installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/installing-ritchie/manual-installation/</guid><description>
+&lt;hr>
+&lt;h2 id="how-does-it-work">How does it work?&lt;/h2>
+&lt;p>&lt;strong>In case you decide to make the manual process of Ritchie installation&lt;/strong>, it&amp;rsquo;s necessary to obey the following premise: get the latest version of Ritchie, informing the URL below your navigator.&lt;/p>
+&lt;p>The link: &lt;a href="https://commons-repo.ritchiecli.io/stable.txt">https://commons-repo.ritchiecli.io/stable.txt&lt;/a>&lt;/p>
+&lt;p>Basically, when you indicate the URL above on your navigator, the system returns the latest version of Ritchie. For example, it can return &lt;strong>1.0.0-beta.7&lt;/strong> or &lt;strong>1.0.0&lt;/strong>&lt;/p>
+&lt;h3 id="step-by-step">Step by step&lt;/h3>
+&lt;p>Download the Ritchie binary version by entering the URL below in your browser by informing &lt;strong>the version&lt;/strong> &lt;strong>{VERSION}&lt;/strong> as obtained in step 1.&lt;/p>
+&lt;h3 id="installation-for-mac">&lt;strong>Installation for MAC&lt;/strong>&lt;/h3>
+&lt;h4 id="team-version-url">&lt;strong>Team Version URL&lt;/strong>&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/{VERSION}/darwin/team/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="single-version-url">Single Version URL&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/{VERSION}/darwin/single/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="installation-for-linux">&lt;strong>Installation for Linux&lt;/strong>&lt;/h3>
+&lt;h4 id="team-version-url-1">&lt;strong>Team Version URL&lt;/strong>&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/{VERSION}/linux/team/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Single Version URL&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/{VERSION}/linux/single/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading">&lt;/h3>
+&lt;h3 id="installation-for-windows">&lt;strong>Installation for Windows&lt;/strong>&lt;/h3>
+&lt;h4 id="team-version-url-2">&lt;strong>Team Version URL&lt;/strong>&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/{VERSION}/windows/team/rit.exe
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Single Version URL&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/{VERSION}/windows/single/rit.exe
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="manual-settings">&lt;strong>Manual settings&lt;/strong>&lt;/h2>
+&lt;h3 id="folder-creation">&lt;strong>Folder creation&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>→&lt;/strong> Create a folder &lt;code>$HOME/.rit/bin&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Comando Linux / MacOs
+mkdir -p $HOME/.rit/bin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>→ Copy the binary to the folder above.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Comandos Linux / MacOs
+cd $HOME/.rit/bin
 cp $HOME/Downloads/rit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;Lastly, run a permission to run:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;chmod +x rit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;how-to-configure-the-bashrc-ou-etcprofile-or-zshrc-linux--macos-a-idconfigure-the-bashrc-ou-etc-profile-or-zshrc-linux-macosa&#34;&gt;&lt;strong&gt;How to configure the .bashrc ou /etc/profile or .zshrc (Linux / MacOS)&lt;/strong&gt; &lt;a id=&#34;configure-the-bashrc-ou-etc-profile-or-zshrc-linux-macos&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;To ZSH, define a new PATH by copying the following code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export RIT_PATH=$HOME/.rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>→ Permission to execute.&lt;/p>
+&lt;pre>&lt;code>Comando Linux / MacOs :
+chmod +x rit
+&lt;/code>&lt;/pre>&lt;h3 id="configure-the-bashrc-ou-etcprofile-or-zshrc-linux--macos">&lt;strong>Configure the .bashrc ou /etc/profile or .zshrc (Linux / MacOS)&lt;/strong>&lt;/h3>
+&lt;p>To ZSH, define a new PATH by copying the following code:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">export RIT_PATH=$HOME/.rit
 PATH=$RIT_PATH/bin:$PATH
 rit completion zsh &amp;gt; ~/.rit_completion
 source ~/.rit_completion
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To Bash, define a new PATH by copying the following code:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export RIT_PATH=$HOME/.rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>To Bash, define a new PATH by copying the following code:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">export RIT_PATH=$HOME/.rit
 PATH=$RIT_PATH/bin:$PATH
 rit completion bash &amp;gt; ~/.rit_completion
-source ~/.rit_completion​
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;setting-environment-variables-windows-a-idsetting-environment-variables-windowsa&#34;&gt;Setting environment variables (Windows) &lt;a id=&#34;setting-environment-variables-windows&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;For this operating system, you need to call rit on the terminal directly from rit.exe (&lt;strong&gt;rit.exe login&lt;/strong&gt; command for example)&lt;/p&gt;
-&lt;p&gt;It is possible (and suggested) to create an environment variable for rit to facilitate the use of the CLI.&lt;/p&gt;
-&lt;p&gt;Here are some articles explaining how to add an environment variable in Windows:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Adding &lt;a href=&#34;https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/&#34;&gt;&lt;strong&gt;through interface&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Adding&lt;a href=&#34;https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente&#34;&gt; &lt;strong&gt;through terminal&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Getting Started: Initialize Cli</title>
-      <link>https://zupit.github.io/docs-ritchie/getting-started/initialize-cli/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/getting-started/initialize-cli/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-&lt;h2 id=&#34;step-1-initialization&#34;&gt;Step 1: Initialization&lt;/h2&gt;
-&lt;p&gt;Run the following command to initialize Ritchie:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will ask the user three questions:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;If he &lt;strong&gt;wants to contribute anonymously&lt;/strong&gt; to Ritchie metrics.&lt;/li&gt;
-&lt;li&gt;If he &lt;strong&gt;wants to add the community&lt;/strong&gt; formulas locally.&lt;/li&gt;
-&lt;li&gt;If he &lt;strong&gt;wants the default&lt;/strong&gt; &lt;a href=&#34;../tutorials/formulas/how-to-run-formulas/&#34;&gt;&lt;strong&gt;formula execution method&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;to be local or through docker.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/rit-init%20%283%29.gif&#34; alt=&#34;rit init command&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Then, the command execution will create all the necessary configuration&amp;rsquo;s files.&lt;/p&gt;
-&lt;h2 id=&#34;step-2-verify-initialization&#34;&gt;Step 2: Verify Initialization&lt;/h2&gt;
-&lt;h3 id=&#34;1-commons-repository&#34;&gt;1. Commons repository&lt;/h3&gt;
-&lt;p&gt;If you added the community formulas repository, you can check it by using the following command:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit list repo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will return all formulas repositories the user has access locally.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/large-gif-1448x466-.gif&#34; alt=&#34;rit list repo command&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;2-ritchie-folder&#34;&gt;2. Ritchie folder&lt;/h3&gt;
-&lt;p&gt;You can then check the &lt;strong&gt;&lt;code&gt;.rit&lt;/code&gt;&lt;/strong&gt; folder has been created on your &lt;strong&gt;&lt;code&gt;$HOME&lt;/code&gt;&lt;/strong&gt; directory.&lt;/p&gt;
-
-
-&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
-
-All operations done using Ritchie will be saved in this &lt;strong&gt;.rit&lt;/strong&gt; &lt;strong&gt;folder&lt;/strong&gt; (credentials, repos, metrics&amp;hellip;)
-&lt;/div&gt;
-
-
-      </description>
-    </item>
-    
-  </channel>
-</rss>
+source ~/.rit_completion
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="setting-environment-variables-windows">Setting environment variables (Windows)&lt;/h3>
+&lt;p>For this operating system, you need to call rit on the terminal directly from rit.exe (&lt;strong>rit.exe login&lt;/strong> command for example)&lt;/p>
+&lt;p>It is possible (and suggested) to create an environment variable for rit to facilitate the use of the CLI.&lt;/p>
+&lt;p>Here are some articles explaining how to add an environment variable in Windows.&lt;/p>
+&lt;p>&lt;a href="https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/">Through interface&lt;/a>&lt;br>
+&lt;a href="https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente">Through terminal&lt;/a>&lt;/p></description></item><item><title>Getting Started: Initialization</title><link>https://zupit.github.io/getting-started/initialization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/initialization/</guid><description>
+&lt;hr>
+&lt;h2 id="introduction">&lt;strong>Introduction&lt;/strong>&lt;/h2>
+&lt;p>When you finish your&lt;a href="https://docs.ritchiecli.io/getting-started/installation"> &lt;strong>installing process&lt;/strong>&lt;/a>, it&amp;rsquo;s necessary make the Ritchie&amp;rsquo;s initialization and this procedure varies according to the &lt;a href="https://docs.ritchiecli.io/getting-started/choosing-a-version">&lt;strong>version&lt;/strong> &lt;/a>you&amp;rsquo;re using.&lt;/p>
+&lt;p>The command to execute the initialization is:&lt;strong>&lt;code>$ rit init&lt;/code>&lt;/strong>&lt;/p>
+&lt;h2 id="single-version">Single Version&lt;/h2>
+&lt;p>On this version, it will be necessary to inform :&lt;/p>
+&lt;ul>
+&lt;li>a &lt;strong>passphrase&lt;/strong> that will be used to encrypt datas locally with Ritchie.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">➜ rit init
+Define a passphrase for your machine: **
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="team-version">Team Version&lt;/h2>
+&lt;p>On this version, it will be necessary to inform :&lt;/p>
+&lt;ul>
+&lt;li>the &lt;strong>organization&lt;/strong> which the user plan to access.&lt;/li>
+&lt;li>the &lt;strong>server URL&lt;/strong> used by this organization.&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+You can&amp;rsquo;t use the &lt;strong>Team&lt;/strong> version &lt;strong>without having a configured server&lt;/strong>.
+&lt;/div>
+&lt;ul>
+&lt;li>&lt;strong>if the user want to perform login&lt;/strong> to the organization now, or later using the**&lt;code>rit login&lt;/code>** command.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">➜ rit init
+Enter your organization: zup
+URL of the server [http(s)://host]: https://ritchie-server.zup.io
+Use the arrow keys to navigate: ↓ ↑ → ←
+You can perform login to your organization now, or later using [rit login] command. Perform now?
+▸ no
+yes
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="login-command">Login Command&lt;/h3>
+&lt;p>On the &lt;strong>Team version&lt;/strong>, the &lt;strong>&lt;code>rit login&lt;/code>&lt;/strong> command allows to create a session to store datas that can be reused in different formulas.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">➜ rit login
+Enter your username: dennis.ritchie
+Enter your password: **
+Organization: org
+Login successfully!
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This command creates a session using &lt;em>Keycloak&lt;/em> after the user has informed his organization with his datas (email &amp;amp; password). In this session, the user can, for example, define his credentials for various tools (github, aws, etc &amp;hellip;).&lt;/p>
+&lt;p>In this case, the credentials are stored in the &lt;em>Vault&lt;/em>. This allows that if the user logs in to Ritchie with his data, on someone else&amp;rsquo;s machine, he will be able to fetch these credentials from the &lt;em>Vault&lt;/em>, despite having configured them on his local machine.&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+The command &lt;strong>&lt;code>rit logout&lt;/code>&lt;/strong> allows the user to end the current session.
+&lt;/div></description></item><item><title>Getting Started: Via Prompt</title><link>https://zupit.github.io/getting-started/executing-commands/via-prompt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/executing-commands/via-prompt/</guid><description>
+&lt;hr>
+&lt;h2 id="commands-structure">Commands structure&lt;/h2>
+&lt;p>Ritchie core commands are executed following this pattern:&lt;/p>
+&lt;p>&lt;strong>&lt;code>RIT&lt;/code>&lt;/strong> &lt;code>+&lt;/code> &lt;strong>&lt;code>VERBO&lt;/code>&lt;/strong> &lt;code>+&lt;/code> &lt;strong>&lt;code>SUBSTANTIVO&lt;/code>&lt;/strong>&lt;/p>
+&lt;h2 id="formulas-structure">Formulas structure&lt;/h2>
+&lt;p>Formula commands are executed following this pattern:&lt;/p>
+&lt;p>&lt;strong>&lt;code>RIT&lt;/code>&lt;/strong> &lt;code>+&lt;/code> &lt;strong>&lt;code>GRUPO&lt;/code>&lt;/strong> &lt;code>+&lt;/code> &lt;strong>&lt;code>VERBO&lt;/code>&lt;/strong> &lt;code>+&lt;/code> &lt;strong>&lt;code>SUBSTANTIVO&lt;/code>&lt;/strong>&lt;/p>
+&lt;p>If you want to see more formulas, check the &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>github community repository&lt;/strong>&lt;/a>&lt;/p>
+&lt;h2 id="flags">Flags&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Flags&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit &amp;ndash;help&lt;/td>
+&lt;td style="text-align:left">Help for any Ritchie command&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit &amp;ndash;version&lt;/td>
+&lt;td style="text-align:left">Display Ritchie current version&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">➜ rit --help
+A CLI that developers can build and operate
+your applications without help from the infra staff.
+Complete documentation is available at https://github.com/ZupIT/ritchie-cli
+core commands:
+add add objects
+completion Add autocomplete for terminal
+clean clean objects
+create Create objects
+delete Delete objects
+list list objects
+set Set objects
+show Show objects
+update update objects
+commons commands:
+aws Apply Aws objects
+docker Manipulate docker objects
+github Manipulate GitHub objects
+k8s Manipulate k8s objects
+kafka Kafka commands
+scaffold Manipulate scaffold objects
+Other Commands:
+Options:
+-v, --version: version for rit
+Usage:
+rit [flags] [options]
+Use &amp;#34;rit &amp;lt;command&amp;gt; --help&amp;#34; for more information about a given command.
+&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">➜ rit --version
+rit version 1.0.0-beta.7 (single)
+Build date: 05/20/20_13:29
+Built with: go1.14.3
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="core-commands">Core commands&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Commands&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/repositories#add-other-repositories">rit add repo&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">add a new repository tree
+&lt;br />(to access repository formulas with Ritchie)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/repositories#clean-a-repository">rit clean repo&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">clean the cache of a repository&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit completion zsh&lt;/td>
+&lt;td style="text-align:left">add autocomplete via zsh&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit completion bash&lt;/td>
+&lt;td style="text-align:left">add autocomplete via bash&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="../../use-cases/creating-formulas#step-1-execute-the-formula">rit create formula&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">
+&lt;p>create a new formula from scratch&lt;/p>
+&lt;p>(as well as a new local repository for test)&lt;/p>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit create user&lt;/td>
+&lt;td style="text-align:left">create a new user (with &lt;em>default&lt;/em> role) into the organisation
+&lt;br
+/>(only available for &lt;em>admin&lt;/em> role on the &lt;b>Team version&lt;/b>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/repositories#delete-a-repository">rit delete repo&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">delete a repository tree
+&lt;br />(to remove access to the repository formulas with Ritchie)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit delete user&lt;/td>
+&lt;td style="text-align:left">
+&lt;p>delete a user from the organisation&lt;/p>
+&lt;p>(only available for &lt;em>admin&lt;/em> role on the &lt;b>Team version&lt;/b>)&lt;/p>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/context">rit delete context&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">delete a context form the session&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/developer/formulas/repository#delete-a-repository">rit list repo&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">list all repository that Ritchie has access on the computer&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="../initialization#login-command">rit login&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">user login to a team (creating a session)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="../initialization#login-command">rit logout&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">user logout from session&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/credentials#set-credentials">rit set credential&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">set new credentials into the session&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/context">rit set context&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">set a new context into the session&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit set server&lt;/td>
+&lt;td style="text-align:left">set the team server URL (&lt;b>Team version&lt;/b>)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/context">rit show context&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">show the current session context&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;a href="https://docs.ritchiecli.io/getting-started/commands/using-first-commands/repositories#update-a-repository">rit update repo&lt;/a>
+&lt;/td>
+&lt;td style="text-align:left">update all repositories tree
+&lt;br />(to access new formulas from those repositories with Ritchie)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Getting Started: Via Stdin</title><link>https://zupit.github.io/getting-started/executing-commands/via-stdin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/getting-started/executing-commands/via-stdin/</guid><description>
+&lt;hr>
+&lt;h2 id="commands-structure">Commands structure&lt;/h2>
+&lt;p>With &lt;strong>stdin&lt;/strong>, the input parameters need to be informed in a JSON format, following different patterns according to the operating system used :&lt;/p>
+&lt;h3 id="linux--mac">Linux &amp;amp; Mac&lt;/h3>
+&lt;p>&lt;strong>&lt;code>echo&lt;/code>&lt;/strong> &lt;code>&amp;quot;{\&amp;quot;key\&amp;quot;:\&amp;quot;value\&amp;quot;}&amp;quot;&lt;/code>&lt;strong>&lt;code>|&lt;/code>&lt;/strong>&lt;code>RIT (GROUP) VERB NOUN&lt;/code> &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong>&lt;/p>
+&lt;h3 id="windows-with-powershell">Windows (with &lt;strong>PowerShell&lt;/strong>)&lt;/h3>
+&lt;div class="alert alert-danger" role="alert">
+&lt;strong>STDIN&lt;/strong> doesn&amp;rsquo;t work with the &lt;strong>Windows&lt;/strong> &lt;strong>Command Prompt.&lt;/strong>
+&lt;/div>
+&lt;p>&lt;strong>&lt;code>echo&lt;/code>&lt;/strong>&lt;code>'{&amp;quot;key&amp;quot;:&amp;quot;value&amp;quot;}'&lt;/code>&lt;strong>&lt;code>|&lt;/code>&lt;/strong>&lt;code>RIT (GROUP) VERB NOUN&lt;/code> &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong>&lt;/p>
+&lt;h2 id="core-commands">Core Commands&lt;/h2>
+&lt;div class="alert alert-warning" role="alert">
+It will be necessary to adapt the variable values of each JSON to perform the desired operations as expected.
+&lt;/div>
+&lt;p>Here are the JSON used to run Ritchie&amp;rsquo;s core commands through &lt;strong>stdin&lt;/strong>.&lt;/p>
+&lt;h3 id="rit-init">RIT INIT&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;organization\&amp;#34;:\&amp;#34;team\&amp;#34;, \&amp;#34;url\&amp;#34;:\&amp;#34;https://ritchie-server.team.io\&amp;#34;}&amp;#34; | rit init --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;organization&amp;#34;:&amp;#34;team&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://ritchie-server.team.io&amp;#34;}&amp;#39; | rit init --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rit-login">RIT LOGIN&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;username\&amp;#34;:\&amp;#34;dennis.ritchie\&amp;#34;, \&amp;#34;password\&amp;#34;:\&amp;#34;123456\&amp;#34;}&amp;#34; | rit login --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;username&amp;#34;:&amp;#34;dennis.ritchie&amp;#34;, &amp;#34;password&amp;#34;:&amp;#34;123456&amp;#34;}&amp;#39; | rit login --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading">&lt;/h3>
+&lt;h3 id="rit-add-repo">RIT ADD REPO&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;treePath\&amp;#34;:\&amp;#34;https://commons-repo.ritchiecli.io/tree/tree.json\&amp;#34;,\&amp;#34;name\&amp;#34;:\&amp;#34;repoName\&amp;#34;,\&amp;#34;priority\&amp;#34;:1}&amp;#34; | rit add repo --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;treePath&amp;#34;:&amp;#34;https://commons-repo.ritchiecli.io/tree/tree.json&amp;#34;,&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;,&amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading-1">&lt;/h3>
+&lt;h3 id="rit-clean-repo">RIT CLEAN REPO&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;name\&amp;#34;:\&amp;#34;repoName\&amp;#34;}&amp;#34; | rit clean repo --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;}&amp;#39; | rit clean repo --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-2">&lt;/h4>
+&lt;h3 id="rit-create-formula">RIT CREATE FORMULA&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;formula\&amp;#34;:\&amp;#34;rit formula test command\&amp;#34;, \&amp;#34;lang\&amp;#34;:\&amp;#34;Go\&amp;#34;}&amp;#34; | rit create formula --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;formula&amp;#34;:&amp;#34;rit formula test command&amp;#34;, &amp;#34;lang&amp;#34;:&amp;#34;Go&amp;#34;}&amp;#39; | rit create formula --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-3">&lt;/h4>
+&lt;h3 id="rit-create-user-team">RIT CREATE USER (TEAM)&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;organization\&amp;#34;:\&amp;#34;teamName\&amp;#34;, \&amp;#34;firstName\&amp;#34;:\&amp;#34;Dennis\&amp;#34;, \&amp;#34;lastName\&amp;#34;:\&amp;#34;Ritchie\&amp;#34;, \&amp;#34;email\&amp;#34;:\&amp;#34;dennis.ritchie@team.com\&amp;#34;, \&amp;#34;username\&amp;#34;:\&amp;#34;Dennis Ritchie\&amp;#34;, \&amp;#34;password\&amp;#34;:\&amp;#34;123456\&amp;#34;}&amp;#34; | rit create user --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;organization&amp;#34;:&amp;#34;teamName&amp;#34;, &amp;#34;firstName&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;lastName&amp;#34;:&amp;#34;Ritchie&amp;#34;, &amp;#34;email&amp;#34;:&amp;#34;dennis.ritchie@team.com&amp;#34;, &amp;#34;username&amp;#34;:&amp;#34;Dennis Ritchie&amp;#34;, &amp;#34;password&amp;#34;:&amp;#34;123456&amp;#34;}&amp;#39; | rit create user --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-4">&lt;/h4>
+&lt;h3 id="rit-delete-repo">RIT DELETE REPO&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;name\&amp;#34;:\&amp;#34;repoName\&amp;#34;}&amp;#34; | rit delete repo --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;}&amp;#39; | rit delete repo --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rit-delete-user-team">RIT DELETE USER (TEAM)&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;username\&amp;#34;:\&amp;#34;username\&amp;#34;}&amp;#34; | rit delete user --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;username&amp;#34;:&amp;#34;username&amp;#34;}&amp;#39; | rit delete user --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-5">&lt;/h4>
+&lt;h3 id="rit-delete-context">RIT DELETE CONTEXT&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;context\&amp;#34;:\&amp;#34;contextName\&amp;#34;}&amp;#34; | rit delete context --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;context&amp;#34;:&amp;#34;contextName&amp;#34;}&amp;#39; | rit delete context --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-6">&lt;/h4>
+&lt;h3 id="rit-set-credential-single">RIT SET CREDENTIAL (SINGLE)&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;service\&amp;#34;:\&amp;#34;credentialService\&amp;#34;,\&amp;#34;credential\&amp;#34;: {\&amp;#34;username\&amp;#34;:\&amp;#34;credentialUsername\&amp;#34;,\&amp;#34;token\&amp;#34;: \&amp;#34;credentialToken\&amp;#34;}}&amp;#34; | rit set credential --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;service&amp;#34;:&amp;#34;credentialService&amp;#34;,&amp;#34;credential&amp;#34;: {&amp;#34;username&amp;#34;:&amp;#34;credentialUsername&amp;#34;,&amp;#34;token&amp;#34;: &amp;#34;credentialToken&amp;#34;}}&amp;#39; | rit set credential --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-7">&lt;/h4>
+&lt;h3 id="rit-set-credential-team">RIT SET CREDENTIAL (TEAM)&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;username\&amp;#34;:\&amp;#34;me\&amp;#34;,\&amp;#34;service\&amp;#34;:\&amp;#34;credentialService\&amp;#34;,\&amp;#34;credential\&amp;#34;: {\&amp;#34;username\&amp;#34;:\&amp;#34;credentialUsername\&amp;#34;,\&amp;#34;token\&amp;#34;: \&amp;#34;credentialToken\&amp;#34;}}&amp;#34; | rit set credential --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;username&amp;#34;:&amp;#34;me&amp;#34;,&amp;#34;service&amp;#34;:&amp;#34;credentialService&amp;#34;,&amp;#34;credential&amp;#34;: {&amp;#34;username&amp;#34;:&amp;#34;credentialUsername&amp;#34;,&amp;#34;token&amp;#34;: &amp;#34;credentialToken&amp;#34;}}&amp;#39; | rit set credential --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rit-set-context">RIT SET CONTEXT&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;context\&amp;#34;:\&amp;#34;contextName\&amp;#34;}&amp;#34; | rit set context --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;context&amp;#34;:&amp;#34;contextName&amp;#34;}&amp;#39; | rit set context --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="heading-8">&lt;/h4>
+&lt;h3 id="rit-set-server">RIT SET SERVER&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;url\&amp;#34;:\&amp;#34;serverUrl\&amp;#34;}&amp;#34; | rit set server --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;url&amp;#34;:&amp;#34;serverUrl&amp;#34;}&amp;#39; | rit set server --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rit-login-team">RIT LOGIN (TEAM)&lt;/h3>
+&lt;div class="alert alert-warning" role="alert">
+&lt;strong>stdin&lt;/strong> hasn&amp;rsquo;t been implemented yet for the **&lt;code>rit login&lt;/code>**command.
+&lt;/div>
+&lt;h2 id="formula-commands">Formula Commands&lt;/h2>
+&lt;p>JSON is build according to the config.json used to implement the formula. Because of that, for the formula&amp;rsquo;s commands to work through &lt;strong>stdin&lt;/strong>, it is necessary that this formula works informing &lt;strong>exclusively the input parameters through the config.json file&lt;/strong>.&lt;/p>
+&lt;p>If, for example, the formula&amp;rsquo;s code asks for data via prompt, it will not be possible to use only stdin for the formula to run successfully.&lt;/p>
+&lt;div class="alert alert-warning" role="alert">
+It will be necessary to adapt the variable values of each JSON to perform the desired operations as expected.
+&lt;/div>
+&lt;p>Here are some examples of JSON used to run Ritchie &lt;strong>formulas&lt;/strong> through &lt;strong>stdin&lt;/strong>.&lt;/p>
+&lt;h3 id="heading-9">&lt;/h3>
+&lt;h3 id="rit-scaffold-generate-coffee-go">RIT SCAFFOLD GENERATE COFFEE-GO&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;pre>&lt;code>echo &amp;quot;{\&amp;quot;name\&amp;quot;:\&amp;quot;Dennis Ritchie\&amp;quot;,\&amp;quot;coffee_type\&amp;quot;:\&amp;quot;espresso\&amp;quot;,\&amp;quot;delivery\&amp;quot;:\&amp;quot;true\&amp;quot;}&amp;quot; | rit scaffold generate coffee-go --stdin
+&lt;/code>&lt;/pre>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;pre>&lt;code>echo '{&amp;quot;name&amp;quot;:&amp;quot;Dennis Ritchie&amp;quot;,&amp;quot;coffee_type&amp;quot;:&amp;quot;espresso&amp;quot;,&amp;quot;delivery&amp;quot;:&amp;quot;true&amp;quot;}' | rit scaffold generate coffee-go --stdin
+&lt;/code>&lt;/pre>&lt;h4 id="heading-10">&lt;/h4>
+&lt;h3 id="rit-scaffold-generate-spring-starter">RIT SCAFFOLD GENERATE SPRING-STARTER&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;type\&amp;#34;:\&amp;#34;maven-project\&amp;#34;,\&amp;#34;language\&amp;#34;:\&amp;#34;java\&amp;#34;,\&amp;#34;boot_version\&amp;#34;:\&amp;#34;2.2.5.BUILD-SNAPSHOT\&amp;#34;,\&amp;#34;group_id\&amp;#34;:\&amp;#34;br.com.zup\&amp;#34;,\&amp;#34;artifact_id\&amp;#34;:\&amp;#34;ritchie-project\&amp;#34;,\&amp;#34;description\&amp;#34;:\&amp;#34;ritchie\&amp;#34;,\&amp;#34;packaging\&amp;#34;:\&amp;#34;jar\&amp;#34;,\&amp;#34;java_version\&amp;#34;:\&amp;#34;11\&amp;#34;,\&amp;#34;dependencies\&amp;#34;:\&amp;#34;web\&amp;#34;}&amp;#34; | rit scaffold generate spring-starter --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;type&amp;#34;:&amp;#34;maven-project&amp;#34;,&amp;#34;language&amp;#34;:&amp;#34;java&amp;#34;,&amp;#34;boot_version&amp;#34;:&amp;#34;2.2.5.BUILD-SNAPSHOT&amp;#34;,&amp;#34;group_id&amp;#34;:&amp;#34;br.com.zup&amp;#34;,&amp;#34;artifact_id&amp;#34;:&amp;#34;ritchie-project&amp;#34;,&amp;#34;description&amp;#34;:&amp;#34;ritchie&amp;#34;,&amp;#34;packaging&amp;#34;:&amp;#34;jar&amp;#34;,&amp;#34;java_version&amp;#34;:&amp;#34;11&amp;#34;,&amp;#34;dependencies&amp;#34;:&amp;#34;web&amp;#34;}&amp;#39; | rit scaffold generate spring-starter --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rit-github-fast-merge">RIT GITHUB FAST-MERGE&lt;/h3>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;branch\&amp;#34;:\&amp;#34;qa\&amp;#34;,\&amp;#34;push\&amp;#34;:\&amp;#34;false\&amp;#34;}&amp;#34; | rit github fast-merge --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Windows (PowerShell)&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#39;{&amp;#34;branch&amp;#34;:&amp;#34;qa&amp;#34;,&amp;#34;push&amp;#34;:\&amp;#34;false\&amp;#34;}&amp;#39; | rit github fast-merge --stdin
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="rit-aws-apply-terraform">RIT AWS APPLY TERRAFORM&lt;/h3>
+&lt;div class="alert alert-warning" role="alert">
+&lt;strong>Premise&lt;/strong>: Have the GITHUB and AWS credentials configured inside the session.
+&lt;/div>
+&lt;p>Linux / Mac&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">echo &amp;#34;{\&amp;#34;repository\&amp;#34;:\&amp;#34;https://github.com/group/project\&amp;#34;,\&amp;#34;terraform_path\&amp;#34;:\&amp;#34;src\&amp;#34;,\&amp;#34;environment\&amp;#34;:\&amp;#34;qa\&amp;#34;}&amp;#34; | rit aws apply terraform --stdin
+&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
