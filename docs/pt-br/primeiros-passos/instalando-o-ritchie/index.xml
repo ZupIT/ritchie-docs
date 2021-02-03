@@ -1,0 +1,119 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Instalando o Ritchie</title><link>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/</link><description>Recent content in Instalando o Ritchie on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/index.xml" rel="self" type="application/rss+xml"/><item><title>Primeiros Passos: Linux</title><link>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/linux/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/linux/</guid><description>
+&lt;hr>
+&lt;h2 id="como-funciona">Como funciona?&lt;/h2>
+&lt;p>Para baixar a &lt;strong>versão mais atualizada do Ritchie&lt;/strong> no Linux, basta executar o comando abaixo no seu terminal de acordo com a versão que deseja usar.&lt;/p>
+&lt;h3 id="instalando-versão-team">Instalando Versão Team&lt;/h3>
+&lt;p>O comando para adicionar o Ritchie Team ao seu terminal é:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -fsSL https://commons-repo.ritchiecli.io/install_legacy.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="instalando-versão-single">Instalando Versão Single&lt;/h3>
+&lt;p>O comando para adicionar o Ritchie Single ao seu terminal é:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">curl -fsSL https://commons-repo.ritchiecli.io/install_single_legacy.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Vale lembrar que, se preferir, também é possível seguir com a&lt;a href="instalacao-manual"> &lt;strong>instalação manual&lt;/strong>.&lt;/a>&lt;/p></description></item><item><title>Primeiros Passos: Windows</title><link>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/windows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/windows/</guid><description>
+&lt;hr>
+&lt;h2 id="como-funciona">Como funciona?&lt;/h2>
+&lt;p>Para baixar a &lt;strong>versão mais atualizada do Ritchie (1.0.0-beta.22)&lt;/strong> no Windows, basta clicar nos links disponíveis para cada versão.&lt;/p>
+&lt;p>No entanto, é importante ter em mente &lt;strong>alguns pré-requisitos&lt;/strong> antes de iniciar a instalação na sua máquina.&lt;/p>
+&lt;h3 id="requisitos">Requisitos&lt;/h3>
+&lt;p>Para você conseguir usar eficientemente o Ritchie no Windows, nossa recomendação é que tenha instalado os seguintes programas:&lt;/p>
+&lt;ul>
+&lt;li>Powershell&lt;/li>
+&lt;li>Cygwin&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>&lt;strong>Configurações do Cygwin&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>É preciso instalar o pacote &lt;strong>make&lt;/strong> no Cygwin, &lt;a href="https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment?rq=1#:~:text=Run%20the%20Cygwin%20installation%2Fconfiguration,Development%22%20or%20something%20similar%29.">como sugerido aqui&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>É também necessário configurar o arquivo &lt;strong>/etc/nsswitch.conf&lt;/strong> dentro da pasta dele (/ProgramFiles) e adicionar essa linha não comentada:&lt;strong>&lt;code>db_home: /%H&lt;/code>&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+&lt;h3 id="instalando-versão-team">Instalando Versão Team&lt;/h3>
+&lt;p>Clique no link para &lt;a href="https://commons-repo.ritchiecli.io/1.0.0-legacy/windows/team/rit.exe">instalar o Ritchie Team&lt;/a>&lt;/p>
+&lt;h3 id="instalando-versão-single">Instalando Versão Single&lt;/h3>
+&lt;p>Clique no link para &lt;a href="https://commons-repo.ritchiecli.io/1.0.0-legacy/windows/single/rit.exe">instalar a Versão Single&lt;/a>&lt;/p>
+&lt;p>Vale lembrar que, se preferir, também é possível seguir com a&lt;a href="instalacao-manual"> &lt;strong>instalação manual&lt;/strong>.&lt;/a>&lt;/p>
+&lt;h2 id="usar-ritchie-no-windows">Usar Ritchie no Windows&lt;/h2>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>O &lt;strong>PATH&lt;/strong> para usar o Ritchie no Windows NÃO é configurado quando você o baixa.&lt;/p>
+&lt;p>Enquanto que não tenha sido configurado, o usuário terá que entrar na pasta em que o &lt;strong>arquivo&lt;/strong> &lt;strong>rit.exe&lt;/strong> foi baixado para executar o Ritchie através desse arquivo. Exemplo: &lt;strong>&lt;code>rit.exe init&lt;/code>&lt;/strong>&lt;/p>
+&lt;/div>
+&lt;p>Você encontrará um guia sobre como definir um caminho aqui : &lt;a href="https://www.java.com/en/download/help/path.xml">Como definir ou alterar a variável de sistema PATH?&lt;/a>&lt;/p></description></item><item><title>Primeiros Passos: Macos</title><link>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/macos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/macos/</guid><description>
+&lt;hr>
+&lt;h2 id="como-funciona">Como funciona?&lt;/h2>
+&lt;p>Para baixar a &lt;strong>versão mais atualizada do Ritchie&lt;/strong> no MacOS, execute um dos comandos abaixo no seu terminal conforme a versão que deseja usar.&lt;/p>
+&lt;p>No entanto, é importante ter em mente &lt;strong>alguns pré-requisitos&lt;/strong> antes de iniciar a instalação na sua máquina.&lt;/p>
+&lt;h3 id="requisitos">Requisitos&lt;/h3>
+&lt;p>Para você conseguir usar eficientemente o Ritchie no &lt;em>MacOS&lt;/em>, nossa recomendação é que configurar os seguintes elementos:&lt;/p>
+&lt;ul>
+&lt;li>o comando &lt;strong>make&lt;/strong> (&lt;a href="https://stackoverflow.com/questions/1469994/using-make-on-os-x">Como usar &amp;ldquo;make&amp;rdquo; no macOS&lt;/a>)&lt;/li>
+&lt;li>a ferramenta &lt;em>5sum&lt;/em>*&lt;/li>
+&lt;/ul>
+&lt;div class="alert alert-warning" role="alert">
+&lt;p>Comando para instalar &lt;em>5sum&lt;/em>* com _**Homebrew**_ : &lt;code>brew install5sha1sum&lt;/code>&lt;/p>
+&lt;p>Comando para instalar &lt;em>5sum&lt;/em>* com _**MacPorts**_ : &lt;code>sudo port install5sha1sum&lt;/code>&lt;/p>
+&lt;/div>
+&lt;h3 id="instalando-versão-team">Instalando Versão Team&lt;/h3>
+&lt;p>O comando para adicionar o Ritchie Team ao seu terminal é:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">curl -fsSL https://commons-repo.ritchiecli.io/install_legacy.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="instalando-versão-single">Instalando Versão Single&lt;/h3>
+&lt;p>O comando para adicionar o Ritchie Single ao seu terminal é:&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">curl -fsSL https://commons-repo.ritchiecli.io/install_single_legacy.sh | bash
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Vale lembrar que, se preferir, também é possível seguir com a&lt;a href="instalacao-manual"> &lt;strong>instalação manual&lt;/strong>.&lt;/a>&lt;/p></description></item><item><title>Primeiros Passos: Instalação Manual</title><link>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/instala%C3%A7%C3%A3o-manual/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/primeiros-passos/instalando-o-ritchie/instala%C3%A7%C3%A3o-manual/</guid><description>
+&lt;hr>
+&lt;h2 id="como-funciona">Como funciona?&lt;/h2>
+&lt;p>A versão 1.0.0 do Ritchie foi depreciada. Ainda é possível usar-la, mas o nosso time está agora focando em implementar novas funcionalidades, começando na versão 2.0.0.&lt;/p>
+&lt;div class="alert alert-info" role="alert">
+A última e mais estável release dessa versão do Ritchie é a**&lt;code>1.0.0-legacy&lt;/code>**
+&lt;/div>
+&lt;h3 id="heading">&lt;/h3>
+&lt;h3 id="instalando-para-mac">&lt;strong>Instalando para MAC&lt;/strong>&lt;/h3>
+&lt;h4 id="url-para-versão-team">URL para Versão Team&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/1.0.0-legacy/darwin/team/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="url-para-versão-single">URL para Versão Single&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/1.0.0-legacy/darwin/single/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading-1">&lt;/h3>
+&lt;h3 id="instalando-para-linux">&lt;strong>Instalando para Linux&lt;/strong>&lt;/h3>
+&lt;h4 id="url-para-versão-team-1">URL para Versão Team&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/1.0.0-legacy/linux/team/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="url-para-versão-single-1">URL para Versão Single&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/1.0.0-legacy/linux/single/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading-2">&lt;/h3>
+&lt;h3 id="instalando-para-windows">&lt;strong>Instalando para Windows&lt;/strong>&lt;/h3>
+&lt;h4 id="url-para-versão-team-2">URL para Versão Team&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/1.0.0-legacy/windows/team/rit.exe
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="url-para-versão-single-2">URL para Versão Single&lt;/h4>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">https://commons-repo.ritchiecli.io/1.0.0-legacy/windows/single/rit.exe
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="heading-3">&lt;/h3>
+&lt;h2 id="passo-2-configurações-manuais">&lt;strong>Passo 2: Configurações manuais&lt;/strong>&lt;/h2>
+&lt;p>Uma vez feita a instalação por meio da URL, você precisa realizar algumas configurações antes de utilizar o Ritchie. São elas:&lt;/p>
+&lt;h3 id="criação-da-pasta">&lt;strong>Criação da pasta&lt;/strong>&lt;/h3>
+&lt;p>&lt;strong>Passo 1:&lt;/strong> Criar a pasta &lt;code>$HOME/.rit/bin&lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Comando Linux / MacOs
+mkdir -p $HOME/.rit/bin
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Passo 2:&lt;/strong> Copiar o binário para a pasta criada acima.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Comandos Linux / MacOs
+cd $HOME/.rit/bin
+cp $HOME/Downloads/rit
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Passo 3:&lt;/strong> Permissão de execução&lt;/p>
+&lt;pre>&lt;code>Comando Linux / MacOs :
+chmod +x rit
+&lt;/code>&lt;/pre>&lt;h3 id="configurar-o-bashrc-ou-etcprofile-ou-zshrc-linux--macos">&lt;strong>Configurar o .bashrc ou /etc/profile ou .zshrc (Linux / MacOS)&lt;/strong>&lt;/h3>
+&lt;p>Para ZSH, definir um novo PATH copiando o código a seguir :&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">export RIT_PATH=$HOME/.rit
+PATH=$RIT_PATH/bin:$PATH
+rit completion zsh &amp;gt; ~/.rit_completion
+source ~/.rit_completion
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Para Bash, definir um novo PATH copiando o código a seguir :&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">export RIT_PATH=$HOME/.rit
+PATH=$RIT_PATH/bin:$PATH
+rit completion bash &amp;gt; ~/.rit_completion
+source ~/.rit_completion
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="configuração-de-variáveis-de-ambiente-windows">&lt;strong>Configuração de variáveis de ambiente (Windows)&lt;/strong>&lt;/h3>
+&lt;p>Nesse sistema operacional, é preciso chamar o rit no terminal diretamente a partir do &lt;code>rit.exe&lt;/code> (comando &lt;strong>rit.exe login&lt;/strong>, por exemplo).&lt;/p>
+&lt;p>É possível e, inclusive, recomendável que você crie uma variável de ambiente para o rit, de modo que se torne mais fácil usar o CLI.&lt;/p>
+&lt;p>Seguem alguns &lt;strong>artigos&lt;/strong> explicando como adicionar uma variável de ambiente no Windows.&lt;/p>
+&lt;p>📖 Como adicionar uma variável &lt;a href="https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/">via interface&lt;/a>&lt;br>
+📖Como adicionar uma variável&lt;a href="https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente"> via terminal&lt;/a>&lt;/p></description></item></channel></rss>

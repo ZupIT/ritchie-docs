@@ -1,27 +1,51 @@
 ---
 title: Visão geral
 weight: 1
-description: "Nesta seção, você encontrará todas as informações iniciais sobre o Ritchie."
+description: >-
+  Nesta seção, você encontra informações iniciais sobre o Ritchie antes de se
+  aprofundar no projeto.
 ---
 
 ---
 
-## O que é o Ritchie?
+## O que é o Ritchie ?
 
-O Ritchie é um **framework open source** que permite criar, armazenar e compartilhar qualquer tipo de automação, executando-as através de linhas de comando, para executar operações ou iniciar fluxos de trabalho.
+O Ritchie é um **CLI** \(Command Line Interface\) que permite **criar, armazenar e compartilhar** automações de forma **simples** e **segura** 🔓 com uma equipe de profissionais ou com a comunidade inteira.
 
-{{< youtube PtKFco2pIqs >}}
+## **O que o Ritchie faz?**
 
-## **Versionamento**
+A ferramenta permite criar automações \(chamadas de **fórmulas** no contexto do Ritchie\) que são executadas via linhas de comando e, assim, torna o trabalho de programação mais fácil no dia a dia. Na prática, **o Ritchie funciona como um repositório único de fórmulas.** 
 
-Atualmente, o Ritchie possui **duas versões disponíveis** para ser usada. Nesta documentação, o foco será no **Ritchie versão 2.0.**
+{{< youtube eH3W2ROIoXo >}}
 
-### **O que muda?**
+## Instalação
 
-## **Como funciona? → Através de fórmulas !**
+O Ritchie funciona para **todos os sistemas operacionais.** Para saber mais informações de como instalar na sua máquina, basta clicar no sistema de sua preferência:
 
-No contexto de Ritchie, **uma fórmula é um script** que pode ser executado automaticamente ou interativamente por meio de uma linha de comando.
 
-Adaptar um script existente à estrutura Ritchie permite executá-lo **localmente** ou por meio do **Docker** e compartilhá-lo em um repositório **Github** ou **Gitlab**.
 
-![](/docs-ritchie/formula-ritchie-en%20%281%29.jpg)
+
+
+
+
+### **Linguagens de programação**
+
+Ritchie foi desenvolvido usando a linguagem do Google, o **Golang**. No entanto, as fórmulas podem ser escritas usando qualquer linguagem de programação.
+
+![Linguagens de programa&#xE7;&#xE3;o dispon&#xED;veis para usar Ritchie](/screenshot-2020-05-08-at-17.54.34%20%281%29.png)
+
+### Ferramentas
+
+Além da variedade de linguagens para se usar com Ritchie, o projeto também possibilita trabalhar com **qualquer ferramenta de automação**, como por exemplo: 
+
+![](/screenshot-2020-05-08-at-17.54.49%20%281%29.png)
+
+## Como Ritchie funciona?
+
+O processo comum para executar um projeto é criar uma infraestrutura prévia, definindo a linguagem em que o sistema será programado, baixando dependências e definindo as regras que devem ser usadas para projeto.
+
+![Exemplo de estrutura SEM Ritchie](/pt-sem-ritchie.png)
+
+Com o Ritchie, é possível fazer o setup do projeto por meio de uma fórmula, o que permite criar essa infraestrutura via uma linha de comando. Nesse caso, o sistema entrega as pastas do projeto com todos os arquivos configurados automaticamente e, assim, evitamos um gasto de tempo em infraestrutura e configurações.
+
+![Exemplo de estrutura COM Ritchie](/pt-com-ritchie.png)
