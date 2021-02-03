@@ -1,505 +1,214 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Reference</title><link>https://zupit.github.io/reference/</link><description>Recent content in Reference on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Reference: CLI</title><link>https://zupit.github.io/reference/cli/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/cli/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Reference</title><link>https://zupit.github.io/reference/</link><description>Recent content in Reference on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Reference: List of commands and flags</title><link>https://zupit.github.io/reference/list-of-commands-and-flags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/list-of-commands-and-flags/</guid><description>
 &lt;hr>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Ritchie works through files stored inside the &lt;strong>.rit&lt;/strong> folder in the &lt;em>HOME&lt;/em> of the user&amp;rsquo;s machine. This folder is &lt;strong>manipulated&lt;/strong> by the CLI as commands are executed.&lt;/p>
-&lt;p>In this folder are stored:&lt;/p>
-&lt;ul>
-&lt;li>the &lt;strong>tree.json&lt;/strong> files from the formula repositories accessible on the user&amp;rsquo;s machine&lt;/li>
-&lt;li>the &lt;strong>executable&lt;/strong> files of the formulas&lt;/li>
-&lt;li>the &lt;strong>temporary&lt;/strong> files used in Ritchie&lt;/li>
-&lt;li>&lt;strong>passphrase&lt;/strong> and &lt;strong>session&lt;/strong> files for the &lt;strong>Single&lt;/strong> version&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-info" role="alert">
-To get to know more about our CLI repository, access &lt;a href="https://github.com/ZupIT/ritchie-cli">&lt;strong>ritchie-cli&lt;/strong>&lt;/a> on Github.
+&lt;h2 id="commands">Commands&lt;/h2>
+&lt;h3 id="configuration-commands">Configuration commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Commands&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit init&lt;/td>
+&lt;td style="text-align:left">initialize Ritchie before use&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit upgrade&lt;/td>
+&lt;td style="text-align:left">upgrade to the last Ritchie stable version&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit tutorial&lt;/td>
+&lt;td style="text-align:left">enable or disable the tutorial&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit &amp;ndash;version&lt;/td>
+&lt;td style="text-align:left">return Ritchie currently installed version&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="repo-commands">Repo commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Command&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit add repo&lt;/td>
+&lt;td style="text-align:left">add a new repository (to access repository formulas with Ritchie)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit list repo&lt;/td>
+&lt;td style="text-align:left">show a list with all your available repositories&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit update repo&lt;/td>
+&lt;td style="text-align:left">update all repositories (to access new formulas from those repositories with Ritchie)&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">set repo-priority&lt;/td>
+&lt;td style="text-align:left">set a repository priority&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit delete repo&lt;/td>
+&lt;td style="text-align:left">delete a repository (to remove access to the repository formulas with Ritchie)&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="formula-commands">Formula commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Command&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit create formula&lt;/td>
+&lt;td style="text-align:left">
+&lt;p>create a new formula from scratch&lt;/p>
+&lt;p>(as well as a new local repository if necessary)&lt;/p>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit build formula&lt;/td>
+&lt;td style="text-align:left">build a formula locally for test&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit build formula --watch&lt;/td>
+&lt;td style="text-align:left">build a formula monitoring the code to update real time changes&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="alert alert-danger" role="alert">
+The rit build formula command was deprecated from Ritchie&amp;rsquo;s version 2.5.0.
 &lt;/div>
-&lt;h2 id="composition-of-the-rit-folder">Composition of the .rit folder&lt;/h2>
-&lt;h3 id="repo-folder">Repo folder&lt;/h3>
-&lt;p>The &lt;strong>repo&lt;/strong> folder contains all the files necessary for the CLI to know the commands and formulas it can execute.&lt;/p>
-&lt;p>It is made up of other folders:&lt;/p>
-&lt;ul>
-&lt;li>a &lt;strong>cache&lt;/strong> folder that will contain the tree.json files from the formula repository that the user has access to (according to the version of Ritchie he is using).&lt;/li>
-&lt;li>a &lt;strong>local&lt;/strong> folder that will contain the tree.json of the repository where the user is developing and testing formulas locally.&lt;/li>
-&lt;/ul>
-&lt;p>In addition to these folders, there is also a &lt;strong>repositories.json&lt;/strong> file. This file contains a list of tree.json for the CLI to identify which trees it has access to, and what their priorities are, in order to avoid duplicate commands if they appear in more than one formula repository.&lt;/p>
-&lt;h3 id="formulas-folder">Formulas folder&lt;/h3>
-&lt;p>The &lt;strong>formulas&lt;/strong> folder contains all the files necessary for the CLI to execute the formulas.&lt;/p>
-&lt;p>It is composed of several folders, one per formula, containing the formula executable according to the operating system used, as soon as the associated config.json is used to identify the necessary input parameters for the formula to be executed correctly.&lt;/p>
-&lt;p>These files are downloaded, and these folders are created when the CLI executes a formula command for the &lt;a href="https://docs.ritchiecli.io/key-concepts#formulas-on-demand">first time&lt;/a> (they are fetched through the formula&amp;rsquo;s repoUrl informed in the associated tree.json).&lt;/p>
-&lt;p>When the user tests a formula he implemented locally, the &lt;em>Makefile&lt;/em> file contained in the formula repository used will add the formula&amp;rsquo;s executables inside that folder, creating the same structure that would be created if the formula were downloaded from a server.&lt;/p>
-&lt;h3 id="tmp-folder">tmp folder&lt;/h3>
-&lt;p>The &lt;strong>tmp&lt;/strong> folder is where temporary files are stored. Those files can be created or manipulated during the execution of some formulas or core commands. These temporary files can be templates, certificates, or other single-use files.&lt;/p>
-&lt;h3 id="passphrase--session">Passphrase &amp;amp; Session&lt;/h3>
-&lt;p>The &lt;strong>passphrase&lt;/strong> &amp;amp; &lt;strong>session&lt;/strong> files are encrypted files used in the Single version to be able to define datas that will repetitively be used through Ritchie. Those datas can be &lt;em>credentials&lt;/em> of some tools manipulated in the formulas, or even the definition of the &lt;em>context&lt;/em> used to perform some automations.&lt;/p></description></item><item><title>Reference: Formulas</title><link>https://zupit.github.io/reference/formulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/formulas/</guid><description>
-&lt;hr>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>The formulas are, in Ritchie&amp;rsquo;s context, the automation that can be executed to make an action in a short time, but more efficiently.&lt;/p>
-&lt;div class="alert alert-info" role="alert">
-To get to know more about our current formulas on Ritchie, access the repository &lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;strong>ritchie-formulas&lt;/strong>&lt;/a> on Github.
-&lt;/div>
-&lt;h2 id="formula-repositories">Formula repositories&lt;/h2>
-&lt;p>Formulas are stored in &lt;strong>formula repositories,&lt;/strong> that need to have a particular structure.&lt;/p>
-&lt;p>Each repository must contain the following elements:&lt;/p>
-&lt;ul>
-&lt;li>the formula folders.&lt;/li>
-&lt;li>a tree folder&lt;/li>
-&lt;li>a Makefile file&lt;/li>
-&lt;li>a copy-bin-configs.sh file&lt;/li>
-&lt;li>an unzip-bin-configs.sh file&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://zupit.github.io/repo.png" alt="">&lt;/p>
-&lt;p>Each &lt;strong>formula folder&lt;/strong> will contain the executable code and files for a formula.&lt;/p>
-&lt;p>The &lt;strong>tree&lt;/strong> folder is composed of a &lt;strong>tree.json&lt;/strong> file that will contain the command tree of all formulas in the repository.&lt;/p>
-&lt;p>The &lt;strong>Makefile&lt;/strong> file contains a reference to all formulas in the repository, as well as an executable command manipulating the files &lt;strong>copy-bin-configs.sh&lt;/strong> and &lt;strong>unzip-bin-configs.sh&lt;/strong>, in order to generate the executable files needed to test the formula(s) locally inside the &lt;a href="cli">.rit folder&lt;/a>.&lt;/p>
-&lt;h3 id="formula-composition">Formula composition&lt;/h3>
-&lt;div class="alert alert-info" role="alert">
-Each formula is composed of several files allowing its execution by the CLI.
-&lt;/div>
-&lt;p>For a formula to be executed by the terminal, it is necessary to have:&lt;/p>
-&lt;ul>
-&lt;li>The tree.json file of the repository where the configured formula is located&lt;/li>
-&lt;li>An executable file&lt;/li>
-&lt;li>A config.json file&lt;/li>
-&lt;/ul>
-&lt;p>The &lt;strong>tree.json&lt;/strong> file allows the CLI to know the commands and sub-commands associated with the formula. This is how it identifies where to download the formula files on the first execution (on demand).&lt;/p>
-&lt;p>The &lt;strong>executable file&lt;/strong> contains the implementation of the formula. The CLI will download this file according to the operating system of the user&amp;rsquo;s computer and execute this formula sending the input parameters that have been informed.&lt;/p>
-&lt;p>The &lt;strong>config.json&lt;/strong> file contains the formula&amp;rsquo;s input parameters. It allows the CLI to know what datas to ask the user when he executes the command in the terminal in order to process the formula correctly.&lt;/p>
-&lt;h4 id="configjson">Config.json&lt;/h4>
-&lt;p>This file contains the following information:&lt;/p>
-&lt;ul>
-&lt;li>a description&lt;/li>
-&lt;li>the formula input parameters&lt;/li>
-&lt;/ul>
-&lt;p>These input parameters are made up of the following fields:&lt;/p>
-&lt;ul>
-&lt;li>name&lt;/li>
-&lt;li>type&lt;/li>
-&lt;li>label&lt;/li>
-&lt;li>default (optional)&lt;/li>
-&lt;li>items (optional)&lt;/li>
-&lt;li>cache (optional)&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;description&amp;#34;: &amp;#34;Sample inputs in Ritchie.&amp;#34;,
-&amp;#34;inputs&amp;#34; : [
-{
-&amp;#34;name&amp;#34; : &amp;#34;sample_text&amp;#34;,
-&amp;#34;type&amp;#34; : &amp;#34;text&amp;#34;,
-&amp;#34;label&amp;#34; : &amp;#34;Type : &amp;#34;,
-&amp;#34;cache&amp;#34; : {
-&amp;#34;active&amp;#34;: true,
-&amp;#34;qty&amp;#34; : 6,
-&amp;#34;newLabel&amp;#34; : &amp;#34;Type new value. &amp;#34;
-}
-},
-{
-&amp;#34;name&amp;#34; : &amp;#34;sample_list&amp;#34;,
-&amp;#34;type&amp;#34; : &amp;#34;text&amp;#34;,
-&amp;#34;default&amp;#34; : &amp;#34;in1&amp;#34;,
-&amp;#34;items&amp;#34; : [&amp;#34;in_list1&amp;#34;, &amp;#34;in_list2&amp;#34;, &amp;#34;in_list3&amp;#34;, &amp;#34;in_listN&amp;#34;],
-&amp;#34;label&amp;#34; : &amp;#34;Pick your : &amp;#34;
-},
-{
-&amp;#34;name&amp;#34; : &amp;#34;sample_bool&amp;#34;,
-&amp;#34;type&amp;#34; : &amp;#34;bool&amp;#34;,
-&amp;#34;default&amp;#34; : &amp;#34;false&amp;#34;,
-&amp;#34;items&amp;#34; : [&amp;#34;false&amp;#34;, &amp;#34;true&amp;#34;],
-&amp;#34;label&amp;#34; : &amp;#34;Pick: &amp;#34;
-}
-]
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>name&lt;/strong> field refers to the name of the variable that will be extracted when implementing the formula.&lt;/p>
-&lt;p>The &lt;strong>type&lt;/strong> field represents the type of the variable (currently there is only TEXT and BOOL)&lt;/p>
-&lt;p>The &lt;strong>label&lt;/strong> field is the text that will appear to the user via PROMPT to inform this variable.&lt;/p>
-&lt;p>The &lt;strong>default&lt;/strong> field is the value of the variable that will come by default if the choice is a list of options.&lt;/p>
-&lt;p>The &lt;strong>items&lt;/strong> field is the list of possible options for the variable.&lt;/p>
-&lt;p>The &lt;strong>cache&lt;/strong> field allows to configure whether it is necessary to store the user&amp;rsquo;s choices for this variable. It consists of 3 fields:&lt;/p>
-&lt;ul>
-&lt;li>active&lt;/li>
-&lt;li>qty&lt;/li>
-&lt;li>newLabel.&lt;/li>
-&lt;/ul>
-&lt;p>The &lt;strong>active&lt;/strong> field indicates whether the cache is enabled or not.&lt;/p>
-&lt;p>The &lt;strong>qty&lt;/strong> field refers to the number of choices that can be stored in the cache.&lt;/p>
-&lt;p>The &lt;strong>newLabel&lt;/strong> field is for the user to enter another value for the variable if those saved in the cache do not meet their needs.&lt;/p>
-&lt;h3 id="treejson">Tree.json&lt;/h3>
-&lt;div class="alert alert-info" role="alert">
-&lt;p>&lt;strong>Each&lt;/strong> Ritchie formula repository has a &lt;strong>command tree&lt;/strong>.&lt;/p>
-&lt;p>This command tree is configured in a file called &lt;strong>tree.json&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;p>It is through these JSON (s) that the CLI will be able to identify the commands it has access to, and the necessary datas to download the executables of the formulas.&lt;/p>
-&lt;p>The structure of a tree.json is as follows:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;commands&amp;#34;: [
-{
-&amp;#34;usage&amp;#34;: &amp;#34;aws&amp;#34;,
-&amp;#34;help&amp;#34;: &amp;#34;Apply Aws objects&amp;#34;,
-&amp;#34;parent&amp;#34;: &amp;#34;root&amp;#34;
-},
-{
-&amp;#34;usage&amp;#34;: &amp;#34;apply&amp;#34;,
-&amp;#34;help&amp;#34;: &amp;#34;Apply Aws objects&amp;#34;,
-&amp;#34;parent&amp;#34;: &amp;#34;root_aws&amp;#34;
-},
-{
-&amp;#34;usage&amp;#34;: &amp;#34;terraform&amp;#34;,
-&amp;#34;help&amp;#34;: &amp;#34;Apply Aws terraform objects&amp;#34;,
-&amp;#34;formula&amp;#34;: {
-&amp;#34;path&amp;#34;: &amp;#34;aws/terraform&amp;#34;,
-&amp;#34;bin&amp;#34;: &amp;#34;terraform-cli-${so}&amp;#34;,
-&amp;#34;bundle&amp;#34;: &amp;#34;${so}.zip&amp;#34;,
-&amp;#34;repoUrl&amp;#34;: &amp;#34;https://commons-repo.ritchiecli.io/formulas&amp;#34;
-},
-&amp;#34;parent&amp;#34;: &amp;#34;root_aws_apply&amp;#34;
-}
-]
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Let&amp;rsquo;s continue with the example of the command &lt;code>RIT AWS APPLY TERRAFORM&lt;/code>&lt;/p>
-&lt;p>Each command contained in this list can contain up to 4 parameters:&lt;/p>
-&lt;ul>
-&lt;li>usage&lt;/li>
-&lt;li>help&lt;/li>
-&lt;li>parent&lt;/li>
-&lt;li>formula&lt;/li>
-&lt;/ul>
-&lt;p>The &lt;strong>usage&lt;/strong> field refers to the word used in the command (aws, apply and terraforma in the example).&lt;/p>
-&lt;p>The &lt;strong>help&lt;/strong> field represents the help message that will appear to the user if he enters this command.&lt;/p>
-&lt;p>The &lt;strong>parent&lt;/strong> field indicates the previous commands in the tree, possibly using an underline (_) to separate the commands. ROOT being a reserved word referring to the RIT command.&lt;/p>
-&lt;p>When a command contains only these 3 fields (&lt;strong>usage, help, parent&lt;/strong>) it means that it is not executable, and that it is only part of a set of commands that together will execute a formula.&lt;/p>
-&lt;p>The &lt;strong>formula&lt;/strong> field will contain the necessary information for the CLI to identify where to look for the executables needed to execute the formula. It consists of 3 fields:&lt;/p>
-&lt;ul>
-&lt;li>repoUrl&lt;/li>
-&lt;li>path&lt;/li>
-&lt;li>bin&lt;/li>
-&lt;/ul>
-&lt;p>The &lt;strong>repoUrl&lt;/strong> field refers to the address where the formula&amp;rsquo;s executable files are located.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-It is important to note that Ritchie does not download all formulas at its installation. The CLI only downloads the executables of the formulas on demand, that is, when it executes the formulas commands for the first time.
-&lt;/div>
-&lt;p>The &lt;strong>path&lt;/strong> field indicates the folder that will be created locally on the user&amp;rsquo;s computer to add these executable files.&lt;/p>
-&lt;p>The &lt;strong>bin&lt;/strong> field tells you the name of the executable file that the CLI should download, according to the operating system (OS) of the user&amp;rsquo;s machine.&lt;/p>
-&lt;p>Running the commands from the AWS formula above, it is possible to get the following scenarios:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>rit aws&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Apply Aws objects
-Available Commands:
-apply Apply Aws objects
-Use &amp;#34;rit &amp;lt;command&amp;gt; --help&amp;#34; for more information about a given command.
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>rit aws apply&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Apply Aws objects
-Available Commands:
-terraform Apply Aws terraform objects
-Use &amp;#34;rit &amp;lt;command&amp;gt; --help&amp;#34; for more information about a given command.
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>rit aws apply terraform&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">Downloading config file...
-Done.
-Download formula...
-Done.
-Installing formula...
-Directory Created: /Users/Dennis/.rit/formulas/aws/terraform/bin
-File extracted: bin/terraform-cli-darwin
-Done.
-Use the arrow keys to navigate: ↓ ↑ → ←
-Select your repository URL:
-▸ https://github.com/zupit/iti-stack-core
-https://github.com/zupit/iti-stack-tools
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The first commands (&lt;strong>&lt;code>rit aws&lt;/code>&lt;/strong> and &lt;strong>&lt;code>rit aws apply&lt;/code>&lt;/strong>) returned the help field associated with the command in tree.json, as soon as the available sub-commands for the user to execute a formula.&lt;/p>
-&lt;p>The &lt;strong>&lt;code>rit aws apply terraform&lt;/code>&lt;/strong> command downloaded the formula&amp;rsquo;s executables and started asking the user for input parameters.&lt;/p>
-&lt;h3 id="makefile-e-shell-scripts">Makefile e Shell Scripts&lt;/h3>
-&lt;p>Those 3 files are used to generate files locally on the .rit folder when the user need to test the automation code he has implemented.&lt;/p>
-&lt;ul>
-&lt;li>Makefile&lt;/li>
-&lt;li>copy-bin-configs.sh file&lt;/li>
-&lt;li>unzip-bin-configs.sh file&lt;/li>
-&lt;/ul>
-&lt;p>When creating the new formula, the path where the formula is located in the repository have to be informed in the &lt;strong>Makefile&lt;/strong> of the root of the repository, as the following example :&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">#Makefiles
-SC_SPRING_STARTER=scaffold/spring-starter
-KAFKA=kafka
-DOCKER=docker/compose
-FORMULAS=$(SC_SPRING_STARTER) $(KAFKA) $(DOCKER)
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>In this file there is also a &lt;code>test-local&lt;/code> command that allows the user to generate the executable files of one or more formulas and place them in the temporary Ritchie folder (.rit) located in the home of the user&amp;rsquo;s machine.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">test-local:
-ifneq (&amp;#34;$(FORM)&amp;#34;, &amp;#34;&amp;#34;)
-@echo &amp;#34;Using form true: &amp;#34; $(FORM_TO_UPPER)
-$(MAKE) bin FORMULAS=$(FORM)
-mkdir -p $(HOME)/.rit/formulas
-rm -rf $(HOME)/.rit/formulas/$(FORM)
-./unzip-bin-configs.sh
-cp -r formulas/* $(HOME)/.rit/formulas
-rm -rf formulas
-else
-@echo &amp;#34;Use make test-local form=NAME_FORMULA for specific formula.&amp;#34;
-@echo &amp;#34;form false: ALL FORMULAS&amp;#34;
-$(MAKE) bin
-rm -rf $(HOME)/.rit/formulas
-./unzip-bin-configs.sh
-mv formulas $(HOME)/.rit
-endif
-mkdir -p $(HOME)/.rit/repo/local
-rm -rf $(HOME)/.rit/repo/local/tree.json
-cp tree/tree.json $(HOME)/.rit/repo/local/tree.json
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;strong>copy-bin-configs.sh&lt;/strong> and &lt;strong>unzip-bin-configs.sh&lt;/strong> are actually manipulated by the &lt;strong>test-local&lt;/strong> command to extract the executable files and &lt;strong>config.json&lt;/strong> of the chosen formulas, and move them to the &lt;strong>.rit folder&lt;/strong>.&lt;/p>
-&lt;h4 id="there-are-2-ways-to-use-this-makefile-command">There are 2 ways to use this Makefile command:&lt;/h4>
-&lt;p>Informing the specific formula to test, according to the name informed in the Makefile:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">make test-local form={nome_formula}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Executing directly the &lt;strong>test-local&lt;/strong> script to add all formulas from the repository to the temporary .rit folder :&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">make test-local
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>After adding the formula in .rit through the Makefile (main), it will be possible to execute the command associated with that formula through the terminal (auto-completion will not work in this case).&lt;/p>
-&lt;h3 id="formulas-build--test">&lt;strong>Formulas build / test&lt;/strong>&lt;/h3>
-&lt;p>As explained in the &lt;a href="https://docs.ritchiecli.io/use-cases/creating-formulas#step-4-test-the-formula-new-implementation">Step 4 of the create formula section&lt;/a>, it is possible to generate a formula executable files for test with the &lt;strong>&lt;code>rit build formula&lt;/code>&lt;/strong> command.&lt;/p>
-&lt;p>But what happen exactly when executing this command ? Well, it’s all related to the repository &lt;strong>Makefile&lt;/strong> file at the root of the repository.&lt;/p>
-&lt;p>When creating the new formula, the path where the formula is located in the repository was added automatically in the repository &lt;strong>Makefile&lt;/strong> file.&lt;/p>
-&lt;p>Therefore, executing the rit build formula command corresponds to the execution of the &lt;strong>&lt;code>make test-local form={formula_name}&lt;/code>&lt;/strong> command of the repository &lt;strong>Makefile&lt;/strong> file.&lt;/p>
-&lt;p>&lt;img src="https://lh4.googleusercontent.com/8hoDs7Km57x5E8SBCVZsHGpv4rhTmU7UNoGae9xuxjIKWtKwlrvKPLH1S8DLX1WpDrYE8LPyI7KcxT1hl8oy6pSoUu2cb2r0CuwjFWHJztvBLtmUzUAN_hHwEcexbD0kOhyHgcou" alt="Build of a formula">&lt;/p>
-&lt;h2 id="access-to-formulas">Access to formulas&lt;/h2>
-&lt;div class="alert alert-info" role="alert">
-All commands &lt;strong>accessible through the CLI&lt;/strong> can be observed through the &lt;em>Helper&lt;/em>
-&lt;/div>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">➜ rit --help
-A CLI that developers can build and operate
-your applications without help from the infra staff.
-Complete documentation is available at https://github.com/ZupIT/ritchie-cli
-core commands:
-add add objects
-completion Add autocomplete for terminal
-clean clean objects
-create Create objects
-delete Delete objects
-list list objects
-set Set objects
-show Show objects
-update update objects
-commons commands:
-aws Apply Aws objects
-docker Manipulate docker objects
-github Manipulate GitHub objects
-k8s Manipulate k8s objects
-kafka Kafka commands
-scaffold Manipulate scaffold objects
-Other Commands:
-Options:
--v, --version: version for rit
-Usage:
-rit [flags] [options]
-Use &amp;#34;rit &amp;lt;command&amp;gt; --help&amp;#34; for more information about a given command.
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>When a user will download Ritchie (&lt;a href="https://docs.ritchiecli.io/getting-started/choosing-a-version#single-version">Single&lt;/a> version) or execute the &lt;code>rit login&lt;/code> command (&lt;a href="https://docs.ritchiecli.io/getting-started/choosing-a-version#team-version">Team&lt;/a> version) to access an organization&amp;rsquo;s repositories, the CLI will download and merge the tree.json from the formula repositories to which the user has access.&lt;/p>
-&lt;p>&lt;img src="https://zupit.github.io/fluxo-cli%20%281%29.png" alt="">&lt;/p>
-&lt;p>The junction of the repository trees will be the tree of all commands available via the CLI on the user&amp;rsquo;s computer, which is presented in the &lt;em>Helper&lt;/em>.&lt;/p>
-&lt;h2 id="priority-between-repositories">Priority between repositories&lt;/h2>
-&lt;div class="alert alert-info" role="alert">
-&lt;p>There is a concept of &lt;strong>priority&lt;/strong> among the command trees of the &lt;strong>formula repositories&lt;/strong>.&lt;/p>
-&lt;p>This makes it possible to &lt;strong>avoid repetitive commands&lt;/strong> after joining the trees of all commands by the CLI.&lt;/p>
-&lt;/div>
-&lt;p>Here is the &lt;strong>default priority&lt;/strong> defined in the CLI among the repositories:&lt;/p>
-&lt;ul>
-&lt;li>Priority 0: Core&lt;/li>
-&lt;li>Priority 1: Location&lt;/li>
-&lt;li>Priority 2: Other repositories&lt;/li>
-&lt;/ul>
-&lt;p>This rule allows each user (&lt;em>single&lt;/em>) / organization (team) to define the priority among the other repositories.&lt;/p>
-&lt;h3 id="example">Example&lt;/h3>
-&lt;p>It is possible for a user to choose between the 2 scenarios below:&lt;/p>
-&lt;p>&lt;img src="https://lh4.googleusercontent.com/HjfbyCr7FUbOrhlx7uEqr7-fgjmVbivXPSk9X3CD92BPtF4sgy4ojBl4-HKAzAcI7OGacCGWVzMJCDPh_IfS8y3520_i-TwccY2PQEqrnXgrZKcSdBiOyEjBwzB1Uy9E1b3KQaPL" alt="">&lt;img src="https://lh5.googleusercontent.com/Oc1HatluaibDzbcfd0N34oERi8al1zsJj6qB4XDNpueoP5xgizDIarZmQ2BoGCXFp0K-g5QnQC6-pn1eQFoO15QKmQEOklfJ_AdK7hN0EeHpK7T3HrIm_wN0G_rNcbN6LP7VFBDK" alt="">&lt;/p>
-&lt;h4 id="scenario-1">&lt;strong>Scenario 1&lt;/strong>&lt;/h4>
-&lt;p>Priority would be given to commons commands over your team&amp;rsquo;s commands.&lt;/p>
-&lt;h4 id="scenario-2">S&lt;strong>cenario 2&lt;/strong>&lt;/h4>
-&lt;p>Priority would be given to team commands over commons commands. This would allow, for example, a user / team to use a command that is in the &lt;strong>ritchie-formulas&lt;/strong> (commons) repository tree for a formula in their repository, performing a different operation with the same command, since it would have priority.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-&lt;p>It is possible to configure the priority between the repositories in the &lt;strong>repo&lt;/strong> folder of the &lt;a href="cli">.rit folder&lt;/a> where you have a configurable repositories.json file.&lt;/p>
-&lt;p>For more information on how to manipulate &lt;a href="../../use-cases/using-first-commands/repositories">repositories&lt;/a>, check out the documentation here: Repository.&lt;/p>
-&lt;/div></description></item><item><title>Reference: Server</title><link>https://zupit.github.io/reference/server/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/server/</guid><description>
-&lt;hr>
-&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Available only on Team Version, the server is responsible to provide the information needed by the CLI so it can execute Ritchie&amp;rsquo;s commands.&lt;/p>
-&lt;p>To make this happen, each team must have a configuration file to start their server when using Ritchie. That file is &lt;strong>file_config.json&lt;/strong>.&lt;/p>
-&lt;p>Besides the configuration file, the CLI also provides and collect information through the &lt;strong>ritchie-server repository.&lt;/strong>&lt;/p>
-&lt;div class="alert alert-info" role="alert">
-To get to know our server repository, access &lt;a href="https://github.com/ZupIT/ritchie-server">&lt;strong>ritchie-server&lt;/strong>&lt;/a> on Github.
-&lt;/div>
-&lt;h2 id="server-configuration">Server configuration&lt;/h2>
-&lt;p>The file_config.json will contain the configuration and authorization part of the trees and commands, this involves the following fields:&lt;/p>
-&lt;ul>
-&lt;li>tenant / team&lt;/li>
-&lt;li>keycloak&lt;/li>
-&lt;li>cliVersionPath&lt;/li>
-&lt;li>repositories&lt;/li>
-&lt;li>oauth&lt;/li>
-&lt;li>credentials&lt;/li>
-&lt;/ul>
-&lt;p>The &lt;em>&lt;strong>tenant / team&lt;/strong>&lt;/em> field represents the name of the team that must be informed by the user when logging in with Ritchie in the Team version.&lt;/p>
-&lt;p>The &lt;em>&lt;strong>keycloak&lt;/strong>&lt;/em> field refers to the client &lt;a href="https://www.keycloak.org/">&lt;strong>Keycloak&lt;/strong>&lt;/a> settings used by the server to validate the token and manage the keycloak (url, realm, clientId and clientSecret).&lt;/p>
-&lt;p>The &lt;em>&lt;strong>cliVersionPath&lt;/strong>&lt;/em> field informs the URL to the provider in order to identify the version of the CLI being used.&lt;/p>
-&lt;p>The _&lt;strong>repositories**_ field indicates the formula repositories accessible by the team (with name, priority, treePath, urls) that the CLI will use to download the tree.json that will be in the &lt;/strong>.rit folder** &lt;a href="cli">&lt;/a>&lt;/p>
-&lt;p>The &lt;em>&lt;strong>oauth&lt;/strong>&lt;/em> field contains the URL that will be used to login with the team&amp;rsquo;s SSO (Single Sign On) tool.&lt;/p>
-&lt;p>The &lt;em>&lt;strong>credentials&lt;/strong>&lt;/em> field contains a list of credentials that can be used within the team&amp;rsquo;s environment, which can be set by both users and server administrators (for specific users, or for the entire team) using the &lt;strong>&lt;code>rit set credential&lt;/code>&lt;/strong> command.&lt;/p>
-&lt;h3 id="here-is-an-example-of-a-file_configjson">Here is an example of a file_config.json&lt;/h3>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;zup&amp;#34;: {
-&amp;#34;keycloak&amp;#34;: {
-&amp;#34;url&amp;#34;: &amp;#34;http://localhost:8080&amp;#34;,
-&amp;#34;realm&amp;#34;: &amp;#34;ritchie&amp;#34;,
-&amp;#34;clientId&amp;#34;: &amp;#34;user-login&amp;#34;,
-&amp;#34;clientSecret&amp;#34;: &amp;#34;user-login&amp;#34;
-},
-&amp;#34;cliVersionPath&amp;#34;: {
-&amp;#34;provider&amp;#34;: &amp;#34;s3&amp;#34;,
-&amp;#34;url&amp;#34;: &amp;#34;http://localhost:8882/s3-version-mock&amp;#34;
-},
-&amp;#34;repositories&amp;#34;:
-[
-{
-&amp;#34;name&amp;#34;: &amp;#34;commons&amp;#34;,
-&amp;#34;priority&amp;#34;: 0,
-&amp;#34;treePath&amp;#34;: &amp;#34;/tree/tree.json&amp;#34;,
-&amp;#34;remote&amp;#34; : &amp;#34;http://localhost:8882&amp;#34;,
-&amp;#34;serverUrl&amp;#34; : &amp;#34;http://localhost:3000&amp;#34;,
-&amp;#34;replaceRepoUrl&amp;#34; : &amp;#34;http://localhost:3000/formulas&amp;#34;
-},
-{
-&amp;#34;name&amp;#34;: &amp;#34;zup&amp;#34;,
-&amp;#34;priority&amp;#34;: 1,
-&amp;#34;treePath&amp;#34;: &amp;#34;/tree/tree-zup.json&amp;#34;,
-&amp;#34;remote&amp;#34; : &amp;#34;http://localhost:8882&amp;#34;,
-&amp;#34;serverUrl&amp;#34; : &amp;#34;http://localhost:3000&amp;#34;,
-&amp;#34;replaceRepoUrl&amp;#34; : &amp;#34;http://localhost:3000/formulas&amp;#34;
-}
-],
-&amp;#34;oauth&amp;#34; :{
-&amp;#34;url&amp;#34; : &amp;#34;http://localhost:8080/auth/realms/ritchie&amp;#34;,
-&amp;#34;clientId&amp;#34; : &amp;#34;oauth&amp;#34;
-},
-&amp;#34;credentials&amp;#34;: {
-&amp;#34;github&amp;#34;: [
-{
-&amp;#34;field&amp;#34;: &amp;#34;username&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;
-},
-{
-&amp;#34;field&amp;#34;: &amp;#34;token&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;password&amp;#34;
-}
-],
-&amp;#34;gitlab&amp;#34;: [
-{
-&amp;#34;field&amp;#34;: &amp;#34;username&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;
-},
-{
-&amp;#34;field&amp;#34;: &amp;#34;token&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;password&amp;#34;
-}
-],
-&amp;#34;email-zup&amp;#34;: [
-{
-&amp;#34;field&amp;#34;: &amp;#34;email&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;
-},
-{
-&amp;#34;field&amp;#34;: &amp;#34;token&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;password&amp;#34;
-}
-]
-}
-}
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="server-testing">Server testing&lt;/h2>
-&lt;p>For the Team version to work on the CLI, the team will need :&lt;/p>
-&lt;ul>
-&lt;li>a server&lt;/li>
-&lt;li>a &lt;a href="https://www.keycloak.org/">Keycloak&lt;/a> account (open source tool)&lt;/li>
-&lt;li>a &lt;a href="https://www.vaultproject.io/">Vault&lt;/a> account (open source tool)&lt;/li>
-&lt;/ul>
-&lt;p>It is possible to test these settings &lt;strong>locally&lt;/strong>, observing through Postman files (available in the &lt;strong>/testdata&lt;/strong> folder) how the server endpoints are handled by the CLI to work.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-To realize this test you&amp;rsquo;ll have to clone the &lt;a href="https://github.com/ZupIT/ritchie-server">ritchie-server repository&lt;/a> on your computer.
-&lt;/div>
-&lt;p>To start this test you need to run the repository &lt;strong>docker-compose&lt;/strong> file : &lt;code>$ docker-compose up&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">version: &amp;#39;3&amp;#39;
-services:
-vault:
-image: vault:1.3.0
-ports:
-- &amp;#34;8200:8200&amp;#34;
-volumes:
-- ./resources/vault.hcl:/vault/config/vault.hcl
-environment:
-- VAULT_DEV_ROOT_TOKEN_ID=87e7784b-d598-44fe-8962-c7c345a11eed
-- VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200
-- SKIP_SETCAP=true
-- disable_mlock=true
-keycloak:
-image: jboss/keycloak:7.0.0
-environment:
-DB_VENDOR: H2
-KEYCLOAK_IMPORT: /tmp/keycloak/ritchie.json
-KEYCLOAK_USER: admin
-KEYCLOAK_PASSWORD: admin
-ports:
-- &amp;#34;8080:8080&amp;#34;
-volumes:
-- ./testdata/security/keycloak:/tmp/keycloak
-stubby4j:
-image: sandokandias/stubby4j-docker
-ports:
-- &amp;#34;8787:8787&amp;#34;
-- &amp;#34;8882:8882&amp;#34;
-environment:
-STUBBY_PORT: 8882
-volumes:
-- ./testdata/stubby4j/integrations.yml:/usr/local/stubby.yml
-- ./testdata/stubby4j/response.zip:/usr/local/response.zip
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then run the &lt;strong>run-local.sh file&lt;/strong> : &lt;code>$ sh run-local.sh&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">#!/bin/bash
-./create-vault-approle.sh . http://0.0.0.0:8200
-export VAULT_ADDR=http://localhost:8200
-export VAULT_AUTHENTICATION=APPROLE
-export VAULT_ROLE_ID=$(cat /tmp/vault/role-id.txt)
-export VAULT_SECRET_ID=$(cat /tmp/vault/secret-id.txt)
-export FILE_CONFIG=&amp;#34;$(pwd)/server/resources/file_config_local.json&amp;#34;
-go run server//server/main.go
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>These 2 files work together with the &lt;strong>file_config-local.json&lt;/strong> located in the &lt;strong>/server/resources folder&lt;/strong> of the ritchie-server repository.&lt;/p>
-&lt;p>Once everything is up, it will be possible to execute the requests via Postman that the CLI sends to the server to get the information necessary for its operation.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-A &lt;strong>core command&lt;/strong> is being developed to allow a team to be able to create the configuration files as soon as the realm in kubectl, to be able to generate a server already working with Ritchie in a simplified way.
-&lt;/div>
-&lt;h2 id="credentials-configurations">&lt;strong>Credentials Configurations&lt;/strong>&lt;/h2>
-&lt;p>The **&lt;code>rit set credential&lt;/code>**command allows to save credentials in the session (locally in the Single version, in the Vault in the Team version) for the user to take advantage of this data without having to inform them again when executing their formulas.&lt;/p>
-&lt;p>To use these credentials as inputs to a formula, there is a keyword that needs to be entered in the formula&amp;rsquo;s &lt;strong>config.json&lt;/strong> file.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-&lt;p>This file is where the &lt;strong>input&lt;/strong> &lt;strong>parameters&lt;/strong> that will be requested from the user when he will execute the command in the terminal to process the formula are configured.&lt;/p>
-&lt;p>That keyword is &lt;strong>CREDENTIAL&lt;/strong>.&lt;/p>
-&lt;/div>
-&lt;p>To know how to use it, you need to have access to the &lt;code>ritchie-server&lt;/code> repository, and observe how the credentials of each tool are registered in the &lt;code>resources/file_config_local.json&lt;/code> file as explained above in this section.&lt;/p>
-&lt;p>For example, &lt;strong>Github credentials&lt;/strong> are configured as follows:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;credentials&amp;#34;: {
-&amp;#34;github&amp;#34;: [
-{
-&amp;#34;field&amp;#34;: &amp;#34;username&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;
-},
-{
-&amp;#34;field&amp;#34;: &amp;#34;token&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;password&amp;#34;
-}
-]
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Therefore, to be able to use Github credentials as input to a formula&amp;rsquo;s &lt;code>config.json&lt;/code>, I would need to inform them as follows:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;inputs&amp;#34;: [
-{
-&amp;#34;name&amp;#34;: &amp;#34;git_user&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_USERNAME&amp;#34;
-},
-{
-&amp;#34;name&amp;#34;: &amp;#34;git_token&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_TOKEN&amp;#34;
-}
-]
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>When the formula command will be executed, the Github credentials will be fetched directly in the session, and can be used in the formulas without the user informing them again at the terminal.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-Remembering that the user must have logged in, and set the credentials (&lt;strong>rit set credential&lt;/strong>) for this to work.
-&lt;/div></description></item><item><title>Reference: Releases</title><link>https://zupit.github.io/reference/releases/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/releases/</guid><description/></item><item><title>Reference: Roadmap</title><link>https://zupit.github.io/reference/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/roadmap/</guid><description/></item></channel></rss>
+&lt;h3 id="autocomplete-commands">Autocomplete commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Commands&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit completion zsh&lt;/td>
+&lt;td style="text-align:left">add autocomplete via zsh&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit completion bash&lt;/td>
+&lt;td style="text-align:left">add autocomplete via bash&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit completion fish&lt;/td>
+&lt;td style="text-align:left">add autocomplete via fish&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit completion powershell&lt;/td>
+&lt;td style="text-align:left">add autocomplete via powershell&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="env-commands">Env commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Commands&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit set env&lt;/td>
+&lt;td style="text-align:left">set a new environment&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit show env&lt;/td>
+&lt;td style="text-align:left">show the current environment used&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit delete env&lt;/td>
+&lt;td style="text-align:left">delete a environment&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="credential-commands">Credential commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Commands&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit set credential&lt;/td>
+&lt;td style="text-align:left">set new credentials for the context&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit list credential&lt;/td>
+&lt;td style="text-align:left">list all credential names and fields&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h3 id="workspace-commands">Workspace commands&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Commands&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">rit list workspace&lt;/td>
+&lt;td style="text-align:left">list all formula&amp;rsquo;s workspaces&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit add workspace&lt;/td>
+&lt;td style="text-align:left">add a new workspace&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">rit delete workspace&lt;/td>
+&lt;td style="text-align:left">delete a specific formula&amp;rsquo;s workspace&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="flags">Flags&lt;/h2>
+&lt;h3 id="main-flags">Main flags&lt;/h3>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">Flags&lt;/th>
+&lt;th style="text-align:left">Operation&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&amp;ndash;default&lt;/td>
+&lt;td style="text-align:left">attribute the &lt;strong>default&lt;/strong> values configured on the formula.&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&amp;ndash;docker&lt;/td>
+&lt;td style="text-align:left">run a formula using &lt;strong>Docker&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&amp;ndash;help&lt;/td>
+&lt;td style="text-align:left">returns a list of executable available commands and flags for the user&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&amp;ndash;local&lt;/td>
+&lt;td style="text-align:left">run a formula &lt;strong>locally&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&amp;ndash;verbose&lt;/td>
+&lt;td style="text-align:left">run a formula without log details&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Reference: Release Notes</title><link>https://zupit.github.io/reference/release-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/release-notes/</guid><description/></item><item><title>Reference: Roadmap</title><link>https://zupit.github.io/reference/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/roadmap/</guid><description/></item><item><title>Reference: Youtube</title><link>https://zupit.github.io/reference/youtube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/reference/youtube/</guid><description/></item></channel></rss>
