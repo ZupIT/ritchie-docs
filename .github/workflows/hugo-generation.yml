@@ -30,7 +30,7 @@ jobs:
               
       - name: Build
         run: |
-              hugo -D
+              hugo -D 
 
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
