@@ -34,9 +34,9 @@ Para executar uma fórmula localmente, é necessário ter a linguagem de program
 
 Todas as fórmulas podem ser executadas sem depender da linguagem usada a condição que  o **`DOCKER`** esteja instalado e iniciado.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Vamos no exemplo a seguir da [**seção fórmula hello world** ](formula-hello-world)para ver como isso funciona na prática.
-{{% /alert %}}
+{{% /alert */%}}
 
 
 
@@ -49,9 +49,9 @@ Vamos no exemplo a seguir da [**seção fórmula hello world** ](formula-hello-w
 
 ### 4. Containers com Ritchie
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 Todos os templates de formulas contém um arquivo **DockerFile** que cria um container com **Ritchie CLI** instalado.
-{{% /alert %}}
+{{% /alert */%}}
 
 ## Próximos passos 
 
