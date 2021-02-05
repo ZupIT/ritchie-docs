@@ -1,7 +1,7 @@
 ---
 title: Visão geral
 weight: 1
-description: 'Nesta seção, você encontrará todas as informações iniciais sobre o Ritchie.'
+description: 'Nesta seção, você vai encontrar todas as informações iniciais sobre o Ritchie.'
 ---
 
 ---

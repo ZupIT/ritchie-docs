@@ -32,9 +32,9 @@ To run a formula locally it is necessary to have the formula programming languag
 
 All formulas can run regardless the programming language used from the moment you have **`DOCKER`** installed and running.
 
-{{% alert color="info" %}}
+{{%/* alert color="info" %}}
 Check out on the following example [**how to run a "Hello World" formula** ](hello-world-formula)
-{{% /alert %}}
+{{% /alert */%}}
 
 ###  3. Local & Docker Flags
 
@@ -45,9 +45,9 @@ You can force Ritchie CLI to execute a formula with a specific method using flag
 
 ### 4. Containers with Ritchie
 
-{{% alert color="warning" %}}
+{{%/* alert color="warning" %}}
 All formulas templates contain a **Dockerfile** which creates a container with **Ritchie CLI** installed.
-{{% /alert %}}
+{{% /alert */%}}
 
 ## Next steps 
 
