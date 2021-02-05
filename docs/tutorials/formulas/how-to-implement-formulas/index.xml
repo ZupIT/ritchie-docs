@@ -1,549 +1,682 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – How to implement formulas</title><link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/</link><description>Recent content in How to implement formulas on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutorials: Formula Folder</title><link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/formula-folder/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/formula-folder/</guid><description>
-&lt;hr>
-&lt;h2 id="what-is-the-formula-folder">What is the formula folder?&lt;/h2>
-&lt;p>This folder contains the files with the formula&amp;rsquo;s behavior.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-The folder structures defines the command tree, so &lt;strong>it&amp;rsquo;s not indicated to update&lt;/strong> folders names or include more files/folders, &lt;strong>if not&lt;/strong> in the &lt;strong>src/*&lt;/strong> folder.
-&lt;/div>
-&lt;p>Each programming language has its own specificities, but the formula&amp;rsquo;s structure is almost always the same, no matter what language is used, and will contain:&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:left">File&lt;/th>
-&lt;th style="text-align:left">Description&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>config.json&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to configure the formula inputs.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>main file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to extract local variables.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>pkg/formula file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to implement the formula operation.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>Dockerfile&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to build docker images.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>README file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to explain what the formula does.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>Makefile file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to compile the formula&amp;rsquo;s code (&lt;em>will be deprecated 03/2021&lt;/em>).&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>build.sh file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to compile the formula&amp;rsquo;s code in shell.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>metadata.json file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to tag the formula&amp;rsquo;s information.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>set_unmask.sh file&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file used by the Makefile file.&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:left">&lt;code>help.json files&lt;/code>&lt;/td>
-&lt;td style="text-align:left">file to configure formula helper messages on the CLI.&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;p>You can find all &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages">&lt;strong>languages templates&lt;/strong>&lt;/a> on the ritchie-formulas repository.&lt;/p>
-&lt;h3 id="formula-folder-examples">Formula folder examples&lt;/h3>
-&lt;div class='code-tabs'>
-&lt;ul class="nav nav-tabs">&lt;/ul>
-&lt;div class="tab-content">
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/go%20%281%29%20%281%29.png" alt="">&lt;/p>
-&lt;p>To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>config.json:&lt;/strong> Update the inputs configurations.&lt;/li>
-&lt;li>&lt;strong>main.go:&lt;/strong> Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong>formula/*&lt;/strong>).&lt;/li>
-&lt;li>&lt;strong>formula/*:&lt;/strong> Code the formula&amp;rsquo;s behavior.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/java%20%282%29%20%282%29.png" alt="">&lt;/p>
-&lt;p>To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>config.json:&lt;/strong> Update the inputs configurations.&lt;/li>
-&lt;li>&lt;strong>main.java:&lt;/strong> Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong>formula/*&lt;/strong>).&lt;/li>
-&lt;li>&lt;strong>formula/*:&lt;/strong> Code the formula&amp;rsquo;s behavior.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/node%20%283%29%20%283%29.png" alt="">&lt;/p>
-&lt;p>To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>config.json:&lt;/strong> Update the inputs configurations.&lt;/li>
-&lt;li>&lt;strong>index.js:&lt;/strong> Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong>formula/*&lt;/strong>).&lt;/li>
-&lt;li>&lt;strong>formula/*:&lt;/strong> Code the formula&amp;rsquo;s behavior.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/python%20%282%29.png" alt="">&lt;/p>
-&lt;p>To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>config.json:&lt;/strong> Update the inputs configurations.&lt;/li>
-&lt;li>&lt;strong>main.py:&lt;/strong> Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong>formula/*&lt;/strong>).&lt;/li>
-&lt;li>&lt;strong>formula/*:&lt;/strong> Code the formula&amp;rsquo;s behavior.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;p>&lt;img src="https://zupit.github.io/shell%20%282%29%20%281%29.png" alt="">&lt;/p>
-&lt;p>To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>config.json:&lt;/strong> Update the inputs configurations.&lt;/li>
-&lt;li>&lt;strong>main.sh:&lt;/strong> Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong>formula/*&lt;/strong>).&lt;/li>
-&lt;li>&lt;strong>formula/*:&lt;/strong> Code the formula&amp;rsquo;s behavior.&lt;/li>
-&lt;/ul>
-&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;div class="alert alert-warning" role="alert">
-The structures defines the command, so &lt;strong>it&amp;rsquo;s not indicated to update&lt;/strong> folders names or include more files/folders &lt;strong>if not&lt;/strong> in the &lt;strong>src/*&lt;/strong> folder.
-&lt;/div></description></item><item><title>Tutorials: Config File</title><link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/config-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/config-file/</guid><description>
-&lt;hr>
-&lt;h2 id="what-is-the-configjson-file">What is the config.json file?&lt;/h2>
-&lt;p>The &lt;strong>config.json&lt;/strong> file contains the formula&amp;rsquo;s input parameters. It allows the CLI to know what datas to ask the user when he runs the command in the terminal in order to process the formula correctly.&lt;/p>
-&lt;p>These input parameters are made up of the following fields:&lt;/p>
-&lt;ul>
-&lt;li>a &lt;strong>&lt;code>docker image builder&lt;/code>&lt;/strong> (according to the programming language chose at the formula creation)&lt;/li>
-&lt;li>the formula &lt;strong>&lt;code>inputs parameters list&lt;/code>&lt;/strong>.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;dockerImageBuilder&amp;#34;: &amp;#34;dockerImage&amp;#34;,
-&amp;#34;inputs&amp;#34;: []
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – How to implement formulas</title>
+    <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/</link>
+    <description>Recent content in How to implement formulas on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutorials: Formula Folder</title>
+      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/formula-folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/formula-folder/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;what-is-the-formula-folder&#34;&gt;What is the formula folder?&lt;/h2&gt;
+&lt;p&gt;This folder contains the files with the formula&amp;rsquo;s behavior.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s not indicated to update&lt;/strong&gt; folders names or include more files/folders, &lt;strong&gt;if not&lt;/strong&gt; in the &lt;strong&gt;src/*&lt;/strong&gt; folder.
+&lt;/div&gt;
+
+&lt;p&gt;Each programming language has its own specificities, but the formula&amp;rsquo;s structure is almost always the same, no matter what language is used, and will contain:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;File&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;config.json&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to configure the formula inputs.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;main file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to extract local variables.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;pkg/formula file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to implement the formula operation.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Dockerfile&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to build docker images.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;README file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to explain what the formula does.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;Makefile file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to compile the formula&amp;rsquo;s code (&lt;em&gt;will be deprecated 03/2021&lt;/em&gt;).&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;build.sh file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to compile the formula&amp;rsquo;s code in shell.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;metadata.json file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to tag the formula&amp;rsquo;s information.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;set_unmask.sh file&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file used by the Makefile file.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&lt;code&gt;help.json files&lt;/code&gt;&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;file to configure formula helper messages on the CLI.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You can find all &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages&#34;&gt;&lt;strong&gt;languages templates&lt;/strong&gt;&lt;/a&gt; on the ritchie-formulas repository.&lt;/p&gt;
+&lt;h3 id=&#34;formula-folder-examples&#34;&gt;Formula folder examples&lt;/h3&gt;
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/go%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.go:&lt;/strong&gt; Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; Code the formula&amp;rsquo;s behavior.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/java%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.java:&lt;/strong&gt; Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; Code the formula&amp;rsquo;s behavior.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/node%20%283%29%20%283%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;index.js:&lt;/strong&gt; Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; Code the formula&amp;rsquo;s behavior.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/python%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.py:&lt;/strong&gt; Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; Code the formula&amp;rsquo;s behavior.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/shell%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;main.sh:&lt;/strong&gt; Extract the inputs and call the formula&amp;rsquo;s methods (coded on &lt;strong&gt;formula/*&lt;/strong&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;formula/*:&lt;/strong&gt; Code the formula&amp;rsquo;s behavior.&lt;/li&gt;
+&lt;/ul&gt;
+
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+The structures defines the command, so &lt;strong&gt;it&amp;rsquo;s not indicated to update&lt;/strong&gt; folders names or include more files/folders &lt;strong&gt;if not&lt;/strong&gt; in the &lt;strong&gt;src/*&lt;/strong&gt; folder.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutorials: Config File</title>
+      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/config-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/config-file/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;what-is-the-configjson-file&#34;&gt;What is the config.json file?&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;config.json&lt;/strong&gt; file contains the formula&amp;rsquo;s input parameters. It allows the CLI to know what datas to ask the user when he runs the command in the terminal in order to process the formula correctly.&lt;/p&gt;
+&lt;p&gt;These input parameters are made up of the following fields:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a &lt;strong&gt;&lt;code&gt;docker image builder&lt;/code&gt;&lt;/strong&gt; (according to the programming language chose at the formula creation)&lt;/li&gt;
+&lt;li&gt;the formula &lt;strong&gt;&lt;code&gt;inputs parameters list&lt;/code&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;dockerImageBuilder&amp;#34;: &amp;#34;dockerImage&amp;#34;,
+  &amp;#34;inputs&amp;#34;: []
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="input-parameter-configuration">Input parameter configuration&lt;/h2>
-&lt;p>Each input parameter is composed of the following fields:&lt;/p>
-&lt;h3 id="mandatory-fields">Mandatory fields&lt;/h3>
-&lt;ul>
-&lt;li>&lt;code>name&lt;/code>: variable name to extract.&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-warning" role="alert">
-&lt;p>Once an input value is informed on Ritchie CLI, it is saved as a &lt;strong>local variable&lt;/strong> during the formula execution.&lt;/p>
-&lt;p>The variable &lt;strong>name&lt;/strong> will be convert &lt;strong>uppercase&lt;/strong> as the &lt;strong>local variable name&lt;/strong>.&lt;/p>
-&lt;/div>
-&lt;blockquote>
-&lt;p>A good practice is to add a &lt;em>&lt;strong>&lt;code>RIT_&lt;/code>&lt;/strong>&lt;/em> suffix to each &lt;strong>&lt;code>input name&lt;/code>&lt;/strong> to avoid having conflicts with local variables.&lt;/p>
-&lt;p>Example_: &lt;code>rit_file_name&lt;/code> &amp;ndash;&amp;gt; &lt;code>RIT_FILE_NAME&lt;/code>_&lt;/p>
-&lt;/blockquote>
-&lt;ul>
-&lt;li>&lt;code>type&lt;/code>:
-&lt;ul>
-&lt;li>&lt;strong>text&lt;/strong> (string),&lt;/li>
-&lt;li>&lt;strong>bool&lt;/strong> (boolean),&lt;/li>
-&lt;li>&lt;strong>password&lt;/strong> (hidden string on CLI),&lt;/li>
-&lt;li>**credentials** &lt;em>(specific type, learn more informations_ &lt;/em>&lt;strong>here&lt;/strong>_&lt;a href="https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs">&lt;/a>&lt;em>),&lt;/em>&lt;/li>
-&lt;li>&lt;strong>dynamic&lt;/strong> &lt;em>(associated with the optional &lt;code>request_info&lt;/code> field below),&lt;/em>&lt;/li>
-&lt;li>&lt;strong>path:&lt;/strong> enables the autocomplete to inform a path to a folder or a file (string).&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;code>label&lt;/code> : text appearing on the CLI, asking for the input.&lt;/li>
-&lt;/ul>
-&lt;h4 id="input-example-with-mandatory-fields">Input example with mandatory fields:&lt;/h4>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;input-parameter-configuration&#34;&gt;Input parameter configuration&lt;/h2&gt;
+&lt;p&gt;Each input parameter is composed of the following fields:&lt;/p&gt;
+&lt;h3 id=&#34;mandatory-fields&#34;&gt;Mandatory fields&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;name&lt;/code&gt;: variable name to extract.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Once an input value is informed on Ritchie CLI, it is saved as a &lt;strong&gt;local variable&lt;/strong&gt; during the formula execution.&lt;/p&gt;
+&lt;p&gt;The variable &lt;strong&gt;name&lt;/strong&gt; will be convert &lt;strong&gt;uppercase&lt;/strong&gt; as the &lt;strong&gt;local variable name&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A good practice is to add a &lt;em&gt;&lt;strong&gt;&lt;code&gt;RIT_&lt;/code&gt;&lt;/strong&gt;&lt;/em&gt; suffix to each &lt;strong&gt;&lt;code&gt;input name&lt;/code&gt;&lt;/strong&gt; to avoid having conflicts with local variables.&lt;/p&gt;
+&lt;p&gt;Example_: &lt;code&gt;rit_file_name&lt;/code&gt; &amp;ndash;&amp;gt; &lt;code&gt;RIT_FILE_NAME&lt;/code&gt;_&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;type&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;text&lt;/strong&gt; (string),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;bool&lt;/strong&gt; (boolean),&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;password&lt;/strong&gt; (hidden string on CLI),&lt;/li&gt;
+&lt;li&gt;**credentials** &lt;em&gt;(specific type, learn more informations_ &lt;/em&gt;&lt;strong&gt;here&lt;/strong&gt;_&lt;a href=&#34;https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs&#34;&gt;&lt;/a&gt;&lt;em&gt;),&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;dynamic&lt;/strong&gt; &lt;em&gt;(associated with the optional &lt;code&gt;request_info&lt;/code&gt; field below),&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;path:&lt;/strong&gt; enables the autocomplete to inform a path to a folder or a file (string).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;label&lt;/code&gt; : text appearing on the CLI, asking for the input.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;input-example-with-mandatory-fields&#34;&gt;Input example with mandatory fields:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="input-example-with-the-multiselect-type">Input example with the multiselect type:&lt;/h4>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Choose one or more days: &amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_days&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;multiselect&amp;#34;,
-&amp;#34;required&amp;#34;: true,
-&amp;#34;items&amp;#34;: [
-&amp;#34;Monday&amp;#34;,
-&amp;#34;Tuesday&amp;#34;,
-&amp;#34;Wednesday&amp;#34;,
-&amp;#34;Thursday&amp;#34;,
-&amp;#34;Friday&amp;#34;,
-&amp;#34;Saturday&amp;#34;,
-&amp;#34;Friday&amp;#34;
-]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;input-example-with-the-multiselect-type&#34;&gt;Input example with the multiselect type:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Choose one or more days: &amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_days&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;multiselect&amp;#34;,
+      &amp;#34;required&amp;#34;: true,
+      &amp;#34;items&amp;#34;: [
+           &amp;#34;Monday&amp;#34;,
+           &amp;#34;Tuesday&amp;#34;,
+           &amp;#34;Wednesday&amp;#34;,
+           &amp;#34;Thursday&amp;#34;,
+           &amp;#34;Friday&amp;#34;,
+           &amp;#34;Saturday&amp;#34;,
+           &amp;#34;Friday&amp;#34;
+      ]
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="some-observations-regarding-the-multiselect-type">Some observations regarding the &lt;strong>&lt;code>multiselect&lt;/code> type&lt;/strong>&lt;/h4>
-&lt;ul>
-&lt;li>To select one of the options with the &lt;code>multiselect&lt;/code> type, you must press the &lt;code>space&lt;/code> key (the&lt;code>enter&lt;/code> key will move to the next input, if any)&lt;/li>
-&lt;li>The options selected in the &lt;code>multiselect&lt;/code> type field will return a string with the options separated by pipe (&lt;code>|&lt;/code>) and without space example: &lt;code>Monday | Wednesday | Friday&lt;/code>&lt;/li>
-&lt;li>It is suggested to use the &lt;code>required&lt;/code> field as&lt;code>true&lt;/code>, otherwise, if no option is selected, the local variable will be saved as &lt;code>undefined&lt;/code>&lt;/li>
-&lt;/ul>
-&lt;h4 id="parameter-example-using-the-autocomplete-type">Parameter example using the autocomplete type:&lt;/h4>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type the path to the folder with your file:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_path&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;path&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;some-observations-regarding-the-multiselect-type&#34;&gt;Some observations regarding the &lt;strong&gt;&lt;code&gt;multiselect&lt;/code&gt; type&lt;/strong&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;To select one of the options with the &lt;code&gt;multiselect&lt;/code&gt; type, you must press the &lt;code&gt;space&lt;/code&gt; key (the&lt;code&gt;enter&lt;/code&gt; key will move to the next input, if any)&lt;/li&gt;
+&lt;li&gt;The options selected in the &lt;code&gt;multiselect&lt;/code&gt; type field will return a string with the options separated by pipe (&lt;code&gt;|&lt;/code&gt;) and without space example: &lt;code&gt;Monday | Wednesday | Friday&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;It is suggested to use the &lt;code&gt;required&lt;/code&gt; field as&lt;code&gt;true&lt;/code&gt;, otherwise, if no option is selected, the local variable will be saved as &lt;code&gt;undefined&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;parameter-example-using-the-autocomplete-type&#34;&gt;Parameter example using the autocomplete type:&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type the path to the folder with your file:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_path&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;path&amp;#34;
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="optional-fields">Optional fields&lt;/h3>
-&lt;ul>
-&lt;li>&lt;code>default&lt;/code>: default input value (&lt;strong>if&lt;/strong> &lt;strong>null&lt;/strong>).&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;default&amp;#34;: &amp;#34;Dennis&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;optional-fields&#34;&gt;Optional fields&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;default&lt;/code&gt;: default input value (&lt;strong&gt;if&lt;/strong&gt; &lt;strong&gt;null&lt;/strong&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;default&amp;#34;: &amp;#34;Dennis&amp;#34;
 }
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;div class="alert alert-info" role="alert">
-&lt;p>You also can make this default configuration with the default flag, which allows you to attribute default values configured on the formula.&lt;/p>
-&lt;p>In case of fields without a default value, the flag will keep asking for this inputs that must be configured on your config.json file.&lt;/p>
-&lt;/div>
-&lt;ul>
-&lt;li>&lt;code>required&lt;/code>: boolean that indicates if the input value is required or optional.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;required&amp;#34;: true
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;You also can make this default configuration with the default flag, which allows you to attribute default values configured on the formula.&lt;/p&gt;
+&lt;p&gt;In case of fields without a default value, the flag will keep asking for this inputs that must be configured on your config.json file.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;required&lt;/code&gt;: boolean that indicates if the input value is required or optional.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;required&amp;#34;: true
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>tutorial&lt;/code>: input helper message &lt;em>[? for help]&lt;/em>&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;tutorial&amp;#34;: &amp;#34;We are expecting you to write your name (ex: John)&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tutorial&lt;/code&gt;: input helper message &lt;em&gt;[? for help]&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;tutorial&amp;#34;: &amp;#34;We are expecting you to write your name (ex: John)&amp;#34;
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>items&lt;/code>: list of input variable options.&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;items&amp;#34;: [
-&amp;#34;Dennis&amp;#34;,
-&amp;#34;John&amp;#34;,
-&amp;#34;Bill&amp;#34;
-]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;items&lt;/code&gt;: list of input variable options.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;items&amp;#34;: [
+            &amp;#34;Dennis&amp;#34;,
+            &amp;#34;John&amp;#34;,
+            &amp;#34;Bill&amp;#34;
+      ]
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>cache&lt;/code>: saves former input values.
-&lt;ul>
-&lt;li>&lt;code>active&lt;/code>: if cache is enabled or not.&lt;/li>
-&lt;li>&lt;code>qty&lt;/code>: amount of values to store.&lt;/li>
-&lt;li>&lt;code>newLabel&lt;/code>: text appearing on the CLI asking for a new input.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;cache&amp;#34;: {
-&amp;#34;active&amp;#34;: true,
-&amp;#34;qty&amp;#34;: 5,
-&amp;#34;newLabel&amp;#34;: &amp;#34;Type another name:&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cache&lt;/code&gt;:  saves former input values.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;active&lt;/code&gt;: if cache is enabled or not.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;qty&lt;/code&gt;: amount of values to store.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;newLabel&lt;/code&gt;: text appearing on the CLI asking for a new input.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;cache&amp;#34;: {
+            &amp;#34;active&amp;#34;: true,
+            &amp;#34;qty&amp;#34;: 5,
+            &amp;#34;newLabel&amp;#34;: &amp;#34;Type another name:&amp;#34;
+      }
 }
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>condition&lt;/code>: shows this input if the given condition succeeds
-&lt;ul>
-&lt;li>&lt;code>variable&lt;/code>: The variable name used on a previous input for comparison.&lt;/li>
-&lt;li>&lt;code>operator&lt;/code>: A logical operator to compare. Supports &lt;strong>&lt;code>==&lt;/code>&lt;/strong>, &lt;strong>&lt;code>!=&lt;/code>&lt;/strong>, &lt;strong>&lt;code>&amp;lt;&lt;/code>&lt;/strong>, &lt;strong>&lt;code>&amp;gt;&lt;/code>&lt;/strong>, &lt;strong>&lt;code>&amp;lt;=&lt;/code>&lt;/strong>, and &lt;strong>&lt;code>&amp;gt;=&lt;/code>.&lt;/strong>&lt;/li>
-&lt;li>&lt;code>value&lt;/code>: The desired value to compare to.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;default&amp;#34;: &amp;#34;Dennis&amp;#34;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;condition&lt;/code&gt;: shows this input if the given condition succeeds
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;variable&lt;/code&gt;: The variable name used on a previous input for comparison.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;operator&lt;/code&gt;: A logical operator to compare. Supports &lt;strong&gt;&lt;code&gt;==&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;!=&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;&amp;lt;&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;&amp;gt;&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;&amp;lt;=&lt;/code&gt;&lt;/strong&gt;, and &lt;strong&gt;&lt;code&gt;&amp;gt;=&lt;/code&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;value&lt;/code&gt;: The desired value to compare to.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;default&amp;#34;: &amp;#34;Dennis&amp;#34;
 },
 {
-&amp;#34;condition&amp;#34;: {
-&amp;#34;variable&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;operator&amp;#34;: &amp;#34;!=&amp;#34;,
-&amp;#34;value&amp;#34;: &amp;#34;Dennis&amp;#34;
+      &amp;#34;condition&amp;#34;: {
+            &amp;#34;variable&amp;#34;: &amp;#34;rit_name&amp;#34;,
+            &amp;#34;operator&amp;#34;: &amp;#34;!=&amp;#34;,
+            &amp;#34;value&amp;#34;: &amp;#34;Dennis&amp;#34;
+      }
+      &amp;#34;label&amp;#34;: &amp;#34;What is your date of birth?&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_date_of_birth&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
 }
-&amp;#34;label&amp;#34;: &amp;#34;What is your date of birth?&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_date_of_birth&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pattern&lt;/code&gt;: configure an input value validation.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;regex&lt;/code&gt;: The regex pattern to validate the input.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mismatchText&lt;/code&gt;: error message when input doesn&amp;rsquo;t match the regex pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;What is your age&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_age&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;pattern&amp;#34;: {
+            &amp;#34;regex&amp;#34;: &amp;#34;[0-9]&amp;#34;,
+            &amp;#34;mismatchText&amp;#34;: &amp;#34;Only a integer value is allowed here (ex: 20)&amp;#34;
+      }
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>pattern&lt;/code>: configure an input value validation.
-&lt;ul>
-&lt;li>&lt;code>regex&lt;/code>: The regex pattern to validate the input.&lt;/li>
-&lt;li>&lt;code>mismatchText&lt;/code>: error message when input doesn&amp;rsquo;t match the regex pattern&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;What is your age&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_age&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;pattern&amp;#34;: {
-&amp;#34;regex&amp;#34;: &amp;#34;[0-9]&amp;#34;,
-&amp;#34;mismatchText&amp;#34;: &amp;#34;Only a integer value is allowed here (ex: 20)&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;requestInfo&lt;/code&gt;: configuration to get dynamic input type.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;url&lt;/code&gt;: URL to consume a GET service that will return a list of objects.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jsonPath&lt;/code&gt;: Path to the variable to extract from the returned list, for each object. (Check out &lt;a href=&#34;https://goessner.net/articles/JsonPath/&#34;&gt;&lt;strong&gt;how works the json path&lt;/strong&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+      &amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;requestInfo&amp;#34;: {
+            &amp;#34;url&amp;#34;: &amp;#34;https://my-url.com&amp;#34;,
+            &amp;#34;jsonPath&amp;#34;: $[&amp;#39;user&amp;#39;][&amp;#39;name&amp;#39;]
+      }
 }
-}
-&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
-&lt;li>&lt;code>requestInfo&lt;/code>: configuration to get dynamic input type.
-&lt;ul>
-&lt;li>&lt;code>url&lt;/code>: URL to consume a GET service that will return a list of objects.&lt;/li>
-&lt;li>&lt;code>jsonPath&lt;/code>: Path to the variable to extract from the returned list, for each object. (Check out &lt;a href="https://goessner.net/articles/JsonPath/">&lt;strong>how works the json path&lt;/strong>&lt;/a>).&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;label&amp;#34;: &amp;#34;Type your name:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_name&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;requestInfo&amp;#34;: {
-&amp;#34;url&amp;#34;: &amp;#34;https://my-url.com&amp;#34;,
-&amp;#34;jsonPath&amp;#34;: $[&amp;#39;user&amp;#39;][&amp;#39;name&amp;#39;]
-}
-}
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;div class="alert alert-info" role="alert">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
 Each formula can contain as many inputs as necessary, as well as any association of the above fields.
-&lt;/div>
-&lt;p>&lt;strong>Conditional input example with Regex pattern:&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;#34;inputs&amp;#34;: [
-{
-&amp;#34;label&amp;#34;: &amp;#34;Select a system:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_system&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;items&amp;#34;: [
-&amp;#34;LINUX&amp;#34;,
-&amp;#34;MACOS&amp;#34;,
-&amp;#34;WINDOWS&amp;#34;
-],
-&amp;#34;required&amp;#34;: true,
-&amp;#34;tutorial&amp;#34;: &amp;#34;Select a System from the list.&amp;#34;
-},
-{
-&amp;#34;condition&amp;#34;: {
-&amp;#34;variable&amp;#34;:&amp;#34;rit_system&amp;#34;,
-&amp;#34;operator&amp;#34;:&amp;#34;==&amp;#34;,
-&amp;#34;value&amp;#34;:&amp;#34;LINUX&amp;#34;
-},
-&amp;#34;label&amp;#34;: &amp;#34;Select a LINUX OS:&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;rit_linux_os&amp;#34;,
-&amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
-&amp;#34;items&amp;#34;: [
-&amp;#34;UBUNTU&amp;#34;,
-&amp;#34;FEDORA&amp;#34;,
-&amp;#34;CENTOS&amp;#34;
-],
-&amp;#34;pattern&amp;#34;: {
-&amp;#34;regex&amp;#34;: &amp;#34;UBUNTU|FEDORA|CENTOS&amp;#34;,
-&amp;#34;mismatchText&amp;#34;: &amp;#34;Invalid option&amp;#34;
-},
-&amp;#34;required&amp;#34;: false,
-&amp;#34;tutorial&amp;#34;: &amp;#34;Select an Linux Operating System from the list.&amp;#34;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Conditional input example with Regex pattern:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;#34;inputs&amp;#34;: [
+    {
+      &amp;#34;label&amp;#34;: &amp;#34;Select a system:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_system&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;items&amp;#34;: [
+        &amp;#34;LINUX&amp;#34;,
+        &amp;#34;MACOS&amp;#34;,
+        &amp;#34;WINDOWS&amp;#34;
+      ],
+      &amp;#34;required&amp;#34;: true,
+      &amp;#34;tutorial&amp;#34;: &amp;#34;Select a System from the list.&amp;#34;   
+    },
+    {
+      &amp;#34;condition&amp;#34;: {
+        &amp;#34;variable&amp;#34;:&amp;#34;rit_system&amp;#34;,
+        &amp;#34;operator&amp;#34;:&amp;#34;==&amp;#34;,
+        &amp;#34;value&amp;#34;:&amp;#34;LINUX&amp;#34;
+      },
+      &amp;#34;label&amp;#34;: &amp;#34;Select a LINUX OS:&amp;#34;,
+      &amp;#34;name&amp;#34;: &amp;#34;rit_linux_os&amp;#34;,
+      &amp;#34;type&amp;#34;: &amp;#34;text&amp;#34;,
+      &amp;#34;items&amp;#34;: [
+        &amp;#34;UBUNTU&amp;#34;,
+        &amp;#34;FEDORA&amp;#34;,
+        &amp;#34;CENTOS&amp;#34;
+      ],
+      &amp;#34;pattern&amp;#34;: {
+        &amp;#34;regex&amp;#34;: &amp;#34;UBUNTU|FEDORA|CENTOS&amp;#34;,
+        &amp;#34;mismatchText&amp;#34;: &amp;#34;Invalid option&amp;#34;
+      },
+      &amp;#34;required&amp;#34;: false,
+      &amp;#34;tutorial&amp;#34;: &amp;#34;Select an Linux Operating System from the list.&amp;#34;   
+    }
+  ]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Once an input is informed on Ritchie CLI, it is saved as a &lt;strong&gt;local variable&lt;/strong&gt; during the formula execution.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutorials: Main File</title>
+      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/main-file/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/main-file/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;what-is-the-main-file&#34;&gt;What is the main file?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;The main file is used to extract the &lt;strong&gt;inputs&lt;/strong&gt; asked in the config.json file, saved as &lt;strong&gt;local variables.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Inputs are extracted by the field &lt;strong&gt;name&lt;/strong&gt; informed on the config.json file &lt;strong&gt;UPPERCASE&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;This file is also where the formula functions, manipulating the input parameters, are called to perform the operation / automation of the formula.&lt;/p&gt;
+&lt;h3 id=&#34;main-file-examples&#34;&gt;Main file examples&lt;/h3&gt;
+&lt;p&gt;In our examples below, there is always an existing &lt;code&gt;formula&lt;/code&gt; class with a &lt;code&gt;Run()&lt;/code&gt; function.&lt;/p&gt;
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;func main() {
+	input1 := os.Getenv(&amp;#34;INPUT_TEXT&amp;#34;)
+	input2 := os.Getenv(&amp;#34;INPUT_LIST&amp;#34;)
+	input3, _ := strconv.ParseBool(os.Getenv(&amp;#34;INPUT_BOOLEAN&amp;#34;))
+	input4 := os.Getenv(&amp;#34;INPUT_PASSWORD&amp;#34;)
+
+	formula.Formula{
+		Text:     input1,
+		List:     input2,
+		Boolean:  input3,
+		Password: input4,
+	}.Run(os.Stdout)
 }
-]
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;div class="alert alert-warning" role="alert">
-Once an input is informed on Ritchie CLI, it is saved as a &lt;strong>local variable&lt;/strong> during the formula execution.
-&lt;/div></description></item><item><title>Tutorials: Main File</title><link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/main-file/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/main-file/</guid><description>
-&lt;hr>
-&lt;h2 id="what-is-the-main-file">What is the main file?&lt;/h2>
-&lt;div class="alert alert-info" role="alert">
-&lt;p>The main file is used to extract the &lt;strong>inputs&lt;/strong> asked in the config.json file, saved as &lt;strong>local variables.&lt;/strong>&lt;/p>
-&lt;p>&lt;em>Inputs are extracted by the field &lt;strong>name&lt;/strong> informed on the config.json file &lt;strong>UPPERCASE&lt;/strong>.&lt;/em>&lt;/p>
-&lt;/div>
-&lt;p>This file is also where the formula functions, manipulating the input parameters, are called to perform the operation / automation of the formula.&lt;/p>
-&lt;h3 id="main-file-examples">Main file examples&lt;/h3>
-&lt;p>In our examples below, there is always an existing &lt;code>formula&lt;/code> class with a &lt;code>Run()&lt;/code> function.&lt;/p>
-&lt;div class='code-tabs'>
-&lt;ul class="nav nav-tabs">&lt;/ul>
-&lt;div class="tab-content">
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">func main() {
-input1 := os.Getenv(&amp;#34;INPUT_TEXT&amp;#34;)
-input2 := os.Getenv(&amp;#34;INPUT_LIST&amp;#34;)
-input3, _ := strconv.ParseBool(os.Getenv(&amp;#34;INPUT_BOOLEAN&amp;#34;))
-input4 := os.Getenv(&amp;#34;INPUT_PASSWORD&amp;#34;)
-formula.Formula{
-Text: input1,
-List: input2,
-Boolean: input3,
-Password: input4,
-}.Run(os.Stdout)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;public class Main {
+
+  public static void main(String[] args) {
+
+    String inputText = System.getenv(&amp;#34;INPUT_TEXT&amp;#34;);
+    boolean inputBoolean = Boolean.parseBoolean(System.getenv(&amp;#34;INPUT_BOOLEAN&amp;#34;));
+    String inputList = System.getenv(&amp;#34;INPUT_LIST&amp;#34;);
+    String inputPassword = System.getenv(&amp;#34;INPUT_PASSWORD&amp;#34;);
+
+    Formula formula = new Formula(
+      inputText, 
+      inputBoolean, 
+      inputList, 
+      inputPassword
+    );
+    
+    formula.Run();
+  }
 }
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">public class Main {
-public static void main(String[] args) {
-String inputText = System.getenv(&amp;#34;INPUT_TEXT&amp;#34;);
-boolean inputBoolean = Boolean.parseBoolean(System.getenv(&amp;#34;INPUT_BOOLEAN&amp;#34;));
-String inputList = System.getenv(&amp;#34;INPUT_LIST&amp;#34;);
-String inputPassword = System.getenv(&amp;#34;INPUT_PASSWORD&amp;#34;);
-Formula formula = new Formula(
-inputText,
-inputBoolean,
-inputList,
-inputPassword
-);
-formula.Run();
-}
-}
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">const INPUT1 = process.env.INPUT_TEXT
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;const INPUT1 = process.env.INPUT_TEXT
 const INPUT2 = process.env.INPUT_BOOLEAN
 const INPUT3 = process.env.INPUT_LIST
 const INPUT4 = process.env.INPUT_PASSWORD
+
 run(INPUT1, INPUT2, INPUT3, INPUT4)
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">input1 = os.environ.get(&amp;#34;INPUT_TEXT&amp;#34;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;input1 = os.environ.get(&amp;#34;INPUT_TEXT&amp;#34;)
 input2 = os.environ.get(&amp;#34;INPUT_BOOLEAN&amp;#34;)
 input3 = os.environ.get(&amp;#34;INPUT_LIST&amp;#34;)
 input4 = os.environ.get(&amp;#34;INPUT_PASSWORD&amp;#34;)
+
 formula.Run(input1, input2, input3, input4)
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">//Inputs are not even necessary here, as Shellscript get values from local variables directly.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;//Inputs are not even necessary here, as Shellscript get values from local variables directly.
+
 runFormula &amp;#39;$SAMPLE_TEXT&amp;#39; $SAMPLE_LIST &amp;#39;$SAMPLE_BOOL&amp;#39;&amp;#39;$SAMPLE_PASSWORD&amp;#39;
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item><item><title>Tutorials: Dependencies</title><link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/dependencies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/dependencies/</guid><description>
-&lt;hr>
-&lt;h2 id="what-are-dependencies">What are dependencies?&lt;/h2>
-&lt;div class="alert alert-info" role="alert">
-Each programming language has its own specificities &lt;strong>to import libraries or packages&lt;/strong>.
-&lt;/div>
-&lt;p>On Ritchie, it&amp;rsquo;s possible to configure each formula as an independent and small project.&lt;/p>
-&lt;p>Therefore, it will be possible to import all the necessary dependencies to perform the operations you want to implement.&lt;/p>
-&lt;div class='code-tabs'>
-&lt;ul class="nav nav-tabs">&lt;/ul>
-&lt;div class="tab-content">
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">module formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutorials: Dependencies</title>
+      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/dependencies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/dependencies/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;what-are-dependencies&#34;&gt;What are dependencies?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Each programming language has its own specificities &lt;strong&gt;to import libraries or packages&lt;/strong&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;On Ritchie, it&amp;rsquo;s possible to configure each formula as an independent and small project.&lt;/p&gt;
+&lt;p&gt;Therefore, it will be possible to import all the necessary dependencies to perform the operations you want to implement.&lt;/p&gt;
+&lt;div class=&#39;code-tabs&#39;&gt;
+  &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;module formula
+
 go 1.14
+
 require (
-github.com/gookit/color v1.2.5
+    github.com/gookit/color v1.2.5
 )
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
 &amp;lt;project xmlns=&amp;#34;http://maven.apache.org/POM/4.0.0&amp;#34; xmlns:xsi=&amp;#34;http://www.w3.org/2001/XMLSchema-instance&amp;#34;
-xsi:schemaLocation=&amp;#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;#34;&amp;gt;
-&amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
-&amp;lt;groupId&amp;gt;com.ritchie&amp;lt;/groupId&amp;gt;
-&amp;lt;artifactId&amp;gt;formula&amp;lt;/artifactId&amp;gt;
-&amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
-&amp;lt;properties&amp;gt;
-&amp;lt;java.version&amp;gt;1.8&amp;lt;/java.version&amp;gt;
-&amp;lt;maven.compiler.source&amp;gt;${java.version}&amp;lt;/maven.compiler.source&amp;gt;
-&amp;lt;maven.compiler.target&amp;gt;${java.version}&amp;lt;/maven.compiler.target&amp;gt;
-&amp;lt;project.build.sourceEncoding&amp;gt;UTF-8&amp;lt;/project.build.sourceEncoding&amp;gt;
-&amp;lt;maven-jar-plugin.version&amp;gt;3.2.0&amp;lt;/maven-jar-plugin.version&amp;gt;
-&amp;lt;/properties&amp;gt;
-&amp;lt;build&amp;gt;
-&amp;lt;finalName&amp;gt;Main&amp;lt;/finalName&amp;gt;
-&amp;lt;plugins&amp;gt;
-&amp;lt;plugin&amp;gt;
-&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
-&amp;lt;artifactId&amp;gt;maven-compiler-plugin&amp;lt;/artifactId&amp;gt;
-&amp;lt;version&amp;gt;3.8.1&amp;lt;/version&amp;gt;
-&amp;lt;configuration&amp;gt;
-&amp;lt;source&amp;gt;1.8&amp;lt;/source&amp;gt;
-&amp;lt;target&amp;gt;1.8&amp;lt;/target&amp;gt;
-&amp;lt;/configuration&amp;gt;
-&amp;lt;/plugin&amp;gt;
-&amp;lt;plugin&amp;gt;
-&amp;lt;!-- Build an executable JAR --&amp;gt;
-&amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
-&amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
-&amp;lt;version&amp;gt;${maven-jar-plugin.version}&amp;lt;/version&amp;gt;
-&amp;lt;configuration&amp;gt;
-&amp;lt;archive&amp;gt;
-&amp;lt;manifest&amp;gt;
-&amp;lt;!-- &amp;lt;addClasspath&amp;gt;true&amp;lt;/addClasspath&amp;gt; --&amp;gt;
-&amp;lt;mainClass&amp;gt;com.ritchie.Main&amp;lt;/mainClass&amp;gt;
-&amp;lt;/manifest&amp;gt;
-&amp;lt;/archive&amp;gt;
-&amp;lt;/configuration&amp;gt;
-&amp;lt;/plugin&amp;gt;
-&amp;lt;plugin&amp;gt;
-&amp;lt;artifactId&amp;gt;maven-assembly-plugin&amp;lt;/artifactId&amp;gt;
-&amp;lt;configuration&amp;gt;
-&amp;lt;appendAssemblyId&amp;gt;false&amp;lt;/appendAssemblyId&amp;gt;
-&amp;lt;archive&amp;gt;
-&amp;lt;manifest&amp;gt;
-&amp;lt;mainClass&amp;gt;com.ritchie.Main&amp;lt;/mainClass&amp;gt;
-&amp;lt;/manifest&amp;gt;
-&amp;lt;/archive&amp;gt;
-&amp;lt;descriptorRefs&amp;gt;
-&amp;lt;descriptorRef&amp;gt;jar-with-dependencies&amp;lt;/descriptorRef&amp;gt;
-&amp;lt;/descriptorRefs&amp;gt;
-&amp;lt;/configuration&amp;gt;
-&amp;lt;executions&amp;gt;
-&amp;lt;execution&amp;gt;
-&amp;lt;id&amp;gt;make-assembly&amp;lt;/id&amp;gt;
-&amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
-&amp;lt;goals&amp;gt;
-&amp;lt;goal&amp;gt;single&amp;lt;/goal&amp;gt;
-&amp;lt;/goals&amp;gt;
-&amp;lt;/execution&amp;gt;
-&amp;lt;/executions&amp;gt;
-&amp;lt;/plugin&amp;gt;
-&amp;lt;/plugins&amp;gt;
-&amp;lt;/build&amp;gt;
-&amp;lt;dependencies&amp;gt;
-&amp;lt;dependency&amp;gt;
-&amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt;
-&amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt;
-&amp;lt;version&amp;gt;4.13.1&amp;lt;/version&amp;gt;
-&amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
-&amp;lt;/dependency&amp;gt;
-&amp;lt;dependency&amp;gt;
-&amp;lt;groupId&amp;gt;com.github.tomas-langer&amp;lt;/groupId&amp;gt;
-&amp;lt;artifactId&amp;gt;chalk&amp;lt;/artifactId&amp;gt;
-&amp;lt;version&amp;gt;1.0.2&amp;lt;/version&amp;gt;
-&amp;lt;/dependency&amp;gt;
-&amp;lt;/dependencies&amp;gt;
+         xsi:schemaLocation=&amp;#34;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&amp;#34;&amp;gt;
+    &amp;lt;modelVersion&amp;gt;4.0.0&amp;lt;/modelVersion&amp;gt;
+
+    &amp;lt;groupId&amp;gt;com.ritchie&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;formula&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;1.0-SNAPSHOT&amp;lt;/version&amp;gt;
+
+    &amp;lt;properties&amp;gt;
+        &amp;lt;java.version&amp;gt;1.8&amp;lt;/java.version&amp;gt;
+        &amp;lt;maven.compiler.source&amp;gt;${java.version}&amp;lt;/maven.compiler.source&amp;gt;
+        &amp;lt;maven.compiler.target&amp;gt;${java.version}&amp;lt;/maven.compiler.target&amp;gt;
+        &amp;lt;project.build.sourceEncoding&amp;gt;UTF-8&amp;lt;/project.build.sourceEncoding&amp;gt;
+        &amp;lt;maven-jar-plugin.version&amp;gt;3.2.0&amp;lt;/maven-jar-plugin.version&amp;gt;
+    &amp;lt;/properties&amp;gt;
+
+    &amp;lt;build&amp;gt;
+        &amp;lt;finalName&amp;gt;Main&amp;lt;/finalName&amp;gt;
+        &amp;lt;plugins&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-compiler-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;version&amp;gt;3.8.1&amp;lt;/version&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                    &amp;lt;source&amp;gt;1.8&amp;lt;/source&amp;gt;
+                    &amp;lt;target&amp;gt;1.8&amp;lt;/target&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;!-- Build an executable JAR --&amp;gt;
+                &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-jar-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;version&amp;gt;${maven-jar-plugin.version}&amp;lt;/version&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                    &amp;lt;archive&amp;gt;
+                        &amp;lt;manifest&amp;gt;
+                            &amp;lt;!-- &amp;lt;addClasspath&amp;gt;true&amp;lt;/addClasspath&amp;gt; --&amp;gt;
+                            &amp;lt;mainClass&amp;gt;com.ritchie.Main&amp;lt;/mainClass&amp;gt;
+                        &amp;lt;/manifest&amp;gt;
+                    &amp;lt;/archive&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+            &amp;lt;plugin&amp;gt;
+                &amp;lt;artifactId&amp;gt;maven-assembly-plugin&amp;lt;/artifactId&amp;gt;
+                &amp;lt;configuration&amp;gt;
+                    &amp;lt;appendAssemblyId&amp;gt;false&amp;lt;/appendAssemblyId&amp;gt;
+                    &amp;lt;archive&amp;gt;
+                        &amp;lt;manifest&amp;gt;
+                            &amp;lt;mainClass&amp;gt;com.ritchie.Main&amp;lt;/mainClass&amp;gt;
+                        &amp;lt;/manifest&amp;gt;
+                    &amp;lt;/archive&amp;gt;
+                    &amp;lt;descriptorRefs&amp;gt;
+                        &amp;lt;descriptorRef&amp;gt;jar-with-dependencies&amp;lt;/descriptorRef&amp;gt;
+                    &amp;lt;/descriptorRefs&amp;gt;
+                &amp;lt;/configuration&amp;gt;
+                &amp;lt;executions&amp;gt;
+                    &amp;lt;execution&amp;gt;
+                        &amp;lt;id&amp;gt;make-assembly&amp;lt;/id&amp;gt;
+                        &amp;lt;phase&amp;gt;package&amp;lt;/phase&amp;gt;
+                        &amp;lt;goals&amp;gt;
+                            &amp;lt;goal&amp;gt;single&amp;lt;/goal&amp;gt;
+                        &amp;lt;/goals&amp;gt;
+                    &amp;lt;/execution&amp;gt;
+                &amp;lt;/executions&amp;gt;
+            &amp;lt;/plugin&amp;gt;
+        &amp;lt;/plugins&amp;gt;
+    &amp;lt;/build&amp;gt;
+
+    &amp;lt;dependencies&amp;gt;
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;junit&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;junit&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;4.13.1&amp;lt;/version&amp;gt;
+            &amp;lt;scope&amp;gt;test&amp;lt;/scope&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+
+        &amp;lt;dependency&amp;gt;
+            &amp;lt;groupId&amp;gt;com.github.tomas-langer&amp;lt;/groupId&amp;gt;
+            &amp;lt;artifactId&amp;gt;chalk&amp;lt;/artifactId&amp;gt;
+            &amp;lt;version&amp;gt;1.0.2&amp;lt;/version&amp;gt;
+        &amp;lt;/dependency&amp;gt;
+    &amp;lt;/dependencies&amp;gt;
 &amp;lt;/project&amp;gt;
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;dependencies&amp;#34;: {
-&amp;#34;cli-color&amp;#34;: &amp;#34;^2.0.0&amp;#34;
-},
-&amp;#34;main&amp;#34;: &amp;#34;index.js&amp;#34;,
-&amp;#34;scripts&amp;#34;: {
-&amp;#34;test&amp;#34;: &amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;
-},
-&amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;dependencies&amp;#34;: {
+    &amp;#34;cli-color&amp;#34;: &amp;#34;^2.0.0&amp;#34;
+  },
+  &amp;#34;main&amp;#34;: &amp;#34;index.js&amp;#34;,
+  &amp;#34;scripts&amp;#34;: {
+    &amp;#34;test&amp;#34;: &amp;#34;echo \&amp;#34;Error: no test specified\&amp;#34; &amp;amp;&amp;amp; exit 1&amp;#34;
+  },
+  &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;
 }
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">colored==1.4.2
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;div class="tab-pane" title="">
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;require&amp;#34;: {
-&amp;#34;codedungeon/php-cli-colors&amp;#34;: &amp;#34;~1.0&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;colored==1.4.2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
+  &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+  &amp;#34;require&amp;#34;: {
+    &amp;#34;codedungeon/php-cli-colors&amp;#34;: &amp;#34;~1.0&amp;#34;
+  }
 }
-}
-&lt;/code>&lt;/pre>&lt;/div>
-&lt;/div>
-&lt;/div>
-&lt;/div></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
