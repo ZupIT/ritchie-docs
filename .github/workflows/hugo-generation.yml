@@ -30,7 +30,10 @@ jobs:
               
       - name: Build
         run: |
-              hugo -D
+              hugo -D 
 
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'auto generated pages added'
+          branch: master
