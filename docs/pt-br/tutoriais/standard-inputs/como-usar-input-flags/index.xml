@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Como usar input flags</title>
-    <link>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/</link>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/</link>
     <description>Recent content in Como usar input flags on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Tutoriais: Introdução</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/introducao/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/introducao/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/introducao/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/introducao/</guid>
       <description>
         
         
@@ -43,10 +43,10 @@ A flag &lt;strong&gt;&amp;ndash;stdin&lt;/strong&gt; será descontinuada no iní
     
     <item>
       <title>Tutoriais: Comandos Core</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-core/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-core/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-core/</guid>
       <description>
         
         
@@ -79,10 +79,10 @@ Estas flags estão disponíveis a partir da versão 2.8 do Ritchie.
     
     <item>
       <title>Tutoriais: Comandos de fórmulas</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-f%C3%B3rmulas/</guid>
       <description>
         
         

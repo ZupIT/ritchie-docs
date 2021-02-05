@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – How to implement formulas</title>
-    <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/</link>
+    <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/</link>
     <description>Recent content in How to implement formulas on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Tutorials: Formula Folder</title>
-      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/formula-folder/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/formula-folder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/formula-folder/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/formula-folder/</guid>
       <description>
         
         
@@ -89,7 +89,7 @@ The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s 
   &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
   &lt;div class=&#34;tab-content&#34;&gt;
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/go%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/go%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
@@ -100,7 +100,7 @@ The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s 
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/java%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/java%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
@@ -111,7 +111,7 @@ The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s 
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/node%20%283%29%20%283%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/node%20%283%29%20%283%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
@@ -122,7 +122,7 @@ The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s 
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/python%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/python%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
@@ -133,7 +133,7 @@ The folder structures defines the command tree, so &lt;strong&gt;it&amp;rsquo;s 
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/shell%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/shell%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;To change the formula&amp;rsquo;s behavior for this language, you&amp;rsquo;ll have at least to update the following files:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; Update the inputs configurations.&lt;/li&gt;
@@ -157,10 +157,10 @@ The structures defines the command, so &lt;strong&gt;it&amp;rsquo;s not indicate
     
     <item>
       <title>Tutorials: Config File</title>
-      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/config-file/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/config-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/config-file/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/config-file/</guid>
       <description>
         
         
@@ -427,10 +427,10 @@ Once an input is informed on Ritchie CLI, it is saved as a &lt;strong&gt;local v
     
     <item>
       <title>Tutorials: Main File</title>
-      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/main-file/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/main-file/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/main-file/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/main-file/</guid>
       <description>
         
         
@@ -525,10 +525,10 @@ runFormula &amp;#39;$SAMPLE_TEXT&amp;#39; $SAMPLE_LIST &amp;#39;$SAMPLE_BOOL&amp
     
     <item>
       <title>Tutorials: Dependencies</title>
-      <link>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/dependencies/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/dependencies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/formulas/how-to-implement-formulas/dependencies/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/dependencies/</guid>
       <description>
         
         

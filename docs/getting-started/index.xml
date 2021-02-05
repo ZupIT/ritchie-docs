@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Getting Started</title>
-    <link>https://zupit.github.io/getting-started/</link>
+    <link>https://zupit.github.io/docs-ritchie/getting-started/</link>
     <description>Recent content in Getting Started on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/getting-started/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/getting-started/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Getting Started: Linux</title>
-      <link>https://zupit.github.io/getting-started/install-cli/linux/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/linux/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</guid>
       <description>
         
         
@@ -49,10 +49,10 @@ If you prefer, you also can follow with the&lt;a href=&#34;manual-installation&#
     
     <item>
       <title>Getting Started: Macos</title>
-      <link>https://zupit.github.io/getting-started/install-cli/macos/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/macos/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</guid>
       <description>
         
         
@@ -97,10 +97,10 @@ If you prefer, you also can follow with the&lt;a href=&#34;manual-installation&#
     
     <item>
       <title>Getting Started: Windows</title>
-      <link>https://zupit.github.io/getting-started/install-cli/windows/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/windows/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/windows/</guid>
       <description>
         
         
@@ -125,10 +125,10 @@ If you prefer, you also can proceed with the&lt;a href=&#34;manual-installation&
     
     <item>
       <title>Getting Started: Manual Installation</title>
-      <link>https://zupit.github.io/getting-started/install-cli/manual-installation/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/manual-installation/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</guid>
       <description>
         
         
@@ -188,10 +188,10 @@ source ~/.rit_completion​
     
     <item>
       <title>Getting Started: Initialize Cli</title>
-      <link>https://zupit.github.io/getting-started/initialize-cli/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/initialize-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/initialize-cli/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/initialize-cli/</guid>
       <description>
         
         
@@ -205,14 +205,14 @@ source ~/.rit_completion​
 &lt;li&gt;If he &lt;strong&gt;wants to add the community&lt;/strong&gt; formulas locally.&lt;/li&gt;
 &lt;li&gt;If he &lt;strong&gt;wants the default&lt;/strong&gt; &lt;a href=&#34;../../tutorials/formulas/how-to-run-formulas/&#34;&gt;&lt;strong&gt;formula execution method&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;to be local or through docker.&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/rit-init%20%283%29%20%281%29.gif&#34; alt=&#34;rit init command&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/rit-init%20%283%29%20%281%29.gif&#34; alt=&#34;rit init command&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Then, the command execution will create all the necessary configuration&amp;rsquo;s files.&lt;/p&gt;
 &lt;h2 id=&#34;step-2-verify-initialization&#34;&gt;Step 2: Verify Initialization&lt;/h2&gt;
 &lt;h3 id=&#34;1-commons-repository&#34;&gt;1. Commons repository&lt;/h3&gt;
 &lt;p&gt;If you added the community formulas repository, you can check it by using the following command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit list repo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This command will return all formulas repositories the user has access locally.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/large-gif-1448x466-.gif&#34; alt=&#34;rit list repo command&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/large-gif-1448x466-.gif&#34; alt=&#34;rit list repo command&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-ritchie-folder&#34;&gt;2. Ritchie folder&lt;/h3&gt;
 &lt;p&gt;You can then check the &lt;strong&gt;&lt;code&gt;.rit&lt;/code&gt;&lt;/strong&gt; folder has been created on your &lt;strong&gt;&lt;code&gt;$HOME&lt;/code&gt;&lt;/strong&gt; directory.&lt;/p&gt;
 
@@ -228,10 +228,10 @@ All operations done using Ritchie will be saved in this &lt;strong&gt;.rit&lt;/s
     
     <item>
       <title>Getting Started: Upgrade Cli</title>
-      <link>https://zupit.github.io/getting-started/upgrade-cli/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/upgrade-cli/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/upgrade-cli/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/upgrade-cli/</guid>
       <description>
         
         

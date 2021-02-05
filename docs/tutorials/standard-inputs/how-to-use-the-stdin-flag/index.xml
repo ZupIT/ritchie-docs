@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – How to use the stdin flag</title>
-    <link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/</link>
+    <link>https://zupit.github.io/docs-ritchie/tutorials/standard-inputs/how-to-use-the-stdin-flag/</link>
     <description>Recent content in How to use the stdin flag on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/tutorials/standard-inputs/how-to-use-the-stdin-flag/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Tutorials: Core Commands</title>
-      <link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/core-commands/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/standard-inputs/how-to-use-the-stdin-flag/core-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/core-commands/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/standard-inputs/how-to-use-the-stdin-flag/core-commands/</guid>
       <description>
         
         
@@ -81,10 +81,10 @@ Not supported yet
     
     <item>
       <title>Tutorials: Formulas commands</title>
-      <link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/formulas-commands/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/standard-inputs/how-to-use-the-stdin-flag/formulas-commands/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/formulas-commands/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/standard-inputs/how-to-use-the-stdin-flag/formulas-commands/</guid>
       <description>
         
         

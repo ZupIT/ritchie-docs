@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Challenges</title>
-    <link>https://zupit.github.io/challenges/</link>
+    <link>https://zupit.github.io/docs-ritchie/challenges/</link>
     <description>Recent content in Challenges on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/challenges/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/challenges/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Challenges: What are these challenges?</title>
-      <link>https://zupit.github.io/challenges/what-are-these-challenges/</link>
+      <link>https://zupit.github.io/docs-ritchie/challenges/what-are-these-challenges/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/challenges/what-are-these-challenges/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/challenges/what-are-these-challenges/</guid>
       <description>
         
         
@@ -53,10 +53,10 @@ Check it out from time to time!
     
     <item>
       <title>Challenges: Level 1 Inputs</title>
-      <link>https://zupit.github.io/challenges/level-1-inputs/</link>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-1-inputs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/challenges/level-1-inputs/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-1-inputs/</guid>
       <description>
         
         
@@ -106,10 +106,10 @@ Well done! You&amp;rsquo;ve completed the first task!
     
     <item>
       <title>Challenges: Level 2 Credentials</title>
-      <link>https://zupit.github.io/challenges/level-2-credentials/</link>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-2-credentials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/challenges/level-2-credentials/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-2-credentials/</guid>
       <description>
         
         
@@ -155,10 +155,10 @@ Command suggestion: &lt;strong&gt;&lt;code&gt;rit github get user&lt;/code&gt;&l
     
     <item>
       <title>Challenges: Level 3 Conditional Inputs</title>
-      <link>https://zupit.github.io/challenges/level-3-conditional-inputs/</link>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-3-conditional-inputs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/challenges/level-3-conditional-inputs/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-3-conditional-inputs/</guid>
       <description>
         
         
@@ -182,7 +182,7 @@ Command suggestion: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/str
 &lt;li&gt;Profile tool (&lt;code&gt;RIT_TOOL&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The formula inputs will have to respect the diagram below:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/ritchie-conditional-inputs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/ritchie-conditional-inputs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;step-by-step&#34;&gt;Step by step&lt;/h2&gt;
 &lt;p&gt;The formula needs to follow the next steps:&lt;/p&gt;
 &lt;ol&gt;
@@ -203,10 +203,10 @@ Command suggestion: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/str
     
     <item>
       <title>Challenges: Level 4 Aggregation</title>
-      <link>https://zupit.github.io/challenges/level-4-aggregation/</link>
+      <link>https://zupit.github.io/docs-ritchie/challenges/level-4-aggregation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/challenges/level-4-aggregation/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/challenges/level-4-aggregation/</guid>
       <description>
         
         

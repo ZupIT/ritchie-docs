@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Como implementar fórmulas</title>
-    <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</link>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</link>
     <description>Recent content in Como implementar fórmulas on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Tutoriais: Pasta de fórmula</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/pasta-de-f%C3%B3rmula/</guid>
       <description>
         
         
@@ -89,7 +89,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
   &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
   &lt;div class=&#34;tab-content&#34;&gt;
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/go%20%281%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/go%20%281%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -101,7 +101,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/java%20%282%29%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/java%20%282%29%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -113,7 +113,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/node%20%283%29%20%283%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/node%20%283%29%20%283%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -125,7 +125,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/python%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/python%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -137,7 +137,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/shell%20%282%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/shell%20%282%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -162,10 +162,10 @@ As pastas e suas respectivas estruturas são o que definem o comando, então nã
     
     <item>
       <title>Tutoriais: Arquivo Config</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-config/</guid>
       <description>
         
         
@@ -432,10 +432,10 @@ Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele
     
     <item>
       <title>Tutoriais: Arquivo Main</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/arquivo-main/</guid>
       <description>
         
         
@@ -528,10 +528,10 @@ runFormula &#39;$SAMPLE_TEXT&#39; $SAMPLE_LIST &#39;$SAMPLE_BOOL&#39;&#39;$SAMPL
     
     <item>
       <title>Tutoriais: Dependências</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</guid>
       <description>
         
         
