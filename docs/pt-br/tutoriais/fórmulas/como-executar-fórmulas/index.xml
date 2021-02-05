@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Como executar fórmulas</title>
-    <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</link>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</link>
     <description>Recent content in Como executar fórmulas on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Tutoriais: Fórmula &#34;Hello World&#34;</title>
-      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</guid>
       <description>
         
         
@@ -65,7 +65,7 @@ Como &lt;strong&gt;essa fórmula  foi desenvolvida usando Golang&lt;/strong&gt;,
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/large-gif-1054x366-%20%281%29.gif&#34; alt=&#34;rit demo hello-world&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/large-gif-1054x366-%20%281%29.gif&#34; alt=&#34;rit demo hello-world&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de &lt;strong&gt;prompt&lt;/strong&gt; (interagindo com o CLI no terminal) para informar os parâmetros de entrada.&lt;/p&gt;
 &lt;h3 id=&#34;caso-2-usando-prompt--docker&#34;&gt;Caso 2: Usando Prompt &amp;amp; Docker&lt;/h3&gt;
 &lt;p&gt;Você pode rodar o mesmo comando usando a flag &lt;strong&gt;&amp;ndash;docker&lt;/strong&gt; para executar a fórmula remotamente (em um container), mas ainda informando os parâmetros de entrada via &lt;strong&gt;prompt&lt;/strong&gt;:&lt;/p&gt;

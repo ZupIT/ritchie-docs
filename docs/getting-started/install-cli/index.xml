@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Install Cli</title>
-    <link>https://zupit.github.io/getting-started/install-cli/</link>
+    <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/</link>
     <description>Recent content in Install Cli on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/getting-started/install-cli/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/getting-started/install-cli/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Getting Started: Linux</title>
-      <link>https://zupit.github.io/getting-started/install-cli/linux/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/linux/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/linux/</guid>
       <description>
         
         
@@ -49,10 +49,10 @@ If you prefer, you also can follow with the&lt;a href=&#34;manual-installation&#
     
     <item>
       <title>Getting Started: Macos</title>
-      <link>https://zupit.github.io/getting-started/install-cli/macos/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/macos/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</guid>
       <description>
         
         
@@ -97,10 +97,10 @@ If you prefer, you also can follow with the&lt;a href=&#34;manual-installation&#
     
     <item>
       <title>Getting Started: Windows</title>
-      <link>https://zupit.github.io/getting-started/install-cli/windows/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/windows/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/windows/</guid>
       <description>
         
         
@@ -125,10 +125,10 @@ If you prefer, you also can proceed with the&lt;a href=&#34;manual-installation&
     
     <item>
       <title>Getting Started: Manual Installation</title>
-      <link>https://zupit.github.io/getting-started/install-cli/manual-installation/</link>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/getting-started/install-cli/manual-installation/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</guid>
       <description>
         
         

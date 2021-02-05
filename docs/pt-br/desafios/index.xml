@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – Desafios</title>
-    <link>https://zupit.github.io/pt-br/desafios/</link>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/desafios/</link>
     <description>Recent content in Desafios on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/pt-br/desafios/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/desafios/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Desafios: O que são esses desafios?</title>
-      <link>https://zupit.github.io/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</guid>
       <description>
         
         
@@ -52,10 +52,10 @@ A ideia é que haja mais desafios nesta seção. Por isso, recomendamos que voc�
     
     <item>
       <title>Desafios: Nível 1 Inputs</title>
-      <link>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-1-inputs/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-1-inputs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-1-inputs/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-1-inputs/</guid>
       <description>
         
         
@@ -105,10 +105,10 @@ Parabéns! Você completou a tarefa de nível 1!
     
     <item>
       <title>Desafios: Nível 2 Credenciais</title>
-      <link>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-2-credenciais/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-2-credenciais/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-2-credenciais/</guid>
       <description>
         
         
@@ -154,10 +154,10 @@ Sugestão de comando: &lt;strong&gt;&lt;code&gt;rit github get user&lt;/code&gt;
     
     <item>
       <title>Desafios: Nível 3 Inputs condicionais</title>
-      <link>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-3-inputs-condicionais/</guid>
       <description>
         
         
@@ -181,7 +181,7 @@ Sugestão de comando: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/s
 &lt;li&gt;Profile tool (&lt;code&gt;RIT_TOOL&lt;/code&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Os parâmetros de entrada da fórmula deverão respeitar o diagrama abaixo:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/ritchie-conditional-inputs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/ritchie-conditional-inputs.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;passo-a-passo&#34;&gt;Passo a passo&lt;/h2&gt;
 &lt;p&gt;A fórmula deverá respeitar os seguintes passos:&lt;/p&gt;
 &lt;ol&gt;
@@ -202,10 +202,10 @@ Sugestão de comando: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/s
     
     <item>
       <title>Desafios: Nível 4 Encapsulamento</title>
-      <link>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</link>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/desafios/n%C3%ADvel-4-encapsulamento/</guid>
       <description>
         
         

@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ritchie – How to run formulas</title>
-    <link>https://zupit.github.io/tutorials/formulas/how-to-run-formulas/</link>
+    <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/</link>
     <description>Recent content in How to run formulas on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://zupit.github.io/tutorials/formulas/how-to-run-formulas/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Tutorials: Hello World formula</title>
-      <link>https://zupit.github.io/tutorials/formulas/how-to-run-formulas/hello-world-formula/</link>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/hello-world-formula/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://zupit.github.io/tutorials/formulas/how-to-run-formulas/hello-world-formula/</guid>
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/hello-world-formula/</guid>
       <description>
         
         
@@ -65,7 +65,7 @@ As &lt;strong&gt;this formula has been coded using Golang&lt;/strong&gt;, it is 
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit demo hello-world
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Select an option for each input parameter and see how the magic works:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/large-gif-1054x366-%20%281%29.gif&#34; alt=&#34;rit demo hello-world&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/large-gif-1054x366-%20%281%29.gif&#34; alt=&#34;rit demo hello-world&#34;&gt;&lt;/p&gt;
 &lt;p&gt;This is the default command line execution, that runs the formula locally using &lt;strong&gt;prompt&lt;/strong&gt; to inform the input parameters.&lt;/p&gt;
 &lt;h3 id=&#34;case-2-with-prompt-and-docker&#34;&gt;Case 2: With Prompt and Docker&lt;/h3&gt;
 &lt;p&gt;You can run the same command using the &lt;strong&gt;&amp;ndash;docker&lt;/strong&gt; flag to execute it remotely (on a container), but still using &lt;strong&gt;prompt&lt;/strong&gt; to inform the inputs parameters:&lt;/p&gt;
