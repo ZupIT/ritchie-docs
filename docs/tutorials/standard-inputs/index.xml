@@ -1,18 +1,70 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Standard Inputs</title><link>https://zupit.github.io/tutorials/standard-inputs/</link><description>Recent content in Standard Inputs on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/tutorials/standard-inputs/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutorials: How to use the stdin flag</title><link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/</guid><description>
-&lt;hr>
-&lt;div class="alert alert-danger" role="alert">
-The STDIN flag will be deprecated in early 2021, as substituted by &lt;a href="../../how-to-use-input-flags/">input flags&lt;/a>.
-&lt;/div>
-&lt;div class="alert alert-info" role="alert">
-&lt;p>The &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong> flag on Ritchie has been developed to inform input parameters directly on the command lines.&lt;/p>
-&lt;p>In that case, the input parameters need to be informed in a &lt;strong>JSON format&lt;/strong>:&lt;/p>
-&lt;p>&lt;strong>&lt;code>echo&lt;/code>&lt;/strong>&lt;code>'{&amp;quot;key&amp;quot;:&amp;quot;value&amp;quot;}'&lt;/code>&lt;strong>&lt;code>|&lt;/code>&lt;/strong>&lt;code>RIT (GROUP) VERB NOUN&lt;/code> &lt;strong>&lt;code>--stdin&lt;/code>&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;p>You can use this stdin flag rules on**:**&lt;/p></description></item><item><title>Tutorials: How to use input flags</title><link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-input-flags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/tutorials/standard-inputs/how-to-use-input-flags/</guid><description>
-&lt;hr>
-&lt;div class="alert alert-info" role="alert">
-&lt;p>The &lt;strong>Input flags&lt;/strong> on Ritchie has been developed to give one more option to use input parameters through command lines.&lt;/p>
-&lt;p>In that case, the input parameters need to be informed following this pattern:&lt;/p>
-&lt;p>&lt;code>RIT (GROUP) VERB NOUN&lt;/code> &lt;strong>&lt;code>--input_name='input_value'&lt;/code>&lt;/strong>&lt;/p>
-&lt;/div>
-&lt;p>You can use this stdin flag rules on**:**&lt;/p></description></item></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Standard Inputs</title>
+    <link>https://zupit.github.io/tutorials/standard-inputs/</link>
+    <description>Recent content in Standard Inputs on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/tutorials/standard-inputs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutorials: How to use the stdin flag</title>
+      <link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/tutorials/standard-inputs/how-to-use-the-stdin-flag/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+The STDIN flag will be deprecated in early 2021, as substituted by &lt;a href=&#34;../../how-to-use-input-flags/&#34;&gt;input flags&lt;/a&gt;.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;The &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt; flag on Ritchie has been developed to inform input parameters directly on the command lines.&lt;/p&gt;
+&lt;p&gt;In that case, the input parameters need to be informed in a &lt;strong&gt;JSON format&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;&#39;{&amp;quot;key&amp;quot;:&amp;quot;value&amp;quot;}&#39;&lt;/code&gt;&lt;strong&gt;&lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;RIT (GROUP) VERB NOUN&lt;/code&gt; &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;You can use this stdin flag rules on**:**&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutorials: How to use input flags</title>
+      <link>https://zupit.github.io/tutorials/standard-inputs/how-to-use-input-flags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/tutorials/standard-inputs/how-to-use-input-flags/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
+The &lt;strong&gt;Input flags&lt;/strong&gt; on Ritchie has been developed to give one more option to use input parameters through command lines.&lt;/p&gt;
+&lt;p&gt;In that case, the input parameters need to be informed following this pattern:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;RIT (GROUP) VERB NOUN` 
+--input_name=&amp;#39;input_value&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{{% /alert %}}&lt;/p&gt;
+&lt;p&gt;You can use this stdin flag rules on**:**&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

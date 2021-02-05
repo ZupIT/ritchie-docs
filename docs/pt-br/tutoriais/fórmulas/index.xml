@@ -1,253 +1,402 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ritchie – Fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/</link><description>Recent content in Fórmulas on Ritchie</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutoriais: Como executar fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="como-executar">Como executar?&lt;/h2>
-&lt;p>Você tem &lt;strong>duas maneiras&lt;/strong> de executar fórmulas usando o Ritchie:&lt;/p>
-&lt;ol>
-&lt;li>Localmente&lt;/li>
-&lt;li>Usando o Docker&lt;/li>
-&lt;/ol>
-&lt;p>O &lt;strong>método de execução de fórmulas padrão&lt;/strong> foi escolhido durante a etapa de inicialização com o comando &lt;strong>&lt;code>rit init&lt;/code>&lt;/strong>. Ele pode ser alterado executando o comando abaixo:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit set formula-runner
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://zupit.github.io/large-gif-1374x404-.gif" alt="Comando rit set formula-runner">&lt;/p>
-&lt;h3 id="1-execução-local">1. Execução local&lt;/h3>
-&lt;p>Para executar uma fórmula localmente, é necessário ter a linguagem de programação que foi usada para desenvolver a fórmula instalada no computador.&lt;/p>
-&lt;p>&lt;strong>Exemplo&lt;/strong>: uma fórmula desenvolvida em &lt;strong>Java&lt;/strong> precisará ter &lt;strong>Java instalado&lt;/strong> na máquina para ser executada localmente.&lt;/p>
-&lt;h3 id="2-execução-via-docker">2. Execução via Docker&lt;/h3>
-&lt;p>Todas as fórmulas podem ser executadas sem depender da linguagem usada a condição que o &lt;strong>&lt;code>DOCKER&lt;/code>&lt;/strong> esteja instalado e iniciado.&lt;/p>
-&lt;div class="alert alert-info" role="alert">
-Vamos no exemplo a seguir da &lt;a href="formula-hello-world">&lt;strong>seção fórmula hello world&lt;/strong> &lt;/a>para ver como isso funciona na prática.
-&lt;/div>
-&lt;h3 id="3-local--docker-flags">3. Local &amp;amp; Docker Flags&lt;/h3>
-&lt;p>É possível forçar o Ritchie CLI a executar uma fórmula seguindo um método de execução específico, usando flags.&lt;/p>
-&lt;ul>
-&lt;li>A flag &lt;strong>&lt;code>--local&lt;/code>&lt;/strong> executará a fórmula localmente (se o método de execução padrão é o Docker).&lt;/li>
-&lt;li>A flag &lt;strong>&lt;code>--docker&lt;/code>&lt;/strong> executará a fórmula com Docker (se o método de execução padrão é o local).&lt;/li>
-&lt;/ul>
-&lt;h3 id="4-containers-com-ritchie">4. Containers com Ritchie&lt;/h3>
-&lt;div class="alert alert-warning" role="alert">
-Todos os templates de formulas contém um arquivo &lt;strong>DockerFile&lt;/strong> que cria um container com &lt;strong>Ritchie CLI&lt;/strong> instalado.
-&lt;/div>
-&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:&lt;/p>
-&lt;p>👉 Vá para página &lt;a href="formula-hello-world">&lt;strong>Fórmula Hello World&lt;/strong>&lt;/a> te descubra as diferentes maneiras de executar uma fórmula no Ritchie.&lt;/p>
-&lt;p>👉 Vá para página &lt;a href="../../como-criar-formulas">&lt;strong>como criar fórmulas&lt;/strong>&lt;/a> para entender o passo a passo para criar sua primeira automação usando o Ritchie.&lt;/p></description></item><item><title>Tutoriais: Como criar fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="como-criar">Como criar?&lt;/h2>
-&lt;h3 id="passo-1-execute-o-comando-de-criação-de-formula">Passo 1: Execute o comando de criação de formula&lt;/h3>
-&lt;p>Execute esse comando para criar uma fórmula:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit create formula
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Você deverá informar alguns parâmetros de entrada antes da sua execução:&lt;/p>
-&lt;ol>
-&lt;li>O &lt;strong>comando&lt;/strong> (de preferência, com o &lt;strong>padrão &lt;code>rit + grupo + verbo + substantivo&lt;/code>&lt;/strong> para respeitar a &lt;a href="https://docs.ritchiecli.io/v/v2.0-pt/key-concepts#arvore-de-comando">&lt;strong>árvore de comando&lt;/strong>&lt;/a>).&lt;/li>
-&lt;li>A &lt;strong>linguagem de programação&lt;/strong> da fórmula.&lt;/li>
-&lt;li>&lt;strong>O caminho&lt;/strong> para salvar os arquivos da fórmula.&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>Exemplo:&lt;/strong> &lt;code>rit demo create formula&lt;/code>&lt;/p>
-&lt;p>&lt;img src="https://zupit.github.io/rit_create_formula_demo.gif" alt="Exemplo de execu&amp;#xE7;&amp;#xE3;o do comando rit create formula">&lt;/p>
-&lt;h3 id="passo-2-teste-sua-fórmula">&lt;strong>Passo 2: Teste sua fórmula&lt;/strong>&lt;/h3>
-&lt;p>Você pode testar diretamente a fórmula depois de sua criação. Isso é possível porque o comando &lt;strong>&lt;code>rit create formula&lt;/code>&lt;/strong> também constrói a fórmula automaticamente (ela gera os arquivos executáveis da fórmula e adiciona-os no &lt;strong>.rit folder&lt;/strong>).&lt;/p>
-&lt;p>Nesse caso, o template da formula &lt;strong>&amp;ldquo;Hello World&amp;rdquo;&lt;/strong> será executado como mostrado abaixo:&lt;/p>
-&lt;p>&lt;img src="https://zupit.github.io/rit_demo_hello-world_hd.gif" alt="Exemplo demo de f&amp;#xF3;rmula &amp;quot;Hello-World&amp;quot;">&lt;/p>
-&lt;p>Este template é composto por &lt;strong>3 parâmetros de entrada&lt;/strong>, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:&lt;/p>
-&lt;ol>
-&lt;li>Uma amostra da &lt;strong>&lt;code>variável de texto&lt;/code>&lt;/strong>&lt;/li>
-&lt;li>Uma amostra da &lt;strong>&lt;code>lista de variáveis&lt;/code>&lt;/strong>&lt;/li>
-&lt;li>Uma amostra das &lt;strong>&lt;code>variáveis booleanas&lt;/code>&lt;/strong>&lt;/li>
-&lt;/ol>
-&lt;p>Quando você terminar a criação da sua fórmula, ela será &amp;ldquo;buildada&amp;rdquo; e enviada para um repositório local específico de acordo com o nome do seu workspace, com o prefixo &lt;strong>&amp;ldquo;local&amp;rdquo;&lt;/strong>.&lt;/p>
-&lt;p>&lt;strong>Exemplo:&lt;/strong> se tiver um workspace com o nome &lt;code>Default&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">{
-&amp;#34;Default&amp;#34;:&amp;#34;/home/user/ritchie-formula-local&amp;#34;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Fórmulas</title>
+    <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/</link>
+    <description>Recent content in Fórmulas on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutoriais: Como executar fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-executar&#34;&gt;Como executar?&lt;/h2&gt;
+&lt;p&gt;Você tem &lt;strong&gt;duas maneiras&lt;/strong&gt; de executar fórmulas usando o Ritchie:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Localmente&lt;/li&gt;
+&lt;li&gt;Usando o Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;O &lt;strong&gt;método de execução de fórmulas padrão&lt;/strong&gt; foi escolhido durante a etapa de inicialização com o comando &lt;strong&gt;&lt;code&gt;rit init&lt;/code&gt;&lt;/strong&gt;. Ele pode ser alterado executando o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit set formula-runner
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/large-gif-1374x404-.gif&#34; alt=&#34;Comando rit set formula-runner&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-execução-local&#34;&gt;1. Execução local&lt;/h3&gt;
+&lt;p&gt;Para executar uma fórmula localmente, é necessário ter a linguagem de programação que foi usada para desenvolver a fórmula instalada no computador.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo&lt;/strong&gt;: uma fórmula desenvolvida em &lt;strong&gt;Java&lt;/strong&gt; precisará ter &lt;strong&gt;Java instalado&lt;/strong&gt; na máquina para ser executada localmente.&lt;/p&gt;
+&lt;h3 id=&#34;2-execução-via-docker&#34;&gt;2. Execução via Docker&lt;/h3&gt;
+&lt;p&gt;Todas as fórmulas podem ser executadas sem depender da linguagem usada a condição que  o &lt;strong&gt;&lt;code&gt;DOCKER&lt;/code&gt;&lt;/strong&gt; esteja instalado e iniciado.&lt;/p&gt;
+&lt;p&gt;{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
+Vamos no exemplo a seguir da &lt;a href=&#34;formula-hello-world&#34;&gt;&lt;strong&gt;seção fórmula hello world&lt;/strong&gt; &lt;/a&gt;para ver como isso funciona na prática.
+{{% /alert %}}&lt;/p&gt;
+&lt;h3 id=&#34;3-local--docker-flags&#34;&gt;3. Local &amp;amp; Docker Flags&lt;/h3&gt;
+&lt;p&gt;É possível forçar o Ritchie CLI a executar uma fórmula seguindo um método de execução específico, usando flags.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A flag &lt;strong&gt;&lt;code&gt;--local&lt;/code&gt;&lt;/strong&gt; executará a fórmula localmente (se o método de execução padrão é o Docker).&lt;/li&gt;
+&lt;li&gt;A flag &lt;strong&gt;&lt;code&gt;--docker&lt;/code&gt;&lt;/strong&gt; executará a fórmula com Docker (se o método de execução padrão é o local).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-containers-com-ritchie&#34;&gt;4. Containers com Ritchie&lt;/h3&gt;
+&lt;p&gt;{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+Todos os templates de formulas contém um arquivo &lt;strong&gt;DockerFile&lt;/strong&gt; que cria um container com &lt;strong&gt;Ritchie CLI&lt;/strong&gt; instalado.
+{{% /alert %}}&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:&lt;/p&gt;
+&lt;p&gt;👉 Vá para página &lt;a href=&#34;formula-hello-world&#34;&gt;&lt;strong&gt;Fórmula Hello World&lt;/strong&gt;&lt;/a&gt; te descubra as diferentes maneiras de executar uma fórmula no Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Vá para página &lt;a href=&#34;../../como-criar-formulas&#34;&gt;&lt;strong&gt;como criar fórmulas&lt;/strong&gt;&lt;/a&gt; para entender o passo a passo para criar sua primeira automação usando o Ritchie.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como criar fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-criar&#34;&gt;Como criar?&lt;/h2&gt;
+&lt;h3 id=&#34;passo-1-execute-o-comando-de-criação-de-formula&#34;&gt;Passo 1: Execute o comando de criação de formula&lt;/h3&gt;
+&lt;p&gt;Execute esse comando para criar uma fórmula:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit create formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar alguns parâmetros de entrada antes da sua execução:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;O &lt;strong&gt;comando&lt;/strong&gt; (de preferência, com o &lt;strong&gt;padrão &lt;code&gt;rit + grupo + verbo + substantivo&lt;/code&gt;&lt;/strong&gt; para respeitar a &lt;a href=&#34;https://docs.ritchiecli.io/v/v2.0-pt/key-concepts#arvore-de-comando&#34;&gt;&lt;strong&gt;árvore de comando&lt;/strong&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;linguagem de programação&lt;/strong&gt; da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O caminho&lt;/strong&gt; para salvar os arquivos da fórmula.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; &lt;code&gt;rit demo create formula&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/rit_create_formula_demo.gif&#34; alt=&#34;Exemplo de execu&amp;#xE7;&amp;#xE3;o do comando rit create formula&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;passo-2-teste-sua-fórmula&#34;&gt;&lt;strong&gt;Passo 2: Teste sua fórmula&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Você pode testar diretamente a fórmula depois de sua criação. Isso é possível porque o comando &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; também constrói a fórmula automaticamente (ela gera os arquivos executáveis da fórmula e adiciona-os no &lt;strong&gt;.rit folder&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Nesse caso, o template da formula &lt;strong&gt;&amp;ldquo;Hello World&amp;rdquo;&lt;/strong&gt; será executado como mostrado abaixo:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/rit_demo_hello-world_hd.gif&#34; alt=&#34;Exemplo demo de f&amp;#xF3;rmula &amp;quot;Hello-World&amp;quot;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Este template é composto por &lt;strong&gt;3 parâmetros de entrada&lt;/strong&gt;, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Uma amostra da &lt;strong&gt;&lt;code&gt;variável de texto&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Uma amostra da &lt;strong&gt;&lt;code&gt;lista de variáveis&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Uma amostra das &lt;strong&gt;&lt;code&gt;variáveis booleanas&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Quando você terminar a criação da sua fórmula, ela será &amp;ldquo;buildada&amp;rdquo; e enviada para um repositório local específico de acordo com o nome do seu workspace, com o prefixo &lt;strong&gt;&amp;ldquo;local&amp;rdquo;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo:&lt;/strong&gt; se tiver um workspace com o nome &lt;code&gt;Default&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;{
+    &amp;#34;Default&amp;#34;:&amp;#34;/home/user/ritchie-formula-local&amp;#34;
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Um repositório associado a esse workspace será criado na pasta &lt;code>/home/user/.rit/repos&lt;/code>, e adicionado no arquivo &lt;code>repositories.json&lt;/code>.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">[
-{
-&amp;#34;provider&amp;#34;: &amp;#34;Local&amp;#34;,
-&amp;#34;name&amp;#34;: &amp;#34;local-default&amp;#34;,
-&amp;#34;version&amp;#34;: &amp;#34;0.0.0&amp;#34;,
-&amp;#34;url&amp;#34;: &amp;#34;local repository&amp;#34;,
-&amp;#34;priority&amp;#34;: 0,
-&amp;#34;isLocal&amp;#34;: true
-}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Um repositório associado a esse workspace será criado na pasta &lt;code&gt;/home/user/.rit/repos&lt;/code&gt;,  e adicionado no arquivo &lt;code&gt;repositories.json&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;[
+	{
+		&amp;#34;provider&amp;#34;: &amp;#34;Local&amp;#34;,
+		&amp;#34;name&amp;#34;: &amp;#34;local-default&amp;#34;,
+		&amp;#34;version&amp;#34;: &amp;#34;0.0.0&amp;#34;,
+		&amp;#34;url&amp;#34;: &amp;#34;local repository&amp;#34;,
+		&amp;#34;priority&amp;#34;: 0,
+		&amp;#34;isLocal&amp;#34;: true
+	}
 ]
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nessa seção, você viu como criar e testar uma fórmula no Ritchie. Para continuar configurando a fórmula:&lt;/p>
-&lt;p>👉 Vá para a seção de como&lt;a href="como-implementar-formulas/"> &lt;strong>implementar uma fórmula&lt;/strong>&lt;/a> para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.&lt;/p>
-&lt;p>👉 Vá para &lt;a href="como-buildar-formulas">&lt;strong>como fazer o build da fórmula&lt;/strong>&lt;/a> para ver como continuar os testes nas fórmulas que você criou.&lt;/p></description></item><item><title>Tutoriais: Como implementar fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="como-implementar">Como implementar?&lt;/h2>
-&lt;p>Uma vez que você &lt;a href="../../../../como-criar-formulas">&lt;strong>criou e testou sua fórmula&lt;/strong>&lt;/a>, o Ritchie irá gerar um workspace para você trabalhar localmente. Com isso, você pode começar a implementar sua automação ao atualizar o template &lt;strong>Hello World&lt;/strong>__&lt;/p>
-&lt;p>Veja a seguir explicações sobre os arquivos editáveis de fórmulas e toda flexibilidade oferecida pelo Ritchie em sua estrutura:&lt;/p>
-&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nessa seção, você viu como implementar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
-&lt;p>👉 Vá para como fazer o &lt;a href="../../../como-buildar-formulas">&lt;strong>build de uma fórmula&lt;/strong>&lt;/a> para continuar os testes nas fórmulas que você criou.&lt;/p>
-&lt;p>👉 Vá para &lt;a href="../../como-publicar-formulas">&lt;strong>publicar uma fórmula&lt;/strong>&lt;/a> para saber como transferir seu trabalho para um repositório público&lt;/p></description></item><item><title>Tutoriais: Como "buildar" fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;div class="alert alert-danger" role="alert">
-&lt;p>Essa funcionalidade não está mais disponível a partir da versão 2.5.0 do Ritchie. Isso porque o build da fórmula é feito de maneira automática: um repositório local criado assim que você implementa a fórmula&lt;/p>
-&lt;p>Caso esteja usando uma versão anterior, basta seguir as orientações desta seção.&lt;/p>
-&lt;/div>
-&lt;h2 id="como-buildar">Como &amp;ldquo;buildar&amp;rdquo;?&lt;/h2>
-&lt;p>Depois de &lt;a href="como-criar-formulas">&lt;strong>criar uma fórmula&lt;/strong>&lt;/a>, se você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação.&lt;/p>
-&lt;p>Para isso, basta executar o comando:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit build formula
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Você deverá informar:&lt;/p>
-&lt;ul>
-&lt;li>O &lt;strong>caminho do diretório&lt;/strong> onde a fórmula está localizada.&lt;/li>
-&lt;li>O &lt;strong>caminho da fórmula&lt;/strong> a ser buildada (ele segue o comando da fórmula).&lt;/li>
-&lt;/ul>
-&lt;p>Caso queira atualizar o código da fórmula em tempo de execução, é possível utilizar a &lt;strong>flag “&amp;ndash;watch”&lt;/strong> junto da fórmula. Veja no exemplo abaixo:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit build formula --watch
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nessa seção, você viu como fazer o build de uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
-&lt;p>👉 Vá para página de como &lt;a href="como-publicar-formulas">&lt;strong>publicar uma fórmula&lt;/strong>&lt;/a> para ver como transferir seu trabalho para um repositório público.&lt;/p></description></item><item><title>Tutoriais: Como publicar fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="como-publicar">Como publicar?&lt;/h2>
-&lt;p>Existe uma fórmula no Ritchie que permite você criar/atualizar o repositório de fórmulas no Github e/ou Gitblab.&lt;/p>
-&lt;h3 id="premissas">Premissas&lt;/h3>
-&lt;div class="alert alert-warning" role="alert">
-Para publicar um repositório, é necessário configurar as credenciais do Github e/ou Gitlab usando o comando &lt;strong>&lt;code>rit set credential.&lt;/code>&lt;/strong>
-&lt;/div>
-&lt;h2 id="publicando-seu-repositório">Publicando seu repositório&lt;/h2>
-&lt;p>Você pode usar uma a fórmula que foi criada no repositório da comunidade para fazer:&lt;/p>
-&lt;ul>
-&lt;li>A inicialização em um repositório local do Git (se necessário).&lt;/li>
-&lt;li>A criação do repositório no Github e/ou Gitlab,&lt;/li>
-&lt;li>A geração da release de uma nova versão do repositório.&lt;/li>
-&lt;li>A adição de um repositório nos repositórios locais do Ritchie (usando o comando**&lt;code>rit add repo&lt;/code>**).&lt;/li>
-&lt;/ul>
-&lt;div class="alert alert-info" role="alert">
-Além disso, se o repositório já existir, a fórmula irá fazer o commit de um novo código e gerar uma nova release informada antes de atualizar os repositórios do Ritchie (usando o comando &lt;strong>&lt;code>rit update repo&lt;/code>&lt;/strong>)
-&lt;/div>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit publish repo
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Você deverá informar 5 tipos diferentes de parâmetros de entrada:&lt;/p>
-&lt;ol>
-&lt;li>O &lt;strong>&lt;code>provedor&lt;/code>&lt;/strong> (Github ou Gitlab)&lt;/li>
-&lt;li>A &lt;strong>&lt;code>privacidade do repositório&lt;/code>&lt;/strong>&lt;/li>
-&lt;li>O &lt;strong>&lt;code>nome do repositório&lt;/code>&lt;/strong>&lt;/li>
-&lt;li>O &lt;strong>&lt;code>caminho local do repositório&lt;/code>&lt;/strong> you wish to publish&lt;/li>
-&lt;li>A &lt;strong>&lt;code>versão da release&lt;/code>&lt;/strong> para ser gerada&lt;/li>
-&lt;/ol>
-&lt;p>&lt;img src="https://zupit.github.io/rit-publish-repo.gif" alt="rit publish repo command">&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-Como demonstrado acima, você pode checar se a publicação deu certo usando o comando**&lt;code>rit list repo&lt;/code>** e observando se o repositório publicado aparece.
-&lt;/div>
-&lt;h2 id="publicando-manualmente">Publicando manualmente&lt;/h2>
-&lt;p>Para publicar uma fórmula manualmente, você precisa submetê-la no repositório do &lt;strong>Github e/ou Gitlab&lt;/strong> seguindo esses passos:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>Tenha um repositório de fórmulas exclusivo no Github e/ou Gitlab.&lt;/p>
-&lt;p>&lt;em>Ele pode ser criado a partir de um repositório local ou de um repositório clonado.&lt;/em>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Adicione sua fórmula ao repositório _Para isso, use o comando &lt;strong>&lt;code>rit create formula&lt;/code>&lt;/strong> ou copie /cole as pastas. _&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Faça o commit e submeta o novo código ao repositório do Github e/ou Gitlab.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Gere uma nova release do repositório de fórmulas.&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
-&lt;p>👉 Check out &lt;a href="como-compartilhar-formulas">&lt;strong>como compartilhar fórmulas&lt;/strong>&lt;/a>.&lt;/p></description></item><item><title>Tutoriais: Como compartilhar fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="como-compartilhar">Como compartilhar?&lt;/h2>
-&lt;p>Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas.&lt;/p>
-&lt;p>&lt;strong>Exemplo**: &lt;/strong>&lt;code>https://github.com/ZupIT/ritchie-formulas&lt;/code>**&lt;a href="https://github.com/ZupIT/ritchie-formulas">&lt;/a>&lt;/p>
-&lt;p>Para adicionar um novo repositório no Ritchie, é necessário rodar o comando abaixo:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit add repo
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Uma vez que o repositório for adicionado, o Ritchie irá usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.&lt;/p>
-&lt;p>&lt;img src="https://zupit.github.io/rit-add-repo-3.gif" alt="rit add repo command demonstration">&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-Note que se o repositório de fórmulas for &lt;strong>privado&lt;/strong>, será necessário informar o token do seu Github/Gitlab.
-&lt;/div>
-&lt;h2 id="como-checar-a-última-versão-do-repositório">Como checar a última versão do repositório?&lt;/h2>
-&lt;div class="alert alert-info" role="alert">
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como criar e testar uma fórmula no Ritchie. Para continuar configurando a fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para a seção de como&lt;a href=&#34;como-implementar-formulas/&#34;&gt; &lt;strong&gt;implementar uma  fórmula&lt;/strong&gt;&lt;/a&gt; para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.&lt;/p&gt;
+&lt;p&gt;👉 Vá para &lt;a href=&#34;como-buildar-formulas&#34;&gt;&lt;strong&gt;como fazer o build da fórmula&lt;/strong&gt;&lt;/a&gt; para ver como continuar os testes nas fórmulas que você criou.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como implementar fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-implementar&#34;&gt;Como implementar?&lt;/h2&gt;
+&lt;p&gt;Uma vez que você &lt;a href=&#34;../../../../como-criar-formulas&#34;&gt;&lt;strong&gt;criou e testou sua fórmula&lt;/strong&gt;&lt;/a&gt;, o Ritchie irá gerar um workspace para você trabalhar localmente. Com isso, você pode começar a implementar sua automação ao atualizar o template &lt;strong&gt;Hello World&lt;/strong&gt;__&lt;/p&gt;
+&lt;p&gt;Veja a seguir explicações sobre os arquivos editáveis de fórmulas e toda flexibilidade oferecida pelo Ritchie em sua estrutura:&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como implementar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para como fazer o &lt;a href=&#34;../../../como-buildar-formulas&#34;&gt;&lt;strong&gt;build de uma fórmula&lt;/strong&gt;&lt;/a&gt; para continuar os testes nas fórmulas que você criou.&lt;/p&gt;
+&lt;p&gt;👉 Vá para &lt;a href=&#34;../../como-publicar-formulas&#34;&gt;&lt;strong&gt;publicar uma fórmula&lt;/strong&gt;&lt;/a&gt; para saber como transferir seu trabalho para um repositório público&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como &#34;buildar&#34; fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;Essa funcionalidade não está mais disponível a partir da versão 2.5.0 do Ritchie. Isso porque o build da fórmula é feito de maneira automática: um repositório local criado assim que você implementa a fórmula&lt;/p&gt;
+&lt;p&gt;Caso esteja usando uma versão anterior, basta seguir as orientações desta seção.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;como-buildar&#34;&gt;Como &amp;ldquo;buildar&amp;rdquo;?&lt;/h2&gt;
+&lt;p&gt;Depois de &lt;a href=&#34;como-criar-formulas&#34;&gt;&lt;strong&gt;criar uma fórmula&lt;/strong&gt;&lt;/a&gt;,  se você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação.&lt;/p&gt;
+&lt;p&gt;Para isso, basta executar o comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit build formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;O &lt;strong&gt;caminho  do diretório&lt;/strong&gt; onde a fórmula está localizada.&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;caminho da fórmula&lt;/strong&gt; a ser buildada (ele segue o comando da fórmula).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Caso queira atualizar o código da fórmula em tempo de execução, é possível utilizar a &lt;strong&gt;flag “&amp;ndash;watch”&lt;/strong&gt; junto da fórmula. Veja no exemplo abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit build formula --watch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como fazer o build de uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para página de como &lt;a href=&#34;como-publicar-formulas&#34;&gt;&lt;strong&gt;publicar uma fórmula&lt;/strong&gt;&lt;/a&gt; para ver como transferir seu trabalho para um repositório público.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como publicar fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-publicar&#34;&gt;Como publicar?&lt;/h2&gt;
+&lt;p&gt;Existe uma fórmula no Ritchie que permite você criar/atualizar o repositório de fórmulas no Github e/ou Gitblab.&lt;/p&gt;
+&lt;h3 id=&#34;premissas&#34;&gt;Premissas&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Para publicar um repositório, é necessário configurar as credenciais do Github e/ou Gitlab usando o comando &lt;strong&gt;&lt;code&gt;rit set credential.&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;publicando-seu-repositório&#34;&gt;Publicando seu repositório&lt;/h2&gt;
+&lt;p&gt;Você pode usar uma a fórmula que foi criada no repositório da comunidade para fazer:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A inicialização em um repositório local do Git (se necessário).&lt;/li&gt;
+&lt;li&gt;A criação do repositório no Github e/ou Gitlab,&lt;/li&gt;
+&lt;li&gt;A geração da release de uma nova versão do repositório.&lt;/li&gt;
+&lt;li&gt;A adição de um repositório nos repositórios locais do Ritchie (usando o comando**&lt;code&gt;rit add repo&lt;/code&gt;**).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Além disso, se o repositório já existir, a fórmula irá fazer o commit de um novo código e gerar uma nova release informada antes de atualizar os repositórios do Ritchie (usando o comando &lt;strong&gt;&lt;code&gt;rit update repo&lt;/code&gt;&lt;/strong&gt;)
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit publish repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar 5 tipos diferentes de parâmetros de entrada:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;O &lt;strong&gt;&lt;code&gt;provedor&lt;/code&gt;&lt;/strong&gt; (Github ou Gitlab)&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;&lt;code&gt;privacidade do repositório&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;&lt;code&gt;nome do repositório&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;&lt;code&gt;caminho local do repositório&lt;/code&gt;&lt;/strong&gt; you wish to publish&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;&lt;code&gt;versão da release&lt;/code&gt;&lt;/strong&gt; para ser gerada&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/rit-publish-repo.gif&#34; alt=&#34;rit publish repo command&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Como demonstrado acima, você pode checar se a publicação deu certo usando o comando**&lt;code&gt;rit list repo&lt;/code&gt;** e observando se o repositório publicado aparece.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;publicando-manualmente&#34;&gt;Publicando manualmente&lt;/h2&gt;
+&lt;p&gt;Para publicar uma fórmula manualmente, você precisa submetê-la no repositório do  &lt;strong&gt;Github e/ou Gitlab&lt;/strong&gt; seguindo esses passos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Tenha um repositório de fórmulas exclusivo no Github e/ou Gitlab.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Ele pode ser criado a partir de um repositório local ou de um repositório clonado.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adicione sua fórmula ao repositório  _Para isso, use o comando &lt;strong&gt;&lt;code&gt;rit create formula&lt;/code&gt;&lt;/strong&gt; ou copie /cole as pastas. _&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Faça o commit e submeta o novo código ao repositório do Github e/ou Gitlab.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gere uma nova release do repositório de fórmulas.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Check out &lt;a href=&#34;como-compartilhar-formulas&#34;&gt;&lt;strong&gt;como compartilhar fórmulas&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como compartilhar fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-compartilhar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-compartilhar&#34;&gt;Como compartilhar?&lt;/h2&gt;
+&lt;p&gt;Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Exemplo**: &lt;/strong&gt;&lt;code&gt;https://github.com/ZupIT/ritchie-formulas&lt;/code&gt;**&lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para adicionar um novo repositório no Ritchie, é necessário rodar o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit add repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Uma vez que o repositório for adicionado, o Ritchie irá  usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/rit-add-repo-3.gif&#34; alt=&#34;rit add repo command demonstration&#34;&gt;&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Note que se o repositório de fórmulas for &lt;strong&gt;privado&lt;/strong&gt;, será necessário informar o token do seu Github/Gitlab.
+&lt;/div&gt;
+
+&lt;h2 id=&#34;como-checar-a-última-versão-do-repositório&#34;&gt;Como checar a última versão do repositório?&lt;/h2&gt;
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
 Essa feature está disponível a partir da versão 2.2 do Ritchie.
-&lt;/div>
-&lt;p>No Ritchie, é possível checar novos comandos de fórmulas adicionados e checar se há uma nova versão de algum repositório que você tenha importado localmente.&lt;/p>
-&lt;p>Para isso, basta você seguir os seguintes passos:&lt;/p>
-&lt;ol>
-&lt;li>Executar o comando de ajuda &lt;strong>&lt;code>rit --help&lt;/code>&lt;/strong>. O sistema deve retornar a lista com grupo de repositórios disponíveis.&lt;/li>
-&lt;/ol>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">(new version 2.12.1) commons repo commands:
-beagle Beagle commands
-bitbucket Manage bitbucket objects
-clean-swift Manage clean-swift objects
-docker Manipulate Docker objects
-git Manipulate Git objects
-github Manipulate GitHub objects
-gitlab Manipulate GitLab objects
-istio Istio Service Mesh commands
-jupyter Manage jupyter objects
-kafka Kafka commands
-kubernetes Manipulate kubernetes objects
-publish Publish command
-scaffold Manipulate scaffold objects
-xcode Manage xcode objects
-&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="2">
-&lt;li>Se preferir, execute o comando &lt;strong>&lt;code>rit list repo&lt;/code>&lt;/strong>, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.&lt;/li>
-&lt;/ol>
-&lt;h3 id="como-atualizo">Como atualizo?&lt;/h3>
-&lt;p>Para atualizar a versão de algum repositório local, você só precisa rodar o comando abaixo informando o nome do repositório e a versão desejada.&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit update repo
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p>
-&lt;p>👉 Vá para página &lt;a href="../../../credenciais/">&lt;strong>manipular credenciais&lt;/strong>&lt;/a> e veja como rodar esse comando com suas fórmulas.&lt;/p>
-&lt;p>👉 Vá para página de &lt;a href="../../../reference/lista-de-comandos-e-flags">&lt;strong>lista de comandos&lt;/strong>&lt;/a> para ver as automações disponíveis no repositório da nossa comunidade.&lt;/p></description></item><item><title>Tutoriais: Como apagar fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="como-apagar">Como apagar?&lt;/h2>
-&lt;p>Para deletar uma fórmula, você só precisa rodar o seguinte comando:&lt;/p>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">rit delete formula
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Feito isso, siga os passos:&lt;/p>
-&lt;p>&lt;strong>Passo 1:&lt;/strong> Selecione o workspace em que está a fórmula que deseja apagar.&lt;/p>
-&lt;p>&lt;strong>Passo 2:&lt;/strong> Selecione a fórmula que será apagada.&lt;/p>
-&lt;p>&lt;strong>Passo 3:&lt;/strong> O Ritchie fará uma pergunta para você confirmar se deseja seguir com a operação de apagar a fórmula. Basta selecionar &amp;ldquo;sim&amp;rdquo; (yes).&lt;/p>
-&lt;p>&lt;img src="https://zupit.github.io/delete-formula.gif" alt="">&lt;/p>
-&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nesta seção, você viu como apagar uma fórmula no Ritchie. Para continuar lendo mais:&lt;/p>
-&lt;p>👉 Vá para seção &lt;a href="como-encapsular-formulas">&lt;strong>como encapsular fórmulas&lt;/strong>&lt;/a> para descobrir como se executa uma fórmula dentro de outra fórmula.&lt;/p>
-&lt;p>👉 Conheça a &lt;a href="../../../reference/lista-de-comandos-e-flags">&lt;strong>lista de comandos&lt;/strong>&lt;/a> de fórmulas disponíveis no Ritchie.&lt;/p></description></item><item><title>Tutoriais: Como encapsular fórmulas</title><link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</guid><description>
-&lt;hr>
-&lt;h2 id="o-que-é-encapsulamento">O que é encapsulamento?&lt;/h2>
-&lt;p>No Ritchie, é possível &lt;strong>executar fórmulas dentro de fórmulas&lt;/strong>. Esse processo é o que chamamos de &lt;strong>Encapsulamento de Fórmula&lt;/strong>.&lt;/p>
-&lt;p>Essa função permite que você, por exemplo, realize operações em que é necessário rodar fórmulas consecutivas.&lt;/p>
-&lt;p>A seguir, veja como você pode fazer esse processo de encapsulamento:&lt;/p>
-&lt;h2 id="como-encapsular">Como encapsular?&lt;/h2>
-&lt;h3 id="1-premissa">1. Premissa&lt;/h3>
-&lt;p>Para realizar um encapsulamento de fórmula, é necessário usar &lt;strong>Standard Inputs&lt;/strong>. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:&lt;/p>
-&lt;h3 id="2-execução">2. Execução&lt;/h3>
-&lt;p>Ao &lt;a href="como-implementar-formulas/">&lt;strong>implementar uma fórmula&lt;/strong>&lt;/a>, você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.&lt;/p>
-&lt;p>A linha de comando da fórmula encapsulada deve ser executada utilizando &lt;strong>Standard Inputs&lt;/strong> e informando os seus parâmetros de entradas diretamente no código.&lt;/p>
-&lt;h3 id="3-exemplo">3. Exemplo&lt;/h3>
-&lt;p>A fórmula &lt;strong>&lt;code>rit publish repo&lt;/code>&lt;/strong> foi implementada usando o encapsulamento de fórmula. Inclusive, você pode encontrar no Github a &lt;a href="https://github.com/ZupIT/ritchie-formulas/tree/master/publish/repo">&lt;strong>implementação dessa fórmula&lt;/strong>&lt;/a>&lt;/p>
-&lt;p>No exemplo abaixo, você verá como esse encapsulamento funciona na parte do código usando &lt;strong>&lt;code>Input flags&lt;/code>&lt;/strong>.&lt;/p>
-&lt;div class="alert alert-warning" role="alert">
-Vale reforçar que essa fórmula foi implementada usando &lt;strong>Shell&lt;/strong>, mas o raciocínio seria o mesmo para qualquer outra linguagem de programação.
-&lt;/div>
-&lt;div class="highlight">&lt;pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-text" data-lang="text">runFormula() {
-if [ &amp;#34;Github&amp;#34; == $PROVIDER ]
-then
-echo &amp;#34;🐙 Github provider selected&amp;#34;
-rit github publish repo --privacy=$PRIVACY --project_name=$PROJECT_NAME --workspace_path=$WORKSPACE_PATH --version=$VERSION
-elif [ &amp;#34;Gitlab&amp;#34; == $PROVIDER ]
-then
-echo &amp;#34;🦊 Gitlab provider selected&amp;#34;
-rit gitlab publish repo --privacy=$PRIVACY --project_name=$PROJECT_NAME --workspace_path=$WORKSPACE_PATH --version=$VERSION
-else
-echo &amp;#34;🤖 Unexpected Provider informed. Check it please and try again.&amp;#34;
-fi
+&lt;/div&gt;
+
+&lt;p&gt;No Ritchie, é possível checar novos comandos de fórmulas adicionados e checar se há uma nova versão de algum repositório que você tenha importado localmente.&lt;/p&gt;
+&lt;p&gt;Para isso, basta você seguir os seguintes passos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Executar o comando de ajuda &lt;strong&gt;&lt;code&gt;rit --help&lt;/code&gt;&lt;/strong&gt;. O sistema deve retornar a lista com grupo de repositórios disponíveis.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;(new version 2.12.1) commons repo commands:
+  beagle      Beagle commands
+  bitbucket   Manage bitbucket objects
+  clean-swift Manage clean-swift objects
+  docker      Manipulate Docker objects
+  git         Manipulate Git objects
+  github      Manipulate GitHub objects
+  gitlab      Manipulate GitLab objects
+  istio       Istio Service Mesh commands
+  jupyter     Manage jupyter objects
+  kafka       Kafka commands
+  kubernetes  Manipulate kubernetes objects
+  publish     Publish command
+  scaffold    Manipulate scaffold objects
+  xcode       Manage xcode objects
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Se preferir, execute o comando &lt;strong&gt;&lt;code&gt;rit list repo&lt;/code&gt;&lt;/strong&gt;, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;como-atualizo&#34;&gt;Como atualizo?&lt;/h3&gt;
+&lt;p&gt;Para atualizar a versão de algum repositório local, você só precisa rodar o comando abaixo informando o nome do repositório e a versão desejada.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit update repo
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para página &lt;a href=&#34;../../../credenciais/&#34;&gt;&lt;strong&gt;manipular credenciais&lt;/strong&gt;&lt;/a&gt; e veja como rodar esse comando com suas fórmulas.&lt;/p&gt;
+&lt;p&gt;👉 Vá para página de &lt;a href=&#34;../../../reference/lista-de-comandos-e-flags&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repositório da nossa comunidade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como apagar fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-apagar-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-apagar&#34;&gt;Como apagar?&lt;/h2&gt;
+&lt;p&gt;Para deletar uma fórmula, você só precisa rodar o seguinte comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit delete formula
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Feito isso, siga os passos:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 1:&lt;/strong&gt; Selecione o workspace em que está a fórmula que deseja apagar.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 2:&lt;/strong&gt; Selecione a fórmula que será apagada.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Passo 3:&lt;/strong&gt; O Ritchie fará uma pergunta para você confirmar se deseja seguir com a operação de apagar a fórmula. Basta selecionar &amp;ldquo;sim&amp;rdquo; (yes).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/delete-formula.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como apagar uma fórmula no Ritchie. Para continuar lendo mais:&lt;/p&gt;
+&lt;p&gt;👉 Vá para seção &lt;a href=&#34;como-encapsular-formulas&#34;&gt;&lt;strong&gt;como encapsular fórmulas&lt;/strong&gt;&lt;/a&gt; para descobrir como se executa uma fórmula dentro de outra fórmula.&lt;/p&gt;
+&lt;p&gt;👉 Conheça a &lt;a href=&#34;../../../reference/lista-de-comandos-e-flags&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; de fórmulas disponíveis no Ritchie.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como encapsular fórmulas</title>
+      <link>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/pt-br/tutoriais/f%C3%B3rmulas/como-encapsular-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;o-que-é-encapsulamento&#34;&gt;O que é encapsulamento?&lt;/h2&gt;
+&lt;p&gt;No Ritchie, é possível &lt;strong&gt;executar fórmulas dentro de fórmulas&lt;/strong&gt;. Esse processo é o que chamamos de &lt;strong&gt;Encapsulamento de Fórmula&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Essa função permite que você, por exemplo, realize operações em que é necessário rodar fórmulas consecutivas.&lt;/p&gt;
+&lt;p&gt;A seguir, veja como você pode fazer esse processo de encapsulamento:&lt;/p&gt;
+&lt;h2 id=&#34;como-encapsular&#34;&gt;Como encapsular?&lt;/h2&gt;
+&lt;h3 id=&#34;1-premissa&#34;&gt;1. Premissa&lt;/h3&gt;
+&lt;p&gt;Para realizar um encapsulamento de fórmula, é necessário usar &lt;strong&gt;Standard Inputs&lt;/strong&gt;. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:&lt;/p&gt;
+&lt;h3 id=&#34;2-execução&#34;&gt;2. Execução&lt;/h3&gt;
+&lt;p&gt;Ao &lt;a href=&#34;como-implementar-formulas/&#34;&gt;&lt;strong&gt;implementar uma fórmula&lt;/strong&gt;&lt;/a&gt;, você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.&lt;/p&gt;
+&lt;p&gt;A linha de comando da fórmula encapsulada deve ser executada utilizando &lt;strong&gt;Standard Inputs&lt;/strong&gt; e informando os seus parâmetros de entradas diretamente no código.&lt;/p&gt;
+&lt;h3 id=&#34;3-exemplo&#34;&gt;3. Exemplo&lt;/h3&gt;
+&lt;p&gt;A fórmula &lt;strong&gt;&lt;code&gt;rit publish repo&lt;/code&gt;&lt;/strong&gt; foi implementada usando o encapsulamento de fórmula. Inclusive, você pode encontrar no Github a &lt;a href=&#34;https://github.com/ZupIT/ritchie-formulas/tree/master/publish/repo&#34;&gt;&lt;strong&gt;implementação dessa fórmula&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo, você verá como esse encapsulamento funciona na parte do código usando &lt;strong&gt;&lt;code&gt;Input flags&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Vale reforçar que essa fórmula foi implementada usando &lt;strong&gt;Shell&lt;/strong&gt;, mas o raciocínio seria o mesmo para qualquer outra linguagem de programação.
+&lt;/div&gt;
+
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;runFormula() {
+  if [ &amp;#34;Github&amp;#34; == $PROVIDER ]
+  then
+    echo &amp;#34;🐙 Github provider selected&amp;#34;
+    rit github publish repo --privacy=$PRIVACY --project_name=$PROJECT_NAME --workspace_path=$WORKSPACE_PATH --version=$VERSION
+  elif [ &amp;#34;Gitlab&amp;#34; == $PROVIDER ]
+  then
+    echo &amp;#34;🦊 Gitlab provider selected&amp;#34;
+    rit gitlab publish repo --privacy=$PRIVACY --project_name=$PROJECT_NAME --workspace_path=$WORKSPACE_PATH --version=$VERSION
+  else
+    echo &amp;#34;🤖 Unexpected Provider informed. Check it please and try again.&amp;#34;
+  fi
 }
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Aqui, de acordo com a entrada informada pelo usuário, duas fórmulas diferentes podem ser executadas:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>&lt;code>rit github publish repo&lt;/code>&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>&lt;code>rit gitlab publish repo&lt;/code>&lt;/strong>&lt;/li>
-&lt;/ol>
-&lt;p>Para tanto, os parâmetros de entrada das fórmulas encapsuladas são informados dinamicamente de acordo com os parâmetros de entrada da fórmula principal (&lt;strong>&lt;code>rit publish repo&lt;/code>&lt;/strong>).&lt;/p>
-&lt;p>Dependendo da operação, os &lt;strong>&lt;code>inputs flags&lt;/code>&lt;/strong> do comando podem ser gerados de acordo com outras operações realizadas durante a execução da fórmula principal, antes de executar a linha de comando da fórmula encapsulada.&lt;/p>
-&lt;h2 id="próximos-passos">Próximos passos&lt;/h2>
-&lt;p>Nessa seção, você viu como funciona o encapsulamento de fórmulas no Ritchie. Para continuar lendo sobre os comandos do Ritchie:&lt;/p>
-&lt;p>👉 Cheque os&lt;a href="../../challenges/o-que-sao-esses-desafios"> &lt;strong>desafios&lt;/strong>&lt;/a> que criamos para você praticar as diversas funcionalidades do Ritchie.&lt;/p>
-&lt;p>👉 Cheque a &lt;a href="../../../reference/lista-de-comandos-e-flags">&lt;strong>lista de comandos&lt;/strong>&lt;/a> para ver as automações disponíveis no repo da nossa comunidade.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Aqui, de acordo com a entrada informada pelo usuário, duas fórmulas diferentes podem ser executadas:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit github publish repo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit gitlab publish repo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Para tanto, os parâmetros de entrada das fórmulas encapsuladas são informados dinamicamente de acordo com os parâmetros de entrada da fórmula principal (&lt;strong&gt;&lt;code&gt;rit publish repo&lt;/code&gt;&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Dependendo da operação, os &lt;strong&gt;&lt;code&gt;inputs flags&lt;/code&gt;&lt;/strong&gt; do comando podem ser gerados de acordo com outras operações realizadas durante a execução da fórmula principal, antes de executar a linha de comando da fórmula encapsulada.&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como funciona o encapsulamento de fórmulas no Ritchie.  Para continuar lendo sobre os comandos do Ritchie:&lt;/p&gt;
+&lt;p&gt;👉 Cheque os&lt;a href=&#34;../../challenges/o-que-sao-esses-desafios&#34;&gt; &lt;strong&gt;desafios&lt;/strong&gt;&lt;/a&gt; que criamos para você praticar as diversas funcionalidades do Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Cheque a &lt;a href=&#34;../../../reference/lista-de-comandos-e-flags&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repo da nossa comunidade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://zupit.github.io/pt-br/sitemap.xml</loc><lastmod>2021-02-03T10:19:10-03:00</lastmod></sitemap><sitemap><loc>https://zupit.github.io/en/sitemap.xml</loc><lastmod>2021-02-03T10:19:10-03:00</lastmod></sitemap></sitemapindex>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://zupit.github.io/pt-br/sitemap.xml</loc>
+    
+      <lastmod>2021-02-05T14:03:07-03:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://zupit.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2021-02-05T14:03:07-03:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>
