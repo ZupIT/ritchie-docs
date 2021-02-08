@@ -22,9 +22,11 @@ Currently, Ritchie has **two available versions**. On this documentation, we'll 
 
 
 
-## **How does Ritchie work? → Through Formulas!**
+## **How does Ritchie work?
 
-In Ritchie's context, **a formula is a script** that can be executed automatically or interactively through a command line.
+In Ritchie's context, everything works trhough **formulas**!
+
+It means that **a formula is a script** that can be executed automatically or interactively through a command line.
 
 Adapting an existing script to Ritchie structure allows you to run it **locally** or through **Docker**, and to share it on **Bitbucket** ,**Github** or **Gitlab** repository.
 

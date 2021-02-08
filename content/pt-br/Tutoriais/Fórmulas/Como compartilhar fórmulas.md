@@ -2,7 +2,7 @@
 title: Como compartilhar fórmulas
 weight: 46
 description: >-
-  Nesta seção, você verá como compartilhar suas fórmulas em um repositório já
+  Nesta seção, você vai encontrar detalhes de como compartilhar suas fórmulas em um repositório já
   criado no Ritchie.
 ---
 
@@ -20,18 +20,22 @@ Para adicionar um novo repositório no Ritchie, é necessário rodar o comando a
 rit add repo
 ```
 
-Uma vez que o repositório for adicionado, o Ritchie irá  usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.
+Uma vez que o repositório for adicionado, o Ritchie irá usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.
 
 ![rit add repo command demonstration](/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
-Note que se o repositório de fórmulas for **privado**, será necessário informar o token do seu Github/Gitlab. 
+
+Se o repositório de fórmulas for **privado**, será necessário informar o token do seu Github/Gitlab.
+
 {{% /alert %}}
 
 ##  Como checar a última versão do repositório?
 
 {{% alert color="info" %}}
+
 Essa feature está disponível a partir da versão 2.2 do Ritchie. 
+
 {{% /alert %}}
 
 No Ritchie, é possível checar novos comandos de fórmulas adicionados e checar se há uma nova versão de algum repositório que você tenha importado localmente.

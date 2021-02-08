@@ -8,25 +8,29 @@ description: 'In this section, you will find how to publish formulas on Ritchie.
 
 ## How to publish?
 
-There is a formula on Ritchie that allows the user to create / update a formula repository on Github / Gitlab.
+There is a formula on Ritchie that allows the user to create and/or update a formula repository on Github/Gitlab.
 
 ### Premisses
 
 {{% alert color="warning" %}}
+
 To publish your formula, make sure to set Github / Gitlab credentials using the**`rit set credential`** command.
+
 {{% /alert %}}
 
 ## Publish your repository
 
 A formula has been created on the community repository to perform:
 
-* The initialization of a local repository on Git \(if necessary\),
-* The creation of the repository on Github / Gitlab,
-* The release generation of a new version of the repository,
+* The initialization of a local repository on Git \(if necessary\).
+* The creation of the repository on Github/Gitlab.
+* The release generation of a new version of the repository.
 * The addition of the repository to Ritchie local repositories \(**`rit add repo`**command\). 
 
 {{% alert color="info" %}}
+
 Moreover, if the repository already exists, it will commit the new code and generate the new release version informed, before updating Ritchie repositories \(**`rit update repo`**command\).
+
 {{% /alert %}}
 
 ```text
@@ -44,19 +48,21 @@ The user has to inform 5 different kinds of inputs:
 ![rit publish repo command](/rit-publish-repo.gif)
 
 {{% alert color="warning" %}}
+
 As shown on the example above, you can check if the publication has been successful by using the **`rit list repo`** command and see if the published repository appears.
+
 {{% /alert %}}
 
 ## Publish manually
 
-To publish a formula manually, you need to push it on a **Github / Gitlab** repository, following these steps:
+To publish a formula manually, you need to push it on a **Github/Gitlab** repository, following these steps:
 
 1. Have an exclusive repository for formulas on Github / Gitlab.
 
    _It can be created from the a local repository, or based on a cloned repository._  
 
-2. Add your formulas to the repository  _Using the**`rit create formula`** command, or **copy / paste** folders_ 
-3. Commit and push the new code to the Github / Gitlab repository. 
+2. Add your formulas to the repository  _Using the **`rit create formula`** command, or **copy / paste** folders_ 
+3. Commit and push the new code to the Github/Gitlab repository. 
 4. Generate a new release of the formulas repository.
 
 ## Next steps 

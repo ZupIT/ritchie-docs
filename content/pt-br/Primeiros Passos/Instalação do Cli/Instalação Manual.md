@@ -12,7 +12,7 @@ O link: [https://commons-repo.ritchiecli.io/stable.txt](https://commons-repo.rit
 
 Quando você indica a URL acima no navegador, o sistema retorna a última versão do Ritchie. Por exemplo, poderá retornar algo como **1.0.1 ou 2.0.1**
 
-## Como instalar?
+## **Como instalar?**
 
 Faça o download da versão binária do Ritchie ao entrar na URL que você já digitou no seu navegador e informe a **versão {VERSION}** que você obteve no passo anterior.
 

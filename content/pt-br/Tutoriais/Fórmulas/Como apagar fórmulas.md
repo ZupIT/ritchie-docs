@@ -1,7 +1,7 @@
 ---
 title: Como apagar fórmulas
 weight: 48
-description: Você encontrará nessa seção como apagar uma fórmula no Ritchie.
+description: Nesta seção, você vai encontrar detalhes de como apagar uma fórmula no Ritchie.
 ---
 
 ---

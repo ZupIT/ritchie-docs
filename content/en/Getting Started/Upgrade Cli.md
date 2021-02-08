@@ -1,5 +1,5 @@
 ---
-title: Upgrade Cli
+title: Upgrade CLI
 weight: 19
 ---
 

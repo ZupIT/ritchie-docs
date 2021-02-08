@@ -2,8 +2,7 @@
 title: Principais conceitos
 weight: 2
 description: >-
-  Nesta seção, você encontrará os conceitos dos principais termos e expressões
-  usados na doc e/ou no Ritchie.
+  Nesta seção, você vai encontrar uma explicação sobre os principais termos e expressões usados na doc e/ou no Ritchie.
 ---
 
 ---

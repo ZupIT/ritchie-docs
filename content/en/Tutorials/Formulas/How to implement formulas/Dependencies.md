@@ -9,7 +9,9 @@ description: 'In this section, you will find information about a formula depende
 ## What are dependencies?
 
 {{% alert color="info" %}}
+
 Each programming language has its own specificities **to import libraries or packages**.
+
 {{% /alert %}}
 
 On Ritchie, it's possible to configure each formula as an independent and small project.

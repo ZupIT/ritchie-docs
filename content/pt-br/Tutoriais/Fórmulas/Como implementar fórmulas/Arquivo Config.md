@@ -1,7 +1,7 @@
 ---
 title: Arquivo Config
 weight: 35
-description: Você encontra nesta seção mais informações sobre o arquivo config.json.
+description: Nesta seção, você vai encontrar mais informações sobre o arquivo config.json.
 ---
 
 ---
@@ -31,12 +31,14 @@ Cada parâmetro de entrada é composto pelos seguintes campos:
 * `name`: nome da variável para extração.
 
 {{% alert color="warning" %}}
+
 Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula.  
   
 O nome da variável será convertida em maiúscula como o nome da variável local. 
+
 {{% /alert %}}
 
-> Uma boa prática é adicionar o sufixo _**`RIT_`**_ para cada **`input name`** para evitar conflitos com variáveis locais.  
+> Uma boa prática é adicionar o sufixo **_`RIT_`** para cada **`input name`** para evitar conflitos com variáveis locais.  
 >   
 > Exemplo_: `rit_file_name` --&gt; `RIT_FILE_NAME`_
 
@@ -81,8 +83,10 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 
 #### Algumas observações a respeito o tipo **`multiselect`** 
 
-* Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` \(a chave`enter` irá mover para o próximo parâmetro de entrada, se houver\)
-* As opções selecionadas no campo do tipo `multiselect` irão retornar uma string com as opções separadas por barra \(`|`\) e sem espaço, por exemplo: `Monday | Wednesday | Friday`
+* Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` \(a chave`enter` irá mover para o próximo parâmetro de entrada, se houver\).
+
+* As opções selecionadas no campo do tipo `multiselect` irão retornar uma string com as opções separadas por barra \(`|`\) e sem espaço, por exemplo: `Monday | Wednesday | Friday`.
+
 * É sugerido que você use o campo `obrigatório` como`true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
 
 #### Exemplo de parâmetro de entrada usando o tipo autocomplete: 
@@ -109,9 +113,11 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 ```
 
 {{% alert color="info" %}}
+
 Você pode ainda fazer essa configuração default com a flag default, que te permite atribuir valores default configurados na fórmula.
 
-Caso não haja campos com valor default, a flag continuará perguntando por parâmetros de entrada que devem ser configurados no seu arquivo config.json.
+Caso não haja campos com valor default, a flag continuará solicitando os parâmetros de entrada que devem ser configurados no seu arquivo config.json.
+
 {{% /alert %}}
 
 * `required`: boolean que indica se um campo é obrigatório ou opcional.
@@ -170,7 +176,8 @@ Caso não haja campos com valor default, a flag continuará perguntando por par�
 
 ```
 
-* `condition`: esse parâmetro só aparece se condicional funcionar
+* `condition`: esse parâmetro só aparece se condicional funcionar.
+
   * `variable`: o nome da variável usada em um parâmetro anterior para comparação.
   * `operator`: o operador lógico usado para comparar. Suporta `==`, `!=`, `<`, `>`, `<=`, and `>=`
   * `value`: o valor que se deseja usar para comparação.
@@ -195,6 +202,7 @@ Caso não haja campos com valor default, a flag continuará perguntando por par�
 ```
 
 * `pattern`: configura a validação de um parâmetro de entrada.
+
   * `regex`: o  modelo regex para validar o parâmetro.
   * `mismatchText`: a mensagem de erro caso o parâmetro de entrada seja invalidado pelo regex.
 
@@ -210,7 +218,8 @@ Caso não haja campos com valor default, a flag continuará perguntando por par�
 }
 ```
 
-* `requestInfo`: configuração para ter o parâmetro de entrada de tipo dinâmico. 
+* `requestInfo`: configuração para ter o parâmetro de entrada de tipo dinâmico.
+
   * `url`: URL que consome o serviço GET, responsável por retornar a lista de objetos.
   * `jsonPath`: caminho da variável para extrair da lista retornada uma variável de cada objeto. \(Veja mais sobre [**como funciona esse path json**](https://goessner.net/articles/JsonPath/)\).
 
@@ -227,7 +236,9 @@ Caso não haja campos com valor default, a flag continuará perguntando por par�
 ```
 
 {{% alert color="info" %}}
+
 Cada fórmula contém quantos parâmetros de entrada forem necessários, assim como qualquer associação nos campos acima.
+
 {{% /alert %}}
 
 **Exemplo de parâmetros de entrada com campo condicional e padrão Regex:**
@@ -271,5 +282,7 @@ Cada fórmula contém quantos parâmetros de entrada forem necessários, assim c
 ```
 
 {{% alert color="warning" %}}
-Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula. 
+
+Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula.
+ 
 {{% /alert %}}

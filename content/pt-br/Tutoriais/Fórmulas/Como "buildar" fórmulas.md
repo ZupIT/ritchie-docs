@@ -2,16 +2,17 @@
 title: Como "buildar" fórmulas
 weight: 42
 description: >-
-  Nesta seção, você encontrará o passo a passo para fazer o build de fórmulas no
-  Ritchie.
+  Nesta seção, você vai encontrar o passo a passo para fazer o build de fórmulas no Ritchie.
 ---
 
 ---
 
 {{% alert color="danger" %}}
+
 Essa funcionalidade não está mais disponível a partir da versão 2.5.0 do Ritchie. Isso porque o build da fórmula é feito de maneira automática: um repositório local criado assim que você implementa a fórmula
 
 Caso esteja usando uma versão anterior, basta seguir as orientações desta seção. 
+
 {{% /alert %}}
 
 ## Como "buildar"?
@@ -35,9 +36,3 @@ Caso queira atualizar o código da fórmula em tempo de execução, é possível
 ```text
 rit build formula --watch
 ```
-
-## Próximos passos
-
-Nessa seção, você viu como fazer o build de uma fórmula no Ritchie. Para continuar configurando sua fórmula: 
-
-👉 Vá para página de como [**publicar uma fórmula**](como-publicar-formulas) para ver como transferir seu trabalho para um repositório público.

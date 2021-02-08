@@ -2,7 +2,7 @@
 title: Fórmula "Hello World"
 weight: 26
 description: >-
-  Nesta seção, você encontrará o passo a passo para executar nosso "Hello
+  Nesta seção, você vai encontrar o passo a passo para executar nosso "Hello
   World".
 ---
 
@@ -21,12 +21,12 @@ echo '{"provider":"Github", "name":"demo", "url":"https://github.com/ZupIT/ritch
 ```
 
 {{% alert color="info" %}}
-É possível ainda verificar os repositórios estão sendo usados executando o comando **`rit list repo`**.
+É possível ainda verificar os repositórios que estão sendo usados na execução do comando com **`rit list repo`**.
 {{% /alert %}}
 
 **Agora que você adicionou o repositório de demo, você pode executar os comandos desse tutorial.**
 
-### **Premissa: Confere os detalhes da fórmula**
+### **Premissa: Confira os detalhes da fórmula**
 
 Para obter os detalhes de uso de uma fórmula, é possível executar o comando usando a flag **`--help`**.
 
@@ -36,7 +36,7 @@ rit demo hello-world --help
 
 O retorno informará todas as flags disponíveis para a execução do comando.
 
-**No Ritchie, é possível, você tem 6 possibilidades de rodar uma fórmula através dessas flags:**
+**No Ritchie, você tem 6 possibilidades de rodar uma fórmula através dessas flags:**
 
 1. Via Prompt
 2. Via Prompt e Docker
@@ -45,7 +45,7 @@ O retorno informará todas as flags disponíveis para a execução do comando.
 5. Via Stdin
 6. Via Stdin e Docker
 
-Para isso, escreva um dos comandos abaixo:
+Veja a seguir como você pode utilizar cada uma dessas formas:
 
 ### Caso 1: Usando Prompt
 
@@ -57,11 +57,11 @@ Como **essa fórmula  foi desenvolvida usando Golang**, é preciso ter **Golang*
 rit demo hello-world
 ```
 
-Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:
+Selecione uma opção para cada parâmetro de entrada e, em seguida, execute a fórmula como no exemplo abaixo:
 
 ![rit demo hello-world](/large-gif-1054x366-%20%281%29.gif)
 
-Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de **prompt** \(interagindo com o CLI no terminal\) para informar os parâmetros de entrada.
+Essa é a execução padrão de linhas de comando no Ritchie, que roda fórmulas localmente através de **prompt** \(interagindo com o CLI no terminal\) para informar os parâmetros de entrada.
 
 ### Caso 2: Usando Prompt & Docker
 
@@ -78,7 +78,9 @@ Nesse caso, não é necessário ter **Golang** instalado.
 
 ### Caso 3: Usando Input Flags
 
-Você também pode executar o comando informando as entradas por meio de flags \(você pode saber quais flags estão disponíveis usando  a flag **`--help`** ao executar um comando\). Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.
+Você também pode executar o comando informando as entradas por meio de flags \(você pode saber quais flags estão disponíveis usando  a flag **`--help`** ao executar um comando\). 
+
+Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.
 
 ```
 rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie

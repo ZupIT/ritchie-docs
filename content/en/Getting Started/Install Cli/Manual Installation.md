@@ -12,7 +12,7 @@ If you choose to make the manual process of Ritchie's installation, you have to 
 
 Basically, when you indicate the URL above on your navigator, the system returns the latest version of Ritchie. For example, it can return **1.0.1 or 2.0.1**
 
-## How to install?
+## **How to install?**
 
 1. Download the Ritchie binary version;
 2. Enter the URL below in your browser by informing **the version** **{VERSION}** as obtained in step 1.

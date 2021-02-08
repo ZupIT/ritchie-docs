@@ -19,7 +19,7 @@ echo '{"provider":"Github", "name":"demo", "url":"https://github.com/ZupIT/ritch
 ```
 
 {{% alert color="info" %}}
-You can also check which repositories you're using with the**`rit list repo`** command.
+You can also check which repositories you're using with the **`rit list repo`** command.
 {{% /alert %}}
 
 **Now that you have added the `demo` repository and check the details of the formula, you can execute this tutorial commands.**
@@ -55,7 +55,7 @@ As **this formula has been coded using Golang**, it is necessary to have **Golan
 rit demo hello-world
 ```
 
-Select an option for each input parameter and see how the magic works:
+Select an option for each input parameter and, then, run the formula as it shows on the following example:
 
 ![rit demo hello-world](/large-gif-1054x366-%20%281%29.gif)
 

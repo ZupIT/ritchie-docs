@@ -2,8 +2,7 @@
 title: Ritchie V1.0 ➡ V2.0
 weight: 3
 description: >-
-  Nesta seção, você encontrará as novidades do Ritchie 2.0 e como migrar as
-  fórmulas da versão 1.0 para a nova versão.
+  Nesta seção, você vai encontrar as novidades do Ritchie 2.0 e como migrar as fórmulas da versão 1.0 para a nova versão.
 ---
 
 ---
