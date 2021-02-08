@@ -24,7 +24,7 @@ Then, you'll have to inform those inputs before running the formula:
 2. The formula's **programming language**. 
 3. **The path** used to save formula's files. 
 
-**Example:** `rit demo create formula`
+Example: `rit demo create formula`
 
 ![Example of running rit create formula command](/rit_create_formula_demo.gif)
 
@@ -45,7 +45,7 @@ This template is composed of 4 **inputs parameters**, that represents the curren
 
 When you finished your formula creation, it will be built and sent to a specific repository according to the name of your workspace with the prefix **"local".** 
 
-**Example:** if we have a workspace with the name `Default`.
+Example: if we have a workspace with the name `Default`.
 
 ```text
 {

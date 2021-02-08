@@ -1,5 +1,5 @@
 ---
-title: Upgrade do Cli
+title: Upgrade do CLI
 weight: 19
 ---
 

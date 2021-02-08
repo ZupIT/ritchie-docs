@@ -1,7 +1,7 @@
 ---
 title: Arquivo Main
 weight: 37
-description: Você encontra nesta seção mais informação sobre o arquivo main de uma fórmula.
+description: Nesta seção, você vai encontrar mais informações sobre o arquivo main de uma fórmula.
 ---
 
 ---
@@ -9,9 +9,11 @@ description: Você encontra nesta seção mais informação sobre o arquivo main
 ## O que é um arquivo main \(main file\)? <a id="what-is-the-main-file"></a>
 
 {{% alert color="info" %}}
+
 O arquivo Main é usado para extrair os parâmetros de entrada informados no arquivo config.json, salvos como variáveis locais. 
 
 _Os parâmetros de entrada são extraídos pelo nome do campo informado no arquivo config.json em letras maiúsculas._ 
+
 {{% /alert %}}
 
 Esse arquivo é também onde estão as funções da fórmula, manipulando parâmetros de entrada, que são chamados para realizar uma operação e/ou automação da fórmula. 

@@ -1,5 +1,5 @@
 ---
-title: Install Cli
+title: Install CLI
 weight: 6
 description: >-
   In this section, you will find the path to install Ritchie CLI according to

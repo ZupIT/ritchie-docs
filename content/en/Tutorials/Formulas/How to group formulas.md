@@ -8,11 +8,11 @@ description: 'In this section, you will understand how to  group formulas on Rit
 
 ## What is an aggregation?
 
-On Ritchie, it is possible to **run formulas inside formulas.** This process is what we call **Formula aggregation.**‌
+On Ritchie, it is possible to **run formulas inside formulas.** This process is called **Formula aggregation.**‌
 
 This functionality allows you, for example, to make operations in which you need to run consecutive formulas. 
 
-Check out on the following topics how works this aggregation. 
+Check out on the following topics to understand how works this aggregation. 
 
 ## How to group?
 
@@ -35,7 +35,9 @@ The **`rit publish repo`** formula has been implemented using formula aggregatio
 On the example below, you'll find below how this aggregation works on the code part, using **`Input flags`**.
 
 {{% alert color="warning" %}}
+
 This formula has been implemented using **`Shell`**and the reasoning would be the same for any other programming language.
+
 {{% /alert %}}
 
 ```text

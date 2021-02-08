@@ -10,7 +10,7 @@ description: 'In this section, you will find how to share formulas on Ritchie.'
 
 Once a formula repository has been published, other users can add it locally from its **URL** to access its formulas.
 
-**Example**: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
+Example: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
 
 To add a new repository on Ritchie, it is necessary to run the command: 
 
@@ -23,13 +23,15 @@ Once the repository has been added, Ritchie will use the selected release on the
 ![rit add repo command demonstration](/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
-If the formula repository is **private**, the user will have to inform his Github / Gitlab token.
+If the formula repository is **private**, the user will have to inform his Github/Gitlab token.
 {{% /alert %}}
 
 ## How to see the repo latest version?
 
 {{% alert color="info" %}}
+
 This feature is available from Ritchie 2.2 version. 
+
 {{% /alert %}}
 
 On Ritchie, it is possible to check out new formula commands and if there is a new version of some repository you added locally.

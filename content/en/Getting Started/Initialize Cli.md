@@ -1,5 +1,5 @@
 ---
-title: Initialize Cli
+title: Initialize CLI
 weight: 17
 description: 'In this section, you will find how to initialize Ritchie CLI.'
 ---

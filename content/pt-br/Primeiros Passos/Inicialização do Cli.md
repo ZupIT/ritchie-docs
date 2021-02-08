@@ -1,5 +1,5 @@
 ---
-title: Inicialização do Cli
+title: Inicialização do CLI
 weight: 17
 description: 'Nesta seção, você verá como inicializar o rit.'
 ---

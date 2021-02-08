@@ -2,8 +2,7 @@
 title: Pasta de fórmula
 weight: 33
 description: >-
-  Você encontra nesta seção mais informação sobre a pasta de uma fórmula no
-  Ritchie.
+  Nesta seção, você vai encontrar mais informações sobre a pasta de uma fórmula no Ritchie.
 ---
 
 ---
@@ -13,7 +12,9 @@ description: >-
 Esta pasta contém arquivos com comportamento da fórmula.
 
 {{% alert color="warning" %}}
+
 A estrutura das pastas define os comandos tree, por isso **não é recomendando que você atualize o nome dessas pastas**, ou inclua mais arquivos e/ou pastas, a menos que seja uma **pasta src/\*.**
+
 {{% /alert %}}
 
 Cada linguagem de programação possui suas próprias especificidades, mas a estrutura da fórmula é quase a mesma. Não importa em qual linguagem seja usada, ela irá conter:
@@ -93,5 +94,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
+
 As pastas e suas respectivas estruturas são o que definem o comando, então não é indicado alterar os nomes ou incluir mais pastas/arquivos **que não estejam dentro da pasta src/\***.
+
 {{% /alert %}}

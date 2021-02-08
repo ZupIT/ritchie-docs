@@ -1,7 +1,7 @@
 ---
 title: Como criar fórmulas
 weight: 29
-description: 'Nesta seção, você encontrará o passo a passo para criar fórmulas no Ritchie.'
+description: 'Nesta seção, você vai  encontrar o passo a passo para criar fórmulas no Ritchie.'
 ---
 
 ---
@@ -20,9 +20,9 @@ Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
 1. O **comando** \(de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**](https://docs.ritchiecli.io/v/v2.0-pt/key-concepts#arvore-de-comando)\).
 2. A **linguagem de programação** da fórmula. 
-3. **O caminho** para salvar os arquivos da fórmula. 
+3. **O caminho (path)** para salvar os arquivos da fórmula. 
 
-**Exemplo:** `rit demo create formula`
+Exemplo: `rit demo create formula`
 
 ![Exemplo de execu&#xE7;&#xE3;o do comando rit create formula](/rit_create_formula_demo.gif)
 
@@ -42,7 +42,7 @@ Este template é composto por **3 parâmetros de entrada**, que representam os t
 
 Quando você terminar a criação da sua fórmula, ela será "buildada" e enviada para um repositório local específico de acordo com o nome do seu workspace, com o prefixo **"local"**. 
 
-**Exemplo:** se tiver um workspace com o nome `Default`.
+Exemplo: se tiver um workspace com o nome `Default`.
 
 ```text
 {
