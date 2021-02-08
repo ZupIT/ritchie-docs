@@ -1,6 +1,8 @@
 ---
 title: Comandos de fórmulas
 weight: 77
+description: >-
+  Nesta seção, você vai encontrar mais detalhes sobre comandos de fórmulas que podem ser usados via input flags.
 ---
 
 ---

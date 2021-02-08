@@ -2,7 +2,7 @@
 title: Comandos de fórmulas
 weight: 70
 description: >-
-  Nesta seção, você encontrará mais detalhes sobre comandos que rodam com
+  Nesta seção, você vai encontrar mais detalhes sobre comandos que rodam com
   fórmulas no Ritchie.
 ---
 
@@ -31,7 +31,9 @@ echo '{"name":"Dennis", "surname":"Ritchie", "dateOfBirth":"09/09/1941"}' | rit 
 
 
 {{% alert color="danger" %}}
+
 O comando de fórmula, através do stdin, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.  
 
 Se, durante a implementação da fórmula, for demandada uma informação via **prompt**, não será possível usar exclusivamente o stdin para fórmula ser executada com sucesso. 
+
 {{% /alert %}}

@@ -1,6 +1,7 @@
 ---
 title: How to add providers
 weight: 59
+description: In this section, you will find an explanation of how to add providers.
 ---
 
 ---

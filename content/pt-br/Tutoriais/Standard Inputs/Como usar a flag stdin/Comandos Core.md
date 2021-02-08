@@ -2,8 +2,7 @@
 title: Comandos Core
 weight: 68
 description: >-
-  Nesta seção, você encontrará mais detalhes sobre comandos que podem ser usados
-  via stdin.
+  Nesta seção, você vau encontrar mais detalhes sobre comandos que podem ser usados via stdin.
 ---
 
 ---
@@ -13,7 +12,9 @@ description: >-
 Aqui está o JSON usado para executar os comandos core do Ritchie através do **stdin**.
 
 {{% alert color="warning" %}}
+
 Será necessário adaptar o valor das variáveis para cada JSON retornar os resultados esperados nas operações. 
+
 {{% /alert %}}
 
 ### Comandos gerais

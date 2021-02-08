@@ -1,6 +1,7 @@
 ---
 title: Como usar credenciais como parâmetros de entrada
 weight: 61
+description: Nesta seção, você vai encontrar uma explicação de como configurar suas credenciais como parâmetros de entrada.
 ---
 
 ---

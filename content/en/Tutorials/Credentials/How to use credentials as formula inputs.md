@@ -1,6 +1,7 @@
 ---
 title: How to use credentials as formula inputs
 weight: 61
+description: In this section, you will find how to set credentials as inputs.
 ---
 
 ---

@@ -1,15 +1,19 @@
 ---
 title: Como usar a flag stdin
 weight: 66
+description: Nesta seção, você vai encontrar mais detalhes sobre a flag stdin.
 ---
 
 ---
 
 {{%/* alert color="danger" %}}
+
 A flag **--stdin** será descontinuada no início de 2021, sendo substituída pelos [input flags](../../como-usar-input-flags/).
+
 {{% /alert %}}
 
 {{% alert color="info" %}}
+
 A flag **`--stdin`** no Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando.   
   
 Nesse caso, os parâmetros de entrada devem ser informados em um **formato JSON**:  
