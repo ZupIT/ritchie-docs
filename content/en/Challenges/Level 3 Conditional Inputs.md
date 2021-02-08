@@ -45,4 +45,4 @@ The formula needs to follow the next steps:
 
 ## Next steps 
 
-👉 If you've completed the third challenge, let's go to the [**level 4 task**](level-4-aggregation)!
+👉 If you've completed the third challenge, let's go to the [**level 4 task**](\docs-ritchie\content\en\Challenges\Leve-4-Aggregation)!

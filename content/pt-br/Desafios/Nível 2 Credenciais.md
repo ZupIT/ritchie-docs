@@ -40,6 +40,6 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 * Codifique uma fórmula que permitirá ao usuário fazer um **add**, **commit** e **push** usando apenas um comando. 
 * Codifique uma fórmula que permitirá ao usuário gerar uma **release** do repositório Github informado.
 
-## Próximos passos 
+## **Próximos passos**
 
-👉 Se você completou o segundo desafio, vamos para o [**desafio nível 3**](nivel-3-inputs-condicionais)!
+👉 Se você completou o segundo desafio, vamos para o [**desafio nível 3**](/docs-ritchie/content/pt-br/nivel-3-inputs-condicionais)!

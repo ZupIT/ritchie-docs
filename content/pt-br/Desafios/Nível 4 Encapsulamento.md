@@ -12,7 +12,7 @@ description: >-
 
 Neste tutorial, a ideia é criar uma fórmula que vai **encapsular outra fórmula dentro dela**.
 
-> Você encontrará todas as informações necessárias na seção do tutorial sobre[ **como encapsular fórmulas**](../tutorials/formulas/como-encapsular-formulas).
+> Você encontrará todas as informações necessárias na seção do tutorial sobre[ **como encapsular fórmulas**](/docs-ritchie/content/pt-br/tutoriais/formulas/como-encapsular-formulas).
 
 A ideia é encapsular pelo menos 2 fórmulas dentro de uma outra:
 

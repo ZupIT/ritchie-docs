@@ -8,7 +8,7 @@ description: 'In this section, you will find the list of Ritchie''s main command
 
 ## Commands
 
-### Configuration commands
+### **Configuration commands**
 
 | Commands | Operation |
 | :--- | :--- |
