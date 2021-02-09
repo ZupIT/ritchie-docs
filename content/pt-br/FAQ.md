@@ -6,13 +6,13 @@ description: 'Nesta seção, você encontrará respostas para principais dúvida
 
 ---
 
-## Sobre o projeto
+## **Sobre o projeto**
 
-### O que é Ritchie?
+### **O que é Ritchie?**
 
-O Ritchie é um **framework open source** que cria e ajusta o CLI para seu time. Ele permite que você crieI, faça o build e compartilhe [**fórmulas**](principais-conceitos#formulas) facilmente. Veja mais [**sobre o produto**](sobre-ritchie).
+O Ritchie é um **framework open source** que cria e ajusta o CLI para seu time. Ele permite que você crieI, faça o build e compartilhe [**fórmulas**](/docs-ritchie/content/pt-br/principais-conceitos#formulas) facilmente. Veja mais [**sobre o produto**](/docs-ritchie/content/pt-br/sobre-ritchie).
 
-### O que o Ritchie faz?
+### **O que o Ritchie faz?**
 
 O Ritchie cria automações para melhorar a experiência operacional dos desenvolvedores e traz benefícios como:
 
@@ -20,35 +20,35 @@ O Ritchie cria automações para melhorar a experiência operacional dos desenvo
 * Reduzir o retrabalho 
 * Promover mais tempo para que o time de desenvolvimento foque em suas entregas.
 
-## Instalação e Uso
+## **Instalação e Uso**
 
-### Como instalar p Ritchie? 
+### **Como instalar p Ritchie?** 
 
-Você pode seguir o passo a passo da instalação de acordo com sistema operacional que estiver usando. Veja mais na [**seção de instalação.** ](getting-started/instalacao-cli/)
+Você pode seguir o passo a passo da instalação de acordo com sistema operacional que estiver usando. Veja mais na [**seção de instalação.** ](/docs-ritchie/content/pt-br/primeiros-passos/instalacao-cli/)
 
-### Como criar uma nova fórmula no Ritchie?
+### **Como criar uma nova fórmula no Ritchie?**
 
-Usando o comando `rit create formula` , você pode criar fórmulas usando qualquer linguagem de programação. Saiba mais na [**seção como criar fórmulas.** ](tutorials/formulas/como-criar-formulas)
+Usando o comando `rit create formula` , você pode criar fórmulas usando qualquer linguagem de programação. Saiba mais na [**seção como criar fórmulas.** ](/docs-ritchie/content/pt-br/tutoriais/formulas/como-criar-formulas)
 
-### Como executar fórmulas?
+### **Como executar fórmulas?**
 
-Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais na [**seção como criar fórmulas.** ](tutorials/formulas/como-criar-formulas)
+Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais na [**seção como criar fórmulas.** ](/docs-ritchie/content/pt-br/tutoriais/formulas/como-criar-formulas)
 
-### Como fazer o "build" de fórmulas no Ritchie? 
+### **Como fazer o "build" de fórmulas no Ritchie?**
 
-Você faz o "build" da fórmula rodando o comando `$ rit build formula`. Veja mais como na [**seção build de fórmulas.**](tutorials/formulas/como-buildar-formulas)
+Você faz o "build" da fórmula rodando o comando `$ rit build formula`. Veja mais como na [**seção build de fórmulas.**](/docs-ritchie/content/pt-br/tutoriais/formulas/como-buildar-formulas)
 
-### Como publicar fórmulas no Ritchie?
+### **Como publicar fórmulas no Ritchie?**
 
-Você pode publicar uma fórmula criando um repositório no Github, Gitlab ou Bitbucket e adicionando uma release da sua fórmula. Veja mais na [**seção como publicar uma fórmula**](tutorials/formulas/como-publicar-formulas) 
+Você pode publicar uma fórmula criando um repositório no Github, Gitlab ou Bitbucket e adicionando uma release da sua fórmula. Veja mais na [**seção como publicar uma fórmula**](/docs-ritchie/content/pt-br/tutoriais/formulas/como-publicar-formulas) 
 
-## Comunidade
+## **Comunidade**
 
-### Como submeter minha fórmula no repositório da comunidade?
+### **Como submeter minha fórmula no repositório da comunidade?**
 
 Você só precisar abrir um pull request no [**repositório ritchie-formula** ](https://github.com/ZupIT/ritchie-formulas) com sua sugestão de fórmula.
 
-### Como contribuir?
+### **Como contribuir?**
 
 Você pode contribuir com melhorias, sugestões ou reportes de bugs no [**repositório ritchie-cli.** ](https://github.com/ZupIT/ritchie-cli) O processo que você deve seguir é:
 

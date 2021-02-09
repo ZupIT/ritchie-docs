@@ -44,6 +44,6 @@ Well done! You've completed the first task!
 * Allow the user to sum negative numbers with positive ones. 
 * Allow the user to digit decimals in addition to integers.
 
-## Next steps 
+## **Next steps** 
 
-👉 If you've completed the first challenge, let's go to the [**level 2 task**](level-2-credentials)!
+👉 If you've completed the first challenge, let's go to the [**level 2 task**](/docs-ritchie/content/en/Challenges/level-2-credentials)!
