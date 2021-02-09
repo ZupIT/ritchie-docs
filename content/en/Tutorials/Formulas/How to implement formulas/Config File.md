@@ -36,7 +36,7 @@ Once an input value is informed on Ritchie CLI, it is saved as a **local variabl
 The variable **name** will be convert **uppercase** as the **local variable name**. 
 {{% /alert %}}
 
-> A good practice is to add a _**`RIT_`**_ suffix to each **`input name`** to avoid having conflicts with local variables.  
+> A good practice is to add a **_`RIT_`** suffix to each **`input name`** to avoid having conflicts with local variables.  
 >   
 > Example_: `rit_file_name` --&gt; `RIT_FILE_NAME`_
 
@@ -47,7 +47,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
   * **credentials** _\(specific type, learn more informations_ [_**here**_](https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs)_\),_
   * **dynamic** _\(associated with the optional `request_info` field below\),_
   * **path:** enables the autocomplete to inform a path to a folder or a file \(string\). 
-* `label` : text appearing on the CLI, asking for the input. 
+* `label`: text appearing on the CLI, asking for the input. 
 
 #### Input example with mandatory fields:
 
@@ -81,9 +81,11 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 #### Some observations regarding the **`multiselect` type**
 
-* To select one of the options with the `multiselect` type, you must press the `space` key \(the`enter` key will move to the next input, if any\)
+* To select one of the options with the `multiselect` type, you must press the `space` key \(the `enter` key will move to the next input, if any\)
+
 * The options selected in the `multiselect` type field will return a string with the options separated by pipe \(`|`\) and without space example: `Monday | Wednesday | Friday`
-* It is suggested to use the `required` field as`true`, otherwise, if no option is selected, the local variable will be saved as `undefined` 
+
+* It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined` 
 
 #### Parameter example using the autocomplete type: 
 
@@ -109,9 +111,11 @@ The variable **name** will be convert **uppercase** as the **local variable name
 ```
 
 {{% alert color="info" %}}
+
 You also can make this default configuration with the default flag, which allows you to attribute default values configured on the formula.
 
 In case of fields without a default value, the flag will keep asking for this inputs that must be configured on your config.json file.
+
 {{% /alert %}}
 
 * `required`: boolean that indicates if the input value is required or optional.
@@ -212,7 +216,7 @@ In case of fields without a default value, the flag will keep asking for this in
 
 * `requestInfo`: configuration to get dynamic input type.
   * `url`: URL to consume a GET service that will return a list of objects.
-  * `jsonPath`: Path to the variable to extract from the returned list, for each object. \(Check out [**how works the json path**](https://goessner.net/articles/JsonPath/)\).
+  * `jsonPath`: path to the variable to extract from the returned list, for each object. \(Check out [**how works the json path**](https://goessner.net/articles/JsonPath/)\).
 
 ```text
 {
@@ -227,7 +231,9 @@ In case of fields without a default value, the flag will keep asking for this in
 ```
 
 {{% alert color="info" %}}
+
 Each formula can contain as many inputs as necessary, as well as any association of the above fields.
+
 {{% /alert %}}
 
 **Conditional input example with Regex pattern:**
@@ -271,5 +277,7 @@ Each formula can contain as many inputs as necessary, as well as any association
 ```
 
 {{% alert color="warning" %}}
+
 Once an input is informed on Ritchie CLI, it is saved as a **local variable** during the formula execution.
+
 {{% /alert %}}

@@ -1,6 +1,7 @@
 ---
 title: Como adicionar provedores
 weight: 59
+description: Nesta seção, você vai encontrar uma explicação de como adicionar provedores ao Ritchie.
 ---
 
 ---
@@ -26,5 +27,7 @@ As informações que o Ritchie irá solicitar são:
 Ao terminar essa configuração, você poderá configurar as credenciais seguindo as instruções acima. 
 
 {{% alert color="warning" %}}
+
 Esse provedor, assim como suas informações, serão salvas de forma permanente no Ritchie. No entanto, você ainda poderá adicionar quantos provedores quiser. 
+
 {{% /alert %}}

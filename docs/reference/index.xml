@@ -1,0 +1,286 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Reference</title>
+    <link>https://zupit.github.io/docs-ritchie/reference/</link>
+    <description>Recent content in Reference on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Reference: List of commands and flags</title>
+      <link>https://zupit.github.io/docs-ritchie/reference/list-of-commands-and-flags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/reference/list-of-commands-and-flags/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;commands&#34;&gt;Commands&lt;/h2&gt;
+&lt;h3 id=&#34;configuration-commands&#34;&gt;Configuration commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Commands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit init&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;initialize Ritchie before use&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit upgrade&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;upgrade to the last Ritchie stable version&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit tutorial&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;enable or disable the tutorial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit &amp;ndash;version&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;return Ritchie currently installed version&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;repo-commands&#34;&gt;Repo commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Command&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit add repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;add a new repository (to access repository formulas with Ritchie)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit list repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;show a list with all your available repositories&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit update repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;update all repositories  (to access new formulas from those repositories with Ritchie)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;set repo-priority&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;set a repository priority&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete repo&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;delete a repository (to remove access to the repository formulas with Ritchie)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;formula-commands&#34;&gt;Formula commands&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Command&lt;/th&gt;
+      &lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;rit create formula&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;
+        &lt;p&gt;create a new formula from scratch&lt;/p&gt;
+        &lt;p&gt;(as well as a new local repository if necessary)&lt;/p&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;rit build formula&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;build a formula locally for test&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;rit build formula --watch&lt;/td&gt;
+      &lt;td style=&#34;text-align:left&#34;&gt;build a formula monitoring the code to update real time changes&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+The rit build formula command was deprecated from Ritchie&amp;rsquo;s version 2.5.0.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;autocomplete-commands&#34;&gt;Autocomplete commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Commands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion zsh&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;add autocomplete via zsh&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion bash&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;add autocomplete via bash&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion fish&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;add autocomplete via fish&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit completion powershell&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;add autocomplete via powershell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;env-commands&#34;&gt;Env commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Commands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit set env&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;set a new environment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit show env&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;show the current environment used&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete env&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;delete a environment&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;credential-commands&#34;&gt;Credential commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Commands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit set credential&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;set new credentials for the context&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit list credential&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;list all credential names and fields&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;workspace-commands&#34;&gt;Workspace commands&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Commands&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit list workspace&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;list all formula&amp;rsquo;s workspaces&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit add workspace&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;add a new workspace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;rit delete workspace&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;delete a specific formula&amp;rsquo;s workspace&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;flags&#34;&gt;Flags&lt;/h2&gt;
+&lt;h3 id=&#34;main-flags&#34;&gt;Main flags&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Flags&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;Operation&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;default&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;attribute the &lt;strong&gt;default&lt;/strong&gt; values configured on the formula.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;docker&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;run a formula using &lt;strong&gt;Docker&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;help&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;returns a list of executable available commands and flags for the user&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;local&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;run a formula &lt;strong&gt;locally&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;&amp;ndash;verbose&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;run a formula without log details&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Reference: Release Notes</title>
+      <link>https://zupit.github.io/docs-ritchie/reference/release-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/reference/release-notes/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reference: Roadmap</title>
+      <link>https://zupit.github.io/docs-ritchie/reference/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/reference/roadmap/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Reference: Youtube</title>
+      <link>https://zupit.github.io/docs-ritchie/reference/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/reference/youtube/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

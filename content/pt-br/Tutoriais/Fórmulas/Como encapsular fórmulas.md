@@ -1,14 +1,14 @@
 ---
 title: Como encapsular fórmulas
 weight: 50
-description: 'Nesta seção, você entenderá o que é e como encapsular fórmulas em Ritchie.'
+description: 'Nesta seção, você vai entender o que é e como encapsular fórmulas em Ritchie.'
 ---
 
 ---
 
 ## O que é encapsulamento?
 
-No Ritchie, é possível **executar fórmulas dentro de fórmulas**. Esse processo é o que chamamos de **Encapsulamento de Fórmula**. 
+No Ritchie, é possível **executar fórmulas dentro de fórmulas**. Esse processo é chamado de **Encapsulamento de Fórmula**. 
 
 Essa função permite que você, por exemplo, realize operações em que é necessário rodar fórmulas consecutivas. 
 
@@ -20,6 +20,7 @@ A seguir, veja como você pode fazer esse processo de encapsulamento:
 
 Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inputs**. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:
 
+👉 [**Standard Inputs**](/docs/pt-br/tutoriais/standard-inputs)
 
 
 ### 2. Execução

@@ -1,7 +1,7 @@
 ---
 title: Standard Inputs
 weight: 64
-description: 'Nesta seção, você encontrará tudo sobre Standard Inputs.'
+description: 'Nesta seção, você vai encontrar tudo sobre Standard Inputs.'
 ---
 
 ---

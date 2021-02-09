@@ -2,7 +2,7 @@
 title: Como executar fórmulas
 weight: 24
 description: >-
-  Nesta seção, você verá como executar detalhes de como executar fórmulas no
+  Nesta seção, você vai encontrar detalhes de como executar fórmulas no
   Ritchie.
 ---
 
@@ -15,7 +15,7 @@ Você tem **duas maneiras** de executar fórmulas usando o Ritchie:
 1. Localmente
 2. Usando o Docker
 
-O **método de execução de fórmulas padrão** foi escolhido durante a etapa de inicialização com o comando **`rit init`**. Ele pode ser alterado executando o comando abaixo:
+Vale reforçar que **método de execução de fórmulas padrão** é escolhido durante a etapa de inicialização do Ritchie com o comando **`rit init`**. Você pode alterar essa configuração executando o comando abaixo:
 
 ```text
 rit set formula-runner
@@ -25,17 +25,17 @@ rit set formula-runner
 
 ### 1. Execução local
 
-Para executar uma fórmula localmente, é necessário ter a linguagem de programação que foi usada para desenvolver a fórmula instalada no computador.
+Para executar uma fórmula localmente, é necessário ter instalada no computador a linguagem de programação que foi usada para desenvolver a fórmula.
 
-**Exemplo**: uma fórmula desenvolvida em **Java** precisará ter **Java instalado** na máquina para ser executada localmente.  
+Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado** na máquina para ser executada localmente.  
 
 
 ### 2. Execução via Docker
 
-Todas as fórmulas podem ser executadas sem depender da linguagem usada a condição que  o **`DOCKER`** esteja instalado e iniciado.
+Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o **`DOCKER`** esteja instalado e iniciado.
 
 {{%/* alert color="info" %}}
-Vamos no exemplo a seguir da [**seção fórmula hello world** ](formula-hello-world)para ver como isso funciona na prática.
+Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](formula-hello-world)para ver como isso funciona na prática.
 {{% /alert */%}}
 
 
@@ -44,8 +44,8 @@ Vamos no exemplo a seguir da [**seção fórmula hello world** ](formula-hello-w
 
 É possível forçar o Ritchie CLI a executar uma fórmula seguindo um método de execução específico, usando flags.
 
-* A flag **`--local`** executará a fórmula localmente \(se o método de execução padrão é o Docker\). 
-* A flag **`--docker`** executará a fórmula com Docker \(se o método de execução padrão é o local\). 
+* A flag **`--local`** executará a fórmula localmente \(se o método de execução padrão for o Docker\). 
+* A flag **`--docker`** executará a fórmula com Docker \(se o método de execução padrão for local\). 
 
 ### 4. Containers com Ritchie
 
@@ -57,6 +57,6 @@ Todos os templates de formulas contém um arquivo **DockerFile** que cria um con
 
 Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:
 
-👉 Vá para página [**Fórmula Hello World**](formula-hello-world) te descubra as diferentes maneiras de executar uma fórmula no Ritchie.
+👉 Vá para página [**Fórmula Hello World**](formula-hello-world) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
 
 👉 Vá para página [**como criar fórmulas**](../../como-criar-formulas) para entender o passo a passo para criar sua primeira automação usando o Ritchie.

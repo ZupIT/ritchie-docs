@@ -1,9 +1,8 @@
 ---
-title: Instalação do Cli
+title: Instalação do CLI
 weight: 6
 description: >-
-  Nesta seção, você encontrará o caminho para instalar o Ritchie de acordo com
-  cada sistema operacional.
+  Nesta seção, você vai encontrar o caminho para instalar o Ritchie de acordo com cada sistema operacional.
 ---
 
 ---

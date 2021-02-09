@@ -8,7 +8,7 @@ description: 'In this section, you will find how to install Ritchie for MacOs.'
 
 To install the **latest version of Ritchie** for MacOS, you just have to run the command below on your terminal. However, it is important to keep in mind **there are some requirements** before starting the installation on MacOS.
 
-## Step 1: Requirements
+### **Requirements**
 
 To use Ritchie on MacOs with version **`2.0.5 and earlier`**, we recommend to install the following elements:
 
@@ -21,7 +21,7 @@ To install *5sum** with _**Homebrew**_ , use: `brew install5sha1sum`
 To install *5sum** with _**MacPorts**_ , use: `sudo port install5sha1sum`
 {{% /alert %}}
 
-## Step 2: Installing command
+## Step 1: Installing command
 
 ### First option
 
@@ -43,7 +43,7 @@ You can also **download the Ritchie CLI package** through the command line below
 curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg
 ```
 
-## Step 3: Verify installation 
+## Step 2: Verify installation 
 
 You can confirm if your installation went well by running this command: 
 

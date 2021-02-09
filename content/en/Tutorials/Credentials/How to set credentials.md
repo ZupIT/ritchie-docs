@@ -1,6 +1,7 @@
 ---
 title: How to set credentials
 weight: 55
+description: In this section, you will find an explanation of how to set credentials.
 ---
 
 ---

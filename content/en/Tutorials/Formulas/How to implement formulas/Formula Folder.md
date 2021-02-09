@@ -11,7 +11,9 @@ description: 'In this section, you will find information about a Ritchie formula
 This folder contains the files with the formula's behavior. 
 
 {{% alert color="warning" %}}
-The folder structures defines the command tree, so **it's not indicated to update** folders names or include more files/folders, **if not** in the **src/\*** folder.
+
+The folder structure defines the command tree, so **it's not indicated to update** folders names or include more files and/or folders, **if not** in the **src/\*** folder.
+
 {{% /alert %}}
 
 Each programming language has its own specificities, but the formula's structure is almost always the same, no matter what language is used, and will contain:

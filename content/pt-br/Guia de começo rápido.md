@@ -1,7 +1,7 @@
 ---
 title: Guia de começo rápido
 weight: 4
-description: 'Nesta seção, você encontrará um guia rápido para começar a usar o Ritchie.'
+description: 'Nesta seção, você vai encontrar um guia rápido para começar a usar o Ritchie.'
 ---
 
 ---

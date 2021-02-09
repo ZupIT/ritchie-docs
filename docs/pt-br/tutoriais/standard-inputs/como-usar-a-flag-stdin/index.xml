@@ -1,0 +1,159 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Como usar a flag stdin</title>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/</link>
+    <description>Recent content in Como usar a flag stdin on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutoriais: Introdução</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/introducao-flag-stdin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/introducao-flag-stdin/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+A flag &lt;strong&gt;&amp;ndash;stdin&lt;/strong&gt; será descontinuada no início de 2021, sendo substituída pelos &lt;a href=&#34;../../como-usar-input-flags/&#34;&gt;input flags&lt;/a&gt;.
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;A flag &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt; no Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando.&lt;/p&gt;
+&lt;p&gt;Nesse caso, os parâmetros de entrada devem ser informados em um &lt;strong&gt;formato JSON&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;echo&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;&#39;{&amp;quot;key&amp;quot;:&amp;quot;value&amp;quot;}&#39;&lt;/code&gt;&lt;strong&gt;&lt;code&gt;|&lt;/code&gt;&lt;/strong&gt;&lt;code&gt;RIT (GROUP) VERB NOUN&lt;/code&gt; &lt;strong&gt;&lt;code&gt;--stdin&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Você pode usar essas regras da flag stdin em:&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs/pt-br/como-usar-input-flags/comandos-core.md&#34;&gt;&lt;strong&gt;Comandos Core&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;👉 &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs/pt-br/como-usar-input-flags/comandos-de-formulas.md&#34;&gt;&lt;strong&gt;Comandos de fórmulas&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Comandos Core</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-core/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;comandos-core-com-stdin&#34;&gt;Comandos Core com STDIN&lt;/h2&gt;
+&lt;p&gt;Aqui está o JSON usado para executar os comandos core do Ritchie através do &lt;strong&gt;stdin&lt;/strong&gt;.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Será necessário adaptar o valor das variáveis para cada JSON retornar os resultados esperados nas operações.
+&lt;/div&gt;
+
+&lt;h3 id=&#34;comandos-gerais&#34;&gt;Comandos gerais&lt;/h3&gt;
+&lt;p&gt;rit init&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;addCommons&amp;#34;:true, &amp;#34;sendMetrics&amp;#34;:true, &amp;#34;runType&amp;#34;:&amp;#34;local&amp;#34;}&amp;#39; | rit init --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit tutorial&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;tutorial&amp;#34;:&amp;#34;enabled&amp;#34;}&amp;#39; | rit tutorial --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;comandos-do-repo&#34;&gt;Comandos do Repo&lt;/h3&gt;
+&lt;p&gt;rit add repo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;Github&amp;#34;, &amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;, &amp;#34;url&amp;#34;:&amp;#34;https://github.com/ZupIT/ritchie-formulas&amp;#34;, &amp;#34;token&amp;#34;: null, &amp;#34;priority&amp;#34;:1}&amp;#39; | rit add repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit update repo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;, &amp;#34;version&amp;#34;:&amp;#34;2.2.0&amp;#34;}&amp;#39; | rit update repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit delete repo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;repoName&amp;#34;}&amp;#39; | rit delete repo --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;comandos-de-fórmula&#34;&gt;Comandos de fórmula&lt;/h3&gt;
+&lt;p&gt;rit create formula&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;formula&amp;#34;:&amp;#34;rit demo create formula&amp;#34;, &amp;#34;lang&amp;#34;:&amp;#34;shell&amp;#34;, &amp;#34;workspacePath&amp;#34;:&amp;#34;/users/dennis/home/ritchie-formulas&amp;#34;, &amp;#34;formulaPath&amp;#34;:&amp;#34;/demo/create/formula&amp;#34;}&amp;#39; | rit create formula --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit build formula&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+Sem suporte ainda
+&lt;/div&gt;
+
+&lt;h3 id=&#34;comandos-de-ambiente&#34;&gt;Comandos de Ambiente&lt;/h3&gt;
+&lt;p&gt;rit set env&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;env&amp;#34;:&amp;#34;envName&amp;#34;}&amp;#39; | rit set env --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit delete env&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;env&amp;#34;:&amp;#34;envName&amp;#34;}&amp;#39; | rit delete env --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;comandos-de-credenciais&#34;&gt;Comandos de Credenciais&lt;/h3&gt;
+&lt;p&gt;rit set credential&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;service&amp;#34;:&amp;#34;provider&amp;#34;, &amp;#34;type&amp;#34;:&amp;#34;type&amp;#34;, &amp;#34;credential&amp;#34;: {&amp;#34;username&amp;#34;:&amp;#34;credentialUserna
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;rit delete credential&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;provider&amp;#34;:&amp;#34;provider&amp;#34;}&amp;#39; | rit delete credential --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;comandos-core-sem-stdin&#34;&gt;Comandos Core sem STDIN&lt;/h2&gt;
+&lt;p&gt;Alguns comandos core não precisam da flag stdin para serem executados. Isso acontece porque, nesse caso, eles não precisam informar nenhum parâmetro de entrada:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit upgrade&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit --version&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit completion&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit list repo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit list credential&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit set env&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Comandos de fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-de-f%C3%B3rmulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/standard-inputs/como-usar-a-flag-stdin/comandos-de-f%C3%B3rmulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Com fórmulas, o id do &lt;strong&gt;JSON&lt;/strong&gt; com a flag  STDIN tem como base os &lt;strong&gt;nomes dos parâmetros de entrada&lt;/strong&gt; que são informados no arquivo &lt;strong&gt;config.json&lt;/strong&gt; no momento de implementar uma fórmula.&lt;/p&gt;
+&lt;h3 id=&#34;exemplo&#34;&gt;&lt;strong&gt;Exemplo&lt;/strong&gt;&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Comando de fórmula: &lt;strong&gt;&lt;code&gt;rit demo formula&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nomes dos parâmetros de entrada que são perguntados pelo arquivo config.json:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;name&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;surname&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;dateOfBirth&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Execução da fórmula com STDIN:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;echo &amp;#39;{&amp;#34;name&amp;#34;:&amp;#34;Dennis&amp;#34;, &amp;#34;surname&amp;#34;:&amp;#34;Ritchie&amp;#34;, &amp;#34;dateOfBirth&amp;#34;:&amp;#34;09/09/1941&amp;#34;}&amp;#39; | rit demo formula --stdin
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+&lt;p&gt;O comando de fórmula, através do stdin, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.&lt;/p&gt;
+&lt;p&gt;Se, durante a implementação da fórmula, for demandada uma informação via &lt;strong&gt;prompt&lt;/strong&gt;, não será possível usar exclusivamente o stdin para fórmula ser executada com sucesso.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,166 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ritchie – Credenciais</title>
+    <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/</link>
+    <description>Recent content in Credenciais on Ritchie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Tutoriais: Como definir credenciais</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-definir-credenciais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-definir-credenciais/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Você pode definir as credenciais do Ritchie para não precisar ficar informando os mesmos dados diversas vezes no terminal.&lt;/p&gt;
+&lt;p&gt;Para fazer isso, basta rodar o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit set credential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;O terminal irá retornar essa mensagem:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;? Select your provider  [Use arrows to move, type to filter]
+&amp;gt; kubeconfig
+  ansible
+  aws
+  github
+  gitlab
+  jenkins
+  Add a new
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Depois que escolher um dos provedores disponíveis, o Ritchie irá solicitar que você preencha os seguintes campos:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;? Select your provider github
+? username: DennisRitchie
+? email: dennis.ritchie@zup.com.br
+? token: 
+✔ Github credential saved!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
+
+Você pode conferir os &lt;a href=&#34;../../formulas/como-implementar-formulas/#arquivos-editaveis&#34;&gt;&lt;strong&gt;arquivos editáveis das fórmulas&lt;/strong&gt;&lt;/a&gt; para ver como &lt;strong&gt;manipular as credenciais definidas na sessão como parâmetros de input&lt;/strong&gt; das fórmulas (no caso, inputs no config.json).
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como apagar credenciais</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-apagar-credenciais/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-apagar-credenciais/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-apagar&#34;&gt;Como apagar?&lt;/h2&gt;
+&lt;p&gt;Para deletar uma credencial, você só precisa rodar o seguinte comando:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit delete credential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Veja como o processo funciona:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/large-gif-814x408-.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:&lt;/p&gt;
+&lt;p&gt;👉 Vá para seção  &lt;a href=&#34;como-adicionar-provedores&#34;&gt;&lt;strong&gt;como adicionar provedores&lt;/strong&gt; &lt;/a&gt;e, assim, continuar configurando suas credenciais.&lt;/p&gt;
+&lt;p&gt;👉 Conheça a &lt;a href=&#34;../../../reference/lista-de-comandos-e-flags&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; de fórmulas disponíveis no Ritchie.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como adicionar provedores</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;É possível também configurar o Ritchie para adicionar novos provedores no seu espaço de trabalho. Para fazer isso, basta selecionar a opção &amp;ldquo;&lt;strong&gt;Add a new&lt;/strong&gt;&amp;rdquo; rodando o comando &lt;strong&gt;&lt;code&gt;rit set credential&lt;/code&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;? Select your provider Add a new
+? Define your provider name: Provider_Name
+? Define your field name: (ex.:token, secretAccessKey) token
+? Select your field type: secret
+? Add more credentials to this provider? no
+? token: *
+✔ Provider_Name credential saved!
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;As informações que o Ritchie irá solicitar são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Provider name:&lt;/strong&gt; Nome do novo provedor. Você pode nomear de acordo com sua preferência&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Field name:&lt;/strong&gt; Nome da credencial que está nesse provedor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Field type:&lt;/strong&gt; Tipo de valor dessa credencial. Ele pode ser: &lt;strong&gt;plain text&lt;/strong&gt; ou &lt;strong&gt;secret&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ao terminar essa configuração, você poderá configurar as credenciais seguindo as instruções acima.&lt;/p&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+
+Esse provedor, assim como suas informações, serão salvas de forma permanente no Ritchie. No entanto, você ainda poderá adicionar quantos provedores quiser.
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Tutoriais: Como usar credenciais como parâmetros de entrada</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-usar-credenciais-como-par%C3%A2metros-de-entrada/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-usar-credenciais-como-par%C3%A2metros-de-entrada/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Assim que você configurar as credenciais do provedor, poderá usá-la como parâmetro de entrada para o arquivo &lt;strong&gt;&lt;code&gt;config.json&lt;/code&gt;&lt;/strong&gt; das suas fórmulas.&lt;/p&gt;
+&lt;p&gt;Para fazer isso, basta usar a palavra-chave reservada:&lt;strong&gt;&lt;code&gt;CREDENTIAL&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Quando usada como parâmetro de entrada, a credencial terá 2 campos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Name:&lt;/strong&gt; Variável usada para extrair o parâmetro e manipulá-lo dentro do código da fórmula.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Type:&lt;/strong&gt; Nomenclatura específica para o CLI saber qual credencial usar.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
+
+O &lt;strong&gt;tipo&lt;/strong&gt; precisa respeitar o seguinte padrão:&lt;strong&gt;&lt;code&gt;CREDENTIAL_PROVIDER_VARIABLE&lt;/code&gt;&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Por exemplo, para usar as credenciais do &lt;strong&gt;&lt;code&gt;GITHUB&lt;/code&gt;&lt;/strong&gt; como parâmetros, você precisa informá-las no arquivo **&lt;code&gt;config.json&lt;/code&gt;**da fórmula:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&amp;#34;inputs&amp;#34;: [ 
+    { 
+        &amp;#34;name&amp;#34;: &amp;#34;git_user&amp;#34;, 
+        &amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_USERNAME&amp;#34; 
+    },
+    { 
+        &amp;#34;name&amp;#34;: &amp;#34;git_email&amp;#34;, 
+        &amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_EMAIL&amp;#34; 
+    },
+    { 
+        &amp;#34;name&amp;#34;: &amp;#34;git_token&amp;#34;, 
+        &amp;#34;type&amp;#34;: &amp;#34;CREDENTIAL_GITHUB_TOKEN&amp;#34;
+    } 
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Se tiver alguma dúvida com os nomes dos provedores, você pode checar uma lista de credenciais que você já configurou usando o comando abaixo:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit list credential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Com &lt;strong&gt;&lt;code&gt;GITHUB&lt;/code&gt;&lt;/strong&gt;, o terminal irá retornar uma resposta como essa:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;PROVIDER	 CONTEXT	  CREDENTIAL
+github  	 default	  {&amp;#34;token&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;email&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;username&amp;#34;:&amp;#34;***&amp;#34;}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como manipular credenciais no Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Cheque a &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/ritchie/~/drafts/-MDPWwvUtJ2ZZfV8Mw44/v/v2.0-pt/developer/lista-de-comandos&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repo da nossa comunidade.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
