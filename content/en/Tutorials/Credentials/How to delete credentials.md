@@ -1,6 +1,7 @@
 ---
 title: How to delete credentials
 weight: 57
+description: In this section, you will find an explanation how to delete credentials.
 ---
 
 ---

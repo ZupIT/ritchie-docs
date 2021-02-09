@@ -2,8 +2,7 @@
 title: Comandos Core
 weight: 75
 description: >-
-  Nesta seção, você encontrará mais detalhes sobre comandos que podem ser usados
-  via input flags.
+  Nesta seção, você vai encontrar mais detalhes sobre comandos core que podem ser usados via input flags.
 ---
 
 ---
@@ -11,7 +10,9 @@ description: >-
 ## Core Commands com input flags
 
 {{% alert color="info" %}}
+
 Estas flags estão disponíveis a partir da versão 2.8 do Ritchie.
+
 {{% /alert %}}
 
 ### Flags disponíveis

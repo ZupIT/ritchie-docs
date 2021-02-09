@@ -20,6 +20,7 @@ A seguir, veja como você pode fazer esse processo de encapsulamento:
 
 Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inputs**. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:
 
+👉 [**Standard Inputs**](/docs/pt-br/tutoriais/standard-inputs)
 
 
 ### 2. Execução

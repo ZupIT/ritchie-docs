@@ -1,6 +1,7 @@
 ---
 title: Como apagar credenciais
 weight: 57
+description: Nesta seção, você vai encontrar uma explicação de como apagar credenciais.
 ---
 
 ---

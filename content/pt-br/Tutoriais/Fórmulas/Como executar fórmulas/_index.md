@@ -35,7 +35,7 @@ Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado**
 Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o **`DOCKER`** esteja instalado e iniciado.
 
 {{%/* alert color="info" %}}
-Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](formula-hello-world)
+Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](formula-hello-world)para ver como isso funciona na prática.
 {{% /alert */%}}
 
 
