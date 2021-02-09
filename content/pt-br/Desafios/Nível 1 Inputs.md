@@ -44,6 +44,6 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 * Permita que usuário some números negativos com positivos. 
 * Permita que o usuário digite números decimais. 
 
-## Próximos passos 
+## **Próximos passos**
 
-👉 Se você completou o primeiro desafio, vamos para o[ **desafio nível 2**](nivel-2-credenciais)!
+👉 Se você completou o primeiro desafio, vamos para o[ **desafio nível 2**](/docs-ritchie/content/pt-br/nivel-2-credenciais)!

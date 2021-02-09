@@ -40,6 +40,6 @@ The formula needs to follow the next steps:
 * Code a formula which will allow the user to **add**, **commit** and **push** using only one command.  
 * Code a formula which will allow the user to generate a release of the informed Github repository.
 
-## Next steps 
+## **Next steps** 
 
-👉 If you've completed the second challenge, let's go to [**level 3 task**](level-3-conditional-inputs)!
+👉 If you've completed the second challenge, let's go to [**level 3 task**](/docs-ritchie/content/en/Challenges/level-3-conditional-inputs)!

@@ -45,4 +45,4 @@ Se você quiser aprimorar sua fórmula, é possível configurá-la para que ela:
 
 ## Próximos passos 
 
-👉 Se você completou o terceiro desafio, vamos para o [**desafio nível 4**](nivel-4-encapsulamento)!
+👉 Se você completou o terceiro desafio, vamos para o [**desafio nível 4**](/docs-ritchie/content/pt-br/nivel-4-encapsulamento)!

@@ -12,7 +12,7 @@ description: >-
 
 Create a formula on Ritchie that will **execute another formula inside it.**
 
-> You'll find all the informations you need in the [**how to group formulas**](../../tutorials/formulas/how-to-group-formulas) tutorial section.
+> You'll find all the informations you need in the [**how to group formulas**](/docs-ritchie/content/en/tutorials/formulas/how-to-group-formulas) tutorial section.
 
   
 The idea is to group at least 2 formulas inside another one: 
@@ -39,7 +39,7 @@ To implement this formula, it will be necessary to follow the steps below:
 **Premisse:** Creation of the **`rit math multiply numbers`** formula \(same as level 1\).
 
 1. Extract all inputs parameters. 
-2. Execute the grouped formula according to the selected operation:
+2. Run the grouped formula according to the selected operation:
    * **multiply** should call **`rit math multiply numbers`**
    * **sum** should call **`rit math sum numbers`**
 3. Return the result on the terminal.
