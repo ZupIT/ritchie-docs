@@ -7,7 +7,6 @@ description: Nesta seção, você vai encontrar mais detalhes sobre a flag stdin
 ---
 
 {{%/* alert color="danger" %}}
-
 A flag **--stdin** será descontinuada no início de 2021, sendo substituída pelos [input flags](../../como-usar-input-flags/).
 
 {{% /alert %}}

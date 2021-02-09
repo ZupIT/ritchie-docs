@@ -24,9 +24,13 @@ jobs:
           hugo-version: '0.76.4'
           extended: true
 
+      - name: Install
+        run: |
+              npm install
+              
       - name: Build
         run: |
-              hugo -D
+              hugo -D 
 
       - name: Deploy
         uses: stefanzweifel/git-auto-commit-action@v4
