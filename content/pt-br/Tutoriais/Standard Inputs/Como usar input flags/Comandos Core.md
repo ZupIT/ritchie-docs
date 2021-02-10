@@ -52,3 +52,9 @@ rit add repo
 ```text
 rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
 ```
+
+{{% alert color="info" %}}
+
+Quando não é passada a flag de versão, o ritchie busca automaticamente a última versão
+
+{{% /alert %}} 
