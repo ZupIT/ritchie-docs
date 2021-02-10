@@ -23,7 +23,7 @@ Você pode usar uma a fórmula que foi criada no repositório da comunidade para
 * A inicialização em um repositório local do Git \(se necessário\). 
 * A criação do repositório no Github e/ou Gitlab,
 * A geração da release de uma nova versão do repositório. 
-* A adição de um repositório nos repositórios locais do Ritchie \(usando o comando**`rit add repo`**\). 
+* A adição de um repositório nos repositórios locais do Ritchie \(usando o comando **`rit add repo`**\). 
 
 {{% alert color="info" %}}
 Além disso, se o repositório já existir, a fórmula irá fazer o commit de um novo código e gerar uma nova release informada antes de atualizar os repositórios do Ritchie \(usando o comando **`rit update repo`**\)
@@ -41,10 +41,10 @@ Você deverá informar 5 tipos diferentes de parâmetros de entrada:
 4. O **`caminho local do repositório`** you wish to publish
 5. A **`versão da release`** para ser gerada
 
-![rit publish repo command](/rit-publish-repo.gif)
+![](/docs/rit-publish-repo.gif)
 
 {{% alert color="warning" %}}
-Como demonstrado acima, você pode checar se a publicação deu certo usando o comando**`rit list repo`** e observando se o repositório publicado aparece.
+Como demonstrado acima, você pode checar se a publicação deu certo usando o comando **`rit list repo`** e observando se o repositório publicado aparece.
 {{% /alert %}}
 
 ## Publicando manualmente
@@ -63,4 +63,4 @@ Para publicar uma fórmula manualmente, você precisa submetê-la no repositóri
 
 Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula: 
 
-👉 Check out [**como compartilhar fórmulas**](como-compartilhar-formulas).
+👉 Veja a seção [**como compartilhar fórmulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-compartilhar-fórmulas/).

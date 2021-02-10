@@ -10,7 +10,7 @@ description: 'Nesta seção, você encontrará o passo a passo para usar credenc
 
 Neste tutorial, a ideia é criar uma fórmula que vai **retornar um JSON contendo as credenciais do Github.**
 
-> **Nota**: O desafio consiste em configurar esses parâmetros de entrada dentro do arquivo config.json, mas executar a fórmula sem informá-los usando **prompt** ou **stdin** \(serão extraídos automaticamente\). Você encontrará todas as informações necessárias na seção do tutorial sobre [**como manipular credenciais**](https://docs.ritchiecli.io/v/v2.0-pt/tutoriais/lista-de-comandos).
+> **Nota**: O desafio consiste em configurar esses parâmetros de entrada dentro do arquivo config.json, mas executar a fórmula sem informá-los usando **prompt** ou **stdin** \(serão extraídos automaticamente\). Você encontrará todas as informações necessárias na seção do tutorial sobre [**como manipular credenciais**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/).
 
 {{% alert color="info" %}}
 Sugestão de comando: **`rit github get user`**

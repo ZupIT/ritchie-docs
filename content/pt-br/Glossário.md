@@ -32,7 +32,7 @@ Refere-se ao JavaScript Object Notation \(JSON\), que é um formato padrão de t
 
 ## **Tree**
 
-Refere-se ao grupo de comandos organizados em árvores dentro do Ritchie. Você pode clicar no link para saber mais sobre a [**estrutura do Tree**.](principais-conceitos#arvore-de-comando)
+Refere-se ao grupo de comandos organizados em árvores dentro do Ritchie. Você pode clicar no link para saber mais sobre a [**estrutura do Tree**.](/docs-ritchie/pt-br/principais-conceitos/#árvore-de-comando)
 
 ## **Repository**
 

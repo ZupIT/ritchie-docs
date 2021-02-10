@@ -24,7 +24,7 @@ Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
 Exemplo: `rit demo create formula`
 
-![Exemplo de execu&#xE7;&#xE3;o do comando rit create formula](/rit_create_formula_demo.gif)
+![Exemplo de execu&#xE7;&#xE3;o do comando rit create formula](/docs/rit_create_formula_demo.gif)
 
 ### **Passo 2: Teste sua fórmula** 
 
@@ -32,7 +32,7 @@ Você pode testar diretamente a fórmula depois de sua criação. Isso é possí
 
 Nesse caso, o template da formula **"Hello World"** será executado como mostrado abaixo: 
 
-![Exemplo demo de f&#xF3;rmula &quot;Hello-World&quot;](/rit_demo_hello-world_hd.gif)
+![Exemplo demo de f&#xF3;rmula &quot;Hello-World&quot;](/docs/rit_demo_hello-world_hd.gif)
 
 Este template é composto por **3 parâmetros de entrada**, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:
 
@@ -69,6 +69,6 @@ Um repositório associado a esse workspace será criado na pasta `/home/user/.ri
 
 Nessa seção, você viu como criar e testar uma fórmula no Ritchie. Para continuar configurando a fórmula: 
 
-👉 Vá para a seção de como[ **implementar uma  fórmula**](como-implementar-formulas/) para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula. 
+👉 Vá para a seção de como[ **implementar uma  fórmula**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-implementar-fórmulas/) para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula. 
 
 👉 Vá para [**como fazer o build da fórmula**](como-buildar-formulas) para ver como continuar os testes nas fórmulas que você criou.

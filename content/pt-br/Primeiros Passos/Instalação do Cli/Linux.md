@@ -23,7 +23,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação**](instalacao-manual)[ **manual**.](instalacao-manual)
+Se preferir, você também pode seguir com a [**instalação manual**](/docs-ritchie/pt-br/primeiros-passos/instalação-do-cli/instalação-manual/)
 {{% /alert %}}
 
 ## Passo 2: Verifique a instalação 

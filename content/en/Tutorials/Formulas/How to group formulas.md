@@ -36,7 +36,7 @@ On the example below, you'll find below how this aggregation works on the code p
 
 {{% alert color="warning" %}}
 
-This formula has been implemented using **`Shell`**and the reasoning would be the same for any other programming language.
+This formula has been implemented using **`Shell`** and the reasoning would be the same for any other programming language.
 
 {{% /alert %}}
 
@@ -65,10 +65,10 @@ To do so, the grouped formulas inputs parameters are informed dynamically accord
 
 Depending on the operation, the **`input flags`** used for the command could be generated according to other operations performed through the formula execution before executing the grouped formula command line.‌
 
-## Next steps <a id="next-steps"></a>
+## Next steps 
 
 You saw in this section how to use formula aggregation. If you want to keep reading about Ritchie's commands:‌
 
-​👉 Check out the [**challenges**](../../../../challenges/what-are-these-challenges) we created to apply all the Ritchie concepts you learned.‌
+​👉 Check out the [**challenges**](/docs-ritchie/challenges/what-are-these-challenges/) we created to apply all the Ritchie concepts you learned.‌
 
-​👉 Check out our [**list of commands**](../../../reference/list-of-commands-and-flags) to see the available automations on our community repo.
+​👉 Check out our [**list of commands**](/docs-ritchie/reference/list-of-commands-and-flags/) to see the available automations on our community repo.

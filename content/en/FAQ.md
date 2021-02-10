@@ -10,7 +10,7 @@ description: You will find in this section the main questions about Ritchie.
 
 ### **What is Ritchie?**
 
-Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**](/docs-ritchie/content/en/about-ritchie)
+Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**](/docs-ritchie/about-ritchie/)
 
 ### **What does Ritchie do?**
 
@@ -24,7 +24,7 @@ Ritchie creates automation commands to improve the operational **developers'** *
 
 ### **How to install Ritchie?** 
 
-You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**](/docs-ritchie/content/en/getting-started/install-cli/). 
+You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**](/docs-ritchie/getting-started/install-cli/). 
 
 ### **How to create a new formula on Ritchie?**
 
