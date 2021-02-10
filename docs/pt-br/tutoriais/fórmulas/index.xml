@@ -136,40 +136,6 @@ Todos os templates de formulas contém um arquivo &lt;strong&gt;DockerFile&lt;/s
     </item>
     
     <item>
-      <title>Tutoriais: Como &#34;buildar&#34; fórmulas</title>
-      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</guid>
-      <description>
-        
-        
-        &lt;hr&gt;
-
-
-&lt;div class=&#34;alert alert-danger&#34; role=&#34;alert&#34;&gt;
-
-&lt;p&gt;Essa funcionalidade não está mais disponível a partir da versão 2.5.0 do Ritchie. Isso porque o build da fórmula é feito de maneira automática: um repositório local criado assim que você implementa a fórmula&lt;/p&gt;
-&lt;p&gt;Caso esteja usando uma versão anterior, basta seguir as orientações desta seção.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&lt;h2 id=&#34;como-buildar&#34;&gt;Como &amp;ldquo;buildar&amp;rdquo;?&lt;/h2&gt;
-&lt;p&gt;Depois de &lt;a href=&#34;como-criar-formulas&#34;&gt;&lt;strong&gt;criar uma fórmula&lt;/strong&gt;&lt;/a&gt;,  se você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação.&lt;/p&gt;
-&lt;p&gt;Para isso, basta executar o comando:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit build formula
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Você deverá informar:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;O &lt;strong&gt;caminho  do diretório&lt;/strong&gt; onde a fórmula está localizada.&lt;/li&gt;
-&lt;li&gt;O &lt;strong&gt;caminho da fórmula&lt;/strong&gt; a ser buildada (ele segue o comando da fórmula).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Caso queira atualizar o código da fórmula em tempo de execução, é possível utilizar a &lt;strong&gt;flag “&amp;ndash;watch”&lt;/strong&gt; junto da fórmula. Veja no exemplo abaixo:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit build formula --watch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-      </description>
-    </item>
-    
-    <item>
       <title>Tutoriais: Como publicar fórmulas</title>
       <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

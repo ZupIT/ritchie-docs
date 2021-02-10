@@ -87,10 +87,6 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</loc>
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/</loc>
   </url>
   
@@ -112,10 +108,6 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/depend%C3%AAncias/</loc>
-  </url>
-  
-  <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-buildar-f%C3%B3rmulas/</loc>
   </url>
   
   <url>
@@ -212,10 +204,6 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</loc>
-  </url>
-  
-  <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/</loc>
     <lastmod>2021-02-03T13:59:08-03:00</lastmod>
   </url>
@@ -267,7 +255,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/faq/</loc>
-    <lastmod>2021-02-03T13:59:08-03:00</lastmod>
+    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
