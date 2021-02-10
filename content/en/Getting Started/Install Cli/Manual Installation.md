@@ -17,7 +17,7 @@ Basically, when you indicate the URL above on your navigator, the system returns
 1. Download the Ritchie binary version;
 2. Enter the URL below in your browser by informing **the version** **{VERSION}** as obtained in step 1.
 
-### **Installation for MacOS** <a id="installation-for-mac"></a>
+### **Installation for MacOS** 
 
 ```text
 https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
@@ -58,7 +58,7 @@ cp $HOME/Downloads/rit
 chmod +x rit
 ```
 
-### **How to configure the .bashrc ou /etc/profile or .zshrc \(Linux / MacOS\)** <a id="configure-the-bashrc-ou-etc-profile-or-zshrc-linux-macos"></a>
+### **How to configure the .bashrc ou /etc/profile or .zshrc \(Linux / MacOS\)** 
 
 To ZSH, define a new PATH by copying the following code:
 

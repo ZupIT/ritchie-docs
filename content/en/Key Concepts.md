@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## Formulas
+## **Formulas**
 
 **Formulas** are nothing more than **automations**. That is, they are codes called through command lines to perform some operation. 
 
@@ -25,10 +25,7 @@ Those input parameters can be informed in different ways:
 * When typing the command on the terminal \(via **stdin** or **input flags**\) 
 * During the execution of the formula \(if coded using **prompt**\)
 
-![](/start-end-ritchie%20%281%29.jpg)
-
-
-
+![](/docs/start-end-ritchie%20%281%29.jpg)
 
 
 ## Command Tree
@@ -49,7 +46,7 @@ To allow more options and freedom for users, it is also allowed to follow the pa
 
 The app name is Ritchie, so we use the name **`rit`** to start our command tree.
 
-![](/arvore-rit%20%281%29%20%281%29.png)
+![](/docs/arvore-rit%20%281%29%20%281%29.png)
 
 {{% alert color="warning" %}}
 The **rit** command is therefore our parent command, or **root**. It is not executable \(it means that it will not start any operations if you use it alone in the terminal\), but has been configured to return the **helper command**.

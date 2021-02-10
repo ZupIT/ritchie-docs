@@ -18,9 +18,9 @@ This command will ask the user three questions:
 
 1. If he **wants to contribute anonymously** to Ritchie metrics.
 2. If he **wants to add the community** formulas locally.
-3. If he **wants the default** [**formula execution method**](../../tutorials/formulas/how-to-run-formulas/) **to be local or through docker.** 
+3. If he **wants the default** [**formula execution method**](/docs-ritchie/tutorials/formulas/how-to-run-formulas/) **to be local or through docker.** 
 
-![rit init command](/rit-init%20%283%29%20%281%29.gif)
+![rit init command](/docs/rit-init%20%283%29%20%281%29.gif)
 
 Then, the command execution will create all the necessary configuration's files. 
 
@@ -36,7 +36,7 @@ rit list repo
 
 This command will return all formulas repositories the user has access locally.
 
-![rit list repo command](/large-gif-1448x466-.gif)
+![rit list repo command](/docs/large-gif-1448x466-.gif)
 
 ### 2. Ritchie folder
 

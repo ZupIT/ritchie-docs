@@ -42,4 +42,4 @@ The formula needs to follow the next steps:
 
 ## **Next steps** 
 
-👉 If you've completed the second challenge, let's go to [**level 3 task**](/docs-ritchie/content/en/Challenges/level-3-conditional-inputs)!
+👉 If you've completed the second challenge, let's go to [**level 3 task**](/docs-ritchie/challenges/level-3-conditional-inputs/)!

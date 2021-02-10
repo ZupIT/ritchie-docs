@@ -14,7 +14,7 @@ There is a formula on Ritchie that allows the user to create and/or update a for
 
 {{% alert color="warning" %}}
 
-To publish your formula, make sure to set Github / Gitlab credentials using the**`rit set credential`** command.
+To publish your formula, make sure to set Github / Gitlab credentials using the **`rit set credential`** command.
 
 {{% /alert %}}
 
@@ -25,11 +25,11 @@ A formula has been created on the community repository to perform:
 * The initialization of a local repository on Git \(if necessary\).
 * The creation of the repository on Github/Gitlab.
 * The release generation of a new version of the repository.
-* The addition of the repository to Ritchie local repositories \(**`rit add repo`**command\). 
+* The addition of the repository to Ritchie local repositories \(**`rit add repo`** command\). 
 
 {{% alert color="info" %}}
 
-Moreover, if the repository already exists, it will commit the new code and generate the new release version informed, before updating Ritchie repositories \(**`rit update repo`**command\).
+Moreover, if the repository already exists, it will commit the new code and generate the new release version informed, before updating Ritchie repositories \( **`rit update repo`** command\).
 
 {{% /alert %}}
 
@@ -45,7 +45,7 @@ The user has to inform 5 different kinds of inputs:
 4. The **`local repository path`** you wish to publish
 5. The **`release version`** to generate
 
-![rit publish repo command](/rit-publish-repo.gif)
+![rit publish repo command](/docs/rit-publish-repo.gif)
 
 {{% alert color="warning" %}}
 
@@ -69,4 +69,4 @@ To publish a formula manually, you need to push it on a **Github/Gitlab** reposi
 
 On this section, you saw how to publish a formula on Ritchie. To keep configuring the formula: 
 
-👉 Check out [**how to share formulas**](how-to-share-formulas)
+👉 Check out [**how to share formulas**](/docs-ritchie/tutorials/formulas/how-to-share-formulas/)

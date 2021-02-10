@@ -6,7 +6,7 @@ description: 'In this section, you will find all initial information about Ritch
 
 ---
 
-## What is Ritchie?
+## **What is Ritchie?**
 
 Ritchie is an **open source framework** that allows you to create, store and share any kind of automations, executing them through command lines, to run operations or start workflows.
 
@@ -30,4 +30,4 @@ It means that **a formula is a script** that can be executed automatically or in
 
 Adapting an existing script to Ritchie structure allows you to run it **locally** or through **Docker**, and to share it on **Bitbucket** ,**Github** or **Gitlab** repository.
 
-![](/formula-ritchie-en%20%281%29%20%281%29.jpg)
+![](/docs/formula-ritchie-en%20%281%29%20%281%29.jpg)

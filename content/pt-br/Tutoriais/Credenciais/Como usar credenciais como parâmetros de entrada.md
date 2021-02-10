@@ -55,4 +55,4 @@ github  	 default	  {"token":"***", "email":"***", "username":"***"}
 
 Nessa seção, você viu como manipular credenciais no Ritchie. 
 
-👉 Cheque a [**lista de comandos**](https://app.gitbook.com/@zup-products/s/ritchie/~/drafts/-MDPWwvUtJ2ZZfV8Mw44/v/v2.0-pt/developer/lista-de-comandos) para ver as automações disponíveis no repo da nossa comunidade.
+👉 Veja a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) para ver as automações disponíveis no repo da nossa comunidade.

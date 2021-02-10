@@ -46,4 +46,4 @@ Well done! You've completed the first task!
 
 ## **Next steps** 
 
-👉 If you've completed the first challenge, let's go to the [**level 2 task**](/docs-ritchie/content/en/Challenges/level-2-credentials)!
+👉 If you've completed the first challenge, let's go to the [**level 2 task**](/docs-ritchie/challenges/level-2-credentials/)!

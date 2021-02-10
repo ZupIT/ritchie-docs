@@ -38,7 +38,7 @@ Você pode encontrar todos os [**templates de linguagens**](https://github.com/Z
 
 {{< tabs name="T0" >}}
 {{% tab name="Golang" %}}
-![](/go%20%281%29%20%281%29%20%281%29.png)
+![](/docs/go%20%281%29%20%281%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -49,7 +49,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Java" %}}
-![](/java%20%282%29%20%282%29%20%282%29.png)
+![](/docs/java%20%282%29%20%282%29%20%282%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -60,7 +60,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Node" %}}
-![](/node%20%283%29%20%283%29%20%282%29.png)
+![](/docs/node%20%283%29%20%283%29%20%282%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -71,7 +71,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Python" %}}
-![](/python%20%282%29%20%281%29.png)
+![](/docs/python%20%282%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -82,7 +82,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Shell" %}}
-![](/shell%20%282%29%20%281%29%20%281%29.png)
+![](/docs/shell%20%282%29%20%281%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 

@@ -13,7 +13,7 @@ Para instalar a **última versão do Ritchie**, você precisa  fazer o **downloa
 Você deve fazer o [**download do instalador**](https://commons-repo.ritchiecli.io/latest/ritchiecli.msi) e fazer as configurações necessárias. Basta seguir as instruções que aparecerem no seu terminal. 
 
 {{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**.](instalacao-manual)
+Se preferir, você também pode seguir com a [**instalação manual**.](/docs-ritchie/pt-br/primeiros-passos/instalação-do-cli/instalação-manual/)
 {{% /alert %}}
 
 ## Passo 2: Verifique a instalação 

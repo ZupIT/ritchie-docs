@@ -30,7 +30,7 @@ It refers to JavaScript Object Notation \(JSON\), that is a standard text based 
 
 ## **Tree**
 
-It refers to a group of commands organized on Ritchie. You can click on the next link to understand more about [**Tree's structure**](key-concepts#command-tree).
+It refers to a group of commands organized on Ritchie. You can click on the next link to understand more about [**Tree's structure**](/docs-ritchie/key-concepts/#command-tree).
 
 ## **Repository**
 

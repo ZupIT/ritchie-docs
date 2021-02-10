@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## Fórmulas
+## **Fórmulas**
 
 As **fórmulas** são **automações**, ou seja, são códigos chamados através das linhas de comando para realizar alguma operação.
 
@@ -25,7 +25,7 @@ Esses parâmetros de entrada podem ser informados de diversas maneiras:
 * Quando digitar a linha de comando no terminal \(via **stdin** ou **input flags**\)
 * Durante a execução da fórmula \(se o código usou o **prompt**\)
 
-![](/start-end-ritchie.jpg)
+![](/docs/start-end-ritchie.jpg)
 
 
 
@@ -33,7 +33,7 @@ Esses parâmetros de entrada podem ser informados de diversas maneiras:
 
 
 
-## Árvore de comando
+## **Árvore de comando**
 
 {{% alert color="info" %}}
 Para entender a estrutura do produto em si, é importante destacar que **os comandos usados no Ritchie são agrupados como uma árvore**. 
@@ -49,7 +49,7 @@ E, para permitir mais opções e liberdade aos usuários, também é possível s
 
 Usamos o prefixo **`rit`** para iniciar nossa árvore de comandos.
 
-![](/arvore-rit%20%281%29%20%281%29.png)
+![](/docs/arvore-rit%20%281%29%20%281%29.png)
 
 {{% alert color="warning" %}}
 O comando **`rit`** é nosso comando pai, ou raíz. Ele não é executável \(significa que ele não vai iniciar nenhuma operação se você usar ele sozinho no terminal\).   
