@@ -20,8 +20,10 @@ jobs:
           hugo-version: '0.79.1'
           # extended: true
 
-      - name: Build
+      - name: Install dependencies
         run: npm i
+
+      - name: Build
         run: hugo --minify
 
       - name: Deploy
