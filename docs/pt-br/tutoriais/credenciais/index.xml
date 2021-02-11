@@ -66,11 +66,11 @@ Você pode conferir os &lt;a href=&#34;../../formulas/como-implementar-formulas/
 &lt;p&gt;Para deletar uma credencial, você só precisa rodar o seguinte comando:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit delete credential
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Veja como o processo funciona:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/large-gif-814x408-.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/large-gif-814x408-.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
 &lt;p&gt;Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:&lt;/p&gt;
-&lt;p&gt;👉 Vá para seção  &lt;a href=&#34;como-adicionar-provedores&#34;&gt;&lt;strong&gt;como adicionar provedores&lt;/strong&gt; &lt;/a&gt;e, assim, continuar configurando suas credenciais.&lt;/p&gt;
-&lt;p&gt;👉 Conheça a &lt;a href=&#34;../../../reference/lista-de-comandos-e-flags&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; de fórmulas disponíveis no Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Vá para seção  &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/credenciais/como-adicionar-provedores/&#34;&gt;&lt;strong&gt;como adicionar provedores&lt;/strong&gt; &lt;/a&gt;e, assim, continuar configurando suas credenciais.&lt;/p&gt;
+&lt;p&gt;👉 Conheça a &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; de fórmulas disponíveis no Ritchie.&lt;/p&gt;
 
       </description>
     </item>
@@ -157,7 +157,7 @@ O &lt;strong&gt;tipo&lt;/strong&gt; precisa respeitar o seguinte padrão:&lt;str
 github  	 default	  {&amp;#34;token&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;email&amp;#34;:&amp;#34;***&amp;#34;, &amp;#34;username&amp;#34;:&amp;#34;***&amp;#34;}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
 &lt;p&gt;Nessa seção, você viu como manipular credenciais no Ritchie.&lt;/p&gt;
-&lt;p&gt;👉 Cheque a &lt;a href=&#34;https://app.gitbook.com/@zup-products/s/ritchie/~/drafts/-MDPWwvUtJ2ZZfV8Mw44/v/v2.0-pt/developer/lista-de-comandos&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repo da nossa comunidade.&lt;/p&gt;
+&lt;p&gt;👉 Veja a &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/refer%C3%AAncia/lista-de-comandos-e-flags/&#34;&gt;&lt;strong&gt;lista de comandos&lt;/strong&gt;&lt;/a&gt; para ver as automações disponíveis no repo da nossa comunidade.&lt;/p&gt;
 
       </description>
     </item>

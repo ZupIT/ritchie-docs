@@ -8,7 +8,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/principais-conceitos/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -49,6 +49,10 @@
   </url>
   
   <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/introdu%C3%A7%C3%A3o-a-instala%C3%A7%C3%A3o-cli/</loc>
+  </url>
+  
+  <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/linux/</loc>
   </url>
   
@@ -75,7 +79,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/upgrade-do-cli/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -83,7 +87,11 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</loc>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/introdu%C3%A7%C3%A3o/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/f%C3%B3rmula-hello-world/</loc>
   </url>
   
   <url>
@@ -91,7 +99,7 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</loc>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/introdu%C3%A7%C3%A3o/</loc>
   </url>
   
   <url>
@@ -143,7 +151,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/credenciais/como-apagar-credenciais/</loc>
-    <lastmod>2021-02-09T07:36:06-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -204,6 +212,10 @@
   </url>
   
   <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/o-que-s%C3%A3o-esses-desafios/</loc>
+  </url>
+  
+  <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/desafios/</loc>
     <lastmod>2021-02-03T13:59:08-03:00</lastmod>
   </url>
@@ -246,7 +258,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/sobre-ritchie/</loc>
-    <lastmod>2021-02-03T13:59:08-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -255,7 +267,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/pt-br/faq/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -266,6 +278,14 @@
                 hreflang="pt-br"
                 href="https://zupit.github.io/docs-ritchie/pt-br/faq/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/</loc>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</loc>
   </url>
   
 </urlset>

@@ -27,11 +27,11 @@
 &lt;h3 id=&#34;premises&#34;&gt;Premises&lt;/h3&gt;
 &lt;p&gt;To perform the tasks in this section, it will be necessary to understand the following concepts:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/content/en/tutorials/formulas/how-to-run-formulas/&#34;&gt;&lt;strong&gt;How to run formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;%5Cdocs-ritchie/content/en/tutorials/formulas/how-to-create-formulas&#34;&gt;&lt;strong&gt;How to create formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;.%5Cdocs-ritchie/content/en/tutorials/tutorials/formulas/how-to-implement-a-formula/&#34;&gt;&lt;strong&gt;How to implement formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;%5Cdocs-ritchie/content/en/tutorials/formulas/how-to-build-formulas&#34;&gt;&lt;strong&gt;How to build formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;%5Cdocs-ritchie/content/en/tutorials/tutorials/formulas/how-to-group-formulas&#34;&gt;&lt;strong&gt;How to group formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-run-formulas/&#34;&gt;&lt;strong&gt;How to run formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-create-formulas/&#34;&gt;&lt;strong&gt;How to create formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-implement-formulas/&#34;&gt;&lt;strong&gt;How to implement formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-build-formulas/&#34;&gt;&lt;strong&gt;How to build formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-group-formulas/&#34;&gt;&lt;strong&gt;How to group formulas&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
 &lt;p&gt;The &lt;strong&gt;&lt;code&gt;first challenge&lt;/code&gt;&lt;/strong&gt; is to understand how to manipulate basic inputs.&lt;/p&gt;
@@ -98,7 +98,7 @@ Well done! You&amp;rsquo;ve completed the first task!
 &lt;li&gt;Allow the user to digit decimals in addition to integers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;next-steps&#34;&gt;&lt;strong&gt;Next steps&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;👉 If you&amp;rsquo;ve completed the first challenge, let&amp;rsquo;s go to the &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/content/en/Challenges/level-2-credentials&#34;&gt;&lt;strong&gt;level 2 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;👉 If you&amp;rsquo;ve completed the first challenge, let&amp;rsquo;s go to the &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/challenges/level-2-credentials/&#34;&gt;&lt;strong&gt;level 2 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
 
       </description>
     </item>
@@ -147,7 +147,7 @@ Command suggestion: &lt;strong&gt;&lt;code&gt;rit github get user&lt;/code&gt;&l
 &lt;li&gt;Code a formula which will allow the user to generate a release of the informed Github repository.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;next-steps&#34;&gt;&lt;strong&gt;Next steps&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;👉 If you&amp;rsquo;ve completed the second challenge, let&amp;rsquo;s go to &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/content/en/Challenges/level-3-conditional-inputs&#34;&gt;&lt;strong&gt;level 3 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;👉 If you&amp;rsquo;ve completed the second challenge, let&amp;rsquo;s go to &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/challenges/level-3-conditional-inputs/&#34;&gt;&lt;strong&gt;level 3 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
 
       </description>
     </item>
@@ -195,7 +195,7 @@ Command suggestion: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/str
 &lt;li&gt;Install the selected tool according to the computer OS.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
-&lt;p&gt;👉 If you&amp;rsquo;ve completed the third challenge, let&amp;rsquo;s go to the &lt;a href=&#34;%5Cdocs-ritchie%5Ccontent%5Cen%5CChallenges%5CLeve-4-Aggregation&#34;&gt;&lt;strong&gt;level 4 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;👉 If you&amp;rsquo;ve completed the third challenge, let&amp;rsquo;s go to the &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/challenges/level-4-aggregation/&#34;&gt;&lt;strong&gt;level 4 task&lt;/strong&gt;&lt;/a&gt;!&lt;/p&gt;
 
       </description>
     </item>
@@ -213,7 +213,7 @@ Command suggestion: &lt;strong&gt;&lt;code&gt;rit get tools&lt;/code&gt;&lt;/str
 &lt;h2 id=&#34;objective&#34;&gt;Objective&lt;/h2&gt;
 &lt;p&gt;Create a formula on Ritchie that will &lt;strong&gt;execute another formula inside it.&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You&amp;rsquo;ll find all the informations you need in the &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/content/en/tutorials/formulas/how-to-group-formulas&#34;&gt;&lt;strong&gt;how to group formulas&lt;/strong&gt;&lt;/a&gt; tutorial section.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll find all the informations you need in the &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-group-formulas/&#34;&gt;&lt;strong&gt;how to group formulas&lt;/strong&gt;&lt;/a&gt; tutorial section.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;The idea is to group at least 2 formulas inside another one:&lt;/p&gt;
 &lt;ul&gt;

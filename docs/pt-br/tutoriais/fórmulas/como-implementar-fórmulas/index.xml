@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ritchie – Como implementar fórmulas</title>
+    <title>Ritchie – </title>
     <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/</link>
-    <description>Recent content in Como implementar fórmulas on Ritchie</description>
+    <description>Recent content on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/index.xml" rel="self" type="application/rss+xml" />
@@ -12,6 +12,27 @@
         
       
     
+    
+    <item>
+      <title>Tutoriais: Como implementar fórmulas</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/introdu%C3%A7%C3%A3o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-implementar-f%C3%B3rmulas/introdu%C3%A7%C3%A3o/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;como-implementar&#34;&gt;Como implementar?&lt;/h2&gt;
+&lt;p&gt;Uma vez que você &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-criar-f%C3%B3rmulas/&#34;&gt;&lt;strong&gt;criou e testou sua fórmula&lt;/strong&gt;&lt;/a&gt;, o Ritchie irá gerar um workspace para você trabalhar localmente. Com isso, você pode começar a implementar sua automação ao atualizar o template &lt;strong&gt;Hello World&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Veja a seguir explicações sobre os arquivos editáveis de fórmulas e toda flexibilidade oferecida pelo Ritchie em sua estrutura:&lt;/p&gt;
+&lt;h2 id=&#34;próximos-passos&#34;&gt;Próximos passos&lt;/h2&gt;
+&lt;p&gt;Nessa seção, você viu como implementar uma fórmula no Ritchie. Para continuar configurando sua fórmula:&lt;/p&gt;
+&lt;p&gt;👉 Vá para como fazer o &lt;a href=&#34;../../../como-buildar-formulas&#34;&gt;&lt;strong&gt;build de uma fórmula&lt;/strong&gt;&lt;/a&gt; para continuar os testes nas fórmulas que você criou.&lt;/p&gt;
+&lt;p&gt;👉 Vá para &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-publicar-f%C3%B3rmulas/&#34;&gt;&lt;strong&gt;publicar uma fórmula&lt;/strong&gt;&lt;/a&gt; para saber como transferir seu trabalho para um repositório público.&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>Tutoriais: Pasta de fórmula</title>
@@ -89,7 +110,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
   &lt;ul class=&#34;nav nav-tabs&#34;&gt;&lt;/ul&gt;
   &lt;div class=&#34;tab-content&#34;&gt;
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/go%20%281%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/go%20%281%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -101,7 +122,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/java%20%282%29%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/java%20%282%29%20%282%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -113,7 +134,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/node%20%283%29%20%283%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/node%20%283%29%20%283%29%20%282%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -125,7 +146,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/python%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/python%20%282%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;
@@ -137,7 +158,7 @@ A estrutura das pastas define os comandos tree, por isso &lt;strong&gt;não é r
  &lt;/div&gt;
 
 &lt;div class=&#34;tab-pane&#34; title=&#34;&#34;&gt;
-  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/shell%20%282%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/shell%20%282%29%20%281%29%20%281%29.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;De acordo com a imagem acima, você deve editar os arquivos:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;config.json:&lt;/strong&gt; alterar os &lt;em&gt;&lt;strong&gt;inputs&lt;/strong&gt;&lt;/em&gt; e suas configurações.&lt;/li&gt;

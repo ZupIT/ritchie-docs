@@ -14,6 +14,21 @@
     
     
     <item>
+      <title>Primeiros Passos: Instalação do CLI</title>
+      <link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/introdu%C3%A7%C3%A3o-a-instala%C3%A7%C3%A3o-cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/introdu%C3%A7%C3%A3o-a-instala%C3%A7%C3%A3o-cli/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;Para começar a &lt;strong&gt;instalação do Ritchie&lt;/strong&gt; na sua máquina, siga as instruções para cada sistema operacional. Se preferir, é possível fazer ainda a instalação manual.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Primeiros Passos: Linux</title>
       <link>https://zupit.github.io/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -36,7 +51,7 @@
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Se preferir, você também pode seguir com a &lt;a href=&#34;instalacao-manual&#34;&gt;&lt;strong&gt;instalação&lt;/strong&gt;&lt;/a&gt;&lt;a href=&#34;instalacao-manual&#34;&gt; &lt;strong&gt;manual&lt;/strong&gt;.&lt;/a&gt;
+Se preferir, você também pode seguir com a &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/&#34;&gt;&lt;strong&gt;instalação manual&lt;/strong&gt;&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;passo-2-verifique-a-instalação&#34;&gt;Passo 2: Verifique a instalação&lt;/h2&gt;
@@ -81,7 +96,7 @@ Se preferir, você também pode seguir com a &lt;a href=&#34;instalacao-manual&#
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Se preferir, você também pode seguir com a &lt;a href=&#34;instalacao-manual&#34;&gt;&lt;strong&gt;instalação manual&lt;/strong&gt;.&lt;/a&gt;
+Se preferir, você também pode seguir com a &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/&#34;&gt;&lt;strong&gt;instalação manual&lt;/strong&gt;.&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&#34;segunda-opção&#34;&gt;Segunda opção&lt;/h3&gt;
@@ -112,7 +127,7 @@ Se preferir, você também pode seguir com a &lt;a href=&#34;instalacao-manual&#
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-Se preferir, você também pode seguir com a &lt;a href=&#34;instalacao-manual&#34;&gt;&lt;strong&gt;instalação manual&lt;/strong&gt;.&lt;/a&gt;
+Se preferir, você também pode seguir com a &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/primeiros-passos/instala%C3%A7%C3%A3o-do-cli/instala%C3%A7%C3%A3o-manual/&#34;&gt;&lt;strong&gt;instalação manual&lt;/strong&gt;.&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;passo-2-verifique-a-instalação&#34;&gt;Passo 2: Verifique a instalação&lt;/h2&gt;
@@ -144,8 +159,8 @@ Se preferir, você também pode seguir com a &lt;a href=&#34;instalacao-manual&#
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/linux/rit
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;instalação-para-windows--a-idinstallation-for-windowsa&#34;&gt;&lt;strong&gt;Instalação para Windows&lt;/strong&gt;  &lt;a id=&#34;installation-for-windows&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/windows/rit.exe
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configurações-manuais-a-idmanual-settingsa&#34;&gt;&lt;strong&gt;Configurações manuais&lt;/strong&gt; &lt;a id=&#34;manual-settings&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;como-criar-uma-pasta-a-idfolder-creationa&#34;&gt;&lt;strong&gt;Como criar uma pasta?&lt;/strong&gt; &lt;a id=&#34;folder-creation&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;configurações-manuais&#34;&gt;&lt;strong&gt;Configurações manuais&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;como-criar-uma-pasta&#34;&gt;&lt;strong&gt;Como criar uma pasta?&lt;/strong&gt;&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;Primeiro, rode o comando abaixo para criar uma pasta  &lt;code&gt;$HOME/.rit/bin&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
@@ -158,7 +173,7 @@ cp $HOME/Downloads/rit
 &lt;li&gt;Por último, rode a permissão para executar:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;chmod +x rit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;como-configirar-o-bashrc-ou-etcprofile-ou-zshrc-linux--macos-a-idconfigure-the-bashrc-ou-etc-profile-or-zshrc-linux-macosa&#34;&gt;&lt;strong&gt;Como configirar o .bashrc ou /etc/profile ou .zshrc (Linux / MacOS)?&lt;/strong&gt; &lt;a id=&#34;configure-the-bashrc-ou-etc-profile-or-zshrc-linux-macos&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;como-configirar-o-bashrc-ou-etcprofile-ou-zshrc-linux--macos&#34;&gt;&lt;strong&gt;Como configirar o .bashrc ou /etc/profile ou .zshrc (Linux / MacOS)?&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;Para o ZSH, defina o novo PATH copiando o código abaixo:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export RIT_PATH=$HOME/.rit
 PATH=$RIT_PATH/bin:$PATH
@@ -169,7 +184,7 @@ source ~/.rit_completion
 PATH=$RIT_PATH/bin:$PATH
 rit completion bash &amp;gt; ~/.rit_completion
 source ~/.rit_completion​
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;configurações-de-variáveis-de-ambiente-windows-a-idsetting-environment-variables-windowsa&#34;&gt;Configurações de variáveis de ambiente (Windows)? &lt;a id=&#34;setting-environment-variables-windows&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;configurações-de-variáveis-de-ambiente-windows&#34;&gt;Configurações de variáveis de ambiente (Windows)?&lt;/h3&gt;
 &lt;p&gt;No caso do Windows, você precisa chamar o rit no terminal diretamente pelo rit.exe. Por exemplo: comando &lt;strong&gt;rit.exe login.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;É possível - e recomendado - que você crie uma variável de ambiente para o rit, tornando assim mais fácil o uso do CLI.&lt;/p&gt;
 &lt;p&gt;Abaixo, confira alguns artigos que explicam como adicionar uma variável de ambiente no Windows:&lt;/p&gt;
@@ -198,16 +213,16 @@ source ~/.rit_completion​
 &lt;ol&gt;
 &lt;li&gt;Se o usuário &lt;strong&gt;quer contribuir anonimamente&lt;/strong&gt; as métricas do produto.&lt;/li&gt;
 &lt;li&gt;Se o usuário &lt;strong&gt;quer adicionar as fórmulas&lt;/strong&gt; da comunidade localmente.&lt;/li&gt;
-&lt;li&gt;Se o usuário &lt;strong&gt;quer usar o&lt;/strong&gt; &lt;a href=&#34;../../tutorials/formulas/como-executar-formulas/&#34;&gt;&lt;strong&gt;método de execução de fórmulas&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;local ou via docker&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Se o usuário &lt;strong&gt;quer usar o&lt;/strong&gt; &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/pt-br/tutoriais/f%C3%B3rmulas/como-executar-f%C3%B3rmulas/&#34;&gt;&lt;strong&gt;método de execução de fórmulas&lt;/strong&gt;&lt;/a&gt; &lt;strong&gt;local ou via docker&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/rit-init%20%283%29.gif&#34; alt=&#34;Comando rit init&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/rit-init%20%283%29.gif&#34; alt=&#34;Comando rit init&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Após a execução desse comando, todos os arquivos de configuração para a máquina funcionar serão criados.&lt;/p&gt;
 &lt;h2 id=&#34;passo-2-verifique-a-inicialização&#34;&gt;Passo 2: Verifique a inicialização&lt;/h2&gt;
 &lt;h3 id=&#34;1-repositório-da-comunidade&#34;&gt;1. Repositório da comunidade&lt;/h3&gt;
 &lt;p&gt;Caso foi adicionado o repositório da comunidade, é possível verificar sua importação através do seguinte comando:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit list repo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Esse comando retorna todos os repositórios de fórmulas que o usuário tem acesso localmente.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/large-gif-1448x466-.gif&#34; alt=&#34;rit list repo command&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/large-gif-1448x466-.gif&#34; alt=&#34;rit list repo command&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;2-pasta-ritchie&#34;&gt;2. Pasta Ritchie&lt;/h3&gt;
 &lt;p&gt;É possível verificar que a pasta &lt;strong&gt;&lt;code&gt;.rit&lt;/code&gt;&lt;/strong&gt; foi criada no diretório &lt;strong&gt;&lt;code&gt;$HOME&lt;/code&gt;&lt;/strong&gt;  da máquina.&lt;/p&gt;
 
@@ -237,8 +252,8 @@ Todas as operações realizadas usando o Ritchie são salvas nessa pasta  &lt;st
 
 &lt;p&gt;Quando for lançada uma nova versão do CLI version, um aviso irá aparecer quando você for executar um dos comandos abaixo:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit&lt;/code&gt;&lt;/strong&gt;&lt;em&gt;(helper)&lt;br&gt;
--&lt;/em&gt; &lt;strong&gt;&lt;code&gt;rit -v&lt;/code&gt;&lt;/strong&gt; &lt;em&gt;(version)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit&lt;/code&gt;&lt;/strong&gt;_(helper)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;rit -v&lt;/code&gt;&lt;/strong&gt; &lt;em&gt;(version)&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;

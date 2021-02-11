@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ritchie – How to implement formulas</title>
+    <title>Ritchie – </title>
     <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/</link>
-    <description>Recent content in How to implement formulas on Ritchie</description>
+    <description>Recent content on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/index.xml" rel="self" type="application/rss+xml" />
@@ -12,6 +12,27 @@
         
       
     
+    
+    <item>
+      <title>Tutorials: How to implement formulas</title>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/introduction-on-how-to-implement-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/introduction-on-how-to-implement-formulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;how-to-implement-formulas&#34;&gt;How to implement formulas?&lt;/h2&gt;
+&lt;p&gt;Once you have &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-create-formulas/&#34;&gt;&lt;strong&gt;created and tested your formula&lt;/strong&gt;&lt;/a&gt;, Ritchie will generate a local workspace. This is where you can start implementing the new automation by updating the &lt;strong&gt;Hello World&lt;/strong&gt; template.&lt;/p&gt;
+&lt;p&gt;See below explanations about a formula editable files and all the flexibility offered by Ritchie&amp;rsquo;s structure:&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;On this section, you saw how to implement a formula on Ritchie. To keep configuring the formula:&lt;/p&gt;
+&lt;p&gt;👉 Go to &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-build-formulas/&#34;&gt;&lt;strong&gt;build a formula&lt;/strong&gt;&lt;/a&gt; to see how to continue the tests on the formulas you create.&lt;/p&gt;
+&lt;p&gt;👉 Go to &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-publish-formulas/&#34;&gt;&lt;strong&gt;publish a formula&lt;/strong&gt;&lt;/a&gt; to see how to transfer your work to a public repository.&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>Tutorials: Formula Folder</title>

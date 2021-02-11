@@ -4,12 +4,12 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/overview/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/key-concepts/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -47,8 +47,7 @@
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/getting-started/install-cli/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-ritchie/getting-started/install-cli/introdu%C3%A7%C3%A3o/</loc>
   </url>
   
   <url>
@@ -58,7 +57,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/getting-started/install-cli/macos/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -68,7 +67,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/getting-started/install-cli/manual-installation/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -78,7 +77,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/getting-started/initialize-cli/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -93,17 +92,22 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-11T10:25:09-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/introduction-on-how-to-run-formulas/</loc>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-create-formulas/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/</loc>
-    <lastmod>2021-02-03T13:59:08-03:00</lastmod>
+    <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/introduction-on-how-to-implement-formulas/</loc>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -128,27 +132,27 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-build-formulas/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-publish-formulas/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-share-formulas/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-delete-formulas/</loc>
-    <lastmod>2021-02-03T13:59:08-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-group-formulas/</loc>
-    <lastmod>2021-02-08T16:37:09-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -163,12 +167,12 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/credentials/how-to-set-credentials/</loc>
-    <lastmod>2021-02-09T07:36:06-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/tutorials/credentials/how-to-delete-credentials/</loc>
-    <lastmod>2021-02-09T07:36:06-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -228,7 +232,7 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/challenges/what-are-these-challenges/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -238,22 +242,22 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/challenges/level-1-inputs/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/challenges/level-2-credentials/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/challenges/level-3-conditional-inputs/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/challenges/level-4-aggregation/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
@@ -283,17 +287,17 @@
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/about-ritchie/</loc>
-    <lastmod>2021-02-03T13:59:08-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/glossary/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://zupit.github.io/docs-ritchie/faq/</loc>
-    <lastmod>2021-02-09T14:18:42-03:00</lastmod>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt-br"
@@ -304,6 +308,16 @@
                 hreflang="en"
                 href="https://zupit.github.io/docs-ritchie/faq/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/getting-started/install-cli/</loc>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-implement-formulas/</loc>
+    <lastmod>2021-02-10T18:01:34-03:00</lastmod>
   </url>
   
 </urlset>

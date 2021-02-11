@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ritchie – Install CLI</title>
+    <title>Ritchie – </title>
     <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/</link>
-    <description>Recent content in Install CLI on Ritchie</description>
+    <description>Recent content on Ritchie</description>
     <generator>Hugo -- gohugo.io</generator>
     
 	  <atom:link href="https://zupit.github.io/docs-ritchie/getting-started/install-cli/index.xml" rel="self" type="application/rss+xml" />
@@ -12,6 +12,24 @@
         
       
     
+    
+    <item>
+      <title>Getting Started: Install CLI</title>
+      <link>https://zupit.github.io/docs-ritchie/getting-started/install-cli/introdu%C3%A7%C3%A3o/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/getting-started/install-cli/introdu%C3%A7%C3%A3o/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;p&gt;To &lt;strong&gt;start Ritchie&amp;rsquo;s installation&lt;/strong&gt; on your machine, follow the steps for your operating system. If you want, you can use the manual installation.&lt;/p&gt;
+&lt;p&gt;{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
+It&amp;rsquo;s optional to have Docker installed, just in case you want to &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-build-formulas/&#34;&gt;&lt;strong&gt;build your formulas&lt;/strong&gt;&lt;/a&gt; there.&lt;/p&gt;
+&lt;p&gt;{{% /alert %}}&lt;/p&gt;
+
+      </description>
+    </item>
     
     <item>
       <title>Getting Started: Linux</title>
@@ -81,7 +99,7 @@ If you prefer, you also can follow with the&lt;a href=&#34;manual-installation&#
 
 &lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;
 
-If you prefer, you also can follow with the&lt;a href=&#34;manual-installation&#34;&gt; &lt;strong&gt;manual installation&lt;/strong&gt;.&lt;/a&gt;
+If you prefer, you also can follow with the&lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/getting-started/install-cli/manual-installation/&#34;&gt; &lt;strong&gt;manual installation&lt;/strong&gt;.&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h3 id=&#34;second-option&#34;&gt;Second option&lt;/h3&gt;
@@ -143,7 +161,7 @@ If you prefer, you also can proceed with the&lt;a href=&#34;manual-installation&
 &lt;li&gt;Download the Ritchie binary version;&lt;/li&gt;
 &lt;li&gt;Enter the URL below in your browser by informing &lt;strong&gt;the version&lt;/strong&gt; &lt;strong&gt;{VERSION}&lt;/strong&gt; as obtained in step 1.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;installation-for-macos-a-idinstallation-for-maca&#34;&gt;&lt;strong&gt;Installation for MacOS&lt;/strong&gt; &lt;a id=&#34;installation-for-mac&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;installation-for-macos&#34;&gt;&lt;strong&gt;Installation for MacOS&lt;/strong&gt;&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;installation-for-linux-a-idinstallation-for-linuxa&#34;&gt;&lt;strong&gt;Installation for Linux&lt;/strong&gt; &lt;a id=&#34;installation-for-linux&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;https://commons-repo.ritchiecli.io/{VERSION}/linux/rit
@@ -163,7 +181,7 @@ cp $HOME/Downloads/rit
 &lt;li&gt;Lastly, run a permission to run:&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;chmod +x rit
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;how-to-configure-the-bashrc-ou-etcprofile-or-zshrc-linux--macos-a-idconfigure-the-bashrc-ou-etc-profile-or-zshrc-linux-macosa&#34;&gt;&lt;strong&gt;How to configure the .bashrc ou /etc/profile or .zshrc (Linux / MacOS)&lt;/strong&gt; &lt;a id=&#34;configure-the-bashrc-ou-etc-profile-or-zshrc-linux-macos&#34;&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;how-to-configure-the-bashrc-ou-etcprofile-or-zshrc-linux--macos&#34;&gt;&lt;strong&gt;How to configure the .bashrc ou /etc/profile or .zshrc (Linux / MacOS)&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;To ZSH, define a new PATH by copying the following code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;export RIT_PATH=$HOME/.rit
 PATH=$RIT_PATH/bin:$PATH

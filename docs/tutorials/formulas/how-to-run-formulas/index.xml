@@ -13,5 +13,50 @@
       
     
     
+    <item>
+      <title>Tutorials: How to run formulas</title>
+      <link>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/introduction-on-how-to-run-formulas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zupit.github.io/docs-ritchie/tutorials/formulas/how-to-run-formulas/introduction-on-how-to-run-formulas/</guid>
+      <description>
+        
+        
+        &lt;hr&gt;
+&lt;h2 id=&#34;how-to-run-formulas&#34;&gt;How to run formulas?&lt;/h2&gt;
+&lt;p&gt;There are two ways to run formulas on Ritchie :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Locally&lt;/li&gt;
+&lt;li&gt;Using Docker&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;It&amp;rsquo;s good to reinforce that the &lt;strong&gt;default formulas execution method&lt;/strong&gt; is defined during the initialization step with the &lt;strong&gt;&lt;code&gt;rit init&lt;/code&gt;&lt;/strong&gt; command. You can change this setting by running the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;rit set formula-runner
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://zupit.github.io/docs-ritchie/docs/large-gif-1374x404-.gif&#34; alt=&#34;rit set formula-runner command&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1-locally&#34;&gt;1. Locally&lt;/h3&gt;
+&lt;p&gt;To run a formula locally, it is necessary to have installed on your computer the formula programming languages dependencies used to create the formula.&lt;/p&gt;
+&lt;p&gt;Example: a formula written in &lt;strong&gt;Node&lt;/strong&gt; will need &lt;strong&gt;Node installed&lt;/strong&gt; on the computer, so it will be able to run locally.&lt;/p&gt;
+&lt;h3 id=&#34;2-through-docker&#34;&gt;2. Through Docker&lt;/h3&gt;
+&lt;p&gt;All formulas can run regardless the programming language used from the moment you have &lt;strong&gt;&lt;code&gt;DOCKER&lt;/code&gt;&lt;/strong&gt; installed and running.&lt;/p&gt;
+&lt;p&gt;{{% alert color=&amp;ldquo;info&amp;rdquo; %}}
+Check out on the following example &lt;a href=&#34;hello-world-formula&#34;&gt;&lt;strong&gt;how to run a &amp;ldquo;Hello World&amp;rdquo; formula&lt;/strong&gt; &lt;/a&gt;
+{{% /alert %}}&lt;/p&gt;
+&lt;h3 id=&#34;3-local--docker-flags&#34;&gt;3. Local &amp;amp; Docker Flags&lt;/h3&gt;
+&lt;p&gt;You can force Ritchie CLI to execute a formula with a specific method using flags.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;&lt;code&gt;--local&lt;/code&gt;&lt;/strong&gt; flag will execute a formula with locally (if the default method is Docker).&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;&lt;code&gt;--docker&lt;/code&gt;&lt;/strong&gt; flag will execute a formula with Docker (if the default method is local).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-containers-with-ritchie&#34;&gt;4. Containers with Ritchie&lt;/h3&gt;
+&lt;p&gt;{{% alert color=&amp;ldquo;warning&amp;rdquo; %}}
+All formulas templates contain a &lt;strong&gt;Dockerfile&lt;/strong&gt; which creates a container with &lt;strong&gt;Ritchie CLI&lt;/strong&gt; installed.
+{{% /alert %}}&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next steps&lt;/h2&gt;
+&lt;p&gt;On this section, you saw how to run a formula on Ritchie. To keep learning:&lt;/p&gt;
+&lt;p&gt;👉 Go to &lt;a href=&#34;hello-world-formula&#34;&gt;&lt;strong&gt;Hello World formula&lt;/strong&gt;&lt;/a&gt; to see different ways to run a formula on Ritchie.&lt;/p&gt;
+&lt;p&gt;👉 Go to the &lt;a href=&#34;https://zupit.github.io/docs-ritchie/docs-ritchie/tutorials/formulas/how-to-create-formulas/&#34;&gt;&lt;strong&gt;create formulas&lt;/strong&gt;&lt;/a&gt; section to understand how to create your first automation with Ritchie.&lt;/p&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>
