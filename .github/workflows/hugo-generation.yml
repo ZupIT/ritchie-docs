@@ -20,6 +20,9 @@ jobs:
           hugo-version: '0.79.1'
           extended: true
 
+      - name: Install libraries
+        run: npm i
+
       - name: Build
         run: hugo --minify
 
