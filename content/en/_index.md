@@ -1,4 +1,4 @@
 ---
-title: Docs
+title: Documentation
 weight: 5
 ---
