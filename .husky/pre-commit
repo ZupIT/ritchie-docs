@@ -2,3 +2,6 @@
 . "$(dirname "$0")/_/husky.sh"
 
 hugo --minify 
+rm -rf docs
+mkdir docs
+touch docs/.gitkeep
