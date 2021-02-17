@@ -20,7 +20,7 @@ This command will ask the user three questions:
 2. If he **wants to add the community** formulas locally.
 3. If he **wants the default** [**formula execution method**](/docs-ritchie/tutorials/formulas/how-to-run-formulas/) **to be local or through docker.** 
 
-![rit init command](/docs/rit-init%20%283%29%20%281%29.gif)
+![](/docs/rit-init%20%283%29%20%281%29.gif)
 
 Then, the command execution will create all the necessary configuration's files. 
 
@@ -36,7 +36,7 @@ rit list repo
 
 This command will return all formulas repositories the user has access locally.
 
-![rit list repo command](/docs/large-gif-1448x466-.gif)
+![](/docs/large-gif-1448x466-.gif)
 
 ### 2. Ritchie folder
 
