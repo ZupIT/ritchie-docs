@@ -8,9 +8,9 @@ description: Nesta seção, você vai encontrar mais informações sobre o arqui
 
 ## O que é um arquivo config \(config.json file\)?
 
-O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite que o CLI saiba quais dados devem ser pedidos ao usuário quando ele executa o comando no terminal, a fim de que processe a fórmula corretamente. 
+O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite que o CLI saiba quais dados devem ser pedidos ao usuário quando ele executa o comando no terminal, a fim de que processe a fórmula corretamente.
 
-Essas entradas são feitas para os seguintes campos: 
+Essas entradas são feitas para os seguintes campos:
 
 * Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\)
 * A lista com os parâmetros de entrada de uma fórmula.
@@ -32,23 +32,23 @@ Cada parâmetro de entrada é composto pelos seguintes campos:
 
 {{% alert color="warning" %}}
 
-Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula.  
-  
-O nome da variável será convertida em maiúscula como o nome da variável local. 
+Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula.
+
+O nome da variável será convertida em maiúscula como o nome da variável local.
 
 {{% /alert %}}
 
-> Uma boa prática é adicionar o sufixo **_`RIT_`** para cada **`input name`** para evitar conflitos com variáveis locais.  
->   
+> Uma boa prática é adicionar o sufixo **_`RIT_`** para cada **`input name`** para evitar conflitos com variáveis locais.
+>
 > Exemplo_: `rit_file_name` --&gt; `RIT_FILE_NAME`_
 
-* `type`: 
-  * **text** \(string\), 
-  * **bool** \(boolean\), 
-  * **password** \(string escondida no CLI\), 
+* `type`:
+  * **text** \(string\),
+  * **bool** \(boolean\),
+  * **password** \(string escondida no CLI\),
   * **credentials** __\(tipo específico, veja mais sobre [**aqui**](https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs)\)
   * **dynamic** \(associado  ao campo opcional`request_info`\)
-  * **path:** habilita o `autocomplete` para o usuário informar o passo para uma pasta ou um arquivo \(string\). 
+  * **path:** habilita o `autocomplete` para o usuário informar o passo para uma pasta ou um arquivo \(string\).
 * `label`: texto que aparecerá no CLI para pedir o input ao usuário.
 
 #### Exemplo de parâmetro de entrada com campos obrigatórios:
@@ -81,7 +81,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 }
 ```
 
-#### Algumas observações a respeito o tipo **`multiselect`** 
+#### Algumas observações a respeito o tipo **`multiselect`**
 
 * Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` \(a chave`enter` irá mover para o próximo parâmetro de entrada, se houver\).
 
@@ -89,7 +89,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 
 * É sugerido que você use o campo `obrigatório` como`true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
 
-#### Exemplo de parâmetro de entrada usando o tipo autocomplete: 
+#### Exemplo de parâmetro de entrada usando o tipo autocomplete:
 
 ```text
 {
@@ -218,6 +218,12 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 }
 ```
 
+{{% alert color="warning" %}}
+
+O tipo de **`entrada dinâmico`** será **depreciado** nas **próximas liberações**.
+
+{{% /alert %}}
+
 * `requestInfo`: configuração para ter o parâmetro de entrada de tipo dinâmico.
 
   * `url`: URL que consome o serviço GET, responsável por retornar a lista de objetos.
@@ -255,7 +261,7 @@ Cada fórmula contém quantos parâmetros de entrada forem necessários, assim c
         "WINDOWS"
       ],
       "required": true,
-      "tutorial": "Select a System from the list."   
+      "tutorial": "Select a System from the list."
     },
     {
       "condition": {
@@ -276,7 +282,7 @@ Cada fórmula contém quantos parâmetros de entrada forem necessários, assim c
         "mismatchText": "Invalid option"
       },
       "required": false,
-      "tutorial": "Select an Linux Operating System from the list."   
+      "tutorial": "Select an Linux Operating System from the list."
     }
   ]
 ```
@@ -284,5 +290,5 @@ Cada fórmula contém quantos parâmetros de entrada forem necessários, assim c
 {{% alert color="warning" %}}
 
 Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula.
- 
+
 {{% /alert %}}
