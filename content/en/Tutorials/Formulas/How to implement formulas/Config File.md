@@ -12,7 +12,7 @@ The **config.json** file contains the formula's input parameters. It allows the 
 
 These input parameters are made up of the following fields:
 
-* a **`docker image builder`** \(according to the programming language chose at the formula creation\) 
+* a **`docker image builder`** \(according to the programming language chose at the formula creation\)
 * the formula **`inputs parameters list`**.
 
 ```text
@@ -31,23 +31,23 @@ Each input parameter is composed of the following fields:
 * `name`: variable name to extract.
 
 {{% alert color="warning" %}}
-Once an input value is informed on Ritchie CLI, it is saved as a **local variable** during the formula execution.  
-  
-The variable **name** will be convert **uppercase** as the **local variable name**. 
+Once an input value is informed on Ritchie CLI, it is saved as a **local variable** during the formula execution.
+
+The variable **name** will be convert **uppercase** as the **local variable name**.
 {{% /alert %}}
 
-> A good practice is to add a **_`RIT_`** suffix to each **`input name`** to avoid having conflicts with local variables.  
->   
+> A good practice is to add a **_`RIT_`** suffix to each **`input name`** to avoid having conflicts with local variables.
+>
 > Example_: `rit_file_name` --&gt; `RIT_FILE_NAME`_
 
-* `type`: 
-  * **text** \(string\), 
-  * **bool** \(boolean\), 
-  * **password** \(hidden string on CLI\), 
+* `type`:
+  * **text** \(string\),
+  * **bool** \(boolean\),
+  * **password** \(hidden string on CLI\),
   * **credentials** _\(specific type, learn more informations_ [_**here**_](https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs)_\),_
   * **dynamic** _\(associated with the optional `request_info` field below\),_
-  * **path:** enables the autocomplete to inform a path to a folder or a file \(string\). 
-* `label`: text appearing on the CLI, asking for the input. 
+  * **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
+* `label`: text appearing on the CLI, asking for the input.
 
 #### Input example with mandatory fields:
 
@@ -85,9 +85,9 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 * The options selected in the `multiselect` type field will return a string with the options separated by pipe \(`|`\) and without space example: `Monday | Wednesday | Friday`
 
-* It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined` 
+* It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`
 
-#### Parameter example using the autocomplete type: 
+#### Parameter example using the autocomplete type:
 
 ```text
 {
@@ -99,7 +99,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 ### Optional fields
 
-* `default`: default input value \(**if** **null**\). 
+* `default`: default input value \(**if** **null**\).
 
 ```text
 {
@@ -129,7 +129,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-* `tutorial`: input helper message _\[? for help\]_ 
+* `tutorial`: input helper message _\[? for help\]_
 
 ```text
 {
@@ -140,7 +140,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-* `items`: list of input variable options. 
+* `items`: list of input variable options.
 
 ```text
 {
@@ -158,7 +158,7 @@ In case of fields without a default value, the flag will keep asking for this in
 * `cache`:  saves former input values.
   * `active`: if cache is enabled or not.
   * `qty`: amount of values to store.
-  * `newLabel`: text appearing on the CLI asking for a new input. 
+  * `newLabel`: text appearing on the CLI asking for a new input.
 
 ```text
 {
@@ -198,7 +198,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-* `pattern`: configure an input value validation. 
+* `pattern`: configure an input value validation.
   * `regex`: The regex pattern to validate the input.
   * `mismatchText`: error message when input doesn't match the regex pattern
 
@@ -213,6 +213,12 @@ In case of fields without a default value, the flag will keep asking for this in
       }
 }
 ```
+
+{{% alert color="warning" %}}
+
+The **`dynamic input`** type will be **depreciated** in the **next releases**.
+
+{{% /alert %}}
 
 * `requestInfo`: configuration to get dynamic input type.
   * `url`: URL to consume a GET service that will return a list of objects.
@@ -250,7 +256,7 @@ Each formula can contain as many inputs as necessary, as well as any association
         "WINDOWS"
       ],
       "required": true,
-      "tutorial": "Select a System from the list."   
+      "tutorial": "Select a System from the list."
     },
     {
       "condition": {
@@ -271,7 +277,7 @@ Each formula can contain as many inputs as necessary, as well as any association
         "mismatchText": "Invalid option"
       },
       "required": false,
-      "tutorial": "Select an Linux Operating System from the list."   
+      "tutorial": "Select an Linux Operating System from the list."
     }
   ]
 ```
