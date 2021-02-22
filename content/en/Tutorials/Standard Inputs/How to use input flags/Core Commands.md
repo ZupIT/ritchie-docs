@@ -17,6 +17,20 @@ This flags are supported since Ritchie's 2.8 release.
 
 ### Available flags
 
+### Configuration commands
+
+rit tutorial
+
+```text
+rit tutorial --enabled=true
+```
+
+rit set formula-runner
+
+```text
+rit set formula-runner --runner=docker|local
+```
+
 ### Credentials commands
 
 rit set credential 

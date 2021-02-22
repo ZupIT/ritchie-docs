@@ -45,6 +45,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 * `type`:
   * **text** \(string\),
   * **bool** \(boolean\),
+  * **list** \(espera uma lista de itens\),
   * **password** \(string escondida no CLI\),
   * **credentials** __\(tipo específico, veja mais sobre [**aqui**](https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs)\)
   * **dynamic** \(associado  ao campo opcional`request_info`\)

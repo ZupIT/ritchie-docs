@@ -10,11 +10,12 @@ description: 'In this section, you will find the list of Ritchie''s main command
 
 ### **Configuration commands**
 
-| Commands | Operation |
-| :--- | :--- |
+| Commands | Operation | Flags |
+| :--- | :--- | :--- |
 | rit init  | initialize Ritchie before use |
 | rit upgrade | upgrade to the last Ritchie stable version |
-| rit tutorial  | enable or disable the tutorial |
+| rit tutorial  | enable or disable the tutorial | `--enabled=false` |
+| rit set formula-runner | configures the runtime to execute via docker or locally | `--runner=docker` |
 | rit --version | return Ritchie currently installed version |
 
 ### Repo commands 

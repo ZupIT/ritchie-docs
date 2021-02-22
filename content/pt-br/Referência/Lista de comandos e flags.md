@@ -10,11 +10,12 @@ description: 'Nesta seção, você encontrará uma lista com principais comandos
 
 ### Comandos de Configuração
 
-| Comandos | Operação |
-| :--- | :--- |
+| Comandos | Operação | Flags
+| :--- | :--- | :---|
 | rit init  | inicia o Ritchie antes de usar |
 | rit upgrade | upgrade da última versão estável do Ritchie  |
-| rit tutorial  | habilita ou desabilita o tutorial  |
+| rit tutorial  | habilita ou desabilita o tutorial  | `--enabled=false` |
+| rit set formula-runner | configura o runtime para executar via docker ou localmente | `--runner=docker` |
 | rit --version | retorna qual a versão atual instalada do Ritchie |
 
 ### Comandos de Repositórios 

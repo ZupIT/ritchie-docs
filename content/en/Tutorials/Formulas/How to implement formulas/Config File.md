@@ -43,6 +43,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 * `type`:
   * **text** \(string\),
   * **bool** \(boolean\),
+  * **list** \(expects an items list\),
   * **password** \(hidden string on CLI\),
   * **credentials** _\(specific type, learn more informations_ [_**here**_](https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs)_\),_
   * **dynamic** _\(associated with the optional `request_info` field below\),_
