@@ -19,7 +19,7 @@ Estas flags estão disponíveis a partir da versão 2.8 do Ritchie.
 
 ### Comandos de Credenciais
 
-rit set credential 
+rit set credential
 
 ```text
 rit set credential --provider=github --fields=username,token --values=Dennis,123456
@@ -47,7 +47,7 @@ rit delete env --env=prod
 
 ### Comandos de Repo
 
-rit add repo 
+rit add repo
 
 ```text
 rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
@@ -57,4 +57,4 @@ rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/rit
 
 Quando não é passada a flag de versão, o ritchie busca automaticamente a última versão
 
-{{% /alert %}} 
+{{% /alert %}}

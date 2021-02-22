@@ -30,18 +30,18 @@ rit tutorial
 echo '{"tutorial":"enabled"}' | rit tutorial --stdin
 ```
 
-### Repo commands 
+### Repo commands
 
 rit add repo
 
 ```text
-echo '{"provider":"Github", "name":"repoName", "version":"2.2.0", "url":"https://github.com/ZupIT/ritchie-formulas", "token": null, "priority":1}' | rit add repo --stdin
+echo '{"provider":"Github", "name":"repoName", "repoUrl":"https://github.com/ZupIT/ritchie-formulas", "token": null, "priority":1, "tag"="2.2.0"}' | rit add repo --stdin
 ```
 
 rit update repo
 
 ```text
-echo '{"name":"repoName", "version":"2.2.0"}' | rit update repo --stdin
+echo '{"name":"repoName", "tag":"2.2.0"}' | rit update repo --stdin
 ```
 
 rit delete repo
@@ -50,7 +50,7 @@ rit delete repo
 echo '{"name":"repoName"}' | rit delete repo --stdin
 ```
 
-### Formula commands 
+### Formula commands
 
 rit create formula
 
@@ -58,7 +58,7 @@ rit create formula
 echo '{"formula":"rit demo create formula", "lang":"shell", "workspacePath":"/users/dennis/home/ritchie-formulas", "formulaPath":"/demo/create/formula"}' | rit create formula --stdin
 ```
 
-rit build formula 
+rit build formula
 
 {{% alert color="danger" %}}
 Not supported yet
