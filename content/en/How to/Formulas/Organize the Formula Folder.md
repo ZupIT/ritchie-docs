@@ -1,7 +1,7 @@
 ---
 title: Organize the formula folder
 weight: 33
-description: 'In this section, you will find how to organize Ritchie's formula folder.'
+description: In this section, you will find how to organize Ritchie's formula folder.
 ---
 
 ---

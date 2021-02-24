@@ -1,5 +1,5 @@
 ---
-title: "Hello World" formula
+title: Hello World formula
 weight: 25
 description: >-
   You will find in this section how to run a "hello-world" formula..
