@@ -18,7 +18,7 @@ With that in mind, we bring a tool to the community that promotes a **NoOps** mo
 
 In that way, professionals - on all fronts - gain time to work on more complex and relevant tasks to generate value for their project.
 
-![Demonstration of a formula following the NoOps mindset](/docs/rit-demo-deploy-project%20%281%29%20%281%29.gif)
+![](/docs/rit-demo-deploy-project%20%281%29%20%281%29.gif)
 
 ## **What makes Ritchie different?**
 

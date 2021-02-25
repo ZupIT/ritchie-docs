@@ -26,7 +26,7 @@ Then, you'll have to inform those inputs before running the formula:
 
 Example: `rit demo create formula`
 
-![Example of running rit create formula command](/docs/rit_create_formula_demo.gif)
+![](/docs/rit_create_formula_demo.gif)
 
 ### **Step 2: Test your formula** 
 
@@ -34,7 +34,7 @@ You can test the formula directly after its creation. That's possible because  t
 
 In that case, the formula **"Hello World" template** will be executed as shown below:
 
-![Exemplo demo de f&#xF3;rmula &quot;Hello-World&quot;](/docs/rit_demo_hello-world_hd.gif)
+![](/docs/rit_demo_hello-world_hd.gif)
 
 This template is composed of 4 **inputs parameters**, that represents the currently available kinds of inputs to use Ritchie:
 

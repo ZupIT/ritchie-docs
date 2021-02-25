@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Overview
 weight: 24
 description: 'In this section, you will find a path to how run formulas using Ritchie.'
 ---

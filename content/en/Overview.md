@@ -22,7 +22,7 @@ Currently, Ritchie has **two available versions**. On this documentation, we'll 
 
 
 
-## **How does Ritchie work?
+## **How does Ritchie work?**
 
 In Ritchie's context, everything works trhough **formulas**!
 
