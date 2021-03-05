@@ -25,7 +25,7 @@ Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inpu
 
 ### 2. Execução
 
-Ao [**implementar uma fórmula**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-implementar-fórmulas/), você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.
+Ao [**implementar uma fórmula**](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/), você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.
 
 A linha de comando da fórmula encapsulada deve ser executada utilizando **Standard Inputs** e informando os seus parâmetros de entradas diretamente no código.
 

@@ -78,7 +78,7 @@ rit completion bash > ~/.rit_completion
 source ~/.rit_completion​
 ```
 
-### Setting environment variables \(Windows\) <a id="setting-environment-variables-windows"></a>
+### **Setting environment variables \(Windows\)**
 
 For this operating system, you need to call rit on the terminal directly from rit.exe \(**rit.exe login** command for example\)
 

@@ -12,7 +12,7 @@ description: >-
 
 Neste tutorial, a ideia é criar uma fórmula que vai **retornar a ferramenta selecionada pelo usuário de acordo com seu perfil**. 
 
-> Você encontrará todas as informações necessárias na seção do tutorial [**relacionada ao arquivo config.json**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-implementar-fórmulas/pasta-de-fórmula/).
+> Você encontrará todas as informações necessárias na seção do tutorial [**relacionada ao arquivo config.json**](/docs-ritchie/pt-br/como/fórmulas/arquivo-config/).
 
 {{% alert color="info" %}}
 Sugestão de comando: **`rit get tools`**
@@ -45,4 +45,4 @@ Se você quiser aprimorar sua fórmula, é possível configurá-la para que ela:
 
 ## Próximos passos 
 
-👉 Se você completou o terceiro desafio, vamos para o [**desafio nível 4**](/docs-ritchie/content/pt-br/nivel-4-encapsulamento)!
+👉 Se você completou o terceiro desafio, vamos para o [**desafio nível 4**](/docs-ritchie/pt-br/desafios/nível-4-encapsulamento/)!

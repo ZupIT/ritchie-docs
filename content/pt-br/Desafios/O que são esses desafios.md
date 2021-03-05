@@ -14,11 +14,10 @@ O objetivo desta seção é ajuda você a entender melhor o passo a passo de div
 
 Para realizar os desafios que estão propostos nas próximas páginas, você precisa entender os seguintes conceitos: 
 
-1. [**Como executar fórmulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-executar-fórmulas/)
-2. [**Como criar fórmulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-criar-fórmulas/)
-3. [**Como implementar fórmulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-implementar-fórmulas/)
-4. [**Como "buildar" fórmulas**](/docs-ritchie/tutorials/formulas/how-to-build-formulas/)
-5. [**Como encapsular formulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-encapsular-fórmulas/)
+1. [**Como executar fórmulas**](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/visao-geral/)
+2. [**Como criar fórmulas**](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/)
+3. [**Como "buildar" fórmulas**](/docs-ritchie/tutorials/formulas/how-to-build-formulas/)
+4. [**Como encapsular formulas**](/docs-ritchie/pt-br/como/fórmulas/encapsular-fórmulas/)
 
 ### Desafios 
 

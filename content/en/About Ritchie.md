@@ -13,8 +13,10 @@ Ritchie's objective is to improve the developer’s experience, bringing them mo
 Despite the number of multidisciplinary teams in the market, a great challenge still is to reduce the dependence that developers have on inputs coming from the infrastructure and operations teams. **DevOps** did a lot to remedy this bottleneck, but it did not completely eliminate the dependency between areas.
 
 {{% alert color="warning" %}}
+
 With that in mind, we bring a tool to the community that promotes a **NoOps** movement, a solution that automates repetitive operations and streamlines processes \(also known as toil\) that are often hampered in the infrastructure. This will give developers the ability to perform operations that were exclusively the infrastructure's domain.
 {{% /alert %}}
+
 
 In that way, professionals - on all fronts - gain time to work on more complex and relevant tasks to generate value for their project.
 

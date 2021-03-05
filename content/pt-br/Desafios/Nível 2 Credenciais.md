@@ -42,4 +42,4 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 
 ## **Próximos passos**
 
-👉 Se você completou o segundo desafio, vamos para o [**desafio nível 3**](/docs-ritchie/content/pt-br/nivel-3-inputs-condicionais)!
+👉 Se você completou o segundo desafio, vamos para o [**desafio nível 3**](/docs-ritchie/pt-br/desafios/nível-3-inputs-condicionais/)!

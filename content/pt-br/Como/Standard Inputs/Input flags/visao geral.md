@@ -1,5 +1,5 @@
 ---
-title: Introdução
+title: Visão Geral
 weight: 74
 description: Nesta seção, você vai encontrar mais detalhes sobre as input flags
 
@@ -16,4 +16,4 @@ Nesse caso, os parâmetros de entrada precisam ser informados seguindo o padrão
 
 Você pode usar as regras do input flags em: 
 
-👉 [**Comandos de fórmulas**](/docs/pt-br/tutoriais/standard-inputs/como-usar-input-flags/comandos-de-fórmulas.md)
+👉 [**Comandos de fórmulas**](/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-de-fórmulas/)

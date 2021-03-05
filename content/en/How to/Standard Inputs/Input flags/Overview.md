@@ -20,4 +20,4 @@ RIT (GROUP) VERB NOUN`
 
 You can use this stdin flag rules on:
 
-👉 [**Formulas commands**](/docs/en/tutorials/standard-inputs/fomulas-commands.md)
+👉 [**Formulas commands**](/docs-ritchie/how-to/standard-inputs/input-flags/formulas-commands/)
