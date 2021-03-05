@@ -22,7 +22,7 @@ This file is also where the formula functions, manipulating the input parameters
 
 In our examples below, there is always an existing `formula` class with a `Run()` function.
 
-{{< tabs name="T1" >}}
+{{< tabs id="T1" >}}
 {{% tab name="main.go" %}}
 ```text
 func main() {

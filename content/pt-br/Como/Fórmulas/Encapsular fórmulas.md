@@ -20,7 +20,7 @@ A seguir, veja como você pode fazer esse processo de encapsulamento:
 
 Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inputs**. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:
 
-👉 [**Standard Inputs**](/docs/pt-br/tutoriais/standard-inputs)
+👉 [**Standard Inputs**](/docs-ritchie/pt-br/como/standard-inputs/input-flags/visao-geral/)
 
 
 ### 2. Execução
@@ -68,6 +68,6 @@ Dependendo da operação, os **`inputs flags`** do comando podem ser gerados de 
 
 Nessa seção, você viu como funciona o encapsulamento de fórmulas no Ritchie.  Para continuar lendo sobre os comandos do Ritchie:
 
-👉 Cheque os[ **desafios**](/docs-ritchie/pt-br/desafios/) que criamos para você praticar as diversas funcionalidades do Ritchie.
+👉 Cheque os [ **desafios**](/docs-ritchie/pt-br/desafios/) que criamos para você praticar as diversas funcionalidades do Ritchie.
 
 👉 Cheque a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) para ver as automações disponíveis no repo da nossa comunidade.

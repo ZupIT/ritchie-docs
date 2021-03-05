@@ -6,7 +6,7 @@ description: Nesta seção, você vai encontrar mais informações sobre o arqui
 
 ---
 
-## O que é um arquivo main \(main file\)? <a id="what-is-the-main-file"></a>
+## O que é um arquivo main \(main file\)?
 
 {{% alert color="info" %}}
 
@@ -18,11 +18,11 @@ _Os parâmetros de entrada são extraídos pelo nome do campo informado no arqui
 
 Esse arquivo é também onde estão as funções da fórmula, manipulando parâmetros de entrada, que são chamados para realizar uma operação e/ou automação da fórmula. 
 
-### Exemplos de arquivo Main <a id="main-file-examples"></a>
+### Exemplos de arquivo Main 
 
 Nos exemplos abaixo, sempre há a classe de uma fórmula com uma função `Run()` .
 
-{{< tabs name="T1" >}}
+{{< tabs id="T1" >}}
 {{% tab name="main.go" %}}
 ```text
 	input2 := os.Getenv("INPUT_LIST")
