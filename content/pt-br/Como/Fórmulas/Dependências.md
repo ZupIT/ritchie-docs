@@ -17,7 +17,9 @@ Cada linguagem de programação possui suas próprias especificidades para **imp
 
 No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente. Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar.
 
-{{< tabs name="T2" >}}
+
+
+{{< tabs id="T2" >}}
 {{% tab name="go.mod \(GOLANG\)" %}}
 ```text
 module formula

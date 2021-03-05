@@ -24,6 +24,6 @@ Nesse caso, os parâmetros de entrada devem ser informados em um **formato JSON*
 
 Você pode usar essas regras da flag stdin em:
 
-👉 [**Comandos Core**](/docs/pt-br/como-usar-input-flags/comandos-core.md)
+👉 [**Comandos Core**](/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-core/)
 
-👉 [**Comandos de fórmulas**](/docs/pt-br/como-usar-input-flags/comandos-de-formulas.md)
+👉 [**Comandos de fórmulas**](/docs-ritchie/pt-br/como/standard-inputs/flag-stdin/comandos-de-fórmulas/)

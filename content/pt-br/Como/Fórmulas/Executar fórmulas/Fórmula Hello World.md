@@ -9,9 +9,10 @@ description: >-
 
 ## Hello World
 
-{{%/* alert color="warning" %}}
-  Premissa: Depois de finalizar os passos anteriores -  instalação e inicialização -,  para acessar a fórmula hello world para testar o Ritchie, será necessário adicionar o repositório [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) localmente.
-{{% /alert */%}}
+{{% alert color="info" %}}
+ Premissa: Depois de finalizar os passos anteriores -  instalação e inicialização -,  para acessar a fórmula hello world para testar o Ritchie, será necessário adicionar o repositório [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) localmente.
+{{% /alert %}}
+
 
 Para fazer isso, você pode usar o comando **`rit add repo`** , ou executar a linha de comando abaixo:
 
@@ -19,9 +20,9 @@ Para fazer isso, você pode usar o comando **`rit add repo`** , ou executar a li
 rit add repo --provider=Github --name=demo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1
 ```
 
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
   É possível ainda verificar os repositórios estão sendo usados executando o comando **`rit list repo`**.
-{{% /alert */%}}
+{{% /alert %}}
 
 Agora que você adicionou o repositório de demo, você pode executar os comandos desse tutorial.
 
@@ -47,9 +48,9 @@ Para isso, escreva um dos comandos abaixo:
 ### Caso 1: Usando Prompt
 
 
-{{%/* alert color="warning" %}}
+{{% alert color="info" %}}
   Como essa fórmula  foi desenvolvida usando Golang, é preciso ter Golang instalado para conseguir  executá-la localmente.
-{{% /alert */%}}
+{{% /alert %}}
 
 
 ```text
@@ -70,10 +71,10 @@ Você pode rodar o mesmo comando usando a flag **--docker** para executar a fór
 rit demo hello-world --docker
 ```
 
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
   O Docker precisa estar instalado e iniciado para conseguir executar comandos usando essa flag.
 Nesse caso, não é necessário ter Golang instalado.
-{{% /alert */%}}
+{{% /alert %}}
 
 ### Caso 3: Usando Input Flags
 
@@ -101,9 +102,9 @@ rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_inpu
 ```text
 echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"everything", "rit_input_password":"Ritchie"}' | rit demo hello-world --stdin
 ```
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
   Ritchie usa o formato **JSON** para executar comandos STDIN.
-{{% /alert */%}}
+{{% /alert %}}
 
 ### Caso 6: Usando Stdin
 
@@ -113,16 +114,16 @@ Quando são usadas as 2 flags --stdin e --docker, é possível executar o comand
 ```text
 echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"everything", "rit_input_password":"Ritchie"}' | rit demo hello-world --stdin --docker
 ```
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
   Dê uma olhada nas fórmulas da comunidade [**(ex: ritchie-formulas)**](https://github.com/ZupIT/ritchie-formulas). 
 A maioria das fórmulas tem um arquivo [**README**](https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world) explicando como executar a fórmula e para que ela serve.
-{{% /alert */%}}
+{{% /alert %}}
 
 Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar aprendendo:
 
 - Confira agora as fórmulas que você tem acesso usando o comando: 
 
 
-- Veja como [**criar suas fórmulas** ](/docs-ritchie/pt-br/tutoriais/fórmulas/como-criar-fórmulas/).
+- Veja como [**criar suas fórmulas** ](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/).
 
 

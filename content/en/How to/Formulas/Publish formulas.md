@@ -45,7 +45,7 @@ The user has to inform 5 different kinds of inputs:
 4. The **`local repository path`** you wish to publish
 5. The **`release version`** to generate
 
-![rit publish repo command](/docs/rit-publish-repo.gif)
+![](/docs/rit-publish-repo.gif)
 
 {{% alert color="warning" %}}
 

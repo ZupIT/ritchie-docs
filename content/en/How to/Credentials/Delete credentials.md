@@ -22,6 +22,6 @@ Check out how the process works:
 
 On this section, you saw how to delete a credential on Ritchie. If you want to keep reading: 
 
-👉 Go to [**how to add providers**](/docs-ritchie/tutorials/credentials/how-to-add-providers/) section to keep configuring your credentials.
+👉 Go to [**how to add providers**](/docs-ritchie/how-to/credentials/add-providers/) section to keep configuring your credentials.
 
 👉 Check out the [**list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/) available on Ritchie.

@@ -51,6 +51,6 @@ All formulas templates contain a **Dockerfile** which creates a container with *
 
 On this section, you saw how to run a formula on Ritchie. To keep learning:
 
-👉 Go to [**Hello World formula**](hello-world-formula) to see different ways to run a formula on Ritchie. 
+👉 Go to [**Hello World formula**](/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/) to see different ways to run a formula on Ritchie. 
 
-👉 Go to the [**create formulas**](/docs-ritchie/tutorials/formulas/how-to-create-formulas/) section to understand how to create your first automation with Ritchie.
+👉 Go to the [**create formulas**](/docs-ritchie/how-to/formulas/create-formulas/) section to understand how to create your first automation with Ritchie.

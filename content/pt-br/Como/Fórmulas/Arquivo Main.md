@@ -22,7 +22,7 @@ Esse arquivo é também onde estão as funções da fórmula, manipulando parâm
 
 Nos exemplos abaixo, sempre há a classe de uma fórmula com uma função `Run()` .
 
-{{< tabs name="T1" >}}
+{{< tab name="T1" >}}
 {{% tab name="main.go" %}}
 ```text
 	input2 := os.Getenv("INPUT_LIST")

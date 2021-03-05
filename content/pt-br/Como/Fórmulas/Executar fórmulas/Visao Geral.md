@@ -21,7 +21,7 @@ Vale reforçar que **método de execução de fórmulas padrão** é escolhido d
 rit set formula-runner
 ```
 
-![Comando rit set formula-runner](/docs/large-gif-1374x404-.gif)
+![](/docs/large-gif-1374x404-.gif)
 
 ### 1. Execução local
 
@@ -34,10 +34,9 @@ Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado**
 
 Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o **`DOCKER`** esteja instalado e iniciado.
 
-{{%/* alert color="info" %}}
-Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](formula-hello-world) para ver como isso funciona na prática.
-{{% /alert */%}}
-
+{{% alert color="info" %}}
+Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/fórmula-hello-world/) para ver como isso funciona na prática.
+{{% /alert %}}
 
 
 ### 3. Local & Docker Flags
@@ -49,14 +48,15 @@ Para ver melhor como essa execução funciona na prática, confira a [**seção 
 
 ### 4. Containers com Ritchie
 
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
 Todos os templates de formulas contém um arquivo **DockerFile** que cria um container com **Ritchie CLI** instalado.
-{{% /alert */%}}
+{{% /alert %}}
+
 
 ## Próximos passos 
 
 Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:
 
-👉 Vá para página [**Fórmula Hello World**](formula-hello-world) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
+👉 Vá para página [**Fórmula Hello World**](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/fórmula-hello-world/) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
 
-👉 Vá para página [**como criar fórmulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-criar-fórmulas/) para entender o passo a passo para criar sua primeira automação usando o Ritchie.
+👉 Vá para página [**como criar fórmulas**](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/) para entender o passo a passo para criar sua primeira automação usando o Ritchie.

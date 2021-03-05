@@ -46,4 +46,4 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 
 ## **Próximos passos**
 
-👉 Se você completou o primeiro desafio, vamos para o[ **desafio nível 2**](/docs-ritchie/content/pt-br/nivel-2-credenciais)!
+👉 Se você completou o primeiro desafio, vamos para o[ **desafio nível 2**](/docs-ritchie/pt-br/desafios/nível-2-credenciais/)!

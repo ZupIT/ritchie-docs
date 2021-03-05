@@ -18,7 +18,7 @@ To use Ritchie on MacOs with version **`2.0.5 and earlier`**, we recommend to in
 {{% alert color="warning" %}}
 To install *5sum** with _**Homebrew**_ , use: `brew install5sha1sum`
 
-To install *5sum** with _**MacPorts**_ , use: `sudo port install5sha1sum`
+To install **5sum** with _**MacPorts**_ , use: `sudo port install5sha1sum`
 {{% /alert %}}
 
 ## Step 1: Installing command
