@@ -18,13 +18,13 @@ rit create formula
 
 Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
-1. O **comando** \(de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**](https://docs.ritchiecli.io/v/v2.0-pt/key-concepts#arvore-de-comando)\).
+1. O **comando** \(de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**](/docs-ritchie/pt-br/principais-conceitos/#árvore-de-comando)\).
 2. A **linguagem de programação** da fórmula. 
 3. **O caminho (path)** para salvar os arquivos da fórmula. 
 
 Exemplo: `rit demo create formula`
 
-![Exemplo de execu&#xE7;&#xE3;o do comando rit create formula](/docs/rit_create_formula_demo.gif)
+![](/docs/rit_create_formula_demo.gif)
 
 ### **Passo 2: Teste sua fórmula** 
 
@@ -32,7 +32,7 @@ Você pode testar diretamente a fórmula depois de sua criação. Isso é possí
 
 Nesse caso, o template da formula **"Hello World"** será executado como mostrado abaixo: 
 
-![Exemplo demo de f&#xF3;rmula &quot;Hello-World&quot;](/docs/rit_demo_hello-world_hd.gif)
+![](/docs/rit_demo_hello-world_hd.gif)
 
 Este template é composto por **3 parâmetros de entrada**, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:
 

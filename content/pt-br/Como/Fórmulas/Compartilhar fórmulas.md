@@ -22,7 +22,7 @@ rit add repo
 
 Uma vez que o repositório for adicionado, o Ritchie irá usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.
 
-![rit add repo command demonstration](/docs/rit-add-repo-3.gif)
+![](/docs/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
 
@@ -76,6 +76,6 @@ rit update repo
 
 Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:
 
-👉 Vá para página [**manipular credenciais**](/docs-ritchie/pt-br/como/credenciais/definir-credenciais/) e veja como rodar esse comando com suas fórmulas.
+👉 Vá para página [**definir credenciais**](/docs-ritchie/pt-br/como/credenciais/definir-credenciais/) e veja como rodar esse comando com suas fórmulas.
 
 👉 Vá para página de [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) para ver as automações disponíveis no repositório da nossa comunidade.

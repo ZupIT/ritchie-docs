@@ -36,7 +36,7 @@ Você pode encontrar todos os [**templates de linguagens**](https://github.com/Z
 
 ### Exemplos de pastas de fórmulas 
 
-{{< tabs id="T0" >}}
+{{< tabs id="T" >}}
 {{% tab name="Golang" %}}
 ![](/docs/go%20%281%29%20%281%29%20%281%29.png)
 
