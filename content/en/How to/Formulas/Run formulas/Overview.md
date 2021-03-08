@@ -31,7 +31,7 @@ Example: a formula written in **Node** will need **Node installed** on the compu
 All formulas can run regardless the programming language used from the moment you have **`DOCKER`** installed and running.
 
 {{% alert color="info" %}}
-Check out on the following example [**how to run a "Hello World" formula** ](hello-world-formula)
+Check out on the following example [**how to run a "Hello World" formula** ](/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/)
 {{% /alert %}}
 
 ###  3. Local & Docker Flags
