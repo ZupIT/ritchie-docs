@@ -123,6 +123,6 @@ In this section, you saw how to run formulas on Ritchie. To keep learning:
 - Check which formulas you can run using the following command:
 
 
-- See how [**create formula** ](/docs-ritchie/tutorials/formulas/how-to-create-formulas/).
+- See how to [**create formula** ](/docs-ritchie/how-to/formulas/create-formulas/).
 
 

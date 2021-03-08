@@ -12,7 +12,7 @@ description: >-
 
 Create a formula on Ritchie that will **execute another formula inside it.**
 
-> You'll find all the informations you need in the [**how to group formulas**](/docs-ritchie/tutorials/formulas/how-to-group-formulas/) tutorial section.
+> You'll find all the informations you need in the [**how to group formulas**](/docs-ritchie/how-to/formulas/group-formulas/) tutorial section.
 
   
 The idea is to group at least 2 formulas inside another one: 
