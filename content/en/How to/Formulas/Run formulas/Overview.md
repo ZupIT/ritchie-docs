@@ -34,6 +34,19 @@ All formulas can run regardless the programming language used from the moment yo
 Check out on the following example [**how to run a "Hello World" formula** ](/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/)
 {{% /alert %}}
 
+{{% alert color="warning" %}}
+ 
+ **Docker user on MacOS:** 
+To avoid the **'Error: exit status 1'**, you have to **disable** the Cloud Experience, depending on your version.
+ 
+See how: 
+Access on Docker:
+ -  Preferences > Command Line> Enable cloud experience.
+ 
+ ![](/docs-ritchie/static/ritchiedocker.PNG)
+ 
+{{% /alert %}}
+
 ###  3. Local & Docker Flags
 
 You can force Ritchie CLI to execute a formula with a specific method using flags.

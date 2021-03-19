@@ -38,6 +38,18 @@ Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde q
 Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/fórmula-hello-world/) para ver como isso funciona na prática.
 {{% /alert %}}
 
+{{% alert color="warning" %}}
+ 
+ **Usuários do Docker no MacOS:** 
+Para evitar o **'Error: exit status 1'**, é preciso **desativar** o Cloud Experience, dependendo da sua versão. 
+
+Veja como: 
+Acesse no Docker:
+ -  Preferences > Command Line>  Enable cloud experience.
+
+ ![](/docs-ritchie/static/ritchiedocker.PNG)
+
+{{% /alert %}}
 
 ### 3. Local & Docker Flags
 
