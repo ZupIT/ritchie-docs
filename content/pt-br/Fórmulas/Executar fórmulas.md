@@ -1,5 +1,5 @@
 ---
-title: Visão Geral
+title: Executar fórmulas 
 weight: 24
 description: >-
   Nesta seção, você vai encontrar como executar fórmulas no
@@ -35,7 +35,7 @@ Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado**
 Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o **`DOCKER`** esteja instalado e iniciado.
 
 {{% alert color="info" %}}
-Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/fórmula-hello-world/) para ver como isso funciona na prática.
+Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/) para ver como isso funciona na prática.
 {{% /alert %}}
 
 {{% alert color="warning" %}}

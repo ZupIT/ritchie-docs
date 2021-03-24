@@ -1,5 +1,5 @@
 ---
-title: Linux
+title: Instalação do CLI para Linux
 weight: 8
 description: 'Nesta seção, você verá como instalar o Ritchie para Linux.'
 ---
@@ -23,7 +23,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**](/docs-ritchie/pt-br/primeiros-passos/instalação-do-cli/instalação-manual/)
+Se preferir, você também pode seguir com a [**instalação manual**](/docs-ritchie/pt-br/primeiros-passos/instalação-manual/)
 {{% /alert %}}
 
 ## Passo 2: Verifique a instalação 

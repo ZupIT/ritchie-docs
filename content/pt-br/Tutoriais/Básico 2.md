@@ -1,10 +1,10 @@
 ---
-title: Nível 2 Credenciais
+title: Básico 2
 weight: 86
 description: 'Nesta seção, você encontrará o passo a passo para usar credenciais no Ritchie.'
 ---
 
-# Nível 2: Credenciais
+# Básico 2: Credenciais
 
 ## Objetivo
 
@@ -42,4 +42,4 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 
 ## **Próximos passos**
 
-👉 Se você completou o segundo desafio, vamos para o [**desafio nível 3**](/docs-ritchie/pt-br/desafios/nível-3-inputs-condicionais/)!
+👉 Se você completou o segundo tutorial, vamos para o [**tutorial intermediário**](/docs-ritchie/pt-br/tutoriais/intermediário/)!
