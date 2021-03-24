@@ -18,10 +18,6 @@ First things first: you must install Ritchie according to your operational syste
 
 
 
-
-
-
-
 ### **2. Initialization** 
 
 Once you finished Ritchie's installation, it is necessary to initialize it. To do so,  check out more on the following  page. 
