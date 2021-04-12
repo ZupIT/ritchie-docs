@@ -43,7 +43,7 @@ You can execute your formulas locally or through Docker. Check out more in [**ru
 
 ### **How to build formulas on Ritchie?** 
 
-You can build a formula by running the `$ rit build formula` command. Check out more in [**build a formula section.**](/docs-ritchie/how-to/formulas/build-formulas/).
+When you run a formula, a build is automatically made, you don't need a command to do that.
 
 ### **How to update a formula from a repository?**
  
