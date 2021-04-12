@@ -8,7 +8,7 @@ description: 'In this section, you will find the difference between repositories
 
 Repositories and workspaces are both used to interact with formulas on Ritchie in different ways, check out the difference:
 
-**`workspace`** You can use workspace commands to code, develop, edit and test formulas.
+**`workspace`** You can use workspace commands to develop, edit and test formulas.
 
 **`repository`** You can use repository commands to download formulas and consume them.
 
