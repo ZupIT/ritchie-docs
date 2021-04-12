@@ -43,7 +43,7 @@ Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba
 
 ### **Como fazer o "build" de fórmulas no Ritchie?**
 
-Você faz o "build" da fórmula rodando o comando `$ rit build formula`. Veja mais como na [**seção build de fórmulas.**](/docs-ritchie/pt-br/como/fórmulas/buildar-formulas/).
+Ao executar uma fórmula, o 'build' é feito automaticamente, não é necessário nenhum comando para isso.
 
 ### **Como atualizar uma fórmula de um repositório?**
  
