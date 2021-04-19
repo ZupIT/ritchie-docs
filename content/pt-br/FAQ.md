@@ -30,13 +30,31 @@ Você pode seguir o passo a passo da instalação de acordo com sistema operacio
 
 Usando o comando `rit create formula` , você pode criar fórmulas usando qualquer linguagem de programação. Saiba mais na [**seção como criar fórmulas.** ](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/)
 
+### **Como criar fórmulas em um repositório existente?** 
+
+Siga os seguintes passos: 
+1. Clone o repo;
+2. Adicione o repo com o comando `rit add workspace`;
+3. Adicione e implemente a nova fórmula com o comando `rit create formula`.
+
 ### **Como executar fórmulas?**
 
 Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais na [**seção como executar fórmulas.** ](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/visao-geral/)
 
 ### **Como fazer o "build" de fórmulas no Ritchie?**
 
-Você faz o "build" da fórmula rodando o comando `$ rit build formula`. Veja mais como na [**seção build de fórmulas.**](/docs-ritchie/pt-br/como/fórmulas/buildar-formulas/)
+Ao executar uma fórmula, o 'build' é feito automaticamente, não é necessário nenhum comando para isso.
+
+### **Como atualizar uma fórmula de um repositório?**
+ 
+Siga os passos abaixo: 
+1. Clone o repositório localmente;
+2. Adicione o repo com o comando `rit add workspace` 
+3. Depois disso, atualize o workspace.
+
+### **Como executar uma fórmula de um repositório?** 
+
+Use o comando `rit add repo ` para adicionar a fórmula ao repositório. 
 
 ### **Como publicar fórmulas no Ritchie?**
 

@@ -1,5 +1,5 @@
 ---
-title: Macos
+title: Instalação do CLI para Macos
 weight: 10
 description: 'Nesta seção, você verá como instalar o Ritchie para MacOs.'
 ---
@@ -32,7 +32,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**.](/docs-ritchie/pt-br/primeiros-passos/instalação-do-cli/instalação-manual/)
+Se preferir, você também pode seguir com a [**instalação manual**.](/docs-ritchie/pt-br/primeiros-passos/instalação-manual/)
 {{% /alert %}}
 
 ###  Segunda opção

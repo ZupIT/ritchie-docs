@@ -1,5 +1,5 @@
 ---
-title: Fórmula "Hello World"
+title: Executar uma fórmula "Hello World"
 weight: 25
 description: >-
   Nesta seção, você encontrará o passo a passo para executar nosso "Hello World".

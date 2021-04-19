@@ -1,12 +1,12 @@
 ---
-title: Nível 4 Encapsulamento
+title: Avançado
 weight: 90
 description: >-
   Nesta seção, você encontrará um passo a passo para usar o conceito de
   encapsulamento de fórmula.
 ---
 
-# Nível 4: Encapsulamento
+# Avançado: Encapsulamento
 
 ## Objetivo
 
