@@ -21,4 +21,4 @@ You can use this stdin flag rules on:
 
 👉 [**Core Commands**](/docs/en/tutorials/standard-inputs/how-to-use-the-stdin-flag/core-commands.md)
 
-👉 [**Formulas Commands**](/docs/en/tutorials/standard-inputs/how-to-use-the-stdin-flag/formulas-commands.md)
+👉 [**Formulas Commands**](/docs-ritchie/how-to/standard-inputs/input-flags/formulas-commands/)

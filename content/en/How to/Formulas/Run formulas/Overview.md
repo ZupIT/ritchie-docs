@@ -30,9 +30,22 @@ Example: a formula written in **Node** will need **Node installed** on the compu
 
 All formulas can run regardless the programming language used from the moment you have **`DOCKER`** installed and running.
 
-{{%/* alert color="info" %}}
-Check out on the following example [**how to run a "Hello World" formula** ](hello-world-formula)
-{{% /alert */%}}
+{{% alert color="info" %}}
+Check out on the following example [**how to run a "Hello World" formula** ](/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/)
+{{% /alert %}}
+
+{{% alert color="warning" %}}
+ 
+ **Docker user on MacOS:** 
+To avoid the **'Error: exit status 1'**, you have to **disable** the Cloud Experience, depending on your version.
+ 
+See how: 
+Access on Docker:
+ -  Preferences > Command Line> Enable cloud experience.
+ 
+ ![](/docs-ritchie/static/ritchiedocker.PNG)
+ 
+{{% /alert %}}
 
 ###  3. Local & Docker Flags
 
@@ -43,14 +56,14 @@ You can force Ritchie CLI to execute a formula with a specific method using flag
 
 ### 4. Containers with Ritchie
 
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
 All formulas templates contain a **Dockerfile** which creates a container with **Ritchie CLI** installed.
-{{% /alert */%}}
+{{% /alert %}}
 
 ## Next steps 
 
 On this section, you saw how to run a formula on Ritchie. To keep learning:
 
-👉 Go to [**Hello World formula**](hello-world-formula) to see different ways to run a formula on Ritchie. 
+👉 Go to [**Hello World formula**](/docs-ritchie/how-to/formulas/run-formulas/hello-world-formula/) to see different ways to run a formula on Ritchie. 
 
-👉 Go to the [**create formulas**](/docs-ritchie/tutorials/formulas/how-to-create-formulas/) section to understand how to create your first automation with Ritchie.
+👉 Go to the [**create formulas**](/docs-ritchie/how-to/formulas/create-formulas/) section to understand how to create your first automation with Ritchie.

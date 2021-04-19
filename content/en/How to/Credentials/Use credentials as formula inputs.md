@@ -14,10 +14,10 @@ When used as an input, the credential will contain 2 fields:
 * The **type** is the specific nomenclature for the CLI to now which credential to use.
 
 {{% alert color="danger" %}}
-The **type** needs to respect the following pattern:**`CREDENTIAL_PROVIDER_VARIABLE`**
+The **type** needs to respect the following pattern: **`CREDENTIAL_PROVIDER_VARIABLE`**
 {{% /alert %}}
 
-For example, to be able to use **`GITHUB`** credentials as input, you need to inform them as follows in the formula's **`config.json`**file:
+For example, to be able to use **`GITHUB`** credentials as input, you need to inform them as follows in the formula's **`config.json`** file:
 
 ```text
 "inputs": [ 
@@ -53,4 +53,4 @@ github  	 default	  {"token":"***", "email":"***", "username":"***"}
 
 You saw in this section how to deal with credentials on Ritchie. 
 
-👉 Check the [**commands list**](https://app.gitbook.com/@zup-products/s/ritchie/~/drafts/-MDPWwvUtJ2ZZfV8Mw44/v/v2.0-pt/developer/lista-de-comandos) to see the available automations on our community repo.
+👉 Check the [**commands list**](/docs-ritchie/reference/list-of-commands-and-flags/) to see the available automations on our community repo.

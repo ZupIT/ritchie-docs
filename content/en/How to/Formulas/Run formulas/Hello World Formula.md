@@ -9,9 +9,10 @@ description: >-
 
 ## Hello World
 
-{{%/* alert color="warning" %}}
-  Premisse: After you finished the previous steps -installation and initialization - to access the hello-world formula to test Ritchie, you'll need to add the [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) repository locally. 
-{{% /alert */%}}
+{{% alert color="warning" %}}
+Premisse: After you finished the previous steps -installation and initialization - to access the hello-world formula to test Ritchie, you'll need to add the [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) repository locally. 
+{{% /alert %}}
+
 
 To do so, you can use the **`rit add repo`** command, or run the command line below:
 
@@ -19,9 +20,9 @@ To do so, you can use the **`rit add repo`** command, or run the command line be
 rit add repo --provider=Github --name=demo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1
 ```
 
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
   You can also check which repositories you're using with the **`rit list repo`** command.
-{{% /alert */%}}
+{{% /alert %}}
 
 Now that you have added the demo repository and check the details of the formula, you can execute this tutorial commands.
 
@@ -47,9 +48,9 @@ To do so, type the following commands lines:
 ### Case 1: With Prompt
 
 
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
   As this formula has been coded using Golang, it is necessary to have Golang installed on your computer to run it locally.
-{{% /alert */%}}
+{{% /alert %}}
 
 
 ```text
@@ -70,10 +71,10 @@ You can run the same command using the **--docker** flag pto execute it remotely
 rit demo hello-world --docker
 ```
 
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
   Docker needs to be installed and running on your computer for this flag to work.
 In that case, you won't need to have Golang installed.
-{{% /alert */%}}
+{{% /alert %}}
 
 ### Case 3: With Input Flags
 
@@ -112,16 +113,16 @@ When you combine both --stdin and --docker flags, it is also possible to run a c
 ```text
 echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"everything", "rit_input_password":"Ritchie"}' | rit demo hello-world --stdin --docker
 ```
-{{%/* alert color="info" %}}
+{{% alert color="info" %}}
   Take a look at the formulas repositories [**(ex: ritchie-formulas)**](https://github.com/ZupIT/ritchie-formulas). 
 Most of the community formulas are composed of a [**README**](https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world) explaining what the command does and how to run it.
-{{% /alert */%}}
+{{% /alert %}}
 
 In this section, you saw how to run formulas on Ritchie. To keep learning: 
 
 - Check which formulas you can run using the following command:
 
 
-- See how [**create formula** ](/docs-ritchie/tutorials/formulas/how-to-create-formulas/).
+- See how to [**create formula** ](/docs-ritchie/how-to/formulas/create-formulas/).
 
 

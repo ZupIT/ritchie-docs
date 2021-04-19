@@ -15,11 +15,10 @@ The objective of this section is to help users to understand step by step severa
 
 To perform the tasks in this section, it will be necessary to understand the following concepts:
 
-1. [**How to run formulas**](/docs-ritchie/tutorials/formulas/how-to-run-formulas/)
-2. [**How to create formulas**](/docs-ritchie/tutorials/formulas/how-to-create-formulas/)
-3. [**How to implement formulas**](/docs-ritchie/tutorials/formulas/how-to-implement-formulas/)
-4. [**How to build formulas**](/docs-ritchie/tutorials/formulas/how-to-build-formulas/)
-5. [**How to group formulas**](/docs-ritchie/tutorials/formulas/how-to-group-formulas/)
+1. [**How to run formulas**](/docs-ritchie/how-to/formulas/run-formulas/overview/)
+2. [**How to create formulas**](/docs-ritchie/how-to/formulas/create-formulas/)
+3. [**How to build formulas**](/docs-ritchie/how-to/formulas/build-formulas/)
+4. [**How to group formulas**](/docs-ritchie/how-to/formulas/group-formulas/)
 
 ### Challenges 
 

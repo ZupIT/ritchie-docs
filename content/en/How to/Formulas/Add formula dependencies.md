@@ -18,7 +18,7 @@ On Ritchie, it's possible to configure each formula as an independent and small 
 
 Therefore, it will be possible to import all the necessary dependencies to perform the operations you want to implement.
 
-{{< tabs name="T2" >}}
+{{< tabs id="T2" >}}
 {{% tab name="go.mod \(GOLANG\)" %}}
 ```text
 module formula

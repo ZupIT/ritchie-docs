@@ -10,8 +10,6 @@ description: >-
 
 To **start Ritchie's installation** on your machine, follow the steps for your operating system. If you want, you can use the manual installation.
 
-
-{{%/* alert color="info" %}}
-It's optional to have Docker installed, just in case you want to [**build your formulas**](/docs-ritchie/tutorials/formulas/how-to-build-formulas/) there.
-
-{{% /alert */%}}
+{{% alert color="info" %}}
+It's optional to have Docker installed, just in case you want to [**build your formulas**](/docs-ritchie/how-to/formulas/build-formulas/) there.
+{{% /alert %}}

@@ -12,7 +12,7 @@ description: >-
 
 Create a formula on Ritchie that will **return the tool selected by the user according to its profile**.
 
-> You'll find all the information you need about the **conditional field** on the [**config.json file section**](https://docs.ritchiecli.io/how-to/implement-a-formula#1-config-json).
+> You'll find all the information you need about the **conditional field** on the [**config.json inputs**](/docs-ritchie/how-to/formulas/configure-inputs/).
 
 {{% alert color="info" %}}
 Command suggestion: **`rit get tools`**

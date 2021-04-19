@@ -38,7 +38,7 @@ On Ritchie, it is possible to check out new formula commands and if there is a n
 
 To do so, just follow these steps:
 
-1. Run the help command**`rit --help`**. The system will return a list with the group of available repositories. 
+1. Run the help command **`rit --help`**. The system will return a list with the group of available repositories. 
 
 ```text
 (new version 2.12.1) commons repo commands:
@@ -72,6 +72,6 @@ rit update repo
 
 On this section, you saw how to share a formula on Ritchie. To keep configuring the formula: 
 
-👉 Check out how to [**use credentials**](/docs-ritchie/tutorials/credentials/how-to-use-credentials-as-formula-inputs/) with your formulas.
+👉 Check out how to [**use credentials**](/docs-ritchie/how-to/credentials/use-credentials-as-formula-inputs/) with your formulas.
 
 👉 Check out our [**list of commands**](/docs-ritchie/reference/list-of-commands-and-flags/) to see the available automations on our community repo.
