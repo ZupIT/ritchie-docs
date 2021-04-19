@@ -1,5 +1,5 @@
 ---
-title: Nível 3 Inputs condicionais
+title: Intermediário
 weight: 88
 description: >-
   Nesta seção, você encontrará o passo a passo para usar inputs condicionais no

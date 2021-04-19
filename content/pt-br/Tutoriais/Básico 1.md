@@ -1,12 +1,12 @@
 ---
-title: Nível 1 Inputs
+title: Básico 1
 weight: 84
 description: >-
   Nesta seção, você encontrará o passo a passo para manipular inputs básicos no
   Ritchie.
 ---
 
-# Nível 1: Inputs
+# Básico 1: Inputs
 
 ## Objetivo
 
@@ -46,4 +46,4 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 
 ## **Próximos passos**
 
-👉 Se você completou o primeiro desafio, vamos para o[ **desafio nível 2**](/docs-ritchie/pt-br/desafios/nível-2-credenciais/)!
+👉 Se você completou o primeiro tutorial , vamos para o[ **tutorial básico 2**](/docs-ritchie/pt-br/tutoriais/básico-2/)!

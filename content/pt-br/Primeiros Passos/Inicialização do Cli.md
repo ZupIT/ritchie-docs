@@ -18,7 +18,7 @@ Esse comando vai pedir **três informações:**
 
 1. Se o usuário **quer contribuir anonimamente** as métricas do produto.
 2. Se o usuário **quer adicionar as fórmulas** da comunidade localmente.
-3. Se o usuário **quer usar o** [**método de execução de fórmulas**](/docs-ritchie/pt-br/tutoriais/fórmulas/como-executar-fórmulas/) **local ou via docker**. 
+3. Se o usuário **quer usar o** [**método de execução de fórmulas**](/docs-ritchie/pt-br/fórmulas/executar-fórmulas/) **local ou via docker**. 
 
 ![](/docs/rit-init%20%283%29.gif)
 

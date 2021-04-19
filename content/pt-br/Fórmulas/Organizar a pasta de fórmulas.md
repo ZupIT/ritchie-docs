@@ -1,5 +1,5 @@
 ---
-title: Organizar a pasta de fórmula
+title: Organizar a pasta de fórmulas
 weight: 33
 description: >-
   Nesta seção, você vai encontrar como organizar a pasta de uma fórmula no Ritchie.
