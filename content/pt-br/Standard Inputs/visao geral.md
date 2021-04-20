@@ -16,4 +16,4 @@ Nesse caso, os parâmetros de entrada precisam ser informados seguindo o padrão
 
 Você pode usar as regras do input flags em: 
 
-👉 [**Comandos de fórmulas**](/docs-ritchie/pt-br/como/standard-inputs/input-flags/comandos-de-fórmulas/)
+👉 [**Comandos de fórmulas**](/docs-ritchie/pt-br/standard-inputs/comandos-de-fórmulas/)

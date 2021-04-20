@@ -116,7 +116,7 @@ echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"
 ```
 {{% alert color="info" %}}
   Dê uma olhada nas fórmulas da comunidade [**(ex: ritchie-formulas)**](https://github.com/ZupIT/ritchie-formulas). 
-A maioria das fórmulas tem um arquivo [**README**](https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world) explicando como executar a fórmula e para que ela serve.
+A maioria das fórmulas tem um arquivo [**README**](https://github.com/ZupIT/ritchie-formulas#readme) explicando como executar a fórmula e para que ela serve.
 {{% /alert %}}
 
 Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar aprendendo:
@@ -124,6 +124,6 @@ Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar a
 - Confira agora as fórmulas que você tem acesso usando o comando: 
 
 
-- Veja como [**criar suas fórmulas** ](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/).
+- Veja como [**criar suas fórmulas** ](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/).
 
 

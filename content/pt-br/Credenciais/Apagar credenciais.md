@@ -22,6 +22,6 @@ Veja como o processo funciona:
 
 Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:
 
-👉 Vá para seção  [**como adicionar provedores** ](/docs-ritchie/pt-br/como/credenciais/adicionar-provedores/) e, assim, continuar configurando suas credenciais. 
+👉 Vá para seção  [**como adicionar provedores** ](/docs-ritchie/pt-br/credenciais/adicionar-provedores/) e, assim, continuar configurando suas credenciais. 
 
 👉 Conheça a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.

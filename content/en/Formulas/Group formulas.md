@@ -24,7 +24,7 @@ To group formulas, it is necessary to use **Standard Inputs**. On the following 
 
 ### 2. Execution <a id="2-execution"></a>
 
-When [**implementing a formula**](/docs-ritchie/how-to/formulas/configure-inputs/), the file where the operation is coded needs to execute a command line associated to a formula.‌
+When [**implementing a formula**](/docs-ritchie/formulas/configure-inputs/), the file where the operation is coded needs to execute a command line associated to a formula.‌
 
 The grouped formula command line needs to be executed using **Standard Inputs**, which means informing the inputs parameters directly on the code.‌
 

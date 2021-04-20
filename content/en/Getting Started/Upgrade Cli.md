@@ -1,6 +1,7 @@
 ---
 title: Upgrade CLI
 weight: 19
+description: 'In this section, you will find how upgrade CLI.'
 ---
 
 ---
