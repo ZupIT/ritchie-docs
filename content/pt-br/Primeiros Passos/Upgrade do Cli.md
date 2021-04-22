@@ -1,6 +1,7 @@
 ---
 title: Upgrade do CLI
 weight: 19
+description: 'Nesta seção, você verá como fazer o upgrade do CLI.'
 ---
 
 ---

@@ -102,9 +102,9 @@ You can also run the command with the **`--stdin`** (Standard input) flag. This 
 ```text
 echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"everything", "rit_input_password":"Ritchie"}' | rit demo hello-world --stdin
 ```
-{{%/* alert color="warning" %}}
+{{% alert color="warning" %}}
   Ritchie uses the **JSON** format to execute STDIN commands
-{{% /alert */%}}
+{{% /alert %}}
 
 ### Case 6: With Stdin and Docker
 
@@ -115,7 +115,7 @@ echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"
 ```
 {{% alert color="info" %}}
   Take a look at the formulas repositories [**(ex: ritchie-formulas)**](https://github.com/ZupIT/ritchie-formulas). 
-Most of the community formulas are composed of a [**README**](https://github.com/ZupIT/ritchie-formulas/tree/master/demo/hello-world) explaining what the command does and how to run it.
+Most of the community formulas are composed of a [**README**](https://github.com/ZupIT/ritchie-formulas#readme) explaining what the command does and how to run it.
 {{% /alert %}}
 
 In this section, you saw how to run formulas on Ritchie. To keep learning: 

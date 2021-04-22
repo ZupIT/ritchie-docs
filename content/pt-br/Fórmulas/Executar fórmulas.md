@@ -69,6 +69,6 @@ Todos os templates de formulas contém um arquivo **DockerFile** que cria um con
 
 Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:
 
-👉 Vá para página [**Fórmula Hello World**](/docs-ritchie/pt-br/como/fórmulas/executar-fórmulas/fórmula-hello-world/) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
+👉 Vá para página [**Fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
 
-👉 Vá para página [**como criar fórmulas**](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/) para entender o passo a passo para criar sua primeira automação usando o Ritchie.
+👉 Vá para página [**como criar fórmulas**](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/) para entender o passo a passo para criar sua primeira automação usando o Ritchie.

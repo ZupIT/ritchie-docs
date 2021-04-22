@@ -20,12 +20,12 @@ A seguir, veja como você pode fazer esse processo de encapsulamento:
 
 Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inputs**. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:
 
-👉 [**Standard Inputs**](/docs-ritchie/pt-br/como/standard-inputs/input-flags/visao-geral/)
+👉 [**Standard Inputs**](/docs-ritchie/pt-br/standard-inputs/visao-geral/)
 
 
 ### 2. Execução
 
-Ao [**implementar uma fórmula**](/docs-ritchie/pt-br/como/fórmulas/criar-fórmulas/), você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.
+Ao [**implementar uma fórmula**](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/), você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.
 
 A linha de comando da fórmula encapsulada deve ser executada utilizando **Standard Inputs** e informando os seus parâmetros de entradas diretamente no código.
 
@@ -68,6 +68,6 @@ Dependendo da operação, os **`inputs flags`** do comando podem ser gerados de 
 
 Nessa seção, você viu como funciona o encapsulamento de fórmulas no Ritchie.  Para continuar lendo sobre os comandos do Ritchie:
 
-👉 Cheque os [ **desafios**](/docs-ritchie/pt-br/desafios/) que criamos para você praticar as diversas funcionalidades do Ritchie.
+👉 Veja os [ **tutoriais**](/docs-ritchie/pt-br/tutoriais/) que criamos para você praticar as diversas funcionalidades do Ritchie.
 
 👉 Cheque a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) para ver as automações disponíveis no repo da nossa comunidade.

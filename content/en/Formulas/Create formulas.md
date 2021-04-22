@@ -72,4 +72,4 @@ A repository associated to this workspace will be created on the `/home/user/.ri
 
 On this section, you saw how to create a formula on Ritchie and test it. To keep configuring the formula: 
 
-👉 Go to [**build a formula**](/docs-ritchie/formulas/build-formulas/) to see how to continue the tests on the formulas you create.
+👉 Go to [**organize the formula folder**](/docs-ritchie/formulas/organize-the-formula-folder/) to see how to organize the formulas you create.

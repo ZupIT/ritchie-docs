@@ -16,7 +16,7 @@ Para realizar os tutoriais que estão propostos nas próximas páginas, você pr
 
 1. [**Como executar fórmulas**](/docs-ritchie/pt-br/fórmulas/executar-fórmulas/)
 2. [**Como criar fórmulas**](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/)
-3. [**Como "buildar" fórmulas**](/docs-ritchie/fórmulas/buildar-formulas/)
+3. [**Como "buildar" fórmulas**](/docs-ritchie/pt-br/fórmulas/buildar-formulas/)
 4. [**Como encapsular formulas**](/docs-ritchie/pt-br/fórmulas/encapsular-fórmulas/)
 
 ### Tutoriais 
