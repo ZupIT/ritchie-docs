@@ -16,7 +16,7 @@ Caso esteja usando uma versão anterior, basta seguir as orientações desta se�
 
 ## Como "buildar"?
 
-Depois de [**criar uma formula**](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/),  e você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação. 
+Depois de [**criar uma formula**](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/), e se você quiser editar o código dela, será necessário fazer o build dessas alterações para testar o comando com a nova implementação. 
 
 Para isso, basta executar o comando:  
 
