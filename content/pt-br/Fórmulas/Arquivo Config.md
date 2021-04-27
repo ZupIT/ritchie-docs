@@ -81,7 +81,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 }
 ```
 
-#### Algumas observações a respeito o tipo **`multiselect`**
+### Algumas observações a respeito o tipo **`multiselect`**
 
 * Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` \(a chave`enter` irá mover para o próximo parâmetro de entrada, se houver\).
 
@@ -247,7 +247,7 @@ Cada fórmula contém quantos parâmetros de entrada forem necessários, assim c
 
 {{% /alert %}}
 
-**Exemplo de parâmetros de entrada com campo condicional e padrão Regex:**
+#### **Exemplo de parâmetros de entrada com campo condicional e padrão Regex:**
 
 ```text
 "inputs": [

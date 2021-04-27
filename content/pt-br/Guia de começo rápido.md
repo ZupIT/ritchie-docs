@@ -30,7 +30,7 @@ Assim que finalizar a instalação do rit, é momento de fazer sua inicializaç�
 
 ### **3. Execução de uma fórmula teste**
 
-Por último, rode um "hello-world" no Ritchie para confirmar se a instalação funcionou. Para isso,  basta seguir as orientações da página [executar uma fórmula hello world](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world) 
+Por último, rode um "hello-world" no Ritchie para confirmar se a instalação funcionou. Para isso,  basta seguir as orientações da página [**executar uma fórmula hello world**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world).
 
 
 

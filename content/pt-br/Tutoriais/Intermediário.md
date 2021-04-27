@@ -12,7 +12,7 @@ description: >-
 
 Neste tutorial, a ideia é criar uma fórmula que vai **retornar a ferramenta selecionada pelo usuário de acordo com seu perfil**. 
 
-> Você encontrará todas as informações necessárias na seção do tutorial [**relacionada ao arquivo config.json**](//docs-ritchie/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file).
+> Você encontrará todas as informações necessárias na seção do tutorial [**relacionada ao arquivo config.json**](/docs-ritchie/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file).
 
 {{% alert color="info" %}}
 Sugestão de comando: **`rit get tools`**

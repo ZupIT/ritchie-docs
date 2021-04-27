@@ -44,7 +44,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
   * **text** \(string\),
   * **bool** \(boolean\),
   * **password** \(hidden string on CLI\),
-  * **credentials** _\(specific type, learn more information_ [_**here**_](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)_\),_
+  * **credentials** \(specific type, learn more information_ [_**here**_](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)_\),
   * **dynamic** _\(associated with the optional `request_info` field below\),_
   * **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
 * `label`: text appearing on the CLI, asking for the input.
@@ -79,7 +79,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 }
 ```
 
-#### Some observations regarding the **`multiselect` type**
+### Some observations regarding the **`multiselect` type**
 
 * To select one of the options with the `multiselect` type, you must press the `space` key \(the `enter` key will move to the next input, if any\)
 
@@ -242,7 +242,7 @@ Each formula can contain as many inputs as necessary, as well as any association
 
 {{% /alert %}}
 
-**Conditional input example with Regex pattern:**
+### **Conditional input example with Regex pattern:**
 
 ```text
 "inputs": [
