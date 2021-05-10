@@ -45,6 +45,25 @@ rit delete env
 rit delete env --env=prod
 ```
 
+### Comandos de Fórmulas
+
+rit list formula
+
+```text
+rit list formula --name=repo_name
+```
+
+{{% alert color="info" %}}
+
+Caso seja necessário listar as fórmulas de todos os repositórios adicionados, use a flag 'ALL'
+
+{{% /alert %}} 
+
+```text
+rit list formula --name=ALL
+```
+
+
 ### Comandos de Repo
 
 rit add repo

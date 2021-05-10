@@ -52,6 +52,10 @@ description: 'In this section, you will find the list of Ritchie''s main command
       <td style="text-align:left">rit build formula --watch</td>
       <td style="text-align:left">build a formula monitoring the code to update real time changes</td>
     </tr>
+    <tr>
+      <td style="text-align:left">rit list formula</td>
+      <td style="text-align:left">list all available formulas from specific/all repositories</td>
+    </tr>
   </tbody>
 </table>
 
