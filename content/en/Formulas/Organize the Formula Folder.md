@@ -8,7 +8,7 @@ description: In this section, you will find how to organize Ritchie's formula fo
 
 ## What is the formula folder?
 
-This folder contains the files with the formula's behavior. 
+This folder contains the files with the formula's behavior.
 
 {{% alert color="warning" %}}
 
@@ -33,13 +33,11 @@ Each programming language has its own specificities, but the formula's structure
 
 You can find all [**languages templates**](https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages) on the ritchie-formulas repository.
 
-
-
 ### Formula folder examples
 
 {{< tabs name="T0" >}}
 {{% tab name="Golang" %}}
-![](/go%20%281%29%20%281%29.png)
+![](/shared/go%20%281%29%20%281%29.png)
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
@@ -49,7 +47,7 @@ To change the formula's behavior for this language, you'll have at least to upda
 {{% /tab %}}
 
 {{% tab name="Java" %}}
-![](/java%20%282%29%20%282%29.png)
+![](/shared/java%20%282%29%20%282%29.png)
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
@@ -59,7 +57,7 @@ To change the formula's behavior for this language, you'll have at least to upda
 {{% /tab %}}
 
 {{% tab name="Node" %}}
-![](/node%20%283%29%20%283%29.png)
+![](/shared/node%20%283%29%20%283%29.png)
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
@@ -69,7 +67,7 @@ To change the formula's behavior for this language, you'll have at least to upda
 {{% /tab %}}
 
 {{% tab name="Python" %}}
-![](/python%20%282%29.png)
+![](/shared/python%20%282%29.png)
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
@@ -79,7 +77,7 @@ To change the formula's behavior for this language, you'll have at least to upda
 {{% /tab %}}
 
 {{% tab name="Shell" %}}
-![](/shell%20%282%29%20%281%29.png)
+![](/shared/shell%20%282%29%20%281%29.png)
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 

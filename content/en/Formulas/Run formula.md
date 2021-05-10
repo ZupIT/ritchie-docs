@@ -17,14 +17,13 @@ It's good to reinforce that the **default formulas execution method** is defined
 rit set formula-runner
 ```
 
-![](/docs-ritchie/large-gif-1374x404-.gif)
+![](/shared/large-gif-1374x404-.gif)
 
 ### 1. Locally
 
 To run a formula locally, it is necessary to have installed on your computer the formula programming languages dependencies used to create the formula.
 
-Example: a formula written in **Node** will need **Node installed** on the computer, so it will be able to run locally.   
-
+Example: a formula written in **Node** will need **Node installed** on the computer, so it will be able to run locally.
 
 ### 2. Through Docker
 
@@ -35,24 +34,24 @@ Check out on the following example [**how to run a "Hello World" formula** ](/do
 {{% /alert %}}
 
 {{% alert color="warning" %}}
- 
- **Docker user on MacOS:** 
+
+ **Docker user on MacOS:**
 To avoid the **'Error: exit status 1'**, you have to **disable** the Cloud Experience, depending on your version.
- 
-See how: 
+
+See how:
 Access on Docker:
  -  Preferences > Command Line> Enable cloud experience.
- 
- ![](/docs-ritchie/static/ritchiedocker.PNG)
- 
+
+ ![](/shared/ritchiedocker.PNG)
+
 {{% /alert %}}
 
 ###  3. Local & Docker Flags
 
 You can force Ritchie CLI to execute a formula with a specific method using flags.
 
-* The **`--local`** flag will execute a formula with locally \(if the default method is Docker\). 
-* The **`--docker`** flag will execute a formula with Docker \(if the default method is local\). 
+* The **`--local`** flag will execute a formula with locally \(if the default method is Docker\).
+* The **`--docker`** flag will execute a formula with Docker \(if the default method is local\).
 
 ### 4. Containers with Ritchie
 
@@ -60,10 +59,10 @@ You can force Ritchie CLI to execute a formula with a specific method using flag
 All formulas templates contain a **Dockerfile** which creates a container with **Ritchie CLI** installed.
 {{% /alert %}}
 
-## Next steps 
+## Next steps
 
 On this section, you saw how to run a formula on Ritchie. To keep learning:
 
-👉 Go to [**Hello World formula**](/docs-ritchie/formulas/hello-world-formula/) to see different ways to run a formula on Ritchie. 
+👉 Go to [**Hello World formula**](/docs-ritchie/formulas/hello-world-formula/) to see different ways to run a formula on Ritchie.
 
 👉 Go to the [**create formulas**](/docs-ritchie/formulas/create-formulas/) section to understand how to create your first automation with Ritchie.

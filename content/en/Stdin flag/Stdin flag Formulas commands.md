@@ -14,7 +14,7 @@ With formulas, the STDIN flag **JSON** is based on the **inputs parameters names
 
 1. Formula command: **`rit demo formula`**
 
-   
+
 
 2. Inputs names asked in the config.json file:
 
@@ -28,10 +28,8 @@ With formulas, the STDIN flag **JSON** is based on the **inputs parameters names
 echo '{"name":"Dennis", "surname":"Ritchie", "dateOfBirth":"09/09/1941"}' | rit demo formula --stdin
 ```
 
-
-
 {{% alert color="danger" %}}
-The formula's command through stdin, needs the input parameters that are based on the config.json, in order to work properly. 
+The formula's command through stdin, needs the input parameters that are based on the config.json, in order to work properly.
 
 If the formula's implementation asks for data via **prompt**, it will not be possible to exclusively use  stdin for the formula to run successfully.
 {{% /alert %}}

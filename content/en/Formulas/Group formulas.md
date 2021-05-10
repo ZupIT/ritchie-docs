@@ -10,17 +10,15 @@ description: 'In this section, you will understand how to  group formulas on Rit
 
 On Ritchie, it is possible to **run formulas inside formulas.** This process is called **Formula aggregation**‌.
 
-This functionality allows you, for example, to make operations in which you need to run consecutive formulas. 
+This functionality allows you, for example, to make operations in which you need to run consecutive formulas.
 
-Check out on the following topics to understand how works this aggregation. 
+Check out on the following topics to understand how works this aggregation.
 
 ## How to group?
 
 ### 1. Premisse
 
-To group formulas, it is necessary to use **Standard Inputs**. On the following page, we have a detailed explanation to how this works: 
-
-
+To group formulas, it is necessary to use **Standard Inputs**. On the following page, we have a detailed explanation to how this works:
 
 ### 2. Execution <a id="2-execution"></a>
 
@@ -61,11 +59,11 @@ Here, according to the input informed by the user, two different formulas can be
 * **`rit github publish repo`**
 * **`rit gitlab publish repo`**
 
-To do so, the grouped formulas inputs parameters are informed dynamically according to the inputs parameters of the main formula \(**`rit publish repo`**\). 
+To do so, the grouped formulas inputs parameters are informed dynamically according to the inputs parameters of the main formula \(**`rit publish repo`**\).
 
 Depending on the operation, the **`input flags`** used for the command could be generated according to other operations performed through the formula execution before executing the grouped formula command line.‌
 
-## Next steps 
+## Next steps
 
 You saw in this section how to use formula aggregation. If you want to keep reading about Ritchie's commands:‌
 

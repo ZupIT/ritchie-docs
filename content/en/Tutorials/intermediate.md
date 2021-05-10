@@ -22,19 +22,19 @@ Command suggestion: **`rit get tools`**
 
 This formula needs to contain \(at least\) those two inputs parameters:
 
-* Profile \(`RIT_PROFILE`\). 
+* Profile \(`RIT_PROFILE`\).
 * Profile tool \(`RIT_TOOL`\).
 
 The formula inputs will have to respect the diagram below:
 
-![](/docs-ritchie/ritchie-conditional-inputs.png)
+![](/shared/ritchie-conditional-inputs.png)
 
 ## Step by step
 
 The formula needs to follow the next steps:
 
-1. Extract all inputs parameters. 
-2. Return the selected profile on the terminal. 
+1. Extract all inputs parameters.
+2. Return the selected profile on the terminal.
 3. Return the selected tool on the terminal.
 
 ## Improvement suggestions
@@ -43,6 +43,6 @@ The formula needs to follow the next steps:
 
 * Install the selected tool according to the computer OS.
 
-## Next steps 
+## Next steps
 
 👉 If you've completed the third tutorial, let's go to the [**advanced task**](/docs-ritchie/tutorials/advanced/)!
