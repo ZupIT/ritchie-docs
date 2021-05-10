@@ -64,6 +64,42 @@ Para isso, basta você seguir os seguintes passos:
 
    2. Se preferir, execute o comando **`rit list repo`**, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.
 
+### Como encontrar formulas de um repositório?
+
+{{% alert color="info" %}}
+
+Essa feature está disponível a partir da versão 2.11 do Ritchie.
+
+{{% /alert %}}
+
+Quando trabalhamos com vários grupos de fórmulas, em alguns casos é difícil lembrar cada comando disponível.
+
+Para listar as fórmulas de um repositório específico, basta você seguir os seguintes passos:
+
+1. Executar o comando de lista **`rit list formula`**. O sistema deve retornar a lista com o grupo de repositórios diponíveis e também uma opção ALL.
+
+```text
+? Repository:
+  ALL
+> repo-name-1
+  repo-name-2
+  ```
+
+2. Selecione o repositório desejado (ou ALL para todos) e o sistema deve retornar uma lista com os comandos e uma breve descrição que foi defininda no arquivo **`help.json`** de cada fórmula.
+
+```text
+? Repository: repo-name-1
+COMMAND                                 DESCRIPTION
+rit aws add terraform-eks               Generate terraform AWS eks
+rit aws add terraform-vpc               Generate terraform AWS vpc
+rit aws apply terraform                 Apply terraform on AWS
+rit aws clean bucket                    Clean bucket AWS
+rit aws create bucket                   Create bucket AWS
+rit aws delete bucket                   Delete AWS objects
+
+There are 6 formulas
+```
+
 ### Como atualizo?
 
 Para atualizar a versão de algum repositório local, você só precisa rodar o comando abaixo informando o nome do repositório e a versão desejada.
