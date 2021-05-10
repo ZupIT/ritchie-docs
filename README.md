@@ -1,6 +1,6 @@
 # docs-ritchie
 
-<img width="622" alt="ritchie-banner" src="https://user-images.githubusercontent.com/22433243/117699765-9606b000-b19b-11eb-8e3c-98c82cd0a421.png">
+![ritchie-banner](https://user-images.githubusercontent.com/22433243/117700429-63a98280-b19c-11eb-978a-c7a941065030.png)
 
 ## Ritchie CLI Official Documentation
 
