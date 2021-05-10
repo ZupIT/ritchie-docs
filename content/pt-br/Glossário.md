@@ -8,15 +8,15 @@ description: >-
 
 ---
 
-Os principais conceitos que fazem parte do Ritchie são: 
+Os principais conceitos que fazem parte do Ritchie são:
 
 * Árvore de Comando
 * CLI
 * Credencial
 * Environment (Ambiente)
-* Fórmula 
+* Fórmula
 * JSON
-* Repositório 
+* Repositório
 * Standard Streams
 
 ## **Árvore de comando**
@@ -31,22 +31,22 @@ E, para permitir mais opções e liberdade aos usuários, também é possível s
 
 Usamos o prefixo **`rit`** para iniciar nossa árvore de comandos.
 
-![](/docs/arvore-rit%20%281%29%20%281%29.png)
+![](/shared/arvore-rit%20%281%29%20%281%29.png)
 
 {{% alert color="warning" %}}
-O comando **`rit`** é nosso comando pai, ou raiz. Ele não é executável \(ou seja, ele não vai iniciar nenhuma operação se você usar ele sozinho no terminal\).   
-  
+O comando **`rit`** é nosso comando pai, ou raiz. Ele não é executável \(ou seja, ele não vai iniciar nenhuma operação se você usar ele sozinho no terminal\).
+
 É necessário utilizar sub-comandos \(que são comandos filhos, ou ramos, do comando **`rit`**\) executáveis para conseguir iniciar algum processo.
 {{% /alert %}}
 
-Os comandos executáveis no Ritchie são os comandos localizados no último nível da árvore.  
-  
-Por exemplo, na imagem acima temos: 
+Os comandos executáveis no Ritchie são os comandos localizados no último nível da árvore.
+
+Por exemplo, na imagem acima temos:
 
 * O comando **`rit set context`** é executável, pois está no último nível da árvore.
 * O comando **`rit kafka create`** não é executável, pois ele tem um sub-comando **topic** executável no último nível da árvore.
 
-Esse conceito de árvore de comandos é o **núcleo** da estrutura do Ritchie. 
+Esse conceito de árvore de comandos é o **núcleo** da estrutura do Ritchie.
 
 {{% alert color="info" %}}
 Essa árvore é gerada **dinamicamente** pelo CLI baseado nos repositório de fórmulas adicionados localmente  pelo comando**`rit add repo`**.
@@ -62,8 +62,8 @@ Refere-se a um parâmetro de entrada reutilizável que você pode utilizar no Ri
 
 ## **Environment (Ambiente)**
 
-No Ritchie, cada ambiente \(environment\) possui suas próprias credenciais, que podem ser necessárias para executar fórmulas específicas através do CLI.  
-  
+No Ritchie, cada ambiente \(environment\) possui suas próprias credenciais, que podem ser necessárias para executar fórmulas específicas através do CLI.
+
 _Por exemplo: é possível criar ambientes **pessoal** e **profissional** \(ou **prof** e **staging**\) com diferentes credenciais e trocar de um ambiente para o outro de acordo com suas necessidades._
 
 ## **Fórmulas**
@@ -84,12 +84,11 @@ Esses parâmetros de entrada podem ser informados de diversas maneiras:
 * Quando digitar a linha de comando no terminal \(via **stdin** ou **input flags**\)
 * Durante a execução da fórmula \(se o código usou o **prompt**\)
 
-![](/docs/start-end-ritchie.jpg)
+![](/shared/start-end-ritchie.jpg)
 
 ## **JSON**
 
 Refere-se ao JavaScript Object Notation \(JSON\), que é um formato padrão de texto text usado para estruturar dados criados com linguagem de programação Java.
-
 
 ## **Repositório**
 

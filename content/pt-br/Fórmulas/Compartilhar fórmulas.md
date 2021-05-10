@@ -10,11 +10,11 @@ description: >-
 
 ## Como compartilhar?
 
-Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas. 
+Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas.
 
 **Exemplo**: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
 
-Para adicionar um novo repositório no Ritchie, é necessário rodar o comando abaixo: 
+Para adicionar um novo repositório no Ritchie, é necessário rodar o comando abaixo:
 
 ```text
 rit add repo
@@ -22,7 +22,7 @@ rit add repo
 
 Uma vez que o repositório for adicionado, o Ritchie irá usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.
 
-![](/docs/rit-add-repo-3.gif)
+![](/shared/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
 
@@ -34,15 +34,15 @@ Se o repositório de fórmulas for **privado**, será necessário informar o tok
 
 {{% alert color="info" %}}
 
-Essa feature está disponível a partir da versão 2.2 do Ritchie. 
+Essa feature está disponível a partir da versão 2.2 do Ritchie.
 
 {{% /alert %}}
 
 No Ritchie, é possível checar novos comandos de fórmulas adicionados e checar se há uma nova versão de algum repositório que você tenha importado localmente.
 
-Para isso, basta você seguir os seguintes passos: 
+Para isso, basta você seguir os seguintes passos:
 
-1. Executar o comando de ajuda **`rit --help`**. O sistema deve retornar a lista com grupo de repositórios disponíveis. 
+1. Executar o comando de ajuda **`rit --help`**. O sistema deve retornar a lista com grupo de repositórios disponíveis.
 
 ```text
 (new version 2.12.1) commons repo commands:
@@ -72,7 +72,7 @@ Para atualizar a versão de algum repositório local, você só precisa rodar o 
 rit update repo
 ```
 
-## Próximos passos 
+## Próximos passos
 
 Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:
 

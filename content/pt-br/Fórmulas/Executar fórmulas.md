@@ -21,7 +21,7 @@ Vale reforçar que **método de execução de fórmulas padrão** é escolhido d
 rit set formula-runner
 ```
 
-![](/docs/large-gif-1374x404-.gif)
+![](/shared/large-gif-1374x404-.gif)
 
 ### 1. Execução local
 

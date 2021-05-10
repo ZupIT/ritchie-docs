@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## O que é uma pasta de fórmula \(formula folder\)? 
+## O que é uma pasta de fórmula \(formula folder\)?
 
 Esta pasta contém arquivos com comportamento da fórmula.
 
@@ -34,11 +34,11 @@ Cada linguagem de programação possui suas próprias especificidades, mas a est
 
 Você pode encontrar todos os [**templates de linguagens**](https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages) no repositório ritchie-formulas.
 
-### Exemplos de pastas de fórmulas 
+### Exemplos de pastas de fórmulas
 
 {{< tabs id="T" >}}
 {{% tab name="Golang" %}}
-![](/docs/go%20%281%29%20%281%29%20%281%29.png)
+![](/shared/go%20%281%29%20%281%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -49,7 +49,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Java" %}}
-![](/docs/java%20%282%29%20%282%29%20%282%29.png)
+![](/shared/java%20%282%29%20%282%29%20%282%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -60,7 +60,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Node" %}}
-![](/docs/node%20%283%29%20%283%29%20%282%29.png)
+![](/shared/node%20%283%29%20%283%29%20%282%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -71,7 +71,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Python" %}}
-![](/docs/python%20%282%29%20%281%29.png)
+![](/shared/python%20%282%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -82,7 +82,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Shell" %}}
-![](/docs/shell%20%282%29%20%281%29%20%281%29.png)
+![](/shared/shell%20%282%29%20%281%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 

@@ -1,9 +1,8 @@
 ---
 title: Recursos
 weight: 97
-description: Nesta seção, você vai encontrar recursos do Ritchie. 
+description: Nesta seção, você vai encontrar recursos do Ritchie.
 ---
-
 
 ### **Recursos do Ritchie**
 
