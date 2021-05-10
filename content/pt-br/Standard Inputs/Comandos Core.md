@@ -58,3 +58,9 @@ rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/rit
 Quando não é passada a flag de versão, o ritchie busca automaticamente a última versão
 
 {{% /alert %}}
+
+rit delete repo
+
+```text
+rit delete repo --name=repo_name
+```
