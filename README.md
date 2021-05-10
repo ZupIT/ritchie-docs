@@ -1,60 +1,28 @@
 # docs-ritchie
-Project: 466 Zup - Relacionamento com Desenvolvedores
 
-# Docsy Example
+<img width="622" alt="ritchie-banner" src="https://user-images.githubusercontent.com/22433243/117699765-9606b000-b19b-11eb-8e3c-98c82cd0a421.png">
 
-[Docsy](https://github.com/google/docsy) is a Hugo theme for technical documentation sites, providing easy site navigation, structure, and more. This **Docsy Example Project** uses the Docsy theme, as well as providing a skeleton documentation structure for you to use. You can either copy this project and edit it with your own content, or use the theme in your projects like any other [Hugo theme](https://gohugo.io/themes/installing-and-using-themes/).
+## Ritchie CLI Official Documentation
 
-This Docsy Example Project is hosted at [https://example.docsy.dev/](https://example.docsy.dev/).
+This repository contains all the Ritchie CLI official documenation that can currently be found at [https://zupit.github.io/docs-ritchie/](https://zupit.github.io/docs-ritchie/) and will soon migrate to [https://docs.ritchiecli.io](https://docs.ritchiecli.io).
 
-You can find detailed theme instructions in the Docsy user guide: https://docsy.dev/docs/
+This documentation uses [hugo server](https://gohugo.io/commands/hugo_server/).
 
-This is not an officially supported Google product. This project is currently maintained.
+## How to contribute?
 
-## Cloning the Docsy Example Project
+- **Always** base your work on the project's `master` branch, naming your new branch according to the following guide :
 
-The following will give you a project that is set up and ready to use (don't forget to use `--recurse-submodules` or you won't pull down some of the code you need to generate a working site). The `hugo server` command builds and serves the site. If you just want to build the site, run `hugo` instead.
+![git-branchs](https://user-images.githubusercontent.com/22433243/117700179-0f060780-b19c-11eb-8d03-42cfbd2de798.png)
 
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/google/docsy-example.git
-cd docsy-example
-hugo server
-```
+**Examples:** `feature/name` or `fix/name`
 
-The theme is included as a Git submodule:
+- **New contents** should be added to the [`content` folder](https://github.com/ZupIT/docs-ritchie/tree/master/content).
 
-```bash
-▶ git submodule
- a053131a4ebf6a59e4e8834a42368e248d98c01d themes/docsy (heads/master)
-```
-
-If you want to do SCSS edits and want to publish these, you need to install `PostCSS` (not needed for `hugo server`):
-
-```bash
-npm install
-```
-
-<!--### Cloning the Example from the Theme Project
-
-
-```bash
-git clone --recurse-submodules --depth 1 https://github.com/docsy.git
-cd tech-doc-hugo-theme/exampleSite
-HUGO_THEMESDIR="../.." hugo server
-```
-
-
-Note that the Hugo Theme Site requires the `exampleSite` to live in a subfolder of the theme itself. To avoid recursive duplication, the example site is added as a Git subtree:
-
-```bash
-git subtree add --prefix exampleSite https://github.com/google/docsy.git  master --squash
-```
-
-To pull in changes, see `pull-deps.sh` script in the theme.-->
+- Open a new Pull Request for **each new content** and for **each language**.
 
 ## Running the website locally
 
-Once you've cloned the site repo, from the repo root folder, run:
+Once you've cloned the site repo, from the repo `root` folder, run:
 
 ```
 hugo server
