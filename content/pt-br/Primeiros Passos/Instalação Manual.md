@@ -8,7 +8,7 @@ description: 'Nesta seção, você verá como fazer a instalação manual do Rit
 
 Caso você decida seguir com a instalação manual do Ritchie, é necessário obedecer à seguinte premissa: **baixar a versão mais recente do Ritchie informando a URL abaixo no seu navegador.** 
 
-O link: [https://commons-repo.ritchiecli.io/stable.txt](https://commons-repo.ritchiecli.io/stable.txt)​
+O link: [**https://commons-repo.ritchiecli.io/stable.txt**](https://commons-repo.ritchiecli.io/stable.txt)​
 
 Quando você indica a URL acima no navegador, o sistema retorna a última versão do Ritchie. Por exemplo, poderá retornar algo como **1.0.1 ou 2.0.1**
 
@@ -85,5 +85,5 @@ No caso do Windows, você precisa chamar o rit no terminal diretamente pelo rit.
 
 Abaixo, confira alguns artigos que explicam como adicionar uma variável de ambiente no Windows:
 
-* Adicionando [**através da interface**](https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/) 
-* Adicionando [**através do terminal**](https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente)
+* Adicionando [**por meio da interface**](https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/). 
+* Adicionando [**por meio do terminal**](https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente).

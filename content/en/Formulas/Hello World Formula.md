@@ -44,7 +44,7 @@ On Ritchie, you have 6 possibilities to run a formula through these flags:
 
 To do so, type the following commands lines:
 
-### Case 1: With Prompt
+### **Case 1:** With Prompt
 
 {{% alert color="warning" %}}
   As this formula has been coded using Golang, it is necessary to have Golang installed on your computer to run it locally.
@@ -59,7 +59,7 @@ Select an option for each input parameter and see how the magic works:
 
 This is the default command line execution, that runs the formula locally using **prompt** to inform the input parameters.
 
-### Case 2: With Prompt and Docker
+### **Case 2:** With Prompt and Docker
 
 You can run the same command using the **--docker** flag pto execute it remotely (on a container), but still using **prompt** to inform the inputs parameters:
 
@@ -72,7 +72,7 @@ rit demo hello-world --docker
 In that case, you won't need to have Golang installed.
 {{% /alert %}}
 
-### Case 3: With Input Flags
+### **Case 3:** With Input Flags
 
 You can also run the command informing the inputs through flags (you can know which flags are available using the **`--help`** flag when executing a command). This way, inputs parameters are informed directly with the command line.
 
@@ -80,7 +80,7 @@ You can also run the command informing the inputs through flags (you can know wh
 rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie
 ```
 
-### Case 4: With Input flags and Docker
+### **Case 4:** With Input flags and Docker
 
 When you combine both  **`input flags`** and the **`--docker`** flag, it is possible to run a command remotely (on a container) with the input parameters directly informed on the command line:
 
@@ -88,7 +88,7 @@ When you combine both  **`input flags`** and the **`--docker`** flag, it is poss
 rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie --docker
 ```
 
-### Case 5: With Stdin
+### **Case 5:** With Stdin
 
 You can also run the command with the **`--stdin`** (Standard input) flag. This way, inputs parameters are also informed directly with the command line.
 
@@ -99,7 +99,7 @@ echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"
   Ritchie uses the **JSON** format to execute STDIN commands
 {{% /alert %}}
 
-### Case 6: With Stdin and Docker
+### **Case 6:** With Stdin and Docker
 
 When you combine both --stdin and --docker flags, it is also possible to run a command remotely (on a container) with the input parameters directly informed on the command line:
 

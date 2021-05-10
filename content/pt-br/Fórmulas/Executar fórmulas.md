@@ -35,19 +35,17 @@ Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado**
 Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o **`DOCKER`** esteja instalado e iniciado.
 
 {{% alert color="info" %}}
-Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/) para ver como isso funciona na prática.
+Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).
 {{% /alert %}}
 
 {{% alert color="warning" %}}
 
- **Usuários do Docker no MacOS:**
-Para evitar o **'Error: exit status 1'**, é preciso **desativar** o Cloud Experience, dependendo da sua versão.
-
 Veja como:
+
 Acesse no Docker:
  -  Preferences > Command Line>  Enable cloud experience.
 
- ![](/shared/static/ritchiedocker.PNG)
+ ![](/shared/unnamed-removebg-preview.png)
 
 {{% /alert %}}
 
@@ -63,7 +61,6 @@ Acesse no Docker:
 {{% alert color="warning" %}}
 Todos os templates de formulas contém um arquivo **DockerFile** que cria um container com **Ritchie CLI** instalado.
 {{% /alert %}}
-
 
 ## Próximos passos
 

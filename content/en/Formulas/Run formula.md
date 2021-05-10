@@ -42,7 +42,7 @@ See how:
 Access on Docker:
  -  Preferences > Command Line> Enable cloud experience.
 
- ![](/shared/ritchiedocker.PNG)
+ ![](/shared/unnamed-removebg-preview.png)
 
 {{% /alert %}}
 
