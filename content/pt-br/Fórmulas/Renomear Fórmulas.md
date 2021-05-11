@@ -16,16 +16,16 @@ Somente fórmulas locais podem ser renomeadas.
 
 ## Renomeando sua fórmula
 
-Você pode usar a fórmula do Ritchie **`rit rename formula`** para renomear uma fórmula local. Os parâmetros de entrada necessários são:
+Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear uma fórmula local. Os parâmetros de entrada necessários são:
 
 1. O nome da fórmula antiga
 2. O novo nome da fórmula
 
 {{% alert color="info" %}}
 
-- O Ritchie identificará automaticamente o workspace o qual a fórmula pertence.
-  - Caso identifique mais de um workspace com a fórmula informada, um passo extra necessário será escolher em qual workspace a fórmula deve ter seu nome alterado.
-- Essa fórmula contempla entrada via _flags_, mais informações em [**lista de comandos e flags**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/).
+- O Ritchie identificará automaticamente o workspace a qual a fórmula pertence.
+  - Caso identifique mais de um workspace com a fórmula informada, um passo extra necessário será executado pelo Ritchie para escolha do workspace a qual deve ter a fórmula renomeada.
+- Essa fórmula possui entrada via _flags_, mais informações em [**Commandos core > Comandos de fórmula**](/docs-ritchie/pt-br/standard-inputs/comandos-core/#comandos-de-fórmula).
   {{% /alert %}}
 
 ## Efeitos

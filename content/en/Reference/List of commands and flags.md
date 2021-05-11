@@ -1,7 +1,7 @@
 ---
 title: List of commands and flags
 weight: 93
-description: "In this section, you will find the list of Ritchie's main commands"
+description: In this section, you will find the list of Ritchie's main commands
 ---
 
 ---

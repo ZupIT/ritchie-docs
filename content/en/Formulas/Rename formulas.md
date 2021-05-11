@@ -16,7 +16,7 @@ Only local formulas can be renamed.
 
 ## Renaming your formula
 
-You can use the Ritchie **`rit rename formula`** formula to rename a local formula. The required input parameters are:
+You can use the core command **`rit rename formula`** to rename a local formula. The required input parameters are:
 
 1. The name of the old formula
 2. The new formula name
@@ -25,7 +25,7 @@ You can use the Ritchie **`rit rename formula`** formula to rename a local formu
 
 - Ritchie will automatically identify the workspace to which the formula belongs.
   - If identifies more than one workspace with the entered formula, an extra necessary step will be to choose in which workspace the formula should have its name changed.
-- This formula includes entry via _flag_, more information at [**list of commands and flags**](/docs-ritchie/en/reference/List-of-commands-and-flags/).
+- This formula includes entry via _flag_, more information at [**Core Commands > Formula commands **](/docs-ritchie/en/standard-inputs/core-commands/#formula-commands).
   {{% /alert %}}
 
 ## Effects
