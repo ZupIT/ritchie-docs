@@ -8,7 +8,7 @@ description: In this section you will find information about how to rename a for
 
 ## How to rename?
 
-### Premissas
+### Premisses
 
 {{% alert color="warning" %}}
 Only local formulas can be renamed.

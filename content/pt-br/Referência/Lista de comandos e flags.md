@@ -49,6 +49,10 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
       <td>rit build formula --watch</td>
       <td>Compila uma fórmula para teste, monitorando atualizações do código no tempo real</td>
     </tr>
+    <tr>
+      <td>rit rename formula</td>
+      <td>Renomeia uma fórmula local</td>
+    </tr>
   </tbody>
 </table>
 

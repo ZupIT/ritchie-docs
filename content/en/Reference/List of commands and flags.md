@@ -49,6 +49,10 @@ description: "In this section, you will find the list of Ritchie's main commands
       <td>rit build formula --watch</td>
       <td>build a formula monitoring the code to update real time changes</td>
     </tr>
+    <tr>
+      <td>rit rename formula</td>
+      <td>rename a local formula</td>
+    </tr>
   </tbody>
 </table>
 
