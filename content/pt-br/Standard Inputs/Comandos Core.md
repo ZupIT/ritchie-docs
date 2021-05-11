@@ -58,3 +58,17 @@ rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/rit
 Quando não é passada a flag de versão, o ritchie busca automaticamente a última versão
 
 {{% /alert %}}
+
+### Comandos de Fórmula
+
+rit rename formula
+
+```text
+rit rename formula --oldName='rit group old' --newName='rit group new'
+```
+
+{{% alert color="info" %}}
+
+Quando mais de um workspace possui a fórmula antiga, uma interação via prompt extra para escolha do workspace é executada pelo Ritchie
+
+{{% /alert %}}
