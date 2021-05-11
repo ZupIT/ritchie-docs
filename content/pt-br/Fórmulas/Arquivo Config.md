@@ -14,7 +14,7 @@ Essas entradas são feitas para os seguintes campos:
 
 - Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\);
 - A lista com os parâmetros de entrada de uma fórmula; e
-- O **require latest version** é um parâmetro booleano que indicando a necessidade (ou não) da fórmula ser executada na última versão do repositório.
+- O **require latest version** é um parâmetro booleano que indica a necessidade (ou não) da fórmula ser executada na última versão do repositório.
 
 ```text
 {
