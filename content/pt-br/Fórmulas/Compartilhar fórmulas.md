@@ -85,7 +85,7 @@ Se você quiser listar as fórmulas de um repositório específico, siga os pass
   repo-name-2
   ```
 
-2. Selecione o repositório desejado (ou ALL para todos) e o sistema deve retornar uma lista com os comandos e uma breve descrição que foi defininda no arquivo **`help.json`** de cada fórmula.
+2. Selecione o repositório que você deseja (ou ALL para todos) e o sistema retorna uma lista com os comandos e uma breve descrição que foi definida no arquivo **`help.json`** de cada fórmula.
 
 ```text
 ? Repository: repo-name-1
