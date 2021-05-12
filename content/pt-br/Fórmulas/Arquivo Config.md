@@ -12,9 +12,9 @@ O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite
 
 Essas entradas são feitas para os seguintes campos:
 
-- Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\);
-- A lista com os parâmetros de entrada de uma fórmula; e
-- O **require latest version** é um parâmetro booleano que indica a necessidade (ou não) da fórmula ser executada na última versão do repositório.
+- Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\)
+- A lista com os parâmetros de entrada de uma fórmula.
+  - O **require latest version** é um parâmetro booleano que indica a necessidade (ou não) da fórmula ser executada na última versão do repositório.
 
 ```text
 {
@@ -89,7 +89,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 
 - As opções selecionadas no campo do tipo `multiselect` irão retornar uma string com as opções separadas por barra \(`|`\) e sem espaço, por exemplo: `Monday | Wednesday | Friday`.
 
-- É sugerido que você use o campo `obrigatório` como`true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
+- É sugerido que você use o campo `obrigatório` como `true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
 
 #### Exemplo de parâmetro de entrada usando o tipo autocomplete:
 
@@ -103,7 +103,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 
 ### Campos opcionais
 
-- `default`: valor padrão do parâmetro \(se nulo\).
+- `default`: Valor padrão do parâmetro \(se nulo\).
 
 ```text
 {
@@ -122,7 +122,7 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 
 {{% /alert %}}
 
-- `required`: boolean que indica se um campo é obrigatório ou opcional.
+- `required`: Boolean que indica se um campo é obrigatório ou opcional.
 
 ```text
 {
@@ -133,7 +133,7 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 }
 ```
 
-- `tutorial`: campo de ajuda para o parâmetro de entrada _\[? for help\]_
+- `tutorial`: Campo de ajuda para o parâmetro de entrada _\[? for help\]_
 
 ```text
 {
@@ -144,7 +144,7 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 }
 ```
 
-- `items`: lista de opções para o parâmetro.
+- `items`: Lista de opções para o parâmetro.
 
 ```text
 {
@@ -159,10 +159,10 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 }
 ```
 
-- `cache`: salva valores de parâmetros de entrada anteriores.
-  - `active`: se o cache é habilitado ou não.
-  - `qty`: quantidade de valor armazenadas no cache.
-  - `newLabel`: texto que aparecerá no CLI para pedir um novo input ao usuário.
+- `cache`: Salva os valores de parâmetros de entrada anteriores.
+  - `active`: Se o cache é habilitado ou não.
+  - `qty`: A quantidade de valor armazenada no cache.
+  - `newLabel`: Texto que aparece no CLI para pedir um novo input ao usuário.
 
 ```text
 {
@@ -178,11 +178,11 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 
 ```
 
-- `condition`: esse parâmetro só aparece se condicional funcionar.
+- `condition`: Esse parâmetro só aparece se a condicional funcionar.
 
-  - `variable`: o nome da variável usada em um parâmetro anterior para comparação.
-  - `operator`: o operador lógico usado para comparar. Suporta `==`, `!=`, `<`, `>`, `<=`, and `>=`
-  - `value`: o valor que se deseja usar para comparação.
+  - `variable`: O nome da variável usada em um parâmetro anterior para comparação.
+  - `operator`: O operador lógico usado para comparar. Suporta `==`, `!=`, `<`, `>`, `<=`, and `>=`
+  - `value`: O valor que você deseja usar para comparação.
 
 ```text
 {
@@ -203,10 +203,10 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 }
 ```
 
-- `pattern`: configura a validação de um parâmetro de entrada.
+- `pattern`: Configura a validação de um parâmetro de entrada.
 
-  - `regex`: o modelo regex para validar o parâmetro.
-  - `mismatchText`: a mensagem de erro caso o parâmetro de entrada seja invalidado pelo regex.
+  - `regex`: O modelo regex para validar o parâmetro.
+  - `mismatchText`: A mensagem de erro se o parâmetro de entrada seja invalidado pelo regex.
 
 ```text
 {
@@ -226,10 +226,10 @@ O tipo de **`entrada dinâmico`** será **depreciado** nas **próximas liberaç�
 
 {{% /alert %}}
 
-- `requestInfo`: configuração para ter o parâmetro de entrada de tipo dinâmico.
+- `requestInfo`: Configuração para ter o parâmetro de entrada do tipo dinâmico.
 
-  - `url`: URL que consome o serviço GET, responsável por retornar a lista de objetos.
-  - `jsonPath`: caminho da variável para extrair da lista retornada uma variável de cada objeto. \(Veja mais sobre [**como funciona esse path json**](https://goessner.net/articles/JsonPath/)\).
+  - `url`: Uma URL que consome o serviço GET e é responsável por retornar a lista de objetos.
+  - `jsonPath`: O caminho da variável para extrair da lista retornada uma variável de cada objeto. Exemplo: `"jsonPath": $['user']['name']` \(Veja mais sobre [**como funciona esse path json**](https://goessner.net/articles/JsonPath/)\).
 
 ```text
 {

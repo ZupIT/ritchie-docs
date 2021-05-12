@@ -12,8 +12,8 @@ The **config.json** file contains the formula's input parameters. It allows the 
 
 These input parameters are made up of the following fields:
 
-- a **`docker image builder`** \(according to the programming language chose at the formula creation\);
-- the formula **`inputs parameters list`**; and
+- a **`docker image builder`** \(according to the programming language chose at the formula creation\)
+- the formula **`inputs parameters list`**.
 - a **`require latest version`** boolean, indicating the need (or not) of the formula to run in the last available version of a repository.
 
 ```text
@@ -157,10 +157,10 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `cache`: saves former input values.
-  - `active`: if cache is enabled or not.
-  - `qty`: amount of values to store.
-  - `newLabel`: text appearing on the CLI asking for a new input.
+- `cache`: Saves former input values.
+  - `active`: If the cache is enabled or not.
+  - `qty`: Amount of values to store.
+  - `newLabel`: Text appearing on the CLI asking for new input.
 
 ```text
 {
@@ -176,7 +176,7 @@ In case of fields without a default value, the flag will keep asking for this in
 
 ```
 
-- `condition`: shows this input if the given condition succeeds
+- `condition`: It shows an input if the given condition succeeds.
   - `variable`: The variable name used on a previous input for comparison.
   - `operator`: A logical operator to compare. Supports **`==`**, **`!=`**, **`<`**, **`>`**, **`<=`**, and **`>=`.**
   - `value`: The desired value to compare to.
@@ -200,9 +200,9 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `pattern`: configure an input value validation.
+- `pattern`: Configure the input value validation.
   - `regex`: The regex pattern to validate the input.
-  - `mismatchText`: error message when input doesn't match the regex pattern
+  - `mismatchText`: An error message when the input doesn't match the regex pattern.
 
 ```text
 {
@@ -222,9 +222,9 @@ The **`dynamic input`** type will be **depreciated** in the **next releases**.
 
 {{% /alert %}}
 
-- `requestInfo`: configuration to get dynamic input type.
-  - `url`: URL to consume a GET service that will return a list of objects.
-  - `jsonPath`: path to the variable to extract from the returned list, for each object. \(Check out [**how works the json path**](https://goessner.net/articles/JsonPath/)\).
+- `requestInfo`: A configuration to get the dynamic input type.
+  - `url`: An URL to consume a GET service that will return a list of objects.
+  - `jsonPath`: A JSON path where the variable extracts a returned list for every object, see `"jsonPath": $['user']['name']` \(Check out [**how the JSON path works**](https://goessner.net/articles/JsonPath/)\).
 
 ```text
 {
