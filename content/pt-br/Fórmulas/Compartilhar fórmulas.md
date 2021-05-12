@@ -72,9 +72,9 @@ Essa feature está disponível a partir da versão 2.11 do Ritchie.
 
 {{% /alert %}}
 
-Quando trabalhamos com vários grupos de fórmulas, em alguns casos é difícil lembrar cada comando disponível.
+Quando você trabalha com vários grupos de fórmulas, pode ser difícil lembrar de cada comando disponível.
 
-Para listar as fórmulas de um repositório específico, basta você seguir os seguintes passos:
+Se você quiser listar as fórmulas de um repositório específico, siga os passos abaixo:
 
 1. Executar o comando de lista **`rit list formula`**. O sistema deve retornar a lista com o grupo de repositórios diponíveis e também uma opção ALL.
 
