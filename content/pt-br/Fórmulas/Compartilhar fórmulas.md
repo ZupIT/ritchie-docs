@@ -76,7 +76,7 @@ Quando você trabalha com vários grupos de fórmulas, pode ser difícil lembrar
 
 Se você quiser listar as fórmulas de um repositório específico, siga os passos abaixo:
 
-1. Executar o comando de lista **`rit list formula`**. O sistema deve retornar a lista com o grupo de repositórios diponíveis e também uma opção ALL.
+1. Execute o comando de lista **`rit list formula`**. O sistema deve retornar a lista com o grupo de repositórios diponíveis e também a opção '**ALL**'.
 
 ```text
 ? Repository:
