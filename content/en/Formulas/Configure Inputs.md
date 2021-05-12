@@ -1,7 +1,7 @@
 ---
 title: Configure Inputs
 weight: 35
-description: "In this section, you will find information about a formula config.json file"
+description: 'In this section, you will find information about a formula config.json file'
 ---
 
 ---
@@ -12,8 +12,8 @@ The **config.json** file contains the formula's input parameters. It allows the 
 
 These input parameters are made up of the following fields:
 
-- a **`docker image builder`** \(according to the programming language chose at the formula creation\)
-- the formula **`inputs parameters list`**.
+* a **`docker image builder`** \(according to the programming language chose at the formula creation\)
+* the formula **`inputs parameters list`**.
 
 ```text
 {
@@ -28,7 +28,7 @@ Each input parameter is composed of the following fields:
 
 ### Mandatory fields
 
-- `name`: variable name to extract.
+* `name`: variable name to extract.
 
 {{% alert color="warning" %}}
 Once an input value is informed on Ritchie CLI, it is saved as a **local variable** during the formula execution.
@@ -38,16 +38,16 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 > A good practice is to add a **_`RIT_`** suffix to each **`input name`** to avoid having conflicts with local variables.
 >
-> Example*: `rit_file_name` --&gt; `RIT_FILE_NAME`*
+> Example_: `rit_file_name` --&gt; `RIT_FILE_NAME`_
 
-- `type`:
-  - **text** \(string\),
-  - **bool** \(boolean\),
-  - **password** \(hidden string on CLI\),
-  - **credentials** \(specific type, learn more information\* [**\*here**\_](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)\_\),
-  - **dynamic** _\(associated with the optional `request_info` field below\),_
-  - **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
-- `label`: text appearing on the CLI, asking for the input.
+* `type`:
+  * **text** \(string\),
+  * **bool** \(boolean\),
+  * **password** \(hidden string on CLI\),
+  * **credentials** \(specific type, learn more information_ [_**here**_](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)_\),
+  * **dynamic** _\(associated with the optional `request_info` field below\),_
+  * **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
+* `label`: text appearing on the CLI, asking for the input.
 
 #### Input example with mandatory fields:
 
@@ -81,11 +81,11 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 ### Some observations regarding the **`multiselect` type**
 
-- To select one of the options with the `multiselect` type, you must press the `space` key \(the `enter` key will move to the next input, if any\)
+* To select one of the options with the `multiselect` type, you must press the `space` key \(the `enter` key will move to the next input, if any\)
 
-- The options selected in the `multiselect` type field will return a string with the options separated by pipe \(`|`\) and without space example: `Monday | Wednesday | Friday`
+* The options selected in the `multiselect` type field will return a string with the options separated by pipe \(`|`\) and without space example: `Monday | Wednesday | Friday`
 
-- It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`
+* It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`
 
 #### Parameter example using the autocomplete type:
 
@@ -99,7 +99,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 ### Optional fields
 
-- `default`: default input value \(**if** **null**\).
+* `default`: default input value \(**if** **null**\).
 
 ```text
 {
@@ -118,7 +118,7 @@ In case of fields without a default value, the flag will keep asking for this in
 
 {{% /alert %}}
 
-- `required`: boolean that indicates if the input value is required or optional.
+* `required`: boolean that indicates if the input value is required or optional.
 
 ```text
 {
@@ -129,7 +129,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `tutorial`: input helper message _\[? for help\]_
+* `tutorial`: input helper message _\[? for help\]_
 
 ```text
 {
@@ -140,7 +140,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `items`: list of input variable options.
+* `items`: list of input variable options.
 
 ```text
 {
@@ -155,10 +155,10 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `cache`: Saves former input values.
-  - `active`: If the cache is enabled or not.
-  - `qty`: Amount of values to store.
-  - `newLabel`: Text appearing on the CLI asking for new input.
+* `cache`:  saves former input values.
+  * `active`: if cache is enabled or not.
+  * `qty`: amount of values to store.
+  * `newLabel`: text appearing on the CLI asking for a new input.
 
 ```text
 {
@@ -174,10 +174,10 @@ In case of fields without a default value, the flag will keep asking for this in
 
 ```
 
-- `condition`: It shows an input if the given condition succeeds.
-  - `variable`: The variable name used on a previous input for comparison.
-  - `operator`: A logical operator to compare. Supports **`==`**, **`!=`**, **`<`**, **`>`**, **`<=`**, and **`>=`.**
-  - `value`: The desired value to compare to.
+* `condition`: shows this input if the given condition succeeds
+  * `variable`: The variable name used on a previous input for comparison.
+  * `operator`: A logical operator to compare. Supports **`==`**, **`!=`**, **`<`**, **`>`**, **`<=`**, and **`>=`.**
+  * `value`: The desired value to compare to.
 
 ```text
 {
@@ -198,9 +198,9 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `pattern`: Configure the input value validation.
-  - `regex`: The regex pattern to validate the input.
-  - `mismatchText`: An error message when the input doesn't match the regex pattern.
+* `pattern`: configure an input value validation.
+  * `regex`: The regex pattern to validate the input.
+  * `mismatchText`: error message when input doesn't match the regex pattern
 
 ```text
 {
@@ -220,9 +220,9 @@ The **`dynamic input`** type will be **depreciated** in the **next releases**.
 
 {{% /alert %}}
 
-- `requestInfo`: A configuration to get the dynamic input type.
-  - `url`: An URL to consume a GET service that will return a list of objects.
-  - `jsonPath`: A JSON path where the variable extracts a returned list for every object, see `"jsonPath": $['user']['name']` \(Check out [**how the JSON path works**](https://goessner.net/articles/JsonPath/)\).
+* `requestInfo`: configuration to get dynamic input type.
+  * `url`: URL to consume a GET service that will return a list of objects.
+  * `jsonPath`: path to the variable to extract from the returned list, for each object. \(Check out [**how works the json path**](https://goessner.net/articles/JsonPath/)\).
 
 ```text
 {
