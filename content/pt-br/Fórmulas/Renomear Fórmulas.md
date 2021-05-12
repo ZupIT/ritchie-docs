@@ -18,8 +18,8 @@ Somente fórmulas locais podem ser renomeadas.
 
 Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear uma fórmula local. Os parâmetros de entrada necessários são:
 
-1. O nome da fórmula antiga
-2. O novo nome da fórmula
+1. O nome da fórmula antiga;
+2. O novo nome da fórmula.
 
 {{% alert color="info" %}}
 
@@ -32,9 +32,9 @@ Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear
 
 1. Todos os arquivos que identificam a fórmula serão alterados para o novo nome da fórmula
 
-   _essas alterações refletirão tanto nas pastas internas de controle do Ritchie, quanto na pasta do workspace (sendo ele o default ou personalizado)_
+   _essas alterações refletirão tanto nas pastas internas de controle do Ritchie, quanto na pasta do workspace (sendo ele o default ou personalizado)_.
 
-2. O autocomplete do Ritchie identificará somente o novo nome de fórmula
+2. O autocomplete do Ritchie identificará somente o novo nome de fórmula.
 
 ## Próximos passos
 

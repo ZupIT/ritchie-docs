@@ -69,6 +69,6 @@ rit rename formula --oldName='rit group old' --newName='rit group new'
 
 {{% alert color="info" %}}
 
-When more than one workspace has the old formula, an extra interaction via prompt for choosing the workspace is running by Ritchie
+When more than one workspace has the old formula, an extra interaction via a prompt for choosing the workspace is executed by Ritchie.
 
 {{% /alert %}}
