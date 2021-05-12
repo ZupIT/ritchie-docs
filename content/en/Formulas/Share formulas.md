@@ -81,7 +81,7 @@ If you want to list formulas from a specific repository, follow the steps below:
   repo-name-2
   ```
 
-2. Select the desired repository (or ALL) and system will return a list with commands and a short description defined on formula **`help.json`**
+2. Select the repository you want (or ALL), the system will return a list with the commands and a description defined on the **`help.json`** of each formula.
 
 ```text
 ? Repository: repo-name-1
