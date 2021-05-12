@@ -68,9 +68,9 @@ This feature is available from Ritchie 2.11 version.
 
 {{% /alert %}}
 
-When you work with various formula groups, it is sometimes difficult to remember every single available command. 
+When you work with various formula groups, it may be hard to remember all the available commands. 
 
-In order to list formulas from a specific repository, just follow these steps:
+If you want to list formulas from a specific repository, follow the steps below:
 
 1. Run the list command **`rit list formula`**. The system will return a list with the group of available repositories and also a ALL option.
 
