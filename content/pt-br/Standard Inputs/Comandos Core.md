@@ -55,7 +55,7 @@ rit list formula --name=repo_name
 
 {{% alert color="info" %}}
 
-Caso seja necessário listar as fórmulas de todos os repositórios adicionados, use a flag 'ALL'
+Se você precisar listar as fórmulas de todos os repositórios adicionados, use a flag '**ALL**'.
 
 {{% /alert %}} 
 
