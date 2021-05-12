@@ -72,7 +72,7 @@ When you work with various formula groups, it may be hard to remember all the av
 
 If you want to list formulas from a specific repository, follow the steps below:
 
-1. Run the list command **`rit list formula`**. The system will return a list with the group of available repositories and also a ALL option.
+1. Run the list command **` rit list formula`**. The system will return a list with the available groups of repositories and the  '**ALL**' option.
 
 ```text
 ? Repository:
