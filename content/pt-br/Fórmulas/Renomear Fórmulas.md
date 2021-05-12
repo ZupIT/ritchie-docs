@@ -21,6 +21,10 @@ Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear
 1. O nome da fórmula antiga;
 2. O novo nome da fórmula.
 
+Exemplo: `rit group old` > `rit group new`
+
+![](/docs-ritchie/rit-rename-formula.gif)
+
 {{% alert color="info" %}}
 
 - O Ritchie identificará automaticamente o workspace a qual a fórmula pertence.
