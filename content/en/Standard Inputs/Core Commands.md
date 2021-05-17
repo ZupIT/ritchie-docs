@@ -57,11 +57,12 @@ rit list formula --name=repo_name
 
 If you need to list formulas from every repository you have added, use the flag 'ALL'.
 
+{{% /alert %}}
+
 ```text
 rit list formula --name=ALL
 ```
 
-{{% /alert %}}
 rit rename formula
 
 ```text
