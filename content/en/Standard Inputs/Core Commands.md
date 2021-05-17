@@ -19,7 +19,7 @@ This flags are supported since Ritchie's 2.8 release.
 
 ### Credentials commands
 
-rit set credential 
+rit set credential
 
 ```text
 rit set credential --provider=github --fields=username,token --values=Dennis,123456
@@ -45,9 +45,23 @@ rit delete env
 rit delete env --env=prod
 ```
 
+### Formula commands
+
+rit rename formula
+
+```text
+rit rename formula --oldName='rit group old' --newName='rit group new'
+```
+
+{{% alert color="info" %}}
+
+When more than one workspace has the old formula, an extra interaction via a prompt for choosing the workspace is executed by Ritchie.
+
+{{% /alert %}}
+
 ### Repo commands
 
-rit add repo 
+rit add repo
 
 ```text
 rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
