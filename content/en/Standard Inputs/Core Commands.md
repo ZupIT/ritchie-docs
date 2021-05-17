@@ -45,20 +45,6 @@ rit delete env
 rit delete env --env=prod
 ```
 
-### Repo commands
-
-rit add repo
-
-```text
-rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
-```
-
-{{% alert color="info" %}}
-
-When the version flag is not passed, ritchie automatically searches for the latest version
-
-{{% /alert %}}
-
 ### Formula commands
 
 rit rename formula
@@ -72,3 +58,23 @@ rit rename formula --oldName='rit group old' --newName='rit group new'
 When more than one workspace has the old formula, an extra interaction via a prompt for choosing the workspace is executed by Ritchie.
 
 {{% /alert %}}
+
+### Repo commands
+
+rit add repo
+
+```text
+rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
+```
+
+{{% alert color="info" %}}
+
+When the version flag is not passed, ritchie automatically searches for the latest version
+
+{{% /alert %}} 
+
+rit delete repo
+
+```text
+rit delete repo --name=repo_name
+```
