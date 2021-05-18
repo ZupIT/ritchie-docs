@@ -92,11 +92,12 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 
 ### Comandos de Workspaces
 
-| Comandos             | Operações                                  |
-| :------------------- | :----------------------------------------- |
-| rit list workspace   | lista todas as fórmulas do workspace       |
-| rit add workspace    | adiciona um novo workspace                 |
-| rit delete workspace | remove uma fórmula específica do workspace |
+| Comandos             | Operações                                                                           |
+| :------------------- | :---------------------------------------------------------------------------------- |
+| rit list workspace   | lista todas as fórmulas do workspace                                                |
+| rit add workspace    | adiciona um novo workspace                                                          |
+| rit delete workspace | apaga um workspace                                                                 |
+| rit update workspace | atualiza um workspace \(para acessar novas fórmulas desse workspace com o Ritchie\) |
 
 ## Flags
 
