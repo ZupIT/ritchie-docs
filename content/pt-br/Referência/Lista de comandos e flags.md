@@ -46,8 +46,13 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
       <td>compila uma fórmula localmente para teste</td>
     </tr>
     <tr>
-      <td>rit build formula --watch</td>
-      <td>Compila uma fórmula para teste, monitorando atualizações do código no tempo real</td>
+      <td style="text-align:left">rit build formula --watch</td>
+      <td style="text-align:left">compila uma f&#xF3;rmula para teste, monitorando atualiza&#xE7;&#xF5;es
+        do c&#xF3;digo no tempo real</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">rit list formula</td>
+      <td style="text-align:left">lista todas as fórmulas disponíveis em um/todos repositórios</td>
     </tr>
     <tr>
       <td>rit rename formula</td>

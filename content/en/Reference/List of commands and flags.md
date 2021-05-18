@@ -53,6 +53,10 @@ description: In this section, you will find the list of Ritchie's main commands
       <td>rit rename formula</td>
       <td>rename a local formula</td>
     </tr>
+    <tr>
+      <td style="text-align:left">rit list formula</td>
+      <td style="text-align:left">list all available formulas from specific/all repositories</td>
+    </tr>
   </tbody>
 </table>
 

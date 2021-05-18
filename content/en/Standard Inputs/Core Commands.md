@@ -47,6 +47,22 @@ rit delete env --env=prod
 
 ### Formula commands
 
+rit list formula
+
+```text
+rit list formula --name=repo_name
+```
+
+{{% alert color="info" %}}
+
+If you need to list formulas from every repository you have added, use the flag 'ALL'.
+
+{{% /alert %}}
+
+```text
+rit list formula --name=ALL
+```
+
 rit rename formula
 
 ```text
@@ -57,7 +73,7 @@ rit rename formula --oldName='rit group old' --newName='rit group new'
 
 When more than one workspace has the old formula, an extra interaction via a prompt for choosing the workspace is executed by Ritchie.
 
-{{% /alert %}}
+{{% /alert %}} 
 
 ### Repo commands
 
@@ -71,7 +87,7 @@ rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/rit
 
 When the version flag is not passed, ritchie automatically searches for the latest version
 
-{{% /alert %}} 
+{{% /alert %}}
 
 rit delete repo
 
