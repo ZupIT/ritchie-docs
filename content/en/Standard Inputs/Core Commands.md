@@ -94,3 +94,23 @@ rit delete repo
 ```text
 rit delete repo --name=repo_name
 ```
+
+### Workspace Commands
+
+rit add workspace
+
+```text
+rit add workspace --name=workspace_name --path=path/to/workspace
+```
+
+rit delete workspace
+
+```text
+rit delete workspace --name=workspace_name
+```
+
+rit update workspace
+
+```text
+rit update workspace --name=workspace_name
+```
