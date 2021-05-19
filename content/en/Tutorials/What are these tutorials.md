@@ -6,8 +6,7 @@ description: >-
   formulas on Ritchie with a gradual complexity.
 ---
 
-
-## Context 
+## Context
 
 The objective of this section is to help users to understand step by step several activities  you are able to do with Richie.
 
@@ -24,15 +23,8 @@ To perform the tasks in this section, it will be necessary to understand the fol
 
 The **`first tutorial`** is to understand how to manipulate basic inputs.
 
-
-
 The **`second tutorial`** is to understand how to manipulate credentials inputs.
-
-
 
 The **`third tutorial`** is to understand how to manipulate conditional inputs.
 
-
-
 The **`fourth tutorial`** is to apply the formula aggregation concept.
-

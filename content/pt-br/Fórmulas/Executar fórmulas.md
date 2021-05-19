@@ -1,5 +1,5 @@
 ---
-title: Executar fórmulas 
+title: Executar fórmulas
 weight: 24
 description: >-
   Nesta seção, você vai encontrar como executar fórmulas no
@@ -21,13 +21,13 @@ Vale reforçar que **método de execução de fórmulas padrão** é escolhido d
 rit set formula-runner
 ```
 
-![](/docs/large-gif-1374x404-.gif)
+![](/shared/large-gif-1374x404-.gif)
 
 ### 1. Execução local
 
 Para executar uma fórmula localmente, é necessário ter instalada no computador a linguagem de programação que foi usada para desenvolver a fórmula.
 
-Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado** na máquina para ser executada localmente.  
+Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado** na máquina para ser executada localmente.
 
 
 ### 2. Execução via Docker
@@ -39,16 +39,13 @@ Para ver melhor como essa execução funciona na prática, confira a [**seção 
 {{% /alert %}}
 
 {{% alert color="warning" %}}
- 
- **Usuários do Docker no MacOS:** 
-Para evitar o **'Error: exit status 1'**, é preciso **desativar** o Cloud Experience, dependendo da sua versão. 
 
-Veja como: 
+Veja como:
 
 Acesse no Docker:
  -  Preferences > Command Line>  Enable cloud experience.
 
- ![](/docs-ritchie/unnamed-removebg-preview.png)
+ ![](/shared/unnamed-removebg-preview.png)
 
 {{% /alert %}}
 
@@ -56,8 +53,8 @@ Acesse no Docker:
 
 É possível forçar o Ritchie CLI a executar uma fórmula seguindo um método de execução específico, usando flags.
 
-* A flag **`--local`** executará a fórmula localmente \(se o método de execução padrão for o Docker\). 
-* A flag **`--docker`** executará a fórmula com Docker \(se o método de execução padrão for local\). 
+* A flag **`--local`** executará a fórmula localmente \(se o método de execução padrão for o Docker\).
+* A flag **`--docker`** executará a fórmula com Docker \(se o método de execução padrão for local\).
 
 ### 4. Containers com Ritchie
 
@@ -65,8 +62,7 @@ Acesse no Docker:
 Todos os templates de formulas contém um arquivo **DockerFile** que cria um container com **Ritchie CLI** instalado.
 {{% /alert %}}
 
-
-## Próximos passos 
+## Próximos passos
 
 Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:
 

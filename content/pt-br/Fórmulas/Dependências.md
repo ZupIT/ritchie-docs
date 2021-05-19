@@ -11,13 +11,11 @@ description: >-
 
 {{% alert color="info" %}}
 
-Cada linguagem de programação possui suas próprias especificidades para **importar bibliotecas ou pacotes**. 
+Cada linguagem de programação possui suas próprias especificidades para **importar bibliotecas ou pacotes**.
 
 {{% /alert %}}
 
 No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente. Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar.
-
-
 
 {{< tabs id="T2" >}}
 {{% tab name="go.mod \(GOLANG\)" %}}

@@ -41,7 +41,7 @@ Você deverá informar 5 tipos diferentes de parâmetros de entrada:
 4. O **`caminho local do repositório`** you wish to publish
 5. A **`versão da release`** para ser gerada
 
-![](/docs/rit-publish-repo.gif)
+![](/shared/rit-publish-repo.gif)
 
 {{% alert color="warning" %}}
 Como demonstrado acima, você pode checar se a publicação deu certo usando o comando **`rit list repo`** e observando se o repositório publicado aparece.

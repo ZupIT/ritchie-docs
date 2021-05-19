@@ -12,7 +12,7 @@ Once a formula repository has been published, other users can add it locally fro
 
 Example: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
 
-To add a new repository on Ritchie, it is necessary to run the command: 
+To add a new repository on Ritchie, it is necessary to run the command:
 
 ```text
 rit add repo
@@ -20,7 +20,7 @@ rit add repo
 
 Once the repository has been added, Ritchie will use the selected release on the repository to access the available formulas.
 
-![](/docs-ritchie/rit-add-repo-3.gif)
+![](/shared/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
 If the formula repository is **private**, the user will have to inform his Github/Gitlab token.
@@ -30,7 +30,7 @@ If the formula repository is **private**, the user will have to inform his Githu
 
 {{% alert color="info" %}}
 
-This feature is available from Ritchie 2.2 version. 
+This feature is available from Ritchie 2.2 version.
 
 {{% /alert %}}
 
@@ -38,7 +38,7 @@ On Ritchie, it is possible to check out new formula commands and if there is a n
 
 To do so, just follow these steps:
 
-1. Run the help command **`rit --help`**. The system will return a list with the group of available repositories. 
+1. Run the help command **`rit --help`**. The system will return a list with the group of available repositories.
 
 ```text
 (new version 2.12.1) commons repo commands:
@@ -104,9 +104,9 @@ To update the version of any repository, you just have to run the command below 
 rit update repo
 ```
 
-## Next steps 
+## Next steps
 
-On this section, you saw how to share a formula on Ritchie. To keep configuring the formula: 
+On this section, you saw how to share a formula on Ritchie. To keep configuring the formula:
 
 👉 Check out how to [**use credentials**](/docs-ritchie/credentials/use-credentials-as-formula-inputs/) with your formulas.
 

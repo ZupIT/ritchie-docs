@@ -8,7 +8,7 @@ description: 'Nesta seção, você verá como inicializar o rit.'
 
 ## Passo 1: Inicialização
 
-Você deve executar o comando abaixo para inicializar o Ritchie: 
+Você deve executar o comando abaixo para inicializar o Ritchie:
 
 ```text
 rit init
@@ -18,9 +18,9 @@ Esse comando vai pedir **três informações:**
 
 1. Se o usuário **quer contribuir anonimamente** as métricas do produto.
 2. Se o usuário **quer adicionar as fórmulas** da comunidade localmente.
-3. Se o usuário **quer usar o** [**método de execução de fórmulas**](/docs-ritchie/pt-br/fórmulas/executar-fórmulas/) **local ou via docker**. 
+3. Se o usuário **quer usar o** [**método de execução de fórmulas**](/docs-ritchie/pt-br/fórmulas/executar-fórmulas/) **local ou via docker**.
 
-![](/docs/rit-init%20%283%29.gif)
+![](/shared/rit-init%20%283%29.gif)
 
 Após a execução desse comando, todos os arquivos de configuração para a máquina funcionar serão criados.
 
@@ -36,7 +36,7 @@ rit list repo
 
 Esse comando retorna todos os repositórios de fórmulas que o usuário tem acesso localmente.
 
-![](/docs/large-gif-1448x466-.gif)
+![](/shared/large-gif-1448x466-.gif)
 
 ### 2. Pasta Ritchie
 
