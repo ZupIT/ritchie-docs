@@ -23,7 +23,7 @@ You can use the core command **`rit rename formula`** to rename a local formula.
 
 Example: `rit group old` > `rit group new`
 
-![](/docs-ritchie/rit-rename-formula.gif)
+![](/shared/rit-rename-formula.gif)
 
 {{% alert color="info" %}}
 
