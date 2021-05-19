@@ -1,0 +1,51 @@
+name: Build staging
+
+on:
+  push:
+    branches:
+    - master
+
+env:
+  AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_STG }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_STG }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_STG }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN_STG }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
+
+      - name: S3 upload (images)
+        run: aws s3 sync --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/ --delete
+
+      - name: Remove static images
+        shell: bash
+        working-directory: static
+        run: rm -rf shared
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: hugo -D --minify -b $BASE_URL
+        env:
+          BASE_URL: https://docs.stgritchiecli.io
+
+      - name: S3 upload
+        run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET --delete

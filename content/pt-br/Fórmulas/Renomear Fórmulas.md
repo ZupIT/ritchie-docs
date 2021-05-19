@@ -23,7 +23,7 @@ Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear
 
 Exemplo: `rit group old` > `rit group new`
 
-![](/docs-ritchie/rit-rename-formula.gif)
+![](/shared/rit-rename-formula.gif)
 
 {{% alert color="info" %}}
 

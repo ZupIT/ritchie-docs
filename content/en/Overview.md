@@ -12,15 +12,11 @@ Ritchie is an **open source framework** that allows you to create, store and sha
 
 {{< youtube PtKFco2pIqs >}}
 
-## **Versioning** 
+## **Versioning**
 
 Currently, Ritchie has **two available versions**. On this documentation, we'll focus on **Ritchie** **version 2.0.**
 
-
-
 ### **What's new?**
-
-
 
 ## **How does Ritchie work?**
 
@@ -30,4 +26,4 @@ It means that **a formula is a script** that can be executed automatically or in
 
 Adapting an existing script to Ritchie structure allows you to run it **locally** or through **Docker**, and to share it on **Bitbucket** ,**Github** or **Gitlab** repository.
 
-![](/docs-ritchie/formula-ritchie-en%20%281%29%20%281%29.jpg)
+![](/shared/formula-ritchie-en%20%281%29%20%281%29.jpg)
