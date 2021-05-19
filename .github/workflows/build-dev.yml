@@ -47,4 +47,4 @@ jobs:
           BASE_URL: https://docs.devritchiecli.io
 
       - name: S3 upload
-        run: aws s3 sync --acl public-read --follow-symlinks public s3://$AWS_S3_BUCKET --delete
+        run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET --delete
