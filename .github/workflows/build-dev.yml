@@ -4,7 +4,6 @@ on:
   pull_request:
     branches:
     - main
-  workflow_dispatch:
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_DEV }}
