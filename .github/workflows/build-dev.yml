@@ -3,7 +3,7 @@ name: Build dev
 on:
   pull_request:
     branches:
-    - master
+    - main
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_DEV }}

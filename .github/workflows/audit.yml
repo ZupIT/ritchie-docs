@@ -9,7 +9,7 @@ jobs:
     - name: Audit live URL
       uses: jakejarvis/lighthouse-action@master
       with:
-        url: 'https://zupit.github.io/docs-ritchie/'
+        url: 'https://docs.devritchiecli.io'
     - name: Upload results as an artifact
       uses: actions/upload-artifact@master
       with:

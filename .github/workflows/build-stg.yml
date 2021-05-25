@@ -3,7 +3,7 @@ name: Build staging
 on:
   push:
     branches:
-    - master
+    - main
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_STG }}
