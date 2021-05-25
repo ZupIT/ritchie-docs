@@ -30,14 +30,6 @@ jobs:
           hugo-version: '0.78.1'
           extended: true
 
-      - name: S3 upload (images)
-        run: aws s3 sync --follow-symlinks static/shared s3://$AWS_S3_BUCKET/shared/ --delete
-
-      - name: Remove static images
-        shell: bash
-        working-directory: static
-        run: rm -rf shared
-
       - name: Install dependencies
         run: yarn
 
