@@ -95,7 +95,7 @@ rit delete repo
 rit delete repo --name=repo_name
 ```
 
-### Comandos de workspace
+### Comandos de Workspace
 
 rit add workspace
 
