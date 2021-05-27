@@ -1,6 +1,6 @@
 ---
 title: Renomear fórmulas
-weight: 44
+weight: 45
 description: Você encontrará nessa seção informações sobre como renomear uma fórmula no Ritchie.
 ---
 

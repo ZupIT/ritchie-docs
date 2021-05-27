@@ -1,6 +1,6 @@
 ---
 title: Delete formulas
-weight: 48
+weight: 49
 description: >-
   In this section, you will find how to delete formulas on Ritchie.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Rename formulas
-weight: 44
+weight: 45
 description: In this section you will find information about how to rename a formula in Ritchie.
 ---
 

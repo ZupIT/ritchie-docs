@@ -1,6 +1,6 @@
 ---
 title: Compartilhar fórmulas
-weight: 46
+weight: 47
 description: >-
   Nesta seção, você vai encontrar detalhes de como compartilhar suas fórmulas em um repositório já
   criado no Ritchie.

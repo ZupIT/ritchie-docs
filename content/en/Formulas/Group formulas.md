@@ -1,6 +1,6 @@
 ---
 title: Group formulas
-weight: 50
+weight: 51
 description: 'In this section, you will understand how to  group formulas on Ritchie.'
 ---
 

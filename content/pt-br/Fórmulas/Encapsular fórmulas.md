@@ -1,6 +1,6 @@
 ---
 title: Encapsular fórmulas
-weight: 50
+weight: 51
 description: 'Nesta seção, você vai entender o que é e como encapsular fórmulas em Ritchie.'
 ---
 
