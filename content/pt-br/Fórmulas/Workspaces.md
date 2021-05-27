@@ -79,8 +79,6 @@ Depois disso, siga as etapas:
 
 ## Próximos passos
 
-Nesta seção, você viu como usar workspacesno Ritchie. Para continuar lendo mais:
-
-👉 Vá para seção [**como encapsular fórmulas**](/docs-ritchie/pt-br/fórmulas/encapsular-fórmulas/) para descobrir como se executa uma fórmula dentro de outra fórmula.
+Nesta seção, você viu como usar workspaces no Ritchie. Para continuar lendo mais:
 
 👉 Conheça a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.

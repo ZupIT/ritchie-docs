@@ -83,6 +83,4 @@ Once you've made this, follow the steps:
 
 On this section, you saw how to use workspaces on Ritchie. To keep reading:
 
-👉 Go to [**how to group formulas**](/docs-ritchie/formulas/group-formulas/) section to find out how to run a formula inside another formula.
-
 👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/)
