@@ -23,6 +23,8 @@ Check out more about workspace and repositories commands [**in the list of comma
 
 ## How to Add?
 
+You can add any
+
 To add a workspace, you just have to run this command:
 
 ```text
