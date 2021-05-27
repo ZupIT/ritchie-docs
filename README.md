@@ -10,13 +10,13 @@ This documentation uses [hugo server](https://gohugo.io/commands/hugo_server/).
 
 ## How to contribute?
 
-- **Always** base your work on the project's `master` branch, naming your new branch according to the following guide :
+- **Always** base your work on the project's `main` branch, naming your new branch according to the following guide :
 
 ![git-branchs](https://user-images.githubusercontent.com/22433243/117700179-0f060780-b19c-11eb-8d03-42cfbd2de798.png)
 
 **Examples:** `feature/name` or `fix/name`
 
-- **New contents** should be added to the [`content` folder](https://github.com/ZupIT/docs-ritchie/tree/master/content).
+- **New contents** should be added to the [`content` folder](https://github.com/ZupIT/docs-ritchie/tree/main/content).
 
 - Open a new Pull Request for **each new content** and for **each language**.
 
