@@ -69,11 +69,11 @@ Para excluir um workspace, você só precisa executar este comando:
 rit delete workspace
 ```
 
-Depois disso, siga as etapas:
+Depois disso, siga os passos:
 
-**Etapa 1:** Selecione o workspace
+**Passo 1:** Selecione o workspace;
 
-**Step 2:** Confirme que deseja excluir o workspace.
+**Passo 2:** Confirme que você deseja excluir o workspace.
 
 ![](/shared/delete-workspace.gif)
 
