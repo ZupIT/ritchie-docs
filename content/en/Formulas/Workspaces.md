@@ -71,9 +71,9 @@ To delete a workspace, you just have to run this command:
 rit delete workspace
 ```
 
-Once you've made this, follow the steps:
+After that, follow the next steps:
 
-**Step 1:** Select the workspace name.
+**Step 1:** Select the workspace name; 
 
 **Step 2:** Confirm you want to delete the workspace.
 
