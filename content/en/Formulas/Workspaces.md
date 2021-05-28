@@ -65,7 +65,7 @@ Once you've made this, select the workspace name and wait for the CLI output mes
 
 ## How to Delete?
 
-To delete a workspace, you just have to run this command:
+To delete a workspace, run the command below:
 
 ```text
 rit delete workspace
