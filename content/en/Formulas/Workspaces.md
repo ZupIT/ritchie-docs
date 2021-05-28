@@ -15,9 +15,9 @@ Repositories and workspaces are used to interact with formulas on Ritchie, but t
 
 **`repository`** You can use repository commands to import formulas from `git repositories` and execute them.
 
-*There is an example to add a repository on the [**Hello World Formula**](/docs-ritchie/formulas/hello-world-formula/) section.*
+*See an example to add a repository on the [**Hello World Formula**](/docs-ritchie/formulas/hello-world-formula/) section.*
 
-Commands for repos and workspaces are similar, both will allow the CLI to "see" available formulas on the local machine. Workspaces have a **higher priority** than Repos (if you use both commands for the same formulas repositories, the workspaces formulas will be executed).
+Commands for repos and workspaces are similar, they allow the CLI to "see" available formulas on your local machine. Workspaces have **higher priority** than Repos, for example, if you use both commands for the same formulas' repositories, the workspaces' formulas will be executed.
 
 Check out more about workspace and repositories commands [**in the list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/).
 
