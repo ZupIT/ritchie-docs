@@ -23,17 +23,19 @@ Veja mais sobre os comandos de workspace e repositórios na [**lista de comandos
 
 ## Como Adicionar?
 
-Execute esse comando para adicionar um novo workspace:
+Siga os passos para adicionar:
+
+**Passo 1:** Execute o comando abaixo para adicionar um novo workspace:
 
 ```text
 rit add workspace
 ```
 
-Você deverá informar alguns parâmetros de entrada antes da sua execução:
+**Passo 2:** Informe alguns parâmetros de entrada antes da sua execução:
 
-**Etapa 1:** Informe o nome do workspace (não use *espaços* ou *caracteres especiais*).
+1: Informe o nome do workspace (não use espaços ou caracteres especiais).
 
-**Etapa 2:** Informe o caminho (*path*) do workspace na máquina local.
+2: Informe o caminho (path) do workspace na sua máquina local.
 
 ![](/shared/add-workspace.gif)
 
