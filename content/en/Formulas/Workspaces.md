@@ -81,6 +81,6 @@ Once you've made this, follow the steps:
 
 ## Next Steps
 
-On this section, you saw how to use workspaces on Ritchie. To keep reading:
+In this section, you saw how to use workspaces on Ritchie. Now
 
 👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/)

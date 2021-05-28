@@ -41,7 +41,7 @@ rit add workspace
 
 ## Como Listar?
 
-Execute esse comando para adicionar listar os workspaces da máquina:
+Execute o comando abaixo para listar os workspaces da máquina:
 
 ```text
 rit list workspace
@@ -51,9 +51,9 @@ rit list workspace
 
 ## Como Atualizar?
 
-Se você não é a única pessoa trabalhando num workspace (por exemplo: se for um repositório clonado do git), pode ser necessário atualizar o workspace para permitir que a CLI "veja" novas fórmulas disponíveis (ou atualizações) na máquina local, após fazer o *pull* o código.
+Se você não é a única pessoa trabalhando em um workspace (por exemplo: se for um repositório clonado do Git), é necessário atualizar o workspace para permitir que a CLI "veja" as novas fórmulas ou atualizações disponíveis na sua máquina local, após fazer o *pull* o código.
 
-Para atualizar um espaço de trabalho, você só precisa executar este comando:
+Para atualizar um espaço de trabalho, execute o comando abaixo:
 
 ```text
 rit update workspace
@@ -71,11 +71,11 @@ Para excluir um workspace, você só precisa executar este comando:
 rit delete workspace
 ```
 
-Depois disso, siga as etapas:
+Depois disso, siga os passos:
 
-**Etapa 1:** Selecione o workspace
+**Passo 1:** Selecione o workspace;
 
-**Step 2:** Confirme que deseja excluir o workspace.
+**Passo 2:** Confirme que você deseja excluir o workspace.
 
 ![](/shared/delete-workspace.gif)
 
