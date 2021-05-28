@@ -57,7 +57,7 @@ To update a workspace, run this command:
 rit update workspace
 ```
 
-Once you've made this, select the workspace name and wait for the CLI output message.
+After that, select the workspace name and wait for the CLI output message.
 
 ![](static/shared/rit-update-workspace.gif)
 
