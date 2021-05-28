@@ -9,7 +9,7 @@ description: >-
 
 ## Qual a diferença entre workspace e repositório?
 
-Repositórios e workspaces são ambos usados para interagir com as fórmulas no Ritchie em situações diferenciadas, veja abaixo a diferença:
+Repositórios e workspaces são usados para interagir com as fórmulas no Ritchie, mas em situações diferentes, veja abaixo:
 
 **`workspace`** Você pode usar os comandos do workspace para desenvolver, editar e testar fórmulas `locais`.
 
