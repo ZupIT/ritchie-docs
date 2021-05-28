@@ -23,21 +23,19 @@ Check out more about workspace and repositories commands [**in the list of comma
 
 ## How to Add?
 
-You can add any
-
 To add a workspace, you just have to run this command:
 
 ```text
 rit add workspace
 ```
 
-Once you've made this, follow the steps:
+After that, follow the next steps:
 
 **Step 1:** Inform the workspace name (don't use *spaces* or *special characters*).
 
 **Step 2:** Inform the workspace path on the local machine.
 
-![](/shared/add-workspace.gif)
+![](static/shared/rit-add-workspace.gif)
 
 ## How to List?
 
@@ -47,7 +45,7 @@ To list avalaible workspaces, you just have to run this command:
 rit list workspace
 ```
 
-![](/shared/list-workspace.gif)
+![](static/shared/rit-list-workspace.gif)
 
 ## How to Update?
 
@@ -61,7 +59,7 @@ rit update workspace
 
 Once you've made this, select the workspace name and wait for the CLI output message.
 
-![](/shared/update-workspace.gif)
+![](static/shared/rit-update-workspace.gif)
 
 ## How to Delete?
 
@@ -77,7 +75,7 @@ After that, follow the next steps:
 
 **Step 2:** Confirm you want to delete the workspace.
 
-![](/shared/delete-workspace.gif)
+![](static/shared/rit-delete-workspace.gif)
 
 ## Next Steps
 
