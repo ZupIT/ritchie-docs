@@ -49,9 +49,9 @@ rit list workspace
 
 ## Como Atualizar?
 
-Se você não é a única pessoa trabalhando num workspace (por exemplo: se for um repositório clonado do git), pode ser necessário atualizar o workspace para permitir que a CLI "veja" novas fórmulas disponíveis (ou atualizações) na máquina local, após fazer o *pull* o código.
+Se você não é a única pessoa trabalhando em um workspace (por exemplo: se for um repositório clonado do Git), é necessário atualizar o workspace para permitir que a CLI "veja" as novas fórmulas ou atualizações disponíveis na sua máquina local, após fazer o *pull* o código.
 
-Para atualizar um espaço de trabalho, você só precisa executar este comando:
+Para atualizar um espaço de trabalho, execute o comando abaixo:
 
 ```text
 rit update workspace
