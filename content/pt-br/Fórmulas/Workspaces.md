@@ -65,7 +65,7 @@ Depois disso, selecione o nome do workspace e aguarde a mensagem de saída do CL
 
 ## Como Apagar?
 
-Para excluir um workspace, você só precisa executar este comando:
+Para excluir um workspace, execute o comando:
 
 ```text
 rit delete workspace
