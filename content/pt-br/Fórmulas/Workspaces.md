@@ -13,7 +13,7 @@ Repositórios e workspaces são usados para interagir com as fórmulas no Ritchi
 
 **`workspace`** Você pode usar os comandos do workspace para desenvolver, editar e testar fórmulas `locais`.
 
-**`repository`** Você pode usar o repositório para fazer o download de fórmulas de `repositórios git` e usa-las.
+**`repository`** Você pode usar o repositório para fazer o download de fórmulas de `repositórios Git` e usa-las.
 
 *Veja o exemplo de adição de repositório na seção [**Executar uma fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
 
