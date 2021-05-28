@@ -39,7 +39,7 @@ Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
 ## Como Listar?
 
-Execute esse comando para adicionar listar os workspaces da máquina:
+Execute o comando abaixo para listar os workspaces da máquina:
 
 ```text
 rit list workspace
