@@ -15,9 +15,9 @@ Repositórios e workspaces são usados para interagir com as fórmulas no Ritchi
 
 **`repository`** Você pode usar o repositório para fazer o download de fórmulas de `repositórios git` e usa-las.
 
-*Tem um exemplo de adição de repositório na seção [**Executar uma fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
+*Veja o exemplo de adição de repositório na seção [**Executar uma fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
 
-Os comandos para repos e workspaces são similares, ambos permitem o CLI 'ver' as fórmulas disponíveis. Os workspaces possuem **prioridade mais alta** que os Repos (se você usar os dois comandos para os mesmos repositórios de fórmulas, os workspaces serão executados).
+Os comandos para repos e workspaces são similares, eles permitem que o CLI 'veja' as fórmulas disponíveis. Os workspaces possuem **prioridade mais alta** que os Repos, se você usar, por exemplo, os dois comandos para os mesmos repositórios de fórmulas, os workspaces serão executados.
 
 Veja mais sobre os comandos de workspace e repositórios na [**lista de comandos e flags**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/).
 
