@@ -37,7 +37,7 @@ rit add workspace
 
 2: Informe o caminho (path) do workspace na sua máquina local.
 
-![](/shared/add-workspace.gif)
+![](static/shared/add-workspace.gif)
 
 ## Como Listar?
 
@@ -47,7 +47,7 @@ Execute o comando abaixo para listar os workspaces da máquina:
 rit list workspace
 ```
 
-![](/shared/list-workspace.gif)
+![](static/shared/list-workspace.gif)
 
 ## Como Atualizar?
 
@@ -61,7 +61,7 @@ rit update workspace
 
 Depois disso, selecione o nome do workspace e aguarde a mensagem de saída do CLI.
 
-![](/shared/update-workspace.gif)
+![](static/shared/update-workspace.gif)
 
 ## Como Apagar?
 
@@ -77,7 +77,7 @@ Depois disso, siga os passos:
 
 **Passo 2:** Confirme que você deseja excluir o workspace.
 
-![](/shared/delete-workspace.gif)
+![](static/shared/delete-workspace.gif)
 
 ## Próximos passos
 
