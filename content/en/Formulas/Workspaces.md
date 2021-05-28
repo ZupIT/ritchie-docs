@@ -51,9 +51,9 @@ rit list workspace
 
 ## How to Update?
 
-If you're not the only person updating the workspace (e.g: if it's a cloned repository from git) you may need to update the workspace to allow the CLI to "see" new available formulas or updates on the local machine after *pulling* the code.
+If you're not the only person updating the workspace (e.g: if it's a cloned repository from Git) you may need to update the workspace to allow the CLI to "see" the newly available formulas or updates on your local machine after *pulling* the code.
 
-To update a workspace, you just have to run this command:
+To update a workspace, run this command:
 
 ```text
 rit update workspace
