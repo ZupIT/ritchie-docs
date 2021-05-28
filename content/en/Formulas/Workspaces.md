@@ -13,7 +13,7 @@ Repositories and workspaces are used to interact with formulas on Ritchie, but t
 
 **`workspace`** You can use workspace commands to develop, edit and test formulas `locally`.
 
-**`repository`** You can use repository commands to import formulas from `git repositories` and execute them.
+**`repository`** You can use repository commands to import formulas from `Git repositories` and execute them.
 
 *See an example to add a repository on the [**Hello World Formula**](/docs-ritchie/formulas/hello-world-formula/) section.*
 
