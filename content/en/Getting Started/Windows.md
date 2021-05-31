@@ -18,7 +18,7 @@ You can download Ritchie:
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchiecli.msi
 ```
 
-Once you made it, follow the instructions on your terminal after running the `rit` command.
+When you finish, follow the instructions on your terminal after running the `rit` command.
 
 {{% alert color="info" %}}
 If you prefer, you also can proceed with the[ **manual installation**.](/docs-ritchie/getting-started/manual-installation/)
