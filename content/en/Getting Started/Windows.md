@@ -10,9 +10,9 @@ To install **the latest version of Ritchie** on Windows, you have to download Ri
 
 ## Step 1: Download the installer
 
-You can download the Ritchie latest version using this link: [latest version](https://commons-repo.ritchiecli.io/latest/ritchiecli.msi)
-
-Or download any version by pasting this URL on your navigator substituting the `{VERSION}` field according to [the project repository tags](https://github.com/ZupIT/ritchie-cli/tags):
+You can download Ritchie:
+- Using this link to the [latest version](https://commons-repo.ritchiecli.io/latest/ritchiecli.msi);
+- Or any version you want: just paste the URL on your browser replacing the `{VERSION}` field according to [the repository's project tags](https://github.com/ZupIT/ritchie-cli/tags):
 
 ```url
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchiecli.msi
