@@ -16,19 +16,41 @@ Once you have it, just run the command below at your terminal.
 
 ## Step 1: Installing command
 
-Copy and paste the command below to run on your terminal: 
+### Latest Version
+
+Copy and paste the command below to run on your terminal:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
+### Packages
+
+To download a specific package or version, just paste the URL on your browser replacing the `{VERSION}` field according to [the repository's project tags](https://github.com/ZupIT/ritchie-cli/tags):
+
+#### Red Hat Package Manager
+
+```url
+https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.rpm
+```
+
+#### Debian
+
+```url
+https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
+```
+
+#### Arch Linux
+
+The `tar.gz` package is available on this [Arch Linux user repository](https://aur.archlinux.org/packages/ritchie-cli/) page ([repository reference](https://github.com/avelino/ritchie-cli-archpack)).
+
 {{% alert color="info" %}}
 If you prefer, you also can follow with the[ **manual installation**.](/docs-ritchie/getting-started/manual-installation/)
 {{% /alert %}}
 
-## Step 2: Verify installation 
+## Step 2: Verify installation
 
-You can confirm if your installation went well by running this command: 
+You can confirm if your installation went well by running this command:
 
 ```text
 rit --version
