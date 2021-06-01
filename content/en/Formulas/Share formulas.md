@@ -1,6 +1,6 @@
 ---
 title: Share formulas
-weight: 46
+weight: 47
 description: 'In this section, you will find how to share formulas on Ritchie.'
 ---
 

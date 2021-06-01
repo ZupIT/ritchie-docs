@@ -1,6 +1,6 @@
 ---
 title: Publish formulas
-weight: 44
+weight: 46
 description: 'In this section, you will find how to publish formulas on Ritchie.'
 ---
 
