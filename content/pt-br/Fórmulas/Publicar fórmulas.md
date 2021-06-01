@@ -1,6 +1,6 @@
 ---
 title: Publicar fórmulas
-weight: 44
+weight: 46
 description: Você encontrará nessa seção como publicar uma fórmula no Ritchie.
 ---
 
