@@ -40,13 +40,13 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 > A good practice is to add a **_`RIT_`** suffix to each **`input name`** to avoid having conflicts with local variables.
 >
-> Example*: `rit_file_name` --&gt; `RIT_FILE_NAME`*
+> **Example: `rit_file_name` --&gt; `RIT_FILE_NAME`**
 
 - `type`:
   - **text** \(string\),
   - **bool** \(boolean\),
   - **password** \(hidden string on CLI\),
-  - **credentials** \(specific type, learn more information\* [**\*here**\_](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)\_\),
+  - **credentials** \(specific type, check out more on [**use crendential as formula inputs**](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)\_\),
   - **dynamic** _\(associated with the optional `request_info` field below\),_
   - **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
 - `label`: text appearing on the CLI, asking for the input.

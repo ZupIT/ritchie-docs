@@ -10,9 +10,9 @@ Para instalar a **última versão do Ritchie**, você precisa  fazer o **downloa
 
 ## Passo 1: Faça download do instalador
 
-Você pode baixar Ritchie:
-- Usando esse link da [última versão]((https://commons-repo.ritchiecli.io/latest/ritchiecli.msi))
-- Ou qualquer versão usando a URL no seu navegador, substituindo o campo `{VERSION}` de acordo com [a tag do repositório do projeto](https://github.com/ZupIT/ritchie-cli/tags):
+Você tem duas formas de fazer o download do Ritchie:
+1. Usando esse link da [**última versão**]((https://commons-repo.ritchiecli.io/latest/ritchiecli.msi)).
+2. Você também pode baixar qualquer versão usando a URL no seu navegador, substituindo o campo `{VERSION}` de acordo com [**a tag do repositório do projeto**](https://github.com/ZupIT/ritchie-cli/tags):
 
 ```url
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchiecli.msi

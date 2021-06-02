@@ -23,7 +23,7 @@ Once you've made this, follow the steps:
 
 **Step 3:** The Ritchie will ask you to confirm if you wish to continue the operation to delete the formula. Just select the answer "yes".
 
-![](/shared/delete-formula.gif)
+![](/docs-ritchie/shared/delete-formula.gif)
 
 ## Next Steps
 
