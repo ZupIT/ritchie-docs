@@ -33,7 +33,7 @@ If you prefer, you also can proceed with the[ **manual installation**.](/docs-ri
 
 ## Step 2: Verify installation
 
-You can confirm if your installation went well by running this command:
+Confirm if your installation went well, run the command below:
 
 ```text
 rit --version
