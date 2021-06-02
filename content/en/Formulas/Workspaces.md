@@ -21,7 +21,7 @@ Commands for repos and workspaces are similar, they allow the CLI to "see" avail
 
 Check out more about workspace and repositories commands [**in the list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/).
 
-## How to Add?
+## How to add?
 
 To add a workspace, you just have to run this command:
 
@@ -35,9 +35,9 @@ After that, follow the next steps:
 
 **Step 2:** Inform the workspace path on the local machine.
 
-![](/shared/rit-add-workspace.gif)
+![](/docs-ritchie/shared/rit-add-workspace.gif)
 
-## How to List?
+## How to list?
 
 To list avalaible workspaces, you just have to run this command:
 
@@ -45,9 +45,9 @@ To list avalaible workspaces, you just have to run this command:
 rit list workspace
 ```
 
-![](/shared/rit-list-workspace.gif)
+![](/docs-ritchie/shared/rit-list-workspace.gif)
 
-## How to Update?
+## How to update?
 
 If you're not the only person updating the workspace (e.g: if it's a cloned repository from Git) you may need to update the workspace to allow the CLI to "see" the newly available formulas or updates on your local machine after *pulling* the code.
 
@@ -59,9 +59,9 @@ rit update workspace
 
 After that, select the workspace name and wait for the CLI output message.
 
-![](/shared/rit-update-workspace.gif)
+![](/docs-ritchie/shared/rit-update-workspace.gif)
 
-## How to Delete?
+## How to delete?
 
 To delete a workspace, run the command below:
 
@@ -75,7 +75,7 @@ After that, follow the next steps:
 
 **Step 2:** Confirm you want to delete the workspace.
 
-![](/shared/rit-delete-workspace.gif)
+![](/docs-ritchie/shared/rit-delete-workspace.gif)
 
 ## Next Steps
 

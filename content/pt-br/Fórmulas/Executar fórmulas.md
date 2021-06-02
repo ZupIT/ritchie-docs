@@ -45,7 +45,7 @@ Veja como:
 Acesse no Docker:
  -  Preferences > Command Line>  Enable cloud experience.
 
- ![](/shared/unnamed-removebg-preview.png)
+ ![](/docs-ritchie/shared/unnamed-removebg-preview.png)
 
 {{% /alert %}}
 

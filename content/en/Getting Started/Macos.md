@@ -13,10 +13,10 @@ To install the **latest version of Ritchie** for MacOS, you just have to run the
 To use Ritchie on MacOs with version **`2.0.5 and earlier`**, we recommend to install the following elements:
 
 * The **make** command \([**Using "make" on macOS**](https://stackoverflow.com/questions/1469994/using-make-on-os-x)\)
-* *5sum** tools
+* **5sum** tools
 
 {{% alert color="warning" %}}
-To install *5sum** with _**Homebrew**_ , use: `brew install5sha1sum`
+To install **5sum** with _**Homebrew**_ , use: `brew install5sha1sum`
 
 To install **5sum** with _**MacPorts**_ , use: `sudo port install5sha1sum`
 {{% /alert %}}

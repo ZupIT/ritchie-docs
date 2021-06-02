@@ -17,7 +17,7 @@ It's good to reinforce that the **default formulas execution method** is defined
 rit set formula-runner
 ```
 
-![](/shared/large-gif-1374x404-.gif)
+![](/docs-ritchie/shared/large-gif-1374x404-.gif)
 
 ### 1. Locally
 
@@ -42,7 +42,7 @@ See how:
 Access on Docker:
  -  Preferences > Command Line> Enable cloud experience.
 
- ![](/shared/unnamed-removebg-preview.png)
+ ![](/docs-ritchie/shared/unnamed-removebg-preview.png)
 
 {{% /alert %}}
 
