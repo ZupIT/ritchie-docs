@@ -56,7 +56,7 @@ rit demo hello-world
 ```
 Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:
 
-![](/shared/large-gif-1054x366-.gif)
+![](/docs-ritchie/shared/large-gif-1054x366-.gif)
 
 Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de **prompt** (interagindo com o CLI no terminal) para informar os parâmetros de entrada.
 

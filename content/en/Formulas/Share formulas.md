@@ -20,7 +20,7 @@ rit add repo
 
 Once the repository has been added, Ritchie will use the selected release on the repository to access the available formulas.
 
-![](/shared/rit-add-repo-3.gif)
+![](/docs-ritchie/shared/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
 If the formula repository is **private**, the user will have to inform his Github/Gitlab token.

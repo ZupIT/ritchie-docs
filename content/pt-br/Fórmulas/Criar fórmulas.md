@@ -24,7 +24,7 @@ Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
 Exemplo: `rit demo create formula`
 
-![](/shared/rit_create_formula_demo.gif)
+![](/docs-ritchie/shared/rit_create_formula_demo.gif)
 
 ### **Passo 2: Teste sua fórmula**
 
@@ -32,7 +32,7 @@ Você pode testar diretamente a fórmula depois de sua criação. Isso é possí
 
 Nesse caso, o template da formula **"Hello World"** será executado como mostrado abaixo:
 
-![](/shared/rit_demo_hello-world_hd.gif)
+![](/docs-ritchie/shared/rit_demo_hello-world_hd.gif)
 
 Este template é composto por **3 parâmetros de entrada**, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:
 

@@ -10,7 +10,7 @@ description: You will find in this section the main questions about Ritchie.
 
 ### **What is Ritchie?**
 
-Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**](/docs-ritchie/about-ritchie/)
+Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**](/docs-ritchie/reference/about-ritchie/)
 
 ### **What does Ritchie do?**
 
@@ -22,13 +22,13 @@ Ritchie creates automation commands to improve the operational **developers'** *
 
 ## **Installation and Use**
 
-### **How to install Ritchie?**
+### **How to install Ritchie?** 
 
-You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**](/docs-ritchie/getting-started/install-cli/).
+You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**](/docs-ritchie/getting-started/).
 
 ### **How to create a new formula on Ritchie?**
 
-Using the command `rit create formula` , you can create formulas using any programming language. Check out more in [**create a formula section**](/docs-ritchie/how-to/formulas/create-formulas/).
+Using the command `rit create formula` , you can create formulas using any programming language. Check out more in [**create a formula section**](/docs-ritchie/formulas/create-formulas/).
 
 ### **How to create formulas on an existing repository?**
 
@@ -39,7 +39,7 @@ Follow the next steps:
 
 ### **How to run formulas?**
 
-You can execute your formulas locally or through Docker. Check out more in [**run a formula section**](/docs-ritchie/how-to/formulas/run-formulas/overview/).
+You can execute your formulas locally or through Docker. Check out more in [**run a formula section**](/docs-ritchie/formulas/run-formula/).
 
 ### **How to build formulas on Ritchie?**
 
@@ -58,7 +58,7 @@ Use `rit add repo ` command to add the repository.
 
 ### **How to publish formulas on Ritchie?**
 
-You can publish a formula by creating a Github's, Gitlab's or Bitbucket's repository and adding a release version of this formula. Check out more in [**publish a formula section**](/docs-ritchie/how-to/formulas/publish-formulas/).
+You can publish a formula by creating a Github's, Gitlab's or Bitbucket's repository and adding a release version of this formula. Check out more in [**publish a formula section**](/docs-ritchie/formulas/publish-formulas/).
 
 ## **Community**
 
