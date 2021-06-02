@@ -15,13 +15,13 @@ Repositórios e workspaces são usados para interagir com as fórmulas no Ritchi
 
 **`repository`** Você pode usar o repositório para fazer o download de fórmulas de `repositórios Git` e usa-las.
 
-*Veja o exemplo de adição de repositório na seção [**Executar uma fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
+*Veja o exemplo de adição de repositório na página [**Executar uma fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
 
 Os comandos para repos e workspaces são similares, eles permitem que o CLI 'veja' as fórmulas disponíveis. Os workspaces possuem **prioridade mais alta** que os Repos, se você usar, por exemplo, os dois comandos para os mesmos repositórios de fórmulas, os workspaces serão executados.
 
 Veja mais sobre os comandos de workspace e repositórios na [**lista de comandos e flags**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/).
 
-## Como Adicionar?
+## Como adicionar?
 
 Siga os passos para adicionar:
 
@@ -37,9 +37,9 @@ rit add workspace
 
 - 2: Informe o caminho (path) do workspace na sua máquina local.
 
-![](/shared/rit-add-workspace.gif)
+![](/docs-ritchie/shared/rit-add-workspace.gif)
 
-## Como Listar?
+## Como listar?
 
 Execute o comando abaixo para listar os workspaces da máquina:
 
@@ -47,9 +47,9 @@ Execute o comando abaixo para listar os workspaces da máquina:
 rit list workspace
 ```
 
-![](/shared/rit-list-workspace.gif)
+![](/docs-ritchie/shared/rit-list-workspace.gif)
 
-## Como Atualizar?
+## Como atualizar?
 
 Se você não é a única pessoa trabalhando em um workspace (por exemplo: se for um repositório clonado do Git), é necessário atualizar o workspace para permitir que a CLI "veja" as novas fórmulas ou atualizações disponíveis na sua máquina local, após fazer o *pull* o código.
 
@@ -61,9 +61,9 @@ rit update workspace
 
 Depois disso, selecione o nome do workspace e aguarde a mensagem de saída do CLI.
 
-![](/shared/rit-update-workspace.gif)
+![](/docs-ritchie/shared/rit-update-workspace.gif)
 
-## Como Apagar?
+## Como apagar?
 
 Para excluir um workspace, execute o comando:
 
@@ -77,7 +77,7 @@ Depois disso, siga os passos:
 
 **Passo 2:** Confirme que você deseja excluir o workspace.
 
-![](/shared/rit-delete-workspace.gif)
+![](/docs-ritchie/shared/rit-delete-workspace.gif)
 
 ## Próximos passos
 

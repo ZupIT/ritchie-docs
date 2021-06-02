@@ -22,7 +22,7 @@ Feito isso, siga os passos:
 
 **Passo 3:** O Ritchie fará uma pergunta para você confirmar se deseja seguir com a operação de apagar a fórmula. Basta selecionar "sim" \(yes\).
 
-![](/shared/delete-formula.gif)
+![](/docs-ritchie/shared/delete-formula.gif)
 
 ## Próximos passos
 
