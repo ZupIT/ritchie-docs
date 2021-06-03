@@ -10,12 +10,19 @@ To install **the latest version of Ritchie** on Windows, you have to download Ri
 
 ## Step 1: Download the installer
 
-There are two ways you can download Ritchie:
-1. Using this link to the [**latest version**](https://commons-repo.ritchiecli.io/latest/ritchiecli.msi);
-2.  Download any version you want: just paste the URL on your browser replacing the `{VERSION}` field according to [**the repository's project tags**](https://github.com/ZupIT/ritchie-cli/tags):
+You can download Ritchie:
+
+- Using this link to the [**latest version**](https://commons-repo.ritchiecli.io/latest/ritchiecli.msi);
+- Or any version you want: just paste the URL on your browser replacing the `{VERSION}` field according to [the repository's project tags](https://github.com/ZupIT/ritchie-cli/tags):
 
 ```url
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchiecli.msi
+```
+
+- Or with `Winget`:
+
+```bash
+winget install Ritchie-CLI
 ```
 
 When you finish, follow the instructions on your terminal after running the `rit` command.
@@ -26,7 +33,7 @@ If you prefer, you also can proceed with the[ **manual installation**.](/docs-ri
 
 ## Step 2: Verify installation
 
-You can confirm if your installation went well by running this command: 
+Confirm if your installation went well, run the command below:
 
 ```text
 rit --version
