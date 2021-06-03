@@ -26,7 +26,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 
 ### Pacotes
 
-Para baixar uma versão ou um pacote específico, use as URLs abaixo no seu navegador, substituindo o campo `{VERSION}` de acordo com [a tag do repositório do projeto](https://github.com/ZupIT/ritchie-cli/tags):
+Se você quiser baixar uma versão ou um pacote específico, use as URLs abaixo no seu navegador. Substitua o campo `{VERSION}` de acordo com [**a tag do repositório do seu projeto**](https://github.com/ZupIT/ritchie-cli/tags):
 
 #### Red Hat Package Manager
 
