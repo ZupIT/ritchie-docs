@@ -18,7 +18,7 @@ Once you have it, just run the command below at your terminal.
 
 ### Latest Version
 
-Copy and paste the command below to run on your terminal:
+To install the latest version, copy and paste the command below and run it on your terminal:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
