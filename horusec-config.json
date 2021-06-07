@@ -1,0 +1,15 @@
+{
+  "horusecCliFalsePositiveHashes": [
+    "1a93282973524ed6ad3374b7704d9ab8e184614f3d1bd356bec2c2d046a88497"
+  ],
+  "horusecCliFilesOrPathsToIgnore": [
+    "**/themes/ritchie/**",
+    "**/content/**",
+    "**/public/**"
+  ],
+  "horusecCliToolsConfig": {
+    "Eslint": {
+      "isToIgnore": true
+    }
+  }
+}
