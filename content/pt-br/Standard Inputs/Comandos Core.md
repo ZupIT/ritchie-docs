@@ -17,6 +17,14 @@ Estas flags estão disponíveis a partir da versão 2.8 do Ritchie.
 
 ### Flags disponíveis
 
+### Comando de inicialização do Ritchie
+
+rit init
+
+```text
+rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
+```
+
 ### Comandos de Credenciais
 
 rit set credential
@@ -93,6 +101,12 @@ rit delete repo
 
 ```text
 rit delete repo --name=repo_name
+```
+
+rit update repo
+
+```text
+rit update repo --name="commons" --version="2.0.0"
 ```
 
 ### Comandos de Workspace
