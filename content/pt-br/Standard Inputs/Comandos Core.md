@@ -25,7 +25,7 @@ rit init
 rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
 ```
 
-### Comandos de Credenciais
+### Comandos de credenciais
 
 rit set credential
 
