@@ -109,7 +109,7 @@ rit update repo
 rit update repo --name="commons" --version="2.0.0"
 ```
 
-### Comandos de Workspace
+### Comandos de workspace
 
 rit add workspace
 
