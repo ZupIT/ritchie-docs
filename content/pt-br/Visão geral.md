@@ -27,4 +27,4 @@ Na prática, **uma fórmula é um script** que pode ser executado automaticament
 
 Adaptar um script existente à estrutura Ritchie permite executá-lo **localmente** ou por meio do **Docker** e compartilhá-lo em um repositório do **Bitbucket**, **Github** ou **Gitlab**.
 
-![](/docs-ritchie/shared/formula-ritchie-en%20%281%29%20%281%29%20%281%29.jpg)
+![](/shared/formula-ritchie-en%20%281%29%20%281%29%20%281%29.jpg)

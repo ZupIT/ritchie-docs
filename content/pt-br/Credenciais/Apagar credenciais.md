@@ -16,7 +16,7 @@ rit delete credential
 
 Veja como o processo funciona:
 
-![](/docs-ritchie/shared/large-gif-814x408-.gif)
+![](/shared/large-gif-814x408-.gif)
 
 ## Próximos passos
 

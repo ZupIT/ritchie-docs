@@ -35,7 +35,7 @@ After that, follow the next steps:
 
 **Step 2:** Inform the workspace path on the local machine.
 
-![](/docs-ritchie/shared/rit-add-workspace.gif)
+![](/shared/rit-add-workspace.gif)
 
 ## How to list?
 
@@ -45,7 +45,7 @@ To list avalaible workspaces, you just have to run this command:
 rit list workspace
 ```
 
-![](/docs-ritchie/shared/rit-list-workspace.gif)
+![](/shared/rit-list-workspace.gif)
 
 ## How to delete?
 
@@ -61,7 +61,7 @@ After that, follow the next steps:
 
 **Step 2:** Confirm you want to delete the workspace.
 
-![](/docs-ritchie/shared/rit-delete-workspace.gif)
+![](/shared/rit-delete-workspace.gif)
 
 ## Next Steps
 

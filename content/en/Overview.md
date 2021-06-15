@@ -26,4 +26,4 @@ It means that **a formula is a script** that can be executed automatically or in
 
 Adapting an existing script to Ritchie structure allows you to run it **locally** or through **Docker**, and to share it on **Bitbucket** ,**Github** or **Gitlab** repository.
 
-![](/docs-ritchie/shared/formula-ritchie-en%20%281%29%20%281%29.jpg)
+![](/shared/formula-ritchie-en%20%281%29%20%281%29.jpg)

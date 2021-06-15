@@ -27,7 +27,7 @@ Essa fórmula deverá conter \(pelo menos\) os dois parâmetros de entrada. Veja
 
 Os parâmetros de entrada da fórmula deverão respeitar o diagrama abaixo:
 
-![](/docs-ritchie/shared/ritchie-conditional-inputs.png)
+![](/shared/ritchie-conditional-inputs.png)
 
 ## Passo a passo
 

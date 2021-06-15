@@ -27,7 +27,7 @@ This formula needs to contain \(at least\) those two inputs parameters:
 
 The formula inputs will have to respect the diagram below:
 
-![](/docs-ritchie/shared/ritchie-conditional-inputs.png)
+![](/shared/ritchie-conditional-inputs.png)
 
 ## Step by step
 

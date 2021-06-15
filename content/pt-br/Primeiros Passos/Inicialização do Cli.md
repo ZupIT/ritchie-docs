@@ -20,7 +20,7 @@ Esse comando vai pedir **três informações:**
 2. Se o usuário **quer adicionar as fórmulas** da comunidade localmente.
 3. Se o usuário **quer usar o** [**método de execução de fórmulas**](/docs-ritchie/pt-br/fórmulas/executar-fórmulas/) **local ou via docker**.
 
-![](/docs-ritchie/shared/rit-init%20%283%29.gif)
+![](/shared/rit-init%20%283%29.gif)
 
 Após a execução desse comando, todos os arquivos de configuração para a máquina funcionar serão criados.
 
@@ -36,7 +36,7 @@ rit list repo
 
 Esse comando retorna todos os repositórios de fórmulas que o usuário tem acesso localmente.
 
-![](/docs-ritchie/shared/large-gif-1448x466-.gif)
+![](/shared/large-gif-1448x466-.gif)
 
 ### 2. Pasta Ritchie
 

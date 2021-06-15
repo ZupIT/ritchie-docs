@@ -38,7 +38,7 @@ Você pode encontrar todos os [**templates de linguagens**](https://github.com/Z
 
 {{< tabs id="T" >}}
 {{% tab name="Golang" %}}
-![](/docs-ritchie/shared/go%20%281%29%20%281%29%20%281%29.png)
+![](/shared/go%20%281%29%20%281%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -49,7 +49,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Java" %}}
-![](/docs-ritchie/shared/java%20%282%29%20%282%29%20%282%29.png)
+![](/shared/java%20%282%29%20%282%29%20%282%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -60,7 +60,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Node" %}}
-![](/docs-ritchie/shared/node%20%283%29%20%283%29%20%282%29.png)
+![](/shared/node%20%283%29%20%283%29%20%282%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -71,7 +71,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Python" %}}
-![](/docs-ritchie/shared/python%20%282%29%20%281%29.png)
+![](/shared/python%20%282%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
@@ -82,7 +82,7 @@ De acordo com a imagem acima, você deve editar os arquivos:
 {{% /tab %}}
 
 {{% tab name="Shell" %}}
-![](/docs-ritchie/shared/shell%20%282%29%20%281%29%20%281%29.png)
+![](/shared/shell%20%282%29%20%281%29%20%281%29.png)
 
 De acordo com a imagem acima, você deve editar os arquivos:
 

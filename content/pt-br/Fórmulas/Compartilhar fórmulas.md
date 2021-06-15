@@ -22,7 +22,7 @@ rit add repo
 
 Uma vez que o repositório for adicionado, o Ritchie irá usar a versão da release selecionada do repositório para acessar as fórmulas disponíveis.
 
-![](/docs-ritchie/shared/rit-add-repo-3.gif)
+![](/shared/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
 
