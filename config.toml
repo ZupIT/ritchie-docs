@@ -110,6 +110,8 @@ offlineSearch = false
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+[[params.versions]]
+
 # User interface configuration
 [params.ui]
 # Enable to show the side bar menu in its compact state.
