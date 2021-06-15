@@ -28,8 +28,7 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_PRD }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_PRD }}
-          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN_PRD }}
-          aws-region: ${{ secrets.AWS_REGION }}
+          aws-region: sa-east-1
 
       - id: version
         name: Get release tag
@@ -60,4 +59,4 @@ jobs:
           VERSION: ${{ steps.version.outputs.release_tag }}
 
       - name: S3 upload (redirect to latest version)
-        run: aws s3 sync --acl public-read --follow-symlinks .github/workflows/proxy s3://$AWS_S3_BUCKET
+        run: aws s3 sync --follow-symlinks .github/workflows/proxy s3://$AWS_S3_BUCKET
