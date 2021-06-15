@@ -28,7 +28,6 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID_PRD }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY_PRD }}
-          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN_PRD }}
           aws-region: sa-east-1
 
       - id: version
