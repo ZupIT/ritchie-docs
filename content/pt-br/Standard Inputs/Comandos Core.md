@@ -63,12 +63,6 @@ Se você precisar listar as fórmulas de todos os repositórios adicionados, use
 rit list formula --name=ALL
 ```
 
-rit rename formula
-
-```text
-rit rename formula --oldName='rit group old' --newName='rit group new'
-```
-
 {{% alert color="info" %}}
 
 Quando mais de um workspace possui o mesmo nome da fórmula antiga, uma interação extra via prompt para escolha do workspace é executada pelo Ritchie

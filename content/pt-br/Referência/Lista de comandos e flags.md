@@ -57,10 +57,6 @@ description: 'Nesta seção, você encontrará uma lista com principais comandos
       <td style="text-align:left">rit list formula</td>
       <td style="text-align:left">lista todas as fórmulas disponíveis em um/todos repositórios</td>
     </tr>
-    <tr>
-      <td>rit rename formula</td>
-      <td>Renomeia uma fórmula local</td>
-    </tr>
   </tbody>
 </table>
 
