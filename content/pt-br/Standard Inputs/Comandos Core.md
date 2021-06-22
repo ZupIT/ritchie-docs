@@ -25,7 +25,15 @@ rit init
 rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
 ```
 
-### Comandos de credenciais
+### Comando de criar formula
+
+rit create formula
+
+```text
+rit create formula --name="rit group verb noun" --language="go" --workspace="Default"
+```
+
+### Comandos de Credenciais
 
 rit set credential
 
