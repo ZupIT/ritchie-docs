@@ -22,7 +22,7 @@ Isso dará aos desenvolvedores a possibilidade de executar operações que eram 
 
 Dessa forma, os profissionais - de todas as frentes - ganham tempo para atuar em tarefas mais complexas e relevantes para gerar valor ao seu projeto.
 
-![](/docs-ritchie//shared/rit-demo-deploy-project%20%281%29%20%281%29.gif)
+![](/shared/rit-demo-deploy-project%20%281%29%20%281%29.gif)
 
 ## **Qual diferencial do Ritchie?**
 

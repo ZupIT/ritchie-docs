@@ -12,7 +12,7 @@ description: >-
 
 Create a formula on Ritchie that will **return the tool selected by the user according to its profile**.
 
-> You'll find all the information you need about the **conditional field** on the [**config.json inputs**](/docs-ritchie/formulas/configure-inputs/).
+> You'll find all the information you need about the **conditional field** on the [**config.json inputs**](/formulas/configure-inputs/).
 
 {{% alert color="info" %}}
 Command suggestion: **`rit get tools`**
@@ -27,7 +27,7 @@ This formula needs to contain \(at least\) those two inputs parameters:
 
 The formula inputs will have to respect the diagram below:
 
-![](/docs-ritchie/shared/ritchie-conditional-inputs.png)
+![](/shared/ritchie-conditional-inputs.png)
 
 ## Step by step
 
@@ -45,4 +45,4 @@ The formula needs to follow the next steps:
 
 ## Next steps
 
-👉 If you've completed the third tutorial, let's go to the [**advanced task**](/docs-ritchie/tutorials/advanced/)!
+👉 If you've completed the third tutorial, let's go to the [**advanced task**](/tutorials/advanced/)!

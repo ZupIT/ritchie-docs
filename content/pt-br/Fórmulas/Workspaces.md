@@ -15,11 +15,11 @@ Repositórios e workspaces são usados para interagir com as fórmulas no Ritchi
 
 **`repository`** Você pode usar o repositório para fazer o download de fórmulas de `repositórios Git` e usa-las.
 
-*Veja o exemplo de adição de repositório na página [**Executar uma fórmula Hello World**](/docs-ritchie/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
+*Veja o exemplo de adição de repositório na página [**Executar uma fórmula Hello World**](/pt-br/fórmulas/executar-uma-fórmula-hello-world/).*
 
 Os comandos para repos e workspaces são similares, eles permitem que o CLI 'veja' as fórmulas disponíveis. Os workspaces possuem **prioridade mais alta** que os Repos, se você usar, por exemplo, os dois comandos para os mesmos repositórios de fórmulas, os workspaces serão executados.
 
-Veja mais sobre os comandos de workspace e repositórios na [**lista de comandos e flags**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/).
+Veja mais sobre os comandos de workspace e repositórios na [**lista de comandos e flags**](/pt-br/referência/lista-de-comandos-e-flags/).
 
 ## Como adicionar?
 
@@ -37,7 +37,7 @@ rit add workspace
 
 - 2: Informe o caminho (path) do workspace na sua máquina local.
 
-![](/docs-ritchie/shared/rit-add-workspace.gif)
+![](/shared/rit-add-workspace.gif)
 
 ## Como listar?
 
@@ -47,7 +47,7 @@ Execute o comando abaixo para listar os workspaces da máquina:
 rit list workspace
 ```
 
-![](/docs-ritchie/shared/rit-list-workspace.gif)
+![](/shared/rit-list-workspace.gif)
 
 ## Como atualizar?
 
@@ -61,7 +61,7 @@ rit update workspace
 
 Depois disso, selecione o nome do workspace e aguarde a mensagem de saída do CLI.
 
-![](/docs-ritchie/shared/rit-update-workspace.gif)
+![](/shared/rit-update-workspace.gif)
 
 ## Como apagar?
 
@@ -77,10 +77,10 @@ Depois disso, siga os passos:
 
 **Passo 2:** Confirme que você deseja excluir o workspace.
 
-![](/docs-ritchie/shared/rit-delete-workspace.gif)
+![](/shared/rit-delete-workspace.gif)
 
 ## Próximos passos
 
 Nesta seção, você viu como usar workspaces no Ritchie. Para continuar lendo mais:
 
-👉 Conheça a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.
+👉 Conheça a [**lista de comandos**](/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.

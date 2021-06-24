@@ -45,7 +45,7 @@ To list avalaible workspaces, you just have to run this command:
 rit list workspace
 ```
 
-![](/docs-ritchie/shared/rit-list-workspace.gif)
+![](/shared/rit-list-workspace.gif)
 
 ## How to update?
 
@@ -59,7 +59,7 @@ rit update workspace
 
 After that, select the workspace name and wait for the CLI output message.
 
-![](/docs-ritchie/shared/rit-update-workspace.gif)
+![](/shared/rit-update-workspace.gif)
 
 ## How to delete?
 
@@ -75,10 +75,10 @@ After that, follow the next steps:
 
 **Step 2:** Confirm you want to delete the workspace.
 
-![](/docs-ritchie/shared/rit-delete-workspace.gif)
+![](/shared/rit-delete-workspace.gif)
 
 ## Next Steps
 
 In this section, you saw how to use workspaces on Ritchie. Now
 
-👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/)
+👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/reference/list-of-commands-and-flags/)

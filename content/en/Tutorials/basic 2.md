@@ -10,7 +10,7 @@ description: 'In this section, you will find a step by step to use credentials o
 
 Create a formula on Ritchie that will **return a JSON with Github credentials**.
 
-> **Note**: The tutorial is to configure those inputs inside the **config.json** file, but run the formula without informing them as `prompt` or `stdin` \(they will be extracted automatically\). You'll find all the informations you need in the [**how to manipulate credentials**](/docs-ritchie/credentials/set-credentials/) tutorial section.
+> **Note**: The tutorial is to configure those inputs inside the **config.json** file, but run the formula without informing them as `prompt` or `stdin` \(they will be extracted automatically\). You'll find all the informations you need in the [**how to manipulate credentials**](/credentials/set-credentials/) tutorial section.
 
 {{% alert color="info" %}}
 Command suggestion: **`rit github get user`**
@@ -42,4 +42,4 @@ The formula needs to follow the next steps:
 
 ## **Next steps** 
 
-👉 If you've completed the second tutorial, let's go to the [**intermediate task**](/docs-ritchie/tutorials/intermediate/)!
+👉 If you've completed the second tutorial, let's go to the [**intermediate task**](/tutorials/intermediate/)!

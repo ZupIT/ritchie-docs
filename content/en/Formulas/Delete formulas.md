@@ -23,12 +23,12 @@ Once you've made this, follow the steps:
 
 **Step 3:** The Ritchie will ask you to confirm if you wish to continue the operation to delete the formula. Just select the answer "yes".
 
-![](/docs-ritchie/shared/delete-formula.gif)
+![](/shared/delete-formula.gif)
 
 ## Next Steps
 
 On this section, you saw how to delete a formula on Ritchie. To keep reading:
 
-👉 Go to [**how to group formulas**](/docs-ritchie/formulas/group-formulas/) section to find out how to run a formula inside another formula.
+👉 Go to [**how to group formulas**](/formulas/group-formulas/) section to find out how to run a formula inside another formula.
 
-👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/)
+👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/reference/list-of-commands-and-flags/)

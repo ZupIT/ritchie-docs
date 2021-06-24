@@ -28,7 +28,7 @@ winget install Ritchie-CLI
 Agora, siga as instruções que irão aparecer no seu terminal ao executar o comando `rit`.
 
 {{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**.](/docs-ritchie/pt-br/primeiros-passos/instalação-manual/)
+Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
 {{% /alert %}}
 
 ## Passo 2: Verifique a instalação

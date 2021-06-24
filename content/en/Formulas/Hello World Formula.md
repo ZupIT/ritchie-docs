@@ -55,7 +55,7 @@ rit demo hello-world
 ```
 Select an option for each input parameter and see how the magic works:
 
-![](/docs-ritchie/shared/large-gif-1054x366-.gif)
+![](/shared/large-gif-1054x366-.gif)
 
 This is the default command line execution, that runs the formula locally using **prompt** to inform the input parameters.
 
@@ -115,4 +115,4 @@ In this section, you saw how to run formulas on Ritchie. To keep learning:
 
 - Check which formulas you can run using the following command:
 
-- See how to [**create formula** ](/docs-ritchie/formulas/create-formulas/).
+- See how to [**create formula** ](/formulas/create-formulas/).

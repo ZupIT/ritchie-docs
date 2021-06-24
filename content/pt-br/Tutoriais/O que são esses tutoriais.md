@@ -13,10 +13,10 @@ O objetivo desta seção é ajuda você a entender melhor o passo a passo de div
 
 Para realizar os tutoriais que estão propostos nas próximas páginas, você precisa entender os seguintes conceitos:
 
-1. [**Como executar fórmulas**](/docs-ritchie/pt-br/fórmulas/executar-fórmulas/)
-2. [**Como criar fórmulas**](/docs-ritchie/pt-br/fórmulas/criar-fórmulas/)
-3. [**Como "buildar" fórmulas**](/docs-ritchie/pt-br/fórmulas/buildar-formulas/)
-4. [**Como encapsular formulas**](/docs-ritchie/pt-br/fórmulas/encapsular-fórmulas/)
+1. [**Como executar fórmulas**](/pt-br/fórmulas/executar-fórmulas/)
+2. [**Como criar fórmulas**](/pt-br/fórmulas/criar-fórmulas/)
+3. [**Como "buildar" fórmulas**](/pt-br/fórmulas/buildar-formulas/)
+4. [**Como encapsular formulas**](/pt-br/fórmulas/encapsular-fórmulas/)
 
 ### Tutoriais
 

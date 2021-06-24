@@ -46,7 +46,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
   - **text** \(string\),
   - **bool** \(boolean\),
   - **password** \(hidden string on CLI\),
-  - **credentials** \(specific type, check out more on [**use crendential as formula inputs**](/docs-ritchie/credentials/use-credentials-as-formula-inputs/)\_\),
+  - **credentials** \(specific type, check out more on [**use crendential as formula inputs**](/credentials/use-credentials-as-formula-inputs/)\_\),
   - **dynamic** _\(associated with the optional `request_info` field below\),_
   - **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
 - `label`: text appearing on the CLI, asking for the input.

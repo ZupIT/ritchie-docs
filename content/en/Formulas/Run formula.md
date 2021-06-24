@@ -17,7 +17,7 @@ It's good to reinforce that the **default formulas execution method** is defined
 rit set formula-runner
 ```
 
-![](/docs-ritchie/shared/large-gif-1374x404-.gif)
+![](/shared/large-gif-1374x404-.gif)
 
 ### 1. Locally
 
@@ -30,7 +30,7 @@ Example: a formula written in **Node** will need **Node installed** on the compu
 All formulas can run regardless the programming language used from the moment you have **`DOCKER`** installed and running.
 
 {{% alert color="info" %}}
-Check out on the following example [**how to run a "Hello World" formula** ](/docs-ritchie/formulas/hello-world-formula/)
+Check out on the following example [**how to run a "Hello World" formula** ](/formulas/hello-world-formula/)
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -42,7 +42,7 @@ See how:
 Access on Docker:
  -  Preferences > Command Line> Enable cloud experience.
 
- ![](/docs-ritchie/shared/unnamed-removebg-preview.png)
+ ![](/shared/unnamed-removebg-preview.png)
 
 {{% /alert %}}
 
@@ -63,6 +63,6 @@ All formulas templates contain a **Dockerfile** which creates a container with *
 
 On this section, you saw how to run a formula on Ritchie. To keep learning:
 
-👉 Go to [**Hello World formula**](/docs-ritchie/formulas/hello-world-formula/) to see different ways to run a formula on Ritchie.
+👉 Go to [**Hello World formula**](/formulas/hello-world-formula/) to see different ways to run a formula on Ritchie.
 
-👉 Go to the [**create formulas**](/docs-ritchie/formulas/create-formulas/) section to understand how to create your first automation with Ritchie.
+👉 Go to the [**create formulas**](/formulas/create-formulas/) section to understand how to create your first automation with Ritchie.

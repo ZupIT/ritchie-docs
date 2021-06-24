@@ -14,15 +14,15 @@ To use Ritchie, you must follow these **3 steps**:
 
 ### **1. Installation**
 
-First you have to install Ritchie according to your operating system. Check out more in the [**Getting Started section**](/docs-ritchie/getting-started/)
+First you have to install Ritchie according to your operating system. Check out more in the [**Getting Started section**](/getting-started/)
 
 ### **2. Initialization**
 
-Once you finished Ritchie's installation, it is necessary to initialize it. To do so,  see more information on the [**Initialize CLI page**](/docs-ritchie/getting-started/).
+Once you finished Ritchie's installation, it is necessary to initialize it. To do so,  see more information on the [**Initialize CLI page**](/getting-started/).
 
 ### **3. Running a test formula**
 
-Last \(but not least\), run a [**"hello-world"**](/docs-ritchie/formulas/hello-world-formula/) on Ritchie to confirm if your installation went well. Check out more on [**Formulas section**](/docs-ritchie/formulas/)
+Last \(but not least\), run a [**"hello-world"**](/formulas/hello-world-formula/) on Ritchie to confirm if your installation went well. Check out more on [**Formulas section**](/formulas/)
 
 {{% alert color="success" %}}
 Well done, you're ready to use Ritchie on your projects!

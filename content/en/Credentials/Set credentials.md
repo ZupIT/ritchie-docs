@@ -38,5 +38,5 @@ After you chose one of the available providers, Ritchie will ask you to fill the
 ```
 
 {{% alert color="info" %}}
-You can check out on [**formula's editable files**](/docs-ritchie/formulas/organize-the-formula-folder/) to see how to manipulate the credentials defined in the session as formula input parameters \(inputs in the config.json file\).
+You can check out on [**formula's editable files**](/formulas/organize-the-formula-folder/) to see how to manipulate the credentials defined in the session as formula input parameters \(inputs in the config.json file\).
 {{% /alert %}}
