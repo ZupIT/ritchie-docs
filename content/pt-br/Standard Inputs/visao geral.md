@@ -6,7 +6,7 @@ description: Nesta seção, você vai encontrar mais detalhes sobre as input fla
 ---
 Informar parâmetros de entrada através de **argumentos** ou **flags** permite que você automatize workflows. É particularmente útil quando você estiver manipulando outras ferramentas dentro do script, assim você automatiza operações sem precisar interagir com o terminal.
 
-![](/docs-ritchie/shared/screen-shot-2020-08-27-at-15.22.10.png)
+![](/shared/screen-shot-2020-08-27-at-15.22.10.png)
 
 Basicamente, há duas formas de informar os parâmetros de entrada diretamente na linha de comando:
 
@@ -25,4 +25,4 @@ Nesse caso, os parâmetros de entrada precisam ser informados seguindo o padrão
 
 Você pode usar as regras do input flags em: 
 
-👉 [**Comandos de fórmulas**](/docs-ritchie/pt-br/standard-inputs/comandos-de-fórmulas/)
+👉 [**Comandos de fórmulas**](/pt-br/standard-inputs/comandos-de-fórmulas/)

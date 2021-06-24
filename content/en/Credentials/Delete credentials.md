@@ -16,12 +16,12 @@ rit delete credential
 
 Check out how the process works:
 
-![](/docs-ritchie/shared/large-gif-814x408-.gif)
+![](/shared/large-gif-814x408-.gif)
 
 ## Next steps
 
 On this section, you saw how to delete a credential on Ritchie. If you want to keep reading:
 
-👉 Go to [**how to add providers**](/docs-ritchie/credentials/add-providers/) section to keep configuring your credentials.
+👉 Go to [**how to add providers**](/credentials/add-providers/) section to keep configuring your credentials.
 
-👉 Check out the [**list of commands and flags**](/docs-ritchie/reference/list-of-commands-and-flags/) available on Ritchie.
+👉 Check out the [**list of commands and flags**](/reference/list-of-commands-and-flags/) available on Ritchie.

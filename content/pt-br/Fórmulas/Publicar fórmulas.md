@@ -41,7 +41,7 @@ Você deverá informar 5 tipos diferentes de parâmetros de entrada:
 4. O **`caminho local do repositório`** you wish to publish
 5. A **`versão da release`** para ser gerada
 
-![](/docs-ritchie/shared/rit-publish-repo.gif)
+![](/shared/rit-publish-repo.gif)
 
 {{% alert color="warning" %}}
 Como demonstrado acima, você pode checar se a publicação deu certo usando o comando **`rit list repo`** e observando se o repositório publicado aparece.
@@ -66,4 +66,4 @@ Para publicar uma fórmula manualmente, você precisa submetê-la no repositóri
 
 Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:
 
-👉 Veja a seção [**como compartilhar fórmulas**](/docs-ritchie/pt-br/fórmulas/compartilhar-fórmulas/).
+👉 Veja a seção [**como compartilhar fórmulas**](/pt-br/fórmulas/compartilhar-fórmulas/).

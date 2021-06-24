@@ -31,7 +31,7 @@ E, para permitir mais opções e liberdade aos usuários, também é possível s
 
 Usamos o prefixo **`rit`** para iniciar nossa árvore de comandos.
 
-![](/docs-ritchie/shared/arvore-rit%20%281%29%20%281%29.png)
+![](/shared/arvore-rit%20%281%29%20%281%29.png)
 
 {{% alert color="warning" %}}
 O comando **`rit`** é nosso comando pai, ou raiz. Ele não é executável \(ou seja, ele não vai iniciar nenhuma operação se você usar ele sozinho no terminal\).
@@ -84,7 +84,7 @@ Esses parâmetros de entrada podem ser informados de diversas maneiras:
 * Quando digitar a linha de comando no terminal \(via **stdin** ou **input flags**\)
 * Durante a execução da fórmula \(se o código usou o **prompt**\)
 
-![](/docs-ritchie/shared/start-end-ritchie.jpg)
+![](/shared/start-end-ritchie.jpg)
 
 ## **JSON**
 

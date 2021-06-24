@@ -34,7 +34,7 @@ You can test the formula directly after its creation. That's possible because  t
 
 In that case, the formula **"Hello World" template** will be executed as shown below:
 
-![](/docs-ritchie/shared/rit_demo_hello-world_hd.gif)
+![](/shared/rit_demo_hello-world_hd.gif)
 
 This template is composed of 4 **inputs parameters**, that represents the currently available kinds of inputs to use Ritchie:
 
@@ -72,4 +72,4 @@ A repository associated to this workspace will be created on the `/home/user/.ri
 
 On this section, you saw how to create a formula on Ritchie and test it. To keep configuring the formula:
 
-👉 Go to [**organize the formula folder**](/docs-ritchie/formulas/organize-the-formula-folder/) to see how to organize the formulas you create.
+👉 Go to [**organize the formula folder**](/formulas/organize-the-formula-folder/) to see how to organize the formulas you create.

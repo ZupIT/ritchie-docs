@@ -22,12 +22,12 @@ Feito isso, siga os passos:
 
 **Passo 3:** O Ritchie fará uma pergunta para você confirmar se deseja seguir com a operação de apagar a fórmula. Basta selecionar "sim" \(yes\).
 
-![](/docs-ritchie/shared/delete-formula.gif)
+![](/shared/delete-formula.gif)
 
 ## Próximos passos
 
 Nesta seção, você viu como apagar uma fórmula no Ritchie. Para continuar lendo mais:
 
-👉 Vá para seção [**como encapsular fórmulas**](/docs-ritchie/pt-br/fórmulas/encapsular-fórmulas/) para descobrir como se executa uma fórmula dentro de outra fórmula.
+👉 Vá para seção [**como encapsular fórmulas**](/pt-br/fórmulas/encapsular-fórmulas/) para descobrir como se executa uma fórmula dentro de outra fórmula.
 
-👉 Conheça a [**lista de comandos**](/docs-ritchie/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.
+👉 Conheça a [**lista de comandos**](/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.

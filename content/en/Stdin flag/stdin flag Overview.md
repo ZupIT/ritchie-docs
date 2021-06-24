@@ -6,7 +6,7 @@ description: In this section, you will find more about stdin flag.
 ---
 
 {{% alert color="danger" %}}
-The STDIN flag will be deprecated in early 2021, as substituted by [input flags](/docs-ritchie/standard-inputs/input-flag/).
+The STDIN flag will be deprecated in early 2021, as substituted by [input flags](/standard-inputs/input-flag/).
 {{% /alert %}}
 
 {{% alert color="info" %}}
@@ -19,6 +19,6 @@ In that case, the input parameters need to be informed in a **JSON format**:
 
 You can use this stdin flag rules on:
 
-👉 [**Core Commands**](/docs-ritchie/stdin-flag/stdinflag-core-commands/)
+👉 [**Core Commands**](/stdinflag-core-commands/)
 
-👉 [**Formulas Commands**](/docs-ritchie/standard-inputs/formulas-commands/)
+👉 [**Formulas Commands**](/standard-inputs/formulas-commands/)

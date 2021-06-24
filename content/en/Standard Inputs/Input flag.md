@@ -21,4 +21,4 @@ RIT (GROUP) VERB NOUN
 
 You can use this stdin flag rules on:
 
-👉 [**Formulas commands**](/docs-ritchie/standard-inputs/formulas-commands/)
+👉 [**Formulas commands**](/standard-inputs/formulas-commands/)

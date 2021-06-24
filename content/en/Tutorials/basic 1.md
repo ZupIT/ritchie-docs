@@ -46,4 +46,4 @@ Well done! You've completed the first task!
 
 ## **Next steps** 
 
-👉 If you've completed the first tutorial, let's go to the [**basic 2 task**](/docs-ritchie/tutorials/basic-2/)!
+👉 If you've completed the first tutorial, let's go to the [**basic 2 task**](/tutorials/basic-2/)!

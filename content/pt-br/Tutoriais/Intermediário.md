@@ -12,7 +12,7 @@ description: >-
 
 Neste tutorial, a ideia é criar uma fórmula que vai **retornar a ferramenta selecionada pelo usuário de acordo com seu perfil**.
 
-> Você encontrará todas as informações necessárias na seção do tutorial [**relacionada ao arquivo config.json**](/docs-ritchie/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file).
+> Você encontrará todas as informações necessárias na seção do tutorial [**relacionada ao arquivo config.json**](/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file).
 
 {{% alert color="info" %}}
 Sugestão de comando: **`rit get tools`**
@@ -27,7 +27,7 @@ Essa fórmula deverá conter \(pelo menos\) os dois parâmetros de entrada. Veja
 
 Os parâmetros de entrada da fórmula deverão respeitar o diagrama abaixo:
 
-![](/docs-ritchie/shared/ritchie-conditional-inputs.png)
+![](/shared/ritchie-conditional-inputs.png)
 
 ## Passo a passo
 
@@ -45,4 +45,4 @@ Se você quiser aprimorar sua fórmula, é possível configurá-la para que ela:
 
 ## Próximos passos
 
-👉 Se você completou o terceiro tutorial, vamos para o [**tutorial avançado**](/docs-ritchie/pt-br/tutoriais/avançado/)!
+👉 Se você completou o terceiro tutorial, vamos para o [**tutorial avançado**](/pt-br/tutoriais/avançado/)!

@@ -23,13 +23,13 @@ Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear
 
 Exemplo: `rit group old` > `rit group new`
 
-![](/docs-ritchie/shared/rit-rename-formula.gif)
+![](/shared/rit-rename-formula.gif)
 
 {{% alert color="info" %}}
 
 - O Ritchie identificará automaticamente o workspace a qual a fórmula pertence.
   - Caso identifique mais de um workspace com a fórmula informada, um passo extra necessário será executado pelo Ritchie para escolha do workspace a qual deve ter a fórmula renomeada.
-- Essa fórmula possui entrada via _flags_, mais informações em [**Commandos core > Comandos de fórmula**](/docs-ritchie/pt-br/standard-inputs/comandos-core/#comandos-de-fórmula).
+- Essa fórmula possui entrada via _flags_, mais informações em [**Commandos core > Comandos de fórmula**](/pt-br/standard-inputs/comandos-core/#comandos-de-fórmula).
   {{% /alert %}}
 
 ## Efeitos
@@ -44,4 +44,4 @@ Exemplo: `rit group old` > `rit group new`
 
 Nessa seção, você viu como renomear uma fórmula no Ritchie. Para continuar configurando sua fórmula:
 
-👉 Veja a seção [**como compartilhar fórmulas**](/docs-ritchie/pt-br/fórmulas/compartilhar-fórmulas/).
+👉 Veja a seção [**como compartilhar fórmulas**](/pt-br/fórmulas/compartilhar-fórmulas/).
