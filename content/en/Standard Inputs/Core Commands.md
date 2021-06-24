@@ -33,7 +33,7 @@ rit create formula
 rit create formula --name="rit group verb noun" --language="go" --workspace="Default"
 ```
 
-### Credentials commands
+### Credentials command
 
 rit set credential
 
