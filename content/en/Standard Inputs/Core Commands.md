@@ -89,7 +89,13 @@ rit rename formula --oldName='rit group old' --newName='rit group new'
 
 When more than one workspace has the old formula, an extra interaction via a prompt for choosing the workspace is executed by Ritchie.
 
-{{% /alert %}} 
+{{% /alert %}}
+
+rit delete formula
+
+```text
+rit delete formula --workspace=<workspace name> --formula="<rit group verb noun>"
+```
 
 ### Repo commands
 
