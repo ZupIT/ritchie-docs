@@ -25,7 +25,7 @@ rit init
 rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
 ```
 
-### Comando de criar formula
+### Comando para criar fórmula
 
 rit create formula
 
