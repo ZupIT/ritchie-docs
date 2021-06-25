@@ -73,7 +73,7 @@ rit list formula --name=repo_name
 
 Se você precisar listar as fórmulas de todos os repositórios adicionados, use a flag '**ALL**'.
 
-{{% /alert %}} 
+{{% /alert %}}
 
 ```text
 rit list formula --name=ALL
@@ -90,6 +90,12 @@ rit rename formula --oldName='rit group old' --newName='rit group new'
 Quando mais de um workspace possui o mesmo nome da fórmula antiga, uma interação extra via prompt para escolha do workspace é executada pelo Ritchie
 
 {{% /alert %}}
+
+rit delete formula
+
+```text
+rit delete formula --workspace=nome_do_workspace --formula="rit groupo verbo substantivo"
+```
 
 ### Comandos de Repo
 
