@@ -94,7 +94,7 @@ Quando mais de um workspace possui o mesmo nome da fórmula antiga, uma interaç
 rit delete formula
 
 ```text
-rit delete formula --workspace=nome do workspace --formula="rit groupo verbo substantivo"
+rit delete formula --workspace=nome_do_workspace --formula="rit groupo verbo substantivo"
 ```
 
 ### Comandos de Repo
