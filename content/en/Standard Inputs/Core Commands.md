@@ -63,6 +63,12 @@ rit delete env --env="prod"
 
 ### Formula commands
 
+rit set formula-runner
+
+```text
+rit set formula-runner --runner="local"
+```
+
 rit list formula
 
 ```text
