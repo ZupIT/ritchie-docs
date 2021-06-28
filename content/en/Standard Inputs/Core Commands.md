@@ -102,12 +102,13 @@ rit delete formula --workspace="workspace_name" --formula="rit group verb noun"
 rit add repo
 
 ```text
-rit add repo --name="Zup" --provider="Github" --repoUrl="https://github.com/ZupIT/ritchie-formulas-zup" --tag="2.8.9" --token="1324efg"
+rit add repo --name="demo" --provider="Github" --repoUrl="https://github.com/ZupIT/ritchie-formulas-demo" --tag="2.8.9" --token="1324efg"
 ```
 
 {{% alert color="info" %}}
 
-When the version flag is not passed, ritchie automatically searches for the latest version
+When the version flag is not passed, ritchie automatically searches for the latest version.
+The token flag is mandatory when the command is used to add a private repository.
 
 {{% /alert %}}
 
