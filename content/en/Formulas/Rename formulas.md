@@ -28,7 +28,7 @@ Example: `rit group old` > `rit group new`
 {{% alert color="info" %}}
 
 - Ritchie will automatically identify the workspace to which the formula belongs.
-  - If you identify more than one workspace with the entered formula, an extra necessary step will be to choose in which workspace the formula should have its name changed.
+  - If you identify more than one workspace with the entered formula, an extra necessary step (_when using prompt execution_) will be to choose in which workspace the formula should have its name changed.
 - This formula includes entry via _flag_, check out more on [**Formula commands**](/standard-inputs/formulas-commands/) page.
   {{% /alert %}}
 
