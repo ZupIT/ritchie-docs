@@ -13,8 +13,7 @@ The **Input flags** on Ritchie has been developed to give one more option to use
 In that case, the input parameters need to be informed following this pattern:
 
 ```text
-RIT (GROUP) VERB NOUN
---input_name='input_value'
+RIT (GROUP) VERB NOUN --input_name="input_value"
 ```
 
 {{% /alert %}}

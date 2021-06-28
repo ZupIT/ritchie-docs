@@ -16,13 +16,13 @@ Basicamente, há duas formas de informar os parâmetros de entrada diretamente n
 
 {{% alert color="info" %}}
 
-As Input flags do Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando. 
+As Input flags do Ritchie foram desenvolvidas para oferecer mais uma opção para quem usa os parâmetros de entrada por meio de linha de comando.
 
 Nesse caso, os parâmetros de entrada precisam ser informados seguindo o padrão:
 
-`RIT (GROUP) VERB NOUN --input_name='input_value'` 
+`RIT (GROUP) VERB NOUN --input_name="input_value"`
 {{% /alert %}}
 
-Você pode usar as regras do input flags em: 
+Você pode usar as regras do input flags em:
 
 👉 [**Comandos de fórmulas**](/pt-br/standard-inputs/comandos-de-fórmulas/)
