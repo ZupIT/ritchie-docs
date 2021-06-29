@@ -107,7 +107,7 @@ rit add repo --name="demo" --provider="Github" --repoUrl="https://github.com/Zup
 
 {{% alert color="info" %}}
 
-When the version flag is not passed, ritchie automatically searches for the latest version.
+When the version flag is not passed, Ritchie automatically searches for the latest version.
 The token flag is mandatory when the command is used to add a private repository.
 
 {{% /alert %}}
