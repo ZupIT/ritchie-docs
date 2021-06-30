@@ -12,7 +12,7 @@ If you want to efficiently use Ritchie on Linux with version **`2.0.5 and earlie
 
 * The **make** command
 
-Once you have it, just run the command below at your terminal.
+Once you have it, just run the command below at your terminal:
 
 ## Step 1: Installing command
 
