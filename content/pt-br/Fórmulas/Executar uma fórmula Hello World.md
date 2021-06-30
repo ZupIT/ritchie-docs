@@ -17,7 +17,7 @@ description: >-
 Para fazer isso, você pode usar o comando **`rit add repo`** , ou executar a linha de comando abaixo:
 
 ```text
-rit add repo --provider=Github --name=demo --repoUrl=https://github.com/ZupIT/ritchie-formulas-demo --priority=1
+rit add repo --provider="Github" --name="demo" --repoUrl="https://github.com/ZupIT/ritchie-formulas-demo" --priority=1
 ```
 
 {{% alert color="info" %}}
@@ -78,7 +78,7 @@ Nesse caso, não é necessário ter Golang instalado.
 Você também pode executar o comando informando as entradas por meio de flags (você pode saber quais flags estão disponíveis usando  a flag **`--help`** ao executar um comando). Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.
 
 ```text
-rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie
+rit demo hello-world --rit_input_text="Dennis" --rit_input_boolean=true --rit_input_list="everything" --rit_input_password="Ritchie"
 ```
 
 ### Caso 4: Usando Input Flags & Docker
@@ -86,7 +86,7 @@ rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_inpu
 Ao combinar os **`input flags`** com a flag do **`--docker`**, é possível executar um comando remotamente (em um contêiner) com os parâmetros de entrada informados diretamente na linha de comando:
 
 ```text
-rit demo hello-world --rit_input_text=Dennis --rit_input_boolean=true --rit_input_list=everything --rit_input_password=Ritchie --docker
+rit demo hello-world --rit_input_text="Dennis" --rit_input_boolean=true --rit_input_list="everything" --rit_input_password="Ritchie" --docker
 ```
 
 ### Caso 5: Usando Stdin

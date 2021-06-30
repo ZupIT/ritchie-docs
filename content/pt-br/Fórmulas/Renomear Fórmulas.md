@@ -28,7 +28,7 @@ Exemplo: `rit group old` > `rit group new`
 {{% alert color="info" %}}
 
 - O Ritchie identificará automaticamente o workspace a qual a fórmula pertence.
-  - Caso identifique mais de um workspace com a fórmula informada, um passo extra necessário será executado pelo Ritchie para escolha do workspace a qual deve ter a fórmula renomeada.
+  - Caso o CLI identifique mais de um workspace com a fórmula informada, um passo extra necessário (_quando for usada a execução via prompt_) será pedido pelo Ritchie para escolha do workspace a qual deve ter a fórmula renomeada.
 - Essa fórmula possui entrada via _flags_, mais informações em [**Commandos core > Comandos de fórmula**](/pt-br/standard-inputs/comandos-core/#comandos-de-fórmula).
   {{% /alert %}}
 

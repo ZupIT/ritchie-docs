@@ -38,13 +38,13 @@ rit create formula --name="rit group verb noun" --language="go" --workspace="Def
 rit set credential
 
 ```text
-rit set credential --provider=github --fields=username,token --values=Dennis,123456
+rit set credential --provider="github" --fields="username,token" --values="Dennis,123456"
 ```
 
 rit delete credential
 
 ```text
-rit delete credential --provider=github
+rit delete credential --provider="github"
 ```
 
 ### Comandos de Ambiente
@@ -52,21 +52,27 @@ rit delete credential --provider=github
 rit set env
 
 ```text
-rit set env --env=prod
+rit set env --env="prod"
 ```
 
 rit delete env
 
 ```text
-rit delete env --env=prod
+rit delete env --env="prod"
 ```
 
 ### Comandos de Fórmulas
 
+rit set formula-runner
+
+```text
+rit set formula-runner --runner="local"
+```
+
 rit list formula
 
 ```text
-rit list formula --name=repo_name
+rit list formula --name="repo_name"
 ```
 
 {{% alert color="info" %}}
@@ -76,25 +82,19 @@ Se você precisar listar as fórmulas de todos os repositórios adicionados, use
 {{% /alert %}}
 
 ```text
-rit list formula --name=ALL
+rit list formula --name="ALL"
 ```
 
 rit rename formula
 
 ```text
-rit rename formula --oldName='rit group old' --newName='rit group new'
+rit rename formula --oldName="rit group old" --newName="rit group new"
 ```
-
-{{% alert color="info" %}}
-
-Quando mais de um workspace possui o mesmo nome da fórmula antiga, uma interação extra via prompt para escolha do workspace é executada pelo Ritchie
-
-{{% /alert %}}
 
 rit delete formula
 
 ```text
-rit delete formula --workspace=nome_do_workspace --formula="rit groupo verbo substantivo"
+rit delete formula --workspace="workspace_name" --formula="rit group verb noun"
 ```
 
 ### Comandos de Repo
@@ -102,19 +102,20 @@ rit delete formula --workspace=nome_do_workspace --formula="rit groupo verbo sub
 rit add repo
 
 ```text
-rit add repo --name=Zup --provider=Github --repoUrl=https://github.com/ZupIT/ritchie-formulas-zup --tag=2.8.9 --token=1324efg
+rit add repo --name="demo" --provider="Github" --repoUrl="https://github.com/ZupIT/ritchie-formulas-demo" --tag="2.8.9" --token="1324efg"
 ```
 
 {{% alert color="info" %}}
 
-Quando não é passada a flag de versão, o ritchie busca automaticamente a última versão
+Quando a flag de versão não é passada, o Ritchie busca automaticamente a última versão.
+A flag de token é obrigatória quando o comando é usado para adicionar um repositório privado.
 
 {{% /alert %}}
 
 rit delete repo
 
 ```text
-rit delete repo --name=repo_name
+rit delete repo --name="repo_name"
 ```
 
 rit update repo
@@ -123,22 +124,30 @@ rit update repo
 rit update repo --name="commons" --version="2.0.0"
 ```
 
+### Comando de Tutorial
+
+rit tutorial
+
+```text
+rit tutorial --enabled=true
+```
+
 ### Comandos de workspace
 
 rit add workspace
 
 ```text
-rit add workspace --name=workspace_name --path=path/to/workspace
+rit add workspace --name="workspace_name" --path="path/to/workspace"
 ```
 
 rit delete workspace
 
 ```text
-rit delete workspace --name=workspace_name
+rit delete workspace --name="workspace_name"
 ```
 
 rit update workspace
 
 ```text
-rit update workspace --name=workspace_name
+rit update workspace --name="workspace_name"
 ```
