@@ -124,7 +124,7 @@ rit update repo
 rit update repo --name="commons" --version="2.0.0"
 ```
 
-### Commando de tutorial
+### Comando de Tutorial
 
 rit tutorial
 
