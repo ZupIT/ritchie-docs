@@ -52,7 +52,7 @@ curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://c
 
 ## Passo 2: Verifique a instalação
 
-Você pode confirmar se a instalação funcionou rodando esse comando:
+Confirme se a instalação funcionou, rode o comando abaixo:
 
 ```text
 rit --version
