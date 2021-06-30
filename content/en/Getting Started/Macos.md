@@ -31,15 +31,16 @@ The command used to install Ritchie at your terminal is:
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
-_Note: To install Ritchie on servers or Docker containers (without `sudo` user), use the following command:_
+{{% alert color="info" %}}
+Note: To install Ritchie on servers or Docker containers (without `sudo` user), use the following command:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
 
-{{% alert color="info" %}}
-If you prefer, you also can follow with the[ **manual installation**.](/getting-started/manual-installation/)
 {{% /alert %}}
+
+If you prefer, you also can follow with the[ **manual installation**.](/getting-started/manual-installation/)
 
 ### Second option
 

@@ -31,16 +31,16 @@ Copie e cole o comando abaixo para executar no terminal:
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
-
-_Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:_
+{{% alert color="info" %}}
+Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
 
-{{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
 {{% /alert %}}
+
+Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
 
 ### Segunda opção
 
