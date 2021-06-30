@@ -32,20 +32,27 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
+Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
+
+```text
+curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
+```
+
 {{% /alert %}}
 
-###  Segunda opção
+Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
 
-Você pode também **baixar o** **pacote do Ritchie CLI** através da linha de comando abaixo, para **instalar ele manualmente**.
+### Segunda opção
+
+Você também pode **fazer o  download do pacote do Ritchie CLI** e **instalá-lo manualmente** através da linha de comando abaixo: 
 
 ```text
 curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg
 ```
 
-## Passo 2: Verifique a instalação 
+## Passo 2: Verifique a instalação
 
-Você pode confirmar se a instalação funcionou rodando esse comando: 
+Confirme se a instalação funcionou, rode o comando abaixo:
 
 ```text
 rit --version
