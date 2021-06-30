@@ -44,7 +44,7 @@ Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/p
 
 ### Segunda opção
 
-Você pode também **baixar o** **pacote do Ritchie CLI** através da linha de comando abaixo, para **instalar ele manualmente**.
+Você também pode **fazer o  download do pacote do Ritchie CLI** e **instalá-lo manualmente** através da linha de comando abaixo: 
 
 ```text
 curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg
