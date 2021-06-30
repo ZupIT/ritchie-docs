@@ -30,10 +30,7 @@ Note: To install Ritchie on servers or Docker containers (without `sudo` user), 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
-
 {{% /alert %}}
-
-If you prefer, you also can follow with the[ **manual installation**.](/getting-started/manual-installation/)
 
 ### Packages
 
@@ -55,9 +52,7 @@ https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
 
 The `tar.gz` package is available on this [Arch Linux user repository](https://aur.archlinux.org/packages/ritchie-cli/) page ([repository reference](https://github.com/avelino/ritchie-cli-archpack)).
 
-{{% alert color="info" %}}
-If you prefer, you also can follow with the[ **manual installation**.](/docs-ritchie/getting-started/manual-installation/)
-{{% /alert %}}
+_If you prefer, you also can follow with the[ **manual installation**.](/docs-ritchie/getting-started/manual-installation/)_
 
 ## Step 2: Verify installation
 
