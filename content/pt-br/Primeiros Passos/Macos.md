@@ -37,7 +37,6 @@ Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
-
 {{% /alert %}}
 
 Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
