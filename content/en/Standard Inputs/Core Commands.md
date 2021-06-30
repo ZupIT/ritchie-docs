@@ -132,7 +132,7 @@ rit tutorial
 rit tutorial --enabled=true
 ```
 
-### Workspace Commands
+### Workspace commands
 
 rit add workspace
 
