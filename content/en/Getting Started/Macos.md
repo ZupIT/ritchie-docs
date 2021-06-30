@@ -31,6 +31,12 @@ The command used to install Ritchie at your terminal is:
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
+_Note: To install Ritchie on servers or Docker containers (without `sudo` user), use the following command:_
+
+```text
+curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
+```
+
 {{% alert color="info" %}}
 If you prefer, you also can follow with the[ **manual installation**.](/getting-started/manual-installation/)
 {{% /alert %}}
@@ -43,9 +49,9 @@ You can also **download the Ritchie CLI package** through the command line below
 curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg
 ```
 
-## Step 2: Verify installation 
+## Step 2: Verify installation
 
-You can confirm if your installation went well by running this command: 
+You can confirm if your installation went well by running this command:
 
 ```text
 rit --version

@@ -12,7 +12,7 @@ If you want to efficiently use Ritchie on Linux with version **`2.0.5 and earlie
 
 * The **make** command
 
-Once you have it, just run the command below at your terminal. 
+Once you have it, just run the command below at your terminal.
 
 ## Step 1: Installing command
 
@@ -24,19 +24,25 @@ To install the latest version, copy and paste the command below and run it on yo
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
+_Note: To install Ritchie on servers or Docker containers (without `sudo` user), use the following command:_
+
+```text
+curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
+```
+
 ### Packages
 
 To download a specific package or version, just paste the URL on your browser replacing the `{VERSION}` field according to [the repository's project tags](https://github.com/ZupIT/ritchie-cli/tags):
 
 #### Red Hat Package Manager
 
-```url
+```text
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.rpm
 ```
 
 #### Debian
 
-```url
+```text
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
 ```
 
