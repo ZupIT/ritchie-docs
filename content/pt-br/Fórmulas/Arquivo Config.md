@@ -13,14 +13,30 @@ O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite
 Essas entradas são feitas para os seguintes campos:
 
 - Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\)
+- Lista de volumes locais que você deseja montar no container de execução em docker.
 - A lista com os parâmetros de entrada de uma fórmula.
-  - O **require latest version** é um parâmetro booleano que indica a necessidade (ou não) da fórmula ser executada na última versão do repositório.
+- O **require latest version** é um parâmetro booleano que indica a necessidade (ou não) de uma fórmula ser executada na última versão do repositório.
 
 ```text
 {
   "dockerImageBuilder": "dockerImage",
+  "dockerVolumes": [],
   "inputs": [],
   "requireLatestVersion": false,
+}
+```
+
+## Configuração dos volumes a serem mapeados
+
+Para cada volume que será mapeado, você deve informar a origem e o destino, utilizando dois pontos ":" como separador. 
+
+#### Exemplo:
+o diretório de origem sendo `/home/user-name/folder` e o diretório de destino `/mount/folder`
+```text
+{
+    "dockerVolumes": [
+        "/home/user-name/folder:/mount/folder"
+    ],
 }
 ```
 
