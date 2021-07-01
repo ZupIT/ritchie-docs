@@ -31,7 +31,7 @@ These input parameters are made up of the following fields:
 Each volume that will be mapped must be informed about its origin and destination, using a colon ":" as a separator.
 
 #### Example:
-the source directory being /home/user-name/folder and the destination directory /mount/folder
+the source directory being `/home/user-name/folder` and the destination directory `/mount/folder`
 ```text
 {
     "dockerVolumes": [
