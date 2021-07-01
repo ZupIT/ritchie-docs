@@ -28,7 +28,7 @@ Essas entradas são feitas para os seguintes campos:
 
 ## Configuração dos volumes a serem mapeados
 
-Cada volume que será mapeado, deve ser informado a sua origem e destino, utilizando dois pontos ":" como separador. 
+Para cada volume que será mapeado, deve ser informado a sua origem e destino, utilizando dois pontos ":" como separador. 
 
 #### Example:
 o diretório de origem sendo `/home/user-name/folder` e o diretório de destino `/mount/folder`
