@@ -28,7 +28,7 @@ These input parameters are made up of the following fields:
 
 ## Docker volume mapping configuration
 
-Each volume that will be mapped must be informed about its origin and destination, using a colon ":" as a separator.
+For each volume that will be mapped, you must inform its origin and destination, using a colon ":" as a separator.
 
 #### Example:
 the source directory being `/home/user-name/folder` and the destination directory `/mount/folder`
