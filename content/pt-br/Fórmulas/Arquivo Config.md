@@ -13,7 +13,7 @@ O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite
 Essas entradas são feitas para os seguintes campos:
 
 - Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\)
-- Lista de volumes locais que deseja montar no container de execução em docker.
+- Lista de volumes locais que você deseja montar no container de execução em docker.
 - A lista com os parâmetros de entrada de uma fórmula.
 - O **require latest version** é um parâmetro boleano que indica a necessidade (ou não) da fórmula ser executada na última versão do repositório.
 
