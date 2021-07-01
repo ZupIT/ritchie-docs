@@ -30,7 +30,7 @@ Essas entradas são feitas para os seguintes campos:
 
 Para cada volume que será mapeado, você deve informar a origem e o destino, utilizando dois pontos ":" como separador. 
 
-#### Example:
+#### Exemplo:
 o diretório de origem sendo `/home/user-name/folder` e o diretório de destino `/mount/folder`
 ```text
 {
