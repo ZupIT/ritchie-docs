@@ -13,14 +13,30 @@ The **config.json** file contains the formula's input parameters. It allows the 
 These input parameters are made up of the following fields:
 
 - a **`docker image builder`** \(according to the programming language chose at the formula creation\)
+- **`"dockerVolumes"`** list of local volumes you want to mount in the docker run container.
 - the formula **`inputs parameters list`**.
 - a **`require latest version`** boolean, indicating the need (or not) of the formula to run in the last available version of a repository.
 
 ```text
 {
   "dockerImageBuilder": "dockerImage",
+  "dockerVolumes": [],
   "inputs": [],
   "requireLatestVersion": false,
+}
+```
+
+## Docker volume mapping configuration
+
+Each volume that will be mapped must be informed about its origin and destination, using a colon ":" as a separator.
+
+#### Example:
+the source directory being /home/user-name/folder and the destination directory /mount/folder
+```text
+{
+    "dockerVolumes": [
+        "/home/user-name/folder:/mount/folder"
+    ],
 }
 ```
 
