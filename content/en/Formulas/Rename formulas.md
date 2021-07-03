@@ -19,9 +19,10 @@ Only local formulas can be renamed.
 You can use the core command **`rit rename formula`** to rename a local formula. The required input parameters are:
 
 1. The name of the old formula;
-2. The new formula name.
+2. The new formula name;
+3. The workspace name.
 
-Example: `rit group old` > `rit group new`
+Example: `rit group old` > `rit group new` > `Default`
 
 ![](/shared/rit-rename-formula.gif)
 

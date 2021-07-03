@@ -19,9 +19,10 @@ Somente fórmulas locais podem ser renomeadas.
 Você pode usar o comando core do Ritchie **`rit rename formula`** para renomear uma fórmula local. Os parâmetros de entrada necessários são:
 
 1. O nome da fórmula antiga;
-2. O novo nome da fórmula.
+2. O novo nome da fórmula;
+3. O nome do workspace.
 
-Exemplo: `rit group old` > `rit group new`
+Exemplo: `rit group old` > `rit group new` > `Default`
 
 ![](/shared/rit-rename-formula.gif)
 
