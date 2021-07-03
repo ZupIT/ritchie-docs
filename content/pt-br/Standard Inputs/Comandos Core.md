@@ -88,8 +88,14 @@ rit list formula --name="ALL"
 rit rename formula
 
 ```text
-rit rename formula --oldName="rit group old" --newName="rit group new"
+rit rename formula --oldName="rit group old" --newName="rit group new" --workspace="workspace_name"
 ```
+
+{{% alert color="info" %}}
+
+A flag de workspace será obrigatória quando a fórmula for encontrada em mais de um workspace.
+
+{{% /alert %}}
 
 rit delete formula
 
