@@ -5,11 +5,11 @@ addReviewers: true
 addAssignees: true
 
 # A list of assignees, overrides reviewers if set
-assignees:
-  - jessica-tw
-  - mdcpmoreira
-  - GuillaumeFalourd
-  - lucasdittrichzup
+# assignees:
+#   - jessica-tw
+#   - mdcpmoreira
+#   - GuillaumeFalourd
+#   - lucasdittrichzup
 
 # A number of assignees to add to the pull request
 # Set to 0 to add all of the assignees.
