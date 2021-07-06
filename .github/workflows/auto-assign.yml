@@ -1,8 +1,6 @@
 name: Auto Assign
 
-on:
-  pull_request:
-    types: [opened, ready_for_review]
+on: [pull_request]
 
 jobs:
   auto-assign:
