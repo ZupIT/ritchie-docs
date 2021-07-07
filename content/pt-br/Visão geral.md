@@ -10,7 +10,7 @@ description: 'Nesta seção, você vai encontrar todas as informações iniciais
 
 O Ritchie é um **framework open source** que permite criar, armazenar e compartilhar qualquer tipo de automação, executando-as através de linhas de comando, para executar operações ou iniciar fluxos de trabalho.
 
-{{< youtube PtKFco2pIqs >}}
+{{< youtube vN7pdC-A_nQ >}}
 
 ## **Versionamento**
 
