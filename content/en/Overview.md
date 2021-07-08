@@ -10,7 +10,7 @@ description: 'In this section, you will find all initial information about Ritch
 
 Ritchie is an **open source framework** that allows you to create, store and share any kind of automations, executing them through command lines, to run operations or start workflows.
 
-{{< youtube PtKFco2pIqs >}}
+{{< youtube vN7pdC-A_nQ >}}
 
 ## **Versioning**
 
