@@ -6,24 +6,48 @@ description: 'In this section, you will find all initial information about Ritch
 
 ---
 
-## **What is Ritchie?**
+## What is Ritchie?
 
-Ritchie is an **open source framework** that allows you to create, store and share any kind of automations, executing them through command lines, to run operations or start workflows.
+Ritchie is an **automation tool** which allows to **create**, **store** and **share** automation efficiently and securely with a team or with the whole community.
+
+## What does Ritchie do?
+
+The tool allows you to create formulas that, in other terms represent programs and/or commands that will facilitate your daily programming work. Ritchie works as a single formulas repository.
 
 {{< youtube PtKFco2pIqs >}}
 
-## **Versioning**
+## Installation
 
-Currently, Ritchie has **two available versions**. On this documentation, we'll focus on **Ritchie** **version 2.0.**
+Ritchie is a **cross-plataform** CLI. For more information on how to install, just choose your operating system below:
 
-### **What's new?**
+## **Programming Languages**
+
+{{% alert color="info" %}}
+Ritchie has been developed using the **Golang** language.
+{{% /alert %}}
+
+However, formulas can be written using **any programming language**.
+
+![](/shared/screenshot-2020-05-08-at-17.54.34.png)
+
+## Tools
+
+{{% alert color="info" %}}
+Ritchie works with **any tool** you could use for automations.
+{{% /alert %}}
+
+![](/shared/screenshot-2020-05-08-at-17.54.49.png)
 
 ## **How does Ritchie work?**
 
-In Ritchie's context, everything works trhough **formulas**!
+{{% alert color="warning" %}}
+The tool allows you to create **formulas** that, in other terms, represent programs and /or commands that will facilitate the daily programming work.
+{{% /alert %}}
 
-It means that **a formula is a script** that can be executed automatically or interactively through a command line.
+In general, the common process for executing a project is to create a whole previous infrastructure, defining a language in the system that will be programmed, downloading dependencies and defining the rules that should be used for the project.
 
-Adapting an existing script to Ritchie structure allows you to run it **locally** or through **Docker**, and to share it on **Bitbucket** ,**Github** or **Gitlab** repository.
+![WITHOUT Ritchie](/shared/en-sem-ritchie.png)
 
-![](/docs-ritchie/shared/formula-ritchie-en%20%281%29%20%281%29.jpg)
+**With Ritchie**, it's possible to define this configuration using a formula, creating this infrastructure directly by a command line, which in this case will delivered all the structure of the project with all files automatically configured. That helps on avoiding an important time spent on infrastructure and configurations.
+
+![WITH Ritchie](/shared/en-com-ritchie.png)
