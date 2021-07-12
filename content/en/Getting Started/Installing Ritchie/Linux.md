@@ -5,23 +5,23 @@ weight: 8
 
 ---
 
-## How does it work? 
+## How does it work?
 
 To install the **latest version of Ritchie**, you just have to execute the command below at your terminal according to the version you want to use.
 
 ### Installing Team Version
 
-The command used to install Ritchie Team at your terminal is: 
+The command used to install Ritchie Team at your terminal is:
 
 ```bash
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
-### 
+###
 
 ### Installing Single Version
 
-The command used to install Ritchie Single at your terminal is: 
+The command used to install Ritchie Single at your terminal is:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install_single.sh | bash
@@ -29,4 +29,4 @@ curl -fsSL https://commons-repo.ritchiecli.io/install_single.sh | bash
 
 
 
-If you prefer, you also can follow with[ **manual installation**.](manual-installation)
+If you prefer, you also can follow with[ **manual installation**.]({{< ref path="Manual Installation.md">}})

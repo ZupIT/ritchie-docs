@@ -43,8 +43,6 @@ Windows \(PowerShell\)
 echo '{"organization":"team", "url":"https://ritchie-server.team.io"}' | rit init --stdin
 ```
 
-
-
 ### RIT LOGIN
 
 Linux / Mac
@@ -58,8 +56,6 @@ Windows \(PowerShell\)
 ```text
 echo '{"username":"dennis.ritchie", "password":"123456"}' | rit login --stdin
 ```
-
-### 
 
 ### RIT ADD REPO
 
@@ -75,8 +71,6 @@ Windows \(PowerShell\)
 echo '{"treePath":"https://commons-repo.ritchiecli.io/tree/tree.json","name":"repoName","priority":1}' | rit add repo --stdin
 ```
 
-### 
-
 ### RIT CLEAN REPO
 
 Linux / Mac
@@ -90,8 +84,6 @@ Windows \(PowerShell\)
 ```text
 echo '{"name":"repoName"}' | rit clean repo --stdin
 ```
-
-#### 
 
 ### RIT CREATE FORMULA
 
@@ -107,8 +99,6 @@ Windows \(PowerShell\)
 echo '{"formula":"rit formula test command", "lang":"Go"}' | rit create formula --stdin
 ```
 
-#### 
-
 ### RIT CREATE USER \(TEAM\)
 
 Linux / Mac
@@ -122,8 +112,6 @@ Windows \(PowerShell\)
 ```text
 echo '{"organization":"teamName", "firstName":"Dennis", "lastName":"Ritchie", "email":"dennis.ritchie@team.com", "username":"Dennis Ritchie", "password":"123456"}' | rit create user --stdin
 ```
-
-#### 
 
 ### RIT DELETE REPO
 
@@ -139,8 +127,6 @@ Windows \(PowerShell\)
 echo '{"name":"repoName"}' | rit delete repo --stdin
 ```
 
-
-
 ### RIT DELETE USER \(TEAM\)
 
 Linux / Mac
@@ -154,8 +140,6 @@ Windows \(PowerShell\)
 ```text
 echo '{"username":"username"}' | rit delete user --stdin
 ```
-
-#### 
 
 ### RIT DELETE CONTEXT
 
@@ -171,8 +155,6 @@ Windows \(PowerShell\)
 echo '{"context":"contextName"}' | rit delete context --stdin
 ```
 
-#### 
-
 ### RIT SET CREDENTIAL \(SINGLE\)
 
 Linux / Mac
@@ -186,8 +168,6 @@ Windows \(PowerShell\)
 ```text
 echo '{"service":"credentialService","credential": {"username":"credentialUsername","token": "credentialToken"}}' | rit set credential --stdin
 ```
-
-#### 
 
 ### RIT SET CREDENTIAL \(TEAM\)
 
@@ -217,8 +197,6 @@ Windows \(PowerShell\)
 echo '{"context":"contextName"}' | rit set context --stdin
 ```
 
-#### 
-
 ### RIT SET SERVER
 
 Linux / Mac
@@ -239,19 +217,17 @@ echo '{"url":"serverUrl"}' | rit set server --stdin
 **stdin** hasn't been implemented yet for the **`rit login`**command.
 {{% /alert %}}
 
-## Formula Commands 
+## Formula Commands
 
 JSON is build according to the config.json used to implement the formula. Because of that, for the formula's commands to work through **stdin**, it is necessary that this formula works informing **exclusively the input parameters through the config.json file**.
 
-If, for example, the formula's code asks for data via prompt, it will not be possible to use only stdin for the formula to run successfully. 
+If, for example, the formula's code asks for data via prompt, it will not be possible to use only stdin for the formula to run successfully.
 
 {{% alert color="warning" %}}
 It will be necessary to adapt the variable values of each JSON to perform the desired operations as expected.
 {{% /alert %}}
 
 Here are some examples of JSON used to run Ritchie **formulas** through **stdin**.
-
-### 
 
 ### RIT SCAFFOLD GENERATE COFFEE-GO
 
@@ -267,8 +243,6 @@ Windows \(PowerShell\)
 echo '{"name":"Dennis Ritchie","coffee_type":"espresso","delivery":"true"}' | rit scaffold generate coffee-go --stdin
 ```
 
-#### 
-
 ### RIT SCAFFOLD GENERATE SPRING-STARTER
 
 Linux / Mac
@@ -283,8 +257,6 @@ Windows \(PowerShell\)
 echo '{"type":"maven-project","language":"java","boot_version":"2.2.5.BUILD-SNAPSHOT","group_id":"br.com.zup","artifact_id":"ritchie-project","description":"ritchie","packaging":"jar","java_version":"11","dependencies":"web"}' | rit scaffold generate spring-starter --stdin
 ```
 
-
-
 ### RIT GITHUB FAST-MERGE
 
 Linux / Mac
@@ -298,8 +270,6 @@ Windows \(PowerShell\)
 ```text
 echo '{"branch":"qa","push":\"false\"}' | rit github fast-merge --stdin
 ```
-
-
 
 ### RIT AWS APPLY TERRAFORM
 

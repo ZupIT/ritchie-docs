@@ -5,7 +5,7 @@ weight: 12
 
 ---
 
-## How does it work? 
+## How does it work?
 
 To install the **latest version of Ritchie** for MacOS, you just have to execute the command below on your terminal according to the version you want to work with.
 
@@ -24,19 +24,19 @@ Install *5sum** with _**Homebrew**_ : `brew install5sha1sum`
 Install *5sum** with _**MacPorts**_ : `sudo port install5sha1sum`
 {{% /alert %}}
 
-### 
+###
 
-### Installing Team Version 
+### Installing Team Version
 
-The command used to install Ritchie Team at your terminal is: 
+The command used to install Ritchie Team at your terminal is:
 
 ```bash
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
-### 
+###
 
-### Installing Single Version 
+### Installing Single Version
 
 The command used to install Ritchie Single at your terminal is:
 
@@ -46,4 +46,4 @@ curl -fsSL https://commons-repo.ritchiecli.io/install_single.sh | bash
 
 
 
-If you prefer, you also can follow with[ **manual installation**.](manual-installation)
+If you prefer, you also can follow with[ **manual installation**.]({{< ref path="Manual Installation.md">}})

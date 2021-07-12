@@ -307,7 +307,7 @@ After adding the formula in .rit through the Makefile \(main\), it will be possi
 
 ### **Formulas build / test**
 
-As explained in the [Step 4 of the create formula section](https://docs.ritchiecli.io/use-cases/creating-formulas#step-4-test-the-formula-new-implementation), it is possible to generate a formula executable files for test with the **`rit build formula`** command.
+As explained in the [Step 4 of the create formula section]({{< ref "creating formulas.md#step-4-test-the-formula-new-implementation" >}}), it is possible to generate a formula executable files for test with the **`rit build formula`** command.
 
 But what happen exactly when executing this command ? Well, it’s all related to the repository **Makefile** file at the root of the repository.
 
@@ -360,7 +360,7 @@ Usage:
 Use "rit <command> --help" for more information about a given command.
 ```
 
-When a user will download Ritchie \([Single](https://docs.ritchiecli.io/getting-started/choosing-a-version#single-version) version\) or execute the `rit login` command \([Team](https://docs.ritchiecli.io/getting-started/choosing-a-version#team-version) version\) to access an organization's repositories, the CLI will download and merge the tree.json from the formula repositories to which the user has access.
+When a user will download Ritchie \([Single]({{< ref "choosing a version.md#single-version" >}}) version\) or execute the `rit login` command \([Team]({{< ref "choosing a version.md#team-version">}}) version\) to access an organization's repositories, the CLI will download and merge the tree.json from the formula repositories to which the user has access.
 
 
 
@@ -388,7 +388,8 @@ This rule allows each user \(_single_\) / organization \(team\) to define the pr
 
 It is possible for a user to choose between the 2 scenarios below:
 
-![](https://lh4.googleusercontent.com/HjfbyCr7FUbOrhlx7uEqr7-fgjmVbivXPSk9X3CD92BPtF4sgy4ojBl4-HKAzAcI7OGacCGWVzMJCDPh_IfS8y3520_i-TwccY2PQEqrnXgrZKcSdBiOyEjBwzB1Uy9E1b3KQaPL)![](https://lh5.googleusercontent.com/Oc1HatluaibDzbcfd0N34oERi8al1zsJj6qB4XDNpueoP5xgizDIarZmQ2BoGCXFp0K-g5QnQC6-pn1eQFoO15QKmQEOklfJ_AdK7hN0EeHpK7T3HrIm_wN0G_rNcbN6LP7VFBDK)
+![](https://lh4.googleusercontent.com/HjfbyCr7FUbOrhlx7uEqr7-fgjmVbivXPSk9X3CD92BPtF4sgy4ojBl4-HKAzAcI7OGacCGWVzMJCDPh_IfS8y3520_i-TwccY2PQEqrnXgrZKcSdBiOyEjBwzB1Uy9E1b3KQaPL)
+![](https://lh5.googleusercontent.com/Oc1HatluaibDzbcfd0N34oERi8al1zsJj6qB4XDNpueoP5xgizDIarZmQ2BoGCXFp0K-g5QnQC6-pn1eQFoO15QKmQEOklfJ_AdK7hN0EeHpK7T3HrIm_wN0G_rNcbN6LP7VFBDK)
 
 #### **Scenario 1**
 
@@ -399,7 +400,7 @@ Priority would be given to commons commands over your team's commands.
 Priority would be given to team commands over commons commands. This would allow, for example, a user / team to use a command that is in the **ritchie-formulas** \(commons\) repository tree for a formula in their repository, performing a different operation with the same command, since it would have priority.
 
 {{% alert color="warning" %}}
-It is possible to configure the priority between the repositories in the **repo** folder of the [.rit folder](cli) where you have a configurable repositories.json file.
+It is possible to configure the priority between the repositories in the **repo** folder of the [.rit folder]({{< ref "CLI.md" >}}) where you have a configurable repositories.json file.
 
-For more information on how to manipulate [repositories](../../use-cases/using-first-commands/repositories), check out the documentation here: Repository.
+For more information on how to manipulate [repositories]({{< ref "Repositories.md" >}}), check out the documentation here: Repository.
 {{% /alert %}}

@@ -5,9 +5,9 @@ weight: 17
 
 ---
 
-## **Introduction** 
+## **Introduction**
 
-When you finish your[ **installing process**](https://docs.ritchiecli.io/getting-started/installation), it's necessary make the Ritchie's initialization and this procedure varies according to the [**version** ](https://docs.ritchiecli.io/getting-started/choosing-a-version)you're using. 
+When you finish your[ **installing process**](https://docs.ritchiecli.io/getting-started/installation), it's necessary make the Ritchie's initialization and this procedure varies according to the [**version**]({{< ref path="choosing a version.md">}}) you're using.
 
 The command to execute the initialization is:**`$ rit init`**
 
@@ -57,7 +57,7 @@ Organization: org
 Login successfully!
 ```
 
-This command creates a session using _Keycloak_ after the user has informed his organization with his datas \(email & password\). In this session, the user can, for example, define his credentials for various tools \(github, aws, etc ...\). 
+This command creates a session using _Keycloak_ after the user has informed his organization with his datas \(email & password\). In this session, the user can, for example, define his credentials for various tools \(github, aws, etc ...\).
 
 In this case, the credentials are stored in the _Vault_. This allows that if the user logs in to Ritchie with his data, on someone else's machine, he will be able to fetch these credentials from the _Vault_, despite having configured them on his local machine.
 

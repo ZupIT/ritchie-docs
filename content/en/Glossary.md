@@ -8,23 +8,23 @@ description: Here you'll find more about common concepts on development field.
 
 ## Automations
 
-It refers to all commands created to simplify an operation. 
+It refers to all commands created to simplify an operation.
 
 ## Context
 
-On Ritchie, context means the environment you're working. Each context will have its credentials, that's meant to be configured once you start using the CLI. Each context will have its own credentials, which will be needed to execute specific formulas. 
+On Ritchie, context means the environment you're working. Each context will have its credentials, that's meant to be configured once you start using the CLI. Each context will have its own credentials, which will be needed to execute specific formulas.
 
 ## CLI
 
-It refers to a command line interface, which is a program that processes commands in a software or any computing program only through text. 
+It refers to a command line interface, which is a program that processes commands in a software or any computing program only through text.
 
 ## Credential
 
-It refers to necessary configurations so you can use Ritchie. 
+It refers to necessary configurations so you can use Ritchie.
 
 ## Formula
 
-On Ritchie's context, it's the name used for the CLI's commands. It means they are codes called through the command lines to perform some operation. 
+On Ritchie's context, it's the name used for the CLI's commands. It means they are codes called through the command lines to perform some operation.
 
 ## JSON
 
@@ -32,7 +32,7 @@ It refers to JavaScript Object Notation \(JSON\), that is a standard text based 
 
 ## Tree
 
-It refers to a group of commands organized on Ritchie. You can click on the next link to understand more about [**Tree's structure**](key-concepts#command-tree).
+It refers to a group of commands organized on Ritchie. You can click on the next link to understand more about [**Tree's structure**]({{< ref "Key Concepts.md#command-tree" >}}).
 
 ## Repository
 
@@ -46,4 +46,4 @@ A storage place you can organize features, commands or any files and/or files ne
 
 It refers to a communication channel that allows input and output interconnection between a computer program and its environment.
 
-On Ritchie, we use the standard input \([**stdin**](getting-started/commands/stdin)\) to execute commands.
+On Ritchie, we use the standard input \([**stdin**]({{< ref "Via Stdin.md" >}}) to execute commands.

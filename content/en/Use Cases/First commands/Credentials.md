@@ -5,15 +5,15 @@ weight: 31
 
 ---
 
-## Set **Credentials** 
+## Set **Credentials**
 
 It is possible to set credentials \(secrets\) on Ritchie to avoid informing datas multiplus times through the terminal.
 
-The command that will allow it is **`$ rit set credential`**  
-  
+The command that will allow it is **`$ rit set credential`**
+
 On the [**Single version**](https://docs.ritchiecli.io/getting-started/choosing-a-version#single-version), credentials are encrypted locally on the session, through the passphrase informed at the [**initialization step**](https://docs.ritchiecli.io/getting-started/initialization#single-version).
 
-On the [**Team** **version**](https://docs.ritchiecli.io/getting-started/choosing-a-version#team-version), credentials are encrypted on the **Keycloak** session \(online\) through the **Vault** \(Hashicorp\).  
+On the [**Team** **version**](https://docs.ritchiecli.io/getting-started/choosing-a-version#team-version), credentials are encrypted on the **Keycloak** session \(online\) through the **Vault** \(Hashicorp\).
 
 
 ```text
@@ -25,7 +25,7 @@ Profile to add credential:
      ORG (for the organization)
 ```
 
-Every user can set his own credentials,  
+Every user can set his own credentials,
 On the Team version, server admins can also set credentials for specific team users or for the whole team.
 
 ```text
@@ -57,5 +57,5 @@ Once the user select the provider, he need to inform the selected credential’s
 ![](https://lh4.googleusercontent.com/-JVtQ04rw-nThL0ALvAnk5B63942l5z9gUrjzk34TNPiPU3BNUc4aa-BFStBNO6dMJDTwBgiWr9uEg3sIwQTLiklUwqyKr5ZyWpnaHGpg4P-4GELLnmw3pPaomBM433N_bg0o)
 
 {{% alert color="info" %}}
-Check the [credentials configuration section](https://docs.ritchiecli.io/developer/server#credentials-configurations) to understand how to manipulate the credentials defined in the session as formula input parameters \(inputs in the config.json file\).
+Check the [credentials configuration section]({{< ref "Server.md#credentials-configurations" >}}) to understand how to manipulate the credentials defined in the session as formula input parameters \(inputs in the config.json file\).
 {{% /alert %}}

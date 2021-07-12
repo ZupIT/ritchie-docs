@@ -7,7 +7,7 @@ weight: 21
 
 ## Commands structure
 
-Ritchie core commands are executed following this pattern: 
+Ritchie core commands are executed following this pattern:
 
 **`RIT`** `+` **`VERBO`** `+` **`SUBSTANTIVO`**
 
@@ -71,6 +71,9 @@ rit version 1.0.0-beta.7 (single)
   Built with: go1.14.3
 ```
 
+<!--
+    TODO: alterar a tabela para o padrão markdown
+ -->
 ## Core commands
 
 <table>

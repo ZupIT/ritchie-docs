@@ -59,7 +59,7 @@ With the **Team Version** is possible to access more repositories:
 3. [**ritchie-server**](https://github.com/ZupIT/ritchie-server): This repository contains the integrations with the platforms [Keycloak](https://www.keycloak.org/) & [Vault](https://www.vaultproject.io/), used to create the session and store datas securely.
 
 {{% alert color="warning" %}}
-It is also possible to store your team specific formulas in **other repositories**, and access them through [the login command](https://docs.ritchiecli.io/software-architecture-1/security#login-command).
+It is also possible to store your team specific formulas in **other repositories**, and access them through [the login command]({{< ref path="initialization.md#login-command">}}).
 {{% /alert %}}
 
 ![](/shared/team-ritchie-white.png)

@@ -5,9 +5,9 @@ weight: 10
 
 ---
 
-## How does it work? 
+## How does it work?
 
-To install **the latest version of Ritchie \(1.0.0-beta.17\)** on Windows, you just have to click on the links available for each version. 
+To install **the latest version of Ritchie \(1.0.0-beta.17\)** on Windows, you just have to click on the links available for each version.
 
 However, it is important to keep in mind **there are some requirements** before starting the installation on Windows.
 
@@ -19,16 +19,16 @@ If you wanna use efficiently Ritchie on Windows, our recommendation is to instal
 * Cygwin
 
 {{% alert color="warning" %}}
-**Cygwin Configurations :**  
-  
-- You need to install the **make** package inside Cygwin, [as suggested here](https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment?rq=1#:~:text=Run%20the%20Cygwin%20installation%2Fconfiguration,Development%22%20or%20something%20similar%29.).  
-  
+**Cygwin Configurations :**
+
+- You need to install the **make** package inside Cygwin, [as suggested here](https://stackoverflow.com/questions/17710209/how-to-run-make-from-cygwin-environment?rq=1#:~:text=Run%20the%20Cygwin%20installation%2Fconfiguration,Development%22%20or%20something%20similar%29.).
+
 - You'll also have to configure the file **/etc/nsswitch.conf** inside the folder \(/ProgramFiles\) and add this non commented line:**`db_home: /%H`**
 {{% /alert %}}
 
 
 
-### Instalando Versão Team 
+### Instalando Versão Team
 
 Click on the following link to[ install Ritchie Team](https://commons-repo.ritchiecli.io/1.0.0-beta.17/windows/team/rit.exe).
 
@@ -38,13 +38,13 @@ Click on the following link to [install Ritchie Single.](https://commons-repo.ri
 
 
 
-If you prefer, you also can follow with[ **manual installation**.](manual-installation)
+If you prefer, you also can follow with[ **manual installation**.]({{< ref path="Manual Installation.md">}})
 
 ## Use Ritchie on Windows
 
 {{% alert color="warning" %}}
-The PATH to use Ritchie on Windows **IS NOT** configured when you download it.  
-  
+The PATH to use Ritchie on Windows **IS NOT** configured when you download it.
+
 As long as it hasn't been configured, the user will have to go inside the folder where the **rit.exe file** has been downloaded to execute Ritchie through this file. Example : **`rit.exe init`**
 {{% /alert %}}
 

@@ -10,7 +10,7 @@ description: >-
 ---
 
 {{% alert color="danger" %}}
-Let's assume you're familiar with **Standard Streams,** **CLI**, **JSON** format and **automations** concepts. If you want to know more about it, check out our [**glossary**](glossary).
+Let's assume you're familiar with **Standard Streams,** **CLI**, **JSON** format and **automations** concepts. If you want to know more about it, check out our [**glossary**]({{< ref "Glossary.md" >}}).
 {{% /alert %}}
 
 ## Formulas
@@ -27,8 +27,8 @@ The config.json file is downloaded at the same time, with the **formula input pa
 
 These input parameters will be informed by the user:
 
-* after he types the command in the terminal \(if via [prompt](getting-started/commands/prompt)\)
-* before typing the command in the terminal \(if via [stdin](getting-started/commands/stdin)\)
+* after he types the command in the terminal \(if via [prompt]({{< ref "Via Prompt.md" >}})
+* before typing the command in the terminal \(if via [stdin]({{< ref "Via Stdin.md" >}})
 
 ... before actually executing the formula.
 

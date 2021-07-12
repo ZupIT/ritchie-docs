@@ -9,12 +9,15 @@ description: Conteúdos relacionados ao Ritchie
 ## Vídeos
 
 {{< youtube CbPlLzPfV4M >}}
-
+<br><br>
+{{< youtube B-6MFIIbpZI >}}
+<br><br>
 {{< youtube B-6MFIIbpZI >}}
 
-{% embed url="https://www.youtube.com/watch?v=B-6MFIIbpZI" %}}
-
-## Artigos
+<!--
+    TODO: desenvolver uma shortode para isso
+ -->
+<!-- ## Artigos
 
 {% embed url="https://www.zup.com.br/open-code/conheca-o-ritchie" %}}
 
@@ -22,4 +25,4 @@ description: Conteúdos relacionados ao Ritchie
 
 {% embed url="https://www.zup.com.br/open-code/como-acelerar-o-processo-de-onboarding-com-ritchie" %}}
 
-{% embed url="https://www.zup.com.br/open-code/noops-um-passo-alem-do-devops" %}}
+{% embed url="https://www.zup.com.br/open-code/noops-um-passo-alem-do-devops" %}} -->

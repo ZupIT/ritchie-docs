@@ -33,7 +33,7 @@ It can be an existing formula workspace. If there isn't any available, a default
 
 ![Creation of a new formula](https://lh5.googleusercontent.com/ZAkUuAxUQVqtusM_n3IThSnfvAy46zcmm9CwIBOvNiByqq3pN_MJZWoXQnTHzpffVtld1gjMc2pPuBaPNdgwWr1omPpAEKRLwN8rzSWUYWjXGesVZIjm5W0ZQgq0u_vUYCRpdZRc)
 
-The **`rit create formula`** command also build the formula automatically \(it generates the formula executables files and add them to the [.rit folder](https://docs.ritchiecli.io/developer/cli#composition-of-the-rit-folder)\).
+The **`rit create formula`** command also build the formula automatically \(it generates the formula executables files and add them to the [.rit folder]({{< ref "CLI.md#composition-of-the-rit-folder" >}})\).
 
 That means it is possible to execute the new command directly after its creation. In that case, the formula _**Hello World template**_ will be executed as shown below :
 
@@ -50,7 +50,7 @@ Those represents the 3 kinds of inputs currently available when using Ritchie.
 
 ## **Step 2: Formula structure**
 
-All Ritchie formulas workspaces follow the same architecture, you can find more information [in the formulas section](https://docs.ritchiecli.io/developer/formulas).
+All Ritchie formulas workspaces follow the same architecture, you can find more information [in the formulas section]({{< ref "Formulas.md" >}}).
 
 When executing the **`rit create formula`** command, the new formula is added to the informed workspace, updating automatically the workspace structure with the _Hello World template_ files.
 
