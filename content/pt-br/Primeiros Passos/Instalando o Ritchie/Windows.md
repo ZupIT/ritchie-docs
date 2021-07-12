@@ -34,7 +34,7 @@ Clique no link para [instalar o Ritchie Team](https://commons-repo.ritchiecli.io
 
 Clique no link para [instalar a Versão Single](https://commons-repo.ritchiecli.io/1.0.0-legacy/windows/single/rit.exe)
 
-Vale lembrar que, se preferir, também é possível seguir com a[ **instalação manual**.](instalacao-manual)
+Vale lembrar que, se preferir, também é possível seguir com a[ **instalação manual**.]({{< ref "Instalação Manual.md" >}})
 
 ## Usar Ritchie no Windows
 

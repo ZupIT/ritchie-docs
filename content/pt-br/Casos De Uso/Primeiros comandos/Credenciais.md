@@ -5,11 +5,11 @@ weight: 31
 
 ---
 
-## **Definir Credenciais** 
+## **Definir Credenciais**
 
 Comando: **`$ rit set credential`**
 
-Este comando permite que você configure credenciais no Ritchie, de maneira que você não precisa informar o mesmo dado diversas vezes no terminal. Lembrando que, na [**Versão Single**](https://docs.ritchiecli.io/v/doc-portuguese/primeiros-passos/escolhendo-versao#versao-single), as credenciais são criptografadas localmente na sessão por meio da passphrase informada no[ **processo de inicialização**](https://docs.ritchiecli.io/v/doc-portuguese/primeiros-passos/inicializacao#versao-single). Já na [**Versão Team**](https://docs.ritchiecli.io/v/doc-portuguese/primeiros-passos/escolhendo-versao#versao-team), as credenciais são criptografadas na sessão online do **Keycloak** através do **Vault**.
+Este comando permite que você configure credenciais no Ritchie, de maneira que você não precisa informar o mesmo dado diversas vezes no terminal. Lembrando que, na [**Versão Single**]({{< ref "Escolhendo uma versão.md#versao-single" >}}), as credenciais são criptografadas localmente na sessão por meio da passphrase informada no[ **processo de inicialização**]({{< ref "Inicialização.md#versao-single" >}}). Já na [**Versão Team**]({{< ref "Escolhendo uma versão.md#versao-team" >}}), as credenciais são criptografadas na sessão online do **Keycloak** através do **Vault**.
 
 ```text
 ➜   rit set credential
@@ -51,5 +51,5 @@ Github token:  *
 ![](https://lh4.googleusercontent.com/_U93uVcs1Tu9TIUy59wuVfDCKgHbqO-lt5pPPSmlmDqwaFG1oew-nG_ntixSNFVRvmknMNca0X2G5WhYAowGS84V3Bf1OCZmurcCnK-Xkn9HZkf67ZWe6Jy6Wi2f9BNL6ggdO4sI)
 
 {{% alert color="info" %}}
-Confere na [seção de configuração das credenciais](https://docs.ritchiecli.io/v/doc-portuguese/referencia/servidor#configuracoes-de-credenciais) como manipular as credenciais definidas na sessão como parâmetros de entradas das fórmulas \(inputs no arquivo config.json\).
+Confere na [seção de configuração das credenciais]({{< ref "Servidor.md#configuracoes-de-credenciais" >}}) como manipular as credenciais definidas na sessão como parâmetros de entradas das fórmulas \(inputs no arquivo config.json\).
 {{% /alert %}}

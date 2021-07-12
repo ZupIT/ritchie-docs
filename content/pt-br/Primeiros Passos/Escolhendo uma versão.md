@@ -59,7 +59,7 @@ No caso da Versão Team, é possível acessar mais repositórios. São eles:
 3. [**ritchie-server**](https://github.com/ZupIT/ritchie-server): contém as integrações com as plataformas do [**Keycloak**](https://www.keycloak.org/) e do [**Vault**](https://www.vaultproject.io/), usados para criar a sessão e armazenar os dados do usuário com segurança.
 
 {{% alert color="warning" %}}
-Além de armazenar fórmulas organizacionais dentro de outros repositórios, é possível também acessá-las executando o [**comando do login**](https://docs.ritchiecli.io/v/doc-portuguese/arquitetura-do-sistema-1/seguranca#comando-do-login)
+Além de armazenar fórmulas organizacionais dentro de outros repositórios, é possível também acessá-las executando o [**comando do login**]({{< ref "Inicialização.md#comando-do-login" >}})
 {{% /alert %}}
 
 ![Arquitetura da vers&#xE3;o team](/shared/team-ritchie-white.png)

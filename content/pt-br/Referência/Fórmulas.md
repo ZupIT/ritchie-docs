@@ -31,7 +31,7 @@ Cada **pasta de fórmula** vai conter o código executável e os arquivos refere
 
 A pasta **tree** é composta de um arquivo _**tree.json**_ que vai conter a árvore dos comandos de todas as fórmulas do repositório.
 
-O arquivo _**Makefile**_ contem uma referência a todas as fórmulas do repositório, assim que um comando executável manipulando os arquivos **copy-bin-configs.sh** e **unzip-bin-configs.sh,** a fim de gerar os arquivos necessários para testar as fórmula\(s\) localmente na [pasta .rit](https://docs.ritchiecli.io/v/doc-portuguese/referencia/cli#o-que-compoe-a-pasta-rit).
+O arquivo _**Makefile**_ contem uma referência a todas as fórmulas do repositório, assim que um comando executável manipulando os arquivos **copy-bin-configs.sh** e **unzip-bin-configs.sh,** a fim de gerar os arquivos necessários para testar as fórmula\(s\) localmente na [pasta .rit]({{< ref "CLI.md#o-que-compoe-a-pasta-rit" >}}).
 
 ### Composição de fórmulas
 
@@ -305,7 +305,7 @@ Depois de adicionar a formula no .rit por meio do Makefile \(main\), será poss�
 
 ### **Compilação / teste de fórmulas**
 
-Conforme explicado no [passo 4 da seção de criação de fórmula](https://docs.ritchiecli.io/v/doc-portuguese/casos-de-uso/criando-formulas#passo-4-testar-a-nova-implementacao-da-formula), é possível gerar arquivos executáveis de uma fórmula para teste com o comando rit build formula.
+Conforme explicado no [passo 4 da seção de criação de fórmula]({{< ref "Criando fórmulas.md#passo-4-testar-a-nova-implementacao-da-formula" >}}), é possível gerar arquivos executáveis de uma fórmula para teste com o comando rit build formula.
 
 Mas o que acontece exatamente ao executar este comando? Bem, está tudo relacionado ao arquivo Makefile do repositório na raiz do repositório.
 
@@ -358,7 +358,7 @@ Usage:
 Use "rit <command> --help" for more information about a given command.
 ```
 
-Quando um usuário vai baixar o Ritchie \([versão Single](https://docs.ritchiecli.io/v/doc-portuguese/primeiros-passos/escolhendo-versao#versao-single)\) ou efetuar o comando **rit login** \([versão Team](https://docs.ritchiecli.io/v/doc-portuguese/primeiros-passos/escolhendo-versao#versao-team)\) para acessar o repositório de uma organização, o **CLI** vai baixar e realizar o merge dos _tree.json_ dos repositórios de fórmulas aos quais o usuário tem acesso.
+Quando um usuário vai baixar o Ritchie \([versão Single]({{< ref "Escolhendo uma versão#versao-single" >}})\) ou efetuar o comando **rit login** \([versão Team]({{< ref "Escolhendo uma versão#versao-team" >}})\) para acessar o repositório de uma organização, o **CLI** vai baixar e realizar o merge dos _tree.json_ dos repositórios de fórmulas aos quais o usuário tem acesso.
 
 ![](/shared/fluxo-cli.png)
 
@@ -397,7 +397,7 @@ Seria dado prioridade aos comandos do repositório do **time** sobre os comandos
 Isso permitiria por exemplo a um usuário, ou time, de usar um comando que está na árvore do repositório do **ritchie-formulas** para uma fórmulas no repositório dele, realizando uma operação diferente com o mesmo comando, já que teria prioridade.
 
 {{% alert color="warning" %}}
-É possível configurar a prioridade entre os repositórios na pasta **repo** da [pasta .rit](https://docs.ritchiecli.io/v/doc-portuguese/referencia/cli#o-que-compoe-a-pasta-rit) onde tem um arquivo **repositories.json** configurável.
+É possível configurar a prioridade entre os repositórios na pasta **repo** da [pasta .rit]({{< ref "CLI.md#o-que-compoe-a-pasta-rit" >}}) onde tem um arquivo **repositories.json** configurável.
 
-Por mais informações sobre como manipular repositórios, confere a documentação aqui: [Repositório](https://docs.ritchiecli.io/v/doc-portuguese/primeiros-comandos/repositorio).
+Por mais informações sobre como manipular repositórios, confere a documentação aqui: [Repositório]({{< ref "Repositórios.md" >}}).
 {{% /alert %}}

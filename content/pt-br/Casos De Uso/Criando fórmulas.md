@@ -34,7 +34,7 @@ Pode ser um espaço de trabalho de fórmula existente. Se não houver nenhum dis
 
 ![Cria&#xE7;&#xE3;o de uma nova f&#xF3;rmula](/shared/large-gif-1170x398-.gif)
 
-O comando **`rit create formula`** também cria a fórmula automaticamente \(gera os arquivos executáveis da fórmula e os adiciona à [pasta .rit](https://docs.ritchiecli.io/v/doc-portuguese/referencia/cli#o-que-compoe-a-pasta-rit)\).
+O comando **`rit create formula`** também cria a fórmula automaticamente \(gera os arquivos executáveis da fórmula e os adiciona à [pasta .rit]({{< ref "CLI.md#o-que-compoe-a-pasta-rit" >}})\).
 
 Isso significa que é possível executar o novo comando diretamente após sua criação. Nesse caso, o modelo da fórmula Hello World será executado como mostrado abaixo:
 
@@ -50,7 +50,7 @@ Esses representam os três tipos de entradas disponíveis atualmente ao usar o R
 
 ## Passo 2: Estrutura da fórmula
 
-Todas as áreas de trabalho de fórmulas do Ritchie seguem a mesma arquitetura. Você pode encontrar mais informações [na seção de fórmulas](https://docs.ritchiecli.io/v/doc-portuguese/referencia/formulas).
+Todas as áreas de trabalho de fórmulas do Ritchie seguem a mesma arquitetura. Você pode encontrar mais informações [na seção de fórmulas]({{< ref "Fórmulas.md" >}}).
 
 Ao executar o comando **`rit create formula`**, a nova fórmula é adicionada ao espaço de trabalho informado, atualizando automaticamente a estrutura do espaço de trabalho com os arquivos de modelo do Hello World.
 

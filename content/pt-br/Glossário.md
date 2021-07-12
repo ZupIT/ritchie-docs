@@ -11,7 +11,7 @@ Nome dado aos comandos que são criados para simplificar uma operação.
 
 ## Contexto
 
-No Ritchie, o contexto é o ambiente no qual você está trabalhando. Cada contexto terá suas próprias credenciais, o que significa que ele precisará executar [**fórmulas**](key-concepts#formulas) específicas.
+No Ritchie, o contexto é o ambiente no qual você está trabalhando. Cada contexto terá suas próprias credenciais, o que significa que ele precisará executar [**fórmulas**]({{< ref "Principais conceitos.md#fórmulas" >}}) específicas.
 
 ## CLI
 
@@ -19,7 +19,7 @@ Refere-se à interface de linha de comando, que é o programa responsável por p
 
 ## Credencial
 
-São as configurações necessárias para que você utilize o Ritchie. 
+São as configurações necessárias para que você utilize o Ritchie.
 
 ## Fórmula
 
@@ -31,7 +31,7 @@ Refere-se ao JavaScript Object Notation \(JSON\), que é um formato padrão de t
 
 ## Tree
 
-Refere-se ao grupo de comandos organizados em árvores dentro do Ritchie. Você pode clicar no link para saber mais sobre a [**estrutura do Tree**.](key-concepts#arvores-de-comando)
+Refere-se ao grupo de comandos organizados em árvores dentro do Ritchie. Você pode clicar no link para saber mais sobre a [**estrutura do Tree**.]({{< ref "Principais conceitos.md#árvores-de-comando" >}})
 
 ## Repository
 
@@ -45,4 +45,4 @@ Um local de armazenamento em que você pode organizar features, comandos ou quai
 
 Refere-se ao canal de comunicação que permite a interconexão de input e output entre um programa computacional e o seu ambiente.
 
-No Ritchie, usamos o standard input \([**stdin**](getting-started/commands/via-stdin)\) para executar comandos.
+No Ritchie, usamos o standard input \([**stdin**]({{< ref "Via stdin.md" >}})\) para executar comandos.

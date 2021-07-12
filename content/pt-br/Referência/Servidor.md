@@ -7,11 +7,11 @@ weight: 52
 
 ## Introdução
 
-Presente apenas na Versão Team, o servidor no Ritchie é o responsável por fornecer as informações que o CLI precisa para executar os comandos. 
+Presente apenas na Versão Team, o servidor no Ritchie é o responsável por fornecer as informações que o CLI precisa para executar os comandos.
 
-Para que isso aconteça, cada time precisa ter um arquivo de configuração para iniciar o seu servidor quando usar o Ritchie. Este arquivo é o **file\_config.json**. 
+Para que isso aconteça, cada time precisa ter um arquivo de configuração para iniciar o seu servidor quando usar o Ritchie. Este arquivo é o **file\_config.json**.
 
-Além do arquivo de configuração, o CLI também providencia as informações que precisa por meio do **repositório ritchie-server.** 
+Além do arquivo de configuração, o CLI também providencia as informações que precisa por meio do **repositório ritchie-server.**
 
 {{% alert color="info" %}}
 Para conhecer o repositório do servidor, acesse [**ritchie-server**](https://github.com/ZupIT/ritchie-server) no Github.
@@ -34,7 +34,7 @@ O campo _**keycloak**_ se refere as configurações do client [Keycloak](https:/
 
 O campo _**cliVersionPath**_ informa a URL para o provider afim de identificar a versão do CLI sendo usada.
 
-O campo _**repositories**_ indica as configurações dos repositórios de fórmulas acessíveis pelo time \(com nome, prioridade, treePath, urls\) que o CLI vai usar para baixar os tree.json que ficarão na [pasta .rit](https://docs.ritchiecli.io/v/doc-portuguese/referencia/cli#o-que-compoe-a-pasta-rit)
+O campo _**repositories**_ indica as configurações dos repositórios de fórmulas acessíveis pelo time \(com nome, prioridade, treePath, urls\) que o CLI vai usar para baixar os tree.json que ficarão na [pasta .rit]({{< ref "CLI.md#o-que-compoe-a-pasta-rit" >}})
 
 O campo _**oauth**_ contém a URL que será usada para realizar o login via a ferramenta SSO \(Single Sign On\) usada pelo time.
 
@@ -126,7 +126,7 @@ Para a versão **Team** funcionar no CLI, a organização vai precisar ter :
 É possível testar essas configurações **localmente**, observando através de arquivos do Postman \(disponibilizados na pasta **/testdata**\) como os endpoints do servidor são manipulados pelo CLI para funcionar.
 
 {{% alert color="warning" %}}
- Para realizar esse teste, será necessário clonar o [repositório do ritchie-server](https://github.com/ZupIT/ritchie-server) no computador. 
+ Para realizar esse teste, será necessário clonar o [repositório do ritchie-server](https://github.com/ZupIT/ritchie-server) no computador.
 {{% /alert %}}
 
 Para iniciar esse teste é preciso subir o **docker-compose** na raíz do produto : `$ docker-compose up`
@@ -199,7 +199,7 @@ Um **comando core** está sendo desenvolvido para permitir que um time consiga c
 
 O comando **`rit set credential`** permitir salvar credenciais na sessão \(localmente na versão Single, no Vault na versão Team\) para o usuário aproveitar esses dados sem precisar informá-los novamente ao executar suas fórmulas.
 
-Para usar essas credenciais como inputs numa fórmula, existe uma palavra chave que precisa ser informado no arquivo config.json da fórmula. 
+Para usar essas credenciais como inputs numa fórmula, existe uma palavra chave que precisa ser informado no arquivo config.json da fórmula.
 
 {{% alert color="warning" %}}
 Esse arquivo é onde são configurados os parâmetros de entrada que serão pedidos ao usuário quando ele executará o comando no terminal para processar a fórmula.
@@ -212,32 +212,32 @@ Para saber como usá-la, é preciso ter acesso ao repositório do `ritchie-serve
 Por exemplo, as **credenciais do Github** são configuradas da seguinte forma :
 
 ```text
-"credentials": { 
-    "github": [ 
-        { 
-            "field": "username", 
-            "type": "text" 
+"credentials": {
+    "github": [
+        {
+            "field": "username",
+            "type": "text"
         },
-        { 
-            "field": "token", 
-            "type": "password" 
-        }  
-    ] 
+        {
+            "field": "token",
+            "type": "password"
+        }
+    ]
 }
 ```
 
 Consequentemente, para conseguir usar as credenciais do Github como input no `config.json` de uma fórmula, precisaria informar eles da seguinte forma :
 
 ```text
-"inputs": [ 
-    { 
-        "name": "git_user", 
-        "type": "CREDENTIAL_GITHUB_USERNAME" 
+"inputs": [
+    {
+        "name": "git_user",
+        "type": "CREDENTIAL_GITHUB_USERNAME"
     },
-    { 
-        "name": "git_token", 
+    {
+        "name": "git_token",
         "type": "CREDENTIAL_GITHUB_TOKEN"
-    } 
+    }
 ]
 ```
 

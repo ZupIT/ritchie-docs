@@ -40,4 +40,4 @@ O comando para adicionar o Ritchie Single ao seu terminal é:
 curl -fsSL https://commons-repo.ritchiecli.io/install_single_legacy.sh | bash
 ```
 
-Vale lembrar que, se preferir, também é possível seguir com a[ **instalação manual**.](instalacao-manual)
+Vale lembrar que, se preferir, também é possível seguir com a[ **instalação manual**.]({{< ref "Instalação Manual.md" >}})

@@ -27,8 +27,8 @@ A primeira vez que o usuário executa o comando associado a uma fórmula no term
 
 Esses parâmetros de entrada serão informados pelo usuário :
 
-* após ele digitar o comando no terminal \(se for [via prompt](getting-started/commands/via-prompt)\)
-* antes de digitar o comando no terminal \(se for [via stdin](getting-started/commands/via-stdin)\)
+* após ele digitar o comando no terminal \(se for [via prompt]({{< ref "Via prompt.md" >}})\)
+* antes de digitar o comando no terminal \(se for [via stdin]({{< ref "Via stdin.md" >}})\)
 
 ... antes de executar a fórmula de fato.
 
