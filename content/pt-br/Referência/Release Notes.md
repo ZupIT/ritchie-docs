@@ -1,56 +1,44 @@
 ---
 title: Release Notes
-weight: 95
+weight: 8
+description: >-
+  Nesta seção, você encontra as Release Notes do Ritchie.
 ---
+{{% release/group %}}
+{{% release/item type="feature"  date="Julho 2021" %}}
+Adição de um **input flag support** para todos os comandos core.
 
-## Onde acompanhar?
+Adição do comando core **rit update workspace** para habilitar atualização dos workspaces depois do git pull em repositórios locais.
 
-Acompanhe as [**Release Notes**](https://github.com/ZupIT/ritchie-cli/releases) do Ritchie.
+Adição de um status path para o comando core **rit list workspace**. 
 
-## Ritchie 1.0 e Ritchie 2.0
+Adição da opção de criar um novo workspace com o comando core **rit create formula** (quando o path informado não existe).
 
-Diferenças entre as versões 1.0 e 2.0
+{{% /release/item %}}
+ 
+{{% release/item repository="Security" date="Julho 2021" %}}
+Adição da seção de **segurança**.
+{{% /release/item %}} 
 
-* As versões Single e Team foram depreciadas.  _Dê uma olhada na dica abaixo se ainda quiser usar elas._
-* A árvore de comando será gerada dinamicamente a partir dos repositórios adicionados. _Ou seja, não será mais necessário alterar o arquivo tree.json manualmente._
-* Não terá mais armazenamento de fórmulas na nuvem.  _O usuário poderá importar os repositórios do Github ou do Gitlab ._ \(**`rit add repo`**\) __
-* Suporte para autocomplete para 2 novos Shells: **Fish** e **Powershell**. \(**`rit completion fish`** \| **`rit completion powershell`**\)
-* Suporte para executar fórmulas em container. \(**`--docker flag`**\)
-* Suporte para fazer "build" de  fórmulas no Windows.
-* Tutorial incorporado no CLI.
-* Melhorias estruturais.
 
-{{% alert color="danger" %}}
-A versão 2.0 **não suporta o Vault** para compartilhar credenciais. Logo, caso você queira continuar usando essa funcionalidade, precisará ficar na versão 1.0.
-{{% /alert %}}
+{{% release/item type="fix" date="Julho 2021" %}}
+Atualização da execução de uma fórmula com Docker para evitar a criação de arquivos com o dono root. 
 
-## Como migrar fórmulas da versão 1.0 para a 2.0
+Adição de um suporte para Docker da versão mais nova até a mais antiga para usuários do MacOS e WSL.
+{{% /release/item  %}}
 
-### **Contexto**
 
-Se você usa a versão 1.0 do Ritchie e deseja migrar para a versão 2.0, **será necessário atualizar a estrutura dos seus repositórios de fórmulas** para ser compatível com a nova versão.
+{{% release/item type="chore" date="Julho 2021" %}}
+Adição de uma verificação para evitar usar nomes de workspaces com espaço e caracteres especiais. 
 
-### Como migrar?
+Adição de testes funcionais para checar o comportamento dos comandos core no Ubuntu, Windows e macOS.
 
-Abaixo, segue um **passo a passo** de como você pode fazer isso:
+Melhoria no readme e na seção de contribuição. 
+{{% /release/item  %}}
 
-**Passo 1**: Crie um novo repositório do zero usando o comando rit create formula
-
-* Adicionando as mesmas fórmulas usadas no repositório antigo, no repositório novo.
-
-**Passo 2**: Exporte a implementação das  fórmula do repositório antigo para o novo.
-
-* A estrutura continua usando os mesmos arquivos: **`config.json`** , **`main.*`**, **`formula.*`**.
-* Copie o código da estrutura antiga para a nova, respeitando o novo layout.
-
-**Passo3**: Publique o novo repositório de fórmulas no **github** ou no **gitlab** \(pode ser **público** ou **privado**\).
-
-**Passo 4**: Gere uma release desse repositório de fórmulas.
-
-**Passo 5**: Adicione o repositório de fórmulas no Ritchie usando o comando **`rit add repo`**.
-
-**Passo 6**: Compartilhe seu repositório de fórmula com sua equipe, seus colegas ou a comunidade.
-
-{{% alert color="info" %}}
-Em case de dúvida, fique à vontade para entrar em contato com a nossa equipe no e-mail **ritchie@zup.com.br** ou **abrindo uma issue** no repositório [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas).
-{{% /alert %}}
+{{% release/item type="docs"  date="Junho 2021" %}}
+ Migração da documentação do Gitbook para o Hugo.
+{{% /release/item  %}}
+{{% /release/group %}}
+ 
+Veja mais em [**Release Notes**](https://github.com/ZupIT/ritchie-cli/releases). 
