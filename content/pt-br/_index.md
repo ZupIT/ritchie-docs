@@ -1,4 +1,4 @@
 ---
-title: Documentação
-weight: 5
+title: Docs
+weight: 3
 ---
