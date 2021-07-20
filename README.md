@@ -4,7 +4,7 @@
 
 ## Ritchie CLI Official Documentation
 
-This repository contains all the [Ritchie CLI](https://ritchiecli.io/) official documenation that can currently be found at [https://zupit.github.io/docs-ritchie/](https://zupit.github.io/docs-ritchie/) and will soon migrate to [https://docs.ritchiecli.io](https://docs.ritchiecli.io).
+This repository contains all the [Ritchie CLI](https://ritchiecli.io/) official documenation that can be found at [https://docs.ritchiecli.io](https://docs.ritchiecli.io).
 
 This documentation uses [hugo server](https://gohugo.io/commands/hugo_server/).
 
