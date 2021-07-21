@@ -86,6 +86,8 @@ privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 version_path = ""
 logoName = "icons/ritchie.svg"
 
+isDocumentationDeprecated = false
+
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
 url_latest_version = "https://example.com"

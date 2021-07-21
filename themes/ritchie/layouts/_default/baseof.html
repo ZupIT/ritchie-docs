@@ -18,23 +18,24 @@
             {{ partial "toc.html" . }}
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            
-            <div class="alert alert-warning d-none cp-old-version" role="alert">
+            {{ if .Site.Params.isDocumentationDeprecated}}
+            <div class="alert alert-warning" role="alert">
               <h4 class="alert-heading">
-  
+
                 <b>&#9888;&#65039; {{ T "no_longer_maintained_message_one" }} 
                   {{ T "no_longer_maintained_message_two" }}: 
                   {{ .Site.Params.version_path }}
                 </b>
               </h4>
               <hr>
-  
+
               <p>{{.Site.Title}} {{.Site.Params.version_path}} {{ T "no_longer_maintained_message_three" }} 
                 <a href="{{.Site.BaseURL}}" style="text-decoration: underline;">
                   {{ T "no_longer_maintained_message_four" }}
                 </a>.
               </p>
             </div>
+            {{ end }}
             
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ block "main" . }}{{ end }}
