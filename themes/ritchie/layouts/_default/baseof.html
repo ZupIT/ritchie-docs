@@ -18,7 +18,8 @@
             {{ partial "toc.html" . }}
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
-            <div class="alert alert-warning d-none cp-old-version" role="alert">
+            {{ if .Site.Params.isDocumentationDeprecated}}
+            <div class="alert alert-warning" role="alert">
               <h4 class="alert-heading">
 
                 <b>&#9888;&#65039; {{ T "no_longer_maintained_message_one" }} 
@@ -34,6 +35,7 @@
                 </a>.
               </p>
             </div>
+            {{ end }}
             
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ block "main" . }}{{ end }}
