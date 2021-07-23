@@ -34,7 +34,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | 
 
 ### Packages
 
-To download a specific package or version, just paste the URL on your browser replacing the `{VERSION}` field according to [the repository's project tags](https://github.com/ZupIT/ritchie-cli/tags):
+To download a specific package or version, just paste the URL on your browser replacing the `{VERSION}` field according to [**the repository's project tags**](https://github.com/ZupIT/ritchie-cli/tags):
 
 #### Red Hat Package Manager
 
@@ -50,7 +50,7 @@ https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
 
 #### Arch Linux
 
-The `tar.gz` package is available on this [Arch Linux user repository](https://aur.archlinux.org/packages/ritchie-cli/) page ([repository reference](https://github.com/avelino/ritchie-cli-archpack)).
+The `tar.gz` package is available on this [**Arch Linux user repository**](https://aur.archlinux.org/packages/ritchie-cli/) page ([**repository reference**](https://github.com/avelino/ritchie-cli-archpack)).
 
 _If you prefer, you also can follow with the[ **manual installation**.](/docs-ritchie/getting-started/manual-installation/)_
 

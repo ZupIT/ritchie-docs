@@ -30,7 +30,8 @@ Exemplo: `rit group old` > `rit group new` > `Default`
 
 - O Ritchie identificará automaticamente o workspace a qual a fórmula pertence.
   - Caso o CLI identifique mais de um workspace com a fórmula informada, um passo extra necessário (_quando for usada a execução via prompt_) será pedido pelo Ritchie para escolha do workspace a qual deve ter a fórmula renomeada.
-- Essa fórmula possui entrada via _flags_, mais informações em [**Commandos core > Comandos de fórmula**](/pt-br/standard-inputs/comandos-core/#comandos-de-fórmula).
+- Essa fórmula possui entrada via _flags_, mais informações em [**Commandos core > Comandos de fórmula**]({{< ref path="/Standard Inputs/Comandos de fórmulas.md" >}}).
+.
   {{% /alert %}}
 
 ## Efeitos
@@ -45,4 +46,4 @@ Exemplo: `rit group old` > `rit group new` > `Default`
 
 Nessa seção, você viu como renomear uma fórmula no Ritchie. Para continuar configurando sua fórmula:
 
-👉 Veja a seção [**como compartilhar fórmulas**](/pt-br/fórmulas/compartilhar-fórmulas/).
+👉 Veja a seção [**como compartilhar fórmulas**]({{< ref path="/Fórmulas/Compartilhar fórmulas.md" >}}).

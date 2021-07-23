@@ -19,6 +19,7 @@ In that case, the input parameters need to be informed in a **JSON format**:
 
 You can use this stdin flag rules on:
 
-👉 [**Core Commands**](/stdinflag-core-commands/)
+👉 [**Core Commands**]({{< ref path="Stdin flag/stdinflag Core Commands.md" >}}).
 
-👉 [**Formulas Commands**](/standard-inputs/formulas-commands/)
+👉 [**Formulas Commands**]({{< ref path="Stdin flag/Stdin flag Formulas commands.md" >}}).
+

@@ -15,11 +15,11 @@ Despite the number of multidisciplinary teams in the market, a great challenge s
 {{% alert color="warning" %}}
 
 With that in mind, we bring a tool to the community that promotes a **NoOps** movement, a solution that automates repetitive operations and streamlines processes \(also known as toil\) that are often hampered in the infrastructure. This will give developers the ability to perform operations that were exclusively the infrastructure's domain.
-{{% /alert %}}
+{{% /alert %}} 
 
 In that way, professionals - on all fronts - gain time to work on more complex and relevant tasks to generate value for their project.
 
-![](/shared/rit-demo-deploy-project%20%281%29%20%281%29.gif)
+![](/shared/rit-demo-deploy-project.gif)
 
 ## **What makes Ritchie different?**
 
@@ -33,4 +33,4 @@ So, instead of writing down on the command lines which parameters and / or argum
 
 In the example below, we have the execution of a scaffold command with the coffee formula. As the user signals which formula he wants to use, the system automatically passes, line by line, asking which specific parameters must be considered to perform the desired action.
 
-![](/shared/rit-scaffold-generate-coffe-go%20%281%29.gif)
+![](/shared/rit-scaffold-generate-coffe-go.gif)

@@ -39,7 +39,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | 
 ```
 {{% /alert %}}
 
-If you prefer, you also can follow with the[ **manual installation**.](/getting-started/manual-installation/)
+If you prefer, you also can follow with the [**manual installation**.]({{< ref path="/Getting Started/Manual Installation.md" >}})
 
 ### Second option
 

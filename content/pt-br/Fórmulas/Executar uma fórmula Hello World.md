@@ -56,7 +56,7 @@ rit demo hello-world
 ```
 Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer:
 
-![](/shared/large-gif-1054x366-.gif)
+![](/shared/rit-helloworld-prompt.gif)
 
 Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de **prompt** (interagindo com o CLI no terminal) para informar os parâmetros de entrada.
 
@@ -116,4 +116,4 @@ Nessa seção, você viu como executar uma fórmula no Ritchie. Para continuar a
 
 - Confira agora as fórmulas que você tem acesso usando o comando:
 
-- Veja como [**criar suas fórmulas** ](/pt-br/fórmulas/criar-fórmulas/).
+- Veja como [**criar suas fórmulas**]({{< ref path="/Fórmulas/Criar fórmulas.md" >}}).

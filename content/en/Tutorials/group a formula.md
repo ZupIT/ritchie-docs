@@ -7,7 +7,7 @@ description: >-
 
 In this tutorial, the idea is to create a formula to execute another formula inside it. 
 
-See more information on how to run formula inside other on [**groups formulas**](/formulas/group-formulas/) section.
+See more information on how to run formula inside other on [**groups formulas**]({{< ref path="/Formulas/Group formulas.md" >}}) section.
 
 Here, we will group at least two formulas: 
 * **`rit math sum numbers`** (level 1)

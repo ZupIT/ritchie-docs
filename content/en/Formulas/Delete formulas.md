@@ -29,6 +29,6 @@ Once you've made this, follow the steps:
 
 On this section, you saw how to delete a formula on Ritchie. To keep reading:
 
-👉 Go to [**how to group formulas**](/formulas/group-formulas/) section to find out how to run a formula inside another formula.
+👉 Go to [**how to group formulas**]({{< ref path="/Formulas/Group formulas.md" >}}) section to find out how to run a formula inside another formula.
 
-👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**](/reference/list-of-commands-and-flags/)
+👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**]({{< ref path="Reference/List of commands and flags.md" >}}). 

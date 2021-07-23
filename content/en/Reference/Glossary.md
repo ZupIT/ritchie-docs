@@ -37,7 +37,7 @@ To allow more options and freedom for users, it is also allowed to follow the pa
 
 The app name is Ritchie, so we use the name **`rit`** to start our command tree.
 
-![](/shared/arvore-rit%20%281%29%20%281%29.png)
+![](/shared/arvore-rit.png)
 
 {{% alert color="warning" %}}
 The **rit** command is therefore our parent command, or **root**. It is not executable \(it means that it will not start any operations if you use it alone in the terminal\), but has been configured to return the **helper command**.
@@ -84,7 +84,7 @@ Those input parameters can be informed in different ways:
 * When typing the command on the terminal \(via **stdin** or **input flags**\)
 * During the execution of the formula \(if coded using **prompt**\)
 
-![](/shared/start-end-ritchie%20%281%29.jpg)
+![](/shared/start-end-ritchie.jpg)
 
 ## **JSON**
 

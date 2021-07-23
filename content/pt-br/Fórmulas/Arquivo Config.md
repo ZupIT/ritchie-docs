@@ -64,7 +64,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
   - **text** \(string\),
   - **bool** \(boolean\),
   - **password** \(string escondida no CLI\),
-  - **credentials** \_\_\(tipo específico, veja mais sobre [**aqui**](https://docs.ritchiecli.io/tutorials/credentials#how-to-use-credentials-as-formula-inputs)\)
+  - **credentials** \_\_\(tipo específico, veja mais sobre [**nesse tutorial**]({{< ref path="/Tutoriais/usar inputs condicionais.md" >}})\)
   - **dynamic** \(associado ao campo opcional`request_info`\)
   - **path:** habilita o `autocomplete` para o usuário informar o passo para uma pasta ou um arquivo \(string\).
 - `label`: texto que aparecerá no CLI para pedir o input ao usuário.
