@@ -39,8 +39,7 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | 
 ```
 {{% /alert %}}
 
-Se preferir, você também pode seguir com a [**instalação manual**.](/pt-br/primeiros-passos/instalação-manual/)
-
+Se preferir, você também pode seguir com a [**instalação manual**.]({{< ref path="/Primeiros Passos/Instalação Manual.md" >}})
 ### Segunda opção
 
 Você também pode **fazer o  download do pacote do Ritchie CLI** e **instalá-lo manualmente** através da linha de comando abaixo: 

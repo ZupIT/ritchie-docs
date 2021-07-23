@@ -28,6 +28,6 @@ Feito isso, siga os passos:
 
 Nesta seção, você viu como apagar uma fórmula no Ritchie. Para continuar lendo mais:
 
-👉 Vá para seção [**como encapsular fórmulas**](/pt-br/fórmulas/encapsular-fórmulas/) para descobrir como se executa uma fórmula dentro de outra fórmula.
+👉 Vá para seção [**como encapsular fórmulas**]({{< ref path="/Fórmulas/Encapsular fórmulas.md" >}}) para descobrir como se executa uma fórmula dentro de outra fórmula.
 
-👉 Conheça a [**lista de comandos**](/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.
+👉 Conheça a [**lista de comandos**]({{< ref path="/Referência/Lista de comandos e flags.md" >}}) de fórmulas disponíveis no Ritchie.

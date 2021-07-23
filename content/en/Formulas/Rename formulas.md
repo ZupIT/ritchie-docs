@@ -45,4 +45,4 @@ Example: `rit group old` > `rit group new` > `Default`
 
 In this section, you saw how to rename a formula on Ritchie. To keep configuring the formula:
 
-👉 Check out [**how to share formulas**](/formulas/share-formulas/).
+👉 Check out [**how to share formulas**]({{< ref path="/Formulas/Share formulas.md" >}}).

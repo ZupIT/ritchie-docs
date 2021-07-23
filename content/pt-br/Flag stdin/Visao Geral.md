@@ -8,7 +8,7 @@ description: Nesta seção, você vai encontrar mais detalhes sobre a flag stdin
 
 {{% alert color="danger" %}}
 
-A flag **--stdin** será descontinuada no início de 2021, sendo substituída pelos [**input flags**](/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file).
+A flag **--stdin** será descontinuada no início de 2021, sendo substituída pelos [**input flags**]({{< ref path="/Fórmulas/Arquivo Config.md" >}}).
 
 {{% /alert %}}
 
@@ -24,6 +24,6 @@ Nesse caso, os parâmetros de entrada devem ser informados em um **formato JSON*
 
 Você pode usar essas regras da flag stdin em:
 
-👉 [**Comandos Core**](/pt-br/flag-stdin/comandos-core/)
+👉 [**Comandos Core**]({{< ref path="/Flag stdin/Comandos Core.md" >}})
 
-👉 [**Comandos de fórmulas**](/pt-br/flag-stdin/comandos-de-fórmulas/)
+👉 [**Comandos de fórmulas**]({{< ref path="/Flag stdin/Comandos de fórmulas.md" >}})

@@ -20,4 +20,4 @@ RIT (GROUP) VERB NOUN --input_name="input_value"
 
 You can use this stdin flag rules on:
 
-👉 [**Formulas commands**](/standard-inputs/formulas-commands/)
+👉 [**Formulas commands**]({{< ref path="Standard Inputs/Formulas commands.md" >}}).

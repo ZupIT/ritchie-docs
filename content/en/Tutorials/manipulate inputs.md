@@ -229,4 +229,4 @@ If you want to test your formula more, see some suggestions below:
 
 ## **Next steps** 
 
-👉 If you've completed this first tutorial, let's go to the second one [**How to use GitHub crendentials**](/tutorials/use-github-credentials/)!
+👉 If you've completed this first tutorial, let's go to the second one [**How to use GitHub crendentials**]({{< ref path="/Tutorials/use github credentials.md" >}}).

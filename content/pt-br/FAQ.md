@@ -10,7 +10,8 @@ description: 'Nesta seção, você encontrará respostas para principais dúvida
 
 ### **O que é Ritchie?**
 
-O Ritchie é um **framework open source** que cria e ajusta o CLI para seu time. Ele permite que você crie, faça o build e compartilhe [**fórmulas**](/pt-br/glossário/#fórmulas) facilmente. Veja mais [**sobre o produto**](/pt-br/sobre-ritchie/#de-onde-o-ritchie-veio).
+O Ritchie é um **framework open source** que cria e ajusta o CLI para seu time. Ele permite que você crie, faça o build e compartilhe [**fórmulas**]({{< ref path="Glossário.md" >}}).
+ facilmente. Veja mais [**sobre o produto**]({{< ref path="Sobre Ritchie.md" >}}).
 
 ### **O que o Ritchie faz?**
 
@@ -24,11 +25,11 @@ O Ritchie cria automações para melhorar a experiência operacional dos desenvo
 
 ### **Como instalar p Ritchie?** 
 
-Você pode seguir o passo a passo da instalação de acordo com sistema operacional que estiver usando. Veja mais na [**seção de instalação.**](/pt-br/primeiros-passos/)
+Você pode seguir o passo a passo da instalação de acordo com sistema operacional que estiver usando. Veja mais na [**seção de instalação.**]({{< ref path="Primeiros Passos.md" >}}).
 
 ### **Como criar uma nova fórmula no Ritchie?**
 
-Usando o comando `rit create formula` , você pode criar fórmulas usando qualquer linguagem de programação. Saiba mais na [**seção de como criar fórmulas.** ](/pt-br/fórmulas/criar-fórmulas/)
+Usando o comando `rit create formula` , você pode criar fórmulas usando qualquer linguagem de programação. Saiba mais na [**seção de como criar fórmulas.** ]({{< ref path="/Fórmulas/Criar fórmulas.md" >}}).
 
 ### **Como criar fórmulas em um repositório existente?** 
 
@@ -39,7 +40,7 @@ Siga os seguintes passos:
 
 ### **Como executar fórmulas?**
 
-Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais[**como executar fórmulas.** ](/pt-br/fórmulas/executar-fórmulas/)
+Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais[**como executar fórmulas.** ]({{< ref path="/Fórmulas/Executar fórmulas.md" >}}).
 
 ### **Como fazer o "build" de fórmulas no Ritchie?**
 
@@ -58,7 +59,7 @@ Use o comando `rit add repo ` para adicionar a fórmula ao repositório.
 
 ### **Como publicar fórmulas no Ritchie?**
 
-Você pode publicar uma fórmula criando um repositório no Github, Gitlab ou Bitbucket e adicionando uma release da sua fórmula. Veja mais na [**como publicar uma fórmula**](/pt-br/fórmulas/publicar-fórmulas/) 
+Você pode publicar uma fórmula criando um repositório no Github, Gitlab ou Bitbucket e adicionando uma release da sua fórmula. Veja mais na [**como publicar uma fórmula**]({{< ref path="/Fórmulas/Publicar fórmulas.md" >}})
 
 ## **Comunidade**
 

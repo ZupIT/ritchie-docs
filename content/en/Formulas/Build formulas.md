@@ -16,7 +16,8 @@ If you're using a previous version just follow the instructions of this section.
 
 ## How to build?
 
-After [**creating a formula**](/formulas/create-formulas/),  if you want to edit the code of the formula, it's necessary to **build** these changes to test the command with the new implementation. 
+After [**creating a formula**]({{< ref path="/Formulas/Create formulas.md" >}}),  if you want to edit the code of the formula, it's necessary to **build** these changes to test the command with the new implementation. 
+
 
 To do so, just run the command:  
 

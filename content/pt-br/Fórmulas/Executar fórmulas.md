@@ -8,7 +8,7 @@ description: >-
 
 ---
 
-## Como executar?
+## Como executar? 
 
 Você tem **duas maneiras** de executar fórmulas usando o Ritchie:
 
@@ -21,7 +21,7 @@ Vale reforçar que **método de execução de fórmulas padrão** é escolhido d
 rit set formula-runner
 ```
 
-![](/shared/large-gif-1374x404-.gif)
+![](/shared/rit-run-formula.gif)
 
 ### 1. Execução local
 
@@ -35,7 +35,7 @@ Exemplo: uma fórmula desenvolvida em **Java** precisará ter **Java instalado**
 Todas as fórmulas podem ser executadas sem depender da linguagem usada, desde que o **`DOCKER`** esteja instalado e iniciado.
 
 {{% alert color="info" %}}
-Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ](/pt-br/fórmulas/executar-uma-fórmula-hello-world/).
+Para ver melhor como essa execução funciona na prática, confira a [**seção fórmula hello world** ]({{< ref path="/Fórmulas/Executar uma fórmula Hello World.md" >}}).
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -45,7 +45,7 @@ Veja como:
 Acesse no Docker:
  -  Preferences > Command Line>  Enable cloud experience.
 
- ![](/shared/unnamed-removebg-preview.png)
+ ![](/shared/ios-docker.PNG)
 
 {{% /alert %}}
 
@@ -66,6 +66,6 @@ Todos os templates de formulas contém um arquivo **DockerFile** que cria um con
 
 Nesta seção, você viu como rodar uma fórmula no Ritchie. Para continuar aprendendo mais:
 
-👉 Vá para página [**Fórmula Hello World**](/pt-br/fórmulas/executar-uma-fórmula-hello-world/) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
+👉 Vá para página [**Fórmula Hello World**]({{< ref path="/Fórmulas/Executar uma fórmula Hello World.md" >}}) e descubra as diferentes maneiras de executar uma fórmula no Ritchie.
 
-👉 Vá para página [**como criar fórmulas**](/pt-br/fórmulas/criar-fórmulas/) para entender o passo a passo para criar sua primeira automação usando o Ritchie.
+👉 Vá para página [**como criar fórmulas**]({{< ref path="/Fórmulas/Criar fórmulas.md" >}}) para entender o passo a passo para criar sua primeira automação usando o Ritchie.

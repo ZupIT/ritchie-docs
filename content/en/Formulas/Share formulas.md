@@ -20,7 +20,7 @@ rit add repo
 
 Once the repository has been added, Ritchie will use the selected release on the repository to access the available formulas.
 
-![](/shared/rit-add-repo-3.gif)
+![](/shared/rit-share-formula.gif)
 
 {{% alert color="warning" %}}
 If the formula repository is **private**, the user will have to inform his Github/Gitlab token.
@@ -108,6 +108,6 @@ rit update repo
 
 On this section, you saw how to share a formula on Ritchie. To keep configuring the formula:
 
-👉 Check out how to [**use credentials**](/credentials/use-credentials-as-formula-inputs/) with your formulas.
+👉 Check out how to [**use credentials**]({{< ref path="Credentials/Use credentials as formula inputs.md" >}}) with your formulas.
 
-👉 Check out our [**list of commands**](/reference/list-of-commands-and-flags/) to see the available automations on our community repo.
+👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags.md" >}}) to see the available automations on our community repo.

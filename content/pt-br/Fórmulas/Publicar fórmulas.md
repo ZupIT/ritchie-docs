@@ -66,4 +66,4 @@ Para publicar uma fórmula manualmente, você precisa submetê-la no repositóri
 
 Nessa seção, você viu como publicar fórmulas no Ritchie. Para continuar configurando sua fórmula:
 
-👉 Veja a seção [**como compartilhar fórmulas**](/pt-br/fórmulas/compartilhar-fórmulas/).
+👉 Veja a seção [**como compartilhar fórmulas**]({{< ref path="/Fórmulas/Compartilhar fórmulas.md" >}}).
