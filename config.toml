@@ -61,12 +61,38 @@ title = "Ritchie"
 version_menu = "Versions"
 weight = 1
 
+[[languages.en.menu.main]]
+    name = "About"
+    weight = 20
+    url = "/reference/about-ritchie/"
+[[languages.en.menu.main]]
+    name = "FAQ"
+    weight = 20
+    url = "/reference/faq/"
+[[languages.en.menu.main]]
+    name = "Glossary"
+    weight = 20
+    url = "/reference/glossary/"
+
 [languages.pt-br]
 contentDir = "content/pt-br"
 description = "Documentação Ritchie"
 languageName = "Português"
 title = "Ritchie"
 version_menu = "Versões"
+
+[[languages.pt-br.menu.main]]
+    name = "Sobre"
+    weight = 20
+    url = "/pt-br/sobre-ritchie"
+[[languages.pt-br.menu.main]]
+    name = "FAQ"
+    weight = 20
+    url = "/pt-br/faq/"
+[[languages.pt-br.menu.main]]
+    name = "Glossário"
+    weight = 20
+    url = "/pt-br/glossário"
 
 [markup]
 [markup.goldmark]
@@ -193,3 +219,5 @@ desc = "Discuss development issues around the project"
 icon = "fa fa-envelope"
 name = "Developer mailing list"
 url = ""
+
+
