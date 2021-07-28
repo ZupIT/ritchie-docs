@@ -16,12 +16,13 @@ rit delete credential
 
 Veja como o processo funciona:
 
-![](/shared/large-gif-814x408-.gif)
+![](/shared/delete-credentials.gif)
 
 ## Próximos passos
 
 Nesta seção, você viu como apagar uma credencial no Ritchie. Para continuar lendo mais:
 
-👉 Vá para seção  [**como adicionar provedores** ](/pt-br/credenciais/adicionar-provedores/) e, assim, continuar configurando suas credenciais.
+👉 Vá para seção  [**como adicionar provedores** ]({{< ref path="/Credenciais/Apagar credenciais.md" >}}) e, assim, continuar configurando suas credenciais.
 
-👉 Conheça a [**lista de comandos**](/pt-br/referência/lista-de-comandos-e-flags/) de fórmulas disponíveis no Ritchie.
+👉 Conheça a [**lista de comandos**]
+({{< ref path="/Referência/Lista de comandos e flags.md" >}}) de fórmulas disponíveis no Ritchie.

@@ -17,7 +17,7 @@ It's good to reinforce that the **default formulas execution method** is defined
 rit set formula-runner
 ```
 
-![](/shared/large-gif-1374x404-.gif)
+![](/shared/rit-run-formula.gif)
 
 ### 1. Locally
 
@@ -42,7 +42,7 @@ See how:
 Access on Docker:
  -  Preferences > Command Line> Enable cloud experience.
 
- ![](/shared/unnamed-removebg-preview.png)
+ ![](/shared/ios-docker.PNG)
 
 {{% /alert %}}
 
@@ -63,6 +63,6 @@ All formulas templates contain a **Dockerfile** which creates a container with *
 
 On this section, you saw how to run a formula on Ritchie. To keep learning:
 
-👉 Go to [**Hello World formula**](/formulas/hello-world-formula/) to see different ways to run a formula on Ritchie.
+👉 Go to [**Hello World formula**]({{< ref path="/Formulas/Hello World Formula.md" >}}) to see different ways to run a formula on Ritchie.
 
-👉 Go to the [**create formulas**](/formulas/create-formulas/) section to understand how to create your first automation with Ritchie.
+👉 Go to the [**create formulas**]({{< ref path="/Formulas/Create formulas.md" >}}) section to understand how to create your first automation with Ritchie.

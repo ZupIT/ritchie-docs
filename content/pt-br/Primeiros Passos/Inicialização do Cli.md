@@ -18,9 +18,9 @@ Esse comando vai pedir **três informações:**
 
 1. Se o usuário **quer contribuir anonimamente** as métricas do produto.
 2. Se o usuário **quer adicionar as fórmulas** da comunidade localmente.
-3. Se o usuário **quer usar o** [**método de execução de fórmulas**](/pt-br/fórmulas/executar-fórmulas/) **local ou via docker**.
+3. Se o usuário **quer usar o** [**método de execução de fórmulas**]({{< ref path="/Fórmulas/Executar fórmulas.md" >}}) **local ou via docker**.
 
-![](/shared/rit-init%20%283%29.gif)
+![](/shared/rit-init.gif)
 
 Após a execução desse comando, todos os arquivos de configuração para a máquina funcionar serão criados.
 
@@ -36,7 +36,7 @@ rit list repo
 
 Esse comando retorna todos os repositórios de fórmulas que o usuário tem acesso localmente.
 
-![](/shared/large-gif-1448x466-.gif)
+![](/shared/rit-list-repo.gif)
 
 ### 2. Pasta Ritchie
 

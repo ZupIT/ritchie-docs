@@ -7,7 +7,7 @@ description: >-
 ---
 
 Neste tutorial, a ideia é criar uma fórmula que vai retornar a ferramenta selecionada pelo usuário de acordo com seu perfil. 
-Veja mais informações na seção [**sobre o arquivo config.json**](/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file).
+Veja mais informações na seção [**sobre o arquivo config.json**]({{< ref path="/Fórmulas/Arquivo Config.md" >}}).
 
 {{% alert color="info" %}}
 Sugestão de comando: **`rit get tools`**
@@ -262,4 +262,4 @@ Se você quiser incrementar essa fórmula, veja a sugestão abaixo:
 
 ## **Próximos passos** 
 
-👉 Se você completou o terceiro tutorial, vamos para o quarto [**Como agrupar uma fórmula?**](/pt-br/tutoriais/agrupar-uma-formula/)!
+👉 Se você completou o terceiro tutorial, vamos para o quarto [**Como agrupar uma fórmula?**]({{< ref path="/Tutoriais/agrupar uma formula.md" >}}).

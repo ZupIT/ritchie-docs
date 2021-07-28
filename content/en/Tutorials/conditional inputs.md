@@ -8,7 +8,7 @@ description: >-
 
 Here, the idea is to create a formula on Ritchie that will return the tool selected by the user according to its profile.
 
-> You'll find more information about the **conditional field** on the [**config.json inputs**](/formulas/configure-inputs/) section.
+> You'll find more information about the **conditional field** on the [**config.json inputs**]({{< ref path="/Formulas/Configure Inputs.md" >}}) section.
 
 
 {{% alert color="info" %}}
@@ -265,4 +265,4 @@ If you want to test your formula more, see a suggestion below:
 
 ## **Next steps** 
 
-👉 If you've completed the second tutorial, go to the fourth [**How to group formulas**](/tutorials/group-a-formula/)!
+👉 If you've completed the second tutorial, go to the fourth [**How to group formulas**]({{< ref path="/Tutorials/group a formula.md" >}}).

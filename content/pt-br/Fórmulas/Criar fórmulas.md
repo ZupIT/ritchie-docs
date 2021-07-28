@@ -18,13 +18,13 @@ rit create formula
 
 Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
-1. O **comando** \(de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**](/pt-br/glossário/#árvore-de-comando)\).
+1. O **comando** \(de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**]({{< ref path="/Glossário.md" >}})\).
 2. A **linguagem de programação** da fórmula.
 3. **O caminho (path)** para salvar os arquivos da fórmula.
 
 Exemplo: `rit demo create formula`
 
-![](/shared/rit_create_formula_demo.gif)
+![](/shared/rit_create_formula.gif)
 
 ### **Passo 2: Teste sua fórmula**
 
@@ -32,7 +32,7 @@ Você pode testar diretamente a fórmula depois de sua criação. Isso é possí
 
 Nesse caso, o template da formula **"Hello World"** será executado como mostrado abaixo:
 
-![](/shared/rit_demo_hello-world_hd.gif)
+![](/shared/rit_demo_hello-world.gif)
 
 Este template é composto por **3 parâmetros de entrada**, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:
 
@@ -69,4 +69,4 @@ Um repositório associado a esse workspace será criado na pasta `/home/user/.ri
 
 Nessa seção, você viu como criar e testar uma fórmula no Ritchie. Para continuar configurando a fórmula:
 
-👉 Vá para a seção de como[ **organizar uma pasta de fórmula**](/pt-br/fórmulas/organizar-a-pasta-de-fórmulas/) para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.
+👉 Vá para a seção de como[ **organizar uma pasta de fórmula**]({{< ref path="/Fórmulas/Organizar a pasta de fórmulas.md" >}}) para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.
