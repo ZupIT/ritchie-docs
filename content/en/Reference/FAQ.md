@@ -2,6 +2,7 @@
 title: FAQ
 weight: 104
 description: You will find in this section the main questions about Ritchie.
+toc_hide: true
 ---
 
 ---
@@ -16,13 +17,13 @@ Ritchie is an **open source framework** that creates and tweaks a CLI for your t
 
 Ritchie creates automation commands to improve the operational **developers'** **experience and brings beneficial such as:**
 
-* Simplify repetitive and easy-to-execute tasks
-* Reduce the rework
-* Promote more time for the development team to focus on their deliveries.
+- Simplify repetitive and easy-to-execute tasks
+- Reduce the rework
+- Promote more time for the development team to focus on their deliveries.
 
 ## **Installation and Use**
 
-### **How to install Ritchie?** 
+### **How to install Ritchie?**
 
 You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**]({{< ref path="Getting Started.md" >}}).
 
@@ -33,6 +34,7 @@ Using the command `rit create formula` , you can create formulas using any progr
 ### **How to create formulas on an existing repository?**
 
 Follow the next steps:
+
 1. Clone the repo;
 2. Add the repo with `rit add workspace` command;
 3. Add the new formula with `rit create formula` command and implement it.
@@ -48,6 +50,7 @@ When you run a formula, a build is automatically made, you don't need a command 
 ### **How to update a formula from a repository?**
 
 Follow the next steps:
+
 1. Locally clone the repo;
 2. Add the repo with the `rit add workspace` command;
 3. Now, update the workspace.
