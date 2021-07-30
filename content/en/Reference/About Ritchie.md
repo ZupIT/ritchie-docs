@@ -2,6 +2,7 @@
 title: About Ritchie
 weight: 102
 description: You will find in this section more details about Ritchie's story.
+toc_hide: true
 ---
 
 ---
@@ -15,7 +16,7 @@ Despite the number of multidisciplinary teams in the market, a great challenge s
 {{% alert color="warning" %}}
 
 With that in mind, we bring a tool to the community that promotes a **NoOps** movement, a solution that automates repetitive operations and streamlines processes \(also known as toil\) that are often hampered in the infrastructure. This will give developers the ability to perform operations that were exclusively the infrastructure's domain.
-{{% /alert %}} 
+{{% /alert %}}
 
 In that way, professionals - on all fronts - gain time to work on more complex and relevant tasks to generate value for their project.
 
@@ -25,9 +26,9 @@ In that way, professionals - on all fronts - gain time to work on more complex a
 
 Because it is a CLI tool, Ritchie seeks to improve the operational **developers'** **experience and brings beneficial such as:**
 
-* Simplify repetitive and easy-to-execute tasks
-* Reduce the rework
-* Promote more time for the development team to focus on their deliveries.
+- Simplify repetitive and easy-to-execute tasks
+- Reduce the rework
+- Promote more time for the development team to focus on their deliveries.
 
 So, instead of writing down on the command lines which parameters and / or arguments the user needs to inform, we do the opposite: Ritchie presents the available options and goes, line by line, asking for the information needed for the command to work, in an interactive way.
 
