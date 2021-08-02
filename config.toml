@@ -107,7 +107,7 @@ style = "native"
 # Everything below this are Site Params
 
 [params]
-copyright = "Zup"
+copyright = "Zup IT"
 privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 version_path = ""
 logoName = "icons/ritchie.svg"
