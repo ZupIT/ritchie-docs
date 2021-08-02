@@ -16,10 +16,6 @@ Add the option to create a new workspace with the **rit create formula**  core c
 
 {{% /release/item %}}
  
-{{% release/item repository="Security" date="July 2021" %}}
-Add **security** section.
-{{% /release/item %}} 
-
 
 {{% release/item type="fix" date="July 2021" %}}
 Update formula execution with Docker to avoid creating files with owner root.
@@ -34,6 +30,8 @@ Add a check to avoid using workspace names with spaces or special characters.
 Add functional tests to check core commands behaviour on Ubuntu, Windows and macOS runners.
 
 Readme and contribution section enhancement.
+
+Add **security** section.
 {{% /release/item  %}}
 
 {{% release/item type="docs"  date="June 2021" %}}
