@@ -15,10 +15,6 @@ Adição de um status path para o comando core **rit list workspace**.
 Adição da opção de criar um novo workspace com o comando core **rit create formula** (quando o path informado não existe).
 
 {{% /release/item %}}
- 
-{{% release/item repository="Security" date="Julho 2021" %}}
-Adição da seção de **segurança**.
-{{% /release/item %}} 
 
 
 {{% release/item type="fix" date="Julho 2021" %}}
@@ -34,6 +30,8 @@ Adição de uma verificação para evitar usar nomes de workspaces com espaço e
 Adição de testes funcionais para checar o comportamento dos comandos core no Ubuntu, Windows e macOS.
 
 Melhoria no readme e na seção de contribuição. 
+
+Adição da seção de **segurança**.
 {{% /release/item  %}}
 
 {{% release/item type="docs"  date="Junho 2021" %}}
