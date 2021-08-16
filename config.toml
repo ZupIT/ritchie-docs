@@ -119,9 +119,11 @@ isDocumentationDeprecated = false
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/ZupIT/docs-ritchie/tree/main/"
+github_repo = "https://github.com/ZupIT/docs-ritchie"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/ZupIT/docs-ritchie/tree/main/"
+github_project_repo = "https://github.com/ZupIT/docs-ritchie"
+
+github_branch = "main"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
