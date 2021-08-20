@@ -2,7 +2,7 @@
 title: How to group a formula
 weight: 90
 description: >-
-  In this section, you will find a to tutorial to learn how to use the formula aggregation concept.
+  In this section, you will find a tutorial on how to use the formula aggregation concept.
 ---
 
 In this tutorial, the idea is to create a formula to execute another formula inside it. 
