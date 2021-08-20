@@ -6,11 +6,11 @@ description: 'Nesta seção, você vai saber mais como testar fórmulas no Ritch
 
 ---
 
-## **Testes Unit** 
+## **Testes unitários** 
 
-No contexto do Ritchie CLI, Unit tests é a forma de testar uma parte da implementação da sua fórmula. 
+No contexto do Ritchie CLI, teste unitário é a forma de testar uma parte da implementação da sua fórmula. 
 
-Alguns templates de fórmula, como Java e Golang possuem classe de testes para escrever e rodar testes unit das fórmulas. 
+Alguns templates de fórmula, como Java e Golang, possuem classe de testes para escrever e rodar testes unitários das fórmulas. 
 
 Você também pode configurar seu CI/CD e os processos de release para rodar esses testes, logo após a adição ou atualização de uma fórmula.
 
