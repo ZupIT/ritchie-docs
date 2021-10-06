@@ -17,7 +17,7 @@ description: 'Nesta seção, você encontrará uma lista com principais comandos
 | rit tutorial  | habilita ou desabilita o tutorial  |
 | rit --version | retorna qual a versão atual instalada do Ritchie |
 
-### Comandos de Repositórios 
+### Comandos de Repositórios
 
 | Comandos | Operação |
 | :--- | :--- |
@@ -50,14 +50,18 @@ description: 'Nesta seção, você encontrará uma lista com principais comandos
     </tr>
     <tr>
       <td style="text-align:left">rit build formula --watch</td>
-      <td style="text-align:left">Compila uma f&#xF3;rmula para teste, monitorando atualiza&#xE7;&#xF5;es
+      <td style="text-align:left">compila uma f&#xF3;rmula para teste, monitorando atualiza&#xE7;&#xF5;es
         do c&#xF3;digo no tempo real</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">rit list formula</td>
+      <td style="text-align:left">lista todas as fórmulas disponíveis em um/todos repositórios</td>
     </tr>
   </tbody>
 </table>
 
 {{% alert color="danger" %}}
-O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie. 
+O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 {{% /alert %}}
 
 ### Comandos de Autocomplete
@@ -95,7 +99,7 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 
 ## Flags
 
-### Principais flags 
+### Principais flags
 
 | Flags | Operações |
 | :--- | :--- |

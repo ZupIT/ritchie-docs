@@ -16,17 +16,15 @@ O Ritchie é um **framework open source** que permite criar, armazenar e compart
 
 Atualmente, o Ritchie possui **duas versões disponíveis** para ser usada. Nesta documentação,  o foco será no **Ritchie versão 2.0.**
 
-* Para seguir com a [**Instalação do CLI**](/docs-ritchie/pt-br/primeiros-passos/)
-* Para saber mais sobre [**Release Notes e versões do Ritchie**](/docs-ritchie/pt-br/referência/release-notes)
-
-
+* Para seguir com a [**Instalação do CLI**]({{< ref path="Primeiros passos" >}}).
+* Para saber mais sobre [**Release Notes e versões do Ritchie**]({{< ref path="Referência/Release notes" >}}).
 
 ## **Como funciona?**
 
 No contexto do Ritchie, tudo funciona por meio de **fórmulas**!
 
-Na prática, **uma fórmula é um script** que pode ser executado automaticamente ou interativamente por meio de uma linha de comando.  
-  
+Na prática, **uma fórmula é um script** que pode ser executado automaticamente ou interativamente por meio de uma linha de comando.
+
 Adaptar um script existente à estrutura Ritchie permite executá-lo **localmente** ou por meio do **Docker** e compartilhá-lo em um repositório do **Bitbucket**, **Github** ou **Gitlab**.
 
-![](/docs/formula-ritchie-en%20%281%29%20%281%29%20%281%29.jpg)
+![](/shared/formula-ritchie-en%20%281%29%20%281%29%20%281%29.jpg)

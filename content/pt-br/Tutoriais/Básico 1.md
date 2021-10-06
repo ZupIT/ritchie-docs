@@ -46,4 +46,4 @@ Se você quiser testar mais a sua fórmula, é possível configurá-la para que 
 
 ## **Próximos passos**
 
-👉 Se você completou o primeiro tutorial , vamos para o[ **tutorial básico 2**](/docs-ritchie/pt-br/tutoriais/básico-2/)!
+👉 Se você completou o primeiro tutorial , vamos para o[ **tutorial básico 2**]({{< ref path="Tutoriais/Básico 2" >}})!

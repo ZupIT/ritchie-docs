@@ -6,8 +6,7 @@ description: >-
   formulas on Ritchie with a gradual complexity.
 ---
 
-
-## Context 
+## Context
 
 The objective of this section is to help users to understand step by step several activities  you are able to do with Richie.
 
@@ -15,24 +14,17 @@ The objective of this section is to help users to understand step by step severa
 
 To perform the tasks in this section, it will be necessary to understand the following concepts:
 
-1. [**How to run formulas**](/docs-ritchie/formulas/run-formula/)
-2. [**How to create formulas**](/docs-ritchie/formulas/create-formulas/)
-3. [**How to build formulas**](/docs-ritchie/formulas/build-formulas/)
-4. [**How to group formulas**](/docs-ritchie/formulas/group-formulas/)
+1. [**How to run formulas**]({{< ref path="Formulas/Run formula" >}}).
+2. [**How to create formulas**]({{< ref path="Formulas/Create formulas" >}}).
+3. [**How to build formulas**]({{< ref path="Formulas/Build formulas" >}}).
+4. [**How to group formulas**]({{< ref path="Formulas/Group formulas" >}}).
 
 ### Tutorials
 
 The **`first tutorial`** is to understand how to manipulate basic inputs.
 
-
-
 The **`second tutorial`** is to understand how to manipulate credentials inputs.
-
-
 
 The **`third tutorial`** is to understand how to manipulate conditional inputs.
 
-
-
 The **`fourth tutorial`** is to apply the formula aggregation concept.
-

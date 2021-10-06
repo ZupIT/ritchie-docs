@@ -53,4 +53,4 @@ github  	 default	  {"token":"***", "email":"***", "username":"***"}
 
 You saw in this section how to deal with credentials on Ritchie. 
 
-👉 Check the [**commands list**](/docs-ritchie/reference/list-of-commands-and-flags/) to see the available automations on our community repo.
+👉 Check the [**commands list**]({{< ref path="Reference/List of commands and flags" >}}) to see the available automations on our community repo.

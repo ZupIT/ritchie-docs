@@ -1,6 +1,6 @@
 ---
 title: Group formulas
-weight: 50
+weight: 51
 description: 'In this section, you will understand how to  group formulas on Ritchie.'
 ---
 
@@ -10,21 +10,19 @@ description: 'In this section, you will understand how to  group formulas on Rit
 
 On Ritchie, it is possible to **run formulas inside formulas.** This process is called **Formula aggregation**‌.
 
-This functionality allows you, for example, to make operations in which you need to run consecutive formulas. 
+This functionality allows you, for example, to make operations in which you need to run consecutive formulas.
 
-Check out on the following topics to understand how works this aggregation. 
+Check out on the following topics to understand how works this aggregation.
 
 ## How to group?
 
 ### 1. Premisse
 
-To group formulas, it is necessary to use **Standard Inputs**. On the following page, we have a detailed explanation to how this works: 
-
-
+To group formulas, it is necessary to use **Standard Inputs**. On the following page, we have a detailed explanation to how this works:
 
 ### 2. Execution <a id="2-execution"></a>
 
-When [**implementing a formula**](/docs-ritchie/formulas/configure-inputs/), the file where the operation is coded needs to execute a command line associated to a formula.‌
+When [**implementing a formula**]({{< ref path="Formulas/Configure inputs" >}}), the file where the operation is coded needs to execute a command line associated to a formula.‌
 
 The grouped formula command line needs to be executed using **Standard Inputs**, which means informing the inputs parameters directly on the code.‌
 
@@ -61,14 +59,14 @@ Here, according to the input informed by the user, two different formulas can be
 * **`rit github publish repo`**
 * **`rit gitlab publish repo`**
 
-To do so, the grouped formulas inputs parameters are informed dynamically according to the inputs parameters of the main formula \(**`rit publish repo`**\). 
+To do so, the grouped formulas inputs parameters are informed dynamically according to the inputs parameters of the main formula \(**`rit publish repo`**\).
 
 Depending on the operation, the **`input flags`** used for the command could be generated according to other operations performed through the formula execution before executing the grouped formula command line.‌
 
-## Next steps 
+## Next steps
 
 You saw in this section how to use formula aggregation. If you want to keep reading about Ritchie's commands:‌
 
-​👉 Check out the [**tutorials**](/docs-ritchie/tutorials/) page to apply all Ritchie's concepts you have learned.‌
+​👉 Check out the [**tutorials**]({{< ref path="Tutorials" >}}) page to apply all Ritchie's concepts you have learned.‌
 
-​👉 Check out our [**list of commands**](/docs-ritchie/reference/list-of-commands-and-flags/) to see the available automations on our community repo.
+​👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags" >}}) to see the available automations on our community repo.

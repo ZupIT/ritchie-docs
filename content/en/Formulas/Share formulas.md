@@ -1,6 +1,6 @@
 ---
 title: Share formulas
-weight: 46
+weight: 47
 description: 'In this section, you will find how to share formulas on Ritchie.'
 ---
 
@@ -12,7 +12,7 @@ Once a formula repository has been published, other users can add it locally fro
 
 Example: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
 
-To add a new repository on Ritchie, it is necessary to run the command: 
+To add a new repository on Ritchie, it is necessary to run the command:
 
 ```text
 rit add repo
@@ -20,7 +20,7 @@ rit add repo
 
 Once the repository has been added, Ritchie will use the selected release on the repository to access the available formulas.
 
-![](/docs-ritchie/rit-add-repo-3.gif)
+![](/shared/rit-add-repo-3.gif)
 
 {{% alert color="warning" %}}
 If the formula repository is **private**, the user will have to inform his Github/Gitlab token.
@@ -30,7 +30,7 @@ If the formula repository is **private**, the user will have to inform his Githu
 
 {{% alert color="info" %}}
 
-This feature is available from Ritchie 2.2 version. 
+This feature is available from Ritchie 2.2 version.
 
 {{% /alert %}}
 
@@ -38,7 +38,7 @@ On Ritchie, it is possible to check out new formula commands and if there is a n
 
 To do so, just follow these steps:
 
-1. Run the help command **`rit --help`**. The system will return a list with the group of available repositories. 
+1. Run the help command **`rit --help`**. The system will return a list with the group of available repositories.
 
 ```text
 (new version 2.12.1) commons repo commands:
@@ -60,6 +60,42 @@ To do so, just follow these steps:
 
    2. If you prefer, run the **`rit list repo`** command, that returns informations about the imported repositories, like the latest version and the last available version.
 
+### How to see repo formulas
+
+{{% alert color="info" %}}
+
+This feature is available from Ritchie 2.11 version.
+
+{{% /alert %}}
+
+When you work with various formula groups, it may be hard to remember all the available commands.
+
+If you want to list formulas from a specific repository, follow the steps below:
+
+1. Run the list command **` rit list formula`**. The system will return a list with the available groups of repositories and the  '**ALL**' option.
+
+```text
+? Repository:
+  ALL
+> repo-name-1
+  repo-name-2
+  ```
+
+2. Select the repository you want (or ALL), the system will return a list with the commands and a description defined on the **`help.json`** of each formula.
+
+```text
+? Repository: repo-name-1
+COMMAND                                 DESCRIPTION
+rit aws add terraform-eks               Generate terraform AWS eks
+rit aws add terraform-vpc               Generate terraform AWS vpc
+rit aws apply terraform                 Apply terraform on AWS
+rit aws clean bucket                    Clean bucket AWS
+rit aws create bucket                   Create bucket AWS
+rit aws delete bucket                   Delete AWS objects
+
+There are 6 formulas
+```
+
 ### How to update?
 
 To update the version of any repository, you just have to run the command below informing the repository and the version you wish to be updated.
@@ -68,10 +104,10 @@ To update the version of any repository, you just have to run the command below 
 rit update repo
 ```
 
-## Next steps 
+## Next steps
 
-On this section, you saw how to share a formula on Ritchie. To keep configuring the formula: 
+On this section, you saw how to share a formula on Ritchie. To keep configuring the formula:
 
-👉 Check out how to [**use credentials**](/docs-ritchie/credentials/use-credentials-as-formula-inputs/) with your formulas.
+👉 Check out how to [**use credentials**]({{< ref path="Credentials/Use credentials as formula inputs" >}}) with your formulas.
 
-👉 Check out our [**list of commands**](/docs-ritchie/reference/list-of-commands-and-flags/) to see the available automations on our community repo.
+👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags" >}}) to see the available automations on our community repo.

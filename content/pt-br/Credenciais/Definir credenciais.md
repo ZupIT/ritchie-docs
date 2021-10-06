@@ -39,6 +39,6 @@ Depois que escolher um dos provedores disponíveis, o Ritchie irá solicitar que
 
 {{% alert color="info" %}}
 
-Você pode conferir os [**arquivos editáveis das fórmulas**](/docs-ritchie/pt-br/fórmulas/arquivo-config/#o-que-é-um-arquivo-config-configjson-file) para ver como **manipular as credenciais definidas na sessão como parâmetros de input** das fórmulas \(no caso, inputs no config.json\).
+Você pode conferir os [**arquivos editáveis das fórmulas**]({{< ref path="Fórmulas/Arquivo config" >}}) para ver como **manipular as credenciais definidas na sessão como parâmetros de input** das fórmulas \(no caso, inputs no config.json\).
 
 {{% /alert %}}
