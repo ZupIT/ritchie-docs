@@ -34,6 +34,7 @@ https://commons-repo.ritchiecli.io/2.10.0/installer/ritchiecli.msi
 ```bash
 winget install Ritchie-CLI
 ```
+If you don't have winget installed by default on your pc, go to Microsoft store search for winget and install it or maybe you just need to update it.
 
 When you finish, follow the instructions on your terminal after running the `rit` command.
 
