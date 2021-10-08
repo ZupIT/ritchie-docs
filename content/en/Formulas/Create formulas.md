@@ -26,7 +26,7 @@ Then, you'll have to inform those inputs before running the formula:
 
 Example: `rit demo create formula`
 
-![](/shared/rit_create_formula_demo.gif)
+![](/shared/rit_create_formula.gif)
 
 ### **Step 2: Test your formula**
 

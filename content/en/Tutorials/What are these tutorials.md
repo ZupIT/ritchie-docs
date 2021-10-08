@@ -19,12 +19,12 @@ To perform the tutorials here, you will need to know more about the following co
 ### Tutorials
 
 
-**Tutorial 1:** Basic level: [**How to manipulate basic inputs?**]({{< ref path="/Tutorials/manipulate inputs" >}})
+**Tutorial 1:** Basic level: [**How to manipulate basic inputs?**]({{< ref path="Tutorials/manipulate inputs" >}})
 
-**Tutorial 2:** Basic level 2: [**How to manipulate GitHub credentials inputs?**]({{< ref path="/Tutorials/use github credentials" >}}) 
+**Tutorial 2:** Basic level 2: [**How to manipulate GitHub credentials inputs?**]({{< ref path="Tutorials/use github credentials" >}}) 
 
-**Tutorial 3:** Intermediate: [**How to manipulate conditional inputs?**]({{< ref path="/Tutorials/conditional inputs" >}}) 
+**Tutorial 3:** Intermediate: [**How to manipulate conditional inputs?**]({{< ref path="Tutorials/conditional inputs" >}}) 
 
-**Tutorial 4:** Advanced: [**How to apply the formula aggregation concept?**]({{< ref path="/Tutorials/group a formula" >}}) 
+**Tutorial 4:** Advanced: [**How to apply the formula aggregation concept?**]({{< ref path="Tutorials/group a formula" >}}) 
 
 

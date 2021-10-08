@@ -231,4 +231,4 @@ Se você quiser incrementar essa fórmula, veja algumas sugestões abaixo:
 
 ## **Próximos passos** 
 
-👉 Se você completou o primeiro tutorial, vá para o segundo [**Como usar credenciais do GitHub?**]({{< ref path="/Tutoriais/usar credenciais.md" >}}).
+👉 Se você completou o primeiro tutorial, vá para o segundo [**Como usar credenciais do GitHub?**]({{< ref path="Tutoriais/usar credenciais" >}}).

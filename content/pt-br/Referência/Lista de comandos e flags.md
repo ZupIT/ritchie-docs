@@ -29,37 +29,13 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
 
 ### Comandos de Fórmulas
 
-<table style="text-align:left">
-  <thead>
-    <tr>
-      <th>Comandos</th>
-      <th>Operação</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>rit create formula</td>
-      <td>cria uma nova fórmula do zero (como também um novo repositório local, se necessário)</td>
-    </tr>
-    <tr>
-      <td>rit build formula</td>
-      <td>compila uma fórmula localmente para teste</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">rit build formula --watch</td>
-      <td style="text-align:left">compila uma f&#xF3;rmula para teste, monitorando atualiza&#xE7;&#xF5;es
-        do c&#xF3;digo no tempo real</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">rit list formula</td>
-      <td style="text-align:left">lista todas as fórmulas disponíveis em um/todos repositórios</td>
-    </tr>
-    <tr>
-      <td>rit rename formula</td>
-      <td>Renomeia uma fórmula local</td>
-    </tr>
-  </tbody>
-</table>
+
+| Command                     | Operation                                                                               |
+| :-------------------------- | :-------------------------------------------------------------------------------------- |
+| rit create formula          | cria uma nova fórmula do zero  \(como também um novo repositório local, se necessário\) |
+| rit build formula           | compila uma fórmula localmente para teste                                               |
+| rit build formula --watch   | compila uma fórmula para teste, monitorando atualizações do código no tempo real        |
+| rit rit list formula        | lista todas as fórmulas disponíveis em um/todos repositórios                            |
 
 {{% alert color="danger" %}}
 O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
@@ -97,7 +73,6 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 | rit list workspace   | lista todas as fórmulas do workspace                                                |
 | rit add workspace    | adiciona um novo workspace                                                          |
 | rit delete workspace | apaga um workspace                                                                  |
-| rit update workspace | atualiza um workspace \(para acessar novas fórmulas desse workspace com o Ritchie\) |
 
 ## Flags
 

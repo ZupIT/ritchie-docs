@@ -2,7 +2,6 @@
 title: FAQ
 weight: 104
 description: You will find in this section the main questions about Ritchie.
-toc_hide: true
 ---
 
 ---

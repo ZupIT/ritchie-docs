@@ -4,7 +4,6 @@ weight: 103
 description: >-
   Nesta seção, você encontrará mais detalhes sobre conceitos comuns à área de
   desenvolvimento.
-toc_hide: true
 ---
 
 ---

@@ -24,6 +24,14 @@ Copie e cole o comando abaixo para executar no terminal:
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
+{{% alert color="info" %}}
+Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
+
+```text
+curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
+```
+{{% /alert %}}
+
 ### Pacotes
 
 Se você quiser baixar uma versão ou um pacote específico, use as URLs abaixo no seu navegador. Substitua o campo `{VERSION}` de acordo com [**a tag do repositório do seu projeto**](https://github.com/ZupIT/ritchie-cli/tags):

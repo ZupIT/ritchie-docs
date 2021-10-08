@@ -85,15 +85,15 @@ version_menu = "Versões"
 [[languages.pt-br.menu.main]]
     name = "Sobre"
     weight = 20
-    url = "/pt-br/sobre-ritchie"
+    url = "/pt-br/referência/sobre-ritchie"
 [[languages.pt-br.menu.main]]
     name = "FAQ"
     weight = 20
-    url = "/pt-br/faq/"
+    url = "/pt-br/referência/faq/"
 [[languages.pt-br.menu.main]]
     name = "Glossário"
     weight = 20
-    url = "/pt-br/glossário"
+    url = "/pt-br/referência/glossário"
 
 [markup]
 [markup.goldmark]

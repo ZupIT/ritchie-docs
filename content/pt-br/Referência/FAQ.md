@@ -2,7 +2,6 @@
 title: FAQ
 weight: 104
 description: "Nesta seção, você encontrará respostas para principais dúvidas sobre Ritchie."
-toc_hide: true
 ---
 
 ---

@@ -2,7 +2,6 @@
 title: About Ritchie
 weight: 102
 description: You will find in this section more details about Ritchie's story.
-toc_hide: true
 ---
 
 ---
@@ -34,4 +33,4 @@ So, instead of writing down on the command lines which parameters and / or argum
 
 In the example below, we have the execution of a scaffold command with the coffee formula. As the user signals which formula he wants to use, the system automatically passes, line by line, asking which specific parameters must be considered to perform the desired action.
 
-![](/shared/rit-scaffold-generate-coffe-go.gif)
+![](/shared/rit-scaffold-generate-coffee-go.gif)

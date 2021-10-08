@@ -6,7 +6,7 @@ description: 'Nesta seção, você encontrará o passo a passo para usar credenc
 
 Neste tutorial, a ideia é criar uma fórmula que vai retornar um JSON contendo as credenciais do Github.
 
-O tutorial configura os parâmetros de entrada dentro do arquivo config.json, mas executar a fórmula sem informá-los usando prompt ou stdin (serão extraídos automaticamente). Você encontrará todas as informações necessárias na seção de [**configurar inputs**]({{< ref path="/Fórmulas/Arquivo Config.md" >}}).
+O tutorial configura os parâmetros de entrada dentro do arquivo config.json, mas executar a fórmula sem informá-los usando prompt ou stdin (serão extraídos automaticamente). Você encontrará todas as informações necessárias na seção de [**configurar inputs**]({{< ref path="Fórmulas/Arquivo config" >}}).
 
 {{% alert color="info" %}}
 Sugestão de comando: **`rit github get user`**
@@ -284,4 +284,4 @@ Se você quiser incrementar essa fórmula, veja algumas sugestões abaixo:
 
 ## **Próximos passos** 
 
-👉 Se você completou o segundo tutorial, vá para o terceiro [**Como usar os inputs condicionais?**]({{< ref path="/Tutoriais/usar inputs condicionais.md" >}}).
+👉 Se você completou o segundo tutorial, vá para o terceiro [**Como usar os inputs condicionais?**]({{< ref path="Tutoriais/usar inputs condicionais" >}}).

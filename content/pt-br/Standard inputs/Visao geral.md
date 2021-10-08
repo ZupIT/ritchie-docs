@@ -1,12 +1,14 @@
 ---
 title: Visão Geral
-weight: 74
-description: Nesta seção, você vai encontrar mais detalhes sobre as input flags
+weight: 66
+description: 'Nesta seção, você vai encontrar tudo sobre Standard Inputs.'
+---
 
 ---
+
 Informar parâmetros de entrada através de **argumentos** ou **flags** permite que você automatize workflows. É particularmente útil quando você estiver manipulando outras ferramentas dentro do script, assim você automatiza operações sem precisar interagir com o terminal.
 
-![](/shared/screen-shot-2020-08-27-at-15.22.10.png)
+![](/shared/standard-inputs.png)
 
 Basicamente, há duas formas de informar os parâmetros de entrada diretamente na linha de comando:
 
@@ -20,7 +22,7 @@ As Input flags do Ritchie foram desenvolvidas para oferecer mais uma opção par
 
 Nesse caso, os parâmetros de entrada precisam ser informados seguindo o padrão:
 
-`RIT (GROUP) VERB NOUN --input_name='input_value'`
+`RIT (GROUP) VERB NOUN --input_name="input_value"`
 {{% /alert %}}
 
 Você pode usar as regras do input flags em:

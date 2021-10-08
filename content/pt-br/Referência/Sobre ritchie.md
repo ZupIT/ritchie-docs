@@ -2,7 +2,6 @@
 title: Sobre Ritchie
 weight: 102
 description: "Nesta seção, você encontra mais da história do Ritchie."
-toc_hide: true
 ---
 
 ---
@@ -37,4 +36,4 @@ Ao invés de sinalizar nas linhas de comando quais parâmetros e/ou argumentos o
 
 No exemplo abaixo, temos a execução de um comando scaffold com a fórmula coffee. À medida que o usuário sinaliza qual a fórmula quer utilizar, o sistema automaticamente passa, linha a linha, a perguntar quais parâmetros específicos devem ser considerados para executar a ação desejada.
 
-![](/shared/rit-scaffold-generate-coffe-go.gif)
+![](/shared/rit-scaffold-generate-coffee-go.gif)

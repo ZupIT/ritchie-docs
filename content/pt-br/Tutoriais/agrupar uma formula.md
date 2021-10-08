@@ -9,7 +9,7 @@ description: >-
 
 Neste tutorial, a ideia é criar uma fórmula que irá agrupar uma outra fórmula dentro dela.
 
-Veja mais informações sobre agrupamento de fórmulas na seção de [**encapsular fórmulas**]({{< ref path="/Fórmulas/Arquivo Config.md" >}}).
+Veja mais informações sobre agrupamento de fórmulas na seção de [**encapsular fórmulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}}).
 
 * **`rit math sum numbers`** (Nível 1)
 * **`rit math multiply numbers`** (TODO)
