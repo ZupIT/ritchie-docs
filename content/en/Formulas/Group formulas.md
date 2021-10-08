@@ -22,7 +22,7 @@ To group formulas, it is necessary to use **Standard Inputs**. On the following 
 
 ### 2. Execution <a id="2-execution"></a>
 
-When [**implementing a formula**]({{< ref path="/Formulas/Configure Inputs.md" >}}), the file where the operation is coded needs to execute a command line associated to a formula.‌
+When [**implementing a formula**]({{< ref path="Formulas/Configure inputs" >}}), the file where the operation is coded needs to execute a command line associated to a formula.‌
 
 The grouped formula command line needs to be executed using **Standard Inputs**, which means informing the inputs parameters directly on the code.‌
 
@@ -67,6 +67,6 @@ Depending on the operation, the **`input flags`** used for the command could be 
 
 You saw in this section how to use formula aggregation. If you want to keep reading about Ritchie's commands:‌
 
-​👉 Check out the [**tutorials**]({{< ref path="Tutorials.md" >}}) page to apply all Ritchie's concepts you have learned.‌
+​👉 Check out the [**tutorials**]({{< ref path="Tutorials" >}}) page to apply all Ritchie's concepts you have learned.‌
 
-​👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags.md" >}}) to see the available automations on our community repo.
+​👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags" >}}) to see the available automations on our community repo.

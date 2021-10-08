@@ -6,7 +6,7 @@ description: 'In this section, you will find a tutorial on how to use credential
 
 In this tutorial you will learn how to create a formula on Ritchie that will return a JSON with Github credentials.
 
-The tutorial configures the inputs inside the **config.json** file, but run the formula without informing them as `prompt` or `stdin` \(they will be extracted automatically\). You'll find more information in the [**input configuration**]({{< ref path="/Credentials/Set credentials.md" >}})  section.
+The tutorial configures the inputs inside the **config.json** file, but run the formula without informing them as `prompt` or `stdin` \(they will be extracted automatically\). You'll find more information in the [**input configuration**]({{< ref path="Formulas/Configure inputs" >}})  section.
 
 {{% alert color="info" %}}
 Command suggestion: **`rit github get user`**
@@ -284,4 +284,4 @@ If you want to test your formula more, see some suggestions below:
 
 ## **Next steps** 
 
-👉 If you've completed the second tutorial, go to the third [**How to use conditional inputs**]({{< ref path="/Tutorials/conditional inputs.md" >}}).
+👉 If you've completed the second tutorial, go to the third [**How to use conditional inputs**]({{< ref path="Tutorials/conditional inputs" >}}).

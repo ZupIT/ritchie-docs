@@ -30,7 +30,7 @@ Example: a formula written in **Node** will need **Node installed** on the compu
 All formulas can run regardless the programming language used from the moment you have **`DOCKER`** installed and running.
 
 {{% alert color="info" %}}
-Check out on the following example [**how to run a "Hello World" formula** ](/formulas/hello-world-formula/)
+Check out on the following example [**how to run a "Hello World" formula** ]({{< ref path="Formulas/Hello world formula" >}}).
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -63,6 +63,6 @@ All formulas templates contain a **Dockerfile** which creates a container with *
 
 On this section, you saw how to run a formula on Ritchie. To keep learning:
 
-👉 Go to [**Hello World formula**]({{< ref path="/Formulas/Hello World Formula.md" >}}) to see different ways to run a formula on Ritchie.
+👉 Go to [**Hello World formula**]({{< ref path="Formulas/Hello world formula" >}}) to see different ways to run a formula on Ritchie.
 
-👉 Go to the [**create formulas**]({{< ref path="/Formulas/Create formulas.md" >}}) section to understand how to create your first automation with Ritchie.
+👉 Go to the [**create formulas**]({{< ref path="Formulas/Create formulas" >}}) section to understand how to create your first automation with Ritchie.

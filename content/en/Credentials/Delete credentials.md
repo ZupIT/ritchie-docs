@@ -22,6 +22,6 @@ Check out how the process works:
 
 On this section, you saw how to delete a credential on Ritchie. If you want to keep reading:
 
-👉 Go to [**how to add providers**]({{< ref path="Credentials/Add providers.md" >}}) section to keep configuring your credentials.
+👉 Go to [**how to add providers**]({{< ref path="Credentials/Add providers" >}}) section to keep configuring your credentials.
 
-👉 Check out the [**list of commands and flags**]({{< ref path="Reference/List of commands and flags.md" >}}) available on Ritchie.
+👉 Check out the [**list of commands and flags**]({{< ref path="Reference/List of commands and flags" >}}) available on Ritchie.

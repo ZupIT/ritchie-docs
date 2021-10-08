@@ -15,11 +15,11 @@ Repositories and workspaces are used to interact with formulas on Ritchie, but t
 
 **`repository`** You can use repository commands to import formulas from `Git repositories` and execute them.
 
-Check out an example to add a repository on the [**Hello World Formula**]({{< ref path="/Formulas/Hello World Formula.md" >}}) section.
+*See an example to add a repository on the [**Hello World Formula**]({{< ref path="Formulas/Hello world formula" >}}) section.*
 
 Commands for repos and workspaces are similar, they allow the CLI to "see" available formulas on your local machine. Workspaces have **higher priority** than Repos, for example, if you use both commands for the same formulas' repositories, the workspaces' formulas will be executed.
 
-Check out more about workspace and repositories commands [**in the list of commands and flags**]({{< ref path="Reference/List of commands and flags.md" >}}).
+Check out more about workspace and repositories commands [**in the list of commands and flags**]({{< ref path="Reference/List of commands and flags" >}}).
 
 ## How to add?
 
@@ -35,7 +35,7 @@ After that, follow the next steps:
 
 **Step 2:** Inform the workspace path on the local machine.
 
-![](/docs-ritchie/shared/rit-add-workspace.gif)
+![](/shared/rit-add-workspace.gif)
 
 ## How to list?
 
@@ -81,4 +81,4 @@ After that, follow the next steps:
 
 In this section, you saw how to use workspaces on Ritchie. Now
 
-👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**]({{< ref path="Reference/List of commands and flags.md" >}}).
+👉 Check out all the available formulas on Ritchie in the [**list of commands and flags**]({{< ref path="Reference/List of commands and flags" >}}).

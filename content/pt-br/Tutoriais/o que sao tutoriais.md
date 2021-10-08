@@ -11,17 +11,17 @@ Essa seção orienta você na criação de fórmulas em diferente níveis e com 
 
 Para realizar os tutoriais, você precisa entender os alguns conceitos:
 
-1. [**Como executar fórmulas**]({{< ref path="/Fórmulas/Executar fórmulas.md" >}})
-2. [**Como criar fórmulas**]({{< ref path="/Fórmulas/Criar fórmulas.md" >}})
-3. [**Como "buildar" fórmulas**]({{< ref path="/Fórmulas/Buildar formulas.md" >}})
-4. [**Como encapsular formulas**]({{< ref path="/Fórmulas/Encapsular fórmulas.md" >}})
+1. [**Como executar fórmulas**]({{< ref path="Fórmulas/Executar fórmulas" >}})
+2. [**Como criar fórmulas**]({{< ref path="Fórmulas/Criar fórmulas" >}})
+3. [**Como "buildar" fórmulas**]({{< ref path="Fórmulas/Buildar fórmulas" >}})
+4. [**Como encapsular formulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}})
 
 ### Tutoriais
 
-**Tutorial 1:** Nível básico: [**Como manipular inputs básicos?**]({{< ref path="/Tutoriais/manipular inputs.md" >}})
+**Tutorial 1:** Nível básico: [**Como manipular inputs básicos?**]({{< ref path="Tutoriais/manipular inputs" >}})
 
-**Tutorial 2:** Nível básico 2: [**Como manipular inputs de credenciais do Github?**]({{< ref path="/Tutoriais/usar credenciais.md" >}})
+**Tutorial 2:** Nível básico 2: [**Como manipular inputs de credenciais do Github?**]({{< ref path="Tutoriais/usar credenciais" >}})
 
-**Tutorial 3:** Nível intermediário: [**Como manipular os inputs condicionais?**]({{< ref path="/Tutoriais/usar inputs condicionais.md" >}})
+**Tutorial 3:** Nível intermediário: [**Como manipular os inputs condicionais?**]({{< ref path="Tutoriais/usar inputs condicionais" >}})
 
-**Tutorial 4:**  Nível avançado: [**Como aplicar o conceito de agrupamento de fórmulas?**]({{< ref path="/Tutoriais/agrupar uma formula.md" >}})
+**Tutorial 4:**  Nível avançado: [**Como aplicar o conceito de agrupamento de fórmulas?**]({{< ref path="Tutoriais/agrupar uma formula" >}})

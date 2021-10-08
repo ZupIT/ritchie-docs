@@ -64,11 +64,11 @@ To do so, just follow these steps:
 
 {{% alert color="info" %}}
 
-This feature is available from Ritchie 2.11 version. 
+This feature is available from Ritchie 2.11 version.
 
 {{% /alert %}}
 
-When you work with various formula groups, it may be hard to remember all the available commands. 
+When you work with various formula groups, it may be hard to remember all the available commands.
 
 If you want to list formulas from a specific repository, follow the steps below:
 
@@ -108,6 +108,6 @@ rit update repo
 
 On this section, you saw how to share a formula on Ritchie. To keep configuring the formula:
 
-👉 Check out how to [**use credentials**]({{< ref path="Credentials/Use credentials as formula inputs.md" >}}) with your formulas.
+👉 Check out how to [**use credentials**]({{< ref path="Credentials/Use credentials as formula inputs" >}}) with your formulas.
 
-👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags.md" >}}) to see the available automations on our community repo.
+👉 Check out our [**list of commands**]({{< ref path="Reference/List of commands and flags" >}}) to see the available automations on our community repo.

@@ -20,7 +20,7 @@ rit create formula
 
 Then, you'll have to inform those inputs before running the formula:
 
-1. The **command** \(following the **pattern `rit + group + verb + noun`** to respect the [**tree pattern**]({{< ref path="/Reference/Glossary.md" >}})\).
+1. The **command** \(following the **pattern `rit + group + verb + noun`** to respect the [**tree pattern**]({{< ref path="Reference/Glossary" >}})\).
 2. The formula's **programming language**.
 3. **The path** used to save formula's files.
 
@@ -72,4 +72,4 @@ A repository associated to this workspace will be created on the `/home/user/.ri
 
 On this section, you saw how to create a formula on Ritchie and test it. To keep configuring the formula:
 
-👉 Go to [**organize the formula folder**]({{< ref path="/Formulas/Organize the Formula Folder.md" >}}) to see how to organize the formulas you create.
+👉 Go to [**organize the formula folder**]({{< ref path="formulas/Organize the formula folder" >}}) to see how to organize the formulas you create.

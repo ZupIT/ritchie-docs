@@ -69,4 +69,4 @@ To publish a formula manually, you need to push it on a **Github/Gitlab** reposi
 
 On this section, you saw how to publish a formula on Ritchie. To keep configuring the formula:
 
-👉 Check out [**how to share formulas**]({{< ref path="/Formulas/Share formulas.md" >}}).
+👉 Check out [**how to share formulas**]({{< ref path="Formulas/Share formulas" >}}).

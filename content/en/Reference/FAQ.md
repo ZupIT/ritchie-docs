@@ -2,7 +2,6 @@
 title: FAQ
 weight: 104
 description: You will find in this section the main questions about Ritchie.
-toc_hide: true
 ---
 
 ---
@@ -11,7 +10,7 @@ toc_hide: true
 
 ### **What is Ritchie?**
 
-Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**]({{< ref path="Reference/About Ritchie.md" >}})
+Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**]({{< ref path="Reference/About ritchie" >}}).
 
 ### **What does Ritchie do?**
 
@@ -25,23 +24,22 @@ Ritchie creates automation commands to improve the operational **developers'** *
 
 ### **How to install Ritchie?**
 
-You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**]({{< ref path="Getting Started.md" >}}).
+You can follow the installation step by step according do the operational system you're using. Check out more in [**installation section**]({{< ref path="Getting started" >}}).
 
 ### **How to create a new formula on Ritchie?**
 
-Using the command `rit create formula` , you can create formulas using any programming language. Check out more in [**create a formula section**]({{< ref path="/Formulas/Create formulas.md" >}}).
+Using the command `rit create formula` , you can create formulas using any programming language. Check out more in [**create a formula section**]({{< ref path="Formulas/Create formulas" >}}).
 
 ### **How to create formulas on an existing repository?**
 
 Follow the next steps:
-
 1. Clone the repo;
 2. Add the repo with `rit add workspace` command;
 3. Add the new formula with `rit create formula` command and implement it.
 
 ### **How to run formulas?**
 
-You can execute your formulas locally or through Docker. Check out more in [**run a formula section**]({{< ref path="/Formulas/Run formula.md" >}}).
+You can execute your formulas locally or through Docker. Check out more in [**run a formula section**]({{< ref path="Formulas/Run formula" >}}).
 
 ### **How to build formulas on Ritchie?**
 
@@ -50,7 +48,6 @@ When you run a formula, a build is automatically made, you don't need a command 
 ### **How to update a formula from a repository?**
 
 Follow the next steps:
-
 1. Locally clone the repo;
 2. Add the repo with the `rit add workspace` command;
 3. Now, update the workspace.
@@ -61,7 +58,7 @@ Use `rit add repo ` command to add the repository.
 
 ### **How to publish formulas on Ritchie?**
 
-You can publish a formula by creating a Github's, Gitlab's or Bitbucket's repository and adding a release version of this formula. Check out more in [**publish a formula section**]({{< ref path="/Formulas/Publish formulas.md" >}}).
+You can publish a formula by creating a Github's, Gitlab's or Bitbucket's repository and adding a release version of this formula. Check out more in [**publish a formula section**]({{< ref path="Formulas/Publish formulas" >}}).
 
 ## **Community**
 

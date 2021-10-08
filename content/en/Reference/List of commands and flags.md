@@ -29,36 +29,12 @@ description: In this section, you will find the list of Ritchie's main commands
 
 ### Formula commands
 
-<table style="text-align:left">
-  <thead>
-    <tr>
-      <th>Command</th>
-      <th>Operation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>rit create formula</td>
-      <td>create a new formula from scratch(as well as a new local repository if necessary)</td>
-    </tr>
-    <tr>
-      <td>rit build formula</td>
-      <td>build a formula locally for test</td>
-    </tr>
-    <tr>
-      <td>rit build formula --watch</td>
-      <td>build a formula monitoring the code to update real time changes</td>
-    </tr>
-    <tr>
-      <td>rit rename formula</td>
-      <td>rename a local formula</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">rit list formula</td>
-      <td style="text-align:left">list all available formulas from specific/all repositories</td>
-    </tr>
-  </tbody>
-</table>
+| Command                     | Operation                                                                               |
+| :-------------------------- | :-------------------------------------------------------------------------------------- |
+| rit create formula          | create a new formula from scratch \(as well as a new local repository if necessary\)    |
+| rit build formula           | build a formula locally for test                                                        |
+| rit build formula --watch   | build a formula monitoring the code to update real time changes                         |
+| rit rit list formula        | list all available formulas from specific/all repositories                              |
 
 {{% alert color="danger" %}}
 The rit build formula command was deprecated from Ritchie's version 2.5.0.
@@ -95,7 +71,6 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 | rit list workspace   | list all formula's workspaces                                                                     |
 | rit add workspace    | add a new workspace                                                                               |
 | rit delete workspace | delete a specific formula's workspace                                                             |
-| rit update workspace | update a specific formula's workspace \(to access new formulas from this workspace with Ritchie\) |
 
 ## Flags
 

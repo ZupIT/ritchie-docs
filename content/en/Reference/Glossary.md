@@ -2,7 +2,6 @@
 title: Glossary
 weight: 103
 description: You will find in this section more about common concepts on development field.
-toc_hide: true
 ---
 
 ---

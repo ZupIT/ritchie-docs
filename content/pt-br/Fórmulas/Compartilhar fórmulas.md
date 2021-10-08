@@ -112,6 +112,6 @@ rit update repo
 
 Nesta seção, você viu como compartilhar uma fórmula no Ritchie. Para continuar configurando sua fórmula:
 
-👉 Vá para página [**definir credenciais**]({{< ref path="/Credenciais/Definir credenciais.md" >}}) e veja como rodar esse comando com suas fórmulas.
+👉 Vá para página [**definir credenciais**]({{< ref path="Credenciais/Definir credenciais" >}}) e veja como rodar esse comando com suas fórmulas.
 
-👉 Vá para página de [**lista de comandos**]({{< ref path="/Referência/Lista de comandos e flags.md" >}}) para ver as automações disponíveis no repositório da nossa comunidade.
+👉 Vá para página de [**lista de comandos**]({{< ref path="Referência/Lista de comandos e flags" >}}) para ver as automações disponíveis no repositório da nossa comunidade.
