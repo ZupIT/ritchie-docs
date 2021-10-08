@@ -20,7 +20,7 @@ Currently, Ritchie has **two available versions**. On this documentation, we'll 
 
 ## **How does Ritchie work?**
 
-In Ritchie's context, everything works trhough **formulas**!
+In Ritchie's context, everything works through **formulas**!
 
 It means that **a formula is a script** that can be executed automatically or interactively through a command line.
 
