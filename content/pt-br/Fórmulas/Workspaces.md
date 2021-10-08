@@ -49,6 +49,20 @@ rit list workspace
 
 ![](/shared/rit-list-workspace.gif)
 
+## Como atualizar?
+
+Se você não é a única pessoa trabalhando em um workspace (por exemplo: se for um repositório clonado do Git), é necessário atualizar o workspace para permitir que a CLI "veja" as novas fórmulas ou atualizações disponíveis na sua máquina local, após fazer o *pull* o código.
+
+Para atualizar um espaço de trabalho, execute o comando abaixo:
+
+```text
+rit update workspace
+```
+
+Depois disso, selecione o nome do workspace e aguarde a mensagem de saída do CLI.
+
+![](/shared/rit-update-workspace.gif)
+
 ## Como apagar?
 
 Para excluir um workspace, execute o comando:

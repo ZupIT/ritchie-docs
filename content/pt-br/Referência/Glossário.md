@@ -4,20 +4,21 @@ weight: 103
 description: >-
   Nesta seção, você encontrará mais detalhes sobre conceitos comuns à área de
   desenvolvimento.
+toc_hide: true
 ---
 
 ---
 
 Os principais conceitos que fazem parte do Ritchie são:
 
-* Árvore de Comando
-* CLI
-* Credencial
-* Environment (Ambiente)
-* Fórmula
-* JSON
-* Repositório
-* Standard Streams
+- Árvore de Comando
+- CLI
+- Credencial
+- Environment (Ambiente)
+- Fórmula
+- JSON
+- Repositório
+- Standard Streams
 
 ## **Árvore de comando**
 
@@ -31,7 +32,7 @@ E, para permitir mais opções e liberdade aos usuários, também é possível s
 
 Usamos o prefixo **`rit`** para iniciar nossa árvore de comandos.
 
-![](/shared/arvore-rit%20%281%29%20%281%29.png)
+![](/shared/arvore-rit.png)
 
 {{% alert color="warning" %}}
 O comando **`rit`** é nosso comando pai, ou raiz. Ele não é executável \(ou seja, ele não vai iniciar nenhuma operação se você usar ele sozinho no terminal\).
@@ -43,13 +44,13 @@ Os comandos executáveis no Ritchie são os comandos localizados no último nív
 
 Por exemplo, na imagem acima temos:
 
-* O comando **`rit set context`** é executável, pois está no último nível da árvore.
-* O comando **`rit kafka create`** não é executável, pois ele tem um sub-comando **topic** executável no último nível da árvore.
+- O comando **`rit set context`** é executável, pois está no último nível da árvore.
+- O comando **`rit kafka create`** não é executável, pois ele tem um sub-comando **topic** executável no último nível da árvore.
 
 Esse conceito de árvore de comandos é o **núcleo** da estrutura do Ritchie.
 
 {{% alert color="info" %}}
-Essa árvore é gerada **dinamicamente** pelo CLI baseado nos repositório de fórmulas adicionados localmente  pelo comando**`rit add repo`**.
+Essa árvore é gerada **dinamicamente** pelo CLI baseado nos repositório de fórmulas adicionados localmente pelo comando**`rit add repo`**.
 {{% /alert %}}
 
 ## **CLI**
@@ -80,9 +81,9 @@ Dependendo da fórmula, o usuário pode precisar informar alguns parâmetros de 
 
 Esses parâmetros de entrada podem ser informados de diversas maneiras:
 
-* Depois de executar o comando no terminal \(via **prompt**\)
-* Quando digitar a linha de comando no terminal \(via **stdin** ou **input flags**\)
-* Durante a execução da fórmula \(se o código usou o **prompt**\)
+- Depois de executar o comando no terminal \(via **prompt**\)
+- Quando digitar a linha de comando no terminal \(via **stdin** ou **input flags**\)
+- Durante a execução da fórmula \(se o código usou o **prompt**\)
 
 ![](/shared/start-end-ritchie.jpg)
 
@@ -94,8 +95,8 @@ Refere-se ao JavaScript Object Notation \(JSON\), que é um formato padrão de t
 
 Um local de armazenamento em que você pode organizar features, comandos ou quaisquer arquivos necessários para se usar na ferramenta. No Ritchie, existem três repositórios criados para gerenciar fórmulas, servidor e contribuições:
 
-* [**ritchie-cli**](https://github.com/ZupIT/ritchie-cli)
-* [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas)
+- [**ritchie-cli**](https://github.com/ZupIT/ritchie-cli)
+- [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas)
 
 ## **Standard Streams**
 

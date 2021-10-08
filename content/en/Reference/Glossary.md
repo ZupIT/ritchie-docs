@@ -2,10 +2,13 @@
 title: Glossary
 weight: 103
 description: You will find in this section more about common concepts on development field.
+toc_hide: true
 ---
 
 ---
+
 The main concepts on Ritchie are
+
 - CLI
 - Command Tree
 - Credential
@@ -37,7 +40,7 @@ To allow more options and freedom for users, it is also allowed to follow the pa
 
 The app name is Ritchie, so we use the name **`rit`** to start our command tree.
 
-![](/shared/arvore-rit%20%281%29%20%281%29.png)
+![](/shared/arvore-rit.png)
 
 {{% alert color="warning" %}}
 The **rit** command is therefore our parent command, or **root**. It is not executable \(it means that it will not start any operations if you use it alone in the terminal\), but has been configured to return the **helper command**.
@@ -49,8 +52,8 @@ The executable commands in Ritchie are the commands located at the last level of
 
 For example, in the image above:
 
-* The **`rit set context`** command is executable, as it is at the last level of the tree.
-* The **`rit kafka create`** command is not executable as there is an executable **topic** subcommand, at the last level of the tree.
+- The **`rit set context`** command is executable, as it is at the last level of the tree.
+- The **`rit kafka create`** command is not executable as there is an executable **topic** subcommand, at the last level of the tree.
 
 This command tree concept is the **core** of Ritchie's structure.
 
@@ -80,11 +83,11 @@ Depending on the formula, the user might need to inform input parameters.
 
 Those input parameters can be informed in different ways:
 
-* After running the command on the terminal \(via **prompt**\)
-* When typing the command on the terminal \(via **stdin** or **input flags**\)
-* During the execution of the formula \(if coded using **prompt**\)
+- After running the command on the terminal \(via **prompt**\)
+- When typing the command on the terminal \(via **stdin** or **input flags**\)
+- During the execution of the formula \(if coded using **prompt**\)
 
-![](/shared/start-end-ritchie%20%281%29.jpg)
+![](/shared/start-end-ritchie.jpg)
 
 ## **JSON**
 
@@ -94,8 +97,8 @@ It refers to JavaScript Object Notation \(JSON\), that is a standard text based 
 
 A storage place you can organize features, commands or any files and/or files necessary to use a tool. On Ritchie, there are three repositories created to manage formulas, the server and contributions we receive.
 
-* [**ritchie-cli**](https://github.com/ZupIT/ritchie-cli)
-* [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas)
+- [**ritchie-cli**](https://github.com/ZupIT/ritchie-cli)
+- [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas)
 
 ## **Standard Streams**
 

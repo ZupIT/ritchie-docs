@@ -1,16 +1,12 @@
-# docs-ritchie
+# Ritchie CLI Official Documentation
 
 ![ritchie-banner](https://user-images.githubusercontent.com/22433243/117700429-63a98280-b19c-11eb-978a-c7a941065030.png)
 
-## Ritchie CLI Official Documentation
-
-This repository contains all the [Ritchie CLI](https://ritchiecli.io/) official documenation that can currently be found at [https://zupit.github.io/docs-ritchie/](https://zupit.github.io/docs-ritchie/) and will soon migrate to [https://docs.ritchiecli.io](https://docs.ritchiecli.io).
-
-This documentation uses [hugo server](https://gohugo.io/commands/hugo_server/).
+This repository uses [hugo server](https://gohugo.io/commands/hugo_server/) and contains the [Ritchie CLI](https://ritchiecli.io/) official documentation that can be found at [https://docs.ritchiecli.io](https://docs.ritchiecli.io).
 
 ## How to contribute?
 
-- **Always** base your work on the project's `main` branch, naming your new branch according to the following guide :
+- **Always** base your work on the project's `main` branch, naming your new branch according to the following guide:
 
 ![git-branchs](https://user-images.githubusercontent.com/22433243/117700179-0f060780-b19c-11eb-8d03-42cfbd2de798.png)
 

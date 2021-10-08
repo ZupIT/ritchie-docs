@@ -1,7 +1,8 @@
 ---
 title: FAQ
 weight: 104
-description: 'Nesta seção, você encontrará respostas para principais dúvidas sobre Ritchie.'
+description: "Nesta seção, você encontrará respostas para principais dúvidas sobre Ritchie."
+toc_hide: true
 ---
 
 ---
@@ -16,9 +17,9 @@ O Ritchie é um **framework open source** que cria e ajusta o CLI para seu time.
 
 O Ritchie cria automações para melhorar a experiência operacional dos desenvolvedores e traz benefícios como:
 
-* Simplificar tarefas repetitivas e de fácil execução
-* Reduzir o retrabalho
-* Promover mais tempo para que o time de desenvolvimento foque em suas entregas.
+- Simplificar tarefas repetitivas e de fácil execução.
+- Reduzir o retrabalho.
+- Promover mais tempo para que o time de desenvolvimento foque em suas entregas.
 
 ## **Instalação e Uso**
 
@@ -33,6 +34,7 @@ Usando o comando `rit create formula` , você pode criar fórmulas usando qualqu
 ### **Como criar fórmulas em um repositório existente?**
 
 Siga os seguintes passos:
+
 1. Clone o repo;
 2. Adicione o repo com o comando `rit add workspace`;
 3. Adicione e implemente a nova fórmula com o comando `rit create formula`.
@@ -48,6 +50,7 @@ Ao executar uma fórmula, o 'build' é feito automaticamente, não é necessári
 ### **Como atualizar uma fórmula de um repositório?**
 
 Siga os passos abaixo:
+
 1. Clone o repositório localmente;
 2. Adicione o repo com o comando `rit add workspace`
 3. Depois disso, atualize o workspace.
@@ -70,9 +73,3 @@ Você só precisar abrir um pull request no [**repositório ritchie-formula** ](
 
 Você pode contribuir com melhorias, sugestões ou reportes de bugs no [**repositório ritchie-cli.** ](https://github.com/ZupIT/ritchie-cli) O processo que você deve seguir é:
 
-1. Faça uma cópia do repositório relacionado.
-2. Crie a branch: `git checkout -b <branch_name>`
-3. Codifique sua ideia.
-4. Commit: `git commit -m '<commit_message>'`
-5. Publique sua branch: `git push origin <project_name>/<location>`
-6. Faça um pull request para a branch `master` para avaliação do time.

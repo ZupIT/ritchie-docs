@@ -1,0 +1,26 @@
+name: Build check
+
+on:
+  pull_request:
+    branches: [main, release*]
+
+jobs:
+  check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.78.1'
+          extended: true
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build check
+        run: hugo -D --minify

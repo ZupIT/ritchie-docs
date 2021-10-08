@@ -16,7 +16,7 @@ rit delete credential
 
 Veja como o processo funciona:
 
-![](/shared/large-gif-814x408-.gif)
+![](/shared/delete-credentials.gif)
 
 ## Próximos passos
 

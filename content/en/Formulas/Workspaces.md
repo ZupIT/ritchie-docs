@@ -47,6 +47,20 @@ rit list workspace
 
 ![](/shared/rit-list-workspace.gif)
 
+## How to update?
+
+If you're not the only person updating the workspace (e.g: if it's a cloned repository from Git) you may need to update the workspace to allow the CLI to "see" the newly available formulas or updates on your local machine after *pulling* the code.
+
+To update a workspace, run this command:
+
+```text
+rit update workspace
+```
+
+After that, select the workspace name and wait for the CLI output message.
+
+![](/shared/rit-update-workspace.gif)
+
 ## How to delete?
 
 To delete a workspace, run the command below:
