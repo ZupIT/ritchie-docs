@@ -12,7 +12,7 @@ Here, the idea is to create a formula on Ritchie that will return the tool selec
 
 {{% alert color="info" %}}
 
-Sugestão de comando: **`rit get tools`**.
+Command suggestion: **`rit get tools`**.
 
 {{% /alert %}}
 
