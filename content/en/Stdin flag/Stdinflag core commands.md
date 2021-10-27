@@ -2,7 +2,7 @@
 title: Core commands
 weight: 68
 description: >-
-  In this section, you will find more details about commands that can be used though stidn.
+  In this section, you will find more details about commands used through stidn.
 ---
 
 ---
