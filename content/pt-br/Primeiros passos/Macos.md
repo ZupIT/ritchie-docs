@@ -8,14 +8,14 @@ description: 'Nesta seção, você verá como instalar o Ritchie para MacOs.'
 
 ### **Requisitos** (somente para versões anteriores a 2.0.6)
 
-* O comando **make** ([**Veja como usar "make" no macOS**](https://stackoverflow.com/questions/1469994/using-make-on-os-x)).
-* Ferramentas *5sum**.
+* O comando **make** \([**Veja como usar "make" no macOS**](https://stackoverflow.com/questions/1469994/using-make-on-os-x)\)
+* Ferramentas **md5sum**
 
 {{% alert color="warning" %}}
 
-Para instalar **5sum** with _**Homebrew**_ , use: `brew install5sha1sum`.
+Para instalar **md5sum** with _**Homebrew**_ , use: `brew install md5sha1sum`
 
-Para instalar **5sum** with _**MacPorts**_ , use: `sudo port install5sha1sum`.
+Para instalar **md5sum** with _**MacPorts**_ , use: `sudo port install md5sha1sum`
 
 {{% /alert %}}
 
