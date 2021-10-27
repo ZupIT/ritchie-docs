@@ -10,7 +10,7 @@ description: You will find in this section the main questions about Ritchie.
 
 ### **What is Ritchie?**
 
-Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share [**formulas**]({{< ref path="Glossary/#formula" >}}) . Check out more here [**about Ritchie**]({{< ref path="Reference/About ritchie" >}}).
+Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share [**formulas**]({{< ref path="Glossary/#formula" >}}) . For more information, check out  [**about Ritchie page**]({{< ref path="Reference/About ritchie" >}}).
 
 ### **What does Ritchie do?**
 
