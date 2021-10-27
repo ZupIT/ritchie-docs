@@ -18,7 +18,7 @@ First you have to install Ritchie according to your operating system. Check out 
 
 ### **2. Initialization**
 
-Once you finished Ritchie's installation, it is necessary to initialize it. To do so, see more information on the [**Initialize CLI page**]({{< ref path="Getting started/Initialize cli" >}}).
+After you finished Ritchie's installation, you have to initialize it. For more information, check out the [**Initialize CLI page**]({{< ref path="Getting started/Initialize cli" >}}).
 
 ### **3. Running a test formula**
 
