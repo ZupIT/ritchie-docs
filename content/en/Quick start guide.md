@@ -18,12 +18,14 @@ First you have to install Ritchie according to your operating system. Check out 
 
 ### **2. Initialization**
 
-Once you finished Ritchie's installation, it is necessary to initialize it. To do so,  see more information on the [**Initialize CLI page**]({{< ref path="Getting started/Initialize cli" >}}).
+After you finished Ritchie's installation, you have to initialize it. For more information, check out the [**Initialize CLI page**]({{< ref path="Getting started/Initialize cli" >}}).
 
 ### **3. Running a test formula**
 
-Last \(but not least\), run a [**"hello-world"**]({{< ref path="Formulas/Hello world formula" >}}) on Ritchie to confirm if your installation went well. Check out more on [**Formulas section**]({{< ref path="Formulas" >}}).
+Last, run a [**"hello-world"**]({{< ref path="Formulas/Hello world formula" >}}) on Ritchie to confirm if your installation went well. Check out more on [**Formulas section**]({{< ref path="Formulas" >}}).
 
 {{% alert color="success" %}}
+
 Well done, you're ready to use Ritchie on your projects!
+
 {{% /alert %}}

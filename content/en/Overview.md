@@ -16,7 +16,8 @@ Ritchie is an **open source framework** that allows you to create, store and sha
 
 Currently, Ritchie has **two available versions**. On this documentation, we'll focus on **Ritchie** **version 2.0.**
 
-### **What's new?**
+* To know [**How to install the CLI**]({{< ref path="Getting started" >}}).
+* To Know more about [**Release Notes and Ritchie versions**]({{< ref path="Reference/Release notes" >}}).
 
 ## **How does Ritchie work?**
 

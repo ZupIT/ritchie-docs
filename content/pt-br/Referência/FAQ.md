@@ -14,7 +14,7 @@ O Ritchie é um **framework open source** que cria e ajusta o CLI para seu time.
 
 ### **O que o Ritchie faz?**
 
-O Ritchie cria automações para melhorar a experiência operacional dos desenvolvedores e traz benefícios como:
+O Ritchie cria automações para melhorar a experiência operacional dos **desenvolvedores e traz benefícios como**:
 
 - Simplificar tarefas repetitivas e de fácil execução.
 - Reduzir o retrabalho.
@@ -40,7 +40,7 @@ Siga os seguintes passos:
 
 ### **Como executar fórmulas?**
 
-Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais [**como executar fórmulas.** ]({{< ref path="Executar fórmulas" >}})
+Você pode executar suas fórmulas de maneira local ou por meio do Docker. Saiba mais [**como executar fórmulas.** ]({{< ref path="Executar fórmulas" >}}).
 
 ### **Como fazer o "build" de fórmulas no Ritchie?**
 
@@ -72,3 +72,9 @@ Você só precisar abrir um pull request no [**repositório ritchie-formula** ](
 
 Você pode contribuir com melhorias, sugestões ou reportes de bugs no [**repositório ritchie-cli.** ](https://github.com/ZupIT/ritchie-cli) O processo que você deve seguir é:
 
+1. Faça o fork do repositório.
+2. Crie uma branch: `git checkout -b <branch_name>`.
+3. Implemente sua ideia.
+4. Commit sua implementação: `git commit -m '<commit_message>'`.
+5. Faça o push da sua branch: `git push origin <project_name>/<location>`
+6. Abra o pull request na branch `main` para analise da time do Ritchie.

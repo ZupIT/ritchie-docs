@@ -6,43 +6,48 @@ description: 'Nesta seção, você verá como instalar o Ritchie para MacOs.'
 
 ---
 
-Para instalar a **última versão do Ritchie**, você precisa executar o comando abaixo no seu terminal. Porém, é importante ter em mente que **existem alguns requisitos** antes de iniciar a instalação no MacOS.
-
-### **Requisitos**
-
-Se você quiser usar o Ritchie no MacOs na versão **`2.0.5 ou anterior`**, é necessário que você já tenha configurado alguns elementos:
+### **Requisitos** (somente para versões anteriores a 2.0.6)
 
 * O comando **make** \([**Veja como usar "make" no macOS**](https://stackoverflow.com/questions/1469994/using-make-on-os-x)\)
-* Ferramentas *md5sha1sum**
+* Ferramentas **md5sum**
 
 {{% alert color="warning" %}}
-Para instalar **md5sha1sum** with _**Homebrew**_ , use: `brew install md5sha1sum`
 
-Para instalar **md5sha1sum** with _**MacPorts**_ , use: `sudo port install md5sha1sum`
+Para instalar **md5sum** with _**Homebrew**_ , use: `brew install md5sha1sum`
+
+Para instalar **md5sum** with _**MacPorts**_ , use: `sudo port install md5sha1sum`
+
 {{% /alert %}}
 
 ## Passo 1: Rode o comando de instalação
 
 ### Primeira opção
 
-Copie e cole o comando abaixo para executar no terminal: 
+Para instalar a ultima versão, execute no terminal o comando abaixo:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
+
 Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
+
 {{% /alert %}}
 
-Se preferir, você também pode seguir com a [**instalação manual**.]({{< ref path="Primeiros Passos/Instalação Manual" >}})
+{{% alert color="info" %}}
+
+Se preferir, você também pode seguir com a [**instalação manual**]({{< ref path="Primeiros Passos/Instalação manual" >}}).
+
+{{% /alert %}}
+
 ### Segunda opção
 
-Você também pode **fazer o  download do pacote do Ritchie CLI** e **instalá-lo manualmente** através da linha de comando abaixo: 
+Você também pode **fazer o download do pacote do Ritchie CLI** e **instalá-lo manualmente** através da linha de comando abaixo: 
 
 ```text
 curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg

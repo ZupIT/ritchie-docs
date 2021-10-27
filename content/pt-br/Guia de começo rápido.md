@@ -6,7 +6,7 @@ description: 'Nesta seção, você vai encontrar um guia rápido para começar a
 
 ---
 
-Para você já começar usando  Ritchie, é preciso seguir **3 passos**:
+Para você já começar usando Ritchie, é preciso seguir **3 passos**:
 
 1. Instalação
 2. Inicialização
@@ -22,8 +22,10 @@ Assim que finalizar a instalação do rit, é momento de fazer sua inicializaç�
 
 ### **3. Execução de uma fórmula teste**
 
-Por último, rode um "hello-world" no Ritchie para confirmar se a instalação funcionou. Para isso,  basta seguir as orientações da página [**executar uma fórmula hello world**]({{< ref path="Fórmulas/Executar uma fórmula hello world" >}}).
+Por último, rode um "hello-world" no Ritchie para confirmar se a instalação funcionou. Para isso, basta seguir as orientações da página [**executar uma fórmula hello world**]({{< ref path="Fórmulas/Executar uma fórmula hello world" >}}).
 
 {{% alert color="success" %}}
+
 Parabéns, você está pronto para usar o Ritchie nos seus projetos!
+
 {{% /alert %}}

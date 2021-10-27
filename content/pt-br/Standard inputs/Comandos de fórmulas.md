@@ -26,5 +26,7 @@ rit demo formula --name="dennis" --surname="ritchie" --dateOfBirth="09/09/1941"
 ```
 
 {{% alert color="danger" %}}
-O comando de fórmula, através do input flags, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.  
+
+O comando de fórmula, através do input flags, precisa dos parâmetros de entrada que são colocados no config.json para funcionar corretamente.
+
 {{% /alert %}}

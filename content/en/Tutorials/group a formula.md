@@ -7,27 +7,33 @@ description: >-
 
 In this tutorial, the idea is to create a formula to execute another formula inside it. 
 
-See more information on how to run formula inside other on [**groups formulas**]({{< ref path="Formulas/Group formulas" >}}) section.
+> See more information on how to run formula inside other on [**groups formulas**]({{< ref path="Formulas/Group formulas" >}}) section.
 
-Here, we will group at least two formulas: 
-* **`rit math sum numbers`** (level 1)
-* **`rit math multiply numbers`** (TODO)
+Here, we will group at least two formulas:
+
+* **`rit math sum numbers`** (level 1).
+* **`rit math multiply numbers`** (TODO).
 
 {{% alert color="info" %}}
+
 Command suggestion: **`rit math calculate`**
+
 {{% /alert %}}
 
 ## Inputs
 
-This formula must have \(at least\) three input parameters. See below:
+This formula must have (at least) three input parameters. See below:
 
-1. Number one \(`RIT_NUMBER_ONE`\). 
-2. Number two \(`RIT_NUMBER_TWO`\).
-3. Operation \(`RIT_OPERATION`\).
+1. Number one (`RIT_NUMBER_ONE`). 
+2. Number two (`RIT_NUMBER_TWO`).
+3. Operation (`RIT_OPERATION`).
 
 ## How can you do that? 
+
 {{% alert color="info" %}}
+
 This is the same for all programming languages.
+
 {{% /alert %}}
 
 Search for the `config.json` file of your formula and replace it the **`inputs`** field for the block below: 
@@ -59,7 +65,7 @@ Search for the `config.json` file of your formula and replace it the **`inputs`*
 Follow the steps below to create your formula:
 
 ### **Step 1: Extract all inputs parameters**
-Search for the **`main`**  file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
+Search for the **`main`** file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
 
 {{< tabs id="T1" >}}
 {{% tab name="Python" %}}
@@ -113,12 +119,15 @@ runFormula
 
 
 {{% alert color="warning" %}}
-This file follows the  **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
+This file follows the **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
 {{% /alert %}}
 
 ### **Step 2: Implement the formula's operation**
 
 Run the rit formula according to the selected operation: 
+
 * **multiply** must call the `rit math multiply numbers` formula;
 * **sum** must call the `rit math sum numbers` formula.
 
@@ -214,7 +223,9 @@ runFormula() {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Depending on the language, it can be necessary add some dependencies in the related files (`pom.xml` for **Java**, `requirements.txt` for **Python**, `package.json` for **Node**, `go.mod` for **Golang**,  etc).
+
+Depending on the language, it can be necessary add some dependencies in the related files (`pom.xml` for **Java**, `requirements.txt` for **Python**, `package.json` for **Node**, `go.mod` for **Golang**, etc).
+
 {{% /alert %}}
 
 ### **Step 3: Test the formula on your terminal**
@@ -238,7 +249,9 @@ The sum is 3
 ```
 
 {{% alert color="info" %}}
+
 If you want to test your formula more, see some suggestions below:
 * Add more operations.
 * Add the option to inform any quantity of numbers as inputs.
+
 {{% /alert %}}

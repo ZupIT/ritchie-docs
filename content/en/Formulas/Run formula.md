@@ -4,9 +4,11 @@ weight: 24
 description: 'In this section, you will find a path to how run formulas using Ritchie.'
 ---
 
+---
+
 ## How to run formulas?
 
-There are two ways to run formulas on Ritchie :
+There are **two ways** to run formulas on Ritchie:
 
 1. Locally
 2. Using Docker
@@ -23,14 +25,16 @@ rit set formula-runner
 
 To run a formula locally, it is necessary to have installed on your computer the formula programming languages dependencies used to create the formula.
 
-Example: a formula written in **Node** will need **Node installed** on the computer, so it will be able to run locally.
+Example: a formula written in **Java** will need **Java installed** on the computer, so it will be able to run locally.
 
 ### 2. Through Docker
 
 All formulas can run regardless the programming language used from the moment you have **`DOCKER`** installed and running.
 
 {{% alert color="info" %}}
+
 Check out on the following example [**how to run a "Hello World" formula** ]({{< ref path="Formulas/Hello world formula" >}}).
+
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -40,23 +44,25 @@ To avoid the **'Error: exit status 1'**, you have to **disable** the Cloud Exper
 
 See how:
 Access on Docker:
- -  Preferences > Command Line> Enable cloud experience.
+ - Preferences > Command Line> Enable cloud experience.
 
  ![](/shared/ios-docker.PNG)
 
 {{% /alert %}}
 
-###  3. Local & Docker Flags
+### 3. Local & Docker Flags
 
 You can force Ritchie CLI to execute a formula with a specific method using flags.
 
-* The **`--local`** flag will execute a formula with locally \(if the default method is Docker\).
-* The **`--docker`** flag will execute a formula with Docker \(if the default method is local\).
+* The **`--local`** flag will execute a formula with locally (if the default method is Docker).
+* The **`--docker`** flag will execute a formula with Docker (if the default method is local).
 
 ### 4. Containers with Ritchie
 
 {{% alert color="warning" %}}
+
 All formulas templates contain a **Dockerfile** which creates a container with **Ritchie CLI** installed.
+
 {{% /alert %}}
 
 ## Next steps

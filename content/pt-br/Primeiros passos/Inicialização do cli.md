@@ -14,11 +14,11 @@ Você deve executar o comando abaixo para inicializar o Ritchie:
 rit init
 ```
 
-Esse comando vai pedir **três informações:**
+Esse comando vai pedir **três informações**:
 
 1. Se o usuário **quer contribuir anonimamente** as métricas do produto.
 2. Se o usuário **quer adicionar as fórmulas** da comunidade localmente.
-3. Se o usuário **quer usar o** [**método de execução de fórmulas**]({{< ref path="Fórmulas/Executar fórmulas" >}}) **local ou via docker**.
+3. Qual **método de execução** o usuário deseja usar por **padrão** (local ou docker). [**método de execução de fórmulas**]({{< ref path="Fórmulas/Executar fórmulas" >}}) **local ou via docker**.
 
 ![](/shared/rit-init.gif)
 
@@ -40,8 +40,10 @@ Esse comando retorna todos os repositórios de fórmulas que o usuário tem aces
 
 ### 2. Pasta Ritchie
 
-É possível verificar que a pasta **`.rit`** foi criada no diretório **`$HOME`**  da máquina.
+É possível verificar que a pasta **`.rit`** foi criada no diretório **`$HOME`** da máquina.
 
 {{% alert color="info" %}}
-Todas as operações realizadas usando o Ritchie são salvas nessa pasta  **.rit**  \(credenciais, repos, métricas...\)
+
+Todas as operações realizadas usando o Ritchie são salvas nessa pasta **.rit** (credenciais, repos, métricas...).
+
 {{% /alert %}}

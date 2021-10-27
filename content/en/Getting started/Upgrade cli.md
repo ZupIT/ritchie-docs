@@ -7,10 +7,12 @@ description: 'In this section, you will find how upgrade CLI.'
 ---
 
 {{% alert color="info" %}}
+
 When a new Ritchie CLI version is released, a warning will appear when executing one of the following commands:
 
-- **`rit`**_\(helper\)  
-- **`rit -v`** _\(version\)_
+- **`rit`** _(helper)_  
+- **`rit -v`** _(version)_
+
 {{% /alert %}}
 
 To upgrade the Ritchie CLI version when this warning appears, run the following command: 

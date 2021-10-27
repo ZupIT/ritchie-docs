@@ -23,7 +23,9 @@ Once the repository has been added, Ritchie will use the selected release on the
 ![](/shared/rit-share-formula.gif)
 
 {{% alert color="warning" %}}
+
 If the formula repository is **private**, the user will have to inform his Github/Gitlab token.
+
 {{% /alert %}}
 
 ## How to see the repo latest version?
@@ -58,7 +60,7 @@ To do so, just follow these steps:
   xcode       Manage xcode objects
 ```
 
-   2. If you prefer, run the **`rit list repo`** command, that returns informations about the imported repositories, like the latest version and the last available version.
+2. If you prefer, run the **`rit list repo`** command, that returns informations about the imported repositories, like the current version and the last available version.
 
 ### How to see repo formulas
 

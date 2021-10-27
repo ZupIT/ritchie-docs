@@ -10,11 +10,11 @@ description: You will find in this section the main questions about Ritchie.
 
 ### **What is Ritchie?**
 
-Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share formulas. Check out more here [**about Ritchie**]({{< ref path="Reference/About ritchie" >}}).
+Ritchie is an **open source framework** that creates and tweaks a CLI for your team. It allows you to easily create, build and share [**formulas**]({{< ref path="Glossary/#formula" >}}) . For more information, check out  [**about Ritchie page**]({{< ref path="Reference/About ritchie" >}}).
 
 ### **What does Ritchie do?**
 
-Ritchie creates automation commands to improve the operational **developers'** **experience and brings beneficial such as:**
+Ritchie creates automation commands to improve the operational **developers' experience and brings beneficial such as:**
 
 - Simplify repetitive and easy-to-execute tasks
 - Reduce the rework
@@ -33,6 +33,7 @@ Using the command `rit create formula` , you can create formulas using any progr
 ### **How to create formulas on an existing repository?**
 
 Follow the next steps:
+
 1. Clone the repo;
 2. Add the repo with `rit add workspace` command;
 3. Add the new formula with `rit create formula` command and implement it.
@@ -48,6 +49,7 @@ When you run a formula, a build is automatically made, you don't need a command 
 ### **How to update a formula from a repository?**
 
 Follow the next steps:
+
 1. Locally clone the repo;
 2. Add the repo with the `rit add workspace` command;
 3. Now, update the workspace.
@@ -70,9 +72,9 @@ You just have to open a pull request on [**ritchie-formula's repository** ](http
 
 You can contribute with improvements, suggestions or reporting bugs on[ **ritchie-cli's repository.** ](https://github.com/ZupIT/ritchie-cli)That's the process you should follow:
 
-1. Fork the repository
-2. Create a branch: `git checkout -b <branch_name>`
-3. Implement your idea
-4. Commit your implementation: `git commit -m '<commit_message>'`
-5. Push your branch: `git push origin <project_name>/<location>`
-6. Open a pull request on the `master` branch for analysis.
+1. Fork the repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Implement your idea.
+4. Commit your implementation: `git commit -m '<commit_message>'`.
+5. Push your branch: `git push origin <project_name>/<location>`.
+6. Open a pull request on the `main` branch for analysis.

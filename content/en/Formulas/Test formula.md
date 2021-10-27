@@ -12,9 +12,7 @@ In Ritchie CLI context, Unit tests are the way of testing a part of your formula
 
 Some of the formula templates - Java and Golang - currently have a Test class to write and run the formula unit tests.
 
-
 You can also configure your CI/CD and release processes to run those tests after each formula update or addition. 
-
 
 ## **Functional Tests**
 
@@ -29,4 +27,4 @@ Ritchie CLI uses this action to make sure the CLI core commands behave as expect
 
 When you use this action, you can check different implementation scenarios through the formulas outputs, according to the formulas inputs. You can run the tests only when you update a file from the formula directory.
 
-For more information about the actions, see the [**Github Marketplace**](https://github.com/marketplace/actions/test-cli-commands-action) or access the [How to test formulas]({{< ref path="Tutorials/how to test formulas.md" >}}) tutorial.   
+For more information about the actions, see the [**Github Marketplace**](https://github.com/marketplace/actions/test-cli-commands-action) or access the [How to test formulas]({{< ref path="Tutorials/how to test formulas.md" >}}) tutorial.

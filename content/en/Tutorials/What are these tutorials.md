@@ -9,6 +9,7 @@ description: >-
 This section guides you to create formulas in different levels and with that show you lots of activities you can do with Richie.
 
 ### Prerequisites
+
 To perform the tutorials here, you will need to know more about the following concepts:
 
 1. [**How to run formulas**]({{< ref path="Formulas/Run formula" >}}).
@@ -17,7 +18,6 @@ To perform the tutorials here, you will need to know more about the following co
 4. [**How to group formulas**]({{< ref path="Formulas/Group formulas" >}}).
 
 ### Tutorials
-
 
 **Tutorial 1:** Basic level: [**How to manipulate basic inputs?**]({{< ref path="Tutorials/manipulate inputs" >}})
 

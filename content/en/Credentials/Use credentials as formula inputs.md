@@ -6,7 +6,9 @@ description: In this section, you will find how to set credentials as inputs.
 
 ---
 
-Once a provider's credential has been set, it can be used as input in the formula's **`config.json`**file. To do so, it is necessary to use the reserved keyword:**`CREDENTIAL`**
+Once a provider's credential has been set, it can be used as input in the formula's **`config.json`**file. 
+
+To do so, it is necessary to use the reserved keyword:**`CREDENTIAL`**
 
 When used as an input, the credential will contain 2 fields:
 
@@ -14,7 +16,9 @@ When used as an input, the credential will contain 2 fields:
 * The **type** is the specific nomenclature for the CLI to now which credential to use.
 
 {{% alert color="danger" %}}
+
 The **type** needs to respect the following pattern: **`CREDENTIAL_PROVIDER_VARIABLE`**
+
 {{% /alert %}}
 
 For example, to be able to use **`GITHUB`** credentials as input, you need to inform them as follows in the formula's **`config.json`** file:

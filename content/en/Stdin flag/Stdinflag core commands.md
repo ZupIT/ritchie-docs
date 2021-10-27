@@ -2,8 +2,7 @@
 title: Core commands
 weight: 68
 description: >-
-  In this section, you will find more details about commands that can be used
-  though stidn.
+  In this section, you will find more details about commands used through stidn.
 ---
 
 ---
@@ -13,7 +12,9 @@ description: >-
 Here are the JSON used to run Ritchie's core commands through **stdin**.
 
 {{% alert color="warning" %}}
+
 You will have to adapt the variable values of each JSON to perform the desired operations as expected.
+
 {{% /alert %}}
 
 ### General commands
@@ -61,7 +62,9 @@ echo '{"formula":"rit demo create formula", "lang":"shell", "workspacePath":"/us
 rit build formula
 
 {{% alert color="danger" %}}
+
 Not supported yet
+
 {{% /alert %}}
 
 ### Environment commands

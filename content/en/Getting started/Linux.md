@@ -6,30 +6,34 @@ description: 'In this section, you will find how to install Ritchie for Linux.'
 
 ---
 
-### **Requirements**
+### **Requirements** (only for versions prior to 2.0.6)
 
-If you want to efficiently use Ritchie on Linux with version **`2.0.5 and earlier`**, we recommend to install the following element configured:
-
-* The **make** command
-
-Once you have it, just run the command below at your terminal.
+* The **make** command.
 
 ## Step 1: Installing command
 
 ### Latest Version
 
-To install the latest version, copy and paste the command below and run it on your terminal:
+To install the latest version, run the command below in the terminal:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
+
 Note: To install Ritchie on servers or Docker containers (without `sudo` user), use the following command:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
+
+{{% /alert %}}
+
+{{% alert color="info" %}}
+
+If you prefer, you also can follow with the[ **manual installation**.]({{< ref path="Getting started/Manual installation" >}}).
+
 {{% /alert %}}
 
 ### Packages
@@ -42,19 +46,34 @@ To download a specific package or version, just paste the URL on your browser re
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.rpm
 ```
 
+{{% alert color="info" %}}
+
+To download version 2.10.0 use the following URL:
+
+```url
+https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.rpm
+```
+
+{{% /alert %}}
+
 #### Debian
 
 ```url
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
 ```
+{{% alert color="info" %}}
+
+To download version 2.10.0 use the following URL:
+
+```url
+https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.deb
+```
+
+{{% /alert %}}
 
 #### Arch Linux
 
 The `tar.gz` package is available on this [**Arch Linux user repository**](https://aur.archlinux.org/packages/ritchie-cli/) page ([**repository reference**](https://github.com/avelino/ritchie-cli-archpack)).
-
-{{% alert color="info" %}}
-If you prefer, you also can follow with the[ **manual installation**.]({{< ref path="Getting started/Manual installation" >}}).
-{{% /alert %}}
 
 ## Step 2: Verify installation
 

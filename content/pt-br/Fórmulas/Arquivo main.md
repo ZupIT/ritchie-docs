@@ -6,13 +6,13 @@ description: Nesta seção, você vai encontrar mais informações sobre o arqui
 
 ---
 
-## O que é um arquivo main \(main file\)?
+## O que é um arquivo main?
 
 {{% alert color="info" %}}
 
-O arquivo Main é usado para extrair os parâmetros de entrada informados no arquivo config.json, salvos como variáveis locais. 
+O arquivo Main é usado para extrair os **parâmetros de entrada** informados no arquivo config.json, salvos como **variáveis locais**. 
 
-_Os parâmetros de entrada são extraídos pelo nome do campo informado no arquivo config.json em letras maiúsculas._ 
+_Os parâmetros de entrada são extraídos pelo **nome** do campo informado no arquivo config.json em **letras maiúsculas**._ 
 
 {{% /alert %}}
 

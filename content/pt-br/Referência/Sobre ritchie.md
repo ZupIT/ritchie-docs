@@ -10,15 +10,17 @@ description: "Nesta seção, você encontra mais da história do Ritchie."
 
 O produto foi criado com objetivo de melhorar a experiência dos desenvolvedores, trazendo mais autonomia a eles, automatizando e simplificando a execução de comandos muito usados no processo de criação e desenvolvimento de produtos digitais.
 
-Seu nome é uma homenagem a Dennis Ritchie, um dos criadores do Unix \(predecessor do Linux\) e também da linguagem C, que permitiu a criação do mundo digital como o conhecemos hoje.
+Seu nome é uma homenagem a Dennis Ritchie, um dos criadores do Unix (predecessor do Linux) e também da linguagem C, que permitiu a criação do mundo digital como o conhecemos hoje.
 
-Apesar de existirem equipes mais multidisciplinares no mercado, um desafio ainda muito grande está em diminuir a dependência que desenvolvedores têm de insumos vindo dos times de infraestrutura e operações. O DevOps contribuiu muito para sanar esse gargalo, mas não eliminou completamente a dependência entre áreas.
+Apesar de existirem equipes mais multidisciplinares no mercado, um desafio ainda muito grande está em diminuir a dependência que desenvolvedores têm de insumos vindo dos times de infraestrutura e operações. O **DevOps** contribuiu muito para sanar esse gargalo, mas não eliminou completamente a dependência entre áreas.
 
 {{% alert color="warning" %}}
-Pensando nisso, trazemos uma ferramenta para a comunidade que promove um movimento **NoOps**, ou seja, uma solução que automatize operações repetitivas \(também conhecidas como toil\) e agilize processos muitas vezes travados na infraestrutura.
-{{% /alert %}}
+
+Pensando nisso, trazemos uma ferramenta para a comunidade que promove um movimento **NoOps**, ou seja, uma solução que automatize operações repetitivas (também conhecidas como toil) e agilize processos muitas vezes travados na infraestrutura.
 
 Isso dará aos desenvolvedores a possibilidade de executar operações que eram exclusivamente de domínio da infraestrutura.
+
+{{% /alert %}}
 
 Dessa forma, os profissionais - de todas as frentes - ganham tempo para atuar em tarefas mais complexas e relevantes para gerar valor ao seu projeto.
 

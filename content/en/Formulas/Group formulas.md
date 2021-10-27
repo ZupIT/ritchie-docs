@@ -1,7 +1,7 @@
 ---
 title: Group formulas
 weight: 51
-description: 'In this section, you will understand how to  group formulas on Ritchie.'
+description: 'In this section, you will understand how to group formulas on Ritchie.'
 ---
 
 ---
@@ -20,13 +20,15 @@ Check out on the following topics to understand how works this aggregation.
 
 To group formulas, it is necessary to use **Standard Inputs**. On the following page, we have a detailed explanation to how this works:
 
-### 2. Execution <a id="2-execution"></a>
+👉 [**Standard Inputs**]({{< ref path="Standard inputs" >}}).
+
+### 2. Execution
 
 When [**implementing a formula**]({{< ref path="Formulas/Configure inputs" >}}), the file where the operation is coded needs to execute a command line associated to a formula.‌
 
 The grouped formula command line needs to be executed using **Standard Inputs**, which means informing the inputs parameters directly on the code.‌
 
-### 3. Example <a id="3-example"></a>
+### 3. Example
 
 The **`rit publish repo`** formula has been implemented using formula aggregation, that you can find its [**formula implementation**](https://github.com/ZupIT/ritchie-formulas/tree/master/publish/repo).
 
@@ -59,7 +61,7 @@ Here, according to the input informed by the user, two different formulas can be
 * **`rit github publish repo`**
 * **`rit gitlab publish repo`**
 
-To do so, the grouped formulas inputs parameters are informed dynamically according to the inputs parameters of the main formula \(**`rit publish repo`**\).
+To do so, the grouped formulas inputs parameters are informed dynamically according to the inputs parameters of the main formula (**`rit publish repo`**).
 
 Depending on the operation, the **`input flags`** used for the command could be generated according to other operations performed through the formula execution before executing the grouped formula command line.‌
 

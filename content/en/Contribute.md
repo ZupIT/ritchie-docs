@@ -13,7 +13,7 @@ You just have to open a pull request on [**ritchie-formula’s repository** ](ht
 
 ### **How to contribute?**
 
-You can contribute with improvements, suggestions or reporting bugs on  [**ritchie-cli’s repository.** ](https://github.com/ZupIT/ritchie-cli). 
+You can contribute with improvements, suggestions or reporting bugs on [**ritchie-cli’s repository.** ](https://github.com/ZupIT/ritchie-cli). 
 
 See the process you should follow:
 
@@ -22,4 +22,4 @@ See the process you should follow:
 3. Implement your idea
 4. Commit your implementation: `git commit -m '<commit_message>'`
 5. Push your branch: `git push origin <project_name>/<location>`
-6. Open a pull request on the `master` branch for the team's analysis.
+6. Open a pull request on the `main` branch for the team's analysis.

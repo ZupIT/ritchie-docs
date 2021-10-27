@@ -2,34 +2,40 @@
 title: Como agrupar uma fórmula
 weight: 90
 description: >-
-  Nesta seção, você encontrará um tutorial para usar o conceito de
-  encapsulamento de fórmula.
+  Nesta seção, você encontrará um tutorial para usar o conceito de encapsulamento de fórmula.
 ---
 
 
 Neste tutorial, a ideia é criar uma fórmula que irá agrupar uma outra fórmula dentro dela.
 
-Veja mais informações sobre agrupamento de fórmulas na seção de [**encapsular fórmulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}}).
+>Para mais informações sobre agrupamento de fórmulas, veja a seção de [**encapsular fórmulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}}).
 
-* **`rit math sum numbers`** (Nível 1)
-* **`rit math multiply numbers`** (TODO)
+Vamos agrupar pelo menos duas fórmulas:
+
+* **`rit math sum numbers`** (Nível 1).
+* **`rit math multiply numbers`** (TODO).
  
 
 {{% alert color="info" %}}
+
 Sugestão de comando: **`rit math calculate`**
+
 {{% /alert %}}
 
 ## Parâmetros de entrada
 
-Essa fórmula deverá conter \(pelo menos\) três parâmetros de entrada. Veja como abaixo:
+Essa fórmula deverá conter (pelo menos) três parâmetros de entrada. Veja como abaixo:
 
-1. Number one \(`RIT_NUMBER_ONE`\). 
-2. Number two \(`RIT_NUMBER_TWO`\).
-3. Operation \(`RIT_OPERATION`\).
+1. Number one (`RIT_NUMBER_ONE`). 
+2. Number two (`RIT_NUMBER_TWO`).
+3. Operation (`RIT_OPERATION`).
 
 ## Como fazer isso? 
+
 {{% alert color="info" %}}
+
 Essa parte é comum para todas as linguagens de programação.
+
 {{% /alert %}}
 
 Procure pelo arquivo `config.json` da sua fórmula e substitua o campo **`inputs`** pelo bloco abaixo:
@@ -115,12 +121,15 @@ runFormula
 
 
 {{% alert color="warning" %}}
+
 Esse arquivo segue a nomenclatura **`main.*`** para a maioria das linguagens, exceto para o Node que chama **`index.js`**.
+
 {{% /alert %}}
 
 ### **Passo 2: Implemente a operação da fórmula**
 
 Execute a fórmula rit de acordo com a operação selecionada: 
+
 * **multiply** deve chamar a fórmula `rit math multiply numbers`;
 * **sum** deve chamar a fórmula `rit math sum numbers`.
 
@@ -216,7 +225,9 @@ runFormula() {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Dependendo da linguagem, pode ser necessário adicionar algumas dependências nos arquivos relacionados (`pom.xml` para **Java**, `requirements.txt` para **Python**, `package.json` para **Node**, `go.mod` para **Golang**,  etc).
+
+Dependendo da linguagem, pode ser necessário adicionar algumas dependências nos arquivos relacionados (`pom.xml` para **Java**, `requirements.txt` para **Python**, `package.json` para **Node**, `go.mod` para **Golang**, etc).
+
 {{% /alert %}}
 
 ### **Passo 3: Teste a fórmula no terminal**
@@ -240,7 +251,9 @@ The sum is 3
 ```
 
 {{% alert color="info" %}}
+
 Se você quiser testar mais sua fórmula, veja algumas sugestões abaixo: 
 * Adicione mais operações.
 * Adicione a opção de informar qualquer quantidade de números como entradas.
+
 {{% /alert %}}

@@ -15,9 +15,10 @@ Esse tutorial ajuda a você criar e configurar o workflow do Github actions para
 
 
 ## Como fazer isso? 
+
 Siga os próximos passos para testar uma fórmula: 
 
-**Passo 1:** Crie um arquivo no diretório **.github/workflows** com o nome  **`test-formula-sum-numbers.yml`**.
+**Passo 1:** Crie um arquivo no diretório **.github/workflows** com o nome **`test-formula-sum-numbers.yml`**.
 
 **Passo 2:** Cole a implementação do yaml:
 
@@ -51,7 +52,7 @@ jobs:
 
 ```
 
-**Passo 3:** Depois de comitar e dar o push no seu código, acesse a aba  **Actions** do repositório:
+**Passo 3:** Depois de comitar e dar o push no seu código, acesse a aba **Actions** do repositório:
 
 ![](/shared/actions-tab.PNG)
 

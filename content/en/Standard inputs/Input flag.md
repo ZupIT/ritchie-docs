@@ -18,6 +18,6 @@ RIT (GROUP) VERB NOUN --input_name="input_value"
 
 {{% /alert %}}
 
-You can use this stdin flag rules on:
+You can dig deeper into the use of **Input Flags**:
 
 👉 [**Formulas commands**]({{< ref path="Standard inputs/Formulas commands" >}}).

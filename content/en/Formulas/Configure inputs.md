@@ -12,10 +12,10 @@ The **config.json** file contains the formula's input parameters. It allows the 
 
 These input parameters are made up of the following fields:
 
-- a **`docker image builder`** \(according to the programming language chose at the formula creation\)
-- **`"dockerVolumes"`** list of local volumes you want to mount in the docker run container.
-- the formula **`inputs parameters list`**.
-- a **`require latest version`** boolean, indicating the need (or not) of the formula to run in the last available version of a repository.
+- [**dockerImageBuilder**] - A docker image builder (according to the programming language chose at the formula creation).
+- [**dockerVolumes**] - List of local volumes you want to mount in the docker run container.
+- [**inputs**] - The formula inputs parameters list.
+- [**requireLatestVersion**] - A boolean, indicating the need (or not) of the formula to run in the last available version of a repository.
 
 ```text
 {
@@ -49,9 +49,11 @@ Each input parameter is composed of the following fields:
 - `name`: variable name to extract.
 
 {{% alert color="warning" %}}
+
 Once an input value is informed on Ritchie CLI, it is saved as a **local variable** during the formula execution.
 
 The variable **name** will be convert **uppercase** as the **local variable name**.
+
 {{% /alert %}}
 
 > A good practice is to add a **_`RIT_`** suffix to each **`input name`** to avoid having conflicts with local variables.
@@ -59,12 +61,13 @@ The variable **name** will be convert **uppercase** as the **local variable name
 > **Example: `rit_file_name` --&gt; `RIT_FILE_NAME`**
 
 - `type`:
-  - **text** \(string\),
-  - **bool** \(boolean\),
-  - **password** \(hidden string on CLI\),
-  - **credentials** \(specific type, check out more on [**use crendential as formula inputs**]({{< ref path="Credentials/Use credentials as formula inputs" >}})\_\),
-  - **dynamic** _\(associated with the optional `request_info` field below\),_
-  - **path:** enables the autocomplete to inform a path to a folder or a file \(string\).
+  - **text** _(string)_.
+  - **bool** _(boolean)_.
+  - **password** _(hidden string on CLI)_.
+  - **multiselect** list predefined values, it is possible to select multiple values _(string)_.
+  - **credentials** _(specific type, check out more on [**use crendential as formula inputs**]({{< ref path="Credentials/Use credentials as formula inputs" >}}))_.
+  - **dynamic** _(associated with the optional `request_info` field below)_.
+  - **path:** enables the autocomplete to inform a path to a folder or a file _(string)_.
 - `label`: text appearing on the CLI, asking for the input.
 
 #### Input example with mandatory fields:
@@ -97,11 +100,11 @@ The variable **name** will be convert **uppercase** as the **local variable name
 }
 ```
 
-### Some observations regarding the **`multiselect` type**
+### Some observations regarding the **`multiselect`** type
 
-- To select one of the options with the `multiselect` type, you must press the `space` key \(the `enter` key will move to the next input, if any\)
+- To select one of the options with the `multiselect` type, you must press the `space` key (the `enter` key will move to the next input, if any)
 
-- The options selected in the `multiselect` type field will return a string with the options separated by pipe \(`|`\) and without space example: `Monday | Wednesday | Friday`
+- The options selected in the `multiselect` type field will return a string with the options separated by pipe (`|`) and without space example: `Monday | Wednesday | Friday`
 
 - It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`
 
@@ -117,7 +120,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 ### Optional fields
 
-- `default`: default input value \(**if** **null**\).
+- `default`: default input value (if value is **null**).
 
 ```text
 {
@@ -136,7 +139,7 @@ In case of fields without a default value, the flag will keep asking for this in
 
 {{% /alert %}}
 
-- `required`: boolean that indicates if the input value is required or optional.
+- `required`: Boolean that indicates if the input value is required or optional.
 
 ```text
 {
@@ -147,7 +150,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `tutorial`: input helper message _\[? for help\]_
+- `tutorial`: Input helper message _[? for help]_
 
 ```text
 {
@@ -158,7 +161,7 @@ In case of fields without a default value, the flag will keep asking for this in
 }
 ```
 
-- `items`: list of input variable options.
+- `items`: List of input variable options.
 
 ```text
 {
@@ -194,7 +197,7 @@ In case of fields without a default value, the flag will keep asking for this in
 
 - `condition`: It shows an input if the given condition succeeds.
   - `variable`: The variable name used on a previous input for comparison.
-  - `operator`: A logical operator to compare. Supports **`==`**, **`!=`**, **`<`**, **`>`**, **`<=`**, and **`>=`.**
+  - `operator`: A logical operator to compare. Supports **`==`**, **`!=`**, **`<`**, **`>`**, **`<=`** and **`>=`**.
   - `value`: The desired value to compare to.
 
 ```text
@@ -240,7 +243,7 @@ The **`dynamic input`** type will be **depreciated** in the **next releases**.
 
 - `requestInfo`: A configuration to get the dynamic input type.
   - `url`: An URL to consume a GET service that will return a list of objects.
-  - `jsonPath`: A JSON path where the variable extracts a returned list for every object, see `"jsonPath": $['user']['name']` \(Check out [**how the JSON path works**](https://goessner.net/articles/JsonPath/)\).
+  - `jsonPath`: A JSON path where the variable extracts a returned list for every object, see `"jsonPath": $['user']['name']` (Check out [**how the JSON path works**](https://goessner.net/articles/JsonPath/)).
 
 ```text
 {

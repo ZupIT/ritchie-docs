@@ -34,7 +34,6 @@ rit add workspace
 **Passo 2:** Informe alguns parâmetros de entrada antes da sua execução:
 
 - 1: Informe o nome do workspace (não use espaços ou caracteres especiais).
-
 - 2: Informe o caminho (path) do workspace na sua máquina local.
 
 ![](/shared/rit-add-workspace.gif)
