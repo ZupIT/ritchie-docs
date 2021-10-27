@@ -77,7 +77,7 @@ _For example: it's possible to create a **professional** and a **personal** envi
 
 ## **Formula**
 
-On Ritchie's context, the **formulas** are **scripts** that can be executed through a **command line**. The user can to execute it locally or through Docker and with its necessary dependencies.
+In Ritchie's context, the **formulas** are **scripts** executed through a **command line**. The user can execute it locally or through Docker with the necessary dependencies.
 
 ### **Run formulas**
 
