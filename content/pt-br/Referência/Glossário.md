@@ -78,7 +78,7 @@ _Por exemplo: é possível criar ambientes **pessoal** e **profissional** (ou **
 
 ## **Fórmulas**
 
-No contexto do Ritchie, as **fórmulas** são **scripts**que podem ser executados através de **linhas de comando**. O usuário pode executar as formulas **localmente** ou através do **Docker** com todas as dependência necessárias.
+No contexto do Ritchie, as **fórmulas** são **scripts** que podem ser executados por **linha de comando**. O usuário pode executar as fórmulas **localmente** ou por meio do **Docker** com todas as dependências necessárias.
 
 ### **Execução de fórmulas**
 
