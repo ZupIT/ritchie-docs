@@ -68,7 +68,7 @@ Refere-se à interface de linha de comando, que é o programa responsável por p
 
 ## **Credencial**
 
-Refere-se a um parâmetro de entrada reutilizável que você pode utilizar no Ritchie (exemplo: dados de acessos para alguma ferramenta ou api).
+Refere-se a um parâmetro de entrada reutilizável que você pode utilizar no Ritchie (exemplo: dados de acessos para alguma ferramenta ou API).
 
 ## **Environment (Ambiente)**
 
