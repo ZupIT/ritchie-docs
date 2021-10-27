@@ -8,7 +8,7 @@ description: >-
 
 Neste tutorial, a ideia é criar uma fórmula que irá agrupar uma outra fórmula dentro dela.
 
-> Veja mais informações sobre agrupamento de fórmulas na seção de [**encapsular fórmulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}}).
+>Para mais informações sobre agrupamento de fórmulas, veja a seção de [**encapsular fórmulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}}).
 
 Vamos agrupar pelo menos duas fórmulas:
 
