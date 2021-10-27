@@ -18,6 +18,4 @@ RIT (GROUP) VERB NOUN --input_name="input_value"
 
 {{% /alert %}}
 
-Você pode se aprofundar no uso dos **Inputs flags**:
-
-👉 [**Formulas commands**]({{< ref path="Standard inputs/Comandos de fórmulas" >}}).
+Para mais informações sobre **Inputs flags**, veja a seção [**Comandos de fórmulas**]({{< ref path="Standard inputs/Comandos de fórmulas" >}}).
