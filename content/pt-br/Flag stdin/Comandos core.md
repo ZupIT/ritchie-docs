@@ -62,7 +62,9 @@ echo '{"formula":"rit demo create formula", "lang":"shell", "workspacePath":"/us
 rit build formula
 
 {{% alert color="danger" %}}
+
 Sem suporte ainda
+
 {{% /alert %}}
 
 ### Comandos de Ambiente
@@ -102,4 +104,4 @@ Alguns comandos core não precisam da flag stdin para serem executados. Isso aco
 * **`rit completion`**
 * **`rit list repo`**
 * **`rit list credential`**
-* **`rit set env`**
+* **`rit show env`**

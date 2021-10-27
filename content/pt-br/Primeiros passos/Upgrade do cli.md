@@ -7,13 +7,15 @@ description: 'Nesta seção, você verá como fazer o upgrade do CLI.'
 ---
 
 {{% alert color="info" %}}
+
 Quando for lançada uma nova versão do CLI version, um aviso irá aparecer quando você for executar um dos comandos abaixo:
 
-- **`rit`**_\(helper\)  
-- **`rit -v`** _\(version\)_
+- **`rit`** _(helper)_
+- **`rit -v`** _(version)_
+
 {{% /alert %}}
 
-Para atualizar a versão do Ritchie CLI,  quando aparecer a mensagem de atenção, rode o seguinte comando:  
+Para atualizar a versão do Ritchie CLI, quando aparecer a mensagem de atenção, rode o seguinte comando:
 
 ```text
 rit upgrade

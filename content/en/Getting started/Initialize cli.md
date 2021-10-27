@@ -14,11 +14,11 @@ Run the following command to initialize Ritchie:
 rit init
 ```
 
-This command will ask the user three questions:
+This command will ask **three information**:
 
-1. If he **wants to contribute anonymously** to Ritchie metrics.
-2. If he **wants to add the community** formulas locally.
-3. If he **wants the default** [**formula execution method**]({{< ref path="Formulas/Run formula" >}}) **to be local or through docker.**
+1. If the user **wants to contribute anonymously** to Ritchie metrics.
+2. If the user **wants to add the community** formulas locally.
+3. Which **execution method** the user wants to use by **default** (local or docker). [**formula execution method**]({{< ref path="Formulas/Run formula" >}}).
 
 ![](/shared/rit-init.gif)
 
@@ -43,5 +43,7 @@ This command will return all formulas repositories the user has access locally.
 You can then check the **`.rit`** folder has been created on your **`$HOME`** directory.
 
 {{% alert color="info" %}}
-All operations done using Ritchie will be saved in this **.rit** **folder** \(credentials, repos, metrics...\)
+
+All operations done using Ritchie will be saved in this **.rit** folder (credentials, repos, metrics...).
+
 {{% /alert %}}

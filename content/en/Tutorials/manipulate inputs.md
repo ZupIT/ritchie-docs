@@ -2,26 +2,30 @@
 title: How to manipulate inputs
 weight: 84
 description: >-
-  In this section, you will find a tutorial on how to manipulate basic inputs on
-  Ritchie.
+  In this section, you will find a tutorial on how to manipulate basic inputs on Ritchie.
 ---
 
 This tutorials helps you to create a simple formula, in this case, it will sum two positive numbers.
 
 {{% alert color="info" %}}
-Command suggestion: **`rit math sum numbers`**
+
+Command suggestion: **`rit math sum numbers`**.
+
 {{% /alert %}}
 
 ## Inputs
 
-This formula must have \(at least\) two input parameters. See below:
+This formula must have (at least) two input parameters. See below:
 
-1. Number one \(`RIT_NUMBER_ONE`\). 
-2. Number two \(`RIT_NUMBER_TWO`\).
+1. Number one (`RIT_NUMBER_ONE`). 
+2. Number two (`RIT_NUMBER_TWO`).
 
-##  How can you do that? 
+## How can you do that?
+
 {{% alert color="info" %}}
+
 This is the same for all programming languages.
+
 {{% /alert %}}
 
 Search for the `config.json` file of your formula and replace it the **`inputs`** field for the block below: 
@@ -44,7 +48,8 @@ Search for the `config.json` file of your formula and replace it the **`inputs`*
 Follow the steps below to create your formula:
 
 ### **Step 1: Extract all inputs parameters**
-Search for the **`main`**  file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
+
+Search for the **`main`** file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
 
 {{< tabs id="T1" >}}
 {{% tab name="Python" %}}
@@ -115,7 +120,9 @@ run(NUMBER_ONE, NUMBER_TWO)
 _Warning: Here is where the conversion from STRING to INT happens, because there is no native **INT** type in the **`config.json`** file._
 
 {{% alert color="warning" %}}
-This file follows the  **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
+This file follows the **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
 {{% /alert %}}
 
 ### **Step 2: Implement the formula's operation**
@@ -221,10 +228,12 @@ The sum is 3
 ```
 
 {{% alert color="info" %}}
+
 If you want to test your formula more, see some suggestions below:
 * Add a validation of the input parameters to return an error to the user if the parameter is not an integer. 
 * Allow the user to sum negative numbers with positive ones. 
 * Allow the user to digit decimals in addition to integers. 
+
 {{% /alert %}}
 
 ## **Next steps** 

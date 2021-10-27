@@ -2,17 +2,16 @@
 title: Compartilhar fórmulas
 weight: 47
 description: >-
-  Nesta seção, você vai encontrar detalhes de como compartilhar suas fórmulas em um repositório já
-  criado no Ritchie.
+  Nesta seção, você vai encontrar detalhes de como compartilhar suas fórmulas em um repositório já criado no Ritchie.
 ---
 
 ---
 
 ## Como compartilhar?
 
-Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da URL de acesso a elas.
+Depois que o repositório de fórmulas for publicado, outros usuários podem adicionar suas fórmulas localmente a partir da **URL** de acesso a elas.
 
-**Exemplo**: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
+Exemplo: [**`https://github.com/ZupIT/ritchie-formulas`**](https://github.com/ZupIT/ritchie-formulas)
 
 Para adicionar um novo repositório no Ritchie, é necessário rodar o comando abaixo:
 
@@ -30,7 +29,7 @@ Se o repositório de fórmulas for **privado**, será necessário informar o tok
 
 {{% /alert %}}
 
-##  Como checar a última versão do repositório?
+## Como checar a última versão do repositório?
 
 {{% alert color="info" %}}
 
@@ -62,7 +61,7 @@ Para isso, basta você seguir os seguintes passos:
   xcode       Manage xcode objects
 ```
 
-   2. Se preferir, execute o comando **`rit list repo`**, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.
+2. Se preferir, execute o comando **`rit list repo`**, que retorna informações dos repositórios importados, como a versão atual e a última versão disponível.
 
 ### Como encontrar formulas de um repositório?
 

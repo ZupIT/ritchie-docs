@@ -15,29 +15,31 @@ description: In this section, you will find the list of Ritchie's main commands
 | rit init      | initialize Ritchie before use              |
 | rit upgrade   | upgrade to the last Ritchie stable version |
 | rit tutorial  | enable or disable the tutorial             |
-| rit --version | return Ritchie currently installed version |
+| rit -v        | return Ritchie currently installed version |
 
 ### Repo commands
 
-| Command           | Operation                                                                               |
-| :---------------- | :-------------------------------------------------------------------------------------- |
-| rit add repo      | add a new repository \(to access repository formulas with Ritchie\)                     |
-| rit list repo     | show a list with all your available repositories                                        |
-| rit update repo   | update all repositories \(to access new formulas from those repositories with Ritchie\) |
-| set repo-priority | set a repository priority                                                               |
-| rit delete repo   | delete a repository \(to remove access to the repository formulas with Ritchie\)        |
+| Command               | Operation                                                                               |
+| :-------------------- | :-------------------------------------------------------------------------------------- |
+| rit add repo          | add a new repository (to access repository formulas with Ritchie)                       |
+| rit list repo         | show a list with all your available repositories                                        |
+| rit update repo       | update all repositories (to access new formulas from those repositories with Ritchie)   |
+| rit set repo-priority | set a repository priority                                                               |
+| rit delete repo       | delete a repository (to remove access to the repository formulas with Ritchie)          |
 
 ### Formula commands
 
 | Command                     | Operation                                                                               |
 | :-------------------------- | :-------------------------------------------------------------------------------------- |
-| rit create formula          | create a new formula from scratch \(as well as a new local repository if necessary\)    |
+| rit create formula          | create a new formula from scratch (as well as a new local repository if necessary)      |
 | rit build formula           | build a formula locally for test                                                        |
 | rit build formula --watch   | build a formula monitoring the code to update real time changes                         |
-| rit rit list formula        | list all available formulas from specific/all repositories                              |
+| rit list formula            | list all available formulas from specific/all repositories                              |
 
 {{% alert color="danger" %}}
+
 The rit build formula command was deprecated from Ritchie's version 2.5.0.
+
 {{% /alert %}}
 
 ### Autocomplete commands
@@ -66,11 +68,11 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 
 ### Workspace commands
 
-| Commands             | Operation                                                                                         |
-| :------------------- | :-------------------------------------------------------------------------------------------------|
-| rit list workspace   | list all formula's workspaces                                                                     |
-| rit add workspace    | add a new workspace                                                                               |
-| rit delete workspace | delete a specific formula's workspace                                                             |
+| Commands             | Operation                              |
+| :------------------- | :--------------------------------------|
+| rit list workspace   | list all formula's workspaces          |
+| rit add workspace    | add a new workspace                    |
+| rit delete workspace | delete a specific formula's workspace  |
 
 ## Flags
 
@@ -78,8 +80,8 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 
 | Flags     | Operation                                                              |
 | :-------- | :--------------------------------------------------------------------- |
-| --default | attribute the **default** values configured on the formula.            |
-| --docker  | run a formula using **Docker**                                         |
-| --help    | returns a list of executable available commands and flags for the user |
-| --local   | run a formula **locally**                                              |
-| --verbose | run a formula without log details                                      |
+| -\-default | attribute the **default** values configured on the formula.            |
+| -\-docker  | run a formula using **Docker**                                         |
+| -\-help    | returns a list of executable available commands and flags for the user |
+| -\-local   | run a formula **locally**                                              |
+| -\-verbose | run a formula without log details                                      |

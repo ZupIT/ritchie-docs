@@ -12,7 +12,7 @@ This folder contains the files with the formula's behavior.
 
 {{% alert color="warning" %}}
 
-The folder structure defines the command tree, so **it's not indicated to update** folders names or include more files and/or folders, **if not** in the **src/\*** folder.
+The folder structure defines the command tree, so **it's not indicated to update** folders names or include more files and/or folders, **if not** in the **src/*.** folder.
 
 {{% /alert %}}
 
@@ -25,7 +25,7 @@ Each programming language has its own specificities, but the formula's structure
 | `pkg/formula file` | file to implement the formula operation. |
 | `Dockerfile` | file to build docker images. |
 | `README file` | file to explain what the formula does. |
-| `Makefile file` | file to compile the formula's code \(_will be deprecated 03/2021_\). |
+| `Makefile file` | file to compile the formula's code (_will be deprecated 03/2021_). |
 | `build.sh file` | file to compile the formula's code in shell. |
 | `metadata.json file` | file to tag the formula's information. |
 | `set_unmask.sh file` | file used by the Makefile file. |
@@ -41,9 +41,10 @@ You can find all [**languages templates**](https://github.com/ZupIT/ritchie-form
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
-* **config.json:** Update the inputs configurations.
-* **main.go:** Extract the inputs and call the formula's methods \(coded on **formula/\***\).
-* **formula/\*:** Code the formula's behavior.
+* **config.json:** Update the _**inputs**_ configurations.
+* **main.go:** Extract the inputs and call the formula's methods (coded on **formula/\***).
+* **formula/*:** Code the formula's behavior.
+* **help.json:** Change command description message.
 {{% /tab %}}
 
 {{% tab name="Java" %}} 
@@ -51,9 +52,10 @@ To change the formula's behavior for this language, you'll have at least to upda
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
-* **config.json:** Update the inputs configurations.
-* **main.java:** Extract the inputs and call the formula's methods \(coded on **formula/\***\).
-* **formula/\*:** Code the formula's behavior.
+* **config.json:** Update the _**inputs**_ configurations.
+* **main.java:** Extract the inputs and call the formula's methods (coded on **formula/\***).
+* **formula/*:** Code the formula's behavior.
+* **help.json:** Change command description message.
 {{% /tab %}}
 
 {{% tab name="Node" %}}
@@ -61,9 +63,10 @@ To change the formula's behavior for this language, you'll have at least to upda
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
-* **config.json:** Update the inputs configurations.
-* **index.js:** Extract the inputs and call the formula's methods \(coded on **formula/\***\).
-* **formula/\*:** Code the formula's behavior.
+* **config.json:** Update the _**inputs**_ configurations.
+* **index.js:** Extract the inputs and call the formula's methods (coded on **formula/\***).
+* **formula/*:** Code the formula's behavior.
+* **help.json:** Change command description message.
 {{% /tab %}}
 
 {{% tab name="Python" %}}
@@ -71,9 +74,10 @@ To change the formula's behavior for this language, you'll have at least to upda
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
-* **config.json:** Update the inputs configurations.
-* **main.py:** Extract the inputs and call the formula's methods \(coded on **formula/\***\).
-* **formula/\*:** Code the formula's behavior.
+* **config.json:** Update the _**inputs**_ configurations.
+* **main.py:** Extract the inputs and call the formula's methods (coded on **formula/\***).
+* **formula/*:** Code the formula's behavior.
+* **help.json:** Change command description message.
 {{% /tab %}}
 
 {{% tab name="Shell" %}}
@@ -81,12 +85,9 @@ To change the formula's behavior for this language, you'll have at least to upda
 
 To change the formula's behavior for this language, you'll have at least to update the following files:
 
-* **config.json:** Update the inputs configurations.
-* **main.sh:** Extract the inputs and call the formula's methods \(coded on **formula/\***\).
-* **formula/\*:** Code the formula's behavior.
+* **config.json:** Update the _**inputs**_ configurations.
+* **main.sh:** Extract the inputs and call the formula's methods (coded on **formula/\***).
+* **formula/*:** Code the formula's behavior.
+* **help.json:** Change command description message.
 {{% /tab %}}
 {{< /tabs >}}
-
-{{% alert color="warning" %}}
-The structures defines the command, so **it's not indicated to update** folders names or include more files/folders **if not** in the **src/\*** folder.
-{{% /alert %}}

@@ -6,38 +6,75 @@ description: 'In this section, you will find how to install Ritchie manually.'
 
 ---
 
-If you choose to make the manual process of Ritchie's installation, you have to follow the guideline: **get the latest Ritchie's version and inform the URL below on your navigator.**
+## **How to download Ritchie binary?**
 
-* **The link:** [**https://commons-repo.ritchiecli.io/stable.txt**](https://commons-repo.ritchiecli.io/stable.txt)**​**
+- **Step 1:** Choose the version you want to install.
 
-Basically, when you indicate the URL above on your navigator, the system returns the latest version of Ritchie. For example, it can return **1.0.1 or 2.0.1**
+{{% alert color="info" %}}
 
-## **How to install?**
+You can find the latest version available at this link([**Latest**](https://commons-repo.ritchiecli.io/stable.txt)). 
+Or choose some specific version([**All versions**](https://github.com/ZupIT/ritchie-cli/tags)).
 
-1. Download the Ritchie binary version;
-2. Enter the URL below in your browser by informing **the version** **{VERSION}** as obtained in step 1.
+{{% /alert %}}
 
-### **Installation for MacOS** 
+- **Step 2:** Get the appropriate URL for your system and paste it into the browser, replacing `{VERSION}` with the version you chose.
 
-```text
-https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
-```
+### **Binary URL**
 
-### **Installation for Linux** <a id="installation-for-linux"></a>
+{{< tabs id="T1" >}}
+{{% tab name="Linux" %}}
 
 ```text
 https://commons-repo.ritchiecli.io/{VERSION}/linux/rit
 ```
 
-### **Installation for Windows**  <a id="installation-for-windows"></a>
+{{% alert color="info" %}}
+
+Example: If you chose the version **2.11.3** use this URL:
+```URL
+https://commons-repo.ritchiecli.io/2.11.3/linux/rit
+```
+
+{{% /alert %}}
+
+{{% /tab %}}
+{{% tab name="MacOS" %}}
+
+```text
+https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
+```
+
+{{% alert color="info" %}}
+
+Example: If you chose the version **2.11.3** use this URL:
+```URL
+https://commons-repo.ritchiecli.io/2.11.3/darwin/rit
+```
+
+{{% /alert %}}
+
+{{% /tab %}}
+{{% tab name="Windows" %}}
 
 ```text
 https://commons-repo.ritchiecli.io/{VERSION}/windows/rit.exe
 ```
 
-## **Manual settings**  <a id="manual-settings"></a>
+{{% alert color="info" %}}
 
-### **How to create a folder?** <a id="folder-creation"></a>
+Example: If you chose the version **2.11.3** use this URL:
+```URL
+https://commons-repo.ritchiecli.io/2.11.3/windows/rit.exe
+```
+
+{{% /alert %}}
+
+{{% /tab %}}
+{{< /tabs >}}
+
+## **Manual settings**
+
+### **How to create a folder?**
 
 1. First, run the command below to create a folder `$HOME/.rit/bin`
 
@@ -45,20 +82,20 @@ https://commons-repo.ritchiecli.io/{VERSION}/windows/rit.exe
 mkdir -p $HOME/.rit/bin
 ```
 
-    2. Then, copy and paste the binary to the folder above.
+2. Then, copy and paste the binary to the folder above.
 
 ```text
 ​cd $HOME/.rit/bin 
 cp $HOME/Downloads/rit
 ```
 
-   3. Lastly, run a permission to run: 
+3. Lastly, run a permission to run: 
 
 ```text
 chmod +x rit
 ```
 
-### **How to configure the .bashrc or /etc/profile or .zshrc \(Linux / MacOS\)** 
+### **How to configure the .bashrc or /etc/profile or .zshrc (Linux / MacOS)** 
 
 To ZSH, define a new PATH by copying the following code:
 
@@ -78,11 +115,11 @@ rit completion bash > ~/.rit_completion
 source ~/.rit_completion​
 ```
 
-### **Setting environment variables \(Windows\)**
+### **Setting environment variables (Windows)**
 
-For this operating system, you need to call rit on the terminal directly from rit.exe \(**rit.exe login** command for example\)
+For this operating system, you need to call rit on the terminal directly from rit.exe (**rit.exe login** command for example)
 
-It is possible \(and suggested\) to create an environment variable for rit to facilitate the use of the CLI.
+It is possible (and suggested) to create an environment variable for rit to facilitate the use of the CLI.
 
 Here are some articles explaining how to add an environment variable in Windows:
 

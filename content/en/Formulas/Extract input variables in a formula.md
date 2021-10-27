@@ -10,8 +10,8 @@ description: 'In this section, you will find information about a formula main cl
 
 {{% alert color="info" %}}
 
-The main file is used to extract the **inputs** asked in the config.json file, saved as **local variables.**   
-  
+The main file is used to extract the **inputs** asked in the config.json file, saved as **local variables.**
+
 _Inputs are extracted by the field **name** informed on the config.json file **UPPERCASE**._ 
 
 {{% /alert %}}

@@ -19,6 +19,16 @@ You can download Ritchie:
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchiecli.msi
 ```
 
+{{% alert color="info" %}}
+
+To download version 2.10.0 use the following URL:
+
+```url
+https://commons-repo.ritchiecli.io/2.10.0/installer/ritchiecli.msi
+```
+
+{{% /alert %}}
+
 - Or with `Winget`:
 
 ```bash
@@ -28,7 +38,9 @@ winget install Ritchie-CLI
 When you finish, follow the instructions on your terminal after running the `rit` command.
 
 {{% alert color="info" %}}
+
 If you prefer, you also can proceed with the[ **manual installation**.]({{< ref path="Getting started/Manual installation" >}}).
+
 {{% /alert %}}
 
 ## Step 2: Verify installation

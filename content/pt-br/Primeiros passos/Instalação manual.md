@@ -6,58 +6,96 @@ description: 'Nesta seção, você verá como fazer a instalação manual do Rit
 
 ---
 
-Caso você decida seguir com a instalação manual do Ritchie, é necessário obedecer à seguinte premissa: **baixar a versão mais recente do Ritchie informando a URL abaixo no seu navegador.** 
+## **Como baixar o binário do Ritchie?**
 
-O link: [**https://commons-repo.ritchiecli.io/stable.txt**](https://commons-repo.ritchiecli.io/stable.txt)​
+- **Step 1:** Escolha a versão que deseja instalar.
 
-Quando você indica a URL acima no navegador, o sistema retorna a última versão do Ritchie. Por exemplo, poderá retornar algo como **1.0.1 ou 2.0.1**
+{{% alert color="info" %}}
 
-## **Como instalar?**
+Você pode encontrar a ultima versão disponível através do link([**ULtima Versão**](https://commons-repo.ritchiecli.io/stable.txt)). 
+Ou escolher uma versão especifica([**Todas Versões**](https://github.com/ZupIT/ritchie-cli/tags)).
 
-Faça o download da versão binária do Ritchie ao entrar na URL que você já digitou no seu navegador e informe a **versão {VERSION}** que você obteve no passo anterior.
+{{% /alert %}}
 
-### **Instalação para MacOs** <a id="installation-for-mac"></a>
+- **Step 2:** Entre na URL apropriada para seu sistema substituindo `{VERSION}` pela versão escolhida.
 
-```text
-https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
-```
+### **URL do binário**
 
-### **Instalação para Linux** <a id="installation-for-linux"></a>
+{{< tabs id="T1" >}}
+{{% tab name="Linux" %}}
 
 ```text
 https://commons-repo.ritchiecli.io/{VERSION}/linux/rit
 ```
 
-### **Instalação para Windows**  <a id="installation-for-windows"></a>
+{{% alert color="info" %}}
+
+Exemplo: Se você escolheu a versão **2.11.3**, use este URL:
+```URL
+https://commons-repo.ritchiecli.io/2.11.3/linux/rit
+```
+
+{{% /alert %}}
+
+{{% /tab %}}
+{{% tab name="MacOS" %}}
+
+```text
+https://commons-repo.ritchiecli.io/{VERSION}/darwin/rit
+```
+
+{{% alert color="info" %}}
+
+Exemplo: Se você escolheu a versão **2.11.3**, use este URL:
+```URL
+https://commons-repo.ritchiecli.io/2.11.3/darwin/rit
+```
+
+{{% /alert %}}
+
+{{% /tab %}}
+{{% tab name="Windows" %}}
 
 ```text
 https://commons-repo.ritchiecli.io/{VERSION}/windows/rit.exe
 ```
 
+{{% alert color="info" %}}
+
+Exemplo: Se você escolheu a versão **2.11.3**, use este URL:
+```URL
+https://commons-repo.ritchiecli.io/2.11.3/windows/rit.exe
+```
+
+{{% /alert %}}
+
+{{% /tab %}}
+{{< /tabs >}}
+
 ## **Configurações manuais** 
 
 ### **Como criar uma pasta?** 
 
-1. Primeiro, rode o comando abaixo para criar uma pasta  `$HOME/.rit/bin`
+1. Primeiro, rode o comando abaixo para criar uma pasta `$HOME/.rit/bin`.
 
 ```text
 mkdir -p $HOME/.rit/bin
 ```
 
-    2.  Depois, copie e cole o binário na pasta criada acima. 
+2. Depois, copie e cole o binário na pasta criada acima. 
 
 ```text
 ​cd $HOME/.rit/bin 
 cp $HOME/Downloads/rit
 ```
 
-   3. Por último, rode a permissão para executar:
+3. Por último, rode a permissão para executar:
 
 ```text
 chmod +x rit
 ```
 
-### **Como configirar o .bashrc ou /etc/profile ou .zshrc \(Linux / MacOS\)?** 
+### **Como configirar o .bashrc ou /etc/profile ou .zshrc (Linux / MacOS)?** 
 
 Para o ZSH, defina o novo PATH copiando o código abaixo: 
 
@@ -77,7 +115,7 @@ rit completion bash > ~/.rit_completion
 source ~/.rit_completion​
 ```
 
-### Configurações de variáveis de ambiente \(Windows\)? 
+### Configurações de variáveis de ambiente (Windows)? 
 
 No caso do Windows, você precisa chamar o rit no terminal diretamente pelo rit.exe. Por exemplo: comando **rit.exe login.** 
 

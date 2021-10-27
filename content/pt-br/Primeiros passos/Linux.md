@@ -6,30 +6,34 @@ description: 'Nesta seção, você verá como instalar o Ritchie para Linux.'
 
 ---
 
-### **Requisitos**
+### **Requisitos** (somente para versões anteriores a 2.0.6)
 
-Para instalar e usar o Ritchie no Linux na versão **`2.0.5 ou anterior`**,  você deve ter o seguinte elemento configurado:
-
-* O comando **make**
-
-Feito isso, basta executar o comando abaixo no seu terminal.
+* O comando **make**.
 
 ## Passo 1: Rode o comando de instalação
 
 ### Última versão
 
-Copie e cole o comando abaixo para executar no terminal:
+Para instalar a ultima versão, execute no terminal o comando abaixo:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
 {{% alert color="info" %}}
+
 Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
 ```
+
+{{% /alert %}}
+
+{{% alert color="info" %}}
+
+Se preferir, você também pode seguir com a [**instalação manual**]({{< ref path="Primeiros Passos/Instalação manual" >}}).
+
 {{% /alert %}}
 
 ### Pacotes
@@ -41,6 +45,15 @@ Se você quiser baixar uma versão ou um pacote específico, use as URLs abaixo 
 ```url
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.rpm
 ```
+{{% alert color="info" %}}
+
+Para baixar a versão 2.10.0 use o seguinte URL:
+
+```url
+https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.rpm
+```
+
+{{% /alert %}}
 
 #### Debian
 
@@ -48,13 +61,19 @@ https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.rpm
 https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
 ```
 
+{{% alert color="info" %}}
+
+Para baixar a versão 2.10.0 use o seguinte URL:
+
+```url
+https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.deb
+```
+
+{{% /alert %}}
+
 #### Arch Linux
 
 O pacote `tar.gz` está disponível na página: [**Arch Linux user repository**](https://aur.archlinux.org/packages/ritchie-cli/) e veja o ([**repositório de referência**](https://github.com/avelino/ritchie-cli-archpack)).
-
-{{% alert color="info" %}}
-Se preferir, você também pode seguir com a [**instalação manual**]({{< ref path="Primeiros Passos/Instalação manual" >}}).
-{{% /alert %}}
 
 ## Passo 2: Verifique a instalação
 

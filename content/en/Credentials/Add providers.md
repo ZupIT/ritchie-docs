@@ -22,12 +22,14 @@ To do so, just choose "**Add a new**" option when running the **`rit set credent
 
 The informations that will be requested are: 
 
-* **Provider name:** name of the new provider. You name it according to your preference.
-* **Field name:** name of a credential from this provider. 
-* **Field type:** value type of this credential. It can be: **plain text** or **secret**. 
+* **Provider name:** Name of the new provider. You name it according to your preference.
+* **Field name:** Name of a credential from this provider. 
+* **Field type:** Value type of this credential. It can be: **plain text** or **secret**. 
 
 Once you finished this configuration, you set up this credentials following the same instructions you saw above. 
 
 {{% alert color="warning" %}}
+
 This provider, as well as its informations, will be permanently saved on Ritchie. You can also add as much providers as you want. 
+
 {{% /alert %}}

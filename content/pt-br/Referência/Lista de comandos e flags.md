@@ -15,30 +15,32 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
 | rit init      | inicia o Ritchie antes de usar                   |
 | rit upgrade   | atualiza o Ritchie para a última versão estável  |
 | rit tutorial  | habilita ou desabilita o tutorial                |
-| rit --version | retorna qual a versão atual instalada do Ritchie |
+| rit -v        | retorna qual a versão atual instalada do Ritchie |
 
 ### Comandos de Repositórios
 
-| Comandos          | Operação                                                                                         |
-| :---------------- | :----------------------------------------------------------------------------------------------- |
-| rit add repo      | adiciona um novo repositório \(para ter acesso as fórmulas desse repositório com Ritchie\)       |
-| rit list repo     | lista todos os repositórios disponíveis                                                          |
-| rit update repo   | atualiza todos os repositórios \(para acessar novas fórmulas desses repositórios com o Ritchie\) |
-| set repo-priority | configura a prioridade do repositório                                                            |
-| rit delete repo   | apaga um repositório \(remove o acesso ao repositório de fórmulas com o Ritchie\)                |
+| Comandos              | Operação                                                                                         |
+| :-------------------- | :----------------------------------------------------------------------------------------------- |
+| rit add repo          | adiciona um novo repositório (para ter acesso as fórmulas desse repositório com Ritchie)         |
+| rit list repo         | lista todos os repositórios disponíveis                                                          |
+| rit update repo       | atualiza todos os repositórios (para acessar novas fórmulas desses repositórios com o Ritchie)   |
+| rit set repo-priority | configura a prioridade do repositório                                                            |
+| rit delete repo       | apaga um repositório (remove o acesso ao repositório de fórmulas com o Ritchie)                  |
 
 ### Comandos de Fórmulas
 
 
 | Command                     | Operation                                                                               |
 | :-------------------------- | :-------------------------------------------------------------------------------------- |
-| rit create formula          | cria uma nova fórmula do zero  \(como também um novo repositório local, se necessário\) |
+| rit create formula          | cria uma nova fórmula do zero (como também um novo repositório local, se necessário)   |
 | rit build formula           | compila uma fórmula localmente para teste                                               |
 | rit build formula --watch   | compila uma fórmula para teste, monitorando atualizações do código no tempo real        |
-| rit rit list formula        | lista todas as fórmulas disponíveis em um/todos repositórios                            |
+| rit list formula            | lista todas as fórmulas disponíveis em um/todos repositórios                            |
 
 {{% alert color="danger" %}}
+
 O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
+
 {{% /alert %}}
 
 ### Comandos de Autocomplete
@@ -68,11 +70,11 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 
 ### Comandos de Workspaces
 
-| Comandos             | Operações                                                                           |
-| :------------------- | :---------------------------------------------------------------------------------- |
-| rit list workspace   | lista todas as fórmulas do workspace                                                |
-| rit add workspace    | adiciona um novo workspace                                                          |
-| rit delete workspace | apaga um workspace                                                                  |
+| Comandos             | Operações                             |
+| :------------------- | :-------------------------------------|
+| rit list workspace   | lista todas as fórmulas do workspace  |
+| rit add workspace    | adiciona um novo workspace            |
+| rit delete workspace | apaga um workspace                    |
 
 ## Flags
 
@@ -80,8 +82,8 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 
 | Flags     | Operações                                                                             |
 | :-------- | :------------------------------------------------------------------------------------ |
-| --default | atribui os valores **default** configurados na fórmula                                |
-| --docker  | executa a fórmula usando **Docker**                                                   |
-| --help    | retorna a lista dos comandos executáveis que estão disponíveis e flags para o usuário |
-| --local   | executa a fórmula **localmente**                                                      |
-| --verbose | executa a fórmula sem detalhes dos logs                                               |
+| -\-default | atribui os valores **default** configurados na fórmula                                |
+| -\-docker  | executa a fórmula usando **Docker**                                                   |
+| -\-help    | retorna a lista dos comandos executáveis que estão disponíveis e flags para o usuário |
+| -\-local   | executa a fórmula **localmente**                                                      |
+| -\-verbose | executa a fórmula sem detalhes dos logs                                               |

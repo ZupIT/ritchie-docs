@@ -6,16 +6,16 @@ description: Nesta seção, você vai encontrar mais informações sobre o arqui
 
 ---
 
-## O que é um arquivo config \(config.json file\)?
+## O que é um arquivo config (config.json file)?
 
-O arquivo config.json contém os parâmetros de entrada da fórmula. Ele permite que o CLI saiba quais dados devem ser pedidos ao usuário quando ele executa o comando no terminal, a fim de que processe a fórmula corretamente.
+O arquivo **config.json** contém os parâmetros de entrada da fórmula. Ele permite que o CLI saiba quais dados devem ser pedidos ao usuário quando ele executa o comando no terminal, a fim de que processe a fórmula corretamente.
 
 Essas entradas são feitas para os seguintes campos:
 
-- Uma **imagem para buildar o docker** \(de acordo com a linguagem de programação escolhida para criar a fórmula\)
-- Lista de volumes locais que você deseja montar no container de execução em docker.
-- A lista com os parâmetros de entrada de uma fórmula.
-- O **require latest version** é um parâmetro booleano que indica a necessidade (ou não) de uma fórmula ser executada na última versão do repositório.
+- [**dockerImageBuilder**] - Uma imagem para buildar o docker (de acordo com a linguagem de programação escolhida para criar a fórmula).
+- [**dockerVolumes**] - Lista de volumes locais que você deseja montar no container de execução em docker.
+- [**inputs**] - lista com os parâmetros de entrada de uma fórmula.
+- [**requireLatestVersion**] - Um parâmetro booleano que indica a necessidade (ou não) de uma fórmula ser executada na última versão do repositório.
 
 ```text
 {
@@ -26,7 +26,7 @@ Essas entradas são feitas para os seguintes campos:
 }
 ```
 
-## Configuração dos volumes a serem mapeados
+## Configuração dos volumes do Docker a serem mapeados
 
 Para cada volume que será mapeado, você deve informar a origem e o destino, utilizando dois pontos ":" como separador. 
 
@@ -52,21 +52,22 @@ Cada parâmetro de entrada é composto pelos seguintes campos:
 
 Uma vez que o valor de um parâmetro de entrada é informado no Ritchie CLI, ele é salvo como uma **variável local** durante a execução da fórmula.
 
-O nome da variável será convertida em maiúscula como o nome da variável local.
+O **nome** da variável será convertida em **maiúscula** como o **nome da variável local**.
 
 {{% /alert %}}
 
 > Uma boa prática é adicionar o sufixo **_`RIT_`** para cada **`input name`** para evitar conflitos com variáveis locais.
 >
-> Exemplo*: `rit_file_name` --&gt; `RIT_FILE_NAME`*
+> **Exemplo: `rit_file_name` --&gt; `RIT_FILE_NAME`**
 
 - `type`:
-  - **text** \(string\),
-  - **bool** \(boolean\),
-  - **password** \(string escondida no CLI\),
-  - **credentials** \_\_\(tipo específico, veja mais sobre [**nesse tutorial**]({{< ref path="Tutoriais/usar inputs condicionais.md" >}})\)
-  - **dynamic** \(associado ao campo opcional`request_info`\)
-  - **path:** habilita o `autocomplete` para o usuário informar o passo para uma pasta ou um arquivo \(string\).
+  - **text** _(string)_.
+  - **bool** _(boolean)_.
+  - **password** _(string escondida no CLI)_.
+  - **multiselect** lista valores predefinidos, é possível selecionar vários valores _(string)_.
+  - **credentials** _(tipo específico, veja mais sobre [**nesse tutorial**]({{< ref path="Tutoriais/usar inputs condicionais.md" >}}))_.
+  - **dynamic** _(associado ao campo opcional`request_info`)_.
+  - **path:** habilita o `autocomplete` para o usuário informar o passo para uma pasta ou um arquivo _(string)_.
 - `label`: texto que aparecerá no CLI para pedir o input ao usuário.
 
 #### Exemplo de parâmetro de entrada com campos obrigatórios:
@@ -101,11 +102,11 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 
 ### Algumas observações a respeito o tipo **`multiselect`**
 
-- Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` \(a chave`enter` irá mover para o próximo parâmetro de entrada, se houver\).
+- Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` (a chave`enter` irá mover para o próximo parâmetro de entrada, se houver).
 
-- As opções selecionadas no campo do tipo `multiselect` irão retornar uma string com as opções separadas por barra \(`|`\) e sem espaço, por exemplo: `Monday | Wednesday | Friday`.
+- As opções selecionadas no campo do tipo `multiselect` irão retornar uma string com as opções separadas por barra (`|`) e sem espaço, por exemplo: `Monday | Wednesday | Friday`.
 
-- É sugerido que você use o campo `obrigatório` como `true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
+- É sugerido que você use o campo `required` como `true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
 
 #### Exemplo de parâmetro de entrada usando o tipo autocomplete:
 
@@ -119,7 +120,7 @@ O nome da variável será convertida em maiúscula como o nome da variável loca
 
 ### Campos opcionais
 
-- `default`: Valor padrão do parâmetro \(se nulo\).
+- `default`: Valor padrão do parâmetro (se valor é nulo).
 
 ```text
 {
@@ -149,7 +150,7 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 }
 ```
 
-- `tutorial`: Campo de ajuda para o parâmetro de entrada _\[? for help\]_
+- `tutorial`: Campo de ajuda para o parâmetro de entrada _[? for help]_
 
 ```text
 {
@@ -195,9 +196,8 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 ```
 
 - `condition`: Esse parâmetro só aparece se a condicional funcionar.
-
   - `variable`: O nome da variável usada em um parâmetro anterior para comparação.
-  - `operator`: O operador lógico usado para comparar. Suporta `==`, `!=`, `<`, `>`, `<=`, and `>=`
+  - `operator`: O operador lógico usado para comparar. Suporta **`==`**, **`!=`**, **`<`**, **`>`**, **`<=`** e  **`>=`**.
   - `value`: O valor que você deseja usar para comparação.
 
 ```text
@@ -220,7 +220,6 @@ Caso não haja campos com valor default, a flag continuará solicitando os parâ
 ```
 
 - `pattern`: Configura a validação de um parâmetro de entrada.
-
   - `regex`: O modelo regex para validar o parâmetro.
   - `mismatchText`: A mensagem de erro se o parâmetro de entrada seja invalidado pelo regex.
 
@@ -243,9 +242,8 @@ O tipo de **`entrada dinâmico`** será **depreciado** nas **próximas liberaç�
 {{% /alert %}}
 
 - `requestInfo`: Configuração para ter o parâmetro de entrada do tipo dinâmico.
-
   - `url`: Uma URL que consome o serviço GET e é responsável por retornar a lista de objetos.
-  - `jsonPath`: O caminho da variável para extrair da lista retornada uma variável de cada objeto. Exemplo: `"jsonPath": $['user']['name']` \(Veja mais sobre [**como funciona esse path json**](https://goessner.net/articles/JsonPath/)\).
+  - `jsonPath`: O caminho da variável para extrair da lista retornada uma variável de cada objeto. Exemplo: `"jsonPath": $['user']['name']` (Veja mais sobre [**como funciona esse path json**](https://goessner.net/articles/JsonPath/)).
 
 ```text
 {

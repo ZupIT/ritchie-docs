@@ -1,7 +1,7 @@
 ---
 title: Usar credenciais como parâmetros de entrada
 weight: 61
-description: Nesta seção, você vai encontrar  como configurar suas credenciais como parâmetros de entrada.
+description: Nesta seção, você vai encontrar como configurar suas credenciais como parâmetros de entrada.
 ---
 
 ---
@@ -16,7 +16,9 @@ Quando usada como parâmetro de entrada, a credencial terá 2 campos:
 2. **Type:** Nomenclatura específica para o CLI saber qual credencial usar. 
 
 {{% alert color="danger" %}}
+
 O **tipo** precisa respeitar o seguinte padrão: **`CREDENTIAL_PROVIDER_VARIABLE`**
+
 {{% /alert %}}
 
 Por exemplo, para usar as credenciais do **`GITHUB`** como parâmetros, você precisa informá-las no arquivo **`config.json`** da fórmula:

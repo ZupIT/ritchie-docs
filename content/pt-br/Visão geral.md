@@ -14,7 +14,7 @@ O Ritchie é um **framework open source** que permite criar, armazenar e compart
 
 ## **Versionamento**
 
-Atualmente, o Ritchie possui **duas versões disponíveis** para ser usada. Nesta documentação,  o foco será no **Ritchie versão 2.0.**
+Atualmente, o Ritchie possui **duas versões disponíveis** para ser usada. Nesta documentação, o foco será no **Ritchie versão 2.0.**
 
 * Para seguir com a [**Instalação do CLI**]({{< ref path="Primeiros passos" >}}).
 * Para saber mais sobre [**Release Notes e versões do Ritchie**]({{< ref path="Referência/Release notes" >}}).

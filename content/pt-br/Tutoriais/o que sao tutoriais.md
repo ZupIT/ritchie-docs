@@ -24,4 +24,4 @@ Para realizar os tutoriais, você precisa entender os alguns conceitos:
 
 **Tutorial 3:** Nível intermediário: [**Como manipular os inputs condicionais?**]({{< ref path="Tutoriais/usar inputs condicionais" >}})
 
-**Tutorial 4:**  Nível avançado: [**Como aplicar o conceito de agrupamento de fórmulas?**]({{< ref path="Tutoriais/agrupar uma formula" >}})
+**Tutorial 4:** Nível avançado: [**Como aplicar o conceito de agrupamento de fórmulas?**]({{< ref path="Tutoriais/agrupar uma formula" >}})

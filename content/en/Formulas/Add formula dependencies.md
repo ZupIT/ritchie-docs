@@ -19,7 +19,7 @@ On Ritchie, it's possible to configure each formula as an independent and small 
 Therefore, it will be possible to import all the necessary dependencies to perform the operations you want to implement.
 
 {{< tabs id="T2" >}}
-{{% tab name="go.mod \(GOLANG\)" %}}
+{{% tab name="go.mod (GOLANG)" %}}
 ```text
 module formula
 
@@ -31,7 +31,7 @@ require (
 ```
 {{% /tab %}}
 
-{{% tab name="pom.xml \(JAVA\)" %}}
+{{% tab name="pom.xml (JAVA)" %}}
 ```text
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -120,7 +120,7 @@ require (
 ```
 {{% /tab %}}
 
-{{% tab name="package.json \(NODE\)" %}}
+{{% tab name="package.json (NODE)" %}}
 ```text
 {
   "dependencies": {
@@ -135,13 +135,13 @@ require (
 ```
 {{% /tab %}}
 
-{{% tab name="requirements.txt \(PYTHON\)" %}}
+{{% tab name="requirements.txt (PYTHON)" %}}
 ```text
 colored==1.4.2
 ```
 {{% /tab %}}
 
-{{% tab name="composer.json \(PHP\)" %}}
+{{% tab name="composer.json (PHP)" %}}
 ```text
 {
   "require": {

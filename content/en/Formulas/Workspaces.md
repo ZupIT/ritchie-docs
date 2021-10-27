@@ -23,17 +23,18 @@ Check out more about workspace and repositories commands [**in the list of comma
 
 ## How to add?
 
-To add a workspace, you just have to run this command:
+Follow the next steps:
+
+**Step 1:** Run this command:
 
 ```text
 rit add workspace
 ```
 
-After that, follow the next steps:
+**Step 2:** Enter the requested input:
 
-**Step 1:** Inform the workspace name (don't use *spaces* or *special characters*).
-
-**Step 2:** Inform the workspace path on the local machine.
+- 1: Inform the workspace name (don't use *spaces* or *special characters*).
+- 2: Inform the workspace path on the local machine.
 
 ![](/shared/rit-add-workspace.gif)
 

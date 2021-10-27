@@ -5,5 +5,3 @@ description: Nesta seção, você vai encontrar todas as informações sobre as 
 ---
 
 ---
-
-Você encontra tudo sobre como usar fórmulas nas páginas a seguir:

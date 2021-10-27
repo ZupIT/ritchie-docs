@@ -2,8 +2,7 @@
 title: How to use conditional inputs
 weight: 88
 description: >-
-  In this section, you will find a tutorial on how to use condition inputs on
-  Ritchie.
+  In this section, you will find a tutorial on how to use condition inputs on Ritchie.
 ---
 
 Here, the idea is to create a formula on Ritchie that will return the tool selected by the user according to its profile.
@@ -12,24 +11,29 @@ Here, the idea is to create a formula on Ritchie that will return the tool selec
 
 
 {{% alert color="info" %}}
-Sugestão de comando: **`rit get tools`**
+
+Sugestão de comando: **`rit get tools`**.
+
 {{% /alert %}}
 
 ## Inputs
 
-This formula must have \(at least\) three input parameters. See below:
+This formula must have (at least) three input parameters. See below:
 
-1. Name  \(`RIT_NAME`\). 
-2. Profile  \(`RIT_PROFILE`\).
-3. Profile tool  \(`RIT_TOOL`\).
+1. Name (`RIT_NAME`). 
+2. Profile (`RIT_PROFILE`).
+3. Profile tool (`RIT_TOOL`).
 
 The formula inputs must follow the diagram below:
 
 ![](/shared/ritchie-conditional-inputs.png)
 
 ## How can you do that? 
+
 {{% alert color="info" %}}
+
 This is the same for all programming languages.
+
 {{% /alert %}}
 
 Search for the `config.json` file of your formula and replace it the **`inputs`** field for the block below: 
@@ -119,12 +123,13 @@ Search for the `config.json` file of your formula and replace it the **`inputs`*
     }
   ]
 ```
+
 ## **Step by step** 
 
 Follow the steps below to create your formula:
 
 ### **Step 1: Extract all inputs parameters**
-Search for the **`main`**  file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
+Search for the **`main`** file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
 
 {{< tabs id="T1" >}}
 {{% tab name="Python" %}}
@@ -163,7 +168,9 @@ public class Main {
 
 
 {{% alert color="warning" %}}
-This file follows the  **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
+This file follows the **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
 {{% /alert %}}
 
 ### **Step 2: Implement the formula's operation**
@@ -233,7 +240,9 @@ public class Formula {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Depending on the language, it can be necessary add some dependencies in the related files (`pom.xml` for **Java**, `requirements.txt` for **Python**, `package.json` for **Node**, `go.mod` for **Golang**,  etc).
+
+Depending on the language, it can be necessary add some dependencies in the related files (`pom.xml` for **Java**, `requirements.txt` for **Python**, `package.json` for **Node**, `go.mod` for **Golang**, etc).
+
 {{% /alert %}}
 
 ### **Step 3: Test the formula on your terminal**
@@ -258,8 +267,10 @@ Ritchie will install DOCKER for him automatically.
 ```
 
 {{% alert color="info" %}}
+
 If you want to test your formula more, see a suggestion below:
 * Install the selected tool according to the computer OS.
+
 {{% /alert %}}
 
 
