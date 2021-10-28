@@ -2,7 +2,7 @@
 title: Como agrupar uma fórmula
 weight: 90
 description: >-
-  Nesta seção, você encontrará um tutorial para usar o conceito de encapsulamento de fórmula.
+  Nesta seção, você vai encontrar um tutorial para usar o conceito de encapsulamento de fórmula.
 ---
 
 
@@ -22,7 +22,7 @@ Sugestão de comando: **`rit math calculate`**
 
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
 Essa fórmula deverá conter (pelo menos) três parâmetros de entrada. Veja como abaixo:
 

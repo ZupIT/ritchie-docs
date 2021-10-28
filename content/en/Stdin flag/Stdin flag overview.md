@@ -6,7 +6,7 @@ description: In this section, you will find more about stdin flag.
 ---
 
 
-{{% alert color="danger" %}}
+{{% alert color="danger" %}}  
 The STDIN flag will be deprecated in early 2021, as substituted by [**input flags**]({{< ref path="Standard inputs/Input flag" >}}).
 
 {{% /alert %}}

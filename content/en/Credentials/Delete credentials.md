@@ -6,22 +6,20 @@ description: In this section, you will find how to delete credentials.
 
 ---
 
-## How to delete?
+## **How to delete?**
 
-To delete a credential, you just have to run this command:
+To delete a credential, you have to run this command: 
 
 ```text
 rit delete credential
 ```
 
-Check out how the process works:
+Check out below how the process works:
 
 ![](/shared/delete-credentials.gif)
 
-## Next steps
+## **Read more**
 
-On this section, you saw how to delete a credential on Ritchie. If you want to keep reading:
+-  [**How to add providers**]({{< ref path="Credentials/Add providers" >}}) to keep configuring your credentials? 
 
-👉 Go to [**how to add providers**]({{< ref path="Credentials/Add providers" >}}) section to keep configuring your credentials.
-
-👉 Check out the [**list of commands and flags**]({{< ref path="Reference/List of commands and flags" >}}) available on Ritchie.
+- [**List of commands and flags**]({{< ref path="Reference/List of commands and flags" >}}) available on Ritchie.

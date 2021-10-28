@@ -1,12 +1,12 @@
 ---
 title: Test formulas 
 weight: 51
-description: 'In this section, you will understand how to test formulas on Ritchie.'
+description: 'In this section, you will find how to test formulas on Ritchie.'
 ---
 
 ---
 
-## **Unit Tests**
+## **Unit Tests** 
 
 In Ritchie CLI context, Unit tests are the way of testing a part of your formula implementation.
 
@@ -27,4 +27,4 @@ Ritchie CLI uses this action to make sure the CLI core commands behave as expect
 
 When you use this action, you can check different implementation scenarios through the formulas outputs, according to the formulas inputs. You can run the tests only when you update a file from the formula directory.
 
-For more information about the actions, see the [**Github Marketplace**](https://github.com/marketplace/actions/test-cli-commands-action) or access the [How to test formulas]({{< ref path="Tutorials/how to test formulas.md" >}}) tutorial.
+For more information about actions, check out the [**Github Marketplace page**](https://github.com/marketplace/actions/test-cli-commands-action) or the [**How to test formulas**]({{< ref path="Tutorials/how to test formulas.md" >}}) tutorial.

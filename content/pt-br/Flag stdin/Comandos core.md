@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## Comandos Core com STDIN
+## **Comandos Core com STDIN** 
 
 Aqui está o JSON usado para executar os comandos core do Ritchie através do **stdin**.
 
@@ -17,7 +17,7 @@ Será necessário adaptar o valor das variáveis para cada JSON retornar os resu
 
 {{% /alert %}}
 
-### Comandos gerais
+### **Comandos gerais**
 
 rit init
 
@@ -31,7 +31,7 @@ rit tutorial
 echo '{"tutorial":"enabled"}' | rit tutorial --stdin
 ```
 
-### Comandos do Repo
+### **Comandos do Repo**
 
 rit add repo
 
@@ -51,7 +51,7 @@ rit delete repo
 echo '{"name":"repoName"}' | rit delete repo --stdin
 ```
 
-### Comandos de fórmula
+### **Comandos de fórmula**
 
 rit create formula
 
@@ -67,7 +67,7 @@ Sem suporte ainda
 
 {{% /alert %}}
 
-### Comandos de Ambiente
+### **Comandos de Ambiente**
 
 rit set env
 
@@ -81,7 +81,7 @@ rit delete env
 echo '{"env":"envName"}' | rit delete env --stdin
 ```
 
-### Comandos de Credenciais
+### **Comandos de Credenciais**
 
 rit set credential
 
@@ -95,7 +95,7 @@ rit delete credential
 echo '{"provider":"provider"}' | rit delete credential --stdin
 ```
 
-## Comandos Core sem STDIN
+## **Comandos Core sem STDIN**
 
 Alguns comandos core não precisam da flag stdin para serem executados. Isso acontece porque, nesse caso, eles não precisam informar nenhum parâmetro de entrada:
 

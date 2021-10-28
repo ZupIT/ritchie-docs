@@ -6,16 +6,16 @@ description: "In this section, you will find information about a formula config.
 
 ---
 
-## What is the config.json file?
+## **What is the config.json file?**
 
-The **config.json** file contains the formula's input parameters. It allows the CLI to know what datas to ask the user when he runs the command in the terminal in order to process the formula correctly.
+The **config.json** file contains the formula's input parameters. It allows the CLI to know what data to ask the user when he runs the command in the terminal to process the formula correctly.
 
 These input parameters are made up of the following fields:
 
-- [**dockerImageBuilder**] - A docker image builder (according to the programming language chose at the formula creation).
-- [**dockerVolumes**] - List of local volumes you want to mount in the docker run container.
-- [**inputs**] - The formula inputs parameters list.
-- [**requireLatestVersion**] - A boolean, indicating the need (or not) of the formula to run in the last available version of a repository.
+- **dockerImageBuilder**: A docker image builder (according to the programming language chose at the formula creation).
+- **dockerVolumes**: List of local volumes you want to mount in the docker run container.
+- **inputs**: The formula inputs parameters list.
+- **requireLatestVersion**: A boolean, indicating the need (or not) of the formula to run in the last available version of a repository.
 
 ```text
 {
@@ -26,12 +26,12 @@ These input parameters are made up of the following fields:
 }
 ```
 
-## Docker volume mapping configuration
+## **Docker volume mapping configuration**
 
-For each volume that will be mapped, you must inform its origin and destination, using a colon ":" as a separator.
+For each volume that will be mapped, you must inform its origin and destination, using a colon **":"** as a separator.
 
-#### Example:
-the source directory being `/home/user-name/folder` and the destination directory `/mount/folder`
+#### **Example:**
+The source directory being **`/home/user-name/folder`** and the destination directory **`/mount/folder`**
 ```text
 {
     "dockerVolumes": [
@@ -40,11 +40,11 @@ the source directory being `/home/user-name/folder` and the destination director
 }
 ```
 
-## Input parameter configuration
+## **Input parameter configuration**
 
 Each input parameter is composed of the following fields:
 
-### Mandatory fields
+### **Mandatory fields**
 
 - `name`: variable name to extract.
 
@@ -70,7 +70,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
   - **path:** enables the autocomplete to inform a path to a folder or a file _(string)_.
 - `label`: text appearing on the CLI, asking for the input.
 
-#### Input example with mandatory fields:
+#### **Input example with mandatory fields:**
 
 ```text
 {
@@ -80,7 +80,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 }
 ```
 
-#### Input example with the multiselect type:
+#### **Input example with the multiselect type:**
 
 ```text
 {
@@ -100,7 +100,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 }
 ```
 
-### Some observations regarding the **`multiselect`** type
+### **Some observations regarding the **`multiselect`** type**
 
 - To select one of the options with the `multiselect` type, you must press the `space` key (the `enter` key will move to the next input, if any)
 
@@ -108,7 +108,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 - It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`
 
-#### Parameter example using the autocomplete type:
+#### **Parameter example using the autocomplete type:**
 
 ```text
 {
@@ -118,7 +118,7 @@ The variable **name** will be convert **uppercase** as the **local variable name
 }
 ```
 
-### Optional fields
+### **Optional fields**
 
 - `default`: default input value (if value is **null**).
 
@@ -237,7 +237,7 @@ In case of fields without a default value, the flag will keep asking for this in
 
 {{% alert color="warning" %}}
 
-The **`dynamic input`** type will be **depreciated** in the **next releases**.
+The **`dynamic input`** type will be **deprecated** in the **next releases**.
 
 {{% /alert %}}
 

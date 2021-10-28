@@ -1,7 +1,7 @@
 ---
 title: Testar formulas 
 weight: 51
-description: 'Nesta seção, você vai saber mais como testar fórmulas no Ritchie.'
+description: 'Nesta seção, você vai encontrar como testar fórmulas no Ritchie.'
 ---
 
 ---
@@ -27,4 +27,4 @@ Ritchie CLI utiliza essa ação para ter certeza, que os comandos core da CLI se
 
 Quando você usa essa ação, você consegue checar diferentes cenários da implementação por meio de outputs de fórmulas, de acordo com os inputs das fórmulas. Você pode testar somente quando o arquivo do diretório de fórmulas estiver atualizado. 
 
-Para mais informações sobre actions, veja o [**Github Marketplace**](https://github.com/marketplace/actions/test-cli-commands-action) ou acesse o tutorial [Como testar fórmulas]({{< ref path="Tutoriais/como testar formulas.md" >}}).
+Para mais informações sobre actions, veja a página do [**Github Marketplace**](https://github.com/marketplace/actions/test-cli-commands-action) ou o tutorial [**Como testar fórmulas**]({{< ref path="Tutoriais/como testar formulas.md" >}}).

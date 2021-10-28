@@ -8,13 +8,13 @@ description: Nesta seção, você vai encontrar mais detalhes sobre input flags 
 
 {{% alert color="info" %}}
 
-Os **Input flags** foram desenvolvidos para dar mais uma opção para a entrada de valores via comando de linha no Ritchie.
+Os **Input flags** foram desenvolvidos para oferecer mais uma opção para a entrada de valores via comando de linha no Ritchie.
 
-Nesses caso, os valores devem ser informados no seguinte padrão:
+Sendo assim, os valores devem ser informados no seguinte padrão:
 
 ```text
 RIT (GROUP) VERB NOUN --input_name="input_value"
-```
+``` 
 
 {{% /alert %}}
 

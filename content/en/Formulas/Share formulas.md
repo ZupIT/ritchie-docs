@@ -6,7 +6,7 @@ description: 'In this section, you will find how to share formulas on Ritchie.'
 
 ---
 
-## How to share?
+## **How to share?** 
 
 Once a formula repository has been published, other users can add it locally from its **URL** to access its formulas.
 
@@ -28,7 +28,7 @@ If the formula repository is **private**, the user will have to inform his Githu
 
 {{% /alert %}}
 
-## How to see the repo latest version?
+## **How to see the repo latest version?**
 
 {{% alert color="info" %}}
 
@@ -36,11 +36,10 @@ This feature is available from Ritchie 2.2 version.
 
 {{% /alert %}}
 
-On Ritchie, it is possible to check out new formula commands and if there is a new version of some repository you added locally.
+On Ritchie, you can check out new formula commands and if there is a new version of some repository you added locally.
+Follow these steps:
 
-To do so, just follow these steps:
-
-1. Run the help command **`rit --help`**. The system will return a list with the group of available repositories.
+**Step 1.** Run the help command **`rit --help`**. The system will return a list with the group of available repositories.
 
 ```text
 (new version 2.12.1) commons repo commands:
@@ -60,9 +59,9 @@ To do so, just follow these steps:
   xcode       Manage xcode objects
 ```
 
-2. If you prefer, run the **`rit list repo`** command, that returns informations about the imported repositories, like the current version and the last available version.
+**Step 2.** If you prefer, run the **`rit list repo`** command, that returns informations about the imported repositories, like the current version and the last available version.
 
-### How to see repo formulas
+### **How to see the repo formulas?**
 
 {{% alert color="info" %}}
 
@@ -98,17 +97,16 @@ rit aws delete bucket                   Delete AWS objects
 There are 6 formulas
 ```
 
-### How to update?
+### **How can I update?**
 
-To update the version of any repository, you just have to run the command below informing the repository and the version you wish to be updated.
+To update the version of any repository, you have to run the command below informing the repository and the version you wish to be updated:
 
 ```text
 rit update repo
 ```
 
-## Next steps
-
-On this section, you saw how to share a formula on Ritchie. To keep configuring the formula:
+## **Next steps**
+Keep configuring your formula:
 
 👉 Check out how to [**use credentials**]({{< ref path="Credentials/Use credentials as formula inputs" >}}) with your formulas.
 

@@ -1,24 +1,26 @@
 ---
 title: Contribua
 weight: 105
-description: "Nesta seção, você encontrará como contribuir com o Ritchie."
+description: "Nesta seção, você vai encontrar como contribuir com o Ritchie."
 ---
 
 ## **Comunidade**
 
 ### **Como submeter minha fórmula no repositório da comunidade?**
 
-Você só precisar abrir um pull request no [**repositório ritchie-formula** ](https://github.com/ZupIT/ritchie-formulas) com sua sugestão de fórmula.
+Você só precisa abrir um pull request no [**repositório ritchie-formula**](https://github.com/ZupIT/ritchie-formulas) com a sua sugestão de fórmula.
 
 ### **Como contribuir?**
 
-Você pode contribuir com melhorias, sugestões ou reportes de bugs no [**repositório ritchie-cli.** ](https://github.com/ZupIT/ritchie-cli).
+Você pode contribuir com melhorias, sugestões ou reportar bugs no [**repositório ritchie-cli.**](https://github.com/ZupIT/ritchie-cli).
 
-O processo que você deve seguir é:
+Siga os passos abaixo para iniciar sua contribuição: 
 
-1. Faça um fork do repositório relacionado.
-2. Crie a branch: `git checkout -b <branch_name>`
-3. Codifique sua ideia.
-4. Commit: `git commit -m '<commit_message>'`
-5. Publique sua branch: `git push origin <project_name>/<location>`
-6. Faça um pull request para a branch `main` para avaliação do time.
+**Passo 1.** Faça um fork do repositório relacionado;
+**Passo 2.** Crie a branch: `git checkout -b <branch_name>`;
+**Passo 3.** Codifique sua ideia;
+**Passo 4.** Faça o commit: `git commit -m '<commit_message>'`;
+**Passo 5.** Publique a sua branch: `git push origin <project_name>/<location>`;
+**Passo 6.** Faça um pull request para a branch `main` para avaliação do time.
+
+Para mais informações, acesse o [**Guia de Contribuição**](https://github.com/ZupIT/ritchie-cli/blob/main/CONTRIBUTING.md).

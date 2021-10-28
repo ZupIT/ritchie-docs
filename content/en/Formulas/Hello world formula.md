@@ -2,20 +2,20 @@
 title: Hello World formula
 weight: 25
 description: >-
-  You will find in this section how to run a "hello-world" formula..
+  In this section, you will find how to run a "hello-world" formula.
 ---
 
 ---
 
-## Hello World
+## **Hello World**
 
 {{% alert color="warning" %}}
 
-Premisse: After you finished the previous steps - installation and initialization - to access the hello-world formula to test Ritchie, you'll need to add the [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) repository locally.
+Premisse: After you finished installing and initializing Ritchie - now you can  access the hello-world formula to test. You will need to add the [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) repository locally.
 
 {{% /alert %}}
 
-To do so, you can use the **`rit add repo`** command, or run the command line below:
+To add the [**ritchie-formulas-demo**](https://github.com/ZupIT/ritchie-formulas-demo) repository locally, you can use the **`rit add repo`** command, or run the command line below:
 
 ```text
 rit add repo --provider="Github" --name="demo" --repoUrl="https://github.com/ZupIT/ritchie-formulas-demo" --priority=1
@@ -27,9 +27,9 @@ rit add repo --provider="Github" --name="demo" --repoUrl="https://github.com/Zup
 
 {{% /alert %}}
 
-Now that you have added the demo repository and check the details of the formula, you can execute this tutorial commands.
+Now, check the details of the formula, you can execute this tutorial commands.
 
-## Premisse: Check the formula's details
+## **Premisse: Check the formula's details**
 
 To get details about a formula, you can execute the command using with the **`--help`** flag:.
 
@@ -38,7 +38,9 @@ rit demo hello-world --help
 ```
 It will return all the flags available for the command execution.
 
+## **Cases**  
 On Ritchie, you have 6 possibilities to run a formula through these flags:
+
 1. Via Prompt
 2. Via Prompt e Docker
 3. Via Input Flags
@@ -46,9 +48,9 @@ On Ritchie, you have 6 possibilities to run a formula through these flags:
 5. Via Stdin
 6. Via Stdin e Docker
 
-To do so, type the following commands lines:
+You can see them below, choose a case and type the following commands lines.
 
-### **Case 1:** With Prompt
+### **Case 1: With Prompt**
 
 {{% alert color="warning" %}}
 
@@ -65,7 +67,7 @@ Select an option for each input parameter and see how the magic works:
 
 This is the default command line execution, that runs the formula locally using **prompt** to inform the input parameters.
 
-### **Case 2:** With Prompt and Docker
+### **Case 2: With Prompt and Docker**
 
 You can run the same command using the **--docker** flag pto execute it remotely (on a container), but still using **prompt** to inform the inputs parameters:
 
@@ -80,7 +82,7 @@ rit demo hello-world --docker
 
 {{% /alert %}}
 
-### **Case 3:** With Input Flags
+### **Case 3: With Input Flags**
 
 You can also run the command informing the inputs through flags (you can know which flags are available using the **`--help`** flag when executing a command). This way, inputs parameters are informed directly with the command line.
 
@@ -88,7 +90,7 @@ You can also run the command informing the inputs through flags (you can know wh
 rit demo hello-world --rit_input_text="Dennis" --rit_input_boolean=true --rit_input_list="everything" --rit_input_password="Ritchie"
 ```
 
-### **Case 4:** With Input flags and Docker
+### **Case 4: With Input flags and Docker**
 
 When you combine both **`input flags`** and the **`--docker`** flag, it is possible to run a command remotely (on a container) with the input parameters directly informed on the command line:
 
@@ -96,7 +98,7 @@ When you combine both **`input flags`** and the **`--docker`** flag, it is possi
 rit demo hello-world --rit_input_text="Dennis" --rit_input_boolean=true --rit_input_list="everything" --rit_input_password="Ritchie" --docker
 ```
 
-### **Case 5:** With Stdin
+### **Case 5: With Stdin**
 
 You can also run the command with the **`--stdin`** (Standard input) flag. This way, inputs parameters are also informed directly with the command line.
 
@@ -109,9 +111,9 @@ echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"
 
 {{% /alert %}}
 
-### **Case 6:** With Stdin and Docker
+### **Case 6: With Stdin and Docker** 
 
-When you combine both --stdin and --docker flags, it is also possible to run a command remotely (on a container) with the input parameters directly informed on the command line:
+When you combine both **--stdin** and **--docker** flags, it is also possible to run a command remotely (on a container) with the input parameters directly informed on the command line:
 
 ```text
 echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"everything", "rit_input_password":"Ritchie"}' | rit demo hello-world --stdin --docker
@@ -123,8 +125,5 @@ echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"
 
 {{% /alert %}}
 
-In this section, you saw how to run formulas on Ritchie. To keep learning:
-
-- Check which formulas you can run using the following command:
-
-- See how to [**create formula** ]({{< ref path="Formulas/Create formulas" >}}).
+## **Next steps**
+- Check out how to [**create a formula** ]({{< ref path="Formulas/Create formulas" >}}).

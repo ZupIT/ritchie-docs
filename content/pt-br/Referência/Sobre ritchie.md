@@ -1,14 +1,14 @@
 ---
 title: Sobre Ritchie
 weight: 102
-description: "Nesta seção, você encontra mais da história do Ritchie."
+description: "Nesta seção, você vai encontrar mais sobre a história do Ritchie."
 ---
 
 ---
 
-## **De onde o Ritchie veio?**
+## **Como o Ritchie foi criado?**
 
-O produto foi criado com objetivo de melhorar a experiência dos desenvolvedores, trazendo mais autonomia a eles, automatizando e simplificando a execução de comandos muito usados no processo de criação e desenvolvimento de produtos digitais.
+O produto foi criado com objetivo de melhorar a experiência dos desenvolvedores, trazendo mais autonomia para automatizar e simplificar a execução de comandos usados no processo de criação e desenvolvimento de produtos digitais.
 
 Seu nome é uma homenagem a Dennis Ritchie, um dos criadores do Unix (predecessor do Linux) e também da linguagem C, que permitiu a criação do mundo digital como o conhecemos hoje.
 
@@ -36,6 +36,8 @@ Por ser uma ferramenta de CLI, o Ritchie busca melhorar a experiência operacion
 
 Ao invés de sinalizar nas linhas de comando quais parâmetros e/ou argumentos o usuário precisa informar, fazemos o contrário: o Ritchie apresenta as opções disponíveis e vai, linha a linha, perguntando as informações necessárias para o comando funcionar, de forma interativa.
 
-No exemplo abaixo, temos a execução de um comando scaffold com a fórmula coffee. À medida que o usuário sinaliza qual a fórmula quer utilizar, o sistema automaticamente passa, linha a linha, a perguntar quais parâmetros específicos devem ser considerados para executar a ação desejada.
+No exemplo abaixo, você pode ver a execução de um comando scaffold com a fórmula coffee. 
+
+Quando o usuário sinaliza qual a fórmula quer utilizar, o sistema automaticamente passa, linha a linha, a perguntar quais parâmetros específicos devem ser considerados para executar a ação desejada.
 
 ![](/shared/rit-scaffold-generate-coffee-go.gif)

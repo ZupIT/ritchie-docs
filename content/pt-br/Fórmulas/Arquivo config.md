@@ -6,16 +6,16 @@ description: Nesta seção, você vai encontrar mais informações sobre o arqui
 
 ---
 
-## O que é um arquivo config (config.json file)?
+## **O que é um arquivo config (config.json file)?**
 
 O arquivo **config.json** contém os parâmetros de entrada da fórmula. Ele permite que o CLI saiba quais dados devem ser pedidos ao usuário quando ele executa o comando no terminal, a fim de que processe a fórmula corretamente.
 
 Essas entradas são feitas para os seguintes campos:
 
-- [**dockerImageBuilder**] - Uma imagem para buildar o docker (de acordo com a linguagem de programação escolhida para criar a fórmula).
-- [**dockerVolumes**] - Lista de volumes locais que você deseja montar no container de execução em docker.
-- [**inputs**] - lista com os parâmetros de entrada de uma fórmula.
-- [**requireLatestVersion**] - Um parâmetro booleano que indica a necessidade (ou não) de uma fórmula ser executada na última versão do repositório.
+- **dockerImageBuilder**: Uma imagem para buildar o docker (de acordo com a linguagem de programação escolhida para criar a fórmula).
+- **dockerVolumes**: Lista de volumes locais que você deseja montar no container de execução em docker.
+- **inputs**: Lista com os parâmetros de entrada de uma fórmula.
+- **requireLatestVersion**: Um parâmetro booleano que indica a necessidade (ou não) de uma fórmula ser executada na última versão do repositório.
 
 ```text
 {
@@ -26,12 +26,12 @@ Essas entradas são feitas para os seguintes campos:
 }
 ```
 
-## Configuração dos volumes do Docker a serem mapeados
+## **Configuração dos volumes do Docker a serem mapeados**
 
-Para cada volume que será mapeado, você deve informar a origem e o destino, utilizando dois pontos ":" como separador. 
+Para cada volume que será mapeado, você deve informar a origem e o destino, utilizando dois pontos **":"** como separador. 
 
 #### Exemplo:
-o diretório de origem sendo `/home/user-name/folder` e o diretório de destino `/mount/folder`
+O diretório de origem sendo **`/home/user-name/folder`** e o diretório de destino **`/mount/folder`**
 ```text
 {
     "dockerVolumes": [
@@ -40,7 +40,7 @@ o diretório de origem sendo `/home/user-name/folder` e o diretório de destino 
 }
 ```
 
-## Configuração dos parâmetros de entrada
+## **Configuração dos parâmetros de entrada**
 
 Cada parâmetro de entrada é composto pelos seguintes campos:
 
@@ -57,7 +57,6 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
 {{% /alert %}}
 
 > Uma boa prática é adicionar o sufixo **_`RIT_`** para cada **`input name`** para evitar conflitos com variáveis locais.
->
 > **Exemplo: `rit_file_name` --&gt; `RIT_FILE_NAME`**
 
 - `type`:
@@ -70,7 +69,7 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
   - **path:** habilita o `autocomplete` para o usuário informar o passo para uma pasta ou um arquivo _(string)_.
 - `label`: texto que aparecerá no CLI para pedir o input ao usuário.
 
-#### Exemplo de parâmetro de entrada com campos obrigatórios:
+#### **Exemplo de parâmetro de entrada com campos obrigatórios:**
 
 ```text
 {
@@ -80,7 +79,7 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
 }
 ```
 
-#### Exemplo de parâmetro de entrada com o tipo multiselect:
+#### **Exemplo de parâmetro de entrada com o tipo multiselect:**
 
 ```text
 {
@@ -100,7 +99,7 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
 }
 ```
 
-### Algumas observações a respeito o tipo **`multiselect`**
+### **Algumas observações sobre o tipo **`multiselect`****
 
 - Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` (a chave`enter` irá mover para o próximo parâmetro de entrada, se houver).
 
@@ -108,7 +107,7 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
 
 - É sugerido que você use o campo `required` como `true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
 
-#### Exemplo de parâmetro de entrada usando o tipo autocomplete:
+#### **Exemplo de parâmetro de entrada usando o tipo autocomplete:**
 
 ```text
 {
@@ -118,7 +117,7 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
 }
 ```
 
-### Campos opcionais
+### **Campos opcionais**
 
 - `default`: Valor padrão do parâmetro (se valor é nulo).
 

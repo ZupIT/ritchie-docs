@@ -7,7 +7,7 @@ description: >-
 
 Essa seção orienta você na criação de fórmulas em diferente níveis e com isso mostrar as diversas atividades que você pode fazer usando o Ritchie. 
 
-### Pré-requisitos
+### **Pré-requisitos**
 
 Para realizar os tutoriais, você precisa entender os alguns conceitos:
 
@@ -16,7 +16,7 @@ Para realizar os tutoriais, você precisa entender os alguns conceitos:
 3. [**Como "buildar" fórmulas**]({{< ref path="Fórmulas/Buildar fórmulas" >}})
 4. [**Como encapsular formulas**]({{< ref path="Fórmulas/Encapsular fórmulas" >}})
 
-### Tutoriais
+### **Tutoriais**
 
 **Tutorial 1:** Nível básico: [**Como manipular inputs básicos?**]({{< ref path="Tutoriais/manipular inputs" >}})
 

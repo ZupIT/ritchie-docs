@@ -1,7 +1,7 @@
 ---
 title: Instalação do CLI para Linux
 weight: 8
-description: 'Nesta seção, você verá como instalar o Ritchie para Linux.'
+description: 'Nesta seção, você vai encontrar como instalar o Ritchie para Linux.'
 ---
 
 ---
@@ -10,7 +10,7 @@ description: 'Nesta seção, você verá como instalar o Ritchie para Linux.'
 
 * O comando **make**.
 
-## Passo 1: Rode o comando de instalação
+## **Passo 1: Rode o comando de instalação**
 
 ### Última versão
 
@@ -20,9 +20,9 @@ Para instalar a ultima versão, execute no terminal o comando abaixo:
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
 ```
 
-{{% alert color="info" %}}
+{{% alert color="warning" %}}
 
-Observação: Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
+Para instalar o Ritchie em servidores ou contêineres Docker (sem o usuário `sudo`), use o seguinte comando:
 
 ```text
 curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | bash
@@ -32,9 +32,9 @@ curl -fsSL https://commons-repo.ritchiecli.io/install.sh | sed -e 's/sudo//g' | 
 
 {{% alert color="info" %}}
 
-Se preferir, você também pode seguir com a [**instalação manual**]({{< ref path="Primeiros Passos/Instalação manual" >}}).
+Se preferir, você também pode instalar com a [**instalação manual**]({{< ref path="Primeiros Passos/Instalação manual" >}}).
 
-{{% /alert %}}
+{{% /alert %}} 
 
 ### Pacotes
 
@@ -47,7 +47,7 @@ https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.rpm
 ```
 {{% alert color="info" %}}
 
-Para baixar a versão 2.10.0 use o seguinte URL:
+Para baixar a versão 2.12.0 use o seguinte URL:
 
 ```url
 https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.rpm
@@ -63,10 +63,10 @@ https://commons-repo.ritchiecli.io/{VERSION}/installer/ritchie.deb
 
 {{% alert color="info" %}}
 
-Para baixar a versão 2.10.0 use o seguinte URL:
+Para baixar a versão 2.12.0 use o seguinte URL:
 
 ```url
-https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.deb
+https://commons-repo.ritchiecli.io/2.12.0/installer/ritchie.deb
 ```
 
 {{% /alert %}}
@@ -75,9 +75,9 @@ https://commons-repo.ritchiecli.io/2.10.0/installer/ritchie.deb
 
 O pacote `tar.gz` está disponível na página: [**Arch Linux user repository**](https://aur.archlinux.org/packages/ritchie-cli/) e veja o ([**repositório de referência**](https://github.com/avelino/ritchie-cli-archpack)).
 
-## Passo 2: Verifique a instalação
+## **Passo 2: Verifique a instalação**
 
-Você pode confirmar se a instalação funcionou rodando esse comando:
+Confirme se a instalação funcionou rodando esse comando:
 
 ```text
 rit --version

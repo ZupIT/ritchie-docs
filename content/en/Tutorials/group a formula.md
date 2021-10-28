@@ -20,7 +20,7 @@ Command suggestion: **`rit math calculate`**
 
 {{% /alert %}}
 
-## Inputs
+## **Inputs**
 
 This formula must have (at least) three input parameters. See below:
 

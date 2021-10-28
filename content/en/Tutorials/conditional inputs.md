@@ -274,6 +274,6 @@ If you want to test your formula more, see a suggestion below:
 {{% /alert %}}
 
 
-## **Next steps** 
+## **Next step** 
 
 👉 If you've completed the second tutorial, go to the fourth [**How to group formulas**]({{< ref path="Tutorials/group a formula" >}}).
