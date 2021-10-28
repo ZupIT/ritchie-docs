@@ -34,7 +34,7 @@ https://commons-repo.ritchiecli.io/2.12.0/installer/ritchiecli.msi
 ```bash
 winget install Ritchie-CLI
 ```
-Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário ou instalar ou atualizar.
+Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
 
 Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
 
