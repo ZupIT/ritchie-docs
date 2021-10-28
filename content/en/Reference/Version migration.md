@@ -18,8 +18,10 @@ Differences between version 1.0 and 2.0
 * Structural upgrades.
 
 {{% alert color="danger" %}}
+
 Version 2.0 **doesn't support Vault to share credentials**.
 Therefore, if you want to keep using those features, you have to stay on the **1.0 version.**
+
 {{% /alert %}}
 
 ## How to migrate formulas from V1.0 to V2.0 ?

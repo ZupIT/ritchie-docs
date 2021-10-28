@@ -17,6 +17,22 @@ Estas flags estão disponíveis a partir da versão 2.8 do Ritchie.
 
 ### Flags disponíveis
 
+### Comando de inicialização do Ritchie
+
+rit init
+
+```text
+rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
+```
+
+### Comando para criar fórmula
+
+rit create formula
+
+```text
+rit create formula --name="rit group verb noun" --language="go" --workspace="Default"
+```
+
 ### Comandos de credenciais
 
 rit set credential
@@ -47,6 +63,12 @@ rit delete env --env="prod"
 
 ### Comandos de Fórmulas
 
+rit set formula-runner
+
+```text
+rit set formula-runner --runner="local"
+```
+
 rit list formula
 
 ```text
@@ -63,11 +85,24 @@ Se você precisar listar as fórmulas de todos os repositórios adicionados, use
 rit list formula --name="ALL"
 ```
 
+rit rename formula
+
+```text
+rit rename formula --oldName="rit group old" --newName="rit group new" --workspace="workspace_name"
+```
+
+
 {{% alert color="info" %}}
 
 A flag de workspace será obrigatória quando a fórmula for encontrada em mais de um workspace.
 
 {{% /alert %}}
+
+rit delete formula
+
+```text
+rit delete formula --workspace="workspace_name" --formula="rit group verb noun"
+```
 
 ### Comandos de Repo
 
@@ -88,4 +123,38 @@ rit delete repo
 
 ```text
 rit delete repo --name="repo_name"
+```
+
+rit update repo
+
+```text
+rit update repo --name="commons" --version="2.0.0"
+```
+
+### Comando de Tutorial
+
+rit tutorial
+
+```text
+rit tutorial --enabled=true
+```
+
+### Comandos de workspace
+
+rit add workspace
+
+```text
+rit add workspace --name="workspace_name" --path="path/to/workspace"
+```
+
+rit delete workspace
+
+```text
+rit delete workspace --name="workspace_name"
+```
+
+rit update workspace
+
+```text
+rit update workspace --name="workspace_name"
 ```
