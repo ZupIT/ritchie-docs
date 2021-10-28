@@ -34,7 +34,9 @@ description: In this section, you will find the list of Ritchie's main commands
 | rit create formula          | create a new formula from scratch (as well as a new local repository if necessary)      |
 | rit build formula           | build a formula locally for test                                                        |
 | rit build formula --watch   | build a formula monitoring the code to update real time changes                         |
+| rit rename formula          | rename a local formula                                                                  |
 | rit list formula            | list all available formulas from specific/all repositories                              |
+
 
 {{% alert color="danger" %}}
 
@@ -68,11 +70,12 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 
 ### Workspace commands
 
-| Commands             | Operation                              |
-| :------------------- | :--------------------------------------|
-| rit list workspace   | list all formula's workspaces          |
-| rit add workspace    | add a new workspace                    |
-| rit delete workspace | delete a specific formula's workspace  |
+| Commands             | Operation                                                                                       |
+| :------------------- | :---------------------------------------------------------------------------------------------- |
+| rit list workspace   | list all formula's workspaces                                                                   |
+| rit add workspace    | add a new workspace                                                                             |
+| rit delete workspace | delete a specific formula's workspace                                                           |
+| rit update workspace | update a specific formula's workspace (to access new formulas from this workspace with Ritchie) |
 
 ## Flags
 

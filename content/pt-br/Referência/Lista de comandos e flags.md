@@ -32,9 +32,10 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
 
 | Command                     | Operation                                                                               |
 | :-------------------------- | :-------------------------------------------------------------------------------------- |
-| rit create formula          | cria uma nova fórmula do zero (como também um novo repositório local, se necessário)   |
+| rit create formula          | cria uma nova fórmula do zero (como também um novo repositório local, se necessário)    |
 | rit build formula           | compila uma fórmula localmente para teste                                               |
 | rit build formula --watch   | compila uma fórmula para teste, monitorando atualizações do código no tempo real        |
+| rit rename formula          | renomeia uma fórmula local                                                              |
 | rit list formula            | lista todas as fórmulas disponíveis em um/todos repositórios                            |
 
 {{% alert color="danger" %}}
@@ -70,18 +71,19 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 
 ### Comandos de Workspaces
 
-| Comandos             | Operações                             |
-| :------------------- | :-------------------------------------|
-| rit list workspace   | lista todas as fórmulas do workspace  |
-| rit add workspace    | adiciona um novo workspace            |
-| rit delete workspace | apaga um workspace                    |
+| Comandos             | Operações                                                                         |
+| :------------------- | :-------------------------------------------------------------------------------- |
+| rit list workspace   | lista todas as fórmulas do workspace                                              |
+| rit add workspace    | adiciona um novo workspace                                                        |
+| rit delete workspace | apaga um workspace                                                                |
+| rit update workspace | atualiza um workspace (para acessar novas fórmulas desse workspace com o Ritchie) |
 
 ## Flags
 
 ### Principais flags
 
-| Flags     | Operações                                                                             |
-| :-------- | :------------------------------------------------------------------------------------ |
+| Flags     | Operações                                                                              |
+| :-------- | :------------------------------------------------------------------------------------- |
 | -\-default | atribui os valores **default** configurados na fórmula                                |
 | -\-docker  | executa a fórmula usando **Docker**                                                   |
 | -\-help    | retorna a lista dos comandos executáveis que estão disponíveis e flags para o usuário |
