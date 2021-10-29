@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## Core commands with STDIN
+## **Core commands with STDIN**
 
 Here are the JSON used to run Ritchie's core commands through **stdin**.
 
@@ -17,7 +17,7 @@ You will have to adapt the variable values of each JSON to perform the desired o
 
 {{% /alert %}}
 
-### General commands
+### **General commands**
 
 rit init
 
@@ -31,7 +31,7 @@ rit tutorial
 echo '{"tutorial":"enabled"}' | rit tutorial --stdin
 ```
 
-### Repo commands
+### **Repo commands**
 
 rit add repo
 
@@ -51,7 +51,7 @@ rit delete repo
 echo '{"name":"repoName"}' | rit delete repo --stdin
 ```
 
-### Formula commands
+### **Formula commands**
 
 rit create formula
 
@@ -67,7 +67,7 @@ Not supported yet
 
 {{% /alert %}}
 
-### Environment commands
+### **Environment commands**
 
 rit set env
 
@@ -81,7 +81,7 @@ rit delete env
 echo '{"env":"envName"}' | rit delete env --stdin
 ```
 
-### Credential commands
+### **Credential commands**
 
 rit set credential
 
@@ -95,7 +95,7 @@ rit delete credential
 echo '{"provider":"provider"}' | rit delete credential --stdin
 ```
 
-## Core commands without STDIN
+## **Core commands without STDIN**
 
 Some core commands don't need the stdin flag to be executed as they don't have any input parameter to inform:
 

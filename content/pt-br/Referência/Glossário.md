@@ -2,7 +2,7 @@
 title: Glossário
 weight: 103
 description: >-
-  Nesta seção, você encontrará mais detalhes sobre conceitos comuns à área de desenvolvimento.
+  Nesta seção, você vai encontrar mais detalhes sobre os conceitos do Ritchie.
 ---
 
 ---
@@ -31,7 +31,7 @@ O Ritchie segue o padrão do **Cobra** (uma biblioteca da linguagem Golang) para
 
 **`RIT + VERBO + SUBSTANTIVO`**
 
-E, para permitir mais opções e liberdade aos usuários, também é possível seguir o padrão abaixo na construção de comandos das fórmulas:
+Para permitir mais opções e liberdade aos usuários, também é possível seguir o padrão abaixo na construção de comandos das fórmulas:
 
 **`RIT + GRUPO + VERBO + SUBSTANTIVO`**
 
@@ -64,11 +64,11 @@ Essa árvore é gerada **dinamicamente** pelo CLI baseado nos repositório de f�
 
 ## **CLI**
 
-Refere-se à interface de linha de comando, que é o programa responsável por processar comandos de um software ou qualquer programa computacional por meio de texto.
+É a interface de linha de comando, o programa responsável por processar comandos de um software ou qualquer programa computacional por meio de texto.
 
 ## **Credencial**
 
-Refere-se a um parâmetro de entrada reutilizável que você pode utilizar no Ritchie (exemplo: dados de acessos para alguma ferramenta ou API).
+É um parâmetro de entrada reutilizável que você pode utilizar no Ritchie (exemplo: dados de acessos para alguma ferramenta ou API).
 
 ## **Environment (Ambiente)**
 
@@ -94,7 +94,7 @@ Esses parâmetros de entrada podem ser informados de diversas maneiras:
 
 ## **JSON**
 
-Refere-se ao JavaScript Object Notation (JSON), que é um formato padrão de texto text usado para estruturar dados criados com linguagem de programação JavaScript.
+JavaScript Object Notation (JSON), é um formato padrão de texto usado para estruturar dados criados com linguagem de programação JavaScript.
 
 ## **Repositório**
 
@@ -105,6 +105,6 @@ Um local de armazenamento em que você pode organizar features, comandos ou quai
 
 ## **Standard Streams**
 
-Refere-se ao canal de comunicação que permite a interconexão de input e output entre um programa computacional e o seu ambiente.
+O canal de comunicação que permite a interconexão de input e output entre um programa computacional e o seu ambiente.
 
-No Ritchie, usamos o standard input (stdin) para executar comandos automaticamente.
+No Ritchie, o standard input (stdin) é usado para executar comandos automaticamente.

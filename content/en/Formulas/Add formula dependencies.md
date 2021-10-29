@@ -1,12 +1,12 @@
 ---
 title: Add formula dependencies
 weight: 39
-description: 'In this section, you will find how to add formula dependencies'
+description: 'In this section, you will find how to add formulas dependencies'
 ---
 
 ---
 
-## What are dependencies?
+## **How to add formula dependencies?** 
 
 {{% alert color="info" %}}
 
@@ -16,7 +16,7 @@ Each programming language has its own specificities **to import libraries or pac
 
 On Ritchie, it's possible to configure each formula as an independent and small project.
 
-Therefore, it will be possible to import all the necessary dependencies to perform the operations you want to implement.
+Therefore, it will be possible to import all the necessary dependencies to perform the operations you want to implement. See more below: 
 
 {{< tabs id="T2" >}}
 {{% tab name="go.mod (GOLANG)" %}}

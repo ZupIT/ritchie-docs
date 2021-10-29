@@ -6,9 +6,9 @@ description: Nesta seção, você vai encontrar como definir credenciais no Ritc
 
 ---
 
-Você pode definir as credenciais do Ritchie para não precisar ficar informando os mesmos dados diversas vezes no terminal. 
+Você pode definir as credenciais do Ritchie para não precisar informar os mesmos dados diversas vezes no terminal. 
 
-Para fazer isso, basta rodar o comando abaixo:
+Para fazer isso, rode o comando abaixo:
 
 ```text
 rit set credential
@@ -27,7 +27,7 @@ O terminal irá retornar essa mensagem:
   Add a new
 ```
 
-Depois que escolher um dos provedores disponíveis, o Ritchie irá solicitar que você preencha os seguintes campos:
+Depois que você escolheu um dos provedores disponíveis, o Ritchie irá solicitar que você preencha os seguintes campos:
 
 ```text
 ? Select your provider github
@@ -39,6 +39,6 @@ Depois que escolher um dos provedores disponíveis, o Ritchie irá solicitar que
 
 {{% alert color="info" %}}
 
-Você pode conferir os [**arquivos editáveis das fórmulas**]({{< ref path="Fórmulas/Arquivo config" >}}) para ver como **manipular as credenciais definidas na sessão como parâmetros de input** das fórmulas (no caso, inputs no config.json).
+Para saber mais sobre os arquivos editáveis das fórmulas e como **manipular as credenciais definidas na sessão como parâmetros de input** das fórmulas (no caso, inputs no config.json), veja a seção de [**Fórmulas**]({{< ref path="Fórmulas/Arquivo config" >}}).
 
 {{% /alert %}}

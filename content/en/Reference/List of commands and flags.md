@@ -1,12 +1,12 @@
 ---
 title: List of commands and flags
 weight: 93
-description: In this section, you will find the list of Ritchie's main commands
+description: In this section, you will find the list of Ritchie's main commands 
 ---
 
 ---
 
-## Commands
+## **Commands**
 
 ### **Configuration commands**
 
@@ -17,7 +17,7 @@ description: In this section, you will find the list of Ritchie's main commands
 | rit tutorial  | enable or disable the tutorial             |
 | rit -v        | return Ritchie currently installed version |
 
-### Repo commands
+### **Repo commands**
 
 | Command               | Operation                                                                               |
 | :-------------------- | :-------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ description: In this section, you will find the list of Ritchie's main commands
 | rit set repo-priority | set a repository priority                                                               |
 | rit delete repo       | delete a repository (to remove access to the repository formulas with Ritchie)          |
 
-### Formula commands
+### **Formula commands**
 
 | Command                     | Operation                                                                               |
 | :-------------------------- | :-------------------------------------------------------------------------------------- |
@@ -44,7 +44,7 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 
 {{% /alert %}}
 
-### Autocomplete commands
+### **Autocomplete commands**
 
 | Commands                  | Operation                       |
 | :------------------------ | :------------------------------ |
@@ -53,7 +53,7 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 | rit completion fish       | add autocomplete via fish       |
 | rit completion powershell | add autocomplete via powershell |
 
-### Env commands
+### **Env commands**
 
 | Commands       | Operation                         |
 | :------------- | :-------------------------------- |
@@ -61,14 +61,14 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 | rit show env   | show the current environment used |
 | rit delete env | delete a environment              |
 
-### Credential commands
+### **Credential commands**
 
 | Commands            | Operation                            |
 | :------------------ | :----------------------------------- |
 | rit set credential  | set new credentials for the context  |
 | rit list credential | list all credential names and fields |
 
-### Workspace commands
+### **Workspace commands**
 
 | Commands             | Operation                                                                                       |
 | :------------------- | :---------------------------------------------------------------------------------------------- |
@@ -77,9 +77,9 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 | rit delete workspace | delete a specific formula's workspace                                                           |
 | rit update workspace | update a specific formula's workspace (to access new formulas from this workspace with Ritchie) |
 
-## Flags
+## **Flags**
 
-### Main flags
+### **Main flags**
 
 | Flags     | Operation                                                              |
 | :-------- | :--------------------------------------------------------------------- |

@@ -8,13 +8,13 @@ description: >-
 
 This tutorial will help you to create and configure a Github Action workflow to test your formula outputs.
 
-## Requirements
+## **Requirements**
 
 - You need to have the **`rit math sum numbers`** formula on a Github repository. 
 - You need a **.github/workflows** directory created on the Github repository.
 
 
-## How can you do that? 
+## **How can you do that?** 
 
 Follow the next steps to test a formula: 
 

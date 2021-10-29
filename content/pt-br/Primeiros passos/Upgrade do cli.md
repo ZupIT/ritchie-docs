@@ -1,7 +1,7 @@
 ---
 title: Upgrade do CLI
 weight: 19
-description: 'Nesta seção, você verá como fazer o upgrade do CLI.'
+description: 'Nesta seção, você vai encontrar como fazer o upgrade do CLI.'
 ---
 
 ---
@@ -15,13 +15,13 @@ Quando for lançada uma nova versão do CLI version, um aviso irá aparecer quan
 
 {{% /alert %}}
 
-Para atualizar a versão do Ritchie CLI, quando aparecer a mensagem de atenção, rode o seguinte comando:
+Para atualizar a versão do Ritchie CLI quando a mensagem aparecer, rode o seguinte comando:
 
 ```text
 rit upgrade
 ```
 
-#### Exemplo de comando output para versão 2.6.0
+#### **Exemplo de comando output para versão 2.6.0**
 
 ```text
 ➜ rit upgrade

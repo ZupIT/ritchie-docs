@@ -1,9 +1,9 @@
 ---
 title: Upgrade CLI
 weight: 19
-description: 'In this section, you will find how upgrade CLI.'
+description: 'In this section, you will find how to upgrade CLI.'
 ---
-
+ 
 ---
 
 {{% alert color="info" %}}
@@ -15,13 +15,13 @@ When a new Ritchie CLI version is released, a warning will appear when executing
 
 {{% /alert %}}
 
-To upgrade the Ritchie CLI version when this warning appears, run the following command: 
+If you want to upgrade the Ritchie CLI version when this warning appears, run the following command: 
 
 ```text
 rit upgrade
 ```
 
-#### Example of the command output for the 2.6.0 version
+#### **Example of the command output for the 2.6.0 version**
 
 ```text
 ➜ rit upgrade

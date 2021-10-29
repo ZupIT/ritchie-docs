@@ -1,7 +1,7 @@
 ---
 title: Instalação Manual
 weight: 14
-description: 'Nesta seção, você verá como fazer a instalação manual do Ritchie.'
+description: 'Nesta seção, você vai encontrar como fazer a instalação manual do Ritchie.'
 ---
 
 ---
@@ -12,8 +12,8 @@ description: 'Nesta seção, você verá como fazer a instalação manual do Rit
 
 {{% alert color="info" %}}
 
-Você pode encontrar a ultima versão disponível através do link([**ULtima Versão**](https://commons-repo.ritchiecli.io/stable.txt)). 
-Ou escolher uma versão especifica([**Todas Versões**](https://github.com/ZupIT/ritchie-cli/tags)).
+1. Você pode encontrar a última versão disponível na [**página de Última Versão**](https://commons-repo.ritchiecli.io/stable.txt). 
+2. Você pode escolher uma versão específica na [**página de Todas Versões**](https://github.com/ZupIT/ritchie-cli/tags).
 
 {{% /alert %}}
 
@@ -76,7 +76,7 @@ https://commons-repo.ritchiecli.io/2.11.3/windows/rit.exe
 
 ### **Como criar uma pasta?** 
 
-1. Primeiro, rode o comando abaixo para criar uma pasta `$HOME/.rit/bin`.
+1. Rode o comando abaixo para criar uma pasta **`$HOME/.rit/bin`**.
 
 ```text
 mkdir -p $HOME/.rit/bin
@@ -95,7 +95,7 @@ cp $HOME/Downloads/rit
 chmod +x rit
 ```
 
-### **Como configirar o .bashrc ou /etc/profile ou .zshrc (Linux / MacOS)?** 
+### **Como configurar o .bashrc ou /etc/profile ou .zshrc (Linux / MacOS)?** 
 
 Para o ZSH, defina o novo PATH copiando o código abaixo: 
 
@@ -115,13 +115,14 @@ rit completion bash > ~/.rit_completion
 source ~/.rit_completion​
 ```
 
-### Configurações de variáveis de ambiente (Windows)? 
+### **Configurações de variáveis de ambiente (Windows)?**
 
 No caso do Windows, você precisa chamar o rit no terminal diretamente pelo rit.exe. Por exemplo: comando **rit.exe login.** 
 
-É possível - e recomendado - que você crie uma variável de ambiente para o rit, tornando assim mais fácil o uso do CLI.
+É possível e recomendado que você crie uma variável de ambiente para o rit, tornando o uso do CLI mais fácil.
 
-Abaixo, confira alguns artigos que explicam como adicionar uma variável de ambiente no Windows:
+### **Leia Mais**
+Confira alguns artigos que explicam como adicionar uma variável de ambiente no Windows:
 
 * Adicionando [**por meio da interface**](https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/). 
 * Adicionando [**por meio do terminal**](https://devcontent.com.br/artigos/windows/o-que-sao-como-alterar-criar-excluir-variaveis-de-ambiente).

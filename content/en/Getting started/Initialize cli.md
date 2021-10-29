@@ -4,9 +4,11 @@ weight: 17
 description: 'In this section, you will find how to initialize Ritchie CLI.'
 ---
 
----
+--- 
 
-## Step 1: Initialization
+See the steps below to initialize the CLI: 
+
+## **Step 1: Initialization**
 
 Run the following command to initialize Ritchie:
 
@@ -22,25 +24,25 @@ This command will ask **three information**:
 
 ![](/shared/rit-init.gif)
 
-Then, the command execution will create all the necessary configuration's files.
+After this, the command will create all the necessary configuration's files.
 
-## Step 2: Verify Initialization
+## **Step 2: Verify Initialization**
 
 ### 1. Commons repository
 
-If you added the community formulas repository, you can check it by using the following command:
+If you added the community formulas repository, verify the import using the following command:
 
 ```text
 rit list repo
 ```
 
-This command will return all formulas repositories the user has access locally.
+This command will return all formulas repositories the user has local access to.
 
 ![](/shared/rit-list-repo.gif)
 
 ### 2. Ritchie folder
 
-You can then check the **`.rit`** folder has been created on your **`$HOME`** directory.
+You can check if the **`.rit`** folder has been created on your **`$HOME`** directory.
 
 {{% alert color="info" %}}
 

@@ -7,9 +7,9 @@ description: >-
 
 ---
 
-## How to delete?
+## **How to delete?**
 
-To delete a formula, you just have to run this command:
+To delete a formula, you have to run this command:
 
 ```text
 rit delete formula
@@ -25,9 +25,9 @@ Once you've made this, follow the steps:
 
 ![](/shared/delete-formula.gif)
 
-## Next Steps
+### **Learn More**
 
-On this section, you saw how to delete a formula on Ritchie. To keep reading:
+On this section, you saw how to delete a formula on Ritchie. To keep learning:
 
 👉 Go to [**how to group formulas**]({{< ref path="Formulas/Group formulas" >}}) section to find out how to run a formula inside another formula.
 

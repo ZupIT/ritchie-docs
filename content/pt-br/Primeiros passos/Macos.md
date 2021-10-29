@@ -1,7 +1,7 @@
 ---
 title: Instalação do CLI para Macos
 weight: 10
-description: 'Nesta seção, você verá como instalar o Ritchie para MacOs.'
+description: 'Nesta seção, você vai encontrar como instalar o Ritchie para MacOs.' 
 ---
 
 ---
@@ -19,7 +19,7 @@ Para instalar **md5sum** with _**MacPorts**_ , use: `sudo port install md5sha1su
 
 {{% /alert %}}
 
-## Passo 1: Rode o comando de instalação
+## **Passo 1: Rode o comando de instalação**
 
 ### Primeira opção
 
@@ -53,7 +53,7 @@ Você também pode **fazer o download do pacote do Ritchie CLI** e **instalá-lo
 curl --output ~/Desktop/Ritchie-CLI-macos-installer-x64.pkg --location https://commons-repo.ritchiecli.io/latest/Ritchie-CLI-macos-installer-x64.pkg
 ```
 
-## Passo 2: Verifique a instalação
+## **Passo 2: Verifique a instalação**
 
 Confirme se a instalação funcionou, rode o comando abaixo:
 

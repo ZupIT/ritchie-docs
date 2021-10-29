@@ -6,9 +6,10 @@ description: In this section, you will find how to add providers.
 
 ---
 
-You can also configure Ritchie to add new providers on your workspace. 
+You can configure Ritchie to add new providers on your workspace. 
 
-To do so, just choose "**Add a new**" option when running the **`rit set credential`** command. 
+To do that: 
+1. Choose "**Add a new**" option when running the **`rit set credential`** command:   
 
 ```text
 ? Select your provider Add a new
@@ -26,7 +27,7 @@ The informations that will be requested are:
 * **Field name:** Name of a credential from this provider. 
 * **Field type:** Value type of this credential. It can be: **plain text** or **secret**. 
 
-Once you finished this configuration, you set up this credentials following the same instructions you saw above. 
+After this configuration, you set up this credentials following the same instructions above. 
 
 {{% alert color="warning" %}}
 
