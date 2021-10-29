@@ -19,7 +19,7 @@ Siga os passos abaixo para iniciar sua contribuição:
 **Passo 1.** Faça um fork do repositório relacionado;
 **Passo 2.** Crie a branch: `git checkout -b <branch_name>`;
 **Passo 3.** Codifique sua ideia;
-**Passo 4.** Faça o commit: `git commit -m '<commit_message>'`;
+**Passo 4.** Faça o commit: `-s -S . "git commit -s -S -m '<commit_message>'"`;
 **Passo 5.** Publique a sua branch: `git push origin <project_name>/<location>`;
 **Passo 6.** Faça um pull request para a branch `main` para avaliação do time.
 

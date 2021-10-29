@@ -6,7 +6,7 @@ description: 'In this section, you will find how to add formulas dependencies'
 
 ---
 
-## **What are dependencies?** 
+## **How to add formula dependencies?** 
 
 {{% alert color="info" %}}
 

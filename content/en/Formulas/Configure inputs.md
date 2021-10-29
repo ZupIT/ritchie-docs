@@ -102,11 +102,13 @@ The variable **name** will be convert **uppercase** as the **local variable name
 
 ### **Some observations regarding the **`multiselect`** type**
 
-- To select one of the options with the `multiselect` type, you must press the `space` key (the `enter` key will move to the next input, if any)
+1. To select one of the options with the `multiselect` type, 
+- Press the `space` key (the `enter` key will move to the next input, if any).
 
-- The options selected in the `multiselect` type field will return a string with the options separated by pipe (`|`) and without space example: `Monday | Wednesday | Friday`
+2. The options selected in the `multiselect` type field will return a string with:
+- The options separated by pipe (`|`) and without space example: `Monday | Wednesday | Friday`
 
-- It is suggested to use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`
+3. Use the `required` field as `true`, otherwise, if no option is selected, the local variable will be saved as `undefined`.
 
 #### **Parameter example using the autocomplete type:**
 

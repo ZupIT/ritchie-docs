@@ -101,11 +101,13 @@ O **nome** da variável será convertida em **maiúscula** como o **nome da vari
 
 ### **Algumas observações sobre o tipo **`multiselect`****
 
-- Para selecionar uma das opções com tipo `multiselect`, você deve apertar a chave `space` (a chave`enter` irá mover para o próximo parâmetro de entrada, se houver).
+1. Para selecionar uma das opções com o tipo `multiselect`: 
+ - Aperte a chave `space` (a chave `enter` irá mover para o próximo parâmetro de entrada, se houver).
 
-- As opções selecionadas no campo do tipo `multiselect` irão retornar uma string com as opções separadas por barra (`|`) e sem espaço, por exemplo: `Monday | Wednesday | Friday`.
+2. As opções selecionadas no campo do tipo `multiselect` retornam:
+ - Uma string com as opções separadas por barra (`|`) e sem espaço, por exemplo: `Monday | Wednesday | Friday`.
 
-- É sugerido que você use o campo `required` como `true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined` .
+3. Use o campo `required` como `true`, caso contrário, se não houver uma opção selecionada, a variável local será salva como `undefined`.
 
 #### **Exemplo de parâmetro de entrada usando o tipo autocomplete:**
 

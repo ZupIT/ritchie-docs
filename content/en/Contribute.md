@@ -20,7 +20,7 @@ Follow the steps below to contribute:
 **Step 1.** Fork the repository
 **Step 2.** Create a branch: `git checkout -b <branch_name>`
 **Step 3.** Implement your idea
-**Step 4.** Commit your implementation: `git commit -m '<commit_message>'`
+**Step 4.** Commit your implementation: `git commit -s -S . "git commit -s -S -m '<commit_message>'"`
 **Step 5.** Push your branch: `git push origin <project_name>/<location>`
 **Step 6.** Open a pull request on the `main` branch for the team's analysis.
 

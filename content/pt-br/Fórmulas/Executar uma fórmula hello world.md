@@ -38,10 +38,10 @@ rit demo hello-world --help
 ```
 O retorno informa todas as flags disponíveis para a execução do comando.
 
-## **Casos**  
+## **Cenários**  
 No Ritchie, é possível, você tem 6 possibilidades de rodar uma fórmula por meio dessas flags:
 1. Via Prompt
-2. Via Prompt e Docker
+2. Via Prompt e Docker 
 3. Via Input Flags
 4. Via Input Flags e Docker
 5. Via Stdin
@@ -49,7 +49,7 @@ No Ritchie, é possível, você tem 6 possibilidades de rodar uma fórmula por m
 
 Você pode ver cada caso abaixo, escolha um caso e escreva um dos comandos.
 
-### **Caso 1: Usando Prompt**
+### **Opção 1: Usando Prompt**
 
 {{% alert color="info" %}}
 
@@ -66,7 +66,7 @@ Selecione uma opção para cada parâmetro de entrada e veja a mágica acontecer
 
 Essa é a execução padrão de linhas de comando no Ritchie, executando fórmulas localmente através de **prompt** (interagindo com o CLI no terminal) para informar os parâmetros de entrada.
 
-### **Caso 2: Usando Prompt & Docker**
+### **Opção 2: Usando Prompt & Docker**
 
 Você pode rodar o mesmo comando usando a flag **--docker** para executar a fórmula remotamente (em um container), mas ainda informando os parâmetros de entrada via **prompt**:
 
@@ -81,7 +81,7 @@ rit demo hello-world --docker
 
 {{% /alert %}}
 
-### **Caso 3: Usando Input Flags**
+### **Opção 3: Usando Input Flags**
 
 Você também pode executar o comando informando as entradas por meio de flags (você pode saber quais flags estão disponíveis usando a flag **`--help`** ao executar um comando). Desta forma, os parâmetros de entradas são informados diretamente na linha de comando.
 
@@ -89,7 +89,7 @@ Você também pode executar o comando informando as entradas por meio de flags (
 rit demo hello-world --rit_input_text="Dennis" --rit_input_boolean=true --rit_input_list="everything" --rit_input_password="Ritchie"
 ```
 
-### **Caso 4: Usando Input Flags & Docker**
+### **Opção 4: Usando Input Flags & Docker**
 
 Ao combinar os **`input flags`** com a flag do **`--docker`**, é possível executar um comando remotamente (em um contêiner) com os parâmetros de entrada informados diretamente na linha de comando:
 
@@ -97,7 +97,7 @@ Ao combinar os **`input flags`** com a flag do **`--docker`**, é possível exec
 rit demo hello-world --rit_input_text="Dennis" --rit_input_boolean=true --rit_input_list="everything" --rit_input_password="Ritchie" --docker
 ```
 
-### **Caso 5: Usando Stdin**
+### **Opção 5: Usando Stdin**
 
 É também possível executar comando usando a flag **`--stdin`** (Standard Input). Dessa maneira, os parâmetros de entrada podem ser informados diretamente na linha de comando inicial:
 
@@ -110,7 +110,7 @@ echo '{"rit_input_text":"Dennis", "rit_input_boolean":"true", "rit_input_list":"
 
 {{% /alert %}}
 
-### **Caso 6: Usando Stdin**
+### **Opção 6: Usando Stdin**
 
 Quando são usadas as 2 flags **--stdin** e **--docker**, é possível executar o comando remotamente informando os parâmetros de entrada na linha de comando inicial:
 

@@ -7,7 +7,7 @@ description: >-
 
 ---
 
-## **O que são as dependências?**
+## **Como adicionar as dependências de fórmula?**
 
 {{% alert color="info" %}}
 
