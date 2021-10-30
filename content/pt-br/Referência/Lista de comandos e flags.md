@@ -1,14 +1,14 @@
 ---
 title: Lista de comandos e flags
 weight: 93
-description: "Nesta seção, você encontrará uma lista com principais comandos do Ritchie."
+description: "Nesta seção, você vai encontrar uma lista com principais comandos do Ritchie."
 ---
 
 ---
 
-## Comandos
+## **Comandos**
 
-### Comandos de Configuração
+### **Comandos de Configuração**
 
 | Comandos      | Operação                                         |
 | :------------ | :----------------------------------------------- |
@@ -17,7 +17,7 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
 | rit tutorial  | habilita ou desabilita o tutorial                |
 | rit -v        | retorna qual a versão atual instalada do Ritchie |
 
-### Comandos de Repositórios
+### **Comandos de Repositórios**
 
 | Comandos              | Operação                                                                                         |
 | :-------------------- | :----------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ description: "Nesta seção, você encontrará uma lista com principais comandos
 | rit set repo-priority | configura a prioridade do repositório                                                            |
 | rit delete repo       | apaga um repositório (remove o acesso ao repositório de fórmulas com o Ritchie)                  |
 
-### Comandos de Fórmulas
+### **Comandos de Fórmulas**
 
 
 | Command                     | Operation                                                                               |
@@ -44,7 +44,7 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 
 {{% /alert %}}
 
-### Comandos de Autocomplete
+### **Comandos de Autocomplete**
 
 | Comandos                  | Operação                               |
 | :------------------------ | :------------------------------------- |
@@ -53,7 +53,7 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 | rit completion fish       | adiciona o autocomplete via fish       |
 | rit completion powershell | adiciona o autocomplete via powershell |
 
-### Comandos de Ambiente
+### **Comandos de Ambiente**
 
 | Comandos       | Operação                              |
 | :------------- | :------------------------------------ |
@@ -61,7 +61,7 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 | rit show env   | mostra o atual ambiente que foi usado |
 | rit delete env | apaga um ambiente                     |
 
-### Comandos de Credenciais
+### **Comandos de Credenciais**
 
 | Comandos              | Operação                                        |
 | :-------------------- | :---------------------------------------------- |
@@ -69,7 +69,7 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 | rit list credential   | lista todas os nomes de credenciais e os campos |
 | rit delete credential | permite apagar suas credenciais                 |
 
-### Comandos de Workspaces
+### **Comandos de Workspaces**
 
 | Comandos             | Operações                                                                         |
 | :------------------- | :-------------------------------------------------------------------------------- |
@@ -78,9 +78,9 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 | rit delete workspace | apaga um workspace                                                                |
 | rit update workspace | atualiza um workspace (para acessar novas fórmulas desse workspace com o Ritchie) |
 
-## Flags
+## **Flags**
 
-### Principais flags
+### **Principais flags**
 
 | Flags     | Operações                                                                              |
 | :-------- | :------------------------------------------------------------------------------------- |

@@ -1,7 +1,7 @@
 ---
 title: Como usar credenciais do GitHub
 weight: 86
-description: 'Nesta seção, você encontrará o passo a passo para usar credenciais no Ritchie.'
+description: 'Nesta seção, você vai encontrar o tutorial para usar credenciais no Ritchie.'
 ---
 
 Neste tutorial, a ideia é criar uma fórmula que vai retornar um JSON contendo as credenciais do Github.
@@ -14,7 +14,7 @@ Sugestão de comando: **`rit github get user`**.
 
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
 Essa fórmula deverá conter (pelo menos) três parâmetros de entrada. Veja como abaixo:
 

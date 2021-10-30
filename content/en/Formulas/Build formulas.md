@@ -14,11 +14,11 @@ If you're using a previous version just follow the instructions of this section.
 
 {{% /alert %}}
 
-## How to build?
+## **How to build?**
 
 After [**creating a formula**]({{< ref path="Formulas/Create formulas" >}}), if you want to edit the code of the formula, it's necessary to **build** these changes to test the command with the new implementation. 
 
-To do so, just run the command:
+To do so, run the command:
 
 ```text
 rit build formula
@@ -29,7 +29,7 @@ You must inform:
 * The **directory's path** where the formula is located.
 * The **formula's path** to be builded (the formula's command). 
 
-In case you want to update the formula's code in running time, you can use the **flag “--watch”** as shown in the command below:
+If you want to update the formula's code in running time, you can use the **flag “--watch”** like in the command below:
 
 ```text
 rit build formula --watch

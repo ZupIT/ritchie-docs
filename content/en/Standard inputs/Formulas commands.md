@@ -1,13 +1,15 @@
 ---
 title: Formulas commands
 weight: 77
+description: >-
+  In this section, you will find more details about formula commands that can be used through input flags.
 ---
 
 ---
 
-With formulas, the Input flags are based on the **inputs parameters names** informed on the **config.json file** used to implement the formula.
+The Input flags with formulas are based on the **inputs parameters names**. They are informed in the **config.json file** used to implement the formula.
 
-### **Example**
+### **Example** 
 
 1. Formula command: **`rit demo formula`**
 
@@ -25,6 +27,6 @@ rit demo formula --name="dennis" --surname="ritchie" --dateOfBirth="09/09/1941"
 
 {{% alert color="danger" %}}
 
-In order to work properly, the formula's command through Input flags needs the input parameters based on the config.json. 
+ The formula's command through Input flags needs the input parameters based on the config.json to work properly. 
 
 {{% /alert %}}

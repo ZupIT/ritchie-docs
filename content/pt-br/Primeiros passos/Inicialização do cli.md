@@ -1,14 +1,15 @@
 ---
 title: Inicialização do CLI
 weight: 17
-description: 'Nesta seção, você verá como inicializar o rit.'
+description: 'Nesta seção, você vai encontrar como inicializar o rit.'
 ---
 
 ---
+Veja abaixo os passos para você inicializar a CLI: 
 
-## Passo 1: Inicialização
+## **Passo 1: Inicialização** 
 
-Você deve executar o comando abaixo para inicializar o Ritchie:
+Execute o comando para inicializar o Ritchie:
 
 ```text
 rit init
@@ -22,13 +23,13 @@ Esse comando vai pedir **três informações**:
 
 ![](/shared/rit-init.gif)
 
-Após a execução desse comando, todos os arquivos de configuração para a máquina funcionar serão criados.
+Depois disso, todos os arquivos de configuração para a máquina funcionar serão criados.
 
-## Passo 2: Verifique a inicialização
+## **Passo 2: Verifique a inicialização**
 
 ### 1. Repositório da comunidade
 
-Caso foi adicionado o repositório da comunidade, é possível verificar sua importação através do seguinte comando:
+Se você adicionou o repositório da comunidade, é possível verificar a importação com o comando:
 
 ```text
 rit list repo
@@ -40,7 +41,7 @@ Esse comando retorna todos os repositórios de fórmulas que o usuário tem aces
 
 ### 2. Pasta Ritchie
 
-É possível verificar que a pasta **`.rit`** foi criada no diretório **`$HOME`** da máquina.
+Você pode verificar se a pasta **`.rit`** foi criada no diretório **`$HOME`** da máquina.
 
 {{% alert color="info" %}}
 

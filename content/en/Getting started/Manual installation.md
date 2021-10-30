@@ -1,7 +1,7 @@
 ---
 title: Manual Installation
 weight: 14
-description: 'In this section, you will find how to install Ritchie manually.'
+description: 'In this section, you will find how to install Ritchie manually.' 
 ---
 
 ---
@@ -12,12 +12,13 @@ description: 'In this section, you will find how to install Ritchie manually.'
 
 {{% alert color="info" %}}
 
-You can find the latest version available at this link([**Latest**](https://commons-repo.ritchiecli.io/stable.txt)). 
-Or choose some specific version([**All versions**](https://github.com/ZupIT/ritchie-cli/tags)).
+1. You can find the latest version available, checkou the [**Latest page**](https://commons-repo.ritchiecli.io/stable.txt). 
+
+2. You can choose a specific version, check out the [**All versions page**](https://github.com/ZupIT/ritchie-cli/tags).
 
 {{% /alert %}}
 
-- **Step 2:** Get the appropriate URL for your system and paste it into the browser, replacing `{VERSION}` with the version you chose.
+- **Step 2:** Get the appropriate URL for your system and paste it into the browser, replacing **`{VERSION}`** with the version you chose.
 
 ### **Binary URL**
 
@@ -76,20 +77,20 @@ https://commons-repo.ritchiecli.io/2.11.3/windows/rit.exe
 
 ### **How to create a folder?**
 
-1. First, run the command below to create a folder `$HOME/.rit/bin`
+1. Run the command below to create a folder `$HOME/.rit/bin`
 
 ```text
 mkdir -p $HOME/.rit/bin
 ```
 
-2. Then, copy and paste the binary to the folder above.
+2. Copy and paste the binary to the folder above:
 
 ```text
 ​cd $HOME/.rit/bin 
 cp $HOME/Downloads/rit
 ```
 
-3. Lastly, run a permission to run: 
+3. Run a permission to run: 
 
 ```text
 chmod +x rit
@@ -119,8 +120,9 @@ source ~/.rit_completion​
 
 For this operating system, you need to call rit on the terminal directly from rit.exe (**rit.exe login** command for example)
 
-It is possible (and suggested) to create an environment variable for rit to facilitate the use of the CLI.
+It is possible and we suggest to create an environment variable for rit to facilitate the use of the CLI.
 
+### **Read More**
 Here are some articles explaining how to add an environment variable in Windows:
 
 * Adding [**through interface**](https://professor-falken.com/pt/windows/como-configurar-la-ruta-y-las-variables-de-entorno-en-windows-10/) 

@@ -2,7 +2,7 @@
 title: Como usar inputs condicionais
 weight: 88
 description: >-
-  Nesta seção, você encontrará o passo a passo para usar inputs condicionais no Ritchie.
+  Nesta seção, você vai encontrar o tutorial de como usar inputs condicionais no Ritchie.
 ---
 
 Neste tutorial, a ideia é criar uma fórmula que vai retornar a ferramenta selecionada pelo usuário de acordo com seu perfil. 
@@ -15,7 +15,7 @@ Sugestão de comando: **`rit get tools`**.
 
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
 Essa fórmula deverá conter (pelo menos) três parâmetros de entrada. Veja como abaixo:
 
@@ -27,7 +27,7 @@ Os parâmetros de entrada da fórmula precisam seguir o diagrama abaixo:
 
 ![](/shared/ritchie-conditional-inputs.png)
 
-## Como fazer isso? 
+## **Como fazer isso?** 
 
 {{% alert color="info" %}}
 

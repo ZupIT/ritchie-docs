@@ -1,9 +1,9 @@
 ---
 title: Glossary
 weight: 103
-description: You will find in this section more about common concepts on development field.
+description: In this section, you will find more about Ritchie's concepts.
 ---
-
+ 
 ---
 
 The main concepts on Ritchie are
@@ -19,7 +19,7 @@ The main concepts on Ritchie are
 
 ## **CLI**
 
-It refers to a command line interface, which is a program that processes commands in a software or any computing program only through text.
+It is a command line interface, which is a program that processes commands in a software or any computing program only through text.
 
 ## **Command Tree**
 
@@ -67,11 +67,11 @@ All commands and sub-commands are mapped in a tree **dynamically** created accor
 
 ## **Credential**
 
-It refers to reusable input parameters that you can use in Ritchie (example: access data for any tool or api).
+It is the reusable input parameters you can use in Ritchie (for example: access data for any tool or api).
 
 ## **Environment**
 
-On Ritchie, each environment will have its own credentials, which can be necessary to execute specific formulas through the CLI.
+On Ritchie, each environment will have its own credentials, it may be necessary to execute specific formulas through the CLI.
 
 _For example: it's possible to create a **professional** and a **personal** environments (or **prod** and **staging**) with different credentials, and switch from an environment to another according to the necessity._
 
@@ -93,7 +93,7 @@ Those input parameters can be informed in different ways:
 
 ## **JSON**
 
-It refers to JavaScript Object Notation (JSON), that is a standard text based format used to structure data created with JavaScript programming language.
+JavaScript Object Notation (JSON), it is a standard text based format used to structure data created with JavaScript programming language.
 
 ## **Repository**
 
@@ -104,6 +104,6 @@ A storage place you can organize features, commands or any files and/or files ne
 
 ## **Standard Streams**
 
-It refers to a communication channel that allows input and output interconnection between a computer program and its environment.
+It is a communication channel that allows input and output interconnection between a computer program and its environment.
 
-On Ritchie, we use the standard input (stdin) to execute commands automatically.
+On Ritchie, the standard input (stdin) is used to execute commands automatically.

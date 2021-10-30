@@ -1,7 +1,7 @@
 ---
 title: Input Flags
 weight: 73
-description: In this section, you will find more about input flags on Ritchie.
+description: In this section, you will find more details about input flags on Ritchie.
 ---
 
 ---
@@ -10,7 +10,7 @@ description: In this section, you will find more about input flags on Ritchie.
 
 The **Input flags** on Ritchie has been developed to give one more option to use input parameters through command lines.
 
-In that case, the input parameters need to be informed following this pattern:
+Therefore, the input parameters need to be informed in the following pattern:
 
 ```text
 RIT (GROUP) VERB NOUN --input_name="input_value"
@@ -18,6 +18,4 @@ RIT (GROUP) VERB NOUN --input_name="input_value"
 
 {{% /alert %}}
 
-You can dig deeper into the use of **Input Flags**:
-
-👉 [**Formulas commands**]({{< ref path="Standard inputs/Formulas commands" >}}).
+For more information about **Input Flags**, check out the [**Formulas commands**]({{< ref path="Standard inputs/Formulas commands" >}}) section.

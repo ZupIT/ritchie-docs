@@ -20,7 +20,7 @@ This formula must have (at least) two input parameters. See below:
 1. Number one (`RIT_NUMBER_ONE`). 
 2. Number two (`RIT_NUMBER_TWO`).
 
-## How can you do that?
+## **How can you do that?**
 
 {{% alert color="info" %}}
 

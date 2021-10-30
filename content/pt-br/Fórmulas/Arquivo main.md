@@ -6,21 +6,21 @@ description: Nesta seção, você vai encontrar mais informações sobre o arqui
 
 ---
 
-## O que é um arquivo main?
+## **O que é um arquivo main?** 
 
 {{% alert color="info" %}}
 
 O arquivo Main é usado para extrair os **parâmetros de entrada** informados no arquivo config.json, salvos como **variáveis locais**. 
 
-_Os parâmetros de entrada são extraídos pelo **nome** do campo informado no arquivo config.json em **letras maiúsculas**._ 
+- Os parâmetros de entrada são extraídos pelo **nome** do campo informado no arquivo config.json em **letras maiúsculas**. 
 
 {{% /alert %}}
 
 Esse arquivo é também onde estão as funções da fórmula, manipulando parâmetros de entrada, que são chamados para realizar uma operação e/ou automação da fórmula. 
 
-### Exemplos de arquivo Main 
+### **Exemplos de arquivo Main** 
 
-Nos exemplos abaixo, sempre há a classe de uma fórmula com uma função `Run()` .
+Nos exemplos abaixo, sempre há a classe de uma **`formula`** com uma função **`Run()`**:
 
 {{< tabs id="T1" >}}
 {{% tab name="main.go" %}}

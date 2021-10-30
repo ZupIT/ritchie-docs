@@ -2,19 +2,19 @@
 title: Como testar outputs de formulas 
 weight: 90
 description: >-
-  Nesta seção, você encontrará o tutorial para testar outputs de fórmulas no Ritchie.
+  Nesta seção, você vai encontrar o tutorial para testar outputs de fórmulas no Ritchie.
 
 ---
 
 Esse tutorial ajuda a você criar e configurar o workflow do Github actions para testar os outputs das suas fórmulas. 
 
-## Requisitos
+## **Requisitos**
 
 - Você precisa da fórmula **`rit math sum numbers`** no repositório do Github. 
 - Você precisa do diretório **.github/workflows** criado no repositório do Github.
 
 
-## Como fazer isso? 
+## **Como fazer isso?** 
 
 Siga os próximos passos para testar uma fórmula: 
 

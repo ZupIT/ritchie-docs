@@ -2,12 +2,12 @@
 title: Core Commands
 weight: 75
 description: >-
-  In this section, you will find more details about commands that can be used though input flags.
+  In this section, you will find more details about commands that can be used through input flags.
 ---
 
 ---
 
-## Core Commands with input flags
+## **Core Commands with input flags**
 
 {{% alert color="info" %}}
 
@@ -15,9 +15,9 @@ This flags are supported since Ritchie's 2.8 release.
 
 {{% /alert %}}
 
-### Available flags
+### **Available flags**
 
-### Init command
+### **Init command**
 
 rit init
 
@@ -25,7 +25,7 @@ rit init
 rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
 ```
 
-### Create formula command
+### **Create formula command**
 
 rit create formula
 
@@ -33,7 +33,7 @@ rit create formula
 rit create formula --name="rit group verb noun" --language="go" --workspace="Default"
 ```
 
-### Credentials command
+### **Credentials command**
 
 rit set credential
 
@@ -47,7 +47,7 @@ rit delete credential
 rit delete credential --provider="github"
 ```
 
-### Environment commands
+### **Environment commands**
 
 rit set env
 
@@ -61,7 +61,7 @@ rit delete env
 rit delete env --env="prod"
 ```
 
-### Formula commands
+### **Formula commands**
 
 rit set formula-runner
 
@@ -93,7 +93,7 @@ rit rename formula --oldName="rit group old" --newName="rit group new" --workspa
 
 {{% alert color="info" %}}
 
-The workspace flag will be required when the formula is found in more than one workspace.
+The workspace flag is required when the formula is found in more than one workspace.
 
 {{% /alert %}}
 
@@ -103,7 +103,7 @@ rit delete formula
 rit delete formula --workspace="workspace_name" --formula="rit group verb noun"
 ```
 
-### Repo commands
+### **Repo commands**
 
 rit add repo
 
@@ -130,7 +130,7 @@ rit update repo
 rit update repo --name="commons" --version="2.0.0"
 ```
 
-### Tutorial command
+### **Tutorial command**
 
 rit tutorial
 
@@ -138,7 +138,7 @@ rit tutorial
 rit tutorial --enabled=true
 ```
 
-### Workspace commands
+### **Workspace commands**
 
 rit add workspace
 

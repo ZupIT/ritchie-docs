@@ -1,10 +1,10 @@
 ---
 title: Migrando da v1 para a v2
 weight: 95
-description: Nesta seção, você encontra informações de como migrar de versão no Ritchie. 
+description: Nesta seção, você vai encontrar informações de como migrar de versão no Ritchie. 
 ---
 
-## Ritchie 1.0 e Ritchie 2.0
+## **Ritchie 1.0 e Ritchie 2.0**
 
 Diferenças entre as versões 1.0 e 2.0
 
@@ -21,13 +21,13 @@ Diferenças entre as versões 1.0 e 2.0
 A versão 2.0 **não suporta o Vault** para compartilhar credenciais. Logo, caso você queira continuar usando essa funcionalidade, precisará ficar na versão 1.0.
 {{% /alert %}}
 
-## Como migrar fórmulas da versão 1.0 para a 2.0
+## **Como migrar fórmulas da versão 1.0 para a 2.0**
 
 ### **Contexto**
 
 Se você usa a versão 1.0 do Ritchie e deseja migrar para a versão 2.0, **será necessário atualizar a estrutura dos seus repositórios de fórmulas** para ser compatível com a nova versão.
 
-### Como migrar?
+### **Como migrar?**
 
 Abaixo, segue um **passo a passo** de como você pode fazer isso:
 
@@ -50,6 +50,6 @@ Abaixo, segue um **passo a passo** de como você pode fazer isso:
 
 {{% alert color="info" %}}
 
-Em case de dúvida, fique à vontade para entrar em contato com a nossa equipe no e-mail **ritchie@zup.com.br** ou **abrindo uma issue** no repositório [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas).
+Em caso de dúvida, entre em contato com a nossa equipe no e-mail **ritchie@zup.com.br** ou **abrindo uma issue** no repositório [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas).
 
 {{% /alert %}}

@@ -7,17 +7,17 @@ description: >-
 
 ---
 
-## Core Commands com input flags
-
+## **Core Commands com input flags**
+ 
 {{% alert color="info" %}}
 
 Estas flags estão disponíveis a partir da versão 2.8 do Ritchie.
 
 {{% /alert %}}
 
-### Flags disponíveis
+### **Flags disponíveis**
 
-### Comando de inicialização do Ritchie
+### **Comando de inicialização do Ritchie**
 
 rit init
 
@@ -25,7 +25,7 @@ rit init
 rit init --sendMetrics="yes" --addCommons="yes" --runType="local"
 ```
 
-### Comando para criar fórmula
+### **Comando para criar fórmula**
 
 rit create formula
 
@@ -33,7 +33,7 @@ rit create formula
 rit create formula --name="rit group verb noun" --language="go" --workspace="Default"
 ```
 
-### Comandos de credenciais
+### **Comandos de credenciais**
 
 rit set credential
 
@@ -47,7 +47,7 @@ rit delete credential
 rit delete credential --provider="github"
 ```
 
-### Comandos de Ambiente
+### **Comandos de Ambiente**
 
 rit set env
 
@@ -61,7 +61,7 @@ rit delete env
 rit delete env --env="prod"
 ```
 
-### Comandos de Fórmulas
+### **Comandos de Fórmulas**
 
 rit set formula-runner
 
@@ -94,7 +94,7 @@ rit rename formula --oldName="rit group old" --newName="rit group new" --workspa
 
 {{% alert color="info" %}}
 
-A flag de workspace será obrigatória quando a fórmula for encontrada em mais de um workspace.
+A flag de workspace é obrigatória quando a fórmula é encontrada em mais de um workspace.
 
 {{% /alert %}}
 
@@ -104,7 +104,7 @@ rit delete formula
 rit delete formula --workspace="workspace_name" --formula="rit group verb noun"
 ```
 
-### Comandos de Repo
+### **Comandos de Repo**
 
 rit add repo
 
@@ -131,7 +131,7 @@ rit update repo
 rit update repo --name="commons" --version="2.0.0"
 ```
 
-### Comando de Tutorial
+### **Comando de Tutorial**
 
 rit tutorial
 
@@ -139,7 +139,7 @@ rit tutorial
 rit tutorial --enabled=true
 ```
 
-### Comandos de workspace
+### **Comandos de workspace**
 
 rit add workspace
 

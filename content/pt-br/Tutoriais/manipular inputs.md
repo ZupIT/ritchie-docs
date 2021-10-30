@@ -2,7 +2,7 @@
 title: Como manipular inputs
 weight: 84
 description: >-
-  Nesta seção, você encontrará o tutorial para manipular inputs básicos no Ritchie.
+  Nesta seção, você vai encontrar o tutorial para manipular inputs básicos no Ritchie.
 ---
 
 
@@ -14,7 +14,7 @@ Sugestão de comando: **`rit math sum numbers`**.
 
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
 Essa fórmula deverá conter (pelo menos) os dois parâmetros de entrada. Veja como abaixo:
 

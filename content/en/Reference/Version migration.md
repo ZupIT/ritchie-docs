@@ -24,13 +24,13 @@ Therefore, if you want to keep using those features, you have to stay on the **1
 
 {{% /alert %}}
 
-## How to migrate formulas from V1.0 to V2.0 ?
+## **How can you migrate formulas from V1.0 to V2.0?**
 
-### Context
+### **Context**
 
 If you use Ritchie 1.0 version and want to upgrade to the 2.0 one, **you have to update your formula's repository structure** to be compatible to the pattern used on the new version.
 
-### How to migrate?
+### **How to migrate?**
 
 **Step 1**: Create new formula repo from scratch using the **`rit create formula`** command.
 

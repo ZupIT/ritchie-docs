@@ -8,7 +8,7 @@ description: >-
 
 This section guides you to create formulas in different levels and with that show you lots of activities you can do with Richie.
 
-### Prerequisites
+### **Prerequisites**
 
 To perform the tutorials here, you will need to know more about the following concepts:
 

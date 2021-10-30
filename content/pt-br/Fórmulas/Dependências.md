@@ -2,12 +2,12 @@
 title: Adicionar as dependências de fórmula
 weight: 39
 description: >-
-  Nesta seção, você vai encontrar mais informações sobre as dependências de uma fórmula.
+  Nesta seção, você vai encontrar informações sobre as dependências de uma fórmula.
 ---
 
 ---
 
-## O que são as dependências?
+## **Como adicionar as dependências de fórmula?**
 
 {{% alert color="info" %}}
 
@@ -17,7 +17,7 @@ Cada linguagem de programação possui suas próprias especificidades para **imp
 
 No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente.
 
-Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar.
+Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar. Veja mais abaixo: 
 
 {{< tabs id="T2" >}}
 {{% tab name="go.mod (GOLANG)" %}}
