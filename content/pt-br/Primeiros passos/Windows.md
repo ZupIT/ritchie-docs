@@ -1,11 +1,7 @@
 ---
 title: Instalação do CLI para Windows
 weight: 12
-<<<<<<< HEAD:content/pt-br/Primeiros Passos/Windows.md
 description: "Nesta seção, você vai encontrar como instalar o Ritchie para Windows."
-=======
-description: 'Nesta seção, você vai encontrar como instalar o Ritchie para Windows.'
->>>>>>> d28e90f004db34272f89d21fbdd684170bb3c4b1:content/pt-br/Primeiros passos/Windows.md
 ---
 
 ---
@@ -38,6 +34,7 @@ https://commons-repo.ritchiecli.io/2.12.0/installer/ritchiecli.msi
 ```bash
 winget install Ritchie-CLI
 ```
+
 Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
 
 Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
