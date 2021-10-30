@@ -2,12 +2,12 @@
 title: Adicionar as dependências de fórmula
 weight: 39
 description: >-
-  Nesta seção, você vai encontrar mais informações sobre as dependências de uma fórmula.
+  Nesta seção, você vai encontrar informações sobre as dependências de uma fórmula.
 ---
 
 ---
 
-## O que são as dependências?
+## **Como adicionar as dependências de fórmula?**
 
 {{% alert color="info" %}}
 
@@ -15,10 +15,12 @@ Cada linguagem de programação possui suas próprias especificidades para **imp
 
 {{% /alert %}}
 
-No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente. Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar.
+No Ritchie, é possível configurar cada fórmula como um projeto pequeno e independente.
+
+Portanto, você pode importar todas as dependências necessárias para performar as operações que você deseja implementar. Veja mais abaixo: 
 
 {{< tabs id="T2" >}}
-{{% tab name="go.mod \(GOLANG\)" %}}
+{{% tab name="go.mod (GOLANG)" %}}
 ```text
 module formula
 
@@ -30,7 +32,7 @@ require (
 ```
 {{% /tab %}}
 
-{{% tab name=" pom.xml \(JAVA\)" %}}
+{{% tab name=" pom.xml (JAVA)" %}}
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -119,7 +121,7 @@ require (
 ```
 {{% /tab %}}
 
-{{% tab name=" package.json \(NODE\)" %}}
+{{% tab name=" package.json (NODE)" %}}
 ```
 {
   "dependencies": {
@@ -134,13 +136,13 @@ require (
 ```
 {{% /tab %}}
 
-{{% tab name="requirements.txt \(PYTHON\)" %}}
+{{% tab name="requirements.txt (PYTHON)" %}}
 ```
 colored==1.4.2
 ```
 {{% /tab %}}
 
-{{% tab name="composer.json \(PHP\)" %}}
+{{% tab name="composer.json (PHP)" %}}
 ```
 {
   "require": {

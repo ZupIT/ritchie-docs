@@ -2,32 +2,37 @@
 title: Como usar inputs condicionais
 weight: 88
 description: >-
-  Nesta seção, você encontrará o passo a passo para usar inputs condicionais no
-  Ritchie.
+  Nesta seção, você vai encontrar o tutorial de como usar inputs condicionais no Ritchie.
 ---
 
 Neste tutorial, a ideia é criar uma fórmula que vai retornar a ferramenta selecionada pelo usuário de acordo com seu perfil. 
-Veja mais informações na seção [**sobre o arquivo config.json**]({{< ref path="/Fórmulas/Arquivo Config.md" >}}).
+
+> Veja mais informações na seção [**sobre o arquivo config.json**]({{< ref path="Fórmulas/Arquivo config" >}}).
 
 {{% alert color="info" %}}
-Sugestão de comando: **`rit get tools`**
+
+Sugestão de comando: **`rit get tools`**.
+
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
-Essa fórmula deverá conter \(pelo menos\) três parâmetros de entrada. Veja como abaixo:
+Essa fórmula deverá conter (pelo menos) três parâmetros de entrada. Veja como abaixo:
 
-1. Name  \(`RIT_NAME`\). 
-2. Profile  \(`RIT_PROFILE`\).
-3. Profile tool  \(`RIT_TOOL`\).
+1. Name (`RIT_NAME`). 
+2. Profile (`RIT_PROFILE`).
+3. Profile tool (`RIT_TOOL`).
 
 Os parâmetros de entrada da fórmula precisam seguir o diagrama abaixo:
 
 ![](/shared/ritchie-conditional-inputs.png)
 
-## Como fazer isso? 
+## **Como fazer isso?** 
+
 {{% alert color="info" %}}
+
 Essa parte é comum para todas as linguagens de programação.
+
 {{% /alert %}}
 
 Procure pelo arquivo `config.json` da sua fórmula e substitua o campo **`inputs`** pelo bloco abaixo:
@@ -116,6 +121,7 @@ Procure pelo arquivo `config.json` da sua fórmula e substitua o campo **`inputs
     }
   ]
 ```
+
 ## **Passo a Passo** 
 
 Siga os passos abaixo para criar a sua fórmula:
@@ -160,7 +166,9 @@ public class Main {
 
 
 {{% alert color="warning" %}}
+
 Esse arquivo segue a nomenclatura **`main.*`** para a maioria das linguagens, exceto para o Node que chama **`index.js`**.
+
 {{% /alert %}}
 
 ### **Passo 2: Implemente a operação da fórmula**
@@ -230,7 +238,9 @@ public class Formula {
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Dependendo da linguagem, pode ser necessário adicionar algumas dependências nos arquivos relacionados (`pom.xml` para **Java**, `requirements.txt` para **Python**, `package.json` para **Node**, `go.mod` para **Golang**,  etc).
+
+Dependendo da linguagem, pode ser necessário adicionar algumas dependências nos arquivos relacionados (`pom.xml` para **Java**, `requirements.txt` para **Python**, `package.json` para **Node**, `go.mod` para **Golang**, etc).
+
 {{% /alert %}}
 
 ### **Passo 3: Teste a fórmula no terminal**
@@ -255,11 +265,13 @@ Ritchie will install DOCKER for him automatically.
 ```
 
 {{% alert color="info" %}}
+
 Se você quiser incrementar essa fórmula, veja a sugestão abaixo: 
 * Instale a ferramenta selecionada de acordo com o SO do computador.
+
 {{% /alert %}}
 
 
 ## **Próximos passos** 
 
-👉 Se você completou o terceiro tutorial, vamos para o quarto [**Como agrupar uma fórmula?**]({{< ref path="/Tutoriais/agrupar uma formula.md" >}}).
+👉 Se você completou o terceiro tutorial, vamos para o quarto [**Como agrupar uma fórmula?**]({{< ref path="Tutoriais/agrupar uma formula" >}}).

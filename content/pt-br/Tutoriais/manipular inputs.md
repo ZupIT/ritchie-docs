@@ -2,27 +2,30 @@
 title: Como manipular inputs
 weight: 84
 description: >-
-  Nesta seção, você encontrará o tutorial para manipular inputs básicos no
-  Ritchie.
+  Nesta seção, você vai encontrar o tutorial para manipular inputs básicos no Ritchie.
 ---
 
 
 Neste tutorial, a ideia é ensinar você a criar uma fórmula simples que, neste caso, irá **somar 2 números positivos**.
 
 {{% alert color="info" %}}
-Sugestão de comando: **`rit math sum numbers`**
+
+Sugestão de comando: **`rit math sum numbers`**.
+
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
-Essa fórmula deverá conter \(pelo menos\) os dois parâmetros de entrada. Veja como abaixo:
+Essa fórmula deverá conter (pelo menos) os dois parâmetros de entrada. Veja como abaixo:
 
-1. Number one \(`RIT_NUMBER_ONE`\). 
-2. Number two \(`RIT_NUMBER_TWO`\).
+1. Number one (`RIT_NUMBER_ONE`). 
+2. Number two (`RIT_NUMBER_TWO`).
 
 ## Como fazer isso? 
 {{% alert color="info" %}}
+
 Essa parte é comum para todas as linguagens de programação.
+
 {{% /alert %}}
 
 Procure pelo arquivo `config.json` da sua fórmula e substitua o campo **`inputs`** pelo bloco abaixo:
@@ -45,7 +48,8 @@ Procure pelo arquivo `config.json` da sua fórmula e substitua o campo **`inputs
 Siga os passos abaixo para criar a sua fórmula:
 
 ### **Passo 1: Extrair os parâmetros de entrada**
-Procure pelo arquivo main da sua fórmula e extraia os parâmetros de entrada antes de usá-los para chamar o método da fórmula. Veja abaixo alguns exemplos de códigos:
+
+Procure pelo arquivo **`main`** da sua fórmula e extraia os parâmetros de entrada antes de usá-los para chamar o método da fórmula. Veja abaixo alguns exemplos de códigos:
 
 {{< tabs id="T1" >}}
 {{% tab name="Python" %}}
@@ -116,7 +120,9 @@ run(NUMBER_ONE, NUMBER_TWO)
 _Observação: Aqui que é realizado a conversão de STRING para INT pois não existe o tipo **INT** nativo no arquivo **`config.json`** ._
 
 {{% alert color="warning" %}}
+
 Esse arquivo segue a nomenclatura **`main.*`** para a maioria das linguagens, exceto para o Node que chama **`index.js`**.
+
 {{% /alert %}}
 
 ### **Passo 2: Implemente a operação da fórmula**
@@ -222,13 +228,15 @@ The sum is 3
 ```
 
 {{% alert color="info" %}}
+
 Se você quiser incrementar essa fórmula, veja algumas sugestões abaixo: 
 * Adicione uma validação dos parâmetros de entrada para retornar um erro ao usuário se o parâmetro não for um inteiro.
 * Permita que usuário some números negativos com positivos.
 * Permita que o usuário digite números decimais. 
+
 {{% /alert %}}
 
 
 ## **Próximos passos** 
 
-👉 Se você completou o primeiro tutorial, vá para o segundo [**Como usar credenciais do GitHub?**]({{< ref path="/Tutoriais/usar credenciais.md" >}}).
+👉 Se você completou o primeiro tutorial, vá para o segundo [**Como usar credenciais do GitHub?**]({{< ref path="Tutoriais/usar credenciais" >}}).

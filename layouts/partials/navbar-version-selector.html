@@ -2,7 +2,7 @@
 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	{{ .Site.Params.version_menu }}
 </a>
-<script>
+<script>  
 	const url = "https://api.github.com/repos/ZupIT/docs-ritchie/releases"
 
 	const xhttp = new XMLHttpRequest()
@@ -11,12 +11,11 @@
 
 	const versions = JSON.parse(xhttp.responseText).map(e => { return e.tag_name.split(".", 2).join(".") })
 
-	const removeDuplicatedVersions = [...new Set(versions)]
+	const removeDuplicatedVersions = [...new Set(versions)];
 
 	const div = `<div class="dropdown-menu" aria-labelledby="navbarDropdown">`
 
 	const versionsList = removeDuplicatedVersions.map((version) => {
-  
 		return `<a class="dropdown-item" href="https://docs.ritchiecli.io/${version}/">${version}</a>`
 	})
 

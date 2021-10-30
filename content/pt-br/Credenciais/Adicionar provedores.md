@@ -6,7 +6,10 @@ description: Nesta seção, você vai encontrar como adicionar provedores ao Rit
 
 ---
 
-É possível também configurar o Ritchie para adicionar novos provedores no seu espaço de trabalho. Para fazer isso, basta selecionar a opção "**Add a new**" rodando o comando **`rit set credential`**. 
+É possível configurar o Ritchie para adicionar novos provedores no seu espaço de trabalho.
+
+Para fazer isso:
+1. Selecione a opção "**Add a new**" rodando o comando **`rit set credential`**:
 
 ```text
 ? Select your provider Add a new
@@ -18,16 +21,16 @@ description: Nesta seção, você vai encontrar como adicionar provedores ao Rit
 ✔ Provider_Name credential saved!
 ```
 
-As informações que o Ritchie irá solicitar são:
+As informações que o Ritchie solicita são:
 
-* **Provider name:** Nome do novo provedor. Você pode nomear de acordo com sua preferência
+* **Provider name:** Nome do novo provedor. Você pode nomear de acordo com sua preferência.
 * **Field name:** Nome da credencial que está nesse provedor.
 * **Field type:** Tipo de valor dessa credencial. Ele pode ser: **plain text** ou **secret**. 
 
-Ao terminar essa configuração, você poderá configurar as credenciais seguindo as instruções acima. 
+Ao terminar essa configuração, você pode configurar as credenciais seguindo as instruções acima. 
 
 {{% alert color="warning" %}}
 
-Esse provedor, assim como suas informações, serão salvas de forma permanente no Ritchie. No entanto, você ainda poderá adicionar quantos provedores quiser. 
+Esse provedor, assim como as suas informações, serão salvas de forma permanente no Ritchie. No entanto, você pode adicionar quantos provedores quiser. 
 
 {{% /alert %}}

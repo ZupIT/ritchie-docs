@@ -8,15 +8,15 @@ description: >-
 
 This tutorial will help you to create and configure a Github Action workflow to test your formula outputs.
 
-## Requirements
+## **Requirements**
 
 - You need to have the **`rit math sum numbers`** formula on a Github repository. 
 - You need a **.github/workflows** directory created on the Github repository.
 
 
-## How can you do that? 
-Follow the next steps to test a formula: 
+## **How can you do that?** 
 
+Follow the next steps to test a formula: 
 
 **Step 1:** Create a file on the **.github/workflows** directory named **`test-formula-sum-numbers.yml`**.
 
@@ -52,7 +52,7 @@ jobs:
 
 ```
 
-**Step 2:** After you commit and push your code, go to the **Actions tab’s repository**:
+**Step 2:** After you commit and push your code, go to the **Actions** tab’s repository:
 
 ![](/shared/actions-tab.PNG)
 
@@ -63,6 +63,6 @@ You will see the **workflow run** being executed (or the result of its execution
 
 That’s it, **each push** to the repository will now trigger this workflow and you can also check if the formula is behaving correctly.
 
- You are able to update the workflow implementation to trigger only when the formula’s root directory is updated, or to test more scenarios according to the formula's inputs.
+You are able to update the workflow implementation to trigger only when the formula’s root directory is updated, or to test more scenarios according to the formula's inputs.
 
-For more information about workflow syntax, check out [**Github Documentation**](https://docs.github.com/en/enterprise-server@3.0/actions/reference/workflow-syntax-for-github-actions) to see what you can do. 
+For more information about workflow syntax, check out [**Github Documentation**](https://docs.github.com/en/enterprise-server@3.0/actions/reference/workflow-syntax-for-github-actions). 

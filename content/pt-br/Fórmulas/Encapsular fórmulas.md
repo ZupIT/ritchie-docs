@@ -1,12 +1,12 @@
 ---
 title: Encapsular fórmulas
 weight: 51
-description: 'Nesta seção, você vai entender o que é e como encapsular fórmulas em Ritchie.'
+description: 'Nesta seção, você vai entender o que é e como encapsular fórmulas no Ritchie.'
 ---
 
 ---
 
-## O que é encapsulamento?
+## **O que é encapsulamento?**
 
 No Ritchie, é possível **executar fórmulas dentro de fórmulas**. Esse processo é chamado de **Encapsulamento de Fórmula**. 
 
@@ -14,18 +14,15 @@ Essa função permite que você, por exemplo, realize operações em que é nece
 
 A seguir, veja como você pode fazer esse processo de encapsulamento: 
 
-## Como encapsular?
+## **Como encapsular?**
 
-### 1. Premissa 
+### **1. Premissa** 
 
-Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inputs**. Na página a seguir, temos uma explicação mais detalhada de como ela funciona:
+Para realizar um encapsulamento de fórmula, é necessário usar **Standard Inputs**. Para mais informações, veja a [**seção de Standard Inputs**]({{< ref path="Standard inputs" >}}).
 
-👉 [**Standard Inputs**]({{< ref path="/Standard Inputs/visao geral.md" >}})
+### **2. Execução**
 
-
-### 2. Execução
-
-Ao [**implementar uma fórmula**]({{< ref path="/Fórmulas/Criar fórmulas.md" >}}), você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.
+Ao [**implementar uma fórmula**]({{< ref path="Fórmulas/Arquivo config" >}}), você precisa pegar o arquivo onde a operação está codificada e executar a linha de comando associada à fórmula encapsulada.
 
 A linha de comando da fórmula encapsulada deve ser executada utilizando **Standard Inputs** e informando os seus parâmetros de entradas diretamente no código.
 
@@ -36,7 +33,9 @@ A fórmula **`rit publish repo`** foi implementada usando o encapsulamento de f�
 No exemplo abaixo, você verá como esse encapsulamento funciona na parte do código usando **`Input flags`**. 
 
 {{% alert color="warning" %}}
-Vale reforçar que essa fórmula foi implementada usando **Shell**, mas o raciocínio seria o mesmo para qualquer outra linguagem de programação.
+
+- Essa fórmula foi implementada usando **`Shell`**, mas o raciocínio é o mesmo para qualquer outra linguagem de programação.
+
 {{% /alert %}}
 
 ```text
@@ -55,19 +54,15 @@ runFormula() {
 }
 ```
 
-Aqui, de acordo com a entrada informada pelo usuário, duas fórmulas diferentes podem ser executadas: 
+De acordo com a entrada informada pelo usuário, duas fórmulas diferentes podem ser executadas: 
 
 1. **`rit github publish repo`**
 2. **`rit gitlab publish repo`**
 
-Para tanto, os parâmetros de entrada das fórmulas encapsuladas são informados dinamicamente de acordo com os parâmetros de entrada da fórmula principal \(**`rit publish repo`**\).
+Para tanto, os parâmetros de entrada das fórmulas encapsuladas são informados dinamicamente de acordo com os parâmetros de entrada da fórmula principal (**`rit publish repo`**).
 
 Dependendo da operação, os **`inputs flags`** do comando podem ser gerados de acordo com outras operações realizadas durante a execução da fórmula principal, antes de executar a linha de comando da fórmula encapsulada.
 
-## Próximos passos 
-
-Nessa seção, você viu como funciona o encapsulamento de fórmulas no Ritchie.  Para continuar lendo sobre os comandos do Ritchie:
-
-👉 Veja os [**tutoriais**]({{< ref path="Tutoriais.md" >}}) que criamos para você praticar as diversas funcionalidades do Ritchie.
-
-👉 Cheque a [**lista de comandos**]({{< ref path="/Referência/Lista de comandos e flags.md" >}}) para ver as automações disponíveis no repo da nossa comunidade.
+### **Aprenda Mais** 
+- Veja os [**tutoriais**]({{< ref path="Tutoriais" >}}) que criamos para você praticar as diversas funcionalidades do Ritchie.
+- Veja a [**lista de comandos**]({{< ref path="Referência/Lista de comandos e flags" >}}) para ver as automações disponíveis no repositório da nossa comunidade.

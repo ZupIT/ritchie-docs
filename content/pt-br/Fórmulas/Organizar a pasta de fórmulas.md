@@ -7,34 +7,34 @@ description: >-
 
 ---
 
-## O que é uma pasta de fórmula \(formula folder\)?
+## **O que é uma pasta de fórmula?**
 
 Esta pasta contém arquivos com comportamento da fórmula.
 
 {{% alert color="warning" %}}
 
-A estrutura das pastas define os comandos tree, por isso **não é recomendando que você atualize o nome dessas pastas**, ou inclua mais arquivos e/ou pastas, a menos que seja uma **pasta src/\*.**
+A estrutura das pastas define os comandos tree, por isso **não é recomendando que você atualize o nome dessas pastas**, ou inclua mais arquivos e/ou pastas, a menos que seja uma **pasta src/*.**
 
 {{% /alert %}}
 
 Cada linguagem de programação possui suas próprias especificidades, mas a estrutura da fórmula é quase a mesma. Não importa em qual linguagem seja usada, ela irá conter:
 
 | Arquivo | Descrição |
-| :--- | :--- |
-| `config.json` | arquivo para configurar os parâmetros de entrada da fórmula. |
-| `main file` | arquivo para extrair variáveis locais. |
-| `pkg/formula file` | arquivo para implementar a operação da fórmula.  |
-| `Dockerfile` | arquivo para "buildar" imagens no Docker.  |
-| `README file` | arquivo para explicar o que faz uma fórmula. |
-| `Makefile file` | arquivo para compilar o código da fórmula \(_será depreciado em 03/2021_\). |
-| `build.sh file` | arquivo para compilar o código da fórmula em shell |
-| `metadata.json file` | arquivo para "taguear" informações de uma fórmula  |
-| `set_unmask.sh file` | arquivo usado pelo `Makefile file` |
-| `help.json files` | arquivos usados para configurar mensagens de ajuda da fórmula no CLI. |
+| :------------------- | :------------------------------------------------------------------------ |
+| `config.json`        | Arquivo para configurar os parâmetros de entrada da fórmula.              |
+| `main file`          | Arquivo para extrair variáveis locais.                                    |
+| `pkg/formula file`   | Arquivo para implementar a operação da fórmula.                           |
+| `Dockerfile`         | Arquivo para "buildar" imagens no Docker.                                 |
+| `README file`        | Arquivo para explicar o que faz uma fórmula.                              |
+| `Makefile file`      | Arquivo para compilar o código da fórmula (_será depreciado em 03/2021_). |
+| `build.sh file`      | Arquivo para compilar o código da fórmula em shell.                        |
+| `metadata.json file` | Arquivo para "taguear" informações de uma fórmula.                         |
+| `set_unmask.sh file` | Arquivo usado pelo `Makefile file`                                        |
+| `help.json files`    | Arquivos usados para configurar mensagens de ajuda da fórmula no CLI.     |
 
-Você pode encontrar todos os [**templates de linguagens**](https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages) no repositório ritchie-formulas.
+- Você pode encontrar todos os [**templates de linguagens**](https://github.com/ZupIT/ritchie-formulas/tree/master/templates/create_formula/languages) no repositório [**ritchie-formulas**](https://github.com/ZupIT/ritchie-formulas).
 
-### Exemplos de pastas de fórmulas
+### **Exemplos de pastas de fórmulas**
 
 {{< tabs id="T" >}}
 {{% tab name="Golang" %}}
@@ -42,10 +42,10 @@ Você pode encontrar todos os [**templates de linguagens**](https://github.com/Z
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
-* **config.json:** alterar os _**inputs**_ e suas configurações.
-* **main.go:** extrair os inputs, e chamar os métodos da fórmula \(na pasta **formula/\***\).
-* **formula/\*:** implementar a lógica da fórmula.
-* **help.json:** alterar a mensagem de descrição do comando ou sub-comando.
+* **config.json:** Alterar os _**inputs**_ e suas configurações.
+* **main.go:** Extrair os inputs, e chamar os métodos da fórmula (na pasta **formula/\***).
+* **formula/*:** Implementar a lógica da fórmula.
+* **help.json:** Alterar a mensagem de descrição do comando.
 {{% /tab %}}
 
 {{% tab name="Java" %}}
@@ -53,10 +53,10 @@ De acordo com a imagem acima, você deve editar os arquivos:
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
-* **config.json:** alterar os _**inputs**_ e suas configurações.
-* **main.java:** extrair os inputs, e chamar os métodos da fórmula \(na pasta **formula/\***\).
-* **formula/\*:** implementar a lógica da fórmula.
-* **help.json:** alterar a mensagem de descrição do comando ou sub-comando.
+* **config.json:** Alterar os _**inputs**_ e suas configurações.
+* **main.java:** Extrair os inputs, e chamar os métodos da fórmula (na pasta **formula/\***).
+* **formula/*:** Implementar a lógica da fórmula.
+* **help.json:** Alterar a mensagem de descrição do comando.
 {{% /tab %}}
 
 {{% tab name="Node" %}}
@@ -64,10 +64,10 @@ De acordo com a imagem acima, você deve editar os arquivos:
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
-* **config.json:** alterar os _**inputs**_ e suas configurações.
-* **index.js:** extrair os inputs, e chamar os métodos da fórmula \(na pasta **formula/\***\).
-* **formula/\*:** implementar a lógica da fórmula.
-* **help.json:** alterar a mensagem de descrição do comando ou sub-comando.
+* **config.json:** Alterar os _**inputs**_ e suas configurações.
+* **index.js:** Extrair os inputs, e chamar os métodos da fórmula (na pasta **formula/\***).
+* **formula/*:** Implementar a lógica da fórmula.
+* **help.json:** Alterar a mensagem de descrição do comando.
 {{% /tab %}}
 
 {{% tab name="Python" %}}
@@ -75,10 +75,10 @@ De acordo com a imagem acima, você deve editar os arquivos:
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
-* **config.json:** alterar os _**inputs**_ e suas configurações.
-* **main.py:** extrair os inputs, e chamar os métodos da fórmula \(na pasta **formula/\***\).
-* **formula/\*:** implementar a lógica da fórmula.
-* **help.json:** alterar a mensagem de descrição do comando ou sub-comando.
+* **config.json:** Alterar os _**inputs**_ e suas configurações.
+* **main.py:** Extrair os inputs, e chamar os métodos da fórmula (na pasta **formula/\***).
+* **formula/*:** Implementar a lógica da fórmula.
+* **help.json:** Alterar a mensagem de descrição do comando.
 {{% /tab %}}
 
 {{% tab name="Shell" %}}
@@ -86,15 +86,9 @@ De acordo com a imagem acima, você deve editar os arquivos:
 
 De acordo com a imagem acima, você deve editar os arquivos:
 
-* **config.json:** alterar os _**inputs**_ e suas configurações.
-* **main.sh:** extrair os inputs, e chamar os métodos da fórmula \(na pasta **formula/\***\).
-* **formula/\*:** implementar a lógica da fórmula.
-* **help.json:** alterar a mensagem de descrição do comando ou sub-comando.
+* **config.json:** Alterar os _**inputs**_ e suas configurações.
+* **main.sh:** Extrair os inputs, e chamar os métodos da fórmula (na pasta **formula/\***).
+* **formula/*:** Implementar a lógica da fórmula.
+* **help.json:** Alterar a mensagem de descrição do comando.
 {{% /tab %}}
 {{< /tabs >}}
-
-{{% alert color="warning" %}}
-
-As pastas e suas respectivas estruturas são o que definem o comando, então não é indicado alterar os nomes ou incluir mais pastas/arquivos **que não estejam dentro da pasta src/\***.
-
-{{% /alert %}}

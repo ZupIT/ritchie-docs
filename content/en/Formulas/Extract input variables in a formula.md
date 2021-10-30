@@ -6,13 +6,13 @@ description: 'In this section, you will find information about a formula main cl
 
 ---
 
-## What is the main file?
+## **What is the main file?**
 
 {{% alert color="info" %}}
 
-The main file is used to extract the **inputs** asked in the config.json file, saved as **local variables.**   
-  
-_Inputs are extracted by the field **name** informed on the config.json file **UPPERCASE**._ 
+The main file is used to extract the **inputs** asked in the config.json file, saved as **local variables.**
+
+- Inputs are extracted by the field **name** informed on the config.json file **UPPERCASE**.
 
 {{% /alert %}}
 
@@ -20,7 +20,7 @@ This file is also where the formula functions, manipulating the input parameters
 
 ### Main file examples
 
-In our examples below, there is always an existing `formula` class with a `Run()` function.
+Check out the examples below, there is always an existing **`formula`** class with a **`Run()`** function:
 
 {{< tabs id="T1" >}}
 {{% tab name="main.go" %}}

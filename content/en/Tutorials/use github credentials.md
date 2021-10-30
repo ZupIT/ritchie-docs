@@ -6,23 +6,28 @@ description: 'In this section, you will find a tutorial on how to use credential
 
 In this tutorial you will learn how to create a formula on Ritchie that will return a JSON with Github credentials.
 
-The tutorial configures the inputs inside the **config.json** file, but run the formula without informing them as `prompt` or `stdin` \(they will be extracted automatically\). You'll find more information in the [**input configuration**]({{< ref path="/Credentials/Set credentials.md" >}})  section.
+The tutorial configures the inputs inside the **config.json** file, but run the formula without informing them as `prompt` or `stdin` (they will be extracted automatically). You'll find more information in the [**input configuration**]({{< ref path="Formulas/Configure inputs" >}}) section.
 
 {{% alert color="info" %}}
-Command suggestion: **`rit github get user`**
+
+Command suggestion: **`rit github get user`**.
+
 {{% /alert %}}
 
-## Inputs
+## **Inputs**
 
-This formula must have \(at least\) three input parameters. See below:
+This formula must have (at least) three input parameters. See below:
 
-1. Username  \(`RIT_GITHUB_USER`\).  
-2. Token  \(`RIT_GITHUB_TOKEN`\).
-3. Email  \(`RIT_GITHUB_EMAIL`\).
+1. Username (`RIT_GITHUB_USER`).
+2. Token (`RIT_GITHUB_TOKEN`).
+3. Email (`RIT_GITHUB_EMAIL`).
 
 ## How can you do that? 
+
 {{% alert color="info" %}}
+
 This is the same for all programming languages.
+
 {{% /alert %}}
 
 Search for the `config.json` file of your formula and replace it the **`inputs`** field for the block below: 
@@ -47,7 +52,7 @@ Search for the `config.json` file of your formula and replace it the **`inputs`*
 Follow the steps below to create your formula:
 
 ### **Step 1: Extract all inputs parameters**
-Search for the **`main`**  file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
+Search for the **`main`** file of tour formula and extract all the inputs before using them to call your formula's method. See some code example below:
 
 {{< tabs id="T1" >}}
 {{% tab name="Python" %}}
@@ -119,9 +124,9 @@ run(USERNAME, TOKEN, EMAIL)
 {{% /tab %}}
 {{< /tabs >}}
 
-
 {{% alert color="warning" %}}
-This file follows the  **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
+
+This file follows the **`main.*`** nomenclature for most languages, except Node that it calls **`index.js`**.
 {{% /alert %}}
 
 ### **Step 2: Implement the formula's operation**
@@ -253,7 +258,9 @@ module.exports = formula
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Depending on the language, it can be necessary add some dependencies in the related files (`pom.xml` for **Java**, `requirements.txt` for **Python**, `package.json` for **Node**, `go.mod` for **Golang**,  etc).
+
+Depending on the language, it can be necessary add some dependencies in the related files (`pom.xml` for **Java**, `requirements.txt` for **Python**, `package.json` for **Node**, `go.mod` for **Golang**, etc).
+
 {{% /alert %}}
 
 ### **Step 3: Test the formula on your terminal**
@@ -274,14 +281,16 @@ Depending on the language, it can be necessary add some dependencies in the rela
 ```
 
 {{% alert color="info" %}}
+
 If you want to test your formula more, see some suggestions below:
 * Develop some Github operation by manipulating these credentials.
 * Code a formula which will allow the user to create a repository on Github. 
 * Code a formula which will allow the user to **add**, **commit** and **push** using only one command. 
 * Code a formula which will allow the user to generate a **release** of the informed Github repository.
+
 {{% /alert %}}
 
 
 ## **Next steps** 
 
-👉 If you've completed the second tutorial, go to the third [**How to use conditional inputs**]({{< ref path="/Tutorials/conditional inputs.md" >}}).
+👉 If you've completed the second tutorial, go to the third [**How to use conditional inputs**]({{< ref path="Tutorials/conditional inputs" >}}).

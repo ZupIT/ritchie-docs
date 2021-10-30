@@ -1,14 +1,14 @@
 ---
 title: Set credentials
 weight: 55
-description: In this section, you will find how to set credentials.
+description: In this section, you will find how to set credentials. 
 ---
 
 ---
 
-You have to set Ritchie's credentials to avoid informing data multiples times through the terminal.
+You have to set Ritchie's credentials to avoid inform data multiples times through the terminal.
 
-To do so, just run the following command: 
+To do so, run the following command: 
 
 ```text
 rit set credential
@@ -17,7 +17,7 @@ rit set credential
 The terminal will return this message: 
 
 ```text
-? Select your provider  [Use arrows to move, type to filter]
+? Select your provider [Use arrows to move, type to filter]
 > kubeconfig
   ansible
   aws
@@ -38,5 +38,7 @@ After you chose one of the available providers, Ritchie will ask you to fill the
 ```
 
 {{% alert color="info" %}}
-You can check out on [**formula's editable files**]({{< ref path="/Formulas/Organize the Formula Folder.md" >}}) to see how to manipulate the credentials defined in the session as formula input parameters \(inputs in the config.json file\).
+
+For more information about the formula's editable files and to see how to manipulate the credentials defined in the session as formula input parameters (inputs in the config.json file), check out the [**Formulas section**]({{< ref path="Formulas/Organize the formula folder" >}}).
+
 {{% /alert %}}

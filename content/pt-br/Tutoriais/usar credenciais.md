@@ -1,28 +1,33 @@
 ---
 title: Como usar credenciais do GitHub
 weight: 86
-description: 'Nesta seção, você encontrará o passo a passo para usar credenciais no Ritchie.'
+description: 'Nesta seção, você vai encontrar o tutorial para usar credenciais no Ritchie.'
 ---
 
 Neste tutorial, a ideia é criar uma fórmula que vai retornar um JSON contendo as credenciais do Github.
 
-O tutorial configura os parâmetros de entrada dentro do arquivo config.json, mas executar a fórmula sem informá-los usando prompt ou stdin (serão extraídos automaticamente). Você encontrará todas as informações necessárias na seção de [**configurar inputs**]({{< ref path="/Fórmulas/Arquivo Config.md" >}}).
+O tutorial configura os parâmetros de entrada dentro do arquivo **config.json**, mas executar a fórmula sem informá-los usando `prompt` ou `stdin`(serão extraídos automaticamente). Você encontrará todas as informações necessárias na seção de [**configurar inputs**]({{< ref path="Fórmulas/Arquivo config" >}}).
 
 {{% alert color="info" %}}
-Sugestão de comando: **`rit github get user`**
+
+Sugestão de comando: **`rit github get user`**.
+
 {{% /alert %}}
 
-## Parâmetros de entrada
+## **Parâmetros de entrada**
 
-Essa fórmula deverá conter \(pelo menos\) três parâmetros de entrada. Veja como abaixo:
+Essa fórmula deverá conter (pelo menos) três parâmetros de entrada. Veja como abaixo:
 
-1. Username  \(`RIT_GITHUB_USER`\). 
-2. Token  \(`RIT_GITHUB_TOKEN`\).
-3. Email  \(`RIT_GITHUB_EMAIL`\).
+1. Username (`RIT_GITHUB_USER`). 
+2. Token (`RIT_GITHUB_TOKEN`).
+3. Email (`RIT_GITHUB_EMAIL`).
 
 ## Como fazer isso? 
+
 {{% alert color="info" %}}
+
 Essa parte é comum para todas as linguagens de programação.
+
 {{% /alert %}}
 
 Procure pelo arquivo `config.json` da sua fórmula e substitua o campo **`inputs`** pelo bloco abaixo:
@@ -119,9 +124,10 @@ run(USERNAME, TOKEN, EMAIL)
 {{% /tab %}}
 {{< /tabs >}}
 
-
 {{% alert color="warning" %}}
+
 Esse arquivo segue a nomenclatura **`main.*`** para a maioria das linguagens, exceto para o Node que chama **`index.js`**.
+
 {{% /alert %}}
 
 ### **Passo 2: Implemente a operação da fórmula**
@@ -253,7 +259,9 @@ module.exports = formula
 {{< /tabs >}}
 
 {{% alert color="warning" %}}
-Dependendo da linguagem, pode ser necessário adicionar algumas dependências nos arquivos relacionados (`pom.xml` para **Java**, `requirements.txt` para **Python**, `package.json` para **Node**, `go.mod` para **Golang**,  etc).
+
+Dependendo da linguagem, pode ser necessário adicionar algumas dependências nos arquivos relacionados (`pom.xml` para **Java**, `requirements.txt` para **Python**, `package.json` para **Node**, `go.mod` para **Golang**, etc).
+
 {{% /alert %}}
 
 ### **Passo 3: Teste a fórmula no terminal**
@@ -274,14 +282,16 @@ Dependendo da linguagem, pode ser necessário adicionar algumas dependências no
 ```
 
 {{% alert color="info" %}}
+
 Se você quiser incrementar essa fórmula, veja algumas sugestões abaixo: 
 * Desenvolva alguma operação Github manipulando essas credenciais.
 * Codifique uma fórmula que permitirá ao usuário criar um repositório no Github.
 * Codifique uma fórmula que permitirá ao usuário fazer um **add**, **commit** e **push** usando apenas um comando.
 * Codifique uma fórmula que permitirá ao usuário gerar uma **release** do repositório Github informado.
+
 {{% /alert %}}
 
 
 ## **Próximos passos** 
 
-👉 Se você completou o segundo tutorial, vá para o terceiro [**Como usar os inputs condicionais?**]({{< ref path="/Tutoriais/usar inputs condicionais.md" >}}).
+👉 Se você completou o segundo tutorial, vá para o terceiro [**Como usar os inputs condicionais?**]({{< ref path="Tutoriais/usar inputs condicionais" >}}).
