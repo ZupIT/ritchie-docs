@@ -1,7 +1,7 @@
 ---
 title: Instalação do CLI para Windows
 weight: 12
-description: 'Nesta seção, você vai encontrar como instalar o Ritchie para Windows.'
+description: "Nesta seção, você vai encontrar como instalar o Ritchie para Windows."
 ---
 
 ---
@@ -10,7 +10,7 @@ Para instalar a **última versão do Ritchie**, você precisa fazer o **download
 
 ## **Passo 1: Faça download do instalador**
 
-Você tem duas formas de instalar o Ritchie: 
+Você tem duas formas de instalar o Ritchie:
 
 - Usando esse link da [**última versão**](https://commons-repo.ritchiecli.io/latest/ritchiecli.msi).
 - Ou qualquer versão usando a URL no seu navegador, substituindo o campo `{VERSION}` de acordo com [**a tag do repositório do projeto**](https://github.com/ZupIT/ritchie-cli/tags):
@@ -34,6 +34,8 @@ https://commons-repo.ritchiecli.io/2.12.0/installer/ritchiecli.msi
 ```bash
 winget install Ritchie-CLI
 ```
+
+Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
 
 Agora, siga as instruções que irão aparecer no seu terminal ao executar o comando `rit`.
 
