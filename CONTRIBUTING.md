@@ -23,7 +23,7 @@ This is Ritchies's documentation contributing guide. We'd love to accept your pa
 This project follows [**Google's Open Source Community Guidelines**](https://opensource.google.com/conduct/).
 
 ## **Prerequisites**
-Check out the requisites before contributing to CharlesCD documentation:
+Check out the requisites before contributing to Ritchie CLI documentation:
 
 ### **Developer Certificate of Origin - DCO**
 
@@ -86,8 +86,8 @@ Follow the steps below:
 
 **Step 4.** Open a pull request open a PR to the published branch, i. e., **`release-VERSION`** and fill in the template; 
 
-**Step 5.** CharlesCD's team will check your issue, review it, and then approve your PR. 
-Is this the first CharlesCD repository you visit? Check out other [**repositories**](https://github.com/ZupIT/ritchie-cli).
+**Step 5.** Ritchie's team will check your issue, review it, and then approve your PR. 
+Is this the first Ritchie CLI repository you visit? Check out other [**repositories**](https://github.com/ZupIT/ritchie-cli).
 
 Every time that a new release is created, we save the current work into a new branch, called `release-VERSION`.
 

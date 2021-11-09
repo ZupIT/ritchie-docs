@@ -1,5 +1,6 @@
 # **Ritchie CLI Documentation**
-This repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) and contains [**Ritchie CLI**](https://ritchiecli.io/) official documentation. 
+
+This repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) and contains [**Ritchie CLI**](https://docs.ritchiecli.io/) official documentation. 
 
 ## **Table of contents**
 ### 1. [**About**](#About)
