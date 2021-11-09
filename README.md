@@ -12,9 +12,8 @@ This repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) 
 5. [**Community**](#community)
 
 ## **About** 
-### All your automations in one place
 
-**Ritchie CLI** is an open source project that allows to **create**, **store** and **share** automations, executing them through command lines.
+**Ritchie CLI** is an open source project that allows to create, store and share automations, executing them through command lines.
 
 For more information, check out [**Ritchie's documentation**](https://docs.ritchiecli.io).
 
@@ -69,7 +68,7 @@ npm start
 
 ### **Running the website locally**
 
-Once you've cloned this repo, from the `root` folder, run:
+Once you've cloned this repo, from the `root` folder, run the command:
 
 ```
 hugo server
@@ -77,7 +76,7 @@ hugo server
 
 ## **How to contribute?**
 
-You can suggest a change, a fix, or improvements to our documentation, for example: 
+You can suggest a change, a fix, or improvements to our documentation, such as: 
 - Add missing information.
 - Fix a grammar or code error.
 - Suggest a new section.
