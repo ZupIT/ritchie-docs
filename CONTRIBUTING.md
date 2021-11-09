@@ -4,9 +4,8 @@ This is Ritchies's documentation contributing guide. We'd love to accept your pa
 
 ## **Table of contents**
 ### 1. [**Before you contribute**](#before-you-contribute)
-> #### i.  [**Contributor License Agreement**](#contributor-license-agreement)
-> #### ii. [**Legal**](#legal)
-> #### iii. [**Community Guidelines**](#community-guidelines)
+> #### i. [**Legal**](#legal)
+> #### ii. [**Community Guidelines**](#community-guidelines)
 ### 2. [**Prerequisites**](#prerequisites)
 > #### i.   [**Developer Certificate of Origin**](#developer-certificate-of-origin)
 ### 3. [**How to contribute?**](#how-to-contribute?)
@@ -15,17 +14,6 @@ This is Ritchies's documentation contributing guide. We'd love to accept your pa
 
 
 ## **Before you contribute**
-
-### **Contributor License Agreement**
-
-Contributions to this project must be accompanied by a Contributor License
-Agreement. You (or your employer) retain the copyright to your contribution;
-this simply gives us permission to use and redistribute your contributions as
-part of the project. For more information, check out [**Contributor License Agreements**](https://cla.developers.google.com/) to see your current agreements on file or to sign a new one.
-
-You generally only need to submit a CLA once, so if you've already submitted one
-(even if it was for a different project), you probably don't need to do it
-again.
 
 ### **Legal**
 - Ritchie's documentation is licensed over [**Creative Commons**](https://creativecommons.org/get-cc-savvy/breaking-cc-licenses/).
