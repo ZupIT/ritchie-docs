@@ -3,6 +3,7 @@ name: S3 upload
 on:
   push:
     branches: [release*]
+  workflow_dispatch:
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PRD }}
