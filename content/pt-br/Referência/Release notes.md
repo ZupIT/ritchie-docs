@@ -7,13 +7,22 @@ description: >-
 
 {{% release/group %}}
 {{% release/item type="feature"  date="Julho 2021" %}}
-Adição de um **input flag support** para todos os comandos core.
+Adição do comando **'rit list formulas'**.
 
-Adição do comando core **rit update workspace** para habilitar atualização dos workspaces depois do git pull em repositórios locais.
+Adição de uma atualização com a opção para executar a última versão de uma fórmula quando ativada. 
+ 
+Adição de uma biblioteca para dar suporte a internacionalização do Ritchie-CLI. 
 
-Adição de um status path para o comando core **rit list workspace**. 
+Adição da primeira parte do recurso de saída da fórmula.
 
-Adição da opção de criar um novo workspace com o comando core **rit create formula** (quando o path informado não existe).
+Detecção da nova versão do repo usando o cache.
+
+Criação de uma configuração para forçar a execução da fórmula na versão mais recente.
+
+Adição de uma configuração para mount volumes via **config.json**.
+
+Criação da fórmula e verificação do arquivo **config.json** para ver a tag da release.
+
 
 {{% /release/item %}}
 
@@ -22,17 +31,26 @@ Adição da opção de criar um novo workspace com o comando core **rit create f
 Atualização da execução de uma fórmula com Docker para evitar a criação de arquivos com o dono root. 
 
 Adição de um suporte para Docker da versão mais nova até a mais antiga para usuários do MacOS e WSL.
+
+Correção das saídas de fórmulas (formulas outputs).
 {{% /release/item  %}}
 
 
 {{% release/item type="chore" date="Julho 2021" %}}
-Adição de uma verificação para evitar usar nomes de workspaces com espaço e caracteres especiais. 
+Adição de testes e sinalizadores de suporte para **rit delete repo**.
 
-Adição de testes funcionais para checar o comportamento dos comandos core no Ubuntu, Windows e macOS.
+Melhoria na mensagem de erro no repositório de atualização. 
 
-Melhoria no readme e na seção de contribuição. 
+Melhoria para salvar e reutilizar credenciais de repositórios para repositórios privados.
 
-Adição da seção de **segurança**.
+Testes de refatoração dos pacotes das flags.
+
+Adição de testes com o testify para repositórios delete. 
+
+Remoção do bot stale.
+
+Melhoria das métricas extraídas pelas input flags.
+
 {{% /release/item  %}}
 
 {{% release/item type="docs"  date="Junho 2021" %}}
