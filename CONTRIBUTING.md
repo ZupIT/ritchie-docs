@@ -4,10 +4,10 @@ This is Ritchies's documentation contributing guide. We'd love to accept your pa
 
 ## **Table of contents**
 ### 1. [**Before you contribute**](#before-you-contribute)
-> #### i. [**Legal**](#legal)
-> #### ii. [**Community Guidelines**](#community-guidelines)
+> #### 1.1. [**Legal**](#legal)
+> #### 1.2. [**Community Guidelines**](#community-guidelines)
 ### 2. [**Prerequisites**](#prerequisites)
-> #### i.   [**Developer Certificate of Origin**](#developer-certificate-of-origin)
+> #### 2.1.   [**Developer Certificate of Origin**](#developer-certificate-of-origin)
 ### 3. [**How to contribute?**](#how-to-contribute?)
 ### 4. [**Code of Conduct**](#code-of-conduct)
 ### 5. [**Community**](#community)
@@ -54,7 +54,7 @@ You can also manually sign your commits during GitHub reviews and suggestions, f
 Signed-off-by: Name < e-mail address >
 ```
 
-For this method, your name and e-mail must be the same registered to your GitHub account.
+For this method, your name and e-mail must be the same registered on your GitHub account.
 
 ### **Pull Requests**
 When you open a PR, follow the requisites below:
