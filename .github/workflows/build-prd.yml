@@ -54,7 +54,7 @@ jobs:
       - name: Or else, get docs_version from workflow_dispatch
         if: ${{ github.event.inputs.docs_version }}
         id: version-if-docs_version
-        run: echo "::set-output name=branch_version::$(echo $(github.event.inputs.docs_version))"
+        run: echo "::set-output name=branch_version::'${{ github.event.inputs.docs_version }}'"
         shell: bash
 
       - name: Config version path
