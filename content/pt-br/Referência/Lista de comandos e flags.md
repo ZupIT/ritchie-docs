@@ -29,13 +29,11 @@ description: "Nesta seção, você vai encontrar uma lista com principais comand
 
 ### **Comandos de Fórmulas**
 
-
 | Command                     | Operation                                                                               |
 | :-------------------------- | :-------------------------------------------------------------------------------------- |
 | rit create formula          | cria uma nova fórmula do zero (como também um novo repositório local, se necessário)    |
 | rit build formula           | compila uma fórmula localmente para teste                                               |
 | rit build formula --watch   | compila uma fórmula para teste, monitorando atualizações do código no tempo real        |
-| rit rename formula          | renomeia uma fórmula local                                                              |
 | rit list formula            | lista todas as fórmulas disponíveis em um/todos repositórios                            |
 
 {{% alert color="danger" %}}
@@ -76,7 +74,6 @@ O comando rit build formula foi depreciado a partir da versão 2.5.0 do Ritchie.
 | rit list workspace   | lista todas as fórmulas do workspace                                              |
 | rit add workspace    | adiciona um novo workspace                                                        |
 | rit delete workspace | apaga um workspace                                                                |
-| rit update workspace | atualiza um workspace (para acessar novas fórmulas desse workspace com o Ritchie) |
 
 ## **Flags**
 

@@ -34,7 +34,6 @@ description: In this section, you will find the list of Ritchie's main commands
 | rit create formula          | create a new formula from scratch (as well as a new local repository if necessary)      |
 | rit build formula           | build a formula locally for test                                                        |
 | rit build formula --watch   | build a formula monitoring the code to update real time changes                         |
-| rit rename formula          | rename a local formula                                                                  |
 | rit list formula            | list all available formulas from specific/all repositories                              |
 
 
@@ -63,10 +62,11 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 
 ### **Credential commands**
 
-| Commands            | Operation                            |
-| :------------------ | :----------------------------------- |
-| rit set credential  | set new credentials for the context  |
-| rit list credential | list all credential names and fields |
+| Commands              | Operation                            |
+| :-------------------- | :----------------------------------- |
+| rit set credential    | set new credentials for the context  |
+| rit list credential   | list all credential names and fields |
+| rit delete credential | delete a credential                  |
 
 ### **Workspace commands**
 
@@ -81,8 +81,8 @@ The rit build formula command was deprecated from Ritchie's version 2.5.0.
 
 ### **Main flags**
 
-| Flags     | Operation                                                              |
-| :-------- | :--------------------------------------------------------------------- |
+| Flags     | Operation                                                               |
+| :-------- | :---------------------------------------------------------------------- |
 | -\-default | attribute the **default** values configured on the formula.            |
 | -\-docker  | run a formula using **Docker**                                         |
 | -\-help    | returns a list of executable available commands and flags for the user |
