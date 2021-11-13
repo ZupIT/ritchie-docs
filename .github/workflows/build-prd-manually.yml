@@ -5,6 +5,9 @@ on:
         docs_version:
           description: 'Docs version (e.g.: v2.11, to be used in the URL & S3 bucket regardless of the branch name -- if not set, the semver segment from the branch name is used)'
           required: true
+        checkout_ref:
+          description: 'The branch, tag or SHA to checkout. When checking out the repository that triggered a workflow, this defaults to the reference or SHA for that event. Otherwise, uses the default branch.'
+          required: false
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PRD }}
@@ -17,6 +20,7 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
+          ref: ${{ github.event.inputs.checkout_ref }}
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
