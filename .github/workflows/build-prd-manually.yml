@@ -42,6 +42,10 @@ jobs:
       - name: Install dependencies
         run: yarn
 
+      - name: Config proxy
+        run: sed -i "s/\${latest_version}/${{ github.event.inputs.docs_version }}/" .github/workflows/proxy/index.html
+        shell: bash
+
       - name: Config version path
         shell: bash
         run: sed -i -E "s/version_path = .*/version_path = \"\/${{ github.event.inputs.docs_version }}\"/g" config.toml
@@ -53,6 +57,9 @@ jobs:
 
       - name: S3 upload
         run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET/${{ github.event.inputs.docs_version }}/ --delete
+
+      - name: S3 upload (redirect to latest version)
+        run: aws s3 sync --follow-symlinks .github/workflows/proxy s3://$AWS_S3_BUCKET
 
 
 
