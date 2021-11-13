@@ -4,6 +4,10 @@ on:
   push:
     branches: [release*]
   workflow_dispatch:
+    inputs:
+        docs_version:
+          description: 'Docs version (e.g.: v2.11, to be used in the URL & S3 bucket regardless of the branch name -- if not set, the semver segment from the branch name is used)'
+          required: false
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PRD }}
