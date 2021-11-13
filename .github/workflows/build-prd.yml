@@ -54,7 +54,7 @@ jobs:
       - name: Or else, get docs_version from workflow_dispatch
         if: ${{ github.event.inputs.docs_version }}
         id: version-if-docs_version
-        run: echo "::set-output name=branch_version::${{ github.event.inputs.docs_version }}"
+        run: echo "::set-output name=branch_version::$(echo $(github.event.inputs.docs_version))"
         shell: bash
 
       - name: Config version path
@@ -67,11 +67,6 @@ jobs:
         run: hugo -D --minify -b $BASE_URL/$VERSION
         env:
           BASE_URL: https://docs.ritchiecli.io
-          VERSION: ${{ steps.version.outputs.branch_version }}
-
-      - name: S3 cp
-        run: aws s3 cp public s3://$AWS_S3_BUCKET/$VERSION/ --recursive
-        env:
           VERSION: ${{ steps.version.outputs.branch_version }}
 
       - name: S3 upload
