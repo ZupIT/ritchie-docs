@@ -69,7 +69,16 @@ jobs:
           BASE_URL: https://docs.ritchiecli.io
           VERSION: ${{ steps.version.outputs.branch_version }}
 
+      - name: Config proxy
+        run: sed -i "s/\${latest_version}/$VERSION/" .github/workflows/proxy/index.html
+        shell: bash
+        env:
+          VERSION: ${{ steps.version.outputs.branch_version }}
+
       - name: S3 upload
         run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
         env:
           VERSION: ${{ steps.version.outputs.branch_version }}
+
+      - name: S3 upload (redirect to latest version)
+        run: aws s3 sync --follow-symlinks .github/workflows/proxy s3://$AWS_S3_BUCKET      
