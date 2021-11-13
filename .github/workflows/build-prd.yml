@@ -1,4 +1,4 @@
-name: S3 upload
+name: Build production
 
 on:
   push:
@@ -41,9 +41,16 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Get version from branch name
-        id: version
+      - name: Get version from branch name if the docs_version var isn't present
+        if: ${{ !github.event.inputs.docs_version }}
+        id: version-if-no-docs_version
         run: echo "::set-output name=branch_version::$(echo $GITHUB_REF | sed 's/refs\/heads\/release-//g' )"
+        shell: bash
+
+      - name: Or else, get docs_version from workflow_dispatch
+        if: ${{ github.event.inputs.docs_version }}
+        id: version-if-docs_version
+        run: echo "::set-output name=branch_version::${{ github.event.inputs.docs_version }}"
         shell: bash
 
       - name: Config version path
