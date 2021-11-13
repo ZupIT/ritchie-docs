@@ -1,13 +1,10 @@
-name: Build production
-
+name: Build production manually with version as input
 on:
-  push:
-    branches: [release*]
   workflow_dispatch:
     inputs:
         docs_version:
           description: 'Docs version (e.g.: v2.11, to be used in the URL & S3 bucket regardless of the branch name -- if not set, the semver segment from the branch name is used)'
-          required: false
+          required: true
 
 env:
   AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_PRD }}
@@ -45,34 +42,18 @@ jobs:
       - name: Install dependencies
         run: yarn
 
-      - name: Get version from branch name if the docs_version var isn't present
-        if: ${{ !github.event.inputs.docs_version }}
-        id: version-if-no-docs_version
-        run: echo "::set-output name=branch_version::$(echo $GITHUB_REF | sed 's/refs\/heads\/release-//g' )"
-        shell: bash
-
-      - name: Or else, get docs_version from workflow_dispatch
-        if: ${{ github.event.inputs.docs_version }}
-        id: version-if-docs_version
-        run: echo "::set-output name=branch_version::${{ github.event.inputs.docs_version }}"
-        shell: bash
-
       - name: Config version path
         shell: bash
-        run: sed -i -E "s/version_path = .*/version_path = \"\/$VERSION\"/g" config.toml
-        env:
-          VERSION: ${{ steps.version.outputs.branch_version }}
+        run: sed -i -E "s/version_path = .*/version_path = \"\/${{ github.event.inputs.docs_version }}\"/g" config.toml
 
       - name: Build
-        run: hugo -D --minify -b $BASE_URL/$VERSION
+        run: hugo -D --minify -b $BASE_URL/${{ github.event.inputs.docs_version }}
         env:
           BASE_URL: https://docs.ritchiecli.io
-          VERSION: ${{ steps.version.outputs.branch_version }}
 
       - name: S3 upload
-        run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET/$VERSION/ --delete
-        env:
-          VERSION: ${{ steps.version.outputs.branch_version }}
+        run: aws s3 sync --follow-symlinks public s3://$AWS_S3_BUCKET/${{ github.event.inputs.docs_version }}/ --delete
+
 
 
 
