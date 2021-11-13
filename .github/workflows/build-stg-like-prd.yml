@@ -1,8 +1,6 @@
 name: Build staging (with the same steps from the build/workflow for PRD)
 
 on:
-  push:
-    branches: [release*]
   workflow_dispatch:
     inputs:
         docs_version:
