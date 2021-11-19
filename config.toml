@@ -74,6 +74,10 @@ weight = 1
     name = "Glossary"
     weight = 20
     url = "/reference/glossary/"
+[[languages.en.menu.main]]
+    name = "C4 Model"
+    weight = 20
+    url = "https://docs.ritchiecli.io/c4model/en/#/"
 
 [languages.pt-br]
 contentDir = "content/pt-br"
@@ -94,6 +98,10 @@ version_menu = "Versões"
     name = "Glossário"
     weight = 20
     url = "/pt-br/referência/glossário"
+[[languages.pt-br.menu.main]]
+    name = "C4 Model"
+    weight = 20
+    url = "https://docs.ritchiecli.io/c4model/pt-br/#/"
 
 [markup]
 [markup.goldmark]
