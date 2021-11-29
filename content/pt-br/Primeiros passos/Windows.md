@@ -36,8 +36,6 @@ winget install Ritchie-CLI
 ```
 Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
 
-Caso não tenha o winget por padrão no seu computador, basta procurar no Microsoft Store, talvez seja necessário instalar ou atualizar.
-
 Agora, siga as instruções que irão aparecer no seu terminal ao executar o comando `rit`.
 
 {{% alert color="info" %}}
