@@ -6,7 +6,7 @@ assignees: ''
 
 ---
 
-<!-- Please only use this template for submitting improvement suggestion-->
+<!--Use this template to submit improvement suggestions.-->
 
 **What would you like to be added/changed**:
 
