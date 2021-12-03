@@ -6,8 +6,7 @@ assignees: ''
 
 ---
 
-<!-- Please use this template while reporting a bug and provide as much info as possible. 
-Not doing so may result in your bug not being addressed in a timely manner. Thanks!
+<!-- Please use this template while reporting a bug. You should provide as much information as possible, if you don't report, your contribution may not be addressed at the right time. 
 -->
 
 **What happened?**:
