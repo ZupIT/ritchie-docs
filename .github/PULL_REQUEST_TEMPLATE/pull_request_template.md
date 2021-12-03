@@ -1,6 +1,6 @@
 ---
 name: Pull Request
-about: Please provide the information requested in this template
+about:  Provide the information in this template.
 labels: feature
 assignees: ''
 ---
