@@ -8,7 +8,7 @@ assignees: ''
 
 <!--Use this template to submit improvement suggestions.-->
 
-**What would you like to be added/changed**:
+**What would you like to add/change?**:
 
 
-**Why is this needed**:
+**Why are you suggesting this improvement?**:
