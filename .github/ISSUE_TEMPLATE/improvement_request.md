@@ -1,6 +1,6 @@
 ---
 name: Improvement request
-about: Suggest an improvement for the project docummentation
+about: Suggest a change or an improvement for the documentation.
 labels: improvement
 assignees: ''
 
