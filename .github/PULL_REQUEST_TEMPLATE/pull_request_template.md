@@ -13,13 +13,13 @@ For more information about our contributing process, read our [**Contributing Gu
 Please provide the following information:
 -->
 
-### Description
-<!-- What are the reasons and motivation of this PR -->
-<!-- Also inform what issues is this PR related of -->
-<!-- use #nn, nn is the issue number (e.g.: Fixes #1) -->
+### **Description**
+<!-- What are the reasons for this PR? -->
+<!-- What issues is this PR related to?  -->
+<!-- Use #nn (nn is the issue number - e.g.: Fixes #1) -->
 
-### How to verify it
-<!-- fill here some description, images/gifs that can help to verify -->
+### **How to verify it?**
+<!-- Add a description, images/gifs that can help to verify-->
 
-### Changelog
-<!-- One line summary that describes the changes introduced in this pull request -->
+### **Changelog**
+<!-- Add a one-line summary to describe your changes in this Pull Request -->
