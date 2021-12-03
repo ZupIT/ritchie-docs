@@ -10,13 +10,13 @@ assignees: ''
 Not doing so may result in your bug not being addressed in a timely manner. Thanks!
 -->
 
-**What happened**:
+**What happened?**:
 
-**What you expected to happen**:
+**What did you expect to happen?**:
 
-**How to reproduce it (as minimally and precisely as possible)**:
+**How to reproduce it? (Please add a short and precise description)**:
 
-**Are there anything else we need to know?**:
+**Is there anything else we need to know?**:
 
 **Environment**:
 - Hugo version (use `hugo version`):
