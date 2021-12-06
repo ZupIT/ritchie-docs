@@ -6,6 +6,12 @@
 {{ else }}
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 {{ end }}
+{{ if .Page.Description }}
+<meta name="description" content="Ritchie is an open source framework that allows you to create, store and share any kind of automations, executing them through command lines, to run operations or start workflows.">
+{{ else }}
+{{ $desc := (.Page.Content | safeHTML | truncate 150) }}
+<meta name="description" content="Ritchie is an open source framework that allows you to create, store and share any kind of automations, executing them through command lines, to run operations or start workflows.">
+{{ end }}
 {{ range .AlternativeOutputFormats -}}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}
