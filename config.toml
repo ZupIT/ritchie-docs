@@ -85,6 +85,7 @@ copyright = "Zup"
 privacy_policy = "https://insights.zup.com.br/politica-privacidade"
 version_path = ""
 logoName = "icons/ritchie.svg"
+gtm_id="GTM-TWPT3CF"
 
 isDocumentationDeprecated = false
 
