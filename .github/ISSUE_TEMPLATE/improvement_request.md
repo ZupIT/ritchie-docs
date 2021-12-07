@@ -3,7 +3,6 @@ name: Improvement request
 about: Suggest a change or an improvement for the documentation.
 labels: improvement
 assignees: ''
-
 ---
 
 <!--Use this template to submit improvement suggestions.-->
