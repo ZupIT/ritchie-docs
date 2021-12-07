@@ -6,9 +6,11 @@ assignees: ''
 ---
 
 <!--
-Before you contribute, make sure to read our [**contributing guidelines**](https://github.com/ZupIT/ritchie-cli/blob/master/CONTRIBUTING.md).
+Before you contribute, make sure to read our contributing guidelines:
+https://github.com/ZupIT/ritchie-cli/blob/master/CONTRIBUTING.md 
 
-For more information about our contributing process, read our [**Contributing Guide**](https://docs.ritchiecli.io/community).
+For more information about our contributing process, 
+read our Contributing Guide https://docs.ritchiecli.io/community
 
 Please provide the following information:
 -->
