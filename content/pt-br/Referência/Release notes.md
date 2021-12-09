@@ -6,56 +6,40 @@ description: >-
 ---
 
 {{% release/group %}}
-{{% release/item type="feature"  date="Julho 2021" %}}
-Adição do comando **'rit list formulas'**.
+{{% release/item type="feature"  date="July 2021" %}}
+Adição do **suporte de input flag** em todos os comandos core. 
 
-Adição de uma atualização com a opção para executar a última versão de uma fórmula quando ativada. 
- 
-Adição de uma biblioteca para dar suporte a internacionalização do Ritchie-CLI. 
+Adição do comando core **rit update workspace** que habilita as atualizações do workspace depois do **git pull** nos repositórios locais. 
 
-Adição da primeira parte do recurso de saída da fórmula.
+Adição do status do path para o comando core **rit list workspace**.
 
-Detecção da nova versão do repo usando o cache.
-
-Criação de uma configuração para forçar a execução da fórmula na versão mais recente.
-
-Adição de uma configuração para mount volumes via **config.json**.
-
-Criação da fórmula e verificação do arquivo **config.json** para ver a tag da release.
-
+Adição da opção para criar um novo workspace com o comando core **rit create formula** (quando o caminho informado não existe).
 
 {{% /release/item %}}
+ 
 
+{{% release/item type="fix" date="July 2021" %}}
+Atualização da execução da fórmula com Docker para evitar a criação de arquivos com o dono raiz. 
 
-{{% release/item type="fix" date="Julho 2021" %}}
-Atualização da execução de uma fórmula com Docker para evitar a criação de arquivos com o dono root. 
-
-Adição de um suporte para Docker da versão mais nova até a mais antiga para usuários do MacOS e WSL.
-
-Correção das saídas de fórmulas (formulas outputs).
+Adição de suporte para as versões antigas e mais recentes do Docker para usuários do MacOS e WSL.
 {{% /release/item  %}}
 
 
-{{% release/item type="chore" date="Julho 2021" %}}
-Adição de testes e sinalizadores de suporte para **rit delete repo**.
+{{% release/item type="chore" date="July 2021" %}}
+Adição de uma confirmação para evitar os nomes do workspace com espaços e caracteres especiais. 
 
-Melhoria na mensagem de erro no repositório de atualização. 
+Adição de testes funcionais para checar o comportamento dos comandos core nos runners do Ubuntu, Windows e macOS.
 
-Melhoria para salvar e reutilizar credenciais de repositórios para repositórios privados.
+Melhoria nas seções README e Guia de contribuição. 
 
-Testes de refatoração dos pacotes das flags.
-
-Adição de testes com o testify para repositórios delete. 
-
-Remoção do bot stale.
-
-Melhoria das métricas extraídas pelas input flags.
-
+Adição da seção de **segurança**.
 {{% /release/item  %}}
 
-{{% release/item type="docs"  date="Junho 2021" %}}
- Migração da documentação do Gitbook para o Hugo.
+{{% release/item type="docs"  date="June 2021" %}}
+Migração da documentação do Gitbook para o Hugo.
 {{% /release/item  %}}
 {{% /release/group %}}
- 
+
+
+
 Veja mais em [**Release Notes**](https://github.com/ZupIT/ritchie-cli/releases). 

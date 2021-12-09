@@ -1,6 +1,6 @@
 ---
 title: Lista de comandos e flags
-weight: 93
+weight: 2
 description: "Nesta seção, você vai encontrar uma lista com principais comandos do Ritchie."
 ---
 

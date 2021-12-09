@@ -6,59 +6,39 @@ description: >-
 ---
 
 {{% release/group %}}
-{{% release/item type="feature"  date="May 2021" %}}
+{{% release/item type="feature"  date="July 2021" %}}
+Add **input flag support** to all core commands.
 
-Add command **'rit list formulas'**.
+Add **rit update workspace** core command to enable workspace updates after **git pull** on local repositories.
 
-Add a force-update option to execute the last formula version when enabled. 
+Add path status to **rit list workspace** core command.
 
-Add lib to support Ritchie-CLI internationalization. 
-
-Add the first part of the formula output feature.
-
-Detect new repo version using cache.
-
-Create configuration to force formula's execution in the latest version.
-
-Add configuration to mount volumes via **config.json**.
-
-Create a formula and check **config.json** file to see the release tag.
+Add the option to create a new workspace with the **rit create formula**  core commands (when informed path doesn't exist).
 
 {{% /release/item %}}
  
 
-{{% release/item type="fix" date="May 2021" %}}
-Fix files created by the formula belonging to the root user.
+{{% release/item type="fix" date="July 2021" %}}
+Update formula execution with Docker to avoid creating files with owner root.
 
-Change the invocation command from **'docker'** to **'com.docker.cli'** when the runtime env is Windows or MacOS. 
-
-Fix formula's outputs.
-
+Add support for Docker newest and oldest version for MacOS and WSL users
 {{% /release/item  %}}
 
 
-{{% release/item type="chore" date="May 2021" %}}
-Add tests and support flags for **rit delete repo**.
+{{% release/item type="chore" date="July 2021" %}}
+Add a check to avoid using workspace names with spaces or special characters.
 
-Save and reuse repo credentials for private repositories.
+Add functional tests to check core commands behaviour on Ubuntu, Windows and macOS runners.
 
-Add a friendlier error message on update repository.
+README and Contributing Guide section improvements.
 
-Test refactor of flag package.
-
-Add tests with testify for delete repository.
-
-Remove stale bot.
-
-Improve metrics extracted by input flags.
-
-Test refactor of a flag package.
+Add **security** section.
 {{% /release/item  %}}
 
-{{% release/item type="docs"  date="May 2021" %}}
+{{% release/item type="docs"  date="June 2021" %}}
 Documentation migration from Gitbook to Hugo.
 {{% /release/item  %}}
 {{% /release/group %}}
  
-Check out Ritchie's [**Release Notes**](https://github.com/ZupIT/ritchie-cli/releases).
+Check out more on [**Release Notes**](https://github.com/ZupIT/ritchie-cli/releases).
  

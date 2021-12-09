@@ -1,6 +1,6 @@
 ---
 title: List of commands and flags
-weight: 93
+weight: 2
 description: In this section, you will find the list of Ritchie's main commands 
 ---
 

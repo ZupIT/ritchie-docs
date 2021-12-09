@@ -1,6 +1,6 @@
 ---
 title: Resources
-weight: 97
+weight: 4
 description: In this section, you will find Ritchie's resources.
 ---
 
