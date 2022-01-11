@@ -9,7 +9,7 @@ description: >-
 
 ## **How to create?**
 
-### **Run the formula creation command**
+### **Create your formula**
 
 Run the following command to create a formula:
 
