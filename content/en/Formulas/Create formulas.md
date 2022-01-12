@@ -19,7 +19,7 @@ rit create formula
 
 {{% alert color="warning" %}}
 
-To run this command you need to have some template in your Ritchie's repos.
+To run this command, you need to have some templates in your Ritchie's repository.
 
 {{% /alert %}}
 
