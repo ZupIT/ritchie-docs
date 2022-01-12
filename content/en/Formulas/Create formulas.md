@@ -32,7 +32,7 @@ Then, you'll have to inform those inputs before running the formula:
 
 {{% alert color="info" %}}
 
-When you finished creating your formula, it will will be built according to the template and sent to a specific repository according to the selected **workspace**.
+When you have finished creating your formula, it will be built according to the template and sent to a specific repository according to the selected **workspace**.
 
 **Example:** If you chose the `Default` workspace:
 
