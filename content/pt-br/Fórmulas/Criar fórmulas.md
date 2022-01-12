@@ -1,14 +1,14 @@
 ---
-title: Criar fórmulas
+title: Criar  e atualizar fórmulas
 weight: 29
-description: 'Nesta seção, você vai encontrar o passo a passo para criar fórmulas no Ritchie.'
+description: 'Nesta seção, você vai encontrar o passo a passo para criar e atualizar fórmulas no Ritchie.'
 ---
 
 ---
 
 ## **Como criar?**
 
-### **Passo 1: Execute o comando de criação de formula**
+### **Crie sua fórmula**
 
 Execute esse comando para criar uma fórmula:
 
@@ -16,34 +16,23 @@ Execute esse comando para criar uma fórmula:
 rit create formula
 ```
 
+{{% alert color="warning" %}}
+
+Para executar esse comando, você precisa ter ao menos um template no seu repositório Ritchie.
+
+{{% /alert %}}
+
 Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
-1. O **comando** (de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**]({{< ref path="Glossário" >}})).
+1. O **comando** (de preferência, com o **padrão `rit + grupo + verbo + substantivo`** para respeitar a [**árvore de comando**]({{< ref path="Referência/Glossário" >}})).
 2. A **linguagem de programação** da fórmula.
-3. **O caminho (path)** para salvar os arquivos da fórmula.
+3. O **espaço de trabalho (workspace)** utilizado para salvar os arquivos da fórmula.
 
-Exemplo: `rit demo create formula`
+{{% alert color="info" %}}
 
-![](/shared/rit_create_formula.gif)
+Quando você terminar de criar sua fórmula, ela será “buildada” de acordo com o template e enviada para um repositório específico conforme o **espaço de trabalho** selecionado.
 
-### **Passo 2: Teste sua fórmula**
-
-Você pode testar diretamente a fórmula depois de sua criação. Isso é possível porque o comando **`rit create formula`** também constrói a fórmula automaticamente (ela gera os arquivos executáveis da fórmula e adiciona-os no **.rit folder**).
-
-Nesse caso, o template da formula **"Hello World"** será executado como você pode ver abaixo:
-
-![](/shared/rit_demo_hello-world.gif)
-
-Este template é composto por **3 parâmetros de entrada**, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:
-
-1. Uma amostra das **`variáveis de texto`**
-2. Uma amostra da **`lista de variáveis`**
-3. Uma amostra das **`variáveis booleanas`**
-4. Uma amostra das **`variáveis de password`**
-
-Quando você terminar a criação da sua fórmula, ela será "buildada" e enviada para um repositório local específico de acordo com o nome do seu workspace, com o prefixo **"local"**.
-
-**Exemplo:** Se um workspace aparecer com o nome `Default`:
+**Exemplo:** Se você escolher o **espaço de trabalho** `Default`:
 
 ```text
 {
@@ -66,6 +55,41 @@ Um repositório associado a esse workspace será criado na pasta **`/home/user/.
 ]
 ```
 
+{{% /alert %}}
+
+**Exemplo:** `rit demo create formula`
+
+![](/shared/rit_create_formula.gif)
+
+### **Atualize sua fórmula**
+
+Você pode atualizar a fórmula modificando seus arquivos do **espaço de trabalho**.
+Para obter mais informações sobre quais arquivos modificar, acesse [**Organizar a pasta de fórmulas**]({{< ref path="Fórmulas/Organizar a pasta fórmulas" >}}).
+
+Ao executar a fórmula pela primeira vez após modificar os arquivos no **espaço de trabalho**, o Ritchie aplicará a modificação e reconstruirá a fórmula automaticamente.
+
+{{% alert color="warning" %}}
+
+Não se esqueça de atualizar os testes unitários.
+
+{{% /alert %}}
+
+### **Teste sua fórmula**
+
+Você pode testar a fórmula diretamente após sua criação. Isso é possível porque o comando **`rit create formula`** também constrói a fórmula automaticamente (ela gera os arquivos executáveis da fórmula e os adiciona na pasta **.rit folder**).
+
+Nesse caso, o template da fórmula "Hello World"** será executado como você pode ver abaixo:
+
+![](/shared/rit_demo_hello-world.gif)
+
+Este template é composto por 4 parâmetros de entrada, que representam os tipos de inputs atualmente disponíveis para serem usados no Ritchie:
+
+1. Uma amostra da **`variável de texto`**
+2. Uma amostra da **`lista de variáveis de texto`**
+3. Uma amostra da **`variável booleana`**
+4. Uma amostra da **`variável de password`** 
+
 ## **Próximos passos**
+
 Continue configurando a sua fórmula:
-- Vá para a seção de como [**organizar uma pasta de fórmula**]({{< ref path="Fórmulas/Organizar a pasta de fórmulas" >}}) para entender como editar os arquivos que o Ritchie cria depois da criação de uma fórmula.
+- Vá para a seção de como [**Organizar a pasta de fórmulas**]({{< ref path="Fórmulas/Organizar a pasta de fórmulas" >}}) para ver como organizar as fórmulas que você criou.
