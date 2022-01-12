@@ -66,7 +66,7 @@ Example: `rit demo create formula`
 ### **Update your formula**
 
 You can update the formula by modifying their workspace files.
-To more informations about which files to modify go to [**organize the formula folder**]({{< ref path="formulas/Organize the formula folder" >}}).
+For more information about which files to modify, go to [**organize the formula folder**]({{< ref path="formulas/Organize the formula folder" >}}).
 
 When you run the formula for the first time after modifying the files in the workspace, Ritchie will apply the modification and rebuild the formula automatically.
 
