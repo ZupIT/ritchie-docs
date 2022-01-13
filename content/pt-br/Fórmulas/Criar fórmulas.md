@@ -78,7 +78,7 @@ Não se esqueça de atualizar os testes unitários.
 
 Você pode testar a fórmula diretamente após sua criação. Isso é possível porque o comando **`rit create formula`** também constrói a fórmula automaticamente (ela gera os arquivos executáveis da fórmula e os adiciona na pasta **.rit folder**).
 
-Nesse caso, o template da fórmula "Hello World"** será executado como você pode ver abaixo:
+Nesse caso, o template da fórmula "Hello World"** será executado como no exemplo a seguir:
 
 ![](/shared/rit_demo_hello-world.gif)
 
