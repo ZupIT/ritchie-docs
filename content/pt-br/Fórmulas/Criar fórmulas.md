@@ -64,7 +64,7 @@ Um repositório associado a esse workspace será criado na pasta **`/home/user/.
 ### **Atualize sua fórmula**
 
 Você pode atualizar a fórmula modificando seus arquivos do **espaço de trabalho**.
-Para obter mais informações sobre quais arquivos modificar, acesse [**Organizar a pasta de fórmulas**]({{< ref path="Fórmulas/Organizar a pasta fórmulas" >}}).
+Para obter mais informações sobre quais arquivos modificar, acesse [**Organizar a pasta de fórmulas**]({{< ref path="Fórmulas/Organizar a pasta de fórmulas" >}}).
 
 Ao executar a fórmula pela primeira vez após modificar os arquivos no **espaço de trabalho**, o Ritchie aplicará a modificação e reconstruirá a fórmula automaticamente.
 
