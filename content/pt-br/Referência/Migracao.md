@@ -1,6 +1,6 @@
 ---
 title: Migrando da v1 para a v2
-weight: 95
+weight: 3
 description: Nesta seção, você vai encontrar informações de como migrar de versão no Ritchie. 
 ---
 

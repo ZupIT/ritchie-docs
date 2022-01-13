@@ -1,6 +1,6 @@
 ---
 title: Version Migration
-weight: 95
+weight: 3
 description: In this section, you will find more information about Ritchie's version migration.
 ---
 
