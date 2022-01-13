@@ -18,7 +18,7 @@ rit create formula
 
 {{% alert color="warning" %}}
 
-Para executar esse comando, você precisa ter ao menos um template no seu repositório Ritchie.
+Para executar esse comando, você precisa ter, ao menos, um template no seu repositório Ritchie.
 
 {{% /alert %}}
 
