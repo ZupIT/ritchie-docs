@@ -19,11 +19,11 @@ rit create formula
 
 {{% alert color="warning" %}}
 
-To run this command, you need to have some templates in your Ritchie's repository.
+To run this command, you need to have, at least, one templates in your Ritchie's repository.
 
 {{% /alert %}}
 
-Then, you'll have to inform those inputs before running the formula:
+You'll have to inform those inputs before running the formula:
 
 1. The **command** (following the **pattern `rit + group + verb + noun`** to respect the [**tree pattern**]({{< ref path="Reference/Glossary" >}})).
 2. The formula's **programming language**.
