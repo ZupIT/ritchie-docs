@@ -30,7 +30,7 @@ Você deverá informar alguns parâmetros de entrada antes da sua execução:
 
 {{% alert color="info" %}}
 
-Quando você terminar de criar sua fórmula, ela será “buildada” de acordo com o template e enviada para um repositório específico conforme o **espaço de trabalho** selecionado.
+Quando você terminar de criar sua fórmula, ela será compilada (“buildada”) de acordo com o template e enviada para um repositório específico conforme o **espaço de trabalho** selecionado.
 
 **Exemplo:** Se você escolher o **espaço de trabalho** `Default`:
 
