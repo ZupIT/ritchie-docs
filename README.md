@@ -1,3 +1,7 @@
+# The Ritchie CLI project has been archived by Zup Innovation. It might start again eventually; however, we won't deliver support for now.
+
+
+
 # **Ritchie CLI Documentation**
 
 This repository uses [**hugo server**](https://gohugo.io/commands/hugo_server/) and contains [**Ritchie CLI**](https://docs.ritchiecli.io/) official documentation. 
